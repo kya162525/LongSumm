@@ -1,0 +1,191 @@
+{
+    "abstractText": "In this paper, we intend to formulate a new metaheuristic algorithm, called Cuckoo Search (CS), for solving optimization problems. This algorithm is based on the obligate brood parasitic behaviour of some cuckoo species in combination with the L\u00e9vy flight behaviour of some birds and fruit flies. We validate the proposed algorithm against test functions and then compare its performance with those of genetic algorithms and particle swarm optimization. Finally, we discuss the implication of the results and suggestion for further research.",
+    "authors": [
+        {
+            "affiliations": [],
+            "name": "Xin-She Yang"
+        }
+    ],
+    "id": "SP:3220f54aa9078eeae189b54253319de6502f8faf",
+    "references": [
+        {
+            "authors": [
+                "E. Bonabeau",
+                "M. Dorigo",
+                "G. Theraulaz"
+            ],
+            "title": "Swarm Intelligence: From Natural to Artificial Systems",
+            "year": 1999
+        },
+        {
+            "authors": [
+                "C. Blum",
+                "A. Roli"
+            ],
+            "title": "Metaheuristics in combinatorial optimization: Overview and conceptural comparision",
+            "venue": "ACM Comput. Surv.,",
+            "year": 2003
+        },
+        {
+            "authors": [
+                "C. Brown",
+                "S. Liebovitch L",
+                "R. Glendon"
+            ],
+            "title": "L\u00e9vy flights in Dobe Ju/\u2019hoansi foraging patterns, Human Ecol",
+            "year": 2007
+        },
+        {
+            "authors": [
+                "R. Chattopadhyay"
+            ],
+            "title": "A study of test functions for optimization algorithms",
+            "venue": "J. Opt. Theory Appl.,",
+            "year": 1971
+        },
+        {
+            "authors": [
+                "K. Deb"
+            ],
+            "title": "Optimisation for Engineering Design, Prentice-Hall",
+            "venue": "New Delhi,",
+            "year": 1995
+        },
+        {
+            "authors": [
+                "K. Gazi",
+                "M. Passino K"
+            ],
+            "title": "Stability analysis of social foraging swarms",
+            "venue": "IEEE Trans. Sys. Man. Cyber. Part B - Cybernetics,",
+            "year": 2004
+        },
+        {
+            "authors": [
+                "E. Goldberg D"
+            ],
+            "title": "Genetic Algorithms in Search, Optimisation and Machine",
+            "year": 1989
+        },
+        {
+            "authors": [
+                "J. Kennedy",
+                "C. Eberhart R"
+            ],
+            "title": "Particle swarm optimization",
+            "venue": "Proc. of IEEE International Conference on Neural Networks,",
+            "year": 1995
+        },
+        {
+            "authors": [
+                "M. Passino K"
+            ],
+            "title": "Biomimicrt of Bacterial Foraging for Distributed Optimization",
+            "year": 2001
+        },
+        {
+            "authors": [
+                "B. Payne R",
+                "D. Sorenson M",
+                "K. Klitz"
+            ],
+            "title": "The Cuckoos",
+            "year": 2005
+        },
+        {
+            "authors": [
+                "I. Pavlyukevich"
+            ],
+            "title": "L\u00e9vy flights, non-local search and simulated annealing",
+            "venue": "J. Computational Physics,",
+            "year": 2007
+        },
+        {
+            "authors": [
+                "I. Pavlyukevich"
+            ],
+            "title": "Cooling down L\u00e9vy flights",
+            "venue": "J. Phys. A:Math. Theor.,",
+            "year": 2007
+        },
+        {
+            "authors": [
+                "M. Reynolds A",
+                "A. Frye M"
+            ],
+            "title": "Free-flight odor tracking in Drosophila is consistent with an optimal intermittent scale-free search",
+            "venue": "PLoS One,",
+            "year": 2007
+        },
+        {
+            "authors": [
+                "F. Schoen"
+            ],
+            "title": "A wide class of test functions for global optimization",
+            "venue": "J. Global Optimization,",
+            "year": 1993
+        },
+        {
+            "authors": [
+                "W. Shang Y",
+                "H. Qiu Y"
+            ],
+            "title": "A note on the extended rosenrbock function",
+            "venue": "Evolutionary Computation,",
+            "year": 2006
+        },
+        {
+            "authors": [
+                "D. Shilane",
+                "J. Martikainen",
+                "S. Dudoit",
+                "J. Ovaska S"
+            ],
+            "title": "A general framework for statistical performance comparison of evolutionary computation algorithms, Information Sciences",
+            "venue": "an Int. Journal,",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "S. Yang X"
+            ],
+            "title": "Nature-Inspired Metaheuristic Algorithms",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "S. Yang X"
+            ],
+            "title": "Biology-derived algorithms in engineering optimizaton (Chapter 32), in Handbook of Bioinspired Algorithms and Applications (eds Olarius",
+            "venue": "World Congress on Nature & Biologically Inspired Computing (NaBIC",
+            "year": 2005
+        }
+    ],
+    "sections": [
+        {
+            "text": "Index Terms\u2014algorithm; cuckoo search; Le\u0301vy flight; metaheuristics; nature-inspired strategy; optimization;\nI. INTRODUCTION\nMore and more modern metaheuristic algorithms inspired by nature are emerging and they become increasingly popular. For example, particles swarm optimization (PSO) was inspired by fish and bird swarm intelligence, while the Firefly Algorithm was inspired by the flashing pattern of tropical fireflies [2], [3], [6], [21], [22]. These nature-inspired metaheuristic algorithms have been used in a wide range of optimization problems, including NP-hard problems such as the travelling salesman problem [2], [3], [6], [8], [10], [21].\nThe power of almost all modern metaheuristics comes from the fact that they imitate the best feature in nature, especially biological systems evolved from natural selection over millions of years. Two important characteristics are selection of the fittest and adaptation to the environment. Numerically speaking, these can be translated into two crucial characteristics of the modern metaheuristics: intensification and diversification [3]. Intensification intends to search around the current best solutions and select the best candidates or solutions, while diversification makes sure the algorithm can explore the search space efficiently.\nThis paper aims to formulate a new algorithm, called Cuckoo Search (CS), based on the interesting breeding bebaviour such as brood parasitism of certain species of cuckoos. We will first introduce the breeding bebaviour of cuckoos and the characteristics of Le\u0301vy flights of some birds and fruit flies, and then formulate the new CS, followed by its implementation. Finally, we will compare the proposed search strategy with other popular optimization algorithms and discuss our findings and their implications for various optimization problems."
+        },
+        {
+            "heading": "II. CUCKOO BEHAVIOUR AND LE\u0301VY FLIGHTS",
+            "text": ""
+        },
+        {
+            "heading": "A. Cuckoo Breeding Behaviour",
+            "text": "Cuckoo are fascinating birds, not only because of the beautiful sounds they can make, but also because of their aggressive reproduction strategy. Some species such as the ani and Guira cuckoos lay their eggs in communal nests, though they may remove others\u2019 eggs to increase the hatching probability of their own eggs [12]. Quite a number of species engage the obligate brood parasitism by laying their eggs in the nests of other host birds (often other species). There are three basic types of brood parasitism: intraspecific brood parasitism, cooperative breeding, and nest takeover. Some host birds can engage direct conflict with the intruding cuckoos. If a host bird discovers the eggs are not their owns, they will either throw these alien eggs away or simply abandon its nest and build a new nest elsewhere. Some cuckoo species such as the New World brood-parasitic Tapera have evolved in such a way that female parasitic cuckoos are often very specialized in the mimicry in colour and pattern of the eggs of a few chosen host species [12]. This reduces the probability of their eggs being abandoned and thus increases their reproductivity.\nIn addition, the timing of egg-laying of some species is also amazing. Parasitic cuckoos often choose a nest where the host bird just laid its own eggs. In general, the cuckoo eggs hatch slightly earlier than their host eggs. Once the first cuckoo chick is hatched, the first instinct action it will take is to evict the host eggs by blindly propelling the eggs out of the nest, which increases the cuckoo chick\u2019s share of food provided by its host bird. Studies also show that a cuckoo chick can also mimic the call of host chicks to gain access to more feeding opportunity."
+        },
+        {
+            "heading": "B. Le\u0301vy Flights",
+            "text": "On the other hand, various studies have shown that flight behaviour of many animals and insects has demonstrated the typical characteristics of Le\u0301vy flights [4], [15], [13], [14]. A recent study by Reynolds and Frye shows that fruit flies or Drosophila melanogaster, explore their landscape using a series of straight flight paths punctuated by a sudden 90o turn, leading to a Le\u0301vy-flight-style intermittent scale free search pattern. Studies on human behaviour such as the Ju/\u2019hoansi hunter-gatherer foraging patterns also show the typical feature of Le\u0301vy flights. Even light can be related to Le\u0301vy flights [1].\n210978-1-4244-5612-3/09/$26.00 c\u00a92009 IEEE\nSubsequently, such behaviour has been applied to optimization and optimal search, and preliminary results show its promising capability [13], [15], [19], [20].\nIII. CUCKOO SEARCH\nFor simplicity in describing our new Cuckoo Search, we now use the following three idealized rules: 1) Each cuckoo lays one egg at a time, and dump its egg in randomly chosen nest; 2) The best nests with high quality of eggs will carry over to the next generations; 3) The number of available host nests is fixed, and the egg laid by a cuckoo is discovered by the host bird with a probability pa \u2208 [0, 1]. In this case, the host bird can either throw the egg away or abandon the nest, and build a completely new nest. For simplicity, this last assumption can be approximated by the fraction pa of the n nests are replaced by new nests (with new random solutions).\nFor a maximization problem, the quality or fitness of a solution can simply be proportional to the value of the objective function. Other forms of fitness can be defined in a similar way to the fitness function in genetic algorithms. For simplicity, we can use the following simple representations that each egg in a nest represents a solution, and a cuckoo egg represent a new solution, the aim is to use the new and potentially better solutions (cuckoos) to replace a not-so-good solution in the nests. Of course, this algorithm can be extended to the more complicated case where each nest has multiple eggs representing a set of solutions. For this present work, we will use the simplest approach where each nest has only a single egg.\nBased on these three rules, the basic steps of the Cuckoo Search (CS) can be summarized as the pseudo code shown in Fig. 1.\nWhen generating new solutions x(t+1) for, say, a cuckoo i, a Le\u0301vy flight is performed\nx (t+1) i = x (t) i + \u03b1 \u2295 Le\u0301vy(\u03bb), (1)\nwhere \u03b1 > 0 is the step size which should be related to the scales of the problem of interests. In most cases, we can use \u03b1 = 1. The above equation is essentially the stochastic equation for random walk. In general, a random walk is a Markov chain whose next status/location only depends on the current location (the first term in the above equation) and the transition probability (the second term). The product \u2295 means entrywise multiplications. This entrywise product is similar to those used in PSO, but here the random walk via Le\u0301vy flight is more efficient in exploring the search space as its step length is much longer in the long run.\nThe Le\u0301vy flight essentially provides a random walk while the random step length is drawn from a Le\u0301vy distribution\nLe\u0301vy \u223c u = t\u2212\u03bb, (1 < \u03bb \u2264 3), (2) which has an infinite variance with an infinite mean. Here the steps essentially form a random walk process with a powerlaw step-length distribution with a heavy tail. Some of the new solutions should be generated by Le\u0301vy walk around the best solution obtained so far, this will speed up the local search. However, a substantial fraction of the new solutions should be generated by far field randomization and whose locations should be far enough from the current best solution, this will make sure the system will not be trapped in a local optimum.\nFrom a quick look, it seems that there is some similarity between CS and hill-climbing in combination with some large scale randomization. But there are some significant differences. Firstly, CS is a population-based algorithm, in a way similar to GA and PSO, but it uses some sort of elitism and/or selection similar to that used in harmony search. Secondly, the randomization is more efficient as the step length is heavytailed, and any large step is possible. Thirdly, the number of parameters to be tuned is less than GA and PSo, and thus it is potentially more generic to adapt to a wider class of optimization problems. In addition, each nest can represent a set of solutions, CS can thus be extended to the type of meta-population algorithm.\nIV. IMPLEMENTATION AND NUMERICAL EXPERIMENTS\nA. Validation and Parameter Studies\nAfter implementation, we have to validate the algorithm using test functions with analytical or known solutions. For example, one of the many test functions we have used is the bivariate Michaelwicz function\nf(x, y) = \u2212 sin(x) sin2m(x 2 \u03c0 ) \u2212 sin(y) sin2m(2y 2 \u03c0 ), (3)\nwhere m = 10 and (x, y) \u2208 [0, 5]\u00d7 [0, 5]. This function has a global minimum f\u2217 \u2248 \u22121.8013 at (2.20319, 1.57049). The landscape of this funciton is shown in Fig. 2. This global optimum can easily be found using Cuckoo Search, and the results are shown in Fig. 3 where the final locations of the nests are also marked with \u00b7 in the figure. Here we have used n = 15 nests, \u03b1 = 1 and pa = 0.25. In most of our simulations, we have used n = 15 to 50.\n2009 World Congress on Nature & Biologically Inspired Computing (NaBIC 2009) 211\nFrom the figure, we can see that, as the optimum is approaching, most nests aggregate towards the global optimum. We also notice that the nests are also distributed at different (local) optima in the case of multimodal functions. This means that CS can find all the optima simultaneously if the number of nests are much higher than the number of local optima. This advantage may become more significant when dealing with multimodal and multiobjective optimization problems.\nWe have also tried to vary the number of host nests (or the population size n) and the probability pa. We have used n = 5, 10, 15, 20, 50, 100, 150, 250, 500 and pa = 0, 0.01, 0.05, 0.1, 0.15, 0.2, 0.25, 0.4, 0.5. From our simulations, we found that n = 15 and pa = 0.25 are sufficient for most optimization problems. Results and analysis also imply that the convergence rate, to some extent, is not sensitive to the parameters used. This means that the fine adjustment is not needed for any given problems. Therefore, we will use fixed n = 15 and pa = 0.25 in the rest of the simulations, especially for the comparison studies presented in the next section."
+        },
+        {
+            "heading": "B. Test Functions",
+            "text": "There are many benchmark test functions in literature [5], [17], [16], and they are designed to test the performance of optimization algorithms. Any new optimization algorithm should also be validated and tested against these benchmark functions. In our simulations, we have used the following test functions.\nDe Jong\u2019s first function is essentially a sphere function\nf(x) = d\u2211 i=1 x2 i , xi \u2208 [\u22125.12, 5.12], (4)\nwhose global minimum f\u2217 = 0 occurs at x\u2217 = (0, 0, ..., 0). Here d is the dimension.\nEasom\u2019s test function is unimodal\nf(x, y) = \u2212 cos(x) cos(y) exp[\u2212(x \u2212 \u03c0)2 \u2212 (y \u2212 \u03c0)2], (5) where (x, y) \u2208 [\u2212100, 100]\u00d7 [\u2212100, 100]. (6) It has a global minimum of f\u2217 = \u22121 at (\u03c0, \u03c0) in a very small region.\nShubert\u2019s bivariate function\nf(x, y) = \u2212 5\u2211\ni=1\ni cos[(i+1)x+1] 5\u2211 i=1 cos[(i+1)y +1)], (7)\nhas 18 global minima in the region (x, y) \u2208 [\u221210, 10] \u00d7 [\u221210, 10]. The value of its global minima is f\u2217 = \u2212186.7309.\nGriewangk\u2019s test function has many local minima\nf(x) = 1\n4000 d\u2211 i=1 x2 i \u2212 d\u220f i=1 cos( xi\u221a i ) + 1, (8)\nbut a single global mimimum f\u2217 = 0 at (0, 0, ..., 0) for all \u2212600 \u2264 xi \u2264 600 where i = 1, 2, ..., d.\nAckley\u2019s function is multimodal\nf(x) = \u221220 exp [ \u2212 0.2 \u221a\u221a\u221a\u221a1 d d\u2211 i=1 x2 i ]\n\u2212 exp[1 d d\u2211 i=1 cos(2\u03c0xi)] + (20 + e), (9)\nwith a global minimum f\u2217 = 0 at x\u2217 = (0, 0, ..., 0) in the range of \u221232.768 \u2264 xi \u2264 32.768 where i = 1, 2, ..., d.\nThe generalized Rosenbrock\u2019s function is given by\nf(x) = d\u22121\u2211 i=1 [ (1 \u2212 xi)2 + 100(xi+1 \u2212 x2i )2 ] , (10)\nwhich has a minimum f(x\u2217) = 0 at x\u2217 = (1, 1, ..., 1). Schwefel\u2019s test function is also multimodal\nf(x) = d\u2211 i=1 [ \u2212 xi sin( \u221a |xi| ) ] , \u2212500 \u2264 xi \u2264 500, (11) with a global minimum of f\u2217 = \u2212418.9829d at x\u2217i = 420.9687(i = 1, 2, ..., d).\n212 2009 World Congress on Nature & Biologically Inspired Computing (NaBIC 2009)\nRastrigin\u2019s test function\nf(x) = 10d + d\u2211 i=1 [x2i \u2212 10 cos(2\u03c0xi)], (12)\nhas a global minimum f\u2217 = 0 at (0, 0, ..., 0) in a hypercube \u22125.12 \u2264 xi \u2264 5.12 where i = 1, 2, ..., d.\nMichalewicz\u2019s test function has d! local optima\nf(x) = \u2212 d\u2211\ni=1\nsin(xi) [ sin( ix2 i \u03c0 ) ]2m , (m = 10), (13)\nwhere 0 \u2264 xi \u2264 \u03c0 and i = 1, 2, ..., d. The global mimimum is f\u2217 \u2248 \u22121.801 for d = 2, while f\u2217 \u2248 \u22124.6877 for d = 5."
+        },
+        {
+            "heading": "C. Comparison of CS with PSO and GA",
+            "text": "Recent studies indicate that PSO algorithms can outperform genetic algorithms (GA) [8] and other conventional algorithms for many optimization problems. This can partly be attributed to the broadcasting ability of the current best estimates which potentially gives better and quicker convergence towards the optimality. A general framework for evaluating statistical performance of evolutionary algorithms has been discussed in detail by Shilane et al. [18].\nNow we will compare the Cuckoo Search with PSO and genetic algorithms for various standard test functions. After implementing these algorithms using Matlab, we have carried out extensive simulations and each algorithm has been run at least 100 times so as to carry out meaningful statistical analysis. The algorithms stop when the variations of function values are less than a given tolerance \u2264 10\u22125. The results are summarized in the following tables (see Tables 1 and 2) where the global optima are reached. The numbers are in the format: average number of evaluations (success rate), so 927 \u00b1 105(100%) means that the average number (mean) of function evaluations is 927 with a standard deviation of 105. The success rate of finding the global optima for this algorithm is 100%.\nWe can see that the CS is much more efficient in finding the global optima with higher success rates. Each function evaluation is virtually instantaneous on modern personal computer. For example, the computing time for 10,000 evaluations on a 3GHz desktop is about 5 seconds.\nFor all the test functions, CS has outperformed both GA and PSO. The primary reasons are two folds: A fine balance\nof randomization and intensification, and less number of control parameters. As for any metaheuristic algorithm, a good balance of intensive local search strategy and an efficient exploration of the whole search space will usually lead to a more efficient algorithm. On the other hand, there are only two parameters in this algorithm, the population size n, and pa. Once n is fixed, pa essentially controls the elitism and the balance of the randomization and local search. Few parameters make an algorithm less complex and thus potentially more generic. Such observations deserve more systematic research and further elaboration in the future work.\nV. CONCLUSIONS\nIn this paper, we have formulated a new metaheuristic Cuckoo Search in combination with Le\u0301vy flights, based on the breeding strategy of some cuckoo species. The proposed algorithm has been validated and compared with other algorithms such as genetic algorithms and particle swarm optimization. Simulations and comparison show that CS is superior to these existing algorithms for multimodal objective functions. This is partly due to the fact that there are fewer parameters to be fine-tuned in CS than in PSO and genetic algorithms. In fact, apart from the population size n, there is essentially one parameter pa. Furthermore, our simulations also indicate that the convergence rate is insensitive to the parameter pa. This also means that we do not have to fine tune these parameters for a specific problem. Subsequently, CS is more generic and robust for many optimization problems, comparing with other metaheuristic algorithms.\nThis potentially powerful optimization strategy can easily be extended to study multiobjecitve optimization applications with various constraints, even to NP-hard problems. Further studies can focus on the sensitivity and parameter studies and their possible relationships with the convergence rate of the algorithm. Hybridization with other popular algorithms such as PSO will also be potentially fruitful.\nREFERENCES\n[1] Barthelemy P., Bertolotti J., Wiersma D. S., A Le\u0301vy flight for light, Nature, 453, 495-498 (2008). [2] Bonabeau E., Dorigo M., Theraulaz G., Swarm Intelligence: From Natural to Artificial Systems. Oxford University Press, (1999) [3] Blum C. and Roli A., Metaheuristics in combinatorial optimization: Overview and conceptural comparision, ACM Comput. Surv., 35, 268- 308 (2003).\n2009 World Congress on Nature & Biologically Inspired Computing (NaBIC 2009) 213\n[4] Brown C., Liebovitch L. S., Glendon R., Le\u0301vy flights in Dobe Ju/\u2019hoansi foraging patterns, Human Ecol., 35, 129-138 (2007). [5] Chattopadhyay R., A study of test functions for optimization algorithms, J. Opt. Theory Appl., 8, 231-236 (1971). [6] Deb. K., Optimisation for Engineering Design, Prentice-Hall, New Delhi, (1995). [7] Gazi K., and Passino K. M., Stability analysis of social foraging swarms, IEEE Trans. Sys. Man. Cyber. Part B - Cybernetics, 34, 539-557 (2004). [8] Goldberg D. E., Genetic Algorithms in Search, Optimisation and Machine Learning, Reading, Mass.: Addison Wesley (1989). [9] Kennedy J. and Eberhart R. C.: Particle swarm optimization. Proc. of IEEE International Conference on Neural Networks, Piscataway, NJ. pp. 1942-1948 (1995). [10] Kennedy J., Eberhart R., Shi Y.: Swarm intelligence, Academic Press, (2001). [11] Passino K. M., Biomimicrt of Bacterial Foraging for Distributed Optimization, University Press, Princeton, New Jersey (2001). [12] Payne R. B., Sorenson M. D., and Klitz K., The Cuckoos, Oxford University Press, (2005). [13] Pavlyukevich I., Le\u0301vy flights, non-local search and simulated annealing, J. Computational Physics, 226, 1830-1844 (2007). [14] Pavlyukevich I., Cooling down Le\u0301vy flights, J. Phys. A:Math. Theor., 40, 12299-12313 (2007). [15] Reynolds A. M. and Frye M. A., Free-flight odor tracking in Drosophila is consistent with an optimal intermittent scale-free search, PLoS One, 2, e354 (2007). [16] Schoen F., A wide class of test functions for global optimization, J. Global Optimization, 3, 133-137, (1993). [17] Shang Y. W., Qiu Y. H., A note on the extended rosenrbock function, Evolutionary Computation, 14, 119-126 (2006). [18] Shilane D., Martikainen J., Dudoit S., Ovaska S. J., A general framework for statistical performance comparison of evolutionary computation algorithms, Information Sciences: an Int. Journal, 178, 2870-2879 (2008). [19] Shlesinger M. F., Zaslavsky G. M. and Frisch U. (Eds), Le\u0301vy Flights and Related Topics in Phyics, Springer, (1995). [20] Shlesinger M. F., Search research, Nature, 443, 281-282 (2006). [21] Yang X. S., Nature-Inspired Metaheuristic Algorithms, Luniver Press,\n(2008). [22] Yang X. S., Biology-derived algorithms in engineering optimizaton\n(Chapter 32), in Handbook of Bioinspired Algorithms and Applications (eds Olarius & Zomaya), Chapman & Hall / CRC (2005).\n214 2009 World Congress on Nature & Biologically Inspired Computing (NaBIC 2009)"
+        }
+    ],
+    "title": "Cuckoo Search via Le\u0301vy Flights",
+    "year": 2009
+}

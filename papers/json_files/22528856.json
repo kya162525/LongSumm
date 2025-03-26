@@ -1,0 +1,379 @@
+{
+    "abstractText": "We present a framework for efficient inference in structured image models that explicitly reason about objects. We achieve this by performing probabilistic inference using a recurrent neural network that attends to scene elements and processes them one at a time. Crucially, the model itself learns to choose the appropriate number of inference steps. We use this scheme to learn to perform inference in partially specified 2D models (variable-sized variational auto-encoders) and fully specified 3D models (probabilistic renderers). We show that such models learn to identify multiple objects \u2013 counting, locating and classifying the elements of a scene \u2013 without any supervision, e.g., decomposing 3D images with various numbers of objects in a single forward pass of a neural network at unprecedented speed. We further show that the networks produce accurate inferences when compared to supervised counterparts, and that their structure leads to improved generalization.",
+    "authors": [
+        {
+            "affiliations": [],
+            "name": "S. M. Ali Eslami"
+        },
+        {
+            "affiliations": [],
+            "name": "Nicolas Heess"
+        },
+        {
+            "affiliations": [],
+            "name": "Theophane Weber"
+        },
+        {
+            "affiliations": [],
+            "name": "Yuval Tassa"
+        },
+        {
+            "affiliations": [],
+            "name": "David Szepesvari"
+        },
+        {
+            "affiliations": [],
+            "name": "Koray Kavukcuoglu"
+        },
+        {
+            "affiliations": [],
+            "name": "Geoffrey E. Hinton"
+        }
+    ],
+    "id": "SP:6598203cb16dcd09694abec9d5a06092c06011b9",
+    "references": [
+        {
+            "authors": [
+                "Jimmy Ba",
+                "Volodymyr Mnih",
+                "Koray Kavukcuoglu"
+            ],
+            "title": "Multiple Object Recognition with Visual Attention",
+            "venue": "In ICLR,",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Alex Graves"
+            ],
+            "title": "Adaptive computation time for recurrent neural networks",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "Karol Gregor",
+                "Ivo Danihelka",
+                "Alex Graves",
+                "Danilo Rezende",
+                "Daan Wierstra"
+            ],
+            "title": "DRAW: A Recurrent Neural Network For Image Generation",
+            "venue": "In ICML,",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Geoffrey E. Hinton",
+                "Peter Dayan",
+                "Brendan J. Frey",
+                "Randford M. Neal"
+            ],
+            "title": "The \"wake-sleep\" algorithm for unsupervised neural networks",
+            "year": 1995
+        },
+        {
+            "authors": [
+                "Varun Jampani",
+                "Sebastian Nowozin",
+                "Matthew Loper",
+                "Peter V. Gehler"
+            ],
+            "title": "The Informed Sampler: A Discriminative Approach to Bayesian Inference in Generative Computer Vision Models",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Alex Kendall",
+                "Matthew Grimes",
+                "Roberto Cipolla"
+            ],
+            "title": "PoseNet: A Convolutional Network for Real-Time 6-DOF Camera Relocalization",
+            "venue": "In ICCV,",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Diederik P Kingma",
+                "Max Welling"
+            ],
+            "title": "Auto-encoding variational Bayes",
+            "venue": "arXiv preprint arXiv:1312.6114,",
+            "year": 2013
+        },
+        {
+            "authors": [
+                "Alex Krizhevsky",
+                "Ilya Sutskever",
+                "Geoffrey E. Hinton"
+            ],
+            "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+            "venue": "In NIPS",
+            "year": 2012
+        },
+        {
+            "authors": [
+                "Tejas D. Kulkarni",
+                "Pushmeet Kohli",
+                "Joshua B. Tenenbaum",
+                "Vikash K. Mansinghka"
+            ],
+            "title": "Picture: A probabilistic programming language for scene perception",
+            "venue": "In CVPR,",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Tejas D Kulkarni",
+                "William F. Whitney",
+                "Pushmeet Kohli",
+                "Josh Tenenbaum"
+            ],
+            "title": "Deep Convolutional Inverse Graphics Network",
+            "venue": "In NIPS",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Brenden M. Lake",
+                "Ruslan Salakhutdinov",
+                "Joshua B. Tenenbaum"
+            ],
+            "title": "Human-level concept learning through probabilistic program induction",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Victor Lempitsky",
+                "Andrew Zisserman"
+            ],
+            "title": "Learning To Count Objects in Images",
+            "venue": "In NIPS",
+            "year": 2010
+        },
+        {
+            "authors": [
+                "Matthew M. Loper",
+                "Michael J. Black"
+            ],
+            "title": "OpenDR: An Approximate Differentiable Renderer",
+            "venue": "In ECCV,",
+            "year": 2014
+        },
+        {
+            "authors": [
+                "Vikash Mansinghka",
+                "Tejas Kulkarni",
+                "Yura Perov",
+                "Josh Tenenbaum"
+            ],
+            "title": "Approximate Bayesian Image Interpretation using Generative Probabilistic Graphics Programs",
+            "venue": "In NIPS",
+            "year": 2013
+        },
+        {
+            "authors": [
+                "Brian Milch",
+                "Bhaskara Marthi",
+                "Stuart Russell",
+                "David Sontag",
+                "Daniel L. Ong",
+                "Andrey Kolobov"
+            ],
+            "title": "BLOG: Probabilistic Models with Unknown Objects",
+            "venue": "In International Joint Conference on Artificial Intelligence,",
+            "year": 2005
+        },
+        {
+            "authors": [
+                "Andriy Mnih",
+                "Karol Gregor"
+            ],
+            "title": "Neural Variational Inference and Learning",
+            "venue": "In ICML,",
+            "year": 2014
+        },
+        {
+            "authors": [
+                "Volodymyr Mnih",
+                "Nicolas Heess",
+                "Alex Graves",
+                "Koray Kavukcuoglu"
+            ],
+            "title": "Recurrent Models of Visual Attention",
+            "venue": "In NIPS",
+            "year": 2014
+        },
+        {
+            "authors": [
+                "Volodymyr Mnih",
+                "Koray Kavukcuoglu",
+                "David Silver",
+                "Andrei A. Rusu",
+                "Joel Veness",
+                "Marc G. Bellemare",
+                "Alex Graves",
+                "Martin Riedmiller",
+                "Andreas K. Fidjeland",
+                "Georg Ostrovski",
+                "Stig Petersen",
+                "Charles Beattie",
+                "Amir Sadik",
+                "Ioannis Antonoglou",
+                "Helen King",
+                "Dharshan Kumaran",
+                "Daan Wierstra",
+                "Shane Legg",
+                "Demis Hassabis"
+            ],
+            "title": "Human-level control through deep reinforcement learning",
+            "venue": "Nature, 518,",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Danilo J. Rezende",
+                "Shakir Mohamed",
+                "Daan Wierstra"
+            ],
+            "title": "Stochastic Backpropagation and Approximate Inference in Deep Generative Models",
+            "venue": "In ICML,",
+            "year": 2014
+        },
+        {
+            "authors": [
+                "Ruslan Salakhutdinov",
+                "Geoffrey Hinton"
+            ],
+            "title": "Deep Boltzmann Machines",
+            "venue": "In AISTATS,",
+            "year": 2009
+        },
+        {
+            "authors": [
+                "John Schulman",
+                "Nicolas Heess",
+                "Theophane Weber",
+                "Pieter Abbeel"
+            ],
+            "title": "Gradient Estimation Using Stochastic Computation Graphs",
+            "venue": "In NIPS",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Yichuan Tang",
+                "Nitish Srivastava",
+                "Ruslan Salakhutdinov"
+            ],
+            "title": "Learning Generative Models With Visual Attention",
+            "venue": "In NIPS",
+            "year": 2014
+        },
+        {
+            "authors": [
+                "Emanuel Todorov",
+                "Tom Erez",
+                "Yuval Tassa"
+            ],
+            "title": "MuJoCo: A physics engine for model-based control",
+            "venue": "In ICIRS,",
+            "year": 2012
+        },
+        {
+            "authors": [
+                "Jianming Zhang",
+                "Shuga Ma",
+                "Mehrnoosh Sameki",
+                "Stan Sclaroff",
+                "Margrit Betke",
+                "Zhe Lin",
+                "Xiaohui Shen",
+                "Brian Price",
+                "Radom\u00edr M\u0115ch"
+            ],
+            "title": "Salient Object Subitizing",
+            "venue": "In CVPR,",
+            "year": 2015
+        }
+    ],
+    "sections": [
+        {
+            "heading": "1 Introduction",
+            "text": "The human percept of a visual scene is highly structured. Scenes naturally decompose into objects that are arranged in space, have visual and physical properties, and are in functional relationships with each other. Artificial systems that interpret images in this way are desirable, as accurate detection of objects and inference of their attributes is thought to be fundamental for many problems of interest. Consider a robot whose task is to clear a table after dinner. To plan its actions it will need to determine which objects are present, what classes they belong to and where each one is located on the table.\nThe notion of using structured models for image understanding has a long history (e.g., \u2018vision as inverse graphics\u2019 [4]), however in practice it has been difficult to define models that are: (a) expressive enough to capture the complexity of natural scenes, and (b) amenable to tractable inference. Meanwhile, advances in deep learning have shown how neural networks can be used to make sophisticated predictions from images using little interpretable structure (e.g., [10]). Here we explore the intersection of structured probabilistic models and deep networks. Prior work on deep generative methods (e.g., VAEs [9]) have been mostly unstructured, therefore despite producing impressive samples and likelihood scores their representations have lacked interpretable meaning. On the other hand, structured generative methods have largely been incompatible with deep learning, and therefore inference has been hard and slow (e.g., via MCMC).\nOur proposed framework achieves scene interpretation via learned, amortized inference, and it imposes structure on its representation through appropriate partly- or fully-specified generative models, rather than supervision from labels. It is important to stress that by training generative models, the aim is not primarily to obtain good reconstructions, but to produce good representations, in other words to understand scenes. We show experimentally that by incorporating the right kinds of structures, our models produce representations that are more useful for downstream tasks than those produced by VAEs or state-of-the-art generative models such as DRAW [3].\nar X\niv :1\n60 3.\n08 57\n5v 3\n[ cs\n.C V\n] 1\n2 A\nug 2\nThe proposed framework crucially allows for reasoning about the complexity of a given scene (the dimensionality of its latent space). We demonstrate that via an Occam\u2019s razor type effect, this makes it possible to discover the underlying causes of a dataset of images in an unsupervised manner. For instance, the model structure will enforce that a scene is formed by a variable number of entities that appear in different locations, but the process of learning will identify what these scene elements look like and where they appear in any given image. The framework also combines high-dimensional distributed representations with directly interpretable latent variables (e.g., affine pose). This combination makes it easier to avoid the pitfalls of models that are too unconstrained (leading to data-hungry learning) or too rigid (leading to failure via mis-specification).\nThe main contributions of the paper are as follows. First, in Sec. 2 we formalize a scheme for efficient variational inference in latent spaces of variable dimensionality. The key idea is to treat inference as an iterative process, implemented as a recurrent neural network that attends to one object at a time, and learns to use an appropriate number of inference steps for each image. We call the proposed framework Attend-Infer-Repeat (AIR). End-to-end learning is enabled by recent advances in amortized variational inference, e.g., combining gradient based optimization for continuous latent variables with black-box optimization for discrete ones. Second, in Sec. 3 we show that AIR allows for learning of generative models that decompose multi-object scenes into their underlying causes, e.g., the constituent objects, in an unsupervised manner. We demonstrate these capabilities on MNIST digits (Sec. 3.1), overlapping sprites and Omniglot glyphs (appendices H and G). We show that model structure can provide an important inductive bias that is not easily learned otherwise, leading to improved generalization. Finally, in Sec. 3.2 we demonstrate how our inference framework can be used to perform inference for a 3D rendering engine with unprecedented speed, recovering the counts, identities and 3D poses of complex objects in scenes with significant occlusion in a single forward pass of a neural network, providing a scalable approach to \u2018vision as inverse graphics\u2019."
+        },
+        {
+            "heading": "2 Approach",
+            "text": "In this paper we take a Bayesian perspective of scene interpretation, namely that of treating this task as inference in a generative model. Thus given an image x and a model px\u03b8 (x|z)pz\u03b8(z) parameterized by \u03b8 we wish to recover the underlying scene description z by computing the posterior p(z|x) = px\u03b8 (x|z)pz\u03b8(z)/p(x). In this view, the prior pz\u03b8(z) captures our assumptions about the underlying scene, and the likelihood px\u03b8 (x|z) is our model of how a scene description is rendered to form an image. Both can take various forms depending on the problem at hand and we will describe particular instances in Sec. 3. Together, they define the language that we use to describe a scene.\nMany real-world scenes naturally decompose into objects. We therefore make the modeling assumption that the scene description is structured into groups of variables zi, where each group describes the attributes of one of the objects in the scene, e.g., its type, appearance, and pose. Since the number of objects will vary from scene to scene, we assume models of the following form:\np\u03b8(x) = N\u2211 n=1 pN (n) \u222b pz\u03b8(z|n)px\u03b8 (x|z)dz. (1)\nThis can be interpreted as follows. We first sample the number of objects n from a suitable prior (for instance a Binomial distribution) with maximum value N . The latent, variable length, scene descriptor z = (z1, z2, . . . , zn) is then sampled from a scene model z \u223c pz\u03b8(\u00b7|n). Finally, we render the image according to x \u223c px\u03b8 (\u00b7|z). Since the indexing of objects is arbitrary, pz\u03b8(\u00b7) is exchangeable and px\u03b8 (x|\u00b7) is permutation invariant, and therefore the posterior over z is exchangeable. The prior and likelihood terms can take different forms. We consider two scenarios: For 2D scenes (Sec. 3.1), each object is characterized in terms of a learned distributed continuous representation for its shape, and a continuous 3-dimensional variable for its pose (position and scale). For 3D scenes (Sec. 3.2), objects are defined in terms of a categorical variable that characterizes their identity, e.g., sphere, cube or cylinder, as well as their positions and rotations. We refer to the two kinds of variables for each object i in both scenarios as ziwhat and z i where respectively, bearing in mind that their meaning (e.g., position and scale in pixel space vs. position and orientation in 3D space) and their data type (continuous vs. discrete) will vary. We further assume that zi are independent under the prior, i.e., pz\u03b8(z|n) = \u220fn i=1 p z \u03b8(z\ni), but non-independent priors, such as a distribution over hierarchical scene graphs (e.g., [28]), can also be accommodated. Furthermore, while the number of objects is bounded as per Eq. 1, it is relatively straightforward to relax this assumption."
+        },
+        {
+            "heading": "2.1 Inference",
+            "text": "Despite their natural appeal, inference for most models in the form of Eq. 1 is intractable. We therefore employ an amortized variational approximation to the true posterior by learning a distribution q\u03c6(z, n|x) parameterized by \u03c6 that minimizes the divergence KL [q\u03c6(z, n|x)||pz\u03b8(z, n|x)]. While amortized variational approximations have recently been used successfully in a variety of works [21, 9, 18] the specific form of our model poses two additional difficulties. Trans-dimensionality: As a challenging departure from classical latent space models, the size of the latent space n (i.e., the number of objects) is a random variable itself, which necessitates evaluating pN (n|x) = \u222b pz\u03b8(z, n|x)dz, for all n = 1...N . Symmetry: There are strong symmetries that arise, for instance, from alternative assignments of objects appearing in an image x to latent variables zi.\nWe address these challenges by formulating inference as an iterative process implemented as a recurrent neural network, which infers the attributes of one object at a time. The network is run for N steps and in each step explains one object in the scene, conditioned on the image and on its knowledge of previously explained objects (see Fig. 1).\nTo simplify sequential reasoning about the number of objects, we parameterize n as a variable length latent vector zpres using a unary code: for a given value n, zpres is the vector formed of n ones followed by one zero. Note that the two representations are equivalent. The posterior takes the following form:\nq\u03c6(z, zpres|x) = q\u03c6(zn+1pres = 0|z1:n,x) n\u220f i=1 q\u03c6(z i, zipres = 1|x, z1:i\u22121). (2)\nq\u03c6 is implemented as a neural network that, in each step, outputs the parameters of the sampling distributions over the latent variables, e.g., the mean and standard deviation of a Gaussian distribution for continuous variables. zpres can be understood as an interruption variable: at each time step, if the network outputs zpres = 1, it describes at least one more object and proceeds, but if it outputs zpres = 0, no more objects are described, and inference terminates for that particular datapoint.\nNote that conditioning of zi|x, z1:i\u22121 is critical to capture dependencies between the latent variables zi in the posterior, e.g., to avoid explaining the same object twice. The specifics of the networks that achieve this depend on the particularities of the models and we will describe them in detail in Sec. 3."
+        },
+        {
+            "heading": "2.2 Learning",
+            "text": "We can jointly optimize the parameters \u03b8 of the model and \u03c6 of the inference network by maximizing the lower bound on the marginal likelihood of an image under the model: log p\u03b8(x) \u2265 L(\u03b8, \u03c6) = Eq\u03c6 [ log p\u03b8(x,z,n)q\u03c6(z,n,|x) ] with respect \u03b8 and \u03c6. L is called the negative free energy. We provide an outline of how to construct an estimator of the gradient of this quantity below, for more details see [23].\nComputing a Monte Carlo estimate of \u2202\u2202\u03b8L is relatively straightforward: given a sample from the approximate posterior (z, zpres) \u223c q\u03c6(\u00b7|x) (i.e., when the latent variables have been \u2018filled in\u2019) we can readily compute \u2202\u2202\u03b8 log p\u03b8(x, z, n) provided p is differentiable in \u03b8.\nComputing a Monte Carlo estimate of \u2202\u2202\u03c6L is more involved. As discussed above, the RNN that implements q\u03c6 produces the parameters of the sampling distributions for the scene variables z and presence variables zpres. For a time step i, denote with \u03c9i all the parameters of the sampling distributions of variables in (zipres, z\ni). We parameterize the dependence of this distribution on z1:i\u22121 and x using a recurrent function R\u03c6(\u00b7) implemented as a neural network such that (\u03c9i,hi) = R\u03c6(x,h\ni\u22121) with hidden variables h. The full gradient is obtained via chain rule: \u2202L/\u2202\u03c6 =\u2211 i \u2202L/\u2202\u03c9i\u00d7 \u2202\u03c9i/\u03c6. Below we explain how to compute \u2202L/\u2202\u03c9i. We first rewrite our cost function as follows: L(\u03b8, \u03c6) = Eq\u03c6 [`(\u03b8, \u03c6, z, n)] where `(\u03b8, \u03c6, z, n) is defined as log p\u03b8(x,z,n) q\u03c6(z,n,|x) . Let z\ni be an arbitrary element of the vector (zi, zipres) of type {what, where, pres}. How to proceed depends on whether zi is continuous or discrete.\nContinuous: Suppose zi is a continuous variable. We use the path-wise estimator (also known as the \u2018re-parameterization trick\u2019, e.g., [9, 23]), which allows us to \u2018back-propagate\u2019 through the random variable zi. For many continuous variables (in fact, without loss of generality), zi can be sampled as h(\u03be, \u03c9i), where h is a deterministic transformation function, and \u03be a random variable from a fixed noise distribution p(\u03be) giving the gradient estimate: \u2202L\u2202\u03c9i \u2248 \u2202`(\u03b8, \u03c6, z, n)/\u2202z i \u00d7 \u2202h/\u2202\u03c9i.\nDiscrete: For discrete scene variables (e.g., zipres) we cannot compute the gradient \u2202L/\u2202\u03c9ij by back-propagation. Instead we use the likelihood ratio estimator [18, 23]. Given a posterior sample (z, n) \u223c q\u03c6(\u00b7|x) we can obtain a Monte Carlo estimate of the gradient: \u2202L/\u2202\u03c9i \u2248 \u2202 log q(zi|\u03c9i)/\u2202\u03c9i `(\u03b8, \u03c6, z, n). In the raw form presented here this gradient estimate is likely to have high variance. We reduce its variance using appropriately structured neural baselines [18] that are functions of the image and the latent variables produced so far."
+        },
+        {
+            "heading": "3 Models and Experiments",
+            "text": "We first apply AIR to a dataset of multiple MNIST digits, and show that it can reliably learn to detect and generate the constituent digits from scratch (Sec. 3.1). We show that this provides advantages over state-of-the-art generative models such as DRAW [3] in terms of computational effort, generalization to unseen datasets, and the usefulness of the inferred representations for downstream tasks. We also apply AIR to a setting where a 3D renderer is specified in advance. We show that AIR learns to use the renderer to infer the counts, identities and poses of multiple objects in synthetic and real table-top scenes with unprecedented speed (Sec. 3.2 and appendix J).\nDetails of the AIR model and networks used in the 2D experiments are shown in Fig. 2. The generative model (Fig. 2, left) draws n \u223c Geom(\u03c1) digits {yiatt}, scales and shifts them according to ziwhere \u223c N (0,\u03a3) using spatial transformers, and sums the results {yi} to form the image. Each digit is obtained by first sampling a latent code ziwhat from the prior z i what \u223c N (0,1) and propagating it through a decoder network. The learnable parameters of the generative model are the parameters of this decoder network. The AIR inference network (Fig. 2, middle) produces three sets of variables for each entity at every time-step: a 1-dimensional Bernoulli variable indicating the entity\u2019s presence, a C-dimensional distributed vector describing its class or appearance (ziwhat), and a 3-dimensional vector specifying the affine parameters of its position and scale (ziwhere). Fig. 2 (right) shows the interaction between the inference and generation networks at every time-step. The inferred pose is used to attend to a part of the image (using a spatial transformer) to produce xiatt, which is processed to produce the inferred code zicode and the reconstruction of the contents of the attention window yiatt. The same pose information is used by the generative model to transform y i att to obtain y\ni. This contribution is only added to the canvas y if zipres was inferred to be true.\nFor the dataset of MNIST digits, we also investigate the behavior of a variant, difference-AIR (DAIR), which employs a slightly different recurrent architecture for the inference network (see Fig. 8 in appendix). As opposed to AIR which computes zi via hi and x, DAIR reconstructs at every time step i a partial reconstruction xi of the data x, which is set as the mean of the distribution px\u03b8 (x|z1, z2, . . . , zi\u22121). We create an error canvas \u2206xi = xi \u2212 x, and the DAIR inference equation R\u03c6 is then specified as (\u03c9i,hi) = R\u03c6(\u2206xi,hi\u22121)."
+        },
+        {
+            "heading": "3.1 Multi-MNIST",
+            "text": "We begin with a 50\u00d750 dataset of multi-MNIST digits. Each image contains zero, one or two non-overlapping random MNIST digits with equal probability. The desired goal is to train a network that produces sensible explanations for each of the images. We train AIR with N = 3 on 60,000 such images from scratch, i.e., without a curriculum or any form of supervision by maximizing L with respect to the parameters of the inference network and the generative model. Upon completion of training we inspect the model\u2019s inferences (see Fig. 3, left). We draw the reader\u2019s attention to the following observations. First, the model identifies the number of digits correctly, due to the opposing pressures of (a) wanting to explain the scene, and (b) the cost that arises from instantiating an object under the prior. This is indicated by the number of attention windows in each image; we also plot the accuracy of count inference over the course of training (Fig. 3, above right). Second, it locates the digits accurately. Third, the recurrent network learns a suitable scanning policy to ensure that different time-steps account for different digits (Fig. 3, below right). Note that we did not have to specify any such policy in advance, nor did we have to build in a constraint to prevent two time-steps from explaining the same part of the image. Finally, that the network learns to not use the second time-step when the image contains only a single digit, and to never use the third time-step (images contain a maximum of two digits). This allows for the inference network to stop upon encountering the first zipres equaling 0, leading to potential savings in computation during inference.\nA video showing real-time inference using AIR has been included in the supplementary material. We also perform experiments on Omniglot ([13], appendix G) to demonstrate AIR\u2019s ability to parse glyphs into elements resembling \u2018strokes\u2019, as well as a dataset of sprites where the scene\u2019s elements appear under significant overlap (appendix H). See appendices for details and results."
+        },
+        {
+            "heading": "3.1.1 Strong Generalization",
+            "text": "Since the model learns the concept of a digit independently of the positions or numbers of times it appears in each image, one would hope that it would be able to generalize, e.g., by demonstrating an understanding of scenes that have structural differences to training scenes. We probe this behavior with the following scenarios: (a) Extrapolation: training on images each containing 0, 1 or 2 digits and then testing on images containing 3 digits, and (b) Interpolation: training on images containing 0, 1 or 3 digits and testing on images containing 2 digits. The result of this experiment is shown in Fig. 4. An AIR model trained on up to 2 digits is effectively unable to infer the correct count when presented with an image of 3 digits. We believe this to be caused by the LSTM which learns during training never to expect more than 2 digits. AIR\u2019s generalization performance is improved somewhat when considering the interpolation task. DAIR by contrast generalizes well in both tasks (and finds interpolation to be slightly easier than extrapolation). A closely related baseline is the Deep Recurrent Attentive Writer (DRAW, [3]), which like AIR, generates data sequentially. However, DRAW has a fixed and large number of steps (40 in our experiments). As a consequence generative steps do not correspond to easily interpretable entities, complex scenes are drawn faster and simpler ones slower. We show DRAW\u2019s reconstructions in Fig. 4. Interestingly, DRAW learns to ignore precisely one digit in the image. See appendix for further details of these experiments.\n3.1.2 Representational Power\nA second motivation for the use of structured models is that their inferences about a scene provides useful representations for downstream tasks. We examine this ability by first training an AIR model on 0, 1 or 2 digits and then produce inferences for a separate collection of images that contains precisely 2 digits. We split this data into training and test and consider two tasks: (a) predicting the sum of the two digits (as was done in [1]), and (b) determining if the digits appear in an ascending order. We compare with a CNN trained from the raw pixels, as well as interpretations produced by a convolutional\nautoencoder (CAE) and DRAW (Fig. 5). We optimize each model\u2019s hyper-parameters (e.g. depth and size) for maximal performance. AIR achieves high accuracy even when data is scarce, indicating the power of its disentangled, structured representation. See appendix for further details."
+        },
+        {
+            "heading": "3.2 3D Scenes",
+            "text": "The experiments above demonstrate learning of inference and generative networks in models where we impose structure in the form of a variable-sized representation and spatial attention mechanisms. We now consider an additional way of imparting knowledge to the system: we specify the generative model via a 3D renderer, i.e., we completely specify how any scene representation is transformed to produce the pixels in an image. Therefore the task is to learn to infer the counts, identities and poses of several objects, given different images containing these objects and an implementation of a 3D renderer from which we can draw new samples. This formulation of computer vision is often called \u2018vision as inverse graphics\u2019 (see e.g., [4, 15, 7]).\nThe primary challenge in this view of computer vision is that of inference. While it is relatively easy to specify high-quality models in the form of probabilistic renderers, posterior inference is either extremely expensive or prone to getting stuck in local minima (e.g., via optimization or MCMC). In addition, probabilistic renderers (and in particular renderers) typically are not capable of providing gradients with respect to their inputs, and 3D scene representations often involve discrete variables, e.g., mesh identities. We address these challenges by using finite-differencing to obtain a gradient through the renderer, using the score function estimator to get gradients with respect to discrete variables, and using AIR inference to handle correlated posteriors and variable-length representations.\nWe demonstrate the capabilities of this approach by first considering scenes consisting of only one of three objects: a red cube, a blue sphere, and a textured cylinder (see Fig. 6a). Since the scenes only consist of single objects, the task is only to infer the identity (cube, sphere, cylinder) and pose (position and rotation) of the object present in the image. We train a single-step (N = 1) AIR inference network for this task. The network is only provided with unlabeled images and is trained to maximize the likelihood of those images under the model specified by the renderer. The quality of the inferred scene representations produced is visually inspected in Fig. 6b. The network accurately and reliably infers the identity and pose of the object present in the scene. In contrast, an identical network trained to predict the ground-truth identity and pose values of the training data (in a similar style to [11]) has much more difficulty in accurately determining the cube\u2019s orientation (Fig. 6c). The supervised loss forces the network to predict the exact angle of rotation. However this is not identifiable from the image due to rotational symmetry, which leads to conditional probabilities that are multi-modal and difficult to represent using standard network architectures. We also compare with direct optimization of the likelihood from scratch for every test image (Fig. 6d), and observe that this method is slower, less stable and more susceptible to local minima. So not only does amortization reduce the cost of inference, but it also overcomes the pitfalls of independent gradient optimization.\nWe finally consider a more complex setup, where we infer the counts, identities and positions of a variable number of crockery items, as well as the camera position, in a table-top scene. This would be of critical importance to a robot, say, which is tasked with clearing the table. The goal is to learn to perform this task with as little supervision as possible, and indeed we observe that with AIR it is possible to do so with no supervision other than a specification of the renderer. We show reconstructions of AIR\u2019s inferences on generated data, as well as real images of a table with varying numbers of plates, in Fig. 6 and Fig. 7. AIR\u2019s inferences of counts, identities and positions are accurate for the most part. For transfer to real scenes we perform random color and size pertubations to rendered objects during training, however we note that robust transfer remains a challenging problem in general. We provide a quantitative comparison of AIR\u2019s inference robustness and accuracy on generated scenes with that of a fully supervised network in Fig. 7. We consider two scenarios: one where each object type only appears exactly once, and one where objects can repeat in the scene. A naive supervised setup struggles with object repetitions or when an arbitrary ordering of the objects is imposed by the labels, however training is more straightforward when there are no repetitions. AIR achieves competitive reconstruction and counts despite the added difficulty of object repetitions."
+        },
+        {
+            "heading": "4 Related Work",
+            "text": "Deep neural networks have had great success in learning to predict various quantities from images, e.g., object classes [10], camera positions [8] and actions [20]. These methods work best when large labeled datasets are available for training. At the other end of the spectrum, e.g., in \u2018vision as inverse graphics\u2019, only a generative model is specified in advance and prediction is treated as an inference problem, which is then solved using MCMC or message passing at test-time. These models range from highly specified [17, 16], to partially specified [28, 24, 25], to largely unspecified [22]. Inference is very challenging and almost always the bottle-neck in model design.\nSeveral works exploit data-driven predictions to empower the \u2018vision as inverse graphics\u2019 paradigm [5, 7]. For instance, in PICTURE [11], the authors use a deep network to distill the results of slow MCMC, speeding up predictions at test-time. Variational auto-encoders [21, 9] and their discrete counterparts [18] made the important contribution of showing how the gradient computations for learning of amortized inference and generative models could be interleaved, allowing both to be learned simultaneously in an end-to-end fashion (see also [23]). Works like that of [12] aim to learn disentangled representations in an auto-encoding framework using special network structures and / or careful training schemes. It is also worth noting that attention mechanisms in neural networks have been studied in discriminative and generative settings, e.g., [19, 6, 3].\nAIR draws upon, extends and links these ideas. By its nature AIR is also related to the following problems: counting [14, 27], pondering [2], and gradient estimation through renderers [15]. It is the combination of these elements that unlocks the full capabilities of the proposed approach."
+        },
+        {
+            "heading": "5 Discussion",
+            "text": "In this paper our aim has been to learn unsupervised models that are good at scene understanding, in addition to scene reconstruction. We presented several principled models that learn to count, locate, classify and reconstruct the elements of a scene, and do so in a fraction of a second at test-time. The main ingredients are (a) building in meaning using appropriate structure, (b) amortized inference that is attentive, iterative and variable-length, and (c) end-to-end learning.\nWe demonstrated that model structure can provide an important inductive bias that gives rise to interpretable representations that are not easily learned otherwise. We also showed that even for sophisticated models or renderers, fast inference is possible. We do not claim to have found an ideal model for all images; many challenges remain, e.g., the difficulty of working with the reconstruction loss and that of designing models rich enough to capture all natural factors of variability.\nLearning in AIR is most successful when the variance of the gradients is low and the likelihood is well suited to the data. It will be of interest to examine the scaling of variance with the number of objects and alternative likelihoods. It is straightforward to extend the framework to semi- or fully-supervised settings. Furthermore, the framework admits a plug-and-play approach where existing state-of-the-art detectors, classifiers and renderers are used as sub-components of an AIR inference network. We plan to investigate these lines of research in future work."
+        },
+        {
+            "heading": "A Stochastic Gradient Estimators",
+            "text": "In this section, we give further details behind the equations in Sec. 2. We simplify notation by not referencing the model parameters \u03b8 and considering a single latent z at a time. Assume we have a function `(z) and distribution q\u03c6(z); we wish to estimate\u2207\u03c6E[`(z)].\nA.1 Reparameterization trick\nAs per the main body, we supposed the existence of a differentiable function h and random variable \u03be with fixed noise distribution p\u03be(\u00b7) such that h(\u03be, \u03c6) \u223c q\u03c6(\u00b7). It follows that:\n\u2202\n\u2202\u03c6 Ez\u223cq\u03c6 [`(z)] =\n\u2202\n\u2202\u03c6 E\u03be\u223cp\u03be [`(h(\u03be, \u03c6))] =E\u03be\u223cp\u03be [ \u2202\n\u2202\u03c6 `(h(\u03be, \u03c6)) ] =E\u03be\u223cp\u03be [ \u2202`\n\u2202z\n\u2202h\n\u2202\u03c6 ] =Ez\u223cq\u03c6 [ \u2202`\n\u2202z\n\u2202h\n\u2202\u03c6 ] \u2248\u2202`(z)\n\u2202z\n\u2202h(\u03be, \u03c6)\n\u2202\u03c6 . (3)\nIn other words, an estimate of the gradient can be recovered by forwarding sampling the model by using the reparameterization given by h, and backpropagating normally through h.\nA.2 Likelihood ratio estimator\nThe likelihood ratio method simply uses the equality:\n\u2202 log q\u03c6(z)\n\u2202\u03c6 =\n\u2202q\u03c6(z)\n\u2202\u03c6\nq\u03c6(z) (4)\nto rewrite an integral as an expectation. Assuming that \u2202q\u03c6(z)\u2202\u03c6 exists and is continuous, we have:\n\u2202\n\u2202\u03c6\n\u222b q\u03c6(z)`(z)\u2202z = \u222b z \u2202q\u03c6(z) \u2202\u03c6 q\u03c6(z)dz\n= \u222b z \u2202 log `\u03c6(z) \u2202\u03b8 `\u03c6(z)`(z)dz\n= Eq\u03c6(z) [ \u2202 log q\u03c6(z)\n\u2202\u03c6 `(z) ] \u2248 \u2202 log q\u03c6(z)\n\u2202\u03c6 `(z). (5)\nNote that if `(z) is a constant with respect to z, then the expression is clearly 0, since the integral evaluates to the same constant."
+        },
+        {
+            "heading": "B Prior for Unary Encoding",
+            "text": "Recall that we can encode the number of objects n as a variable length unary code vector zpres defined by zipres = 1 for i \u2264 n, and zn+1pres = 0 (more generally, it can be useful to implicitly define zjpres = 0, for j > n). Consider an arbitrary distribution p(\u00b7) over n, and denote \u00b5\u2265n = \u2211 k\u2265n p(k) the probability that there are at least n objects. We define a joint probability distribution for zpres and show it is consistent with p(n).\nLet p(zipres = 1|zi\u22121pres ) = zi\u22121pres \u00b5\u2265i \u00b5\u2265(i\u22121) for i \u2265 2, and p(z1pres) = \u00b5\u22651. Note that if zipres = 0 for any i, it follows immediately that zjpres = 0 for j \u2265 i. The sampled vector is therefore a correct unary code. Furthermore,\nP (max{i : zipres = 1} = n) = P (z1pres = 1, z 2 pres = 1, . . . , z n pres = 1, z n+1 pres = 0)\n= ( n\u220f i=1 P (zipres = 1|zi\u22121pres = 1) ) P (zn+1pres = 0|znpres = 1)\n= \u00b5\u22651 \u00d7 \u00b5\u22652 \u00b5\u22651 \u00d7 \u00b5\u22653 \u00b5\u22652 . . . \u00b5\u2265n \u00b5\u2265(n\u22121) \u00d7 ( 1\u2212 \u00b5\u2265(n+1) \u00b5\u2265n ) = \u00b5\u2265n \u2212 \u00b5\u2265(n+1) = p(n)\nIt follows that for zpres following the distribution specified above, the corresponding maximum index is distributed according to p(n) as desired."
+        },
+        {
+            "heading": "C Details of 2D Experiments",
+            "text": "All experiments were performed with a batch size of 64. Inference networks and decoders were trained using a learning rate of 10\u22124 and baselines were trained using a higher learning rate of 10\u22123. LSTMs had 256 cell units and object appearances were coded with 50 units. Images were normalized to hold values between 0 and 1 and the likelihood function was a Gaussian with fixed standard deviation equal to 0.3. The prior p(n) was fixed to a geometric distribution which favors sparse reconstructions."
+        },
+        {
+            "heading": "D Details of the DAIR Network",
+            "text": "We assume that the renderer likelihood px(x|z1, z2, . . . , zi) has a link function I which maps a sufficient statistic hi to the mean; hi can be iteratively updated from hi\u22121 and zi\u22121. this is the case for instance for Gaussian and Bernoulli distributions (where hi is respectively taken to be the mean and log-odds of the distribution). In DAIR, we use the error \u2206xi between the partial reconstruction I(hi\u22121) and the data x as inputs to a feed-forward neural network which predicts zi, zipres. DAIR can be thought of as a special case of AIR with additional structure; namely, the recurrent aspect of AIR is fixed to become a canvas-reconstruction network; see Fig. 8 for more details."
+        },
+        {
+            "heading": "E Details of AIR vs. CNN vs. CAE vs. DRAW Experiments",
+            "text": "The convolutional neural network uses a 64\u00d7(5\u00d75)-64\u00d7(5\u00d75)-64\u00d7(5\u00d75)-512 architecture.\nThe convolutional autoencoder uses a sequence of 3 64\u00d7 (6\u00d7 6) (for slightly increased performance over 5\u00d75 filters) convolutions with 2\u00d72 max-pooling layers for the encoding, and 3 full convolutions (of the same sizes) and a 2\u00d7 2 nearest neighbor upsampler for the deconvolution. The embeddings created by AIR, DRAW, or CAE are fed through a 4-layer network (each with 512 units) to produce the 19-way prediction of the sum or a 2-way prediction of the order."
+        },
+        {
+            "heading": "F DRAW Comparisons",
+            "text": "We compare AIR and DAIR to a state of the art DRAW network with 40 drawing steps with 4 latent units per time step, 400 LSTM hidden units, spatial transformer [6] attention module, and single read and write heads of size 16 \u00d7 16. We report free energy on two test sets: a test dataset with 0, 1 or 2 digits, and another with images with precisely 3 digits. The likelihood model was in all cases Gaussian with fixed standard deviation of 0.3. DRAW outperforms AIR and DAIR on the 0/1/2 dataset; this is likely due to the fact that DRAW uses many more drawing steps (40) than AIR and thus has an excellent statistical model of single digits. DRAW however does not conceptually understand them as distinct units, as evidenced by its poor generalization on the 3-digits dataset, where DAIR has both better score, and more meaningful reconstruction: DAIR partially generalizes to a number of digit never seen (Fig. 4), while DRAW interestingly learns to perfectly ignore exactly one digit in the image (see Fig. 4). More generally, the VAE subroutine present in AIR could be replaced by a DRAW network, thus leading to a \u2018best of both worlds\u2019 model with excellent single digit model and understanding of a scene in terms of its constituent parts."
+        },
+        {
+            "heading": "G Omniglot Experiments",
+            "text": "We also investigate the behavior of AIR on the Omniglot dataset [13] which contains 1623 different handwritten characters from 50 different alphabets. Each of the 1623 characters was drawn online via Amazon\u2019s Mechanical Turk by 20 people. This means that the data was produced according a process\n(pen strokes) that is not directly reflected in the structure of our generative model. It is therefore interesting to examine the outcome of learning under mis-specification. We train the model from the previous section, this time allowing for a maximum of up to 4 inference time-steps per image. Fig. 9 shows that by using different numbers of time-steps to describe characters of varying complexity, AIR discovers a representation consisting of spatially coherent elements resembling strokes, despite not exploiting stroke labels in the data or building in the physics of strokes, in contrast with [13]. Further results can be found in the supplementary video."
+        },
+        {
+            "heading": "H Sprites Experiments",
+            "text": "We also consider a 50\u00d750 dataset of sprites: red circles, green squares and blue diamonds. Each image in the dataset contains zero, one or two sprites (see Fig. 10a). The images are composed additively (sprites do not occlude each other). We use the exact same model structure as for the multi-MNIST dataset.\nAt the end of unsupervised training, AIR successfully learns about the underlying causes of the scenes (namely, the sprites), as well as their counts and locations, and also produces convincing reconstructions (see Fig. 10b). Note that the inference network correctly detects the correct number of sprites even when two overlapping sprites of the same type and color appear in the same image (Fig. 10a,b, images 1 and 3). Also note that the reconstructions are accurate, meaning that the inference network successfully produces the codes for each sprite despite the presence of the other sprites in its field of view. Fig. 10c displays a collection of samples from the model after training. We display quantitative evaluation of the network\u2019s counting accuracy in Fig. 11, reconstructions over the course of learning in Fig. 12, and a visualization of its scanning policy in Fig. 13.\nNote that these tasks can only be successfully achieved once the inference network has learned a sensible policy for scanning the image, e.g., one in which every object is attended to only once. However the network must break multiple symmetries to achieve this, e.g., it does not matter which object it explains first. In Fig. 13 we visualize the learned scanning policy for 3 different runs of training (only differing in the random seed). In each case a unique policy is learned, and the policy appears to be spatial (as opposed to one that is based on digit identity or size)."
+        },
+        {
+            "heading": "I Details of 3D Scene Experiments",
+            "text": "The experiments in section 3.2 were performed using the rendering capabilities of the MuJoCo physics simulator [26].\nI.1 Gradient estimation\nDifferentiation of MuJoCo\u2019s graphics engine was performed using forward finite-differencing (with a constant = 10\u22124) with respect to the scene configuration. This is a generic procedure which would work for any graphics engine; we chose MuJoCo because it is fast (using only the fixed functionality of OpenGL) and because scenes are conveniently parameterized. Interestingly, despite the coarse 8-bit output of OpenGL, quantization errors appeared to average out reasonably well over the pixels.\nI.2 Scene generation\nSingle object scenes: For the results shown in Fig. 6 we created a scene that contained a MuJoCo box geom representing the table, 3 \u2018objects\u2019 (also in the form of MuJoCo geoms; cube, sphere, textured cylinder), and a fixed camera. The objects could be moved in the plane of the table and rotated along the axis orthogonal to it (i.e. 3 degrees of freedom per object). We created random scenes containing at most one object by randomly sampling position, rotation angle, object presence (visibility) and object type. (Geoms were made invisible by moving them out of the field of view of the camera.) An illustration is shown in Fig. 14.\nTabletop scenes: For the results shown in Fig. 6 and 7 we used scenes with a box geom for the table, and nine mesh geoms for the crockery items. The cup, pan, and plate were each replicated three times to allow for arbitrary three-objects scenes. Each geom had three degrees of freedom (position in the table plane and rotation). Random scenes with up to N = 3 objects were created by uniformly\nsampling position, rotation angle, object presence, and object type three times. As for the single objects were rendered invisible by moving them outside of the field of view of the camera.\nWe experimented with two versions of the scene: one with a fixed camera, and one version where the camera could be moved in an orbit around the table (i.e. one degree of freedom). We discuss the experiment with the fixed camera in the main text. For the latter set of scenes, the camera position was also chosen randomly and the image was rendered from the random camera position. Camera movement was restricted to \u00b1 40 degrees from the central position. In this experiment the model had to learn to infer the camera position in addition to the objects on the table. The montage in Fig. 7 in the main text shows a ground truth scene (with camera) and the inferred identities and positions of the objects as well as the inferred position of the camera. We show several examples of random scenes with variable camera and the associated inferences in Fig. 15. For the most part the network infers all scene parameters reliably.\nImage preprocessing: We rendered all scene images at 128\u00d7 128 pixels. We down-sampled scene images to 32 \u00d7 32 pixels for input to the network.\nI.3 Model\nWe trained a network to perform inference in the following fixed generative model:\np(x, z1:Npres , z 1:N where, z 1:N what) = (6)\np(x|z1:Npres , z1:Nwhere, z1:Nwhat) N\u220f i=1 p(zipres)p(z i what)p(z i where),\nwhere zipres is the visibility indicator: z i pres \u223c Bernoulli(\u03b1) for object i; zwhere \u2208 R3 indicates position and rotation angle: ziwhere \u223c N (0,\u03a3where); and ziwhat is a three-valued discrete variable indicating the object type (mesh / geom type): ziwhat \u223c Discrete(\u03b2). The marginal distribution over scenes under this model is the same as the marginal distribution under a model of form described in Section 2 in the main text where p(n) = Binomial(N,\u03b1) and n = \u2211N i=1 zi.\nFor the variable camera scenes the model included an additional random variable zcam \u2208 R where zcam \u223c N (0, \u03c32cam). To evaluate the likelihood term p(x|z) we (1) render the scene description using the MuJoCo rendering engine to produce a high-resolution image y; (2) blur the resulting image y as well as x using a fixed-with blur kernel; (3) compute N (x|y, I\u03c32x).\nI.4 Network\nThe AIR inference network for our experiments is a standard recurrent network (no LSTM) that is run for a fixed number of steps (N = 1 or N = 3). In each step the network computes:\n(\u03c9ipres, \u03c9 i what, \u03c9 i where,h i) = R(x, zi\u22121pres , z i\u22121 what, z i\u22121 where,h i\u22121),\nwhere the \u03c9i represent the parameters of the sampling distributions for the random variables: Bernoulli for zpres; Discrete for zwhat; and Gaussian for zwhere. For the experiments with random camera angle we use a separate network that computes \u03c9cam = F (x) and we provide the sampled camera angle as additional input to R at each time step.\nI.5 Supervised learning\nFor the baselines trained in a supervised manner we use the ground truth scene variables z1:Npres , z 1:N where, z 1:N what that underly the training scene images as labels and train a network of the same form as the inference network to maximize the conditional log likelihood of the ground truth scene variables given the image.\nJ Inference Speed\nFor the MNIST experiments, upon completion of training each inference step takes 5.6 milliseconds on average to execute on an Nvidia Quadro K4000 GPU (a step corresponds to inference of state for a single object), in other words up to around 17 milliseconds per image for images of 3 digits. Therefore running at around 59 frames per second, inference is significantly faster than real-time.\nFor 3D scenes, the equivalent numbers are around 2.3 milliseconds per step and 8 milliseconds per image (due to absence of spatial transformers) on a CPU. Gradient-based optimization is slower, taking 5 milliseconds per gradient step per object, and tens or hundreds of steps per image, depending on the choice of optimizer.\nTraining for the MNIST model converges in around 2 days, and in around 3 days for the 3D scenes."
+        }
+    ],
+    "title": "Attend, Infer, Repeat: Fast Scene Understanding with Generative Models",
+    "year": 2016
+}

@@ -1,0 +1,248 @@
+{
+    "abstractText": "This paper presents a significant improvement for the synthesis of texture images using convolutional neural networks (CNNs), making use of constraints on the Fourier spectrum of the results. More precisely, the texture synthesis is regarded as a constrained optimization problem, with constraints conditioning both the Fourier spectrum and statistical features learned by CNNs. In contrast with existing methods, the presented method inherits from previous CNN approaches the ability to depict local structures and fine scale details, and at the same time yields coherent large scale structures, even in the case of quasi-periodic images. This is done at no extra computational cost. Synthesis experiments on various images show a clear improvement compared to a recent state-of-the art method relying on CNN constraints only.",
+    "authors": [
+        {
+            "affiliations": [],
+            "name": "Gang Liu"
+        },
+        {
+            "affiliations": [],
+            "name": "Yann Gousseau"
+        },
+        {
+            "affiliations": [],
+            "name": "Gui-Song Xia"
+        }
+    ],
+    "id": "SP:a6a9dad014f29c6f8eb19f4dfa1461bf207c4a29",
+    "references": [
+        {
+            "authors": [
+                "G.R. Cross",
+                "A.K. Jain"
+            ],
+            "title": "Markov random field texture models",
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence, no. 1, pp. 25\u201339, 1983.",
+            "year": 1983
+        },
+        {
+            "authors": [
+                "B. Julesz"
+            ],
+            "title": "Visual pattern discrimination",
+            "venue": "IRE Transactions on Information Theory, vol. 8, no. 2, pp. 84\u201392, 1962.",
+            "year": 1962
+        },
+        {
+            "authors": [
+                "D.J. Heeger",
+                "J.R. Bergen"
+            ],
+            "title": "Pyramid-based texture analysis/synthesis",
+            "venue": "Proceedings of the 22nd annual conference on Computer graphics and interactive techniques, pp. 229\u2013238, ACM, 1995.",
+            "year": 1995
+        },
+        {
+            "authors": [
+                "J. Portilla",
+                "E.P. Simoncelli"
+            ],
+            "title": "Aparametric texture model based on joint statistics of complex wavelet coefficients",
+            "venue": "International Journal of Computer Vision, vol. 40, no. 1, pp. 49\u201371, 2000.",
+            "year": 2000
+        },
+        {
+            "authors": [
+                "B. Galerne",
+                "Y. Gousseau",
+                "J.-M. Morel"
+            ],
+            "title": "Random phase textures: Theory and synthesis",
+            "venue": "IEEE Transactions on Image Processing, vol. 20, no. 1, pp. 257\u2013267, 2011.",
+            "year": 2011
+        },
+        {
+            "authors": [
+                "G.-S. Xia",
+                "S. Ferradans",
+                "G. Peyr\u00e9",
+                "J. Aujol"
+            ],
+            "title": "Synthesizing and mixing stationary gaussian texture models",
+            "venue": "SIAM J. Imaging Sciences, vol. 7, no. 1, pp. 476\u2013508, 2014.",
+            "year": 2014
+        },
+        {
+            "authors": [
+                "G. Tartavel",
+                "Y. Gousseau",
+                "G. Peyr\u00e9"
+            ],
+            "title": "Variational Texture Synthesis with Sparsity and Spectrum Constraints",
+            "venue": "Journal of Mathematical Imaging and Vision, vol. 52, pp. 124\u2013144, may 2015.",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "A.A. Efros",
+                "T.K. Leung"
+            ],
+            "title": "Texture synthesis by non-parametric sampling",
+            "venue": "The Proceedings of the Seventh IEEE International Conference on Computer Vision, vol. 2, no. September, pp. 1033\u20131038, 1999.",
+            "year": 1999
+        },
+        {
+            "authors": [
+                "L.-Y. Wei",
+                "M. Levoy"
+            ],
+            "title": "Fast texture synthesis using tree-structured vector quantization",
+            "venue": "Proceedings of the 27th annual conference on Computer graphics and interactive techniques, pp. 479\u2013488, 2000.",
+            "year": 2000
+        },
+        {
+            "authors": [
+                "S. Lefebvre",
+                "H. Hoppe"
+            ],
+            "title": "Parallel controllable texture synthesis",
+            "venue": "ACM Transactions on Graphics, vol. 24, no. 3, p. 777, 2005.",
+            "year": 2005
+        },
+        {
+            "authors": [
+                "C. Aguerrebere",
+                "Y. Gousseau",
+                "G. Tartavel"
+            ],
+            "title": "Exemplar-based texture synthesis: the efros-leung algorithm",
+            "venue": "Image Processing On Line, vol. 2013, pp. 223\u2013241, 2013.",
+            "year": 2013
+        },
+        {
+            "authors": [
+                "L. Raad",
+                "A. Desolneux",
+                "J.-M. Morel"
+            ],
+            "title": "Conditional gaussian models for texture synthesis",
+            "venue": "Scale Space and Variational Methods in Computer Vision, pp. 474\u2013485, Springer, 2015.",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "J. Dai",
+                "Y. Lu",
+                "Y.-N. Wu"
+            ],
+            "title": "Generative Modeling of Convolutional Neural Networks",
+            "venue": "arxiv, dec 2014.",
+            "year": 2014
+        },
+        {
+            "authors": [
+                "L. Gatys",
+                "A.S. Ecker",
+                "M. Bethge"
+            ],
+            "title": "Texture synthesis using convolutional neural networks",
+            "venue": "Advances in Neural Information Processing Systems, pp. 262\u2013270, 2015.",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Y. Lu",
+                "S.-c. Zhu",
+                "Y.N. Wu"
+            ],
+            "title": "Exploring Generative Perspective of Convolutional Neural Networks by Learning Random Field Models.",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "D. Ulyanov",
+                "V. Lebedev",
+                "A. Vedaldi",
+                "V. Lempitsky"
+            ],
+            "title": "Texture Networks: Feed-forward Synthesis of Textures and Stylized Images",
+            "venue": "tech. rep., mar 2016.",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "B. Galerne",
+                "Y. Gousseau",
+                "J.-M. Morel"
+            ],
+            "title": "Micro-texture synthesis by phase randomization",
+            "venue": "Image Processing On Line, vol. 1, 2011.",
+            "year": 2011
+        },
+        {
+            "authors": [
+                "K. Simonyan",
+                "A. Zisserman"
+            ],
+            "title": "Very deep convolutional networks for large-scale image recognition",
+            "venue": "arXiv preprint arXiv:1409.1556, 2014.",
+            "year": 2014
+        },
+        {
+            "authors": [
+                "M. Cimpoi",
+                "S. Maji",
+                "A. Vedaldi"
+            ],
+            "title": "Deep filter banks for texture recognition and segmentation",
+            "venue": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 3828\u20133836, 2015.",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "C. Zhu",
+                "R.H. Byrd",
+                "P. Lu",
+                "J. Nocedal"
+            ],
+            "title": "L-bfgs-b: Fortran subroutines for large scale bound constrained optimization",
+            "venue": "Report NAM-11, EECS Department, Northwestern University, 1994.",
+            "year": 1994
+        }
+    ],
+    "sections": [
+        {
+            "text": "I. INTRODUCTION\nA large body of works has been dedicated over the last 30 years to the task of texture synthesis and more precisely to the task of generating new but perceptually similar images from a given exemplar. Parametric Markov models were among the first to be investigated for such tasks [1]. Then, many methods were developed relying on the idea, inspired by the works of Julesz [2], that realistic textures could be obtained by constraining a well chosen set of image statistics: wavelet marginals [3], joint statistics of wavelet coefficients [4], Fourier spectrum [5], [6] or the distribution of sparse representation coefficients [7]. A completely different approach is provided by patch-based, non-parametric methods that have been largely studied after the initial works of [8] and [9]. Here, the basic idea is to generate a new texture by iteratively sampling patches from the exemplar, see e.g. [10] for a review. These methods enable realistic results even on highly structured textures, at the price of very limited innovation capacity, see e.g. [11]. Recently, the work from [12] renewed this type of methods by promoting the use of parametric distributions for patches.\nRecently, several synthesis methods based on convolutional neural networks (CNNs) have been proposed and shown to yield state-of-the art results [13]\u2013[16]. Indeed, these methods are able to generate perceptually satisfying results on complex textures without producing piecewise recopy of the exemplar. The idea, in order to generate new textures, is to constrain some statistics of convolutional networks initially introduced for image classification. In [14], [16], a non-parametric approach is proposed through the correlation matrices of filter responses (named feature maps), as we will see in more details later. In [13], [15], a MRF model is learned from the feature\nmaps. One limitation of these approaches, however, is the difficulty to efficiently account for large scale regularity, see e.g. Fig. 1 for an illustration.\nIn this work, we propose to incorporate some low frequency constraints into the CNN approach, in order to allow the synthesis of textures having large scale regularity. In particular, this will allow the synthesis of quasi-periodic textures such as brick wall or object alignments. In order to do this, we draw on previous works on texture synthesis [5], [17] that have shown the interest and easiness of using spectrum constraints for synthesizing textures. We therefore combine spectrum and feature maps constraint through the definition of a new loss function, allowing the reproduction of both fine scale details and large scale regular structures. The combination of these two types of constraints is illustrated in Fig. 1.\nThe remainder of the paper is organized as follows. In Sec.II we briefly recall how to use CNNs to synthesize textures. We then explain how to incorporate frequency control\nar X\niv :1\n60 5.\n01 14\n1v 3\n[ cs\n.C V\n] 1\n9 M\nay 2\n01 6\ninto this framework in Sec.III. Eventually, we experimentally show the interest of the approach in Sec.IV.\nII. TEXTURE SYNTHESIS BY CNNS"
+        },
+        {
+            "heading": "A. Convolution neural network",
+            "text": "A convolution neural network (CNN) is a feed-forward artificial neural network whose neurons process overlapping regions of the input, generally an image. Parameters of such networks are usually learned using a back-propagated algorithm from a large number of annotated inputs. The network VGG-19, proposed in [18], is one of the CNN trained with the ImageNet dataset and has proven to be efficient in describing texture images with only convolution layers [19]. Neglecting the latter fully connected layers, the network contains 16 linearly rectified convolution layers and 5 pooling layers. Notice that for the task of texture synthesis, according to [14], the max-pooling strategy may be replaced by average-pooling for improving the gradient flow and obtaining slightly cleaner results."
+        },
+        {
+            "heading": "B. Texture model",
+            "text": "In order to use CNNs for texture synthesis, it was first proposed in [14] to constrain the statistics of feature maps. Inspired by Portilla and Simoncelli [4], important statistics are provided by correlations between the feature maps corresponding to different filters.\nGiven a texture exemplar I \u2208 RN , where N is the number of pixels in the image, we first input I to the CNN to calculate the feature maps at each convolution layer. Suppose there are ml neurons at l-th convolution layer, the extracted feature map is denoted by f l \u2208 Rml\u00d7Nl , with Nl as the number of stimuli. Note that at the first convolution layer, Nl = N .\nAfter obtaining the feature map f l at the l-th layer, the correlation matrix Gl \u2208 Rml\u00d7ml [14] is computed as\nGlp,q = Nl\u2211 i=1 f lp(i) \u00b7 f lq(i), (1)\nwhere p, q denote the index of feature map corresponding to the filter p, q \u2208 {1, \u00b7 \u00b7 \u00b7 ,ml}.\nThe set of correlation matrices {G1, G2, \u00b7 \u00b7 \u00b7 , GL} from the different layers are used to model the texture [14] and to constrain the synthesis of new texture images."
+        },
+        {
+            "heading": "C. Texture generation",
+            "text": "As proposed in [14], new texture samples are generated by starting from a white noise image and by iteratively imposing the previously defined correlation matrices, using gradient descent. Fig. 2 shows the flowchart of this algorithm.\nGiven an image I\u0302 initialized by white noise, its feature maps f\u0302 l are computed at each layer of the CNN, as well as the correlation matrix G\u0302l. A loss function at layer l is then defined as the difference between the correlation matrices of the generated image and the reference one:\nEl = 1\n4N2l m 2 l ml\u2211 p=1 ml\u2211 q=1 \u2016Glp,q \u2212 G\u0302lp,q\u20162. (2)\nThe derivative of this loss function is computed as\n\u2202El\n\u2202f\u0302 lp(i) =\n1\nN2l m 2 l ml\u2211 q=1 f lq(i) \u00b7 (Glp,q \u2212 G\u0302lp,q). (3)\nNote that this equation does not include a positive part as in [14], because the feature maps are always positive after the rectified linear transform. Combining these layers, a total loss function is defined as\nLcnn(I, I\u0302) = L\u2211\nl=0\nwlEl, (4)\nwhere wl denotes the weight of loss at layer l. With the derivative given by Eq.(3), a back-propagation (BP) algorithm can be applied to propagate the error from layer l to layer l \u2212 1, which is illustrated in red line in Fig.2. Then, at each layer, the loss (or error) includes two aspects: the derivative of the current layer by Eq. 3 and the propagated error from the later layer. At any given layer in the network, we can obtain the propagated data error, denoted here by \u2206cnn. A solution is then computed using the L-BFGS algorithm [20], from the initialized image I\u0302 and the back-propagated error \u2206cnn.\nIII. TEXTURE SYNTHESIS BY CNNS WITH SPECTRUM CONSTRAINT\nEven though texture synthesis using CNN yields impressive results in many cases, it still suffers from several shortcomings. One of them is the difficulty to accurately reproduce regularity at large scales, typically low-frequency structures. This is illustrated in Fig.3. In this figure, the left column shows the original images and the right column displays the synthesized images, where large scales are not correctly handled. One possible reason for this is that the size of the convolutional filters in VGG-19 are 3\u00d73\u00d7Nl, which are too small to depict the large structures. Another possible reason is that the number of layers of this network does not allow the handling of very large scale. Nevertheless in our experiments, neither increasing the filter size (this was tested using VGG-m [21] and 7 \u00d7 7 filters) or increasing the number of layers did solve this issue. In this contribution, we show that enriching the loss function of the CNN with a term constraining the Fourier spectrum of the image solves this issue in many cases."
+        },
+        {
+            "heading": "A. Spectrum constraint",
+            "text": "It was shows in [5], [6], [17] that a large set of textures (the so-called micro-textures) may be reproduced simply by imposing the Fourier spectrum of the outputs and letting their Fourier phases be chosen at random. In a different direction, this constraint was used for enabling low frequency structures in sparsity-based texture synthesis [7], in a variational framework. We here follow a similar path by constraining the loss function in the CNN-based approach. In what follows, we write F(I) for the Discrete Fourier Transform (DFT) of an image I and F\u22121 for the inverse DFT.\nIn order to illustrate the Fourier representation of low frequency, quasi-periodic structures, Fig.4 shows the amplitude of the DFT of two images, from which strong peaks can be observed.\nGiven an image I , we write EI for the set of images having the same spectrum (modulus of the Fourier transform) as I . Simple computations show that the projection of any given image I\u0302 on EI (that is, the image from EI being closest to I\u0302) is given by\nI\u0303 = F\u22121 ( F(I\u0302) \u00b7 F(I)\u2217\n|F(I\u0302) \u00b7 F(I)\u2217| \u00b7 F(I)\n) , (5)\nwhere F(I)\u2217 denotes the conjugate of F(I). For color images, the phase of the gray level image is first computed, and then imposed to each color channel."
+        },
+        {
+            "heading": "B. Texture synthesis by CNNs with spectrum constraint",
+            "text": "In order to constrain both the statistics of the feature maps and the spectrum of the results, we add in the loss function of the CNN an additional term, obtained from the distance of the current image I\u0302 to the space EI corresponding to some reference texture I . We write d(I\u0302 , EI) for this term, then its gradient is simply computed as I\u0302 \u2212 I\u0303 , where I\u0303 is computed\nfollowing Eq.(5). Therefore, the gradient term of the CNN is written as\n\u2206spe = I\u0302 \u2212 I\u0303 , (6)\ncorresponding to the loss function\nLspe = 1\n2 d(I\u0302 , EI)2, (7)\nwhere as before I is the reference texture.\nThe final loss function and gradient of the CNN are simply obtained as\nL = LCNN + \u03b2Lspe, (8) \u2206 = \u2206CNN + \u03b2\u2206spe. (9)\nThe L-BFGS algorithm is then applied to synthesize a new texture image.\nIV. RESULTS AND ANALYSIS"
+        },
+        {
+            "heading": "A. Experimental setup",
+            "text": "Following [14], the following layers of the convolution neural network are used: \u2019Conv1 1\u2019, \u2019Pooling1\u2019, \u2019Pooling2\u2019, \u2019Pooling3\u2019, \u2019Pooling4\u2019. The corresponding weights are set to be w1 = w2 = w3 = w4 = w5 = 109. For the spectrum constraint, we use \u03b2 = 105. For the experiments of this paper, we use CG texture samples1 as input. All the images are rescaled first, as in [14]."
+        },
+        {
+            "heading": "B. Texture synthesis results",
+            "text": "We illustrate the proposed approach by comparing it with the original CNN-based approach from [14]. This last approach is one of the state-of-the art approaches among methods that produce truly new images. In particular, and contrarily to most patch-based methods derived from [8] (see e.g. [11]), these methods (the one from [14], as well as the proposed one) do not produce results containing parts that are verbatim copied from the exemplars.\nIn Fig. 5, 6, 7, the left column displays the given texture exemplars, the middle shows the synthesized results using the CNN-based algorithm [14] and the right illustrates our results by combining the CNN model with a spectrum constraint.\nIn Fig. 5, from top to bottom are images of a checker board, two brick wall and a building with windows. All these have the particularity to present quasi-periodic structures. In the three first examples, we can see that the algorithm from [14] fail to preserve the large scale organization, which is correctly reconstructed when adding the spectrum constraint. The last example is more difficult. Although not totally satisfying, the proposed method increases the regularity of the result.\nFig. 6 shows synthesis results from Zellige tiles, made of complex decorative patterns. Although some defaults may appear in the global organization of the synthesized images, the combined use of Fourier spectrum constraints and CNN permits the reproduction of both the global patterns and the small scale details. Fig. 7 shows an example of failure, where the global structures are too complex to be reproduced by the proposed approach.\nAlthough we do not illustrate it here, it is also worth mentioning that in the cases where the original approach from [14] is sufficient, results are not degraded by adding the spectrum constraint.\nThe proposed approach has roughly the same complexity as the one from [14], the computation of the FFT being neglectable compared to CNN computations. Each experiment displayed in this paper took approximately 15 minutes using a 4 kernel CPU.\nV. CONCLUSION\nThis paper presents an effective improvement for the synthesis of textures using convolutional neural networks (CNNs), by incorporating a spectrum constraint in the loss function of the CNN. The generated texture images not only preserve local structures and fine scale details, but also preserve large\n1http://www.textures.com\nquasi-periodic structures. The experimental results prove that the spectrum constraint is a necessary complement for texture synthesis, especially for structured textures, at no additional computational cost.\nREFERENCES [1] G. R. Cross and A. K. Jain, \u201cMarkov random field texture models,\u201d\nIEEE Transactions on Pattern Analysis and Machine Intelligence, no. 1, pp. 25\u201339, 1983.\n[2] B. Julesz, \u201cVisual pattern discrimination,\u201d IRE Transactions on Information Theory, vol. 8, no. 2, pp. 84\u201392, 1962.\n[3] D. J. Heeger and J. R. Bergen, \u201cPyramid-based texture analysis/synthesis,\u201d in Proceedings of the 22nd annual conference on Computer graphics and interactive techniques, pp. 229\u2013238, ACM, 1995.\n[4] J. Portilla and E. P. Simoncelli, \u201cAparametric texture model based on joint statistics of complex wavelet coefficients,\u201d International Journal of Computer Vision, vol. 40, no. 1, pp. 49\u201371, 2000.\n[5] B. Galerne, Y. Gousseau, and J.-M. Morel, \u201cRandom phase textures: Theory and synthesis,\u201d IEEE Transactions on Image Processing, vol. 20, no. 1, pp. 257\u2013267, 2011.\n[6] G.-S. Xia, S. Ferradans, G. Peyre\u0301, and J. Aujol, \u201cSynthesizing and mixing stationary gaussian texture models,\u201d SIAM J. Imaging Sciences, vol. 7, no. 1, pp. 476\u2013508, 2014.\n[7] G. Tartavel, Y. Gousseau, and G. Peyre\u0301, \u201cVariational Texture Synthesis with Sparsity and Spectrum Constraints,\u201d Journal of Mathematical Imaging and Vision, vol. 52, pp. 124\u2013144, may 2015.\n[8] A. A. Efros and T. K. Leung, \u201cTexture synthesis by non-parametric sampling,\u201d The Proceedings of the Seventh IEEE International Conference on Computer Vision, vol. 2, no. September, pp. 1033\u20131038, 1999.\n[9] L.-Y. Wei and M. Levoy, \u201cFast texture synthesis using tree-structured vector quantization,\u201d Proceedings of the 27th annual conference on Computer graphics and interactive techniques, pp. 479\u2013488, 2000.\n[10] S. Lefebvre and H. Hoppe, \u201cParallel controllable texture synthesis,\u201d ACM Transactions on Graphics, vol. 24, no. 3, p. 777, 2005.\n[11] C. Aguerrebere, Y. Gousseau, and G. Tartavel, \u201cExemplar-based texture synthesis: the efros-leung algorithm,\u201d Image Processing On Line, vol. 2013, pp. 223\u2013241, 2013.\n[12] L. Raad, A. Desolneux, and J.-M. Morel, \u201cConditional gaussian models for texture synthesis,\u201d in Scale Space and Variational Methods in Computer Vision, pp. 474\u2013485, Springer, 2015.\n[13] J. Dai, Y. Lu, and Y.-N. Wu, \u201cGenerative Modeling of Convolutional Neural Networks,\u201d arxiv, dec 2014.\n[14] L. Gatys, A. S. Ecker, and M. Bethge, \u201cTexture synthesis using convolutional neural networks,\u201d in Advances in Neural Information Processing Systems, pp. 262\u2013270, 2015.\n[15] Y. Lu, S.-c. Zhu, and Y. N. Wu, \u201cExploring Generative Perspective of Convolutional Neural Networks by Learning Random Field Models.\u201d 2016.\n[16] D. Ulyanov, V. Lebedev, A. Vedaldi, and V. Lempitsky, \u201cTexture Networks: Feed-forward Synthesis of Textures and Stylized Images,\u201d tech. rep., mar 2016.\n[17] B. Galerne, Y. Gousseau, and J.-M. Morel, \u201cMicro-texture synthesis by phase randomization,\u201d Image Processing On Line, vol. 1, 2011.\n[18] K. Simonyan and A. Zisserman, \u201cVery deep convolutional networks for large-scale image recognition,\u201d arXiv preprint arXiv:1409.1556, 2014.\n[19] M. Cimpoi, S. Maji, and A. Vedaldi, \u201cDeep filter banks for texture recognition and segmentation,\u201d in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 3828\u20133836, 2015.\n[20] C. Zhu, R. H. Byrd, P. Lu, and J. Nocedal, \u201cL-bfgs-b: Fortran subroutines for large scale bound constrained optimization,\u201d Report NAM-11, EECS Department, Northwestern University, 1994.\n[21] K. Chatfield, K. Simonyan, A. Vedaldi, and A. Zisserman, \u201cReturn of the devil in the details: Delving deep into convolutional nets,\u201d in British Machine Vision Conference, 2014."
+        }
+    ],
+    "title": "Texture Synthesis Through Convolutional Neural Networks and Spectrum Constraints",
+    "year": 2016
+}

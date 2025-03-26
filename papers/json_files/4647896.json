@@ -1,0 +1,258 @@
+{
+    "abstractText": "The recently introduced continuous Skip-gram model is an ef fici nt method for learning high-quality distributed vector representation s that capture a large number of precise syntactic and semantic word relationships. I n this paper we present several extensions that improve both the quality of the vect ors and the training speed. By subsampling of the frequent words we obtain signifi ca t speedup and also learn more regular word representations. We also descr ib a simple alternative to the hierarchical softmax called negative sampling. An inherent limitation of word representations is their ind ifference to word order and their inability to represent idiomatic phrases. For exa mple, the meanings of \u201cCanada\u201d and \u201cAir\u201d cannot be easily combined to obtain \u201cAir C anada\u201d. Motivated by this example, we present a simple method for finding phrase s in t xt, and show that learning good vector representations for millions of p hrases is possible.",
+    "authors": [
+        {
+            "affiliations": [],
+            "name": "Tomas Mikolov"
+        },
+        {
+            "affiliations": [],
+            "name": "Ilya Sutskever"
+        }
+    ],
+    "id": "SP:c829b63a3ae72a47e1953e1295826c7b2f93bf50",
+    "references": [
+        {
+            "authors": [
+                "Yoshua Bengio",
+                "R\u00e9jean Ducharme",
+                "Pascal Vincent",
+                "Ch ristian Janvin"
+            ],
+            "title": "A neural probabilistic language model.The",
+            "venue": "Journal of Machine Learning Research ,",
+            "year": 2003
+        },
+        {
+            "authors": [
+                "Ronan Collobert",
+                "Jason Weston"
+            ],
+            "title": "A unified architecture fo natural language processing: deep neural networks with multitask learning",
+            "venue": "In Proceedings of the 25th international conference on Machin e learning,",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "Xavier Glorot",
+                "Antoine Bordes",
+                "Yoshua Bengio"
+            ],
+            "title": "Domai n daptation for large-scale sentiment classification: A deep learning approach",
+            "venue": "In ICML,",
+            "year": 2011
+        },
+        {
+            "authors": [
+                "Michael U Gutmann",
+                "Aapo Hyv\u00e4rinen"
+            ],
+            "title": "Noise-contrasti ve estimation of unnormalized statistical models, with applications to natural image statistics",
+            "venue": "The Journal of Machine Learning Research ,",
+            "year": 2012
+        },
+        {
+            "authors": [
+                "Tomas Mikolov",
+                "Stefan Kombrink",
+                "Lukas Burget",
+                "Jan Cerno cky",
+                "Sanjeev Khudanpur"
+            ],
+            "title": "Extensions of recurrent neural network language model",
+            "venue": "In Acoustics, Speech and Signal Processing (ICASSP),",
+            "year": 2011
+        },
+        {
+            "authors": [
+                "Tomas Mikolov",
+                "Anoop Deoras",
+                "Daniel Povey",
+                "Lukas Burget",
+                "Jan Cernocky"
+            ],
+            "title": "Strategies for Training Large Scale Neural Network Language Models",
+            "venue": "In Proc. Automatic Speech Recognition and Understanding,",
+            "year": 2011
+        },
+        {
+            "authors": [
+                "Tomas Mikolov"
+            ],
+            "title": "Statistical Language Models Based on Neu ral Networks.PhD thesis, PhD Thesis, Brno University of Technology",
+            "year": 2012
+        },
+        {
+            "authors": [
+                "Tomas Mikolov",
+                "Kai Chen",
+                "Greg Corrado",
+                "Jeffrey Dean"
+            ],
+            "title": "Efficient estimation of word representations in vector space",
+            "venue": "ICLR Workshop ,",
+            "year": 2013
+        },
+        {
+            "authors": [
+                "Tomas Mikolov",
+                "Wen-tau Yih",
+                "Geoffrey Zweig"
+            ],
+            "title": "Linguist ic Regularities in Continuous Space Word Representations",
+            "venue": "In Proceedings of NAACL HLT ,",
+            "year": 2013
+        },
+        {
+            "authors": [
+                "Andriy Mnih",
+                "Geoffrey E Hinton"
+            ],
+            "title": "A scalable hierarchi al distributed language model. Advances in neural information processing systems",
+            "year": 2009
+        },
+        {
+            "authors": [
+                "Andriy Mnih",
+                "Yee Whye Teh"
+            ],
+            "title": "A fast and simple algorithm for training neural probabilistic language models.arXiv preprint arXiv:1206.6426",
+            "year": 2012
+        },
+        {
+            "authors": [
+                "Frederic Morin",
+                "Yoshua Bengio"
+            ],
+            "title": "Hierarchical probab ilistic neural network language model. In Proceedings of the international workshop on artificial intell igence and statistics",
+            "year": 2005
+        },
+        {
+            "authors": [
+                "David E Rumelhart",
+                "Geoffrey E Hintont",
+                "Ronald J"
+            ],
+            "title": "Will iams. Learning representations by backpropagating",
+            "venue": "errors. Nature,",
+            "year": 1986
+        },
+        {
+            "authors": [
+                "Holger Schwenk"
+            ],
+            "title": "Continuous space language models",
+            "venue": "Computer Speech and Language ,",
+            "year": 2007
+        },
+        {
+            "authors": [
+                "Richard Socher",
+                "Cliff C. Lin",
+                "Andrew Y. Ng",
+                "Christop her D. Manning"
+            ],
+            "title": "Parsing natural scenes and natural language with recursive neural networks",
+            "venue": "In Proceedings of the 26th International Conference on Machine Learning (ICML) ,",
+            "year": 2011
+        },
+        {
+            "authors": [
+                "Richard Socher",
+                "Brody Huval",
+                "Christopher D. Manning",
+                "a nd Andrew Y. Ng"
+            ],
+            "title": "Semantic Compositionality Through Recursive Matrix-Vector Spaces",
+            "venue": "In Proceedings of the 2012 Conference on Empirical Methods in Natural Language Processing",
+            "year": 2012
+        },
+        {
+            "authors": [
+                "Joseph Turian",
+                "Lev Ratinov",
+                "Yoshua Bengio"
+            ],
+            "title": "Word rep resentations: a simple and general method for semi-supervised learning",
+            "venue": "In Proceedings of the 48th Annual Meeting of the Association fo r Computational Linguistics,",
+            "year": 2010
+        },
+        {
+            "authors": [
+                "Peter D. Turney",
+                "Patrick Pantel"
+            ],
+            "title": "From frequency to me aning: Vector space models of semantics",
+            "venue": "In Journal of Artificial Intelligence Research ,",
+            "year": 2010
+        },
+        {
+            "authors": [
+                "Peter D. Turney"
+            ],
+            "title": "Distributional semantics beyond word s: Supervised learning of analogy and paraphrase",
+            "venue": "In Transactions of the Association for Computational Linguis tics (TACL),",
+            "year": 2013
+        },
+        {
+            "authors": [
+                "Jason Weston",
+                "Samy Bengio",
+                "Nicolas Usunier"
+            ],
+            "title": "Wsabie : Scaling up to large vocabulary image annotation. InProceedings of the Twenty-Second international joint conf erence on Artificial Intelligence-Volume Volume Three",
+            "year": 2011
+        }
+    ],
+    "sections": [
+        {
+            "text": "The recently introduced continuous Skip-gram model is an effici nt method for learning high-quality distributed vector representations that capture a large number of precise syntactic and semantic word relationships. In this paper we present several extensions that improve both the quality of the vectors and the training speed. By subsampling of the frequent words we obtain significa t speedup and also learn more regular word representations. We also describ a simple alternative to the hierarchical softmax called negative sampling. An inherent limitation of word representations is their indifference to word order and their inability to represent idiomatic phrases. For example, the meanings of \u201cCanada\u201d and \u201cAir\u201d cannot be easily combined to obtain \u201cAir Canada\u201d. Motivated by this example, we present a simple method for finding phrases in t xt, and show that learning good vector representations for millions of phrases is possible."
+        },
+        {
+            "heading": "1 Introduction",
+            "text": "Distributed representations of words in a vector space helplearning algorithms to achieve better performance in natural language processing tasks by grouping similar words. One of the earliest use of word representations dates back to 1986 due to Rumelhart,Hinton, and Williams [13]. This idea has since been applied to statistical language modeling with considerable success [1]. The follow up work includes applications to automatic speech recognition and machine translation [14, 7], and a wide range of NLP tasks [2, 20, 15, 3, 18, 19, 9].\nRecently, Mikolov et al. [8] introduced the Skip-gram model, an efficient method for learning highquality vector representations of words from large amountsof unstructured text data. Unlike most of the previously used neural network architectures for learning word vectors, training of the Skipgram model (see Figure 1) does not involve dense matrix multiplications. This makes the training extremely efficient: an optimized single-machine implementation can train on more than 100 billion words in one day.\nThe word representations computed using neural networks are very interesting because the learned vectors explicitly encode many linguistic regularities and patterns. Somewhat surprisingly, many of these patterns can be represented as linear translations. Fr example, the result of a vector calculation vec(\u201cMadrid\u201d) - vec(\u201cSpain\u201d) + vec(\u201cFrance\u201d) is closer to vec(\u201cParis\u201d) than to any other word vector [9, 8].\nIn this paper we present several extensions of the original Skip-gram model. We show that subsampling of frequent words during training results in a significant speedup (around 2x - 10x), and improves accuracy of the representations of less frequent words. In addition, we present a simplified variant of Noise Contrastive Estimation (NCE) [4] for training the Skip-gram model that results in faster training and better vector representations for frequent words, compared to more complex hierarchical softmax that was used in the prior work [8].\nWord representations are limited by their inability to reprsent idiomatic phrases that are not compositions of the individual words. For example, \u201cBoston Globe\u201d is a newspaper, and so it is not a natural combination of the meanings of \u201cBoston\u201d and \u201cGlobe\u201d. Therefore, using vectors to represent the whole phrases makes the Skip-gram model considerably more expressive. Other techniques that aim to represent meaning of sentences by composing the word vectors, such as the recursive autoencoders [15], would also benefit from using phrase vectors instead of the word vectors.\nThe extension from word based to phrase based models is relatively simple. First we identify a large number of phrases using a data-driven approach, and then we treat the phrases as individual tokens during the training. To evaluate the quality of the phrase vectors, we developed a test set of analogical reasoning tasks that contains both words and phrases. A typical analogy pair from our test set is \u201cMontreal\u201d:\u201cMontreal Canadiens\u201d::\u201cToronto\u201d:\u201cToronto Maple Leafs\u201d. It is considered to have been answered correctly if the nearest representation to vec(\u201cMontreal Canadiens\u201d) - vec(\u201cMontreal\u201d) + vec(\u201cToronto\u201d) is vec(\u201cToronto Maple Leafs\u201d).\nFinally, we describe another interesting property of the Skip-gram model. We found that simple vector addition can often produce meaningful results. For example, vec(\u201cRussia\u201d) + vec(\u201criver\u201d) is close to vec(\u201cVolga River\u201d), and vec(\u201cGermany\u201d) + vec(\u201ccapital\u201d) is close to vec(\u201cBerlin\u201d). This compositionality suggests that a non-obvious degree of langu ge understanding can be obtained by using basic mathematical operations on the word vector repres ntations."
+        },
+        {
+            "heading": "2 The Skip-gram Model",
+            "text": "The training objective of the Skip-gram model is to find word representations that are useful for predicting the surrounding words in a sentence or a document. More formally, given a sequence of training wordsw1, w2, w3, . . . , wT , the objective of the Skip-gram model is to maximize the averg log probability\n1\nT\nT \u2211\nt=1\n\u2211\n\u2212c\u2264j\u2264c,j 6=0\nlog p(wt+j |wt) (1)\nwherec is the size of the training context (which can be a function ofthe center wordwt). Larger c results in more training examples and thus can lead to a higher accuracy, at the expense of the\ntraining time. The basic Skip-gram formulation definesp(wt+j |wt) using the softmax function:\np(wO|wI) = exp\n(\nv\u2032wO \u22a4vwI\n)\n\u2211W w=1 exp\n(\nv\u2032w \u22a4vwI\n) (2)\nwherevw andv\u2032w are the \u201cinput\u201d and \u201coutput\u201d vector representations ofw, andW is the number of words in the vocabulary. This formulation is impractical because the cost of computing \u2207 log p(wO|wI) is proportional toW , which is often large (105\u2013107 terms)."
+        },
+        {
+            "heading": "2.1 Hierarchical Softmax",
+            "text": "A computationally efficient approximation of the full softmax is the hierarchical softmax. In the context of neural network language models, it was first introduced by Morin and Bengio [12]. The main advantage is that instead of evaluatingW output nodes in the neural network to obtain the probability distribution, it is needed to evaluate only about l g2(W ) nodes.\nThe hierarchical softmax uses a binary tree representationof the output layer with theW words as its leaves and, for each node, explicitly represents the relativ probabilities of its child nodes. These define a random walk that assigns probabilities to words.\nMore precisely, each wordw can be reached by an appropriate path from the root of the tree. L t n(w, j) be thej-th node on the path from the root tow, and letL(w) be the length of this path, so n(w, 1) = root andn(w,L(w)) = w. In addition, for any inner noden, let ch(n) be an arbitrary fixed child ofn and let[[x]] be 1 ifx is true and -1 otherwise. Then the hierarchical softmax defines p(wO|wI) as follows:\np(w|wI ) =\nL(w)\u22121 \u220f\nj=1\n\u03c3 (\n[[n(w, j + 1) = ch(n(w, j))]] \u00b7 v\u2032n(w,j) \u22a4 vwI\n)\n(3)\nwhere\u03c3(x) = 1/(1 + exp(\u2212x)). It can be verified that \u2211W\nw=1 p(w|wI) = 1. This implies that the cost of computinglog p(wO|wI) and\u2207 log p(wO|wI) is proportional toL(wO), which on average is no greater thanlogW . Also, unlike the standard softmax formulation of the Skip-gram which assigns two representationsvw andv\u2032w to each wordw, the hierarchical softmax formulation has one representationvw for each wordw and one representationv\u2032n for every inner noden of the binary tree.\nThe structure of the tree used by the hierarchical softmax has a considerable effect on the performance. Mnih and Hinton explored a number of methods for constructing the tree structure and the effect on both the training time and the resulting model accura y [10]. In our work we use a binary Huffman tree, as it assigns short codes to the frequent wordswhich results in fast training. It has been observed before that grouping words together by their frequency works well as a very simple speedup technique for the neural network based language modls [5, 8]."
+        },
+        {
+            "heading": "2.2 Negative Sampling",
+            "text": "An alternative to the hierarchical softmax is Noise Contrastive Estimation (NCE), which was introduced by Gutmann and Hyvarinen [4] and applied to language modeling by Mnih and Teh [11]. NCE posits that a good model should be able to differentiate da from noise by means of logistic regression. This is similar to hinge loss used by Collobert and Weston [2] who trained the models by ranking the data above noise.\nWhile NCE can be shown to approximately maximize the log probability of the softmax, the Skipgram model is only concerned with learning high-quality vector representations, so we are free to simplify NCE as long as the vector representations retain their quality. We define Negative sampling (NEG) by the objective\nlog \u03c3(v\u2032wO \u22a4 vwI ) +\nk \u2211\ni=1\nEwi\u223cPn(w)\n[\nlog \u03c3(\u2212v\u2032wi \u22a4 vwI )\n]\n(4)\nwhich is used to replace everylogP (wO|wI) term in the Skip-gram objective. Thus the task is to distinguish the target wordwO from draws from the noise distributionPn(w) using logistic regression, where there arek negative samples for each data sample. Our experiments indicate that values of k in the range 5\u201320 are useful for small training datasets, while for large datasets thek can be as small as 2\u20135. The main difference between the Negative sampling and NCE is that NCE needs both samples and the numerical probabilities of the noise distribution, while Negative sampling uses only samples. And while NCE approximately maximizes the log probability of the softmax, this property is not important for our application.\nBoth NCE and NEG have the noise distributionP (w) as a free parameter. We investigated a number of choices forPn(w) and found that the unigram distributionU(w) raised to the3/4rd power (i.e., U(w)3/4/Z) outperformed significantly the unigram and the uniform distributions, for both NCE and NEG on every task we tried including language modeling (not reported here)."
+        },
+        {
+            "heading": "2.3 Subsampling of Frequent Words",
+            "text": "In very large corpora, the most frequent words can easily occur hundreds of millions of times (e.g., \u201cin\u201d, \u201cthe\u201d, and \u201ca\u201d). Such words usually provide less information value than the rare words. For example, while the Skip-gram model benefits from observing the co-occurrences of \u201cFrance\u201d and \u201cParis\u201d, it benefits much less from observing the frequent co-o currences of \u201cFrance\u201d and \u201cthe\u201d, as nearly every word co-occurs frequently within a sentence with \u201cthe\u201d. This idea can also be applied in the opposite direction; the vector representations of frequent words do not change significantly after training on several million examples.\nTo counter the imbalance between the rare and frequent words, we used a simple subsampling approach: each wordwi in the training set is discarded with probability computed by the formula\nP (wi) = 1\u2212\n\u221a\nt\nf(wi) (5)\nwheref(wi) is the frequency of wordwi and t is a chosen threshold, typically around10\u22125. We chose this subsampling formula because it aggressively subsamples words whose frequency is greater thant while preserving the ranking of the frequencies. Although this subsampling formula was chosen heuristically, we found it to work well in practice. It accelerates learning and even significantly improves the accuracy of the learned vectors of the rare words, as will be shown in the following sections."
+        },
+        {
+            "heading": "3 Empirical Results",
+            "text": "In this section we evaluate the Hierarchical Softmax (HS), Noise Contrastive Estimation, Negative Sampling, and subsampling of the training words. We used theanalogical reasoning task1 introduced by Mikolov et al. [8]. The task consists of analogies such as \u201cGermany\u201d : \u201cBerlin\u201d :: \u201cFrance\u201d : ?, which are solved by finding a vectorx such that vec(x) is closest to vec(\u201cBerlin\u201d) - vec(\u201cGermany\u201d) + vec(\u201cFrance\u201d) according to the cosine distance (we discard the input words from the search). This specific example is considered to have been answered correctly if x is \u201cParis\u201d. The task has two broad categories: the syntactic analogies (such as \u201cquick\u201d: \u201cquickly\u201d :: \u201cslow\u201d : \u201cslowly\u201d) and the semantic analogies, such as the country to capital city relationship.\nFor training the Skip-gram models, we have used a large dataset consisting of various news articles (an internal Google dataset with one billion words). We discarded from the vocabulary all words that occurred less than 5 times in the training data, which result d in a vocabulary of size 692K. The performance of various Skip-gram models on the word analogy test set is reported in Table 1. The table shows that Negative Sampling outperforms the Hierarchical Softmax on the analogical reasoning task, and has even slightly better performance than the Noise Contrastive Estimation. The subsampling of the frequent words improves the training speed several times and makes the word representations significantly more accurate.\nIt can be argued that the linearity of the skip-gram model makes its vectors more suitable for such linear analogical reasoning, but the results of Mikolov et al. [8] also show that the vectors learned by the standard sigmoidal recurrent neural networks (whichare highly non-linear) improve on this task significantly as the amount of the training data increases, uggesting that non-linear models also have a preference for a linear structure of the word representatio s."
+        },
+        {
+            "heading": "4 Learning Phrases",
+            "text": "As discussed earlier, many phrases have a meaning that is nota simple composition of the meanings of its individual words. To learn vector representation f r phrases, we first find words that appear frequently together, and infrequently in other contexts. For example, \u201cNew York Times\u201d and \u201cToronto Maple Leafs\u201d are replaced by unique tokens in the training data, while a bigram \u201cthis is\u201d will remain unchanged.\n1code.google.com/p/word2vec/source/browse/trunk/questions-words.txt\nThis way, we can form many reasonable phrases without greatly increasing the size of the vocabulary; in theory, we can train the Skip-gram model using all n-grams, but that would be too memory intensive. Many techniques have been previously developedto identify phrases in the text; however, it is out of scope of our work to compare them. We decided to usea imple data-driven approach, where phrases are formed based on the unigram and bigram counts, usi g\nscore(wi, wj) = count(wiwj)\u2212 \u03b4\ncount(wi)\u00d7 count(wj) . (6)\nThe \u03b4 is used as a discounting coefficient and prevents too many phrases consisting of very infrequent words to be formed. The bigrams with score above the chosen threshold are then used as phrases. Typically, we run 2-4 passes over the training datawith decreasing threshold value, allowing longer phrases that consists of several words to be formed. W evaluate the quality of the phrase representations using a new analogical reasoning task thatinvolves phrases. Table 2 shows examples of the five categories of analogies used in this task. This dataset is publicly available on the web2."
+        },
+        {
+            "heading": "4.1 Phrase Skip-Gram Results",
+            "text": "Starting with the same news data as in the previous experiments, we first constructed the phrase based training corpus and then we trained several Skip-grammodels using different hyperparameters. As before, we used vector dimensionality 300 and co text size 5. This setting already achieves good performance on the phrase dataset, and allowed us to quickly compare the Negative Sampling and the Hierarchical Softmax, both with and withousubsampling of the frequent tokens. The results are summarized in Table 3.\nThe results show that while Negative Sampling achieves a respectable accuracy even withk = 5, usingk = 15 achieves considerably better performance. Surprisingly,while we found the Hierarchical Softmax to achieve lower performance when trained without subsampling, it became the best performing method when we downsampled the frequent words. This shows that the subsampling can result in faster training and can also improve accuracy,at least in some cases.\n2code.google.com/p/word2vec/source/browse/trunk/questions-phrases.txt\nTo maximize the accuracy on the phrase analogy task, we increased the amount of the training data by using a dataset with about 33 billion words. We used the hierarchical softmax, dimensionality of 1000, and the entire sentence for the context. This resultd in a model that reached an accuracy of 72%. We achieved lower accuracy 66% when we reduced the size of the training dataset to 6B words, which suggests that the large amount of the training data is crucial.\nTo gain further insight into how different the representations learned by different models are, we did inspect manually the nearest neighbours of infrequent phrases using various models. In Table 4, we show a sample of such comparison. Consistently with the previous results, it seems that the best representations of phrases are learned by a model with the hierarchical softmax and subsampling."
+        },
+        {
+            "heading": "5 Additive Compositionality",
+            "text": "We demonstrated that the word and phrase representations lear ed by the Skip-gram model exhibit a linear structure that makes it possible to perform preciseanalogical reasoning using simple vector arithmetics. Interestingly, we found that the Skip-gram representations exhibit another kind of linear structure that makes it possible to meaningfully combine words by an element-wise addition of their vector representations. This phenomenon is illustrated inTable 5.\nThe additive property of the vectors can be explained by inspecting the training objective. The word vectors are in a linear relationship with the inputs to the softmax nonlinearity. As the word vectors are trained to predict the surrounding words in the sentence, the vectors can be seen as representing the distribution of the context in which a word appears. These values are related logarithmically to the probabilities computed by the output layer, so the sumof two word vectors is related to the product of the two context distributions. The product workshere as the AND function: words that are assigned high probabilities by both word vectors will have high probability, and the other words will have low probability. Thus, if \u201cVolga River\u201d appears frequently in the same sentence together with the words \u201cRussian\u201d and \u201criver\u201d, the sum of these two word vectors will result in such a feature vector that is close to the vector of \u201cVolga River\u201d."
+        },
+        {
+            "heading": "6 Comparison to Published Word Representations",
+            "text": "Many authors who previously worked on the neural network based representations of words have published their resulting models for further use and comparison: amongst the most well known authors are Collobert and Weston [2], Turian et al. [17], and Mnih and Hinton [10]. We downloaded their word vectors from the web3. Mikolov et al. [8] have already evaluated these word representations on the word analogy task, where the Skip-gram models achieved the best performance with a huge margin.\n3http://metaoptimize.com/projects/wordreprs/\nTo give more insight into the difference of the quality of thelearned vectors, we provide empirical comparison by showing the nearest neighbours of infrequentwords in Table 6. These examples show that the big Skip-gram model trained on a large corpus visibly outperforms all the other models in the quality of the learned representations. This can be attributed in part to the fact that this model has been trained on about 30 billion words, which is about twoto three orders of magnitude more data than the typical size used in the prior work. Interestingly, although the training set is much larger, the training time of the Skip-gram model is just a fraction of the time complexity required by the previous model architectures."
+        },
+        {
+            "heading": "7 Conclusion",
+            "text": "This work has several key contributions. We show how to traindistributed representations of words and phrases with the Skip-gram model and demonstrate that these representations exhibit linear structure that makes precise analogical reasoning possible. The techniques introduced in this paper can be used also for training the continuous bag-of-words model introduced in [8].\nWe successfully trained models on several orders of magnitude more data than the previously published models, thanks to the computationally efficient model architecture. This results in a great improvement in the quality of the learned word and phrase representations, especially for the rare entities. We also found that the subsampling of the frequentwords results in both faster training and significantly better representations of uncommon words. Another contribution of our paper is the Negative sampling algorithm, which is an extremely simple training method that learns accurate representations especially for frequent words.\nThe choice of the training algorithm and the hyper-parameter selection is a task specific decision, as we found that different problems have different optimal hyperparameter configurations. In our experiments, the most crucial decisions that affect the performance are the choice of the model architecture, the size of the vectors, the subsampling rate, and the size of the training window.\nA very interesting result of this work is that the word vectors can be somewhat meaningfully combined using just simple vector addition. Another approach for learning representations of phrases presented in this paper is to simply represent the phrases with a single token. Combination of these two approaches gives a powerful yet simple way how to represent longer pieces of text, while having minimal computational complexity. Our work can thus be se n as complementary to the existing approach that attempts to represent phrases using recursive matrix-vector operations [16].\nWe made the code for training the word and phrase vectors based on the techniques described in this paper available as an open-source project4.\n4code.google.com/p/word2vec"
+        }
+    ],
+    "title": "Distributed Representations of Words and Phrases and their Compositionality",
+    "year": 2013
+}

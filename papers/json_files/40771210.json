@@ -1,0 +1,364 @@
+{
+    "abstractText": "Summary statistics such as the mean and variance are easily maintained for large, distributed data streams, but order statistics (i.e., sample quantiles) can only be approximately summarized. There is extensive literature on maintaining quantile sketches where the emphasis has been on bounding the rank error of the sketch while using little memory. Unfortunately, rank error guarantees do not preclude arbitrarily large relative errors, and this often occurs in practice when the data is heavily skewed. Given the distributed nature of contemporary large-scale systems, another crucial property for quantile sketches is mergeablility, i.e., several combined sketches must be as accurate as a single sketch of the same data. We present the first fully-mergeable, relative-error quantile sketching algorithm with formal guarantees. The sketch is extremely fast and accurate, and is currently being used by Datadog at a wide-scale. PVLDB Reference Format: Charles Masson and Jee E Rim and Homin K. Lee. DDSketch: A fast and fully-mergeable quantile sketch with relative-error guarantees. PVLDB, 12(12): 2195-2205, 2019. DOI: https://doi.org/10.14778/3352063.3352135",
+    "authors": [
+        {
+            "affiliations": [],
+            "name": "Charles Masson"
+        },
+        {
+            "affiliations": [],
+            "name": "Jee E. Rim"
+        },
+        {
+            "affiliations": [],
+            "name": "Homin K. Lee"
+        }
+    ],
+    "id": "SP:3c68d5752ff8bfbf00e8885fa91422f2888f90f7",
+    "references": [
+        {
+            "authors": [
+                "L. Abraham",
+                "J. Allen",
+                "O. Barykin",
+                "V. Borkar",
+                "B. Chopra",
+                "C. Gerea",
+                "D. Merl",
+                "J. Metzler",
+                "D. Reiss",
+                "S. Subramanian",
+                "J.L. Wiener",
+                "O. Zed"
+            ],
+            "title": "Scuba: Diving into data at facebook",
+            "venue": "PVLDB, 6(11):1057\u20131067",
+            "year": 2013
+        },
+        {
+            "authors": [
+                "P.K. Agarwal",
+                "G. Cormode",
+                "Z. Huang",
+                "J. Phillips",
+                "Z. Wei",
+                "K. Yi"
+            ],
+            "title": "Mergeable summaries",
+            "venue": "Proceedings of the 31st ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems, PODS \u201912, pages 23\u201334, New York, NY, USA",
+            "year": 2012
+        },
+        {
+            "authors": [
+                "B. Beyer",
+                "C. Jones",
+                "J. Petoff",
+                "N.R. Murphy"
+            ],
+            "title": "Site Reliability Engineering: How Google Runs Production Systems",
+            "venue": "\u201d O\u2019Reilly Media, Inc.\u201d",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "V.V. Buldygin",
+                "U.V. Kozachenko"
+            ],
+            "title": "Metric Characterization of Random Variables and Random Processes",
+            "venue": "American Mathematical Society, Rhode Island, USA",
+            "year": 2000
+        },
+        {
+            "authors": [
+                "V. Chv\u00e1tal"
+            ],
+            "title": "The tail of the hypergeometric distribution",
+            "venue": "Discrete Mathematics, 25:285\u2013287",
+            "year": 1979
+        },
+        {
+            "authors": [
+                "G. Cormode",
+                "M. Garofalakis",
+                "P.J. Haas",
+                "C. Jermaine"
+            ],
+            "title": "Synopses for massive data: Samples",
+            "venue": "histograms, wavelets, sketches. Foundations and Trends R \u00a9 in Databases, 4(1-3):1\u2013294",
+            "year": 2011
+        },
+        {
+            "authors": [
+                "G. Cormode",
+                "F. Korn",
+                "S. Muthukrishnan",
+                "D. Srivastava"
+            ],
+            "title": "Effective computation of biased quantiles over data streams",
+            "venue": "21st International Conference on Data Engineering, ICDE\u201905, pages 20\u201331, New York, NY, USA",
+            "year": 2005
+        },
+        {
+            "authors": [
+                "G. Cormode",
+                "F. Korn",
+                "S. Muthukrishnan",
+                "D. Srivastava"
+            ],
+            "title": "Space- and time-efficient deterministic algorithms for biased quantiles over data streams",
+            "venue": "Proceedings of the 25th ACM SIGMOD-SIGACT-SIGART Symposium on Principles of Database Systems, PODS \u201906, pages 263\u2013272, New York, NY, USA",
+            "year": 2006
+        },
+        {
+            "authors": [
+                "C. Cranor",
+                "T. Johnson",
+                "O. Spataschek",
+                "V. Shkapenyuk"
+            ],
+            "title": "Gigascope: a stream database for network applications",
+            "venue": "Proceedings of the 2003 ACM SIGMOD International Conference on Management of Data, pages 647\u2013651. ACM",
+            "year": 2003
+        },
+        {
+            "authors": [
+                "S. DAWN"
+            ],
+            "title": "Moments sketch",
+            "venue": "https: //github.com/stanford-futuredata/momentsketch",
+            "year": 2018
+        },
+        {
+            "authors": [
+                "J. Dean",
+                "L.A. Barroso"
+            ],
+            "title": "The tail at scale",
+            "venue": "Communications of the ACM, 56(2):74\u201380",
+            "year": 2013
+        },
+        {
+            "authors": [
+                "T. Dunning",
+                "O. Ertl"
+            ],
+            "title": "Computing extremely accurate quantiles using t-digests",
+            "venue": "arXiv preprint arXiv:1902.04023",
+            "year": 2019
+        },
+        {
+            "authors": [
+                "E. Gan",
+                "J. Ding",
+                "K.S. Tai",
+                "V. Sharan",
+                "P. Bailis"
+            ],
+            "title": "Moment-based quantile sketches for efficient high cardinality aggregation queries",
+            "venue": "PVLDB, 11(11):1647\u20131660",
+            "year": 2018
+        },
+        {
+            "authors": [
+                "M.B. Greenwald",
+                "S. Khanna"
+            ],
+            "title": "Space-efficient online computation of quantile summaries",
+            "venue": "Proceedings of the 2001 ACM SIGMOD International Conference on Management of Data, SIGMOD \u201901, pages 58\u201366, New York, NY, USA",
+            "year": 2001
+        },
+        {
+            "authors": [
+                "M.B. Greenwald",
+                "S. Khanna"
+            ],
+            "title": "Quantiles and equidepth histograms over streams",
+            "venue": "M. Garofalakis, J. Gehrke, and R. Rastogi, editors, Data Stream Management, pages 45\u201386. Springer, New York, NY, USA",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "S. Guha",
+                "N. Koudas",
+                "K. Shim"
+            ],
+            "title": "Approximation and streaming algorithms for histogram construction problems",
+            "venue": "ACM Transactions on Database Systems (TODS), 31(1):396\u2013438",
+            "year": 2006
+        },
+        {
+            "authors": [
+                "S. Guha",
+                "K. Shim",
+                "J. Woo"
+            ],
+            "title": "Rehist: Relative error histogram construction algorithms",
+            "venue": "Proceedings of the 30th International Conference on Very Large Data Bases, VLDB \u201904, pages 300\u2013311. VLDB Endowment",
+            "year": 2004
+        },
+        {
+            "authors": [
+                "H.V. Jagadish",
+                "N. Koudas",
+                "S. Muthukrishnan",
+                "V. Poosala",
+                "K.C. Sevcik",
+                "T. Suel"
+            ],
+            "title": "Optimal histograms with quality guarantees",
+            "venue": "Proceedings of the 24rd International Conference on Very Large Data Bases, VLDB \u201998, pages 275\u2013286",
+            "year": 1998
+        },
+        {
+            "authors": [
+                "Z. Karnin",
+                "K. Lang",
+                "E. Liberty"
+            ],
+            "title": "Optimal quantile approximation in streams",
+            "venue": "Proceedings of the 57th IEEE Symposium on Foundations of Computer Science (FOCS), FOCS \u201916, pages 71\u201378, New York, NY, USA",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "M. Lichman"
+            ],
+            "title": "Uci machine learning repository",
+            "venue": "https: //archive.ics.uci.edu/ml/datasets/individual+ household+electric+power+consumption",
+            "year": 2013
+        },
+        {
+            "authors": [
+                "G. Luo",
+                "L. Wang",
+                "K. Yi",
+                "G. Cormode"
+            ],
+            "title": "Quantiles over data streams: experimental comparisons",
+            "venue": "new analyses, and further improvements. PVLDB, 25(4):449\u2013472",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "S. Madden",
+                "M.J. Franklin",
+                "J.M. Hellerstein",
+                "W. Hong"
+            ],
+            "title": "The design of an acquisitional query processor for sensor networks",
+            "venue": "Proceedings of the 2003 ACM SIGMOD International Conference on Management of Data, pages 491\u2013502. ACM",
+            "year": 2003
+        },
+        {
+            "authors": [
+                "J.I. Munro",
+                "M.S. Paterson"
+            ],
+            "title": "Selection and sorting with limited storage",
+            "venue": "Theoretical Computer Science, 12(3):315\u2013323",
+            "year": 1980
+        },
+        {
+            "authors": [
+                "R.R. Sambasivan",
+                "R. Fonseca",
+                "I. Shafer",
+                "G.R. Ganger"
+            ],
+            "title": "So",
+            "venue": "you want to trace your distributed system? key design insights from years of practical experience. Technical Report CMU-PDL-14-102, Carnegie Mellon University",
+            "year": 2014
+        },
+        {
+            "authors": [
+                "G. Tene"
+            ],
+            "title": "Hdrhistogram: A high dynamic range (hdr) histogram",
+            "venue": "http://hdrhistogram.org/",
+            "year": 2012
+        }
+    ],
+    "sections": [
+        {
+            "text": "Given the distributed nature of contemporary large-scale systems, another crucial property for quantile sketches is mergeablility, i.e., several combined sketches must be as accurate as a single sketch of the same data. We present the first fully-mergeable, relative-error quantile sketching algorithm with formal guarantees. The sketch is extremely fast and accurate, and is currently being used by Datadog at a wide-scale.\nPVLDB Reference Format: Charles Masson and Jee E Rim and Homin K. Lee. DDSketch: A fast and fully-mergeable quantile sketch with relative-error guarantees. PVLDB, 12(12): 2195-2205, 2019. DOI: https://doi.org/10.14778/3352063.3352135"
+        },
+        {
+            "heading": "1. INTRODUCTION",
+            "text": "Computing has increasingly moved to a distributed, containerized, micro-service model. Some organizations run thousands of hosts, across several data centers, with each host running a dozen containers each, and these containers might only live for a couple hours [11, 10]. Effectively being able to administer and operationalize such a large and disparate fleet of machines requires the ability to monitor, in near real-time, data streams coming from multiple, possibly transitory, sources [3].\nThe data streams that are being monitored can include application logs, IoT sensor readings [28], IP-network traffic information [9], financial data, distributed application traces [30], usage and performance metrics [1], along with a myriad of other measurements and events. The volume of monitoring data being transmitted to a central processing system (usually backed by a time-series database or\nThis work is licensed under the Creative Commons AttributionNonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/. For any use beyond those covered by this license, obtain permission by emailing info@vldb.org. Copyright is held by the owner/author(s). Publication rights licensed to the VLDB Endowment. Proceedings of the VLDB Endowment, Vol. 12, No. 12 ISSN 2150-8097. DOI: https://doi.org/10.14778/3352063.3352135\nan event storage system) can be high enough that simply forwarding all this information can strain the capacities (network, memory, CPU) of the monitored resources. Ideally a monitoring system helps one discover and diagnose issues in distributed systems\u2014not cause them.\nOur running example will be a web application backed by a distributed system, where the ability to answer any particular request might depend on several underlying services and databases (Figure 1). The metric we monitor for our example will be the latency of the requests it handles. Every time a worker finishes handling a request, it will note how long it took. Simple summary statistics such as the overall mean and variance can be easily maintained. For instance, the workers can keep counts, sums, and sums of squares of the latency and send those values to the monitoring system (and reset those values) every second. The monitoring system will then be able to aggregate those values and derive metrics\u2014being able to\ngraph the average latency using 1 second intervals, but also rolling up the sums and counts to graph the average latency over much larger time periods using much larger intervals perfectly accurately.\nUnfortunately, the latencies of web requests are usually extremely skewed\u2014the median response time might be in the milliseconds whereas there could be a couple of outlying responses that take minutes (Figure 3). A simple average, while easy to monitor can be easily skewed by outlying values as can be seen in Figure 2.\nAs the average response time is not a particularly useful measure, we are instead interested in tracking quantiles such as the 50th and the 99th percentiles (we will also refer to these as the p50 and p99). The ability to compute quantiles over aggregated metrics has been recognized to be an essential feature of any monitoring system [16].\nQuantiles are famously impossible to compute exactly without holding on to all the data [29]. If one wanted to track the median request latency over time for a web application that is handling millions of requests a second, this would mean sending millions of data points to the monitoring service which could then calculate the median by sorting the data. If one wanted the median aggregated over longer time intervals the monitoring service would have to store all these data points and then calculate the median over the larger set of points.\nGiven how expensive calculating exact quantiles can be for both storage and network bandwidth, most monitoring systems will compress the data into sketches and compute approximate quantiles. More formally, given a multiset S of size n over R, the q-quantile item xq \u2208 S is the item xwhose rankR(x) in the sorted multiset S is b1 + q(n\u2212 1)c for 0 \u2264 q \u2264 1, where the rank R(x) is the number of elements inS smaller than or equal to x.1 Some special quantiles include x1, the maximum element of S, and the median x0.5. 1This definition of quantile is also known as the lower quantile. Replacing the floor with a ceiling gives us what\u2019s known as the upper quantile.\nThere has been a long line of work on sketching data streams so that the rank accuracy is preserved, i.e., for any value v, the sketch provides an estimate rank R\u0303 such that |R\u0303(v) \u2212 R(v)| \u2264 n (see [27] and [21] for excellent surveys on much of this work as well as additional motivation for sketching quantiles).\nUnfortunately, for data sets with heavy tails, rank-error guarantees can return values with large relative errors. Consider again the histogram of 2M request response times in Figure 3. If we have a quantile sketch with a rank accuracy of 0.005, and ask for the 99th percentile, we are guaranteed to get a value between the 98.5th and 99.5th percentile. In this case this is anywhere from 2 to 20 seconds, which from an end-user\u2019s perspective is the difference between an annoying delay and giving up on the request.\nGiven the inadequacy of rank accuracy for tracking the higher order quantiles for distributions with heavy tails, we turn instead to relative accuracy.\nDefinition 1. x\u0303q is an\u03b1-accurate q-quantile if |x\u0303q\u2212xq| \u2264 \u03b1xq for a given q-quantile item xq \u2208 S. We say that a data structure is an\u03b1-accurate (q0, q1)-sketch if it can output\u03b1-accurate q-quantiles for all q0 \u2264 q \u2264 q1.\nTo further illustrate the difference between rank accuracy and relative accuracy consider Figure 4. The graphs show the actual p50, p75, p90 and p99 values along with the quantile estimates from a sketch with 0.005 rank accuracy and a sketch with 0.01 relative accuracy."
+        },
+        {
+            "heading": "1.1 Our Results",
+            "text": "In Section 2 we describe our relative-error sketch, dubbed the Distributed Distribution Sketch (DDSketch), and we discuss different implementation strategies. In Section 3 we prove that the sketch can handle data that is as heavy-tailed as that which comes\nfrom a distribution whose logarithm is subexponential with parameters (\u03c3, b), which includes heavy-tailed distributions such as the log-normal and Pareto distributions. We show that for the Pareto distribution, the size of an \u03b1-accurate (o(1), 1)-sketch is:\nO\n( b logn/\u03b4\nlog((1 + \u03b1)/(1\u2212 \u03b1)) ) with probability 1 \u2212 \u03b4. (Note that our results hold for data coming from any distribution without any independence assumptions as long as the tail of the empirical data is no larger than that for a Pareto distribution). In Section 4 we present our experimental results."
+        },
+        {
+            "heading": "1.2 Related Work",
+            "text": "Quantile sketching dates back to 1980 when Munro and Paterson [29] demonstrated the first quantile sketching algorithm with formal guarantees. The best known rank-error quantile sketch is that of Greenwald and Khanna [20] whose deterministic sketch (GK) provides rank accuracy using O((1/ ) log(n )) space.\nIn addition to accuracy and size, a desirable property of a sketch is mergeability [2]. That is, several sketches of different data sets can be combined into a single sketch that can accurately answer quantile queries over the entire data set. Mergeability has increasingly become a necessary property as systems become more distributed. Equi-depth histograms [6] are a good example of non-mergeable data set synopses as there is no way to accurately combine overlapping buckets. GK is only known to be \u201cone-way\u201d mergeable, that is the merging operation itself can not be distributed.\nThere is a line of work using randomness culminating in a rankerror quantile sketch that uses only O((1/ ) log log(1/\u03b4)) space (where \u03b4 is the probability of failure) [25] with full mergeability. However, all of the above solutions, deterministic or randomized, have high relative error for the larger quantiles on heavy-tailed data (in practice we have found it to be worse for the randomized algorithms).\nThe problems of having high relative errors on the larger quantiles has been addressed by a line of work that still uses rank error, but promises lower rank error on the quantiles further away from the median by biasing the data it keeps towards the higher (and lower) quantiles [7], [8], [17]. The latter, dubbed t-digest, is notable as it is one of the quantile sketch implementations used by Elasticsearch [18]. These sketches have much better accuracy (in rank) than uniform-rank-error sketches on percentiles like the p99.9, but they still have high relative error on heavy-tailed data sets. Like GK they are only one-way mergeable.\nThe only relative-error sketch in the literature to our knowledge is the HDR Histogram [31] (and is the other quantile sketch implementation used by Elasticsearch). It has extremely fast insertion times (only requiring low-level binary operations), as the bucket sizes are optimized for insertion speed instead of size, and it is fully mergeable (though very slow). The main downside for HDR Histogram is that it can only handle a bounded (though very large) range that might not be suitable for certain data sets. It also has no published guarantees, though much of the analysis we present for DDSketch can be made to apply to a version of HDR Histogram that more closely resembles DDSketch with slightly worse guarantees.\nA recent quantile sketch, called the Moments sketch [19] takes an entirely different approach by estimating the moments of the underlying distribution. It has notably fast merging times and is fully mergeable. The guaranteed accuracy, however, is only for the average rank error \u0303, unlike all the sketches above which have guarantees for the worst-case error (whether rank or relative). The associated size bound is O(1/\u0303). In practice, the sketch also has a bounded range as the moments quickly grow larger, and they will eventually cause floating point overflow errors.\nWe compare the performance of DDSketch to GK, HDR, and Moments in Section 4.\nA related line of work exists in constructing histograms (see [6] for a thorough survey). The accuracy of a histogram is measured using the distance between the actual values and the values of the\nbuckets to which the original values are assigned. The task is to find the histogram with B buckets that minimizes the overall distance. Optimal algorithms [24] use dynamic programming and are usually considered to be too costly, and thus approximation algorithms are often considered. The most popular distance in the literature is the squared L2 distance (such a histogram is called the v-optimal histogram), but relative-error approximation algorithms exist as well [23], [22] (though these algorithms use \u2126(n) space).\nNote that while one can try to use these histograms to answer quantile queries, there are no guarantees on the error of any particular quantile query, as the only error guarantees are global and not for any individual item. Moreover, the error guarantees are always relative to an unknown optimal (for the number of buckets) solution, not an absolute error guarantee. There is also no straightforward way to merge histograms as the bucket boundaries are based on the data, which can be wildly different for each histogram."
+        },
+        {
+            "heading": "2. DDSKETCH",
+            "text": "We will first describe the most basic version of our algorithm that will be able to give \u03b1-accurate q-quantiles for any 0 \u2264 q \u2264 1. It is straightforward to insert items into this sketch as well as delete items and merge sketches. Then we will show how to modify the sketch so that it gives \u03b1-accurate q-quantiles for q0 \u2264 q \u2264 1 with bounded size. Section 2.2 will go over various implementation options for the sketch."
+        },
+        {
+            "heading": "2.1 Sketch Details",
+            "text": "Let \u03b3 := (1+\u03b1)/(1\u2212\u03b1). The sketch works by dividingR>0 into fixed buckets. We index our buckets by i \u2208 Z, and each bucket Bi counts the number of values x that fall between: \u03b3i\u22121 < x \u2264 \u03b3i. That is, given a value x we will assign it to the bucket indexed by dlog\u03b3(x)e:\nAlgorithm 1: Insert(x)\nInput: x \u2208 R>0 i\u2190 dlog\u03b3(x)e; Bi \u2190 Bi + 1;\nDeletion works similarly. Since the bucket boundaries are independent of the data, any two sketches using the same value for \u03b3 can be merged by simply summing up the buckets that share an index.\nA simple lemma shows that every value gets assigned to a bucket whose boundary values are enough to return a relative-error approximation to its value.\nLemma 2. For a given q-quantile item xq \u2208 S and bucket index i = dlog\u03b3(xq)e, let x\u0303q = 2\u03b3i/(\u03b3 + 1). Then x\u0303q is an \u03b1-accurate q-quantile.\nProof. Note that by definition of \u03b3:\n\u03b1 = 1\u2212 2 \u03b3 + 1 = 2\u03b3 \u03b3 + 1 \u2212 1\nMoreover, \u03b3i\u22121 < xq \u2264 \u03b3i. So if xq \u2265 x\u0303q , then:\nxq \u2212 x\u0303q xq = 1\u2212 x\u0303q xq \u2264 1\u2212 x\u0303q \u03b3i = 1\u2212 2\u03b3\ni\n\u03b3i(\u03b3 + 1) = \u03b1\nSimilarly if xq \u2264 x\u0303q , then:\nx\u0303q \u2212 xq xq = x\u0303q xq \u2212 1 < x\u0303q \u03b3i\u22121 \u2212 1 = 2\u03b3\ni\n\u03b3i\u22121(\u03b3 + 1) \u2212 1 = \u03b1\nCombining both cases:\n|xq \u2212 x\u0303q| \u2264 \u03b1xq.\nTo answer quantile queries, the sketch sums up the buckets until it finds the bucket containing the q-quantile value xq:\nAlgorithm 2: Quantile(q)\nInput: 0 \u2264 q \u2264 1 i0 \u2190 min({j : Bj > 0}); count\u2190 Bi0 ; i\u2190 i0; while count \u2264 q(n\u2212 1) do\ni\u2190 min({j : Bj > 0 \u2227 j > i}); count\u2190 count+Bi;\nend while return 2\u03b3i/(\u03b3 + 1);\nGiven Lemma 2, the following Proposition easily follows:\nProposition 3. Given \u03b1 > 0 and 0 \u2264 q \u2264 1, Quantile(q) return an \u03b1-accurate q-quantile.\nProof. Let\u2019s refer to the ordered elements of the multiset S as x(1) \u2264 \u00b7 \u00b7 \u00b7 \u2264 x(n), so that by definition of the quantile, xq = x(b1+q(n\u22121)c). We will also write c(x) the number of elements in S that are less than or equal to x. Note that for any j, we always have c(x(j)) \u2265 j. Quantile(q) outputs 2\u03b3i/(\u03b3 + 1) where i = min( { j : c(\u03b3j) > q(n\u2212 1) } ). Given Lemma 2, it is enough to prove that i = dlog\u03b3 x(b1+q(n\u22121)c)e. Let k be the largest integer so that x(k) \u2264 \u03b3i. It is clear that x(k) is in the bucket of index i, so that i = dlog\u03b3 x(k)e. By definition of k, k = c(x(k)) and, because there is no element of S in the bucket of index i that is greater than x(k), we also know that c(x(k)) = c(\u03b3\ni). Thus, k = c(x(k)) = c(\u03b3i) > q(n \u2212 1) and, given that k is an integer, k \u2265 b1 + q(n\u2212 1)c follows. Therefore, i = dlog\u03b3 x(k)e \u2265 dlog\u03b3 x(b1+q(n\u22121)c)e.\nBy contradiction, if i > dlog\u03b3 x(b1+q(n\u22121)c)e, then i \u2212 1 \u2265 dlog\u03b3 x(b1+q(n\u22121)c)e and \u03b3i\u22121 \u2265 x(b1+q(n\u22121)c). As a consequence:\nc(\u03b3i\u22121) \u2265 c(x(b1+q(n\u22121)c)) \u2265 b1 + q(n\u2212 1)c > q(n\u2212 1),\nwhich violates the definition of i. Hence,\ni = dlog\u03b3 x(b1+q(n\u22121)c)e,\nand the result follows.\nHowever buckets are stored in memory (e.g., as a dictionary that maps indices to bucket counters, or as a list of bucket counters for contiguous indices), the memory size of the sketch is at least linear in the number of non-empty buckets. Therefore, a down-side to the basic version of DDSketch is that for worst-case input, its size can\ngrow as large as n, the number of elements inserted into it. A simple modification will allow us to guarantee logarithmic size bounds for non-degenerate input, and Section 3 will show that the modification will never affect the ability to answer q-quantile queries for any constant q.\nThe full version of DDSketch is a simple modification that addresses its unbounded growth by imposing a limit of m = f(n) on the number of buckets it keeps track of. It does so by collapsing the buckets for the smallest indices:\nAlgorithm 3: DDSketch-Insert(x)\nInput: x \u2208 R>0 i\u2190 dlog\u03b3(x)e; Bi \u2190 Bi + 1; if |{j : Bj > 0}| > m then\ni0 \u2190 min({j : Bj > 0}); i1 \u2190 min({j : Bj > 0 \u2227 j > i0}); Bi1 \u2190 Bi1 +Bi0 ; Bi0 \u2190 0;\nend if\nGiven that our sketch has predefined bucket boundaries for a given \u03b3, merging two sketches is straightforward. We just increase the counts of the buckets for one sketch by those of the other. This, however, might increase the size of the sketch beyond the limit of m = f(n), where n is now the number of elements in the resulting merged sketch. As with the insertion, we stay within the limit by collapsing the buckets with smallest indices:\nAlgorithm 4: DDSketch-Merge(S\u2032)\nInput: DDSketch S\u2032\nforeach i : Bi > 0 \u2228B\u2032i > 0 do Bi \u2190 Bi +B\u2032i; end foreach while |{j : Bj > 0}| > m do\ni0 \u2190 min({j : Bj > 0}); i1 \u2190 min({j : Bj > 0 \u2227 j > i0}); Bi1 \u2190 Bi1 +Bi0 ; Bi0 \u2190 0;\nend while\nWe trade off the benefit of a bounded size with not being able to correctly answer q-quantile queries if xq belongs to a collapsed bucket. The next lemma shows a sufficient condition for a quantile q to be \u03b1-accurately answered by our algorithm:\nProposition 4. DDSketch can \u03b1-accurately answer a given qquantile query if:\nx1 \u2264 xq\u03b3m\u22121.\nProof. For any particular quantile q, xq will be \u03b1-accurate as long as it belongs to one of the m buckets kept by the sketch. Let\u2019s refer to that bucket index as iq , which holds values between \u03b3iq\u22121 and \u03b3iq . If the maximum bucket (that holds x1) has index i1 \u2264 iq + m \u2212 1, then the bucket iq has definitely not been collapsed. Thus, given that x1 \u2264 xq\u03b3m\u22121, then \u03b3i1\u22121 < x1 \u2264 xq\u03b3m\u22121 \u2264 \u03b3iq\u03b3m\u22121, and i1 \u2212 1 < iq + m \u2212 1, which is equivalent to i1 \u2264 iq +m\u2212 1 as these indices are integers.\nWe\u2019ll discuss the trade-offs between the accuracy \u03b1, the minimum accurate quantile q, the number of items n, and the size of the sketch m in Section 3."
+        },
+        {
+            "heading": "2.2 Implementation Details",
+            "text": "Most systems often have built-in timeouts and a minimum granularity, so the values coming into a sketch usually have an effective minimum and maximum. Importantly, our sketch does not need to know what those values are beforehand.\nIt is straightforward to extend DDSketch to handle all of R by keeping a second sketch for negative numbers. The indices for the negative sketch need to be calculated on the absolute values, and collapses start from the highest indices.\nLike most sketch implementations, it is useful to keep separate track of the minimum and maximum values. Given how buckets are defined for DDSketch, we also keep a special bucket for zero (and all values within floating-point error of zero when calculating the index, which involves computing the logarithm of the input value).\nThe size of the sketch can be set to grow by settingm = c logn, which will match the upper bounds discussed in Section 3, but in practice m is usually set to be a constant large enough to handle a wide range of values. As an example, for \u03b1 = 0.01, a sketch of size 2048 can handle values from 80 microseconds to 1 year, and cover all quantiles.\nIf m is set to a constant, it often makes sense to preallocate the sketch buckets in memory and keep all the buckets between the minimum and maximum buckets (perhaps implemented as a ring buffer). If the sketch is allowed to grow with n, then the sketch can either grow with every order of magnitude of n, or one can implement the sketch in a sparse manner so that only buckets with values greater than 0 are kept (sacrificing speed for space efficiency)."
+        },
+        {
+            "heading": "3. DISTRIBUTION BOUNDS",
+            "text": "For most practical applications, e.g., tracking the latency of web requests to a particular endpoint, one cares about constant quantiles such as those around the median such as 0.25, 0.5, 0.75, or those towards the edge such as 0.9, 0.95, 0.99, 0.999. Thus by Proposition 4, we will focus on the necessary conditions for x1 \u2264 xq\u03b3m\u22121 or:\nlog(x1)\u2212 log(xq) log(\u03b3) + 1 \u2264 m. (1)\nfor q = \u0398(1), though our results will apply for q = \u2126(1/ \u221a n). (For simplicity, we will assume that qn is a whole number in this section.)\nFor any fixed \u03b3 andm, it is easy to come up with a data set S for which the condition does not hold, e.g., S = { \u03b31, \u03b32, . . . , \u03b32m } . Given that distribution-free results are impossible, for our formal results, we will instead assume that our data is i.i.d. from a particular family of distributions, and then show how large the sketch would have to be for Equation 1 to hold. We are able to obtain good bounds for families of distributions as general as those whose logarithms are subexponential (e.g., Pareto distributions). While our bounds are obtained by assuming i.i.d., in practice, as long as the tail of the empirical distribution is no fatter than that of a Pareto, we do not need to assume anything about the data generating process at all.\nWe will bound the LHS of Equation 1 by showing that with probability greater than 1 \u2212 \u03b41 the sample quantile xq is greater than a quantile just below it. Then we will show that with probability greater than 1\u2212 \u03b42, the sample maximum is less than some bound. Finally by the union bound we get that the probability that both\nbounds apply is greater than 1 \u2212 \u03b41 \u2212 \u03b42. In practice, the probability of failing these bounds is smaller as the sample maximum and sample quantiles become quickly independent as n grows."
+        },
+        {
+            "heading": "3.1 Sample Quantiles",
+            "text": "Let capital X1, . . . , Xn denote n independent real-valued random variables drawn from a distribution with cdf F : R \u2192 [0, 1]. The generalized inverse ofF ,F\u22121(p) is known as the quantile function of F . Let X(1) \u2264 X(2) \u2264 \u00b7 \u00b7 \u00b7 \u2264 X(n) denote the order statistics of X1, . . . , Xn (i.e., the ordered random variables).\nThe next Lemma shows that with high probability a lower sample quantile can\u2019t fall too far below the actual quantile.\nLemma 5. Let X(1) \u2264 X(2) \u2264 \u00b7 \u00b7 \u00b7 \u2264 X(n) be the order statistics for i.i.d. random variables Xi distributed according to F . Let t = \u221a log(1/\u03b41)/2n and t < q \u2264 1/2, then\nPr [ X(qn) > F \u22121(q \u2212 t) ] \u2265 1\u2212 \u03b41.\nProof. The proof follows Chva\u0301tal\u2019s proof of a special case of the Hoeffding bound [5]. For any single random variable X drawn from a distribution with cdf F , Pr[X \u2264 F\u22121(p)] = p. Then for any particular order statistic and any x \u2265 1:\nPr [ X(k) \u2264 F\u22121(p) ] =\nn\u2211 i=k\n( n\ni\n) pi(1\u2212 p)n\u2212i\n\u2264 n\u2211 k\n( n\ni\n) pi(1\u2212 p)n\u2212ixi\u2212k +\nk\u22121\u2211 0\n( n\ni\n) pi(1\u2212 p)n\u2212ixi\u2212k\n= x\u2212k n\u2211 0\n( n\ni\n) pi(1\u2212 p)n\u2212ixi = x\u2212k(px+ (1\u2212 p))n (2)\nwhere the last equality is by the Binomial Theorem. Equation 2 is minimized when x = (1 \u2212 p)k/p(n \u2212 k), and taking k = qn, our bound becomes:( p(n\u2212 k) (1\u2212 p)k )k ( (1\u2212 p)n n\u2212 k )n = ( p q )qn( (1\u2212 p) (1\u2212 q)\n)n(1\u2212q) (3)\nNote that for x \u2265 1, p \u2264 q \u2264 1/2, and that the bound is trivial when p = q. However, if we take p = q \u2212 t, we get:\n(3) = exp ( \u2212qn log ( q\nq \u2212 t\n) \u2212 (1\u2212 q)n log ( 1\u2212 q\n1\u2212 q + t )) = exp\n( \u2212n \u222b q q\u2212t ( q x \u2212 1\u2212 q 1\u2212 x ) dx ) = exp\n( \u2212n \u222b q q\u2212t q \u2212 x x(1\u2212 x)dx ) \u2264 exp ( \u22124n\n\u222b q q\u2212t (q \u2212 x)dx ) = exp ( \u22122nt2 ) = \u03b41\nfor t = \u221a\nlog(1/\u03b41)/2n, and where the last inequality uses the fact that x(1\u2212 x) \u2264 1/4 for all x \u2208 R."
+        },
+        {
+            "heading": "3.2 Sample Maximums",
+            "text": "We will first bound the sample maximum for subexponential distributions, which include the Gaussian, logistic, chi-squared, exponential, and many others.\nDefinition 6. A random variable X \u2208 R is said to be subexponential with parameters (\u03c3, b) if\nE [exp (\u03bb(X \u2212 EX))] \u2264 exp ( \u03c32\u03bb2/2 ) ,\nfor 0 \u2264 \u03bb \u2264 1/b.\nUsing Chernoff-type techniques, one can obtain concentration inequalities for subexponential variables [4].\nTheorem 7. Let X be a subexponential random variable with parameters (\u03c3, b). Then,\nPr [X \u2212 EX \u2265 t] \u2264 exp ( \u2212t2/2\u03c32 ) for 0 \u2264 t \u2264 \u03c32/b, and"
+        },
+        {
+            "heading": "Pr [X \u2212 EX \u2265 t] \u2264 exp (\u2212t/2b)",
+            "text": "for t > \u03c32/b.\nNow we can lower-bound the sample maximum by the complement of the event that none of the sample is greater than t.\nCorollary 8. Let X(1) \u2264 X(2) \u2264 \u00b7 \u00b7 \u00b7 \u2264 X(n) be the order statistics for i.i.d. subexponential random variablesXi with parameters (\u03c3, b), and t = 2b log(n/\u03b42). Then the sample maximum is less than t with probability at least 1\u2212 \u03b42.\nProof. By Theorem 7, Pr [ X(n) \u2212 EX > t ] < 1\u2212 ( 1\u2212 e\u2212t/2b )n = 1\u2212 ( 1\u2212 \u03b42\nn\n)n < \u03b42,\nwhere the final inequality is by Bernoulli\u2019s inequality."
+        },
+        {
+            "heading": "3.3 Sketch Size Bounds",
+            "text": "For subexponential distributions, we can bound Equation 1 by combining Lemma 5 and Corollary 8:\nTheorem 9. Let X(1) \u2264 X(2) \u2264 \u00b7 \u00b7 \u00b7 \u2264 X(n) be the order statistics for i.i.d. random variables Xi distributed according to a subexponential distribution F with parameters (\u03c3, b). Then with probability at least 1\u2212 \u03b41 \u2212 \u03b42, DDSketch is an \u03b1-accurate (q, 1)- sketch with size at most (logX(n)\u2212 logX(qn))/ log(\u03b3) + 1, which is bounded from above by:\nlog (2b log (n/\u03b42) + EX)\u2212 log ( F\u22121 (q \u2212 t) ) log(\u03b3) + 1\nfor \u03b3 = (1 +\u03b1)/(1\u2212\u03b1), t = \u221a log(1/\u03b41)/2n, and t < q \u2264 1/2.\nExponential. For concreteness, let\u2019s take \u03b41 = \u03b42 = e\u221210 and \u03b1 = 0.01 (i.e., \u03b3 \u2248 1.02), and let\u2019s consider the exponential distribution with cdf F (t;\u03bb) = 1 \u2212 exp(\u2212\u03bbt) for t \u2265 0, and 0 otherwise. The exponential distribution is subexponential with parameters (2/\u03bb, 2/\u03bb).\nIf n > 320, then p > 3/8, and the sample median is at least F\u22121 (p) > \u2212\u03bb\u22121 log(1\u22123/8) > 0.47/\u03bb. The sample maximum2 is at most 4\u03bb\u22121(log(n) + 10 + 1/4), and 1/ log(\u03b3) < 51 so we can bound the size from Theorem 9 by: 51(log(4 log n + 41) \u2212 log(0.47)) + 1.\nThis means that even with a sketch of size 273 one can 0.01- accurately maintain the upper half order statistics of over a million 2The factor of 4 can be removed from the bound for the sample maximum if we analyze the exponential distribution directly instead of using the generic bounds for subexponential distributions.\nsamples with probability greater than 0.99991. This grows doubleexponentially, so a sketch of size 1000 can 0.01-accurately maintain the upper half order statistics of over exp(exp(17)) values with that same probability.\nPareto. The double logarithm in our size bound from Theorem 9 allows us to handle distributions with much fatter tails as well. The Pareto distribution distribution has cdf F (t; a, b) = 1 \u2212 (b/t)a. If X is a random variable drawn from this distribution, then Y = log(X/b) \u223c Exp(a). Thus, we can reuse the arguments above to get that with probability at least 1\u2212 \u03b41 \u2212 \u03b42:\nlog(X(n)) < 4a \u22121 log(n/\u03b42) + a \u22121 + log(b)\nand log(X(n/2)) > \u2212a\u22121 log(1/2 + \u221a log(1/\u03b41)/2n) + log(b).\nAs before, let\u2019s take \u03b41 = \u03b42 = e\u221210, \u03b1 = 0.01, and assume that n > 320. With probability greater than 1 \u2212 e\u221210 \u2212 e\u221210 \u2248 0.99991:\nlog(X(n))\u2212 log(X(n/2)) log(\u03b3) + 1 < 51a\u22121(4 logn+ 11) + 1\nGiven that Pareto distributions have exponentially fatter tails than exponential distributions, the sketch size upper bounds increase accordingly. Taking a = 1, this means that we require a sketch of size 3380 to 0.01-accurately maintain the upper half order statistics of over a million samples with probability greater than 0.99991. A sketch of size 10000, can 0.01-accurately maintain the upper half order statistics of over exp(46) values with that same probability.\nOther Distributions. We focused on subexponential tails and the Pareto distribution in this section as we believe it to best represent the worst case for practical use-cases of quantile sketching. For lighter tails such as subgaussians and thus for lognormal distributions, we can of course get much tighter bounds."
+        },
+        {
+            "heading": "4. EVALUATION",
+            "text": "We provide implementations of DDSketch in Java [12], Go [13] and Python [14]. Our Java implementation provides multiple versions of DDSketch: buckets can be stored in a contiguous way (for fast addition) or in a sparse way (for smaller memory footprint). The number of buckets can grow indefinitely or be bounded with a fixed maximum of m buckets, collapsing the buckets of lowest or highest indices. The mapping of the values to their bucket indices can be logarithmic, as defined above, but we also provide alternative mappings that are faster to evaluate while still ensuring relative accuracy guarantees. Those mappings make the most of the binary\nrepresentation of floating-point values, which provides a costless way to evaluate the logarithm to the base 2. In between a linear or quadratic interpolation can be used so that the logarithm to any base can be approximated. Those mappings define buckets whose sizes are not optimal under the constraint of ensuring relative accuracy guarantee as some of them are smaller than necessary. Their faster evaluation than the memory-optimal logarithmic mapping comes at the cost of requiring more buckets to cover a given range of values, and therefore a memory footprint overhead in DDSketch. We refer to this version of the code as DDSketch (fast) in our experiments.\nWe compare DDSketch against the Java implementation [31] of HDR Histogram, our Java implementation of the GKArray version of the GK sketch [12], as well as the Java implementation of the Moments sketch [15] (all three discussed in Section 1.2). HDR Histogram is a relative-error sketch for non-negative values. Its accuracy is expressed as the number of significant decimal digits d of the values. GKArray guarantees that the rank error of the estimated quantiles will be smaller than after adding values. The Moments sketch has guarantees on the average rank error bounded by the number of moments k that are estimated.\nWe consider three data sets, and compare the size in memory of the sketches, the speed of adding values and merging sketches, and the accuracy of the estimated quantiles. The measurements are performed with the Java implementations of all four sketches.\nThe sketch parameters are chosen so that the targeted relative accuracy for DDSketch and HDR Histogram is 1%. For GKArray, we use a rank accuracy that gives roughly similar memory footprints as DDSketch. For the Moments sketch, we use the maximum recommended numbers of moments, as per the Java implementation documentation, and we also use the arcsinh transform (called compression in the code), which makes the sketch more accurate for distributions with heavy tails. Those parameters are summarized in Table 2."
+        },
+        {
+            "heading": "4.1 Data Sets",
+            "text": "We use three data sets for our experiments, whose distributions are shown in Figure 5. The pareto data set contains synthetic data generated from a Pareto distribution with a = b = 1. The span data\nset is a set of span durations of the distributed traces of requests that Datadog received over a few hours. The durations are integers in units of nanoseconds, and it includes a wide range of values (from 100 to 1.9 \u00d7 1012). The power dataset is the global active power measurements from the UCI Individual Household Electric Power Consumption dataset [26]."
+        },
+        {
+            "heading": "4.2 Sketch Size In Memory",
+            "text": "How much space a sketch takes up in memory will be an important consideration in many applications. For each of the four sketches, the parameters chosen will determine the accuracy of the sketch as well as its size. An increase in accuracy generally requires a larger sketch. Figure 6 plots the sketch size in memory as n increases.\nWe see that DDSketch (fast) can be up to twice the size of DDSketch, and that HDR Histogram is significantly larger. Both GKArray and the Moments sketch are much smaller, and the Moments sketch in particular is completely independent of the size of the input.\nIf one runs DDSketch with a limit placed on the number of bins the sketch can contain, when the maximum number of bins is reached, DDSketch starts to combine the smallest bins together as needed,\nmeaning that the lower quantile estimates may not meet the relative accuracy guarantee. In our experiments this maximum was never reached, and we have not found this to be an issue. Figure 7 plots the number of DDSketch bins for the pareto data set. The number of bins is around 900 for n = 1010, less than half the limit of 2048. It is also worth noting that the actual sketch size required for the Pareto distribution is much smaller than the upper bounds we calculated in Section 3.3."
+        },
+        {
+            "heading": "4.3 Add and Merge Speeds",
+            "text": "In this section, we compare the performance of the sketches in terms of the time required to add values to a sketch and to merge sketches together. Figure 8 shows the average time required to addn values to an empty sketch divided by n. It takes less than 5 seconds to add a hundred million values to an empty DDSketch on a 3.1GHz MacBook Pro.\nGKArray is the slowest for insertions by far, being around six times slower than the Moments sketch. Adding to an HDR Histogram is faster than adding to the standard version of DDSketch as HDR Histogram has a simpler index calculation than DDSketch which has to calculate logarithms. DDSketch (fast) is the fastest in terms of insertion speed, though this was obtained by an increase in the sketch size as we saw in Section 6.\nFigure 9 plots the average time required to merge two sketches of roughly the same size, as a function of the number of values in the merged sketch. Merging two DDSketches is very fast\u2014it takes around 10 microseconds or less to merge two sketches containing up to fifty million values each\u2014depending on the data set and size, it can be more than an order of magnitude faster than GKArray or HDR Histogram. The Moment sketch has the fastest merge speeds of all the algorithms, as each sketch only holds on to k = 20 values."
+        },
+        {
+            "heading": "4.4 Sketch Accuracy",
+            "text": "DDSketch guarantees a relative error in its quantile estimates of at most \u03b1, while GKArray guarantees a rank error of less than . HDR Histogram has an implied relative-error guarantee of 10\u2212d where d is the number of significant digits. Therefore we compare both the average relative and rank errors in Figures 10 and 11, for the p50, p95, and p99 estimates. Note that for GKArray, for n \u2264 1/ , all the values are retained so that both the relative error and rank error will be zero.\nFigure 10 shows that for all three data sets DDSketch has a consistent relative error less than \u03b1 for all values of n. For the heavytailed pareto and span data sets, the relative error sketches (DDSketch and HDR Histogram) have much smaller relative error than either GKArray or Moments. The discrepancy is especially striking for the higher quantiles, as the values returned can be several orders of magnitude off the actual value. The Moments sketch has particular difficulty with the span data set as it has trouble dealing with such a large range of values.\nIn terms of rank error, the guarantee of GKArray can be clearly seen in Figure 11. No such guarantee is provided for DDSketch and HDR Histogram, yet they perform better than the Moments sketch\nwhich has a guarantee on average, and even GK for the higher quantiles."
+        },
+        {
+            "heading": "5. CONCLUSION",
+            "text": "Datadog\u2019s use-case for distributed quantile sketching comes from our agent-based monitoring where we need to accurately aggregate data coming from disparate sources in our high-throughput, lowlatency, distributed data processing engine. To get a sense of the scale, some of our customers have endpoints that handle over 10M points per second, and DDSketch provides accurate latency quantiles for these endpoints.\nAfter our initial evaluation of existing quantile sketching algorithms, we settled on the Greenwald-Khanna algorithm as it could handle arbitrary values, and provided the best compromise between accuracy, size, insertion speed, and merge time. (The implementation we provide comes from our work in optimizing the algorithm.)\nUnfortunately, the relative-accuracy errors for higher quantiles generated by the rank-error sketch proved to be unacceptable, which led us to develop DDSketch. Unlike HDR Histogram, which is designed to handle a bounded range and has poor merge speeds, DDSketch is a flexible relativer error sketch that can handle arbitrarily large ranges, and has fast merge speeds. Compared to GK, the relative accuracy of DDSketch is comparable for dense data sets, while for heavy-tailed data sets the improvement in accuracy can be measured in orders of magnitude. The rank error is also comparable to if not better than that of GK. Additionally, it is much faster in both insertion and merge."
+        },
+        {
+            "heading": "6. ACKNOWLEDGMENT",
+            "text": "This research has made use of data provided by the International Astronomical Union\u2019s Minor Planet Center."
+        },
+        {
+            "heading": "7. REFERENCES",
+            "text": "[1] L. Abraham, J. Allen, O. Barykin, V. Borkar, B. Chopra,\nC. Gerea, D. Merl, J. Metzler, D. Reiss, S. Subramanian, J. L. Wiener, and O. Zed. Scuba: Diving into data at facebook. PVLDB, 6(11):1057\u20131067, 2013.\n[2] P. K. Agarwal, G. Cormode, Z. Huang, J. Phillips, Z. Wei, and K. Yi. Mergeable summaries. In Proceedings of the 31st ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems, PODS \u201912, pages 23\u201334, New York, NY, USA, 2012. ACM.\n[3] B. Beyer, C. Jones, J. Petoff, and N. R. Murphy. Site Reliability Engineering: How Google Runs Production Systems. \u201d O\u2019Reilly Media, Inc.\u201d, 2016.\n[4] V. V. Buldygin and U. V. Kozachenko. Metric Characterization of Random Variables and Random Processes. American Mathematical Society, Rhode Island, USA, 2000.\n[5] V. Chva\u0301tal. The tail of the hypergeometric distribution. Discrete Mathematics, 25:285\u2013287, 1979.\n[6] G. Cormode, M. Garofalakis, P. J. Haas, and C. Jermaine. Synopses for massive data: Samples, histograms, wavelets, sketches. Foundations and Trends R\u00a9 in Databases, 4(1-3):1\u2013294, 2011.\n[7] G. Cormode, F. Korn, S. Muthukrishnan, and D. Srivastava. Effective computation of biased quantiles over data streams. In 21st International Conference on Data Engineering, ICDE\u201905, pages 20\u201331, New York, NY, USA, 2005. IEEE Computer Society Press.\n[8] G. Cormode, F. Korn, S. Muthukrishnan, and D. Srivastava. Space- and time-efficient deterministic algorithms for biased quantiles over data streams. In Proceedings of the 25th ACM SIGMOD-SIGACT-SIGART Symposium on Principles of Database Systems, PODS \u201906, pages 263\u2013272, New York, NY, USA, 2006. ACM.\n[9] C. Cranor, T. Johnson, O. Spataschek, and V. Shkapenyuk. Gigascope: a stream database for network applications. In Proceedings of the 2003 ACM SIGMOD International Conference on Management of Data, pages 647\u2013651. ACM, 2003.\n[10] Datadog. 8 emerging trends in container orchestration. https:\n//www.datadoghq.com/container-orchestration, 2018. Accessed: 2018-12-12.\n[11] Datadog. 8 surprising facts about real docker adoption. https://www.datadoghq.com/docker-adoption/, 2018. Accessed: 2018-12-12.\n[12] Datadog. https://github.com/DataDog/sketches-java, 2019.\n[13] Datadog. https://github.com/DataDog/sketches-go, 2019.\n[14] Datadog. https://github.com/DataDog/sketches-py, 2019.\n[15] S. DAWN. Moments sketch. https: //github.com/stanford-futuredata/momentsketch, 2018. Accessed: 2019-05-29.\n[16] J. Dean and L. A. Barroso. The tail at scale. Communications of the ACM, 56(2):74\u201380, 2013.\n[17] T. Dunning and O. Ertl. Computing extremely accurate quantiles using t-digests. arXiv preprint arXiv:1902.04023, 2019.\n[18] Elasticsearch. Elasticsearch reference: Percentiles aggregation. https://www.elastic.co/guide/en/ elasticsearch/reference/current/\nsearch-aggregations-metrics-percentile-aggregation.\nhtml, 2015. Accessed: 2018-09-14. [19] E. Gan, J. Ding, K. S. Tai, V. Sharan, and P. Bailis.\nMoment-based quantile sketches for efficient high cardinality aggregation queries. PVLDB, 11(11):1647\u20131660, 2018.\n[20] M. B. Greenwald and S. Khanna. Space-efficient online computation of quantile summaries. In Proceedings of the 2001 ACM SIGMOD International Conference on Management of Data, SIGMOD \u201901, pages 58\u201366, New York, NY, USA, 2001. ACM.\n[21] M. B. Greenwald and S. Khanna. Quantiles and equidepth histograms over streams. In M. Garofalakis, J. Gehrke, and R. Rastogi, editors, Data Stream Management, pages 45\u201386. Springer, New York, NY, USA, 2016.\n[22] S. Guha, N. Koudas, and K. Shim. Approximation and streaming algorithms for histogram construction problems. ACM Transactions on Database Systems (TODS), 31(1):396\u2013438, 2006.\n[23] S. Guha, K. Shim, and J. Woo. Rehist: Relative error histogram construction algorithms. In Proceedings of the 30th International Conference on Very Large Data Bases, VLDB \u201904, pages 300\u2013311. VLDB Endowment, 2004.\n[24] H. V. Jagadish, N. Koudas, S. Muthukrishnan, V. Poosala, K. C. Sevcik, and T. Suel. Optimal histograms with quality guarantees. In Proceedings of the 24rd International Conference on Very Large Data Bases, VLDB \u201998, pages 275\u2013286, 1998.\n[25] Z. Karnin, K. Lang, and E. Liberty. Optimal quantile approximation in streams. In Proceedings of the 57th IEEE Symposium on Foundations of Computer Science (FOCS), FOCS \u201916, pages 71\u201378, New York, NY, USA, 2016. IEEE Computer Society Press.\n[26] M. Lichman. Uci machine learning repository. https: //archive.ics.uci.edu/ml/datasets/individual+\nhousehold+electric+power+consumption, 2013.\n[27] G. Luo, L. Wang, K. Yi, and G. Cormode. Quantiles over data streams: experimental comparisons, new analyses, and further improvements. PVLDB, 25(4):449\u2013472, 2016.\n[28] S. Madden, M. J. Franklin, J. M. Hellerstein, and W. Hong. The design of an acquisitional query processor for sensor networks. In Proceedings of the 2003 ACM SIGMOD International Conference on Management of Data, pages 491\u2013502. ACM, 2003.\n[29] J. I. Munro and M. S. Paterson. Selection and sorting with limited storage. Theoretical Computer Science, 12(3):315\u2013323, 1980.\n[30] R. R. Sambasivan, R. Fonseca, I. Shafer, and G. R. Ganger. So, you want to trace your distributed system? key design insights from years of practical experience. Technical Report CMU-PDL-14-102, Carnegie Mellon University, 2014.\n[31] G. Tene. Hdrhistogram: A high dynamic range (hdr) histogram. http://hdrhistogram.org/, 2012. Accessed: 2018-09-15."
+        }
+    ],
+    "title": "DDSketch: A Fast and Fully-Mergeable Quantile Sketch with Relative-Error Guarantees",
+    "year": 2019
+}
