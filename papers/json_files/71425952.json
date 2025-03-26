@@ -1,0 +1,798 @@
+{
+    "abstractText": "The use of simulation for high-dimensional intractable computations has revolutionized applied mathematics. Designing, improving and understanding the new tools leads to (and leans on) fascinating mathematics, from representation theory through micro-local analysis.",
+    "authors": [
+        {
+            "affiliations": [],
+            "name": "PERSI DIACONIS"
+        }
+    ],
+    "id": "SP:4e6258ebd07b548f77f8cd33caf72d811c2bd54c",
+    "references": [
+        {
+            "authors": [
+                "D. Aldous",
+                "J. Fill"
+            ],
+            "title": "Reversible Markov chains and random walks on graphs. Monograph",
+            "year": 2002
+        },
+        {
+            "authors": [
+                "M.P. Allen",
+                "D.J. Tildesely"
+            ],
+            "title": "Computer simulation of liquids",
+            "year": 1987
+        },
+        {
+            "authors": [
+                "Anderson",
+                "W.J. (1991). Continuous-time Markov chains. An applications-oriented approach. Springer Series in Statistics"
+            ],
+            "title": "Probability and its Applications",
+            "venue": "Springer-Verlag, New York. MR1118840"
+        },
+        {
+            "authors": [
+                "E. Arias-Castro",
+                "P. Diaconis",
+                "R. Stanley"
+            ],
+            "title": "A super-class walk on upper-triangular matrices",
+            "venue": "J. Algebra, 278(2):739\u2013765",
+            "year": 2004
+        },
+        {
+            "authors": [
+                "D. Bakry",
+                "P. Cattiaux",
+                "A. Guillin"
+            ],
+            "title": "Rate of convergence for ergodic continuous Markov processes: Lyapunov versus Poincar\u00e9",
+            "venue": "J. Funct. Anal.,",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "F. Barthe",
+                "P. Bakry",
+                "P. Cattiaux",
+                "A. Guillin"
+            ],
+            "title": "Poincar\u00e9 inequalities for logconcave probability measures: a Lyapounov function approach",
+            "venue": "Electron Comm. Probab.,",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "R.N. Bhattacharya",
+                "Waymire",
+                "E.C. (1990). Stochastic processes with applications. Wiley Series in Probability",
+                "Mathematical Statistics"
+            ],
+            "title": "Applied Probability and Statistics",
+            "venue": "John Wiley & Sons Inc., New York. A Wiley-Interscience Publication. MR1054645"
+        },
+        {
+            "authors": [
+                "L.J. Billera",
+                "P. Diaconis"
+            ],
+            "title": "A geometric interpretation of the Metropolis-Hastings algorithm",
+            "venue": "Statist. Sci., 16(4):335\u2013339",
+            "year": 2001
+        },
+        {
+            "authors": [
+                "P. Billingsley"
+            ],
+            "title": "Probability and measure. Wiley Series in Probability and Mathematical Statistics",
+            "venue": "A Wiley-Interscience Publication",
+            "year": 1995
+        },
+        {
+            "authors": [
+                "P. Br\u00e9maud"
+            ],
+            "title": "Markov chains, volume 31 of Texts in Applied Mathematics. SpringerVerlag, New York",
+            "venue": "Gibbs fields, Monte Carlo simulation, and queues",
+            "year": 1999
+        },
+        {
+            "authors": [
+                "B. Bubley",
+                "M. Dyer"
+            ],
+            "title": "Path coupling: a technique for proving rapid mixing in Markov chains",
+            "year": 1997
+        },
+        {
+            "authors": [
+                "K. Burdzy",
+                "Kendall",
+                "W.S. (2000). Efficient Markovian couplings"
+            ],
+            "title": "examples and counterexamples",
+            "venue": "Ann. Appl. Probab., 10(2):362\u2013409. MR1768241"
+        },
+        {
+            "authors": [
+                "O. Capp\u00e9",
+                "E. Moulines",
+                "T. Ryd\u00e9n"
+            ],
+            "title": "Inference in hidden Markov models. Springer Series in Statistics. Springer, New York. With Randal Douc\u2019s contributions to Chapter 9 and Christian P. Robert\u2019s to Chapters 6, 7 and 13, With Chapter 14 by Gersende Fort, Philippe Soulier and Moulines, and Chapter 15 by St\u00e9phane",
+            "venue": "Boucheron and Elisabeth Gassiat",
+            "year": 2005
+        },
+        {
+            "authors": [
+                "T. Ceccherini-Silberstein",
+                "F. Scarabotti",
+                "F. Tolli"
+            ],
+            "title": "Harmonic analysis on finite groups, volume 108 of Cambridge Studies in Advanced Mathematics",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "Chen",
+                "M.-H",
+                "Shao",
+                "Q.-M",
+                "J.G. Ibrahim"
+            ],
+            "title": "Monte Carlo methods in Bayesian computation",
+            "year": 2000
+        },
+        {
+            "authors": [
+                "Y. Chen",
+                "P. Diaconis",
+                "S.P. Holmes",
+                "J.S. Liu"
+            ],
+            "title": "Sequential Monte Carlo methods for statistical analysis of tables",
+            "venue": "J. Amer. Statist. Assoc.,",
+            "year": 2005
+        },
+        {
+            "authors": [
+                "S. Conner"
+            ],
+            "title": "Simulation and solving substitution codes. Master\u2019s thesis, Department of Statistics, University of Warwick",
+            "year": 2003
+        },
+        {
+            "authors": [
+                "D.E. Critchlow"
+            ],
+            "title": "Metric methods for analyzing partially ranked data, volume 34 of Lecture Notes in Statistics",
+            "venue": "Springer-Verlag, Berlin",
+            "year": 1985
+        },
+        {
+            "authors": [
+                "P. Diaconis"
+            ],
+            "title": "Group representations in probability and statistics. Institute of Mathematical Statistics Lecture Notes\u2014Monograph Series, 11",
+            "venue": "Institute of Mathematical Statistics,",
+            "year": 1988
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "R.L. Graham"
+            ],
+            "title": "Spearman\u2019s footrule as a measure of disarray",
+            "venue": "J. Roy. Statist. Soc. Ser. B,",
+            "year": 1977
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "P. Hanlon"
+            ],
+            "title": "Eigen-analysis for some examples of the Metropolis algorithm. In Hypergeometric functions on domains of positivity, Jack polynomials, and applications (Tampa, FL, 1991), volume 138 of Contemp. Math., pages 99\u2013117",
+            "year": 1992
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "I.M. Isaacs"
+            ],
+            "title": "Supercharacters and superclasses for algebra groups",
+            "venue": "Trans. Amer. Math. Soc.,",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "K. Khare",
+                "L. Saloff-Coste"
+            ],
+            "title": "Gibbs sampling, exponential families and orthogonal polynomials, with discussion",
+            "venue": "Statist. Sci.,",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "G. Lebeau"
+            ],
+            "title": "Micro-local analysis for the Metropolis",
+            "venue": "algorithm. Math. Z.,",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "G. Lebeau",
+                "L. Michel"
+            ],
+            "title": "Geometric analysis for the Metropolis algorithm on Lipshitz domains",
+            "venue": "Technical report,",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "V. Limic"
+            ],
+            "title": "Spectral gap of the hard-core model on the unit interval",
+            "venue": "Technical report,",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "J.W. Neuberger"
+            ],
+            "title": "Numerical results for the Metropolis algorithm. Experiment",
+            "year": 2004
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "A. Ram"
+            ],
+            "title": "Analysis of systematic scan Metropolis algorithms using Iwahori-Hecke algebra techniques",
+            "venue": "Michigan Math. J.,",
+            "year": 2000
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "L. Saloff-Coste"
+            ],
+            "title": "Comparison theorems for reversible Markov chains",
+            "venue": "Ann. Appl. Probab.,",
+            "year": 1993
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "L. Saloff-Coste"
+            ],
+            "title": "Nash inequalities for finite Markov chains",
+            "venue": "J. Theoret. Probab.,",
+            "year": 1996
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "L. Saloff-Coste"
+            ],
+            "title": "What do we know about the Metropolis algorithm",
+            "venue": "J. Comput. System Sci.,",
+            "year": 1998
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "M. Shahshahani"
+            ],
+            "title": "Generating a random permutation with random transpositions",
+            "venue": "Z. Wahrsch. Verw. Gebiete,",
+            "year": 1981
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "B. Sturmfels"
+            ],
+            "title": "Algebraic algorithms for sampling from conditional distributions",
+            "venue": "Ann. Statist.,",
+            "year": 1998
+        },
+        {
+            "authors": [
+                "P. Diaconis",
+                "N. Thiem"
+            ],
+            "title": "Supercharacter formulas for pattern groups",
+            "venue": "Trans. Amer. Math. Soc.,",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "R.L. Dobrushin"
+            ],
+            "title": "Prescribing a system of random variables by conditional distributions",
+            "venue": "Theor. Probab. Appl.\u2013 Engl. Tr.,",
+            "year": 1970
+        },
+        {
+            "authors": [
+                "A. Doucet",
+                "N. de Freitas",
+                "N. Gordon"
+            ],
+            "title": "Sequential Monte Carlo in Practice",
+            "year": 2001
+        },
+        {
+            "authors": [
+                "C. Dress",
+                "W. Krauth"
+            ],
+            "title": "Cluster algorithm for hard spheres and related systems",
+            "venue": "J. Phys. A,",
+            "year": 1995
+        },
+        {
+            "authors": [
+                "S.N. Ethier",
+                "Kurtz",
+                "T.G. (1986). Markov processes. Wiley Series in Probability",
+                "Mathematical Statistics"
+            ],
+            "title": "Probability and Mathematical Statistics",
+            "venue": "John Wiley & Sons Inc., New York. Characterization and convergence. MR838085"
+        },
+        {
+            "authors": [
+                "W. Feller"
+            ],
+            "title": "An introduction to probability theory and its applications",
+            "year": 1968
+        },
+        {
+            "authors": [
+                "J.A. Fill"
+            ],
+            "title": "Eigenvalue bounds on convergence to stationarity for nonreversible Markov chains, with an application to the exclusion process",
+            "venue": "Ann. Appl. Probab.,",
+            "year": 1991
+        },
+        {
+            "authors": [
+                "D. Frenkel",
+                "B. Smit"
+            ],
+            "title": "Understanding molecular simulation: From algorithms to applications, 2nd edition",
+            "venue": "Computational Science Series,",
+            "year": 2002
+        },
+        {
+            "authors": [
+                "M. Fukushima",
+                "Y. \u014cshima",
+                "M. Takeda"
+            ],
+            "title": "Dirichlet forms and symmetric Markov processes, volume 19 of de Gruyter Studies in Mathematics",
+            "year": 1994
+        },
+        {
+            "authors": [
+                "J. Gill"
+            ],
+            "title": "Bayesian methods: a social and behavioral sciences approach, 2nd ed. Statistics in the Social and Behavioral Sciences",
+            "year": 2007
+        },
+        {
+            "authors": [
+                "J.M. Hammersley",
+                "D.C. Handscomb"
+            ],
+            "title": "Monte Carlo methods",
+            "venue": "Methuen & Co. Ltd., London",
+            "year": 1965
+        },
+        {
+            "authors": [
+                "A.O.F. Hendrickson"
+            ],
+            "title": "Supercharacter theories of finite simple groups. PhD thesis, University of Wisconsin",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "J.P. Hobert",
+                "G.L. Jones",
+                "B. Presnell",
+                "J.S. Rosenthal"
+            ],
+            "title": "On the applicability of regenerative simulation in Markov chain Monte Carlo",
+            "year": 2002
+        },
+        {
+            "authors": [
+                "D.F. Holt",
+                "B. Eick",
+                "E.A. O\u2019Brien"
+            ],
+            "title": "Handbook of computational group theory. Discrete Mathematics and its Applications (Boca Raton)",
+            "year": 2005
+        },
+        {
+            "authors": [
+                "A. Hora",
+                "N. Obata"
+            ],
+            "title": "Quantum probability and spectral analysis of graphs. Theoretical and Mathematical Physics. Springer, Berlin. With a foreword by Luigi Accardi",
+            "year": 2007
+        },
+        {
+            "authors": [
+                "S.F. Jarner",
+                "E. Hansen"
+            ],
+            "title": "Geometric ergodicity of Metropolis algorithms",
+            "venue": "Stochastic Process. Appl., 85(2):341\u2013361",
+            "year": 2000
+        },
+        {
+            "authors": [
+                "A. Jaster"
+            ],
+            "title": "The hexatic phase of the two-dimensional hard disks system",
+            "venue": "Phys. Lett. A,",
+            "year": 2004
+        },
+        {
+            "authors": [
+                "M. Jerrum",
+                "A. Sinclair",
+                "E. Vigoda"
+            ],
+            "title": "A polynomial-time approximation algorithm for the permanent of a matrix with nonnegative entries",
+            "venue": "J. ACM,",
+            "year": 2004
+        },
+        {
+            "authors": [
+                "G.L. Jones",
+                "J.P. Hobert"
+            ],
+            "title": "Honest exploration of intractable probability distributions via Markov chain Monte Carlo",
+            "year": 2001
+        },
+        {
+            "authors": [
+                "R. Kannan",
+                "M.W. Mahoney",
+                "R. Montenegro"
+            ],
+            "title": "Rapid mixing of several Markov chains for a hard-core model",
+            "venue": "In Algorithms and computation,",
+            "year": 2003
+        },
+        {
+            "authors": [
+                "W.S. Kendall"
+            ],
+            "title": "Geometric ergodicity and perfect simulation",
+            "venue": "Electron. Comm. Probab.,",
+            "year": 2004
+        },
+        {
+            "authors": [
+                "I. Kontoyiannis",
+                "S.P. Meyn"
+            ],
+            "title": "Spectral theory and limit theorems for geometrically ergodic Markov processes",
+            "venue": "Ann. Appl. Probab., 13(1):304\u2013362",
+            "year": 2003
+        },
+        {
+            "authors": [
+                "W. Krauth"
+            ],
+            "title": "Statistical mechanics. Oxford Master Series in Physics",
+            "venue": "Oxford Master Series in Statistical Computational, and Theoretical Physics",
+            "year": 2006
+        },
+        {
+            "authors": [
+                "D.P. Landau",
+                "K. Binder"
+            ],
+            "title": "A Guide to Monte Carlo Simulations in Statistical Physics",
+            "year": 2005
+        },
+        {
+            "authors": [
+                "G. Lebeau",
+                "L. Michel"
+            ],
+            "title": "Semiclassical analysis of a random walk on a manifold",
+            "venue": "Ann. Probab.,",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "T.M. Liggett"
+            ],
+            "title": "Interacting particle systems, volume 276 of Grundlehren der Mathematischen Wissenschaften [Fundamental Principles of Mathematical Sciences",
+            "year": 1985
+        },
+        {
+            "authors": [
+                "T. Lindvall"
+            ],
+            "title": "Lectures on the coupling method",
+            "venue": "Dover Publications Inc., Mineola, NY. Corrected reprint of the 1992 original",
+            "year": 2002
+        },
+        {
+            "authors": [
+                "J.S. Liu"
+            ],
+            "title": "Monte Carlo Strategies in Scientific Computing",
+            "year": 2001
+        },
+        {
+            "authors": [
+                "L. Lov\u00e1sz",
+                "S. Vempala"
+            ],
+            "title": "Hit-and-run from a corner",
+            "venue": "SIAM J. Comput.,",
+            "year": 2006
+        },
+        {
+            "authors": [
+                "H. L\u00f6wen"
+            ],
+            "title": "Fun with hard spheres",
+            "year": 2000
+        },
+        {
+            "authors": [
+                "I.G. Macdonald"
+            ],
+            "title": "Symmetric functions and Hall polynomials. Oxford Mathematical Monographs",
+            "venue": "With contributions by A. Zelevinsky, Oxford Science Publications",
+            "year": 1995
+        },
+        {
+            "authors": [
+                "P. Mackenzie"
+            ],
+            "title": "The fundamental constants of nature from lattice gauge theory simulations",
+            "venue": "J. Phys. Conf. Ser.,",
+            "year": 2005
+        },
+        {
+            "authors": [
+                "F. Martinelli"
+            ],
+            "title": "Relaxation times of Markov chains in statistical mechanics and combinatorial structures",
+            "venue": "In Probability on discrete structures,",
+            "year": 2004
+        },
+        {
+            "authors": [
+                "S.P. Meyn",
+                "R.L. Tweedie"
+            ],
+            "title": "Markov chains and stochastic stability. Communications and Control Engineering Series. Springer-Verlag London Ltd., London",
+            "year": 1993
+        },
+        {
+            "authors": [
+                "R. Montenegro",
+                "P. Tetali"
+            ],
+            "title": "Mathematical aspects of mixing times in Markov chains",
+            "venue": "Found. Trends Theor. Comput. Sci.,",
+            "year": 2006
+        },
+        {
+            "authors": [
+                "B. Morris",
+                "A. Sinclair"
+            ],
+            "title": "Random walks on truncated cubes and sampling 0 \u2212 1 knapsack solutions",
+            "venue": "SIAM J. Comput.,",
+            "year": 2004
+        },
+        {
+            "authors": [
+                "R.W. Neel"
+            ],
+            "title": "A martingale approach to minimal surfaces",
+            "venue": "J. Funct. Anal.,",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "M.E.J. Newman",
+                "G.T. Barkema"
+            ],
+            "title": "Monte Carlo methods in statistical physics",
+            "year": 1999
+        },
+        {
+            "authors": [
+                "Y. Ollivier"
+            ],
+            "title": "Ricci curvature of Markov chains on metric spaces",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "L. Pachter",
+                "B. Sturmfels"
+            ],
+            "title": "Algebraic statistics for computational biology",
+            "year": 2005
+        },
+        {
+            "authors": [
+                "I. Pak"
+            ],
+            "title": "What do we know about the product replacement algorithm? In Groups and computation, III (Columbus, OH, 1999), volume 8 of Ohio",
+            "venue": "State Univ. Math. Res. Inst. Publ.,",
+            "year": 2001
+        },
+        {
+            "authors": [
+                "G. Pistone",
+                "E. Riccomagno",
+                "H.P. Wynn"
+            ],
+            "title": "Algebraic statistics, volume 89 of Monographs on Statistics and Applied Probability",
+            "venue": "Chapman & Hall/CRC, Boca Raton, FL. Computational commutative algebra in statistics",
+            "year": 2001
+        },
+        {
+            "authors": [
+                "J.G. Propp",
+                "D.B. Wilson"
+            ],
+            "title": "Exact sampling with coupled Markov chains and applications to statistical mechanics",
+            "venue": "In Proceedings of the Seventh International Conference on Random Structures and Algorithms (Atlanta, GA,",
+            "year": 1996
+        },
+        {
+            "authors": [
+                "S.M. Ross"
+            ],
+            "title": "A First Course in Probability, 7th Edition",
+            "year": 2002
+        },
+        {
+            "authors": [
+                "L. Saloff-Coste"
+            ],
+            "title": "Lectures on finite Markov chains. In Lectures on probability theory and statistics (Saint-Flour, 1996), volume 1665 of Lecture Notes in Math., pages 301\u2013413",
+            "year": 1997
+        },
+        {
+            "authors": [
+                "\u00c1. Seress"
+            ],
+            "title": "Permutation group algorithms, volume 152 of Cambridge Tracts in Mathematics",
+            "year": 2003
+        },
+        {
+            "authors": [
+                "A. Sinclair"
+            ],
+            "title": "Algorithms for random generation and counting",
+            "venue": "Progress in Theoretical Computer Science. Birkha\u0308user Boston Inc., Boston, MA. A Markov chain approach",
+            "year": 1993
+        },
+        {
+            "authors": [
+                "R.P. Stanley"
+            ],
+            "title": "Enumerative combinatorics. Vol. 2, volume 62 of Cambridge Studies in Advanced Mathematics. Cambridge University Press, Cambridge. With a foreword by GianCarlo Rota and appendix 1 by Sergey Fomin",
+            "year": 1999
+        },
+        {
+            "authors": [
+                "H.M. Taylor",
+                "S. Karlin"
+            ],
+            "title": "An introduction to stochastic modeling",
+            "year": 1984
+        },
+        {
+            "authors": [
+                "N. Thiem",
+                "E. Marberg"
+            ],
+            "title": "Superinduction for pattern groups",
+            "venue": "Technical report, Department of Mathematics,",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "N. Thiem",
+                "V. Venkateswaran"
+            ],
+            "title": "Restricting supercharacters of the finite group of unipotent uppertriangular matrices",
+            "venue": "Technical report,",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "H. Thorisson"
+            ],
+            "title": "Coupling, stationarity, and regeneration",
+            "venue": "Probability and its Applications (New York). Springer-Verlag,",
+            "year": 2000
+        },
+        {
+            "authors": [
+                "G.E. Uhlenbeck"
+            ],
+            "title": "An outline of statistical mechanics",
+            "venue": "Fundamental Problems in Statistical Mechanics,",
+            "year": 1968
+        },
+        {
+            "authors": [
+                "Widom",
+                "B. (2002). Statistical Mechanics"
+            ],
+            "title": "A Concise Introduction for Chemists",
+            "venue": "Cambridge University Press, Cambridge. MR1921032",
+            "year": 2001
+        },
+        {
+            "authors": [
+                "Yau",
+                "H.-T"
+            ],
+            "title": "Logarithmic Sobolev inequality for generalized simple exclusion processes",
+            "venue": "Probab. Theory Related Fields,",
+            "year": 1997
+        }
+    ],
+    "sections": [
+        {
+            "heading": "1. Introduction",
+            "text": "Many basic scientific problems are now routinely solved by simulation: a fancy random walk is performed on the system of interest. Averages computed from the walk give useful answers to formerly intractable problems. Here is an example drawn from course work of Stanford students Marc Coram and Phil Beineke.\nExample 1 (Cryptography). Stanford\u2019s Statistics Department has a drop-in consulting service. One day, a psychologist from the state prison system showed up with a collection of coded messages. Figure 1 shows part of a typical example.\nThe problem was to decode these messages. Marc guessed that the code was a simple substitution cipher, each symbol standing for a letter, number, punctuation mark or space. Thus, there is an unknown function f\nf : {code space} \u2212\u2192 {usual alphabet}. One standard approach to decrypting is to use the statistics of written English to guess at probable choices for f , try these out, and see if the decrypted messages make sense.\nReceived by the editors August 5, 2008. 2000 Mathematics Subject Classification. Primary 60J20.\nc\u00a92008 American Mathematical Society Reverts to public domain 28 years from publication\n179\nTo get the statistics, Marc downloaded a standard text (e.g., War and Peace) and recorded the first-order transitions: the proportion of consecutive text symbols from x to y. This gives a matrix M(x, y) of transitions. One may then associate a plausibility to f via\nPl(f) = \u220f\ni\nM (f(si), f(si+1)) ,\nwhere si runs over consecutive symbols in the coded message. Functions f which have high values of Pl(f) are good candidates for decryption. Maximizing f \u2019s were searched for by running the following Markov chain Monte Carlo algorithm:\n\u2022 Start with a preliminary guess, say f . \u2022 Compute Pl(f). \u2022 Change to f\u2217 by making a random transposition of the values f assigns to\ntwo symbols. \u2022 Compute Pl(f\u2217); if this is larger than Pl(f), accept f\u2217. \u2022 If not, flip a Pl(f\u2217)/Pl(f) coin; if it comes up heads, accept f\u2217. \u2022 If the coin toss comes up tails, stay at f .\nThe algorithm continues, trying to improve the current f by making random transpositions. The coin tosses allow it to go to less plausible f \u2019s, and keep it from getting stuck in local maxima.\nOf course, the space of f \u2019s is huge (40! or so). Why should this Metropolis random walk succeed? To investigate this, Marc tried the algorithm out on a problem to which he knew the answer. Figure 2 shows a well-known section of Shakespeare\u2019s Hamlet.\nThe text was scrambled at random and the Monte Carlo algorithm was run. Figure 3 shows sample output.\nAfter 100 steps, the message is a mess. After two thousand steps, the decrypted message makes sense. It stays essentially the same as further steps are tried. I find it remarkable that a few thousand steps of this simple optimization procedure work so well. Over the past few years, friends in math and computer science courses have designed homework problems around this example [17]. Students are usually able to successfully decrypt messages from fairly short texts; in the prison example, about a page of code was available.\nThe algorithm was run on the prison text. A portion of the final result is shown in Figure 4. It gives a useful decoding that seemed to work on additional texts.\nI like this example because a) it is real, b) there is no question the algorithm found the correct answer, and c) the procedure works despite the implausible underlying assumptions. In fact, the message is in a mix of English, Spanish and prison jargon. The plausibility measure is based on first-order transitions only. A preliminary attempt with single-letter frequencies failed. To be honest, several practical details have been omitted: we allowed an unspecified \u201c?\u201d symbol in the deviation (with transitions to and from \u201c?\u201d being initially uniform). The display in Figure 4 was \u201ccleaned up\u201d by a bit of human tinkering. I must also add that the algorithm described has a perfectly natural derivation as Bayesian statistics. The decoding function f is a parameter in a model specifying the message as the output of a Markov chain with known transition matrix M(x, y). With a uniform prior on f , the plausibility function is proportional to the posterior distribution. The algorithm is finding the mode of the posterior.\nIn Section 2, I explain Markov chains and the Metropolis algorithm more carefully. A closely related Markov chain on permutations is analyzed in Section 3. The arguments use symmetric function theory, a bridge between combinatorics and representation theory.\nA very different example \u2014 hard discs in a box \u2014 is introduced in Section 4. The tools needed for study are drawn from analysis, micro-local techniques (Section 5) along with functional inequalities (Nash and Sobolev inequalities).\nThroughout, emphasis is on analysis of iterates of self-adjoint operators using the spectrum. There are many other techniques used in modern probability. A brief overview, together with pointers on how a beginner can learn more, is in Section 6."
+        },
+        {
+            "heading": "2. A brief treatise on Markov chains",
+            "text": "2.1. A finite case. Let X be a finite set. A Markov chain is defined by a matrix K(x, y) with K(x, y) \u2265 0, \u2211 y K(x, y) = 1 for each x. Thus each row is a probability measure so K can direct a kind of random walk: from x, choose y with probability K(x, y); from y choose z with probability K(y, z), and so on. We refer to the outcomes X0 = x, X1 = y, X2 = z, . . . , as a run of the chain starting at x. From the definitions P (X1 = y|X0 = x) = K(x, y), P (X1 = y, X2 = z|X0 = x) = K(x, y)K(y, z). From this,\nP (X2 = z|X0 = x) = \u2211\ny\nK(x, y)K(y, z),\nand so on. The nth power of the matrix has x, y entry P (Xn = y|X0 = x). All of the Markov chains considered in this article have stationary distributions\n\u03c0(x) > 0, \u2211\nx \u03c0(x) = 1 with \u03c0 satisfying (2.1) \u2211\nx\n\u03c0(x)K(x, y) = \u03c0(y).\nThus \u03c0 is a left eigenvector of K with eigenvalue 1. The probabilistic interpretation of (2.1) is \u201cpick x from \u03c0 and take a step from K(x, y); the chance of being at y is \u03c0(y).\u201d Thus \u03c0 is stationary for the evolution. The fundamental theorem of Markov chains (a simple corollary of the Peron\u2013Frobenius theorem) says, under a simple connectedness condition, \u03c0 is unique and high powers of K converge to the rank one matrix with all rows equal to \u03c0.\nTheorem 1 (Fundamental theorem of Markov chains). Let X be a finite set and K(x, y) a Markov chain indexed by X . If there is n0 so that Kn(x, y) \u2265 0 for all n > n0, then K has a unique stationary distribution \u03c0 and, as n \u2192 \u221e,\nKn(x, y) \u2192 \u03c0(y) for each x, y \u2208 X .\nThe probabilistic content of the theorem is that from any starting state x, the nth step of a run of the Markov chain has a chance close to \u03c0(y) of being at y if n is large. In computational settings, |X | is large, it is easy to move from x to y according to K(x, y), and it is hard to sample from \u03c0 directly.\nConsider the cryptography example in the Introduction. There, X is the set of all one-to-one functions f from code space to the usual alphabet {A, B, . . . , Z, 1, 2, . . . , 9, 0, \u2217, ., ?, . . . }. Assume there are m distinct code symbols and n symbols in the alphabet space. The stationary distribution is\n(2.2) \u03c0(f) = z\u22121 \u220f\ni\nM (f(si), f(si+1)) ,\nwhere M is the (assumed given) first-order transition matrix of English and the product ranges over consecutive coded symbols in the fixed message. The normalizing constant z is defined by\nz = \u2211\nf \u220f i (M (f(si), f(si+1))) .\nNote that z is unknowable practically. The problem considered here is to sample f \u2019s repeatedly from \u03c0(f). This seems daunting because of the huge size of X and the problem of unknown z. The Metropolis Markov chain K(f, f\u2217) solves this problem.\n2.2. Metropolis algorithm. Let X be a finite state space and \u03c0(x) a probability on X (perhaps specified only up to an unknown normalizing constant). Let J(x, y) be a Markov matrix on X with J(x, y) > 0 \u2194 J(y, x) > 0. At the start, J is unrelated to \u03c0. The Metropolis algorithm changes J to a new Markov matrix K(x, y) with stationary distribution \u03c0. It is given by a simple recipe:\n(2.3) K(x, y) = \u23a7\u23aa\u23aa\u23aa\u23a8 \u23aa\u23aa\u23a9 J(x, y) if x = y, A(x, y) \u2265 1, J(x, y)A(x, y) if x = y, A(x, y) < 1, J(x, y) + \u2211 z:A(x,z)<1 J(x, z)(1 \u2212 A(x, z)) if x = y.\nIn (2.3), the acceptance ratio is A(x, y) = \u03c0(y)J(y, x)/\u03c0(x)J(x, y). The formula (2.3) has a simple interpretation: from x, choose y with probability J(x, y); if A(x, y) \u2265 1, move to y; if A(x, y) < 1, flip a coin with this success probability and move to y if success occurs; in other cases, stay at x. Note that the normalizing constant for \u03c0 cancels out in all calculations. The new chain satisfies\n\u03c0(x)K(x, y) = \u03c0(y)K(y, x),\nand thus \u2211 x \u03c0(x)K(x, y) = \u2211 x \u03c0(y)K(y, x) = \u03c0(y) \u2211 x K(y, x) = \u03c0(y),\nso that \u03c0 is a left eigenvector with eigenvalue 1. If the chain (2.3) is connected, Theorem 1 is in force. After many steps of the chain, the chance of being at y is approximately \u03c0(y), no matter what the starting state X . Textbook treatments of the Metropolis algorithm are in [44] or [62]. A literature review can be found in [31].\nIn the cryptography example X is all one-to-one functions from symbol space (say of size m) to alphabet space (say of size n \u2265 m). Thus |X | = n(n\u22121) \u00b7 \u00b7 \u00b7 (n\u2212m+1). This is large if, e.g., m = n = 50. The stationary distribution is given in (2.2). The proposal chain J(f, f\u2217) is specified by a random switch of two symbols,\nJ(f, f\u2217) =\n{ 1\nn(n\u22121)(m\u2212n+2)(m\u2212n+1) if f, f \u2217 differ in at most two places, 0 otherwise.\nNote that J(f, f\u2217) = J(f\u2217, f), so A(f, f\u2217) = \u03c0(f\u2217)/\u03c0(f).\n2.3. Convergence. A basic problem of Markov chain theory concerns the rate of convergence in Kn(x, y) \u2192 \u03c0(y). How long must the chain be run to be suitably close to \u03c0? It is customary to measure distances between two probabilities by total variation distance:\n\u2016Knx \u2212 \u03c0\u2016TV = 1 2 \u2211 y |Kn(x, y) \u2212 \u03c0(y)| = max A\u2286X |Kn(x, A) \u2212 \u03c0(A)|.\nThis yields the math problem: Given K, \u03c0, x and > 0, how large n so\n\u2016Knx \u2212 \u03c0\u2016TV < ? Sadly, there are very few practical problems where this question can be answered. In particular, no useful answer in known for the cryptography problem. In Section 3, a surrogate problem is set up and solved. It suggests that when n .= m, order n log n steps suffice for mixing.\nSuppose, as is the case for the examples in this paper, that the Markov chain is reversible: \u03c0(x)K(x, y) = \u03c0(y)K(y, x). Let L2(\u03c0) be {g : X \u2192 R} with inner product\n\u3008g, h\u3009 = \u2211\nx\ng(x)h(x)\u03c0(x).\nThen K operates on L2 by\nKg(x) = \u2211 g(y)K(x, y).\nReversibility implies \u3008Kg, h\u3009 = \u3008g, Kh\u3009, so K is self-adjoint. Now, the spectral theorem says there is an orthonormal basis of eigenvectors \u03c8i and eigenvalues \u03b2i (so K\u03c8i = \u03b2i\u03c8i) for 0 \u2264 i \u2264 |X | \u2212 1 and 1 = \u03b20 \u2265 \u03b21 \u2265 \u00b7 \u00b7 \u00b7 \u2265 \u03b2|X |\u22121 \u2265 \u22121. By elementary manipulations,\nK(x, y) = \u03c0(y) |X |\u22121\u2211 i=0 \u03b2i\u03c8i(x)\u03c8i(y),\nKn(x, y) = \u03c0(y) |X |\u22121\u2211 i=0 \u03b2ni \u03c8i(x)\u03c8i(y).\nUsing the Cauchy\u2013Schwartz inequality, we have (2.4) 4\u2016Knx \u2212 \u03c0\u20162TV \u2264 \u2211\ny\n(Kn(x, y) \u2212 \u03c0(y))2\n\u03c0(y) = |X |\u22121\u2211 i=1 \u03b22ni \u03c8 2 i (x).\nThe bound (2.4) is the basic eigenvalue bound used to get rates of convergence for the examples presented here. To get sharp bounds on the right hand side requires good control of both eigenvalues and eigenvectors. For more detail and many examples, see [79]. A detailed example on the permutation group is given in Section 3 below. Examples on countable and continuous spaces are given in Section 5.\n2.4. General state spaces. Markov chains are used to do similar calculations on Euclidean and infinite-dimensional spaces. My favorite introduction to Markov chains is the book by Bremaud [10], but there are many sources: For finite state spaces see [83]. For a more general discussion, see [7] and the references in Section 6.1.\nBriefly, if (X , B) is a measurable space, a Markov kernel K(x, dy) is a probability measure K(x, \u00b7) for each x. Iterates of the kernel are given by, e.g.,\nK2(x, A) = \u222b K(z, A)K(x, dz).\nA stationary distribution is a probability \u03c0(dx) satisfying\n\u03c0(A) = \u222b K(x, A)\u03c0(dx)\nunder simple conditions Kn(x, A) \u2192 \u03c0(A) and exactly the same problems arise. Reversible Markov chains yield bounded self-adjoint operators and spectral techniques can again be tried. Examples are in Section 4, Section 5, and Section 6."
+        },
+        {
+            "heading": "3. From cryptography to symmetric function theory",
+            "text": "This section answers the question, \u201cWhat does a theorem in this subject look like?\u201d It also illustrates how even seemingly simple problems can call on tools from disparate fields, in this case, symmetric function theory, a blend of combinatorics, and representation theory. This section is drawn from joint work with Phil Hanlon [21].\n3.1. The problem. Let X = Sn, the symmetric group on n letters. Define a probability measure on Sn by\n(3.1) \u03c0(\u03c3) = z\u22121\u03b8d(\u03c3,\u03c30) for \u03c3, \u03c30 \u2208 Sn, 0 < \u03b8 \u2264 1.\nIn (3.1), d(\u03c3, \u03c30) is a metric on the symmetric group, here taken to be\nd(\u03c3, \u03c30) = minimum number of transpositions required to bring \u03c3 to \u03c30.\nThis is called Cayley\u2019s distance in [20] because a result of A. Cayley implies that d(\u03c3, \u03c30) = n \u2212 c(\u03c3\u22121\u03c30) with c(\u03c3) the number of cycles in \u03c3. The metric is biinvariant:\nd(\u03c3, \u03c30) = d(\u03c4\u03c3, \u03c4\u03c30) = d(\u03c3\u03c4, \u03c30\u03c4 ).\nThe normalizing constant z is known in this example:\nz = \u2211\n\u03c3\n\u03b8d(\u03c3,\u03c30) = n\u220f\ni=1\n(1 + \u03b8(i \u2212 1)).\nIf \u03b8 = 1, \u03c0(\u03c3) is the uniform distribution on Sn. For \u03b8 < 1, \u03c0(\u03c3) is largest at \u03c30 and falls off from its maximum as \u03c3 moves away from \u03c30. It serves as a natural non-uniform distribution on Sn, peaked at a point. Further discussion of this construction (called Mallows model through Cayley\u2019s metric) with examples from psychology and computer science is in [18, 19, 28]. The problem studied here is\nHow can samples be drawn from \u03c3?\nOne route is to use the Metropolis algorithm, based on random transpositions. Thus, from \u03c3, choose a transposition (i, j) uniformly at random and consider (i, j)\u03c3 = \u03c3\u2217. If d(\u03c3\u2217, \u03c30) \u2264 d(\u03c3, \u03c30), the chain moves to \u03c3\u2217. If d(\u03c3\u2217, \u03c30) > d(\u03c3, \u03c30), flip a \u03b8-coin. If this comes up heads, move to \u03c3\u2217; else stay at \u03c3. In symbols, (3.2)\nK(\u03c3, \u03c3\u2217) = \u23a7\u23aa\u23aa\u23aa\u23a8 \u23aa\u23aa\u23aa\u23a9 1/ ( n 2 ) if \u03c3\u2217= (i, j)\u03c3, d(\u03c3\u2217, \u03c30) < d(\u03c3, \u03c30), \u03b8/ ( n 2 ) if \u03c3\u2217= (i, j)\u03c3, d(\u03c3\u2217, \u03c30) > d(\u03c3, \u03c30), c ( 1 \u2212 \u03b8/ ( n 2 )) if \u03c3\u2217= \u03c3, with c =# {(i, j) : d((i, j)\u03c3, \u03c30)>d(\u03c3, \u03c30)} ,\n0 otherwise.\nObserve that this Markov chain is \u201ceasy to run\u201d. The Metropolis construction guarantees that\n\u03c0(\u03c3)K(\u03c3, \u03c3\u2217) = \u03c0(\u03c3\u2217)K(\u03c3\u2217, \u03c3),\nso that the chain has stationary distribution \u03c0. When n = 3 and \u03c30 = id, the transition matrix is\nid (12) (13) (23) (123) (132)\u239b \u239c\u239c\u239c\u239c\u239c\u239c\u239c\u239c\u239c\u239d 1 \u2212 \u03b8 \u03b83 \u03b8 3 \u03b8 3 0 0 1 3 2 3 (1 \u2212 \u03b8) 0 0 \u03b8 3 \u03b8 3 1 3 0 2 3 (1 \u2212 \u03b8) 0 \u03b8 3 \u03b8 3 1 3 0 0 2 3 (1 \u2212 \u03b8) \u03b8 3 \u03b8 3 0 13 1 3 1 3 0 0\n0 13 1 3\n1 3 0 0\n\u239e \u239f\u239f\u239f\u239f\u239f\u239f\u239f\u239f\u239f\u23a0 . id (12) (13) (23) (123) (132)\nThe stationary distribution is the left eigenvector proportional to (1, \u03b8, \u03b8, \u03b8, \u03b82, \u03b82). This example bears a passing resemblance to the cryptography example: the set of one-to-one functions of an m-set to an n-set is replaced by the symmetric group. Presumably, the stationary distribution in the cryptography example is peaked at a point (the best decoding) and the algorithms are essentially the same.\nTo analyze the chain (3.2) using spectral theory requires knowledge of the eigenvalues and vectors. By what still seems like a miracle, these are available in closed form. When \u03b8 = 1, the chain (3.2) reduces to the transpose at random chain, perhaps the first Markov chain given a sharp analysis [32]. Here is a typical result drawn from work with Phil Hanlon [21].\nTheorem 2. For 0 < \u03b8 \u2264 1, the Markov chain K(\u03c3, \u03c3\u2217) in (3.2) has stationary distribution \u03c0 from (3.1). Let k = an log n + cn with a = 1/2\u03b8 + 1/4\u03b8(1/\u03b8\u2212 \u03b8) and c > 0. Then, with \u03c30 = id and starting from the identity\n\u2016Kk \u2212 \u03c0\u2016TV \u2264 f(\u03b8, c),\nwith f(\u03b8, c) \u2192 0 for c \u2192 0.\nRemarks. The result shows that order n log n steps suffice to make the distance to stationarity small. The function f(\u03b8, c) is explicit but a bit of a mess. There is a matching lower bound showing that order n log n steps are necessary as well. In the theorem, \u03c30 was chosen as the identity and the chain starts at \u03c30. If the chain starts far from the identity, for example at an n-cycle, it can be shown that order n2 log n steps suffice. When, e.g., n = 52, n log n .= 200, while n2 log n .= 11, 000. These numbers give a useful feel for the running time.\n3.2. Tools from symmetric function theory. The first step of analysis is to reduce the state space from the full symmetric group to the set of conjugacy classes. (Recall these are indexed by partitions of n.) The matrix K(\u03c3, \u03c3\u2217) commutes with the action of the symmetric group by conjugation, so only transitions between conjugacy classes are needed. When n = 3, the transition matrix becomes\n13 1, 2 3 13 \u239b \u239c\u239d 1 \u2212 \u03b8 \u03b8 0 1 3 2 3 (1 \u2212 \u03b8) 2 3\u03b8\n0 1 0\n\u239e \u239f\u23a01, 2\n3\nwith stationary distribution proportional to (1, 3\u03b8, 2\u03b82). Let\n(3.3) M(\u00b5, \u03bb), m(\u03bb)\nbe the transition matrix and let stationary distribution be indexed by partitions \u03bb, \u00b5.\nTheorem 3. For 0 < \u03b8 \u2264 1, the Markov chain (3.3) has an eigenvalue \u03b2\u03bb for each partition (\u03bb1, \u03bb2, . . . , \u03bbr) of n with\n\u03b2\u03bb = (1 \u2212 \u03b8) + \u03b8n(\u03bbt) + n(\u03bb)(\nn 2 ) , n(\u03bb) = n\u2211 i=1 (i \u2212 1)\u03bbi.\nThe corresponding right eigenfunction, normed to be orthonormal in L2(m), is\n(3.4) c\u03bb(\u00b7)\nm(\u03bb){j\u03bb\u03c0/\u03b8nn!}1/2 .\nIn (3.4), c\u03bb are the change of basis coefficients in expressing the Jack symmetric functions in terms of the power-symmetric functions. The normalizing constant in (3.4) involves closed form, combinatorially defined terms, which will not be detailed further.\nHere is an aside on the c\u03bb(\u00b7). Classical combinatorics involves things like partitions, permutations, graphs, balls in boxes, and so on. A lot of this has been unified and extended in the subject of algebraic combinatorics. A central theme here is the ring \u039bn(x1 . . . xk) of homogeneous symmetric polynomials of degree n. There are various bases for this space. For example, if Pi(x1 . . . xk) = \u2211 xij and P\u03bb = P\u03bb1P\u03bb2 \u00b7 \u00b7 \u00b7P\u03bbn , the P\u03bb form a basis as \u03bb runs through the partitions of n (fundamental theorem of symmetric functions). Other well-known bases are the monomial and elementary symmetric functions. The stars of the show are the Schur functions (character of the general linear group). The change of basis matrices between these codes up a lot of classical combinatorics. A two-parameter family of bases, the Macdonald polynomials, is a central focus of modern combinatorics. Definitive, inspiring accounts of this are in Macdonald [65] and Stanley [82].\nThe Jack symmetric functions J\u03bb(x; \u03b1) are one of the many bases. Here x = (x1 \u00b7 \u00b7 \u00b7xk) and \u03b1 is a positive real parameter. When \u03b1 = 1, the Jacks become the Schur functions. When \u03b1 = 2, the Jacks become the zonal polynomials (spherical functions of GLn/On). Before the work with Hanlon, no natural use for other values of \u03b1 was known. Denote the change of basis coefficients from Jacks to power sums by\nJ\u03bb(x; \u03b1) = \u2211 \u00b5 n c(\u03bb, \u00b5)P\u00b5(x).\nThe c(\u03bb, \u00b5) are rational functions of \u03b1. For example, when n = 3,\nJ13 = P 31 \u2212 3P12 \u2212 2P3, J12 = P 31 + (\u03b1 \u2212 1)P12 \u2212 \u03b1P3, J3 = P 31 \u2212 3\u03b1P12 + 2\u03b12P3.\nThe algebraic combinatorics community had developed properties of Jack symmetric functions \u201cbecause they were there\u201d. Using this knowledge allowed us to properly normalize the eigenfunctions and work with them to prove Theorems 1 and 2. Many more examples of this type of interplay are in [14]. A textbook account of our work is in [48].\nThere is a fascinating research problem opened up by this analysis. When \u03b8 = 1, the Jack symmetric functions are Schur functions and the change of basis coefficients are the characters of the symmetric group. The Markov chain becomes random transpositions. This was analyzed in joint work with Shahshahani [32]. Adding in the deformation by the Metropolis algorithm deforms the eigenvalues and eigenvectors in a mathematically natural way. Is there a similar deformation that gets the coefficients of the Macdonald polynomials? This is ongoing joint work with Arun Ram. Changing the metric on Sn, using pairwise adjacent transpositions instead of all transpositions, gives a deformation to Hecke algebras. The Metropolis algorithm gives a probabilistic interpretation of the multiplication in these algebras. This again is joint work with Ram [28]. This affinity between the physically natural Metropolis algorithm and algebra is a mystery which cries out for explanation.\nTurning back toward the cryptography example, how do things change if we go from the permutation group to the set of one-to-one functions from an m-set to an n-set? When \u03b8 = 1, this was worked out by Andrew Greenhalgh. The analysis involves the algebra of functions on Sn which are invariant under conjugation by the subgroup Sm \u00d7Sn\u2212m and bi-invariant under the subgroup Sn\u2212m. These doubly invariant functions form a commutative algebra discussed further in [14, Sect. 9.8]. Do things deform well when \u03b8 = 1? It is natural to guess the answer is Yes.\nIt is important to end these fascinating success stories with the observation that any similarly useful analysis of the original cryptography example seems remote. Further, getting rates of convergence for the Metropolis algorithm for other metrics in (3.1) is a challenging open problem."
+        },
+        {
+            "heading": "4. Hard discs in a box",
+            "text": "Consider possible placements of n discs of radius in the unit square. The discs must be non-overlapping and completely contained in the unit square. Examples at low and high density (kindly provided by Werner Krauth from [57]) are shown in Figure 5.\nIn applications, n is fairly large (e.g., 100\u2013106) and of course should be suitably small. The centers of the discs give a point in R2n. We know very, very little about the topology of the set X (n, ) of configurations: for fixed n, what are useful bounds on for the space to be connected? What are the Betti numbers? Of course, for small this set is connected but very little else is known. By its embedding in R\n2n, X (n, ) inherits a natural uniform distribution, Lebesgue measure restricted to X (n, ). The problem is to pick points in X (n, ) uniformly. If X1, X2, . . . , Xk\nare chosen from the uniform distribution and f : X (n, ) \u2192 R is a function, we may approximate (4.1) \u222b X (n, ) f(x)dx by 1 k k\u2211 i=1 f(Xi).\nMotivation for this task and some functions f of interest will be given at the end of this section.\nThis hard disc problem is the original motivation for the Metropolis algorithm. Here is a version of the Metropolis algorithm for hard discs.\n\u2022 Start with some x \u2208 X (n, ). \u2022 Pick a disc center at random (probability 1/n). \u2022 Pick a point in a disc of radius h, centered at the chosen disc center at\nrandom (from Lebesgue measure). \u2022 Try to move the chosen disc center to the chosen point; if the resulting\nconfiguration is in X (n, ), accept the move; else, stay at x. The algorithm continues, randomly moving coordinates. If X1, X2, . . . , Xk denotes the successive configurations, theory shows that Xk becomes uniformly distributed provided , k are small. For large k, the Xi can be used as in (4.1).\nMotivation. The original motivation for this problem comes from the study of phase transition in statistical mechanics. For many substances (e.g., water), experiments produce phase diagrams such as that shown in Figure 6.\nEvery aspect of such phase diagrams is intensely studied. The general picture, a finite length liquid\u2013vapor phase transition line ending in a critical point, a triple point where all three forms co-exist and a solid\u2013liquid phase line seemingly extending to infinity, seems universal. The physicist G. Uhlenbeck [87, p. 11] writes \u201cNote that since these are general phenomena, they must have general explanation; the precise details of the molecular structure and of the intermolecular forces should not matter.\u201d In discussing the solid\u2013liquid transition, Uhlenbeck [87, p. 18] notes that the solid\u2013liquid transition seemingly occurs at any temperature provided the pressure is high enough. He suggests that at high pressure, the attractive intermolecular force does not play a role \u201c. . . and that it is the sharp repulsive forces that are responsible for the solid\u2013fluid transition. It is this train of thought that explains the great interest of the so-called Kirkwood transition. In 1941, Kirkwood posed the problem of whether a gas of hard spheres would show a phase transition. . . \u201d.\nFrom then to now, chemists and physicists have studied this problem using a variety of tools. Current findings indicate a phase transition when the density of discs is large (about .71, still well below the close packing density). Below this\ntransition density, the discs \u201clook random\u201d; above this density the discs look close to a lattice packing. These notions are quantified by a variety of functions f . For example,\nf(x) = \u2223\u2223\u2223\u2223\u2223\u2223 1 N N\u2211 j=1 1 Nj \u2211 k e6i\u03b8jk \u2223\u2223\u2223\u2223\u2223\u2223 , where the sum is over the N particles encoded by x \u2208 R2N , the sum in k is over the Nj neighbors of the jth particle, and \u03b8jk is the angle between the particles j and k in an arbitrary but fixed reference frame. If the configuration x has a local hexatic structure, this sum should be small. Typical values of f are studied by simulation. Different functions are used to study long-range order.\nThe above rough description may be supplemented by the useful survey of [64]. A host of simulation methods are detailed in [2]. An up-to-date tutorial on hard discs appears in [57, Chap. 2].\nFor the purposes of this paper, the main points are i) the hard disc model is a basic object of study and ii) many key findings have been based on variants of the Metropolis algorithm. In the next section, we flush out the Metropolis algorithm to more standard mathematics."
+        },
+        {
+            "heading": "5. Some mathematics",
+            "text": "Here is a generalization of the hard discs Metropolis algorithm. Let \u2126 \u2286 Rd be a bounded connected open set. Let p\u0304(x) > 0, z = \u222b \u2126\np\u0304(x)dx < \u221e, p(x) = z\u22121p\u0304(x) specify a probability density on \u2126. If required, extend p to have value 0 outside the closure of \u2126. Many sampling problems can be stated thus:\nGiven p\u0304, choose points in \u2126 from p.\nNote that the normalizing constant z may not be given and is usually impossible to usefully approximate. As an example, consider placing fifty hard discs in the unit square when = 1/100. The set of allowable configurations is a complex, cuspy set. While p\u0304 \u2261 1 on \u2126, it would not be practical to compute z. Here is one version of the Metropolis algorithm which samples from p. From x \u2208 \u2126, fix a small, positive h.\n\u2022 Choose y \u2208 Bx(h), from normalized Lebesgue measure on this ball. \u2022 If p(y) \u2265 p(x), move to y. \u2022 If p(y) < p(x), move to y with probability p(y)/p(x). \u2022 Else stay at x.\nNote that this algorithm does not require knowing z. The transition from x to y yields a transition kernel\n(5.1) P (x, dy) = m(x)\u03b4x +\nh\u2212d\nVol(B1) \u03b4B1\n( x \u2212 y\nh\n) min ( p(x) p(y) , 1 ) dy\nwith m(x) = 1 \u2212 \u222b\nRd\nh\u2212d\nVol(B1) \u03b4B1\n( x \u2212 y\nh\n) min ( p(x) p(y) , 1 ) dy.\nThis kernel operates on L2(p) via\nP \u00b7 f(x) = \u222b\nRd\nf(y)P (x, dy).\nIt is easy to see that P (x, dy) is a bounded self-adjoint operator on L2(p). The associated Markov chain may be described \u201cin English\u201d by\n\u2022 Start at X0 = x \u2208 \u2126. \u2022 Pick X1 from P (x, dy). \u2022 Pick X2 from P (X1, dy). \u2022 And so on . . . .\nThus\nP{X2 \u2208 A} = P 2x (A) = \u222b\nRd\nP (z, A)P (x, dz),\nP{Xk \u2208 A} = P kx (A) = \u222b\nRd\nP (z, A)P k\u22121(x, dz).\nUnder our assumptions (\u2126 connected, h small), for all x \u2208 \u2126 and A \u2286 \u2126, the algorithm works:\nP kx (A) k\u2212\u2192 \u221e \u222b A p(y)dy.\nIt is natural to ask how fast this convergence takes place: how many steps should the algorithm be run to do its job? In joint work with Gilles Lebeau and Laurent Michel, we prove the following.\nTheorem 4. Let \u2126 be a connected Lipshitz domain in Rd. For p measurable (with 0 < m \u2264 p(x) \u2264 M < \u221e on \u2126) and h fixed and small, the Metropolis algorithm (5.1) satisfies (5.2) \u2223\u2223\u2223\u2223P kx (A) \u2212 \u222b A p(y)dy \u2223\u2223\u2223\u2223 \u2264 c1e\u2212c2kh2 uniformly in x \u2208 \u2126, A \u2286 \u2126.\nIn (5.2), c1, c2 are positive constants that depend on p\u0304 and \u2126 but not on x, k or h. The result is sharp in the sense that there is a matching lower bound. Good estimates of c2 are available (see the following section).\nNote that the Metropolis algorithm (5.1) is based on steps in the full-dimensional ball B (x) while the Metropolis algorithm for discs in Section 2 is based on just changing two coordinates at a time. With extra effort, a result like (5.2) can be shown for the hard disc problem as well. Details are in [25]. As a caveat, note that we do not have good control on c1 in terms of the dimension d or smoothness of \u2126. The results are explicit but certainly not sharp.\nThe Metropolis algorithm of this section is on a Euclidean space with basic steps driven by a ball walk. None of this is particularly important. The underlying state space can be quite general, from finite (all one-to-one functions from one finite set to another as in our cryptography example) to infinite-dimensional (Markov chains on spaces of measures). The proposal distribution needn\u2019t be symmetric. All of the introductory books on simulation discussed in Section 6 develop the Metropolis algorithm. In [8] it is shown to be the L1 projection of the proposal distribution to the p self-adjoint kernels on \u2126. A survey of rates of convergence results on finitestate spaces with extensive references to the work of computer science theorists on approximate counting and mathematical physicists on Ising models is in [31]. Finally, there are many other classes of algorithms and proof techniques in active development. This is brought out in Section 6 below.\n5.1. Ideas and tools. To analyze rates of convergence it is natural to try spectral theory, especially if the operators are self-adjoint. This sometimes works. It is sometimes necessary to supplement with tools, such as comparison and extension theory, Weyl-type bounds on eigenvalues, bounds on eigenvectors, and Nash\u2013 Sobolev inequalities. These are basic tools of modern analysis. Their use in a concrete problem may help some readers come into contact with this part of the mathematical world.\nSpectral bounds for Markov chains. Let X be a set, \u00b5(dx) a reference measure and m(x) a probability density with respect to \u00b5 (so m(x) \u2265 0, \u222b m(x)\u00b5(dx) = 1). Let P (x, dy) be a Markov kernel on X . This means that for each x, P (x, \u00b7) is a probability measure on X . This P may be used to \u201crun a Markov chain\u201d X0, X1, X2, . . . , with starting state X0 = x say, by choosing X1 from P (x, \u00b7) and then X2 from P (X1, \u00b7), and so on. The pair (m, P ) is called reversible (physicists say \u201csatisfies detailed balance\u201d) if P operating on L2(m) by Pf(x) = \u222b f(y)P (x, dy) is self-adjoint: \u3008Pf, g\u3009 = \u3008f, Pg\u3009. Often, P (x, dy) = p(x, y)\u00b5(dy) has a kernel and reversibility becomes m(x)p(x, y) = m(y)p(y, x) for all x, y. This says the chain run forward is the same as the chain run backward, in analogy with the time reversibility of the laws of mechanics. Here P operates on all of L2(m) so we are dealing with bounded self-adjoint operators. Suppose for a moment that P has a square integrable kernel p(x, y), so Pf(x) =\u222b X p(x, y)f(y)\u00b5(dy). Then P is compact and there are eigenvectors fi and eigenvalues \u03b2i so Pfi = \u03b2ifi\nunder a mild connectedness condition f0 \u2261 1, \u03b20 = 1 and 1 = \u03b20 > \u03b21 \u2265 \u03b22 \u2265 \u00b7 \u00b7 \u00b7 > \u22121. Then\np(x, y) = m(x) \u221e\u2211\ni=0\n\u03b2ifi(x)fi(y),\nand the iterated kernel satisfies\npn(x, y) = m(y) \u221e\u2211\ni=0\n\u03b2ni fi(x)fi(y).\nIf fi(x), fi(y) are bounded (or at least controllable), since f0 \u2261 1, pn(x, y) \u2192 m(y) as n \u2192 \u221e.\nThis is the spectral approach to convergence. Note that to turn this into a quantitative bound (From starting state x, how large must n be to have \u2016Pnx \u2212m\u2016 < ?), the \u03b2i and fi must be well understood.\nThe Metropolis algorithm on the permutation group discussed in Section 3 gives an example on finite spaces. Here is an example with an infinite state space drawn from my work with Khare and Saloff-Coste [23] where this program can be usefully pushed through. Note that this example does not arise from the Metropolis construction. It arises from a second basic construction, Glauber dynamics.\nExample 2 (Birth and immigration). The state space X = {0, 1, 2, . . . }. Let \u00b5(dx) be a counting measure and\n(5.3) m(x) = 1\n2x+1 , p(x, y) = ( 1 3 )x+y+1 ( x + y x )/( 1 2 )x+1 .\nThis Markov chain is used to model population dynamics with immigration. If the population size at generation n is denoted X, then, given Xn = x,\nXn+1 = x\u2211\ni=1\nNi,n + Mn+1,\nwhere Ni,n, the number of offspring of the ith member of the population at time n, are assumed to be independent and identically distributed with\np(Ni,n = j) = 2 3 ( 1 3 )j , 0 \u2264 j < \u221e.\nHere Mn+1 is migration, assumed to have the same distribution as Ni,n. Note that m(x)p(x, y) = m(y)p(y, x) so reversibility is in force.\nIn (5.3) the eigenvalues are shown to be \u03b2j = 1/2j , 0 \u2264 j < \u221e. The eigenfunctions are the orthogonal polynomials for the measure 1/2j+1. These are Meixner polynomials Mj(x) = 2F1 ((\u2212j\u2212x 1 ) | \u2212 1 ) . Now, the spectral representation gives the following.\nProposition 1. For any starting state x for all n \u2265 0,\n\u03c72x(n) = \u221e\u2211\ny=0\n(pn(x, y) \u2212 m(y))2\nm(y) = \u221e\u2211 i=1 \u03b22ni M 2 i (x) 1 2i .\nNext, there is an analysis problem: Given the starting population x, how large should n be so that this chi-square distance to m is small? For this simple case, the details are easy enough to present in public.\nProposition 2. With notation as in Proposition 1,\n\u03c72x(n) \u2264 2\u22122c for n = log2(1 + x) + c, c > 0, \u03c72x(n) \u2265 22c for n = log2(x \u2212 1) \u2212 c, c > 0.\nProof. Meixner polynomials satisfy for all j and x > 0 |Mj(x)| = \u2223\u2223\u2223\u2223\u2223 j\u2227x\u2211 i=0 (\u22121)i ( j i ) x(x \u2212 1) \u00b7 \u00b7 \u00b7 (x \u2212 i + 1) \u2223\u2223\u2223\u2223\u2223 \u2264 j\u2211 i=0 ( j i ) xi = (1 + x)j .\nThus, for n \u2265 log2(1 + x) + c,\n\u03c72x(n) = \u221e\u2211\nj=1\nM2j (x)2 \u2212j(2n+1) \u2264 \u221e\u2211 j=1 (1 + x)2j2\u2212j(2n+1)\n\u2264 (1 + x) 22\u2212(2n+1) 1 \u2212 (1 + x)22\u2212(2n+1) \u2264 2\u22122c\u22121 1 \u2212 2\u22122c\u22121 \u2264 2 \u22122c.\nThe lower bound follows from using only the lead term. Namely\n\u03c72x(n) \u2265 (1 \u2212 x)22\u22122n \u2265 22c for n = log2(x \u2212 1) \u2212 c.\nThe results show that convergence is rapid: order log2(x) steps are necessary and sufficient for convergence to stationarity.\nWe were suprised and delighted to see classical orthogonal polynomials appearing in a natural probability problem. The account [23] develops this and gives dozens of other natural Markov chains explicitly diagonalized by orthogonal polynomials.\nAlas, one is not always so lucky. The Metropolis chain of (5.1) has the form Pf(x) = m(x)f(x) + \u222b h(x, y)f(y)dy. The multiplier m(x) leads to a continuous spectrum. One of our discoveries [24, 25, 59] is that for many chains, this can be side-stepped and the basic outline above can be pushed through to give sharp useful bounds.\n5.2. Some theorems. Return to the Metropolis algorithm of Theorem 4. We are able to prove the following.\nTheorem 5. For a bounded Lipshitz domain in Rd, let p(x) satisfy 0 < m \u2264 p(x) \u2264 M < \u221e for all x \u2208 \u2126. Let Ph be defined by (5.1). There are h0 > 0, \u03b40 \u2208 (0, 1), and ci > 0 so that\n\u2022 Spec Ph \u2286 [\u22121 + \u03b40, 1] for all h \u2264 h0. \u2022 1 is a simple eigenvalue of Ph. \u2022 Spec Ph \u2229 [1 \u2212 \u03b40, 1] is discrete. \u2022 The number of eigenvalues of Ph in [1 \u2212 h2\u03bb, 1], 0 \u2264 \u03bb \u2264 \u03b40h\u22122 (with\nmultiplicity), is bounded above by c1(1 + \u03bb)d/2. \u2022 The spectral gap G(h) satisfies c2h2 \u2264 G(h) \u2264 c3h2. \u2022 For all n \u2265 1 and any x \u2208 \u2126, \u2016Pnx,h \u2212 p\u2016TV \u2264 c4e\u2212nG(h).\nMore precise evaluation of the gap is available if the boundary of the domain is quasi-regular. Then consider the operator\nLf(x) = \u22121\n2(d + 1)\n( f + p\np \u00b7 f\n)\nwith domain L = {f \u2208 H2(p) : |\u2202nf |\u2202\u2126 = 0}. This L has compact resolvant with eigenvalues 0 = \u03bd0 < \u03bd1 < \u03bd2 < \u00b7 \u00b7 \u00b7 .\nTheorem 6. If \u2202\u2126 is quasi-regular and the density p(x) is bounded and continuous on \u2126\u0304, then\nlim h\u21920\nh\u22122G(h) = \u03bd1.\nReducing to the Neuman problem for L sometimes allows accurate evaluation of the gap [24, 59].\nWe are able to show that for the hard disc problem of Section 2, a suitable power of the operator of (5.3) satisfies the conditions of Theorems 5 and 6. The associated \u2126 for hard discs is a complex cuspy set and the extension of standard theory to Lipshitz domains is truly forced.\nAgain, several caveats are in order. The theorems are satisfactory for a small number of discs but for questions of physical relevance (the dense case), our results have very little content. At present, we do not have good control over the dependence of the constants on the various Lipshitz constants or dimensions. Previous efforts to quantify such things [30] lead to results like c .= (d/4)d/4. With 100 discs, d = 200 and the practical relevance of the results may be questioned. Further, the restriction to densities bounded below is a limitation. Of course, we hope to deal with such issues in future work.\nA second caveat: the Metropolis algorithm is not cutting-edge simulation technology. There are block analysis techniques and ways of making non-local moves of several particles [37, 51] which seem useful and call out for analysis.\nFinally, spectral techniques are only one of many routes to analysis. Marvelous theorems can be proved by coupling, and Harris recurrence techniques which combine Lyapounov functions and coupling are often useful. Coupling arguments for hard discs are in [26] and [54].\nThere is also a widely studied discrete version of the problem. There, n particles are placed on the vertices of a connected graph. At each step, a particle is chosen at random and a neighboring site is chosen at random. If the neighboring site is empty, the chosen particle moves there; otherwise the particle stays where it was. This is called \u201cKawasaki dynamics for the simple exclusion process\u201d. This process, with many variations, has a large literature usefully surveyed in [60]. Concrete rates of convergence can be found in [29], [40], [67], [89], . . . . It is only fair to warn the reader that the similar problem where particles move with a drift on a lattice subject to exclusion (asymmetric exclusion process) has an even larger literature and has evolved into quite a separate subject.\n5.3. One idea. One contribution of the analysis which should be broadly useful is an approach to avoiding the continuous spectrum. A wide variety of techniques for bounding eigenvalues and decay of powers for stochastic (e.g., positive) kernels has been developed by the probability community over the past 25 years. These include inequalities of Poincare\u0301, Nash, Sobolev, and the log-Sobolev type. A useful reference for this material is [79]. The new idea is to apply these techniques to pieces of the operators (which need not be stochastic). The discovery is that this can be pushed through.\nIn more detail, consider the kernel Ph of (5.1) operating on L2(p). Write\nPh = \u03a0 + P 1h + P 2 h + P 3 h\nwith \u03a0 the orthogonal projection onto the constants\nP 1h(x, y) = \u2211\n\u03b2j close to 1\n\u03b2j(h)fj,h(x)fj,h(y),\nP 2h(x, y) = \u2211\n1 10< 1\u2212\u03b2j h2 < 910\n\u03b2j,hfj,h(x)fj,h(y),\nand P 3h = Ph \u2212 \u03a0 \u2212 P 1h \u2212 P 2h .\nThe pieces are orthogonal, so powers of Ph equal the sum of powers of the pieces. Now P 1h and P 2 h can be analyzed as above. Of course, bounds on eigenvalues and eigenfunctions are still needed. The continuous spectrum is hidden in P 3h and one easily gets the crude bounds \u2016P 3h\u2016L\u221e\u2192L\u221e \u2264 ch\u22123d/2, \u2016P 3h\u2016L2\u2192L2 \u2264 (1\u2212\u03b40). These can be iterated to give \u2016(P 3h)n\u2016L\u221e\u2192L\u221e \u2264 ce\u2212\u00b5n for a universal \u00b5 > 0 and all n > 1/h. Thus P 3h is negligible.\nThe work is fairly technical but the big picture is fairly stable. It holds for natural walks on compact Riemannian manifolds [59] and in the detailed analysis of the one-dimensional hard disc problem [24, 27].\nThe main purpose of this section is to show how careful analysis of an applied algorithm can lead to interesting mathematics. In the next section, several further applications of Markov chain Monte Carlo are sketched. None of these have been analyzed."
+        },
+        {
+            "heading": "6. Going further, looking back; contacts with math, contacts outside math",
+            "text": "This section covers four topics: how someone outside probability can learn more about the present subject; a literature review on rates of convergence; a list of examples showing how a wide spectrum of mathematical tools have been used in analyzing Markov chains; and pointers to applications in various scientific applications.\n6.1. Going further. Suppose you are a \u201cgrown-up mathematician\u201d who wants to learn some probability. The problem is, probability has its own language and images. It\u2019s a little like learning quantum mechanics \u2014 the mathematical tools are not a problem but the basic examples and images are foreign. There are two steps. The first is elementary probability \u2014 the language of random variables, expectation, independence, conditional probability, and the basic examples (binomial, Poisson, geometric, normal, gamma, beta) with their distribution theory. The second is mathematical probability \u2014 \u03c3-algebras, laws of large numbers, central limit theory, martingales, and brownian motion. Not to mention Markov chains.\nThe best procedure is to first sit in on an elementary probability course and then sit in on a first-year graduate course. There are hundreds of books at all levels. Two good elementary books are [39] and [78]. This last is a very readable classic (don\u2019t miss Chapter 3!). I use Billingsley\u2019s book [9] to teach graduate probability.\nTo learn about Monte Carlo, the classic book [44] is short and contains most of the important ideas. The useful books ([15] or [62]) bring this up to date. Two very good accounts of applied probability which develop Markov chain theory along present lines are [7] and [10]. The advanced theory of Markov chains is well covered by [3] (analytic theory), [38] (semi-group theory), and [42] (Dirichlet forms). Two very useful survey articles on rigorous rates of convergence are [67] and [79]. The on-line treatise [1] has a wealth of information about reversible Markov chains. All of the cited works contain pointers to a huge literature.\n6.2. Looking back. In this article, I have focused on using spectral theory to give rates of convergence for Markov chains. There are several other tools and schools. Two important ones are coupling and Harris recurrence. Coupling is a pure probability approach in which two copies of a Markov chain are considered. One begins in stationarity, the second at a fixed starting point. Each chain evolves marginally according to the given transition operator. However, the chains are also set up to move towards each other. When they hit a common point, they couple and then move on together. The chain started in stationarity is stationary at every step, in particular at the coupling time T . Thus, at time T , the chain starting from a fixed point is stationary. This approach transforms the task of bounding rates of convergence to bounding the coupling time T . This can sometimes be done by quite elementary arguments. Coupling is such a powerful and original tool that it must have applications far from its origins. A recent example is Robert Neel\u2019s proof [71] of Liouville theorems for minimal surfaces.\nBook-length treatments of coupling are [61] and [86]. The very useful path coupling variant in [11] and [35] is developed into a marvelous theory of Ricci curvature for Markov chains by [73]. The connections between coupling and eigenvalues is discussed in [12]. The coupling from the past algorithm of Propp\u2013Wilson [77] has made a real impact on simulation. It sometimes allows exact samples to be drawn\nfrom intractable probability distributions. It works for the Ising model. I clearly remember my first look at David Wilson\u2019s sample of a 2, 000 \u00d7 2, 000 Ising model at the critical temperature. I felt like someone seeing Mars through a telescope for the first time.\nHarris recurrence is a sophisticated variant of coupling which has a well-developed user interface. This avoids the need for clever, ad hoc constructions. The two chains can be exactly coupled for general state spaces when they hit a small set. They can be driven to the small set by a Lyapounov function. A splendid introduction to Harris recurrence is in [53]. A book-length development is [68]. The topic is often developed under the name of geometric ergodicity. This refers to bounds of the form \u2016Klx \u2212 \u03c0\u2016TV \u2264 A(x)\u03b3l for A(x) > 0 and 0 < \u03b3 < 1. Observe that usually, proofs of geometric ergodicity give no hold on A(x) or on \u03b3. In this form, the results are practically useless, saying little more than \u201cthe chain converges for large l\u201d. Bounds with explicit A(x), \u03b3 are called \u201chonest\u201d in the literature [53]. The work of Jim Hobert and his collaborators is particularly rich in useful bounds for real examples. For further discussion and references, see [23] and [50].\nIn the presence of geometric ergodicity, a wealth of useful auxiliary results becomes available. These include central limit theorems and large deviations bounds for averages 1/N \u2211 f(Xi) [56]. The variance of such averages can be usefully estimated [46]. One can even hope to do perfect sampling from the exact stationary distribution [55]. There has been a spirited effort to understand what the set-up required for Harris recurrence says about the spectrum [5, 6]. (Note that coupling and Harris recurrence do not depend on reversibility.)\n6.3. Contacts with math. The quest for sharp analysis of Markov chains has led to the use and development of tools from various areas of mathematics. Here is a personal catalog.\nGroup representations. Natural mixing schemes can sometimes be represented as random walks on groups or homogeneous spaces. Then, representation theory allows a useful Fourier analysis. If the walks are invariant under conjugation, only the characters are needed. If the walks are bi-invariant under a subgroup giving a Gelfand pair, the spherical functions are needed. A book-length discussion of this approach can be found in [14]. Sometimes, the probability theory calls for new group theory. An example is the random walk on the group of upper-triangular matrices with elements in a finite field: Starting at the identity, pick a row at random and add it to the row above. The character theory of this group is wild. Carlos-Andre has created a cruder super-character theory which is sufficiently rich to handle random walk problems. The detailed use of this required a new formula [4] and leads to an extension of the theory to algebra groups in joint work with Isaacs and Theme [22, 34]. This has blossomed into thesis projects [45, 84, 85]. This thread is a nice example of the way that applications and theory interact.\nAlgebraic geometry. The creation of Markov chains to efficiently perform a sampling task can lead to interesting mathematics. As an example, consider the emerging field of algebraic statistics. I was faced with the problem of generating (uniformly) random arrays with given row and column sums. These arrays (called \u201ccontingency tables\u201d in statistics) have non-negative integer entries. For two-dimensional arrays, a classical Markov chain Monte Carlo algorithm proceeds as follows. Pick a pair of\nrows and a pair of columns at random; this delineates four entries. Change these entries by adding and subtracting in one of the following patterns:(\n+ \u2212 \u2212 +\n) or ( \u2212 + + \u2212 ) .\nThis doesn\u2019t change the row/column sums. If the resulting array still has nonnegative entries, the chain moves there. Otherwise, the chain stays at the original array.\nI needed to extend this to higher-dimensional arrays and similar problems on the permutation group and other structures where linear statistics are to be preserved. The problem is that the analog of the ( + \u2212 \u2212 + ) moves that statisticians have thought\nof does not connect the space. Bernd Sturmfels recognized the original (\n+ \u2212 \u2212 + ) moves as generators of a determinental ideal and suggested coding the problem up as finding generators of a toric ideal. All of the problems fit into this scheme and the emerging fields of computational algebra and Gro\u0308bner bases allow practical solutions. The story is too long to tell here in much detail. The original ideas are worked out in [33]. There have been many extensions, bolstered by more than a dozen Ph.D. theses. A flavor of this activity and references can be gathered from [49]. The suite of computational resources in the computer package Latte also contains extensive documentation. The subject of algebraic statistics has expanded in many directions. See [74] for its projection into biology, and [76] for its projection into the design of experiments. As usual, the applications call for a sharpening of algebraic geometric tools and raise totally new problems.\nFor completeness I must mention that despite much effort, the running time analysis of the original Markov chain on contingency tables has not been settled. There are many partial results suggesting that (diam)2 steps are necessary and sufficient, where diameter refers to the graph with an edge between two arrays if they differ by a ( + \u2212 \u2212 + ) move. There are also other ways of sampling that show great promise [16]. Carrying either the analysis or the alternative procedures to the other problems in [33] is a healthy research area.\nPDE. The analysis of Markov chains has a very close connection with the study of long time behavior of the solutions of differential equations. In the Markov chain context we are given a kernel K(x, dy) with reversible stationary measure \u03c0(dx) on a space X . Then K operates as a self-adjoint contraction on L2(\u03c0) via Kf(x) = \u222b f(y)K(x, dy). The associated quadratic form E(f |g) = \u3008(I \u2212 K)f, g\u3009 is called the Dirichlet form in probability. A Poincare\u0301 inequality for K has the form\n\u2016f\u201622 \u2264 AE(f |f) for all f \u2208 L2(\u03c0) with \u222b fd\u03c0 = 0.\nUsing the minimax characterization, a Poincare\u0301 inequality shows that there is no spectrum for the operator in [1 \u2212 1/A, 1) (Markov operators always have 1 as an eigenvalue). There is a parallel parity form which allows bounding negative spectrum. If the spectrum is supported on [\u22121 + 1/A, 1 \u2212 1/A] and the Markov chain is started at a distribution \u03c3 with L2 density g, then\n\u2016Kl\u03c3 \u2212 \u03c0\u20162TV \u2264 \u2016g \u2212 1\u201622 (\n1 \u2212 1 A\n)2l .\nThis is a useful, explicit bound but it is often \u201coff\u201d, giving the wrong rate of convergence by factors of n or more in problems on the symmetric group Sn. A host of more complex techniques can give better results. For example, K satisfies a Nash inequality if for all suitable f ,\n\u2016f\u20162+1/D2 \u2264 A { E(f |f) + 1\nN \u2016f\u201622\n} \u2016f\u20161/D1 ,\nand a log-Sobolev inequality if L(f) \u2264 AE(f |f), L(f) = \u222b f2(x) log f(x)2\n\u2016f\u201622 \u03c0(dx).\nHere A, N and D are constants which enter into any conclusions. These inequalities are harder to establish and have stronger conequences. Related inequalities of Cheeger and Sobolev are also in widespread use. For surveys of this technology, see [69] or [79]. The point here is that most of these techniques were developed to study PDE. Their adaptation to the analysis of Markov chains requires some new ideas. This interplay between the proof techniques of PDE and Markov chains has evolved into the small but healthy field of functional inequalities [5, 6] which contributes to both subjects.\nModern PDE is an enormous subject with many more tools and ideas. Some of these, for example, the calculus of pseudo-differential operators and micro-local techniques, are just starting to make inroads into Markov chain convergence [24, 25, 59].\nA major omission in the discussion above are the contributions of the theoretical computer science community. In addition to a set of problems discussed in the final part of this section, a host of broadly useful technical developments have emerged. One way of saying things is this: How does one establish any of the inequalities above (from Poincare\u0301 through log-Sobolev) in an explicit problem? Mark Jerrum and Alistair Sinclair introduced the use of paths to prove Cheeger inequalities (called \u201cconductance\u201d in computer science). Dyer, Frieze, Lova\u0301sz, Kannan and many students and coauthors have developed and applied these ideas to a host of problems, most notably the problems of approximating the permanent of a matrix and approximating the volume of a convex set. Alas, this work suffers from the \u201cpolynomial time bug\u201d. The developers are often satisfied with results showing that n17 steps suffice (after all, it\u2019s a polynomial). This leads to theory of little use in practical problems. I believe that the ideas can be pushed to give useful results, but at the present writing much remains to be done. A good survey of this set of ideas can be found in [69].\n6.4. Contacts outside math. To someone working in my part of the world, asking about applications of Markov chain Monte Carlo (MCMC) is a little like asking about applications of the quadratic formula. The results are really used in every aspect of scientific inquiry. The following indications are wildly incomplete. I believe you can take any area of science, from hard to social, and find a burgeoning MCMC literature specifically tailored to that area. I note that essentially none of these applications is accompanied by any kind of practically useful running time analysis. Thus the following is really a list of open research problems.\nChemistry and physics. From the original application to hard discs through lattice gauge theory [66], MCMC calculations are a mainstay of chemistry and physics.\nI will content myself by mentioning four very readable books, particularly good at describing the applications to an outsider; I have found them useful ways to learn the science. For physics, [57] and [72]. For chemistry, [41] and [58]. A good feeling for the ubiquity of MCMC can be gleaned from the following quote from the introductory text of the chemist Ben Widom [88, p. 101]:\n\u201cNow, a generation later, the situation has been wholly transformed, and we are able to calculate the properties of ordinary liquids with nearly as much assurance as we do those of dilute gases and harmonic solids . . . . What is new is our ability to realize van der Waal\u2019s vision through the intervention of high speed digital computing.\u201d\nBiology. One way to access applications of MCMC in various areas of biology is to look at the work of the statistical leaders of groups driving this research: Jun Liu (Harvard), Michael Newton (Wisconsin), Mike West (Duke) and Wing Wong (Stanford). The homepages of each of these authors contain dozens of papers, essentially all driven by MCMC. Many of these contain innovative, new algorithms (waiting to be studied). In addition, I mention the online resources \u201cMr. Bayes\u201d and \u201cBugs\u201d. These give hundreds of tailored programs for MCMC biological applications.\nStatistics. Statisticians work with scientists, engineers, and businesses in a huge swathe of applications. Perhaps 10\u201315% of this is driven by MCMC. An overview of applications may be found in the books [43] or [62]. For the very active area of particle filters and their many engineering applications (tracking, filtering), see [36]. For political science\u2013flavored applications, see [43]. Of course, statisticians have also contributed to the design and analysis of these algorithms. An important and readable source is [13].\nGroup theory. This is a much smaller application. It seems surprising, because group theory (the mathematics of symmetry) seems so far from probability. However, computational group theory, as coded up in the online libraries Gap and Magma, makes heavy use of randomized algorithms to do basic tasks such as deciding whether a group (usually given as the group generated by a few permutations or a few large matrices) is all of Sn(GLn). Is it solvable, can we find its lower central series, normal closure, Sylow(p) subgroups, etc.? Splendid accounts of this subject are in [47] or [80]. Bounding the running time of widely available used algorithms, such as the meat axe or the product replacement algorithm [75], are important open problems on the unlikely interface of group theory and probability.\nComputer science (theory). The analysis of algorithms and complexity theory is an important part of computer science. One central theme is the polynomial/nonpolynomial dichotomy. A large class of problems such as computing the permanent of a matrix or the volume of a convex polyhedron have been proved to be # pcomplete. Theorists (Broder, Jerrum, Vazarani) have shown that while it may take exponential time to get an exact answer to these problems, one can find provably accurate approximations in a polynomial number of operations (in the size of the input) provided one can find a rapidly mixing Markov chain to generate problem instances at random. The above rough description is made precise in the readable book [81]. This program calls for methods of bounding the running time of Markov chains. Many clever analyses have been carried out in tough problems without\nhelpful symmetries. It would take us too far afield to develop this further. Three of my favorite papers (which will lead the reader into the heart of this rich literature) are the analysis [63] of the hit-and-run algorithm, the analysis [52] of the problem of approximating permanents, and the analysis [70] of knapsack problems. All of these contain deep, original mathematical ideas which seem broadly useful. As a caveat, recent results of Widgerson suggest a dichotomy: either randomness can be eliminated from these algorithms or P = NP . Since nobody believes P = NP , there is true excitement in the air.\nTo close this section, I reiterate that almost none of these applications comes with a useful running time estimate (and almost never with careful error estimates). Also, for computer science, the applications are to computer science theory. Here the challenge is to see if practically useful algorithms can be made from the elegant mathematics."
+        },
+        {
+            "heading": "Acknowledgments",
+            "text": "This paper leans on 30 years of joint work with students and coauthors. It was presented at the 25th anniversary of the amazing, wonderful MSRI. I particularly thank Marc Coram, Susan Holmes, Kshitij Khare, Werner Krauth, Gilles Lebeau, Laurent Michel, John Neuberger, Charles Radin, and Laurent Saloff-Coste for their help with this paper. A helpful referee and the patience of editor Susan Friedlander are gratefully acknowledged.\nAbout the author\nPersi Diaconis is the Mary Sunseri Professor of Statistics and Mathematics at Stanford University. He is a member of the National Academy of Sciences and is a recipient of a MacArthur Fellowship."
+        }
+    ],
+    "title": "THE MARKOV CHAIN MONTE CARLO REVOLUTION",
+    "year": 2009
+}

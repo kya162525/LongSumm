@@ -1,0 +1,483 @@
+{
+    "abstractText": "We introduce HoME: a Household Multimodal Environment for artificial agents to learn from vision, audio, semantics, physics, and interaction with objects and other agents, all within a realistic context. HoME integrates over 45,000 diverse 3D house layouts based on the SUNCG dataset, a scale which may facilitate learning, generalization, and transfer. HoME is an open-source, OpenAI Gym-compatible platform extensible to tasks in reinforcement learning, language grounding, soundbased navigation, robotics, multi-agent learning, and more. We hope HoME better enables artificial agents to learn as humans do: in an interactive, multimodal, and richly contextualized setting.",
+    "authors": [
+        {
+            "affiliations": [],
+            "name": "Simon Brodeur"
+        },
+        {
+            "affiliations": [],
+            "name": "Ethan Perez"
+        },
+        {
+            "affiliations": [],
+            "name": "Ankesh Anand"
+        },
+        {
+            "affiliations": [],
+            "name": "Florian Golemo"
+        },
+        {
+            "affiliations": [],
+            "name": "Luca Celotti"
+        },
+        {
+            "affiliations": [],
+            "name": "Florian Strub"
+        },
+        {
+            "affiliations": [],
+            "name": "Jean Rouat"
+        },
+        {
+            "affiliations": [],
+            "name": "Hugo Larochelle"
+        },
+        {
+            "affiliations": [],
+            "name": "Aaron Courville"
+        }
+    ],
+    "id": "SP:cf280435c471ee099148c4eb9eb2e106ccb2b218",
+    "references": [
+        {
+            "authors": [
+                "Kelly Fisher",
+                "Kathy Hirsh-Pasek",
+                "Roberta M Golinkoff"
+            ],
+            "title": "Fostering mathematical thinking through playful learning",
+            "venue": "Contemporary debates on child development and education,",
+            "year": 2012
+        },
+        {
+            "authors": [
+                "Barbara Landau",
+                "Linda Smith",
+                "Susan Jones"
+            ],
+            "title": "Object perception and object naming in early development",
+            "venue": "Trends in cognitive sciences,",
+            "year": 1998
+        },
+        {
+            "authors": [
+                "Linda Smith",
+                "Chen Yu"
+            ],
+            "title": "Infants rapidly learn word-referent mappings via cross-situational statistics",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "Karl Moritz Hermann",
+                "Felix Hill",
+                "Simon Green",
+                "Fumin Wang",
+                "Ryan Faulkner",
+                "Hubert Soyer",
+                "David Szepesvari",
+                "Wojtek Czarnecki",
+                "Max Jaderberg",
+                "Denis Teplyashin"
+            ],
+            "title": "Grounded language learning in a simulated 3d world",
+            "venue": "arXiv preprint arXiv:1706.06551,",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "Junhyuk Oh",
+                "Satinder Singh",
+                "Honglak Lee",
+                "Pushmeet Kohli"
+            ],
+            "title": "Zero-shot task generalization with multi-task deep reinforcement learning",
+            "venue": "In ICML,",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "Harm de Vries",
+                "Florian Strub",
+                "Sarath Chandar",
+                "Olivier Pietquin",
+                "Hugo Larochelle",
+                "Aaron C. Courville"
+            ],
+            "title": "Guesswhat?! visual object discovery through multi-modal dialogue",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "Douwe Kiela",
+                "Luana Bulat",
+                "Anita L Vero",
+                "Stephen Clark"
+            ],
+            "title": "Virtual embodiment: A scalable long-term strategy for artificial intelligence research",
+            "venue": "In Machine intelligence workshop at NIPS,",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "Alex Krizhevsky",
+                "Ilya Sutskever",
+                "Geoffrey E Hinton"
+            ],
+            "title": "Imagenet classification with deep convolutional neural networks",
+            "venue": "In NIPS,",
+            "year": 2012
+        },
+        {
+            "authors": [
+                "Tomas Mikolov",
+                "Ilya Sutskever",
+                "Kai Chen",
+                "Greg S Corrado",
+                "Jeff Dean"
+            ],
+            "title": "Distributed representations of words and phrases and their compositionality",
+            "venue": "In NIPS,",
+            "year": 2013
+        },
+        {
+            "authors": [
+                "Stanislaw Antol",
+                "Aishwarya Agrawal",
+                "Jiasen Lu",
+                "Margaret Mitchell",
+                "Dhruv Batra",
+                "C Lawrence Zitnick",
+                "Devi Parikh"
+            ],
+            "title": "Vqa: Visual question answering",
+            "venue": "In CVPR,",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Oriol Vinyals",
+                "Alexander Toshev",
+                "Samy Bengio",
+                "Dumitru Erhan"
+            ],
+            "title": "Show and tell: Lessons learned from the 2015 mscoco image captioning challenge",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "Abhinav Dhall",
+                "OV Ramana Murthy",
+                "Roland Goecke",
+                "Jyoti Joshi",
+                "Tom Gedeon"
+            ],
+            "title": "Video and image based emotion recognition challenges in the wild",
+            "venue": "Emotiw",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Marc G Bellemare",
+                "Yavar Naddaf",
+                "Joel Veness",
+                "Michael Bowling"
+            ],
+            "title": "The arcade learning environment: An evaluation platform for general agents",
+            "venue": "JAIR, 47:253\u2013279,",
+            "year": 2013
+        },
+        {
+            "authors": [
+                "David Silver",
+                "Aja Huang",
+                "Chris J Maddison",
+                "Arthur Guez",
+                "Laurent Sifre",
+                "George Van Den Driessche",
+                "Julian Schrittwieser",
+                "Ioannis Antonoglou",
+                "Veda Panneershelvam",
+                "Marc Lanctot"
+            ],
+            "title": "Mastering the game of go with deep neural networks and tree",
+            "venue": "search. Nature,",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "Devendra Singh Chaplot",
+                "Kanthashree Mysore Sathyendra",
+                "Rama Kumar Pasumarthi",
+                "Dheeraj Rajagopal",
+                "Ruslan Salakhutdinov"
+            ],
+            "title": "Gated-attention architectures for task-oriented language grounding",
+            "venue": "arXiv preprint arXiv:1706.07230,",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "Kazu Nakazawa",
+                "Michael C Quirk",
+                "Raymond A Chitwood",
+                "Masahiko Watanabe",
+                "Mark F Yeckel",
+                "Linus D Sun",
+                "Akira Kato",
+                "Candice A Carr",
+                "Daniel Johnston",
+                "Matthew A Wilson"
+            ],
+            "title": "Requirement for hippocampal ca3 nmda receptors in associative memory",
+            "venue": "recall. Science,",
+            "year": 2002
+        },
+        {
+            "authors": [
+                "Gediminas Adomavicius",
+                "Alexander Tuzhilin"
+            ],
+            "title": "Context-aware recommender systems",
+            "venue": "In Recommender systems handbook,",
+            "year": 2011
+        },
+        {
+            "authors": [
+                "Max Jaderberg",
+                "Volodymyr Mnih",
+                "Wojciech Marian Czarnecki",
+                "Tom Schaul",
+                "Joel Z Leibo",
+                "David Silver",
+                "Koray Kavukcuoglu"
+            ],
+            "title": "Reinforcement learning with unsupervised auxiliary tasks",
+            "venue": "arXiv preprint arXiv:1611.05397,",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "Ond\u0159ej Bojar",
+                "Rajen Chatterjee",
+                "Christian Federmann",
+                "Barry Haddow",
+                "Matthias Huck",
+                "Chris Hokamp",
+                "Philipp Koehn",
+                "Varvara Logacheva",
+                "Christof Monz",
+                "Matteo Negri",
+                "Matt Post",
+                "Carolina Scarton",
+                "Lucia Specia",
+                "Marco Turchi"
+            ],
+            "title": "Findings of the 2015 workshop on statistical machine translation",
+            "venue": "In Workshop on Statistical Machine Translation,",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Joshua Tobin",
+                "Rachel Fong",
+                "Alex Ray",
+                "Jonas Schneider",
+                "Wojciech Zaremba",
+                "Pieter Abbeel"
+            ],
+            "title": "Domain randomization for transferring deep neural networks from simulation to the real world",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "Shuran Song",
+                "Fisher Yu",
+                "Andy Zeng",
+                "Angel X Chang",
+                "Manolis Savva",
+                "Thomas Funkhouser"
+            ],
+            "title": "Semantic scene completion from a single depth",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "Samuli Laine",
+                "Samuel Siltanen",
+                "Tapio Lokki",
+                "Lauri Savioja"
+            ],
+            "title": "Accelerated beam tracing algorithm",
+            "venue": "Applied Acoustics,",
+            "year": 2009
+        },
+        {
+            "authors": [
+                "Matthew Johnson",
+                "Katja Hofmann",
+                "Tim Hutton",
+                "David Bignell"
+            ],
+            "title": "The malmo platform for artificial intelligence experimentation",
+            "venue": "In IJCAI,",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "Micha\u0142 Kempka",
+                "Marek Wydmuch",
+                "Grzegorz Runc",
+                "Jakub Toczek",
+                "Wojciech Ja\u015bkowski"
+            ],
+            "title": "ViZDoom: A Doom-based AI research platform for visual reinforcement learning",
+            "venue": "In Computational Intelligence and Games,",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "Yuke Zhu",
+                "Roozbeh Mottaghi",
+                "Eric Kolve",
+                "Joseph J Lim",
+                "Abhinav Gupta",
+                "Li Fei-Fei",
+                "Ali Farhadi"
+            ],
+            "title": "Target-driven Visual Navigation in Indoor Scenes using Deep Reinforcement Learning",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "Peter Anderson",
+                "Qi Wu",
+                "Damien Teney",
+                "Jake Bruce",
+                "Mark Johnson",
+                "Niko S\u00fcnderhauf",
+                "Ian Reid",
+                "Stephen Gould",
+                "Anton van den Hengel"
+            ],
+            "title": "Vision-and-language navigation: Interpreting visually-grounded navigation instructions in real environments",
+            "venue": "arXiv preprint arXiv:1711.07280,",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "Matthew Fisher",
+                "Daniel Ritchie",
+                "Manolis Savva",
+                "Thomas Funkhouser",
+                "Pat Hanrahan"
+            ],
+            "title": "Example-based synthesis of 3d object arrangements",
+            "venue": "ACM Transactions on Graphics,",
+            "year": 2012
+        },
+        {
+            "authors": [
+                "Angel Chang",
+                "Angela Dai",
+                "Thomas Funkhouser",
+                "Maciej Halber",
+                "Matthias Niessner",
+                "Manolis Savva",
+                "Shuran Song",
+                "Andy Zeng",
+                "Yinda Zhang"
+            ],
+            "title": "Matterport3d: Learning from rgb-d data in indoor environments",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "Binh-Son Hua",
+                "Quang-Hieu Pham",
+                "Duc Thanh Nguyen",
+                "Minh-Khoi Tran",
+                "Lap-Fai Yu",
+                "Sai-Kit Yeung"
+            ],
+            "title": "Scenenn: A scene meshes dataset with annotations",
+            "venue": "In 3DV,",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "Ankur Handa",
+                "Viorica P\u0103tr\u0103ucean",
+                "Simon Stent",
+                "Roberto Cipolla"
+            ],
+            "title": "Scenenet: An annotated model generator for indoor scene understanding",
+            "venue": "In ICRA,",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "John McCormac",
+                "Ankur Handa",
+                "Stefan Leutenegger",
+                "Andrew J Davison"
+            ],
+            "title": "Scenenet rgb-d: Can 5m synthetic images beat generic imagenet pre-training on indoor segmentation",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "Mike Goslin",
+                "Mark R Mine"
+            ],
+            "title": "The panda3d graphics",
+            "venue": "engine. Computer,",
+            "year": 2004
+        }
+    ],
+    "sections": [
+        {
+            "heading": "1 Introduction",
+            "text": "Human learning occurs through interaction [1] and multimodal experience [2, 3]. Prior work has argued that machine learning may also benefit from interactive, multimodal learning [4, 5, 6], termed virtual embodiment [7]. Driven by breakthroughs in static, unimodal tasks such as image classification [8] and language processing [9], machine learning has moved in this direction. Recent tasks such as visual question answering [10], image captioning [11], and audio-video classification [12] make steps towards learning from multiple modalities but lack the dynamic, responsive signal from exploratory learning. Modern, challenging tasks incorporating interaction, such as Atari [13] and Go [14], push agents to learn complex strategies through trial-and-error but miss information-rich connections across vision, language, sounds, and actions. To remedy these shortcomings, subsequent work introduces tasks that are both multimodal and interactive, successfully training virtually embodied agents that, for example, ground language in actions and visual percepts in 3D worlds [4, 5, 15].\nFor virtual embodiment to reach its full potential, though, agents should be immersed in a rich, lifelike context as humans are. Agents may then learn to ground concepts not only in various modalities but also in relationships to other concepts, i.e. that forks are often in kitchens, which are near living rooms, which contain sofas, etc. Humans learn by concept-to-concept association, as shown in child learning psychology [2, 3], cognitive science [16], neuroscience [17], and linguistics [18]. Even in machine learning, contextual information has given rise to effective word representations [9], improvements in recommendation systems [19], and increased reward quality in robotics [20]. Importantly, scale in data has proven key in algorithms learning from context [9] and in general [21, 22, 23].\nTo this end, we present HoME: the Household Multimodal Environment (Figure 1). HoME is a large-scale platform2 for agents to navigate and interact within over 45,000 hand-designed houses from the SUNCG dataset [24]. Specifically, HoME provides:\n\u2217These authors contributed equally. 2Available at https://home-platform.github.io/\n31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA.\nar X\niv :1\n71 1.\n11 01\n7v 1\n[ cs\n.A I]\n2 9\nN ov\n\u2022 3D visual renderings based on Panda3D.\n\u2022 3D acoustic renderings based on EVERT [25], using ray-tracing for high fidelity audio.\n\u2022 Semantic image segmentations and language descriptions of objects.\n\u2022 Physics simulation based on Bullet, handling collisions, gravity, agent-object interaction, and more.\n\u2022 Multi-agent support.\n\u2022 A Python framework integrated with OpenAI Gym [26].\nHoME is a general platform extensible to many specific tasks, from reinforcement learning to language grounding to blind navigation, in a real-world context. HoME is also the first major interactive platform to support high fidelity audio, allowing researchers to better experiment across modalities and develop new tasks. While HoME is not the first platform to provide realistic context, we show in following sections that HoME provides a more large-scale and multimodal testbed than existing environments, making it more conducive to virtually embodied learning in many scenarios."
+        },
+        {
+            "heading": "2 Related work",
+            "text": "The AI community has built numerous platforms to drive algorithmic advances: the Arcade Learning Environment [13], OpenAI Universe [27], Minecraft-based Malmo [28], maze-based DeepMind Lab [29], Doom-based ViZDoom [30], AI2-THOR [31], Matterport3D Simulator [32] and House3D [33]. Several of these environments were created to be powerful 3D sandboxes for developing learning algorithms [28, 29, 30], while HoME additionally aims to provide a unified platform for multimodal learning in a realistic context (Fig. 2). Table 1 compares these environments to HoME.\nThe most closely related environments to HoME are House3D, AI2-THOR, and Matterport3D Simulator, three other household environments. House3D is a concurrently developed environment also based on SUNCG, but House3D lacks sound, true physics simulation, and the capability to interact with objects \u2014 key aspects of multimodal, interactive learning. AI2-THOR and Matterport3D Simulator are environments focused specifically on visual navigation, using 32 and 90 photorealistic houses, respectively. HoME instead aims to provide an extensive number of houses (45,622) and easy integration with multiple modalities and new tasks.\nOther 3D house datasets could also be turned into interactive platforms, but these datasets are not as large-scale as SUNCG, which consists of 45622 house layouts. These datasets include Stanford Scenes (1723 layouts) [34], Matterport3D [35] (90 layouts), sceneNN (100 layouts) [36], SceneNet (57 layouts) [37], and SceneNet RGB-D (57 layouts) [38]. We used SUNCG, as scale and diversity in data have proven critical for machine learning algorithms to generalize [21, 22] and transfer, such as from simulation to real [23]. SUNCG\u2019s simpler graphics also allow for faster rendering."
+        },
+        {
+            "heading": "3 HoME",
+            "text": "Overviewed in Figure 1, HoME is an interactive extension of the SUNCG dataset [24]. SUNCG provides over 45,000 hand-designed house layouts containing over 750,000 hand-designed rooms and sometimes multiple floors. Within these rooms, of which there are 24 kinds, there are objects from among 84 categories and on average over 14 objects per room. As shown in Figure 3, HoME consists of several, distinct components built on SUNCG that can be utilized individually. The platform runs faster than real-time on a single-core CPU, enables GPU acceleration, and allows users to run multiple environment instances in parallel. These features facilitate faster algorithmic development and learning with more data. HoME provides an OpenAI Gym-compatible environment which loads agents into randomly selected houses and lets it explore via actions such as moving, looking, and interacting with objects (i.e. pick up, drop, push). HoME also enables multiple agents to be spawned at once. The following sections detail HoME\u2019s core components."
+        },
+        {
+            "heading": "3.1 Rendering engine",
+            "text": "The rendering engine is implemented using Panda3D [39], an open-source 3D game engine which ships with complete Python bindings. For each SUNCG house, HoME renders RGB+Depth scenes based on house and object textures (wooden, metal, rubber, etc.), multi-source lighting, and shadows. The rendering engine enables tasks such as vision-based navigation, imitation learning, and planning. This module provides: RGB image (with different shader presets), depth image."
+        },
+        {
+            "heading": "3.2 Acoustic engine",
+            "text": "The acoustic engine is implemented using EVERT3, which handles real-time acoustic ray-tracing based on the house and object 3D geometry. EVERT also supports multiple microphones and sound sources, distance-dependent sound attenuation, frequency-dependent material absorption and reflection (walls muffle sounds, metallic surfaces reflect acoustics, etc.), and air-absorption based on atmospheric conditions (temperature, pressure, humidity, etc.). Sounds may be instantiated artificially or based on the environment (i.e. a TV with static noise or an agent\u2019s surface-dependent footsteps). This module provides: stereo sound frames for agents w.r.t. environmental sound sources.\n3https://github.com/sbrodeur/evert"
+        },
+        {
+            "heading": "3.3 Semantic engine",
+            "text": "HoME provides a short text description for each object, as well as the following semantic information:\n\u2022 Color, calculated from object textures and discretized into 16 basic colors, ~130 intermediate colors, and ~950 detailed colors4.\n\u2022 Category, extracted from SUNCG object metadata. HoME provides both generic object categories (i.e. \u201cair conditioner,\u201d \u201cmirror,\u201d or \u201cwindow\u201d) as well as more detailed categories (i.e. \u201caccordion,\u201d \u201cmortar and pestle,\u201d or \u201cxbox\u201d).\n\u2022 Material, calculated to be the texture, out of 20 possible categories (\u201cwood,\u201d \u201ctextile,\u201d etc.), covering the largest object surface area.\n\u2022 Size (\u201csmall,\u201d \u201cmedium,\u201d or \u201clarge\u201d) calculated by comparing an object\u2019s mesh volume to a histogram of other objects of the same category.\n\u2022 Location, based on ground-truth object coordinates from SUNCG.\nWith these semantics, HoME may be extended to generate language instructions, scene descriptions, or questions, as in [4, 5, 15]. HoME can also provide agents dense, ground-truth, semanticallyannotated images based on SUNCG\u2019s 187 fine-grained categories (e.g. bathtub, wall, armchair). This module provides: image segmentations, object semantic attributes and text descriptions."
+        },
+        {
+            "heading": "3.4 Physics engine",
+            "text": "The physics engine is implemented using the Bullet 3 engine5. For objects, HoME provides two rigid body representations: (a) fast minimal bounding box approximation and (b) exact mesh-based body. Objects are subject to external forces such as gravity, based on volume-based weight approximations. The physics engine also allows agents to interact with objects via picking, dropping, pushing, etc. These features are useful for applications in robotics and language grounding, for instance. This module provides: agent and object positions, velocities, physical interaction, collision."
+        },
+        {
+            "heading": "4 Applications",
+            "text": "Using these engines and/or external data collection, HoME can facilitate tasks such as:\n\u2022 Instruction Following: An agent is given a description of how to achieve a reward (i.e. \u201cGo to the kitchen.\u201d or \u201cFind the red sofa.\u201d).\n\u2022 Visual Question Answering: An agent must answer an environment-based question which might require exploration (i.e. \u201cHow many rooms have a wooden table?\u201d).\n\u2022 Dialogue: An agent converses with an oracle with full scene knowledge to solve a difficult task. 4Colors based on a large-scale survey by Randall Munroe, including relevant shades such as \u201cmacaroni and cheese\u201d and \u201cugly pink,\u201d https://blog.xkcd.com/2010/05/03/color-survey-results/ 5https://github.com/bulletphysics/bullet3\n\u2022 Pied Piper: One agent must follow another specific agent, out of several, each making specific sounds. HoME\u2019s advanced acoustics allow agents with multichannel microphones to perform sound source localization and disentanglement for such a task.\n\u2022 Multi-agent communication: Multiple agents communicate to solve a task and maximize a shared reward. For example, one agent might know reward locations to which it must guide other agents."
+        },
+        {
+            "heading": "5 Conclusion",
+            "text": "Our Household Multimodal Environment (HoME) provides a platform for agents to learn within a world of context: hand-designed houses, high fidelity sound, simulated physics, comprehensive semantic information, and object and multi-agent interaction. In this rich setting, many specific tasks may be designed relevant to robotics, reinforcement learning, language grounding, and audio-based learning. HoME\u2019s scale may also facilitate better learning, generalization, and transfer. We hope the research community uses HoME as a stepping stone towards virtually embodied, general-purpose AI."
+        },
+        {
+            "heading": "Acknowledgments",
+            "text": "We are grateful for the collaborative research environment provided by MILA. We also acknowledge the following agencies for research funding and computing support: CIFAR, CHISTERA IGLU and CPER Nord-Pas de Calais/FEDER DATA Advanced data science and technologies 2015-2020, Calcul Qu\u00e9bec, Compute Canada, and Google. We further thank NVIDIA for donating a DGX-1 and Tesla K40 used in this work. Lastly, we thank acronymcreator.net for the acronym HoME."
+        }
+    ],
+    "title": "HoME: a Household Multimodal Environment",
+    "year": 2017
+}

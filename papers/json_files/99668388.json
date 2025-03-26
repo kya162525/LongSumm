@@ -1,0 +1,239 @@
+{
+    "abstractText": "This paper explores a simple and efficient baseline for text classification. Our experiments show that our fast text classifier fastText is often on par with deep learning classifiers in terms of accuracy, and many orders of magnitude faster for training and evaluation. We can train fastText on more than one billion words in less than ten minutes using a standard multicore CPU, and classify half a million sentences among 312K classes in less than a minute.",
+    "authors": [],
+    "id": "SP:ba0567e9548d7d27edf25c66bf25ccfaa6307851",
+    "references": [
+        {
+            "authors": [
+                "Olivier Chapelle",
+                "Miroslav Dud\u0131\u0301k",
+                "John Langford"
+            ],
+            "title": "A reliable effective terascale linear learning system",
+            "year": 2014
+        },
+        {
+            "authors": [
+                "Collobert",
+                "Weston2008] Ronan Collobert",
+                "Jason Weston"
+            ],
+            "title": "A unified architecture for natural language processing: Deep neural networks with multitask learning. InICML",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "Holger Schwenk",
+                "Lo\u0131\u0308c Barrault",
+                "Yann Lecun"
+            ],
+            "title": "Very deep convolutional networks for natural language processing",
+            "venue": "arXiv preprint arXiv:1606.01781",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "Susan T Dumais",
+                "George W Furnas",
+                "Thomas K Landauer",
+                "Richard Harshman"
+            ],
+            "title": "Indexing by latent semantic analysis.Journal of the American society for information science",
+            "year": 1990
+        },
+        {
+            "authors": [
+                "Fan et al.2008] Rong-En Fan",
+                "Kai-Wei Chang",
+                "Cho-Jui Hsieh",
+                "Xiang-Rui Wang",
+                "Chih-Jen Lin"
+            ],
+            "title": "Liblinear: A library for large linear classification",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "Joshua Goodman"
+            ],
+            "title": "Classes for fast maximum entropy training. InICASSP",
+            "year": 2001
+        },
+        {
+            "authors": [
+                "Yoon Kim"
+            ],
+            "title": "Convolutional neural networks for sentence classification",
+            "year": 2014
+        },
+        {
+            "authors": [
+                "Levy et al.2015] Omer Levy",
+                "Yoav Goldberg",
+                "Ido Dagan"
+            ],
+            "title": "Improving distributional similarity with lessons learned from word embeddings",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "McCallum",
+                "Nigam1998] Andrew McCallum",
+                "Kamal Nigam"
+            ],
+            "title": "A comparison of event models for",
+            "year": 1998
+        },
+        {
+            "authors": [
+                "\u010cernock\u1ef3."
+            ],
+            "title": "Strategies for training large scale neural network language models",
+            "venue": "InWorkshop on Automatic Speech Recognition and Understanding. IEEE.",
+            "year": 2011
+        },
+        {
+            "authors": [
+                "Kai Chen",
+                "Greg Corrado",
+                "Jeffrey Dean"
+            ],
+            "title": "Efficient estimation of word representations in vector space",
+            "year": 2013
+        },
+        {
+            "authors": [
+                "Pang",
+                "Lee2008] Bo Pang",
+                "Lillian Lee"
+            ],
+            "title": "Opinion mining and sentiment analysis",
+            "year": 2008
+        },
+        {
+            "authors": [
+                "Tang et al.2015] Duyu Tang",
+                "Bing Qin",
+                "Ting Liu"
+            ],
+            "title": "Document modeling with gated recurrent neural network for sentiment classification",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Thomee et al.2016] Bart Thomee",
+                "David A Shamma",
+                "Gerald Friedland",
+                "Benjamin Elizalde",
+                "Karl Ni",
+                "Douglas Poland",
+                "Damian Borth",
+                "Li-Jia Li"
+            ],
+            "title": "Yfcc100m: The new data in multimedia research",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "Wang",
+                "Manning2012] Sida Wang",
+                "Christopher D Manning"
+            ],
+            "title": "Baselines and bigrams: Simple, good sentiment and topic classification",
+            "year": 2012
+        },
+        {
+            "authors": [
+                "Anirban Dasgupta",
+                "John Langford",
+                "Alex Smola",
+                "Josh Attenberg"
+            ],
+            "title": "Feature hashing for large scale multitask learning. InICML",
+            "year": 2009
+        },
+        {
+            "authors": [
+                "Weston et al.2011] Jason Weston",
+                "Samy Bengio",
+                "Nicolas Usunier"
+            ],
+            "title": "Wsabie: Scaling up to large vocabulary image annotation",
+            "year": 2011
+        },
+        {
+            "authors": [
+                "Weston et al.2014] Jason Weston",
+                "Sumit Chopra",
+                "Keith Adams"
+            ],
+            "title": "tagspace: Semantic embeddings from hashtags",
+            "year": 2014
+        },
+        {
+            "authors": [
+                "Xiao",
+                "Cho2016] Yijun Xiao",
+                "Kyunghyun Cho"
+            ],
+            "title": "Efficient character-level document classification by combining convolution and recurrent layers",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "Zhang",
+                "LeCun2015] Xiang Zhang",
+                "Yann LeCun"
+            ],
+            "title": "Text understanding from scratch",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Zhang et al.2015] Xiang Zhang",
+                "Junbo Zhao",
+                "Yann LeCun"
+            ],
+            "title": "Character-level convolutional networks for text classification. InNIPS",
+            "year": 2015
+        }
+    ],
+    "sections": [
+        {
+            "text": "ar X\niv :1\n60 7.\n01 75\n9v 3\n[c s.\nC L]\n9 A\nThis paper explores a simple and efficient baseline for text classification. Our experiments show that our fast text classifier fastText is often on par with deep learning classifiers in terms of accuracy, and many orders of magnitude faster for training and evaluation. We can trainfastText on more than one billion words in less than ten minutes using a standard multicore CPU, and classify half a million sentences among 312K classes in less than a minute."
+        },
+        {
+            "heading": "1 Introduction",
+            "text": "Text classification is an important task in Natural Language Processing with many applications, such as web search, information retrieval, ranking and document classification (Deerwester et al., 1990; Pang and Lee, 2008). Recently, models based on neural networks have become increasingly popular (Kim, 2014; Zhang and LeCun, 2015; Conneau et al., 2016). While these models achieve very good performance in practice, they tend to be relatively slow both at train and test time, limiting their use on very large datasets.\nMeanwhile, linear classifiers are often considered as strong baselines for text classification problems (Joachims, 1998; McCallum and Nigam, 1998; Fan et al., 2008). Despite their simplicity, they often obtain stateof-the-art performances if the right features are used (Wang and Manning, 2012). They also have the potential to scale to very large corpus (Agarwal et al., 2014).\nIn this work, we explore ways to scale these baselines to very large corpus with a large output space, in the context of text classification. Inspired by the recent work in efficient word representation learning (Mikolov et al., 2013; Levy et al., 2015), we show that linear models with a rank constraint and a fast loss approximation can train on a billion words within ten minutes, while achieving performance on par with the state-of-the-art. We evaluate the quality of our approachfastText1 on two different tasks, namely tag prediction and sentiment analysis."
+        },
+        {
+            "heading": "2 Model architecture",
+            "text": "A simple and efficient baseline for sentence classification is to represent sentences as bag of words (BoW) and train a linear classifier, e.g., a logistic regression or an SVM (Joachims, 1998; Fan et al., 2008). However, linear classifiers do not share parameters among features and classes. This possibly limits their generalization in the context of large output space where some classes have very few examples. Common solutions to this problem are to factorize the linear classifier into low rank matrices (Schutze, 1992; Mikolov et al., 2013) or to use multilayer neural networks (Collobert and Weston, 2008; Zhang et al., 2015).\nFigure 1 shows a simple linear model with rank constraint. The first weight matrixA is a look-up table over the words. The word representations are then averaged into a text representation, which is in turn fed to a linear classifier. The text representa-\n1https://github.com/facebookresearch/fastText\ntion is an hidden variable which can be potentially be reused. This architecture is similar to the cbow model of Mikolov et al. (2013), where the middle word is replaced by a label. We use the softmax function f to compute the probability distribution over the predefined classes. For a set ofN documents, this leads to minimizing the negative loglikelihood over the classes:\n\u2212 1\nN\nN\u2211\nn=1\nyn log(f(BAxn)),\nwherexn is the normalized bag of features of thenth document,yn the label,A andB the weight matrices. This model is trained asynchronously on multiple CPUs using stochastic gradient descent and a linearly decaying learning rate."
+        },
+        {
+            "heading": "2.1 Hierarchical softmax",
+            "text": "When the number of classes is large, computing the linear classifier is computationally expensive. More precisely, the computational complexity isO(kh) where k is the number of classes andh the dimension of the text representation. In order to improve our running time, we use a hierarchical softmax (Goodman, 2001) based on the Huffman coding tree (Mikolov et al., 2013). During training, the computational complexity drops toO(h log2(k)).\nThe hierarchical softmax is also advantageous at test time when searching for the most likely class. Each node is associated with a probability that is the probability of the path from the root to that node. If the node is at depthl+1 with parentsn1, . . . , nl, its probability is\nP (nl+1) = l\u220f\ni=1\nP (ni).\nThis means that the probability of a node is always lower than the one of its parent. Exploring the tree with a depth first search and tracking the maximum probability among the leaves allows us to discard any branch associated with a small probability. In practice, we observe a reduction of the complexity to O(h log2(k)) at test time. This approach is further extended to compute theT -top targets at the cost ofO(log(T )), using a binary heap."
+        },
+        {
+            "heading": "2.2 N-gram features",
+            "text": "Bag of words is invariant to word order but taking explicitly this order into account is often computationally very expensive. Instead, we use a bag of n-grams as additional features to capture some partial information about the local word order. This is very efficient in practice while achieving comparable results to methods that explicitly use the order (Wang and Manning, 2012).\nWe maintain a fast and memory efficient mapping of the n-grams by using thehashing trick (Weinberger et al., 2009) with the same hashing function as in Mikolov et al. (2011) and 10M bins if we only used bigrams, and 100M otherwise."
+        },
+        {
+            "heading": "3 Experiments",
+            "text": "We evaluatefastText on two different tasks. First, we compare it to existing text classifers on the problem of sentiment analysis. Then, we evaluate its capacity to scale to large output space on a tag prediction dataset. Note that our model could be implemented with the Vowpal Wabbit library,2 but we observe in practice, that our tailored implementation is at least 2-5\u00d7 faster."
+        },
+        {
+            "heading": "3.1 Sentiment analysis",
+            "text": "Datasets and baselines. We employ the same 8 datasets and evaluation protocol of Zhang et al. (2015). We report the n-grams and TFIDF baselines from Zhang et al. (2015), as well as the character level convolutional model (char-CNN) of Zhang and LeCun (2015), the character based convolution recurrent network (char-CRNN) of (Xiao and Cho, 2016) and the very deep convolutional network (VDCNN) of Conneau et al. (2016). We also compare\n2Using the options--nn, --ngrams and--log multi\nto Tang et al. (2015) following their evaluation protocol. We report their main baselines as well as their two approaches based on recurrent networks (Conv-GRNN and LSTM-GRNN).\nResults. We present the results in Figure 1. We use 10 hidden units and runfastText for 5\nepochs with a learning rate selected on a valida-\ntion set from{0.05, 0.1, 0.25, 0.5}. On this task,\nadding bigram information improves the perfor-\nmance by 1-4%. Overall our accuracy is slightly better than char-CNN and char-CRNN and, a bit worse than VDCNN. Note that we can increase the accuracy slightly by using more n-grams, for example with trigrams, the performance on Sogou goes up to 97.1%. Finally, Figure 3 shows that our method is competitive with the methods presented in Tang et al. (2015). We tune the hyperparameters on the validation set and observe that using n-grams up to 5 leads to the best performance. Unlike Tang et al. (2015),fastText does not use pre-trained word embeddings, which can be explained the 1% difference in accuracy.\nModel Yelp\u201913 Yelp\u201914 Yelp\u201915 IMDB\nSVM+TF 59.8 61.8 62.4 40.5 CNN 59.7 61.0 61.5 37.5 Conv-GRNN 63.7 65.5 66.0 42.5 LSTM-GRNN 65.1 67.1 67.6 45.3\nfastText 64.2 66.2 66.6 45.2\nTable 3: Comparision with Tang et al. (2015). The hyperparameters are chosen on the validation set. We report the test accuracy.\nTraining time. Both char-CNN and VDCNN are trained on a NVIDIA Tesla K40 GPU, while our models are trained on a CPU using 20 threads. Table 2 shows that methods using convolutions are several orders of magnitude slower thanfastText. While it is possible to have a 10\u00d7 speed up for char-CNN by using more recent CUDA implementations of convolutions,fastText takes less than a minute to train on these datasets. The GRNNs method of Tang et al. (2015) takes around 12 hours per epoch on CPU with a single thread. Our speed-\nup compared to neural network based methods increases with the size of the dataset, going up to at least a 15,000\u00d7 speed-up."
+        },
+        {
+            "heading": "3.2 Tag prediction",
+            "text": "Dataset and baselines. To test scalability of our approach, further evaluation is carried on the YFCC100M dataset (Thomee et al., 2016) which consists of almost 100M images with captions, titles and tags. We focus on predicting the\ntags according to the title and caption (we do not\nuse the images). We remove the words and tags\noccurring less than 100 times and split the data\ninto a train, validation and test set. The train set contains 91,188,648 examples (1.5B tokens). The validation has 930,497 examples and the test set 543,424. The vocabulary size is 297,141 and there are 312,116 unique tags. We will release a script that recreates this dataset so that our numbers could be reproduced. We report precision at 1.\nWe consider a frequency-based baseline which predicts the most frequent tag. We also compare with Tagspace (Weston et al., 2014), which is a tag prediction model similar to ours, but based on the Wsabie model of Weston et al. (2011). While the Tagspace model is described using convolutions, we consider the linear version, which achieves comparable performance but is much faster.\nResults and training time. Table 5 presents a comparison of astText and the baselines. We run fastText for 5 epochs and compare it to Tagspace for two sizes of the hidden layer, i.e., 50\nModel prec@1 Running time\nTrain Test\nFreq. baseline 2.2 - - Tagspace,h = 50 30.1 3h8 6h Tagspace,h = 200 35.6 5h32 15h\nfastText, h = 50 31.2 6m40 48s fastText, h = 50, bigram 36.7 7m47 50s fastText, h = 200 41.1 10m34 1m29 fastText, h = 200, bigram 46.1 13m38 1m37\nthreads for both models.\nand 200. Both models achieve a similar performance with a small hidden layer, but adding bigrams gives us a significant boost in accuracy. At test time, Tagspace needs to compute the scores for all the classes which makes it relatively slow, while our fast inference gives a significant speed-up when the number of classes is large (more than 300K here). Overall, we are more than an order of magitude faster to obtain model with a better quality. The speedup of the test phase is even more significant (a 600\u00d7 speedup). Table 4 shows some qualitative examples."
+        },
+        {
+            "heading": "4 Discussion and conclusion",
+            "text": "In this work, we propose a simple baseline method for text classification. Unlike unsupervisedly trained word vectors from word2vec, our word features can\nbe averaged together to form good sentence representations. In several tasks,fastText obtains performance on par with recently proposed methods inspired by deep learning, while being much faster. Although deep neural networks have in theory much higher representational power than shallow models, it is not clear if simple text classification problems such as sentiment analysis are the right ones to evaluate them. We will publish our code so that the research community can easily build on top of our work.\nAcknowledgement. We thank Gabriel Synnaeve, Herve\u0301 Ge\u0301gou, Jason Weston and Le\u0301on Bottou for their help and comments. We also thank Alexis Conneau, Duyu Tang and Zichao Zhang for providing us with information about their methods."
+        }
+    ],
+    "year": 2016
+}

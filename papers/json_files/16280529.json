@@ -1,0 +1,102 @@
+{
+    "abstractText": "The ability to backpropagate stochastic gradients through continuous latent distributions has been crucial to the emergence of variational autoencoders [4, 6, 7, 3] and stochastic gradient variational Bayes [2, 5, 1]. The key ingredient is an unbiased and low-variance way of estimating gradients with respect to distribution parameters from gradients evaluated at distribution samples. The \u201creparameterization trick\u201d [6] provides a class of transforms yielding such estimators for many continuous distributions, including the Gaussian and other members of the location-scale family. However the trick does not readily extend to mixture density models, due to the difficulty of reparameterizing the discrete distribution over mixture weights. This report describes an alternative transform, applicable to any continuous multivariate distribution with a differentiable density function from which samples can be drawn, and uses it to derive an unbiased estimator for mixture density weight derivatives. Combined with the reparameterization trick applied to the individual mixture components, this estimator makes it straightforward to train variational autoencoders with mixture-distributed latent variables, or to perform stochastic variational inference with a mixture density variational posterior. General Result Let f(x) be a probability density function (PDF) over x \u2208 R and cumulative density function (CDF) F (x). f can be rewritten as",
+    "authors": [
+        {
+            "affiliations": [],
+            "name": "Alex Graves"
+        }
+    ],
+    "id": "SP:9432cf3f7b661473bd64153e8c6f362332197c1f",
+    "references": [
+        {
+            "authors": [
+                "C. Blundell",
+                "J. Cornebise",
+                "K. Kavukcuoglu",
+                "D. Wierstra"
+            ],
+            "title": "Weight Uncertainty in Neural Networks",
+            "venue": "ArXiv e-prints, May",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "A. Graves"
+            ],
+            "title": "Practical variational inference for neural networks",
+            "venue": "Advances in Neural Information Processing Systems, volume 24, pages 2348\u20132356.",
+            "year": 2011
+        },
+        {
+            "authors": [
+                "K. Gregor",
+                "I. Danihelka",
+                "A. Graves",
+                "D. Wierstra"
+            ],
+            "title": "DRAW: A recurrent neural network for image generation",
+            "venue": "ArXiv e-prints, March",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "K. Gregor",
+                "I. Danihelka",
+                "A. Mnih",
+                "C. Blundell",
+                "D. Wierstra"
+            ],
+            "title": "Deep autoregressive networks",
+            "venue": "Proceedings of the 31st International Conference on Machine Learning,",
+            "year": 2014
+        },
+        {
+            "authors": [
+                "D.P. Kingma",
+                "T. Salimans",
+                "M. Welling"
+            ],
+            "title": "Variational dropout and the local reparameterization trick",
+            "venue": "ArXiv e-prints, June",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "D.P. Kingma",
+                "M. Welling"
+            ],
+            "title": "Auto-encoding variational bayes",
+            "venue": "Proceedings of the International Conference on Learning Representations,",
+            "year": 2014
+        },
+        {
+            "authors": [
+                "D.J. Rezende",
+                "S. Mohamed",
+                "D. Wierstra"
+            ],
+            "title": "Stochastic backpropagation and approximate inference in deep generative models",
+            "venue": "Proceedings of the 31st International Conference on Machine Learning, pages 1278\u20131286,",
+            "year": 2014
+        }
+    ],
+    "sections": [
+        {
+            "text": "ar X\niv :1\n60 7.\n05 69\n0v 1\n[ cs\n.N E\n] 1"
+        },
+        {
+            "heading": "General Result",
+            "text": "Let f(x) be a probability density function (PDF) over x \u2208 RD and cumulative density function (CDF) F (x). f can be rewritten as\nf(x) =\nD \u220f\nd=1\nfd(xd|x<d) (1)\nwhere x<d = x1, . . . , xd\u22121, f1(x1|x<1) = f1(x1) and fd is the marginal PDF of xd conditioned on x<d. A sample x\u0302 can be drawn from f using the multivariate quantile transform: first draw a vector of D independent samples\nu = (u1, . . . , uD) from U(0, 1), then recursively define x\u0302 as\nx\u03021 = F \u22121 1 (u1) (2) x\u0302d = F \u22121 d (ud|x\u0302<d) (3)\nwhere F\u22121d is the quantile function (inverse CDF) corresponding to the PDF fd. Inverting Eq. 3 and applying the definition of a univariate CDF yields\nFd(x\u0302d|x\u0302<d) =\n\u222b x\u0302d\nt=\u2212\u221e\nfd(t|x\u0302<d)dt = ud (4)\nAssume that f depends on some parameter \u03b8. The general form of Leibniz integral rule tells us that\n\u2202Fd(x\u0302d|x\u0302<d)\n\u2202\u03b8 = fd(x\u0302d|x\u0302<d)\n\u2202x\u0302d\n\u2202\u03b8 +\n\u222b x\u0302d\nt=\u2212\u221e\n\u2202fd(t|x\u0302<d)\n\u2202\u03b8 dt =\n\u2202ud\n\u2202\u03b8 = 0 (5)\nand therefore \u2202x\u0302d\n\u2202\u03b8 = \u2212\n1\nfd(x\u0302d|x\u0302<d)\n\u222b x\u0302d\nt=\u2212\u221e\n\u2202fd(t|x\u0302<d)\n\u2202\u03b8 dt (6)\nIf the above integral is intractable it can be estimated with Monte-Carlo sampling, as long as fd(t|x\u0302<d) can be sampled and Fd(x\u0302d|x\u0302<d) is tractable:\n\u222b x\u0302d\nt=\u2212\u221e\n\u2202fd(t|x\u0302<d)\n\u2202\u03b8 dt =\n\u222b x\u0302d\nt=\u2212\u221e\nfd(t|x\u0302<d) \u2202 log fd(t|x\u0302<d)\n\u2202\u03b8 dt (7)\n= Fd(x\u0302d|x\u0302<d)\n\u222b \u221e\nt=\u2212\u221e\nfd(t \u2264 x\u0302d|x\u0302<d) \u2202 log fd(t|x\u0302<d)\n\u2202\u03b8 dt (8)\n\u2248 Fd(x\u0302d|x\u0302<d)\nN\nN \u2211\nn=1\n\u2202 log fd(t n|x\u0302<d)\n\u2202\u03b8 ; tn \u223c fd(t \u2264 x\u0302d|x\u0302<d) (9)\nwhere\nfd(t \u2264 x\u0302d|x\u0302<d) =\n{\nfd(t|x\u0302<d) Fd(x\u0302d|x\u0302<d) if t \u2264 x\u0302d 0 otherwise (10)\nwhich can be sampled by drawing from fd(t|x\u0302<d) and rejecting the result if it is greater than x\u0302d.\nLet h be the expectation over f of an arbitrary differentiable function g of x (e.g. a loss function) and denote by Q(u) the sample from f returned by the quantile transform applied to u. Then\nh =\n\u222b\nu\u2208[0,1]D g(Q(u))du (11)\nand hence\n\u2202h \u2202\u03b8 =\n\u222b\nu\u2208[0,1]D\n\u2202g(Q(u))\n\u2202\u03b8 du (12)\n=\n\u222b\nu\u2208[0,1]D\nD \u2211\nd=1\n\u2202g(Q(u))\n\u2202Qd(u)\n\u2202Qd(u)\n\u2202\u03b8 du (13)\nwhich can be estimated with Monte-Carlo sampling:\n\u2202h \u2202\u03b8 \u2248 1 N\nN \u2211\nn=1\nD \u2211\nd=1\n\u2202g(xn)\n\u2202xnd\n\u2202xnd \u2202\u03b8\n(14)\nwhere xn \u223c f(x). Note that the above estimator does not require Q to be known, as long as f can be sampled."
+        },
+        {
+            "heading": "Application to Mixture Density Weights",
+            "text": "If f is a mixture density distribution with K components then\nf(x) = K \u2211\nk=1\n\u03c0kf k(x) (15)\nand\nfd(xd|x<d) =\nK \u2211\nk=1\nPr(k|x<d)f k d (xd|x<d) (16)\nwhere Pr(k|x<d) is the posterior responsibility of the component k, given the prior mixture density weight \u03c0k and the observation sequence x<d.\nIn what follows we will assume that the mixture components have diagonal covariance, so that fkd (xd|x<d) = f k d (xd). It should be possible to extend the analysis to non-diagonal components, but that is left for future work. Abbreviating Pr(k|x<d) to p k d and applying the diagonal covariance of the components, Eq. 16 becomes\nfd(xd|x<d) = \u2211\nk\npkdf k d (xd) (17)\nwhere pkd is defined by the following recurrence relation:\npk1 = \u03c0k (18) pkd = pkd\u22121f k d\u22121(xd\u22121)\nfd\u22121(xd\u22121|x<d\u22121) (19)\nWe seek the derivatives of h with respect to the mixture weights \u03c0j , after the weights have been normalised (e.g. by a softmax function). Setting xd = t and differentiating Eq. 17 gives\n\u2202fd(t|x<d)\n\u2202\u03c0j =\n\u2211\nk\n[\n\u2202pkd \u2202\u03c0j fkd (t) + \u2202fkd (t) \u2202t \u2202t \u2202\u03c0j pkd\n]\n(20)\nSetting x = x\u0302 where x\u0302 is a sample drawn from f , and observing that \u2202t \u2202\u03c0j = 0 if\nt does not depend on f , we can substitute the above into Eq. 6 to get\n\u2202x\u0302d \u2202\u03c0j = \u2212\n1\nfd(x\u0302d|x\u0302<d)\n\u2211\nk\n\u2202pkd \u2202\u03c0j \u222b x\u0302d\nt=\u2212\u221e\nfkd (t)dt (21)\n= \u2212 1\nfd(x\u0302d|x\u0302<d)\n\u2211\nk\n\u2202 log pkd \u2202\u03c0j pkdF k d (x\u0302d) (22)\nDifferentiating Eq. 19 yields (after some rearrangement)\n\u2202 log pkd \u2202\u03c0j = \u2202 log pkd\u22121 \u2202\u03c0j \u2212 \u2211\nl\npld \u2202 log pld\u22121\n\u2202\u03c0j (23)\n+\n[\n\u2202 log fkd\u22121(x\u0302d\u22121)\n\u2202x\u0302d\u22121 \u2212 \u2211\nl\npld \u2202 log f ld\u22121(x\u0302d\u22121)\n\u2202x\u0302d\u22121\n]\n\u2202x\u0302d\u22121\n\u2202\u03c0j (24)\n\u2202 log pkd \u2202\u03c0j and \u2202x\u0302d \u2202\u03c0j can then be obtained with a joint recursion, starting from the initial conditions\n\u2202 log pk1 \u2202\u03c0j = \u03b4jk \u03c0j (25)\n\u2202x\u03021 \u2202\u03c0j = \u2212\nF j 1 (x\u03021) f1(x\u03021) (26)\nWe are now ready to approximate \u2202h \u2202\u03c0j by substituting into Eq. 14:\n\u2202h\n\u2202\u03c0j \u2248\n1\nN\nN \u2211\nn=1\nD \u2211\nd=1\n\u2202g(xn)\n\u2202xnd \u2202xnd \u2202\u03c0j ; xn \u223c f(x) (27)\nPseudocode for the complete computation is provided in Algorithm 1.\ninitialise \u2202h \u2202\u03c0j \u2190 0 for n = 1 to N do draw x \u223c f(x) pk1 \u2190 \u03c0k \u2202 log pk\n1 \u2202\u03c0j \u2190 \u03b4jk \u03c0j\n\u2202x1 \u2202\u03c0j \u2190 \u2212\nF j 1 (x1) f1(x1)\nf1(x1)\u2190 \u2211 k \u03c0kf k 1 (x1) for d = 2 to D do fd(xd|x<d)\u2190 \u2211 k p k df k d (xd)\npkd \u2190 pkd\u22121f k d\u22121(xd\u22121)\nfd\u22121(xd\u22121|x<d\u22121)\n\u2202 log pkd \u2202\u03c0j \u2190 \u2202 log pkd\u22121 \u2202\u03c0j \u2212 \u2211 l p l d \u2202 log pld\u22121 \u2202\u03c0j +\n\u2202xd\u22121 \u2202\u03c0j\n[\n\u2202 log fkd\u22121(xd\u22121)\n\u2202xd\u22121 \u2212 \u2211 l p l d\n\u2202 log f ld\u22121(xd\u22121)\n\u2202xd\u22121\n]\n\u2202xd \u2202\u03c0j \u2190 \u2212 1 fd(xd|x<d)\n\u2211\nk \u2202 log pkd \u2202\u03c0j pkdF k d (xd)\nend for \u2202h \u2202\u03c0j \u2190 \u2202h \u2202\u03c0j + \u2211 d \u2202g(x) \u2202xd \u2202xd \u2202\u03c0j\nend for \u2202h \u2202\u03c0j \u2190 1 N \u2202h \u2202\u03c0j\nAlgorithm 1: Stochastic Backpropagation through Mixture Density Weights"
+        },
+        {
+            "heading": "Acknowledgements",
+            "text": "Useful discussions and comments were provided by Ivo Danihelka, Danilo Rezende, Remi Munos, Diederik Kingma, Charles Blundell, Mevlana Gemici, Nando de Freitas, and Andriy Mnih."
+        }
+    ],
+    "title": "Stochastic Backpropagation through Mixture Density Distributions",
+    "year": 2016
+}

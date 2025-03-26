@@ -1,0 +1,419 @@
+{
+    "abstractText": "Stability is a fundamental property of dynamical systems, yet to this date it has had little bearing on the practice of recurrent neural networks. In this work, we conduct a thorough investigation of stable recurrent models. Theoretically, we prove stable recurrent neural networks are well approximated by feed-forward networks for the purpose of both inference and training by gradient descent. Empirically, we demonstrate stable recurrent models often perform as well as their unstable counterparts on benchmark sequence tasks. Taken together, these findings shed light on the effective power of recurrent networks and suggest much of sequence learning happens, or can be made to happen, in the stable regime. Moreover, our results help to explain why in many cases practitioners succeed in replacing recurrent models by feed-forward models.",
+    "authors": [
+        {
+            "affiliations": [],
+            "name": "John Miller"
+        },
+        {
+            "affiliations": [],
+            "name": "Moritz Hardt"
+        }
+    ],
+    "id": "SP:14802c6891059826d35a923d639c38274ac11af4",
+    "references": [
+        {
+            "authors": [
+                "M. Allan",
+                "C. Williams"
+            ],
+            "title": "Harmonising chorales by probabilistic inference",
+            "venue": "Advances in Neural Information Processing Systems (NeurIPS), pages 25\u201332,",
+            "year": 2005
+        },
+        {
+            "authors": [
+                "M. Arjovsky",
+                "A. Shah",
+                "Y. Bengio"
+            ],
+            "title": "Unitary evolution recurrent neural networks",
+            "venue": "International Conference on Machine Learning (ICML), pages 1120\u20131128,",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "S. Bai",
+                "J.Z. Kolter",
+                "V. Koltun"
+            ],
+            "title": "An empirical evaluation of generic convolutional and recurrent networks for sequence modeling",
+            "venue": "arXiv preprint arXiv:1803.01271,",
+            "year": 2018
+        },
+        {
+            "authors": [
+                "D.P. Bertsekas"
+            ],
+            "title": "Nonlinear Programming",
+            "venue": "Athena Scientific,",
+            "year": 1999
+        },
+        {
+            "authors": [
+                "Y.N. Dauphin",
+                "A. Fan",
+                "M. Auli",
+                "D. Grangier"
+            ],
+            "title": "Language modeling with gated convolutional networks",
+            "venue": "International Conference on Machine Learning (ICML), pages 933\u2013941,",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "J. Gehring",
+                "M. Auli",
+                "D. Grangier",
+                "D. Yarats",
+                "Y.N. Dauphin"
+            ],
+            "title": "Convolutional sequence to sequence learning",
+            "venue": "International Conference on Machine Learning (ICML), pages 1243\u2013 1252,",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "M. Hardt",
+                "T. Ma",
+                "B. Recht"
+            ],
+            "title": "Gradient descent learns linear dynamical systems",
+            "venue": "The Journal of Machine Learning Research, 19(1):1025\u20131068,",
+            "year": 2018
+        },
+        {
+            "authors": [
+                "M. Hardt",
+                "B. Recht",
+                "Y. Singer"
+            ],
+            "title": "Train faster, generalize better: Stability of stochastic gradient descent",
+            "venue": "International Conference on Machine Learning (ICML), pages 1225\u20131234,",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "S. Hochreiter",
+                "J. Schmidhuber"
+            ],
+            "title": "Long short-term memory",
+            "venue": "Neural computation, 9(8):1735\u2013 1780,",
+            "year": 1997
+        },
+        {
+            "authors": [
+                "L. Jin",
+                "P.N. Nikiforuk",
+                "M.M. Gupta"
+            ],
+            "title": "Absolute stability conditions for discrete-time recurrent neural networks",
+            "venue": "IEEE Transactions on Neural Networks, 5(6):954\u2013964,",
+            "year": 1994
+        },
+        {
+            "authors": [
+                "L. Jing",
+                "Y. Shen",
+                "T. Dubcek",
+                "J. Peurifoy",
+                "S. Skirlo",
+                "Y. LeCun",
+                "M. Tegmark",
+                "M. Solja\u010di\u0107"
+            ],
+            "title": "Tunable efficient unitary neural networks (EUNN) and their application to rnns",
+            "venue": "International Conference on Machine Learning (ICML), pages 1733\u20131741,",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "C. Jose",
+                "M. Cisse",
+                "F. Fleuret"
+            ],
+            "title": "Kronecker recurrent units",
+            "venue": "International Conference on Machine Learning (ICML), pages 2380\u20132389,",
+            "year": 2018
+        },
+        {
+            "authors": [
+                "A. Kusupati",
+                "M. Singh",
+                "K. Bhatia",
+                "A. Kumar",
+                "P. Jain",
+                "M. Varma"
+            ],
+            "title": "Fastgrnn: A fast, accurate, stable and tiny kilobyte sized gated recurrent neural network",
+            "venue": "Advances in Neural Information Processing Systems (NeurIPS), pages 9031\u20139042,",
+            "year": 2018
+        },
+        {
+            "authors": [
+                "T. Laurent",
+                "J. von Brecht"
+            ],
+            "title": "A recurrent neural network without chaos",
+            "venue": "In International Conference on Learning Representations (ICLR),",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "M.P. Marcus",
+                "M.A. Marcinkiewicz",
+                "B. Santorini"
+            ],
+            "title": "Building a large annotated corpus of english: The penn treebank",
+            "venue": "Computational linguistics, 19(2):313\u2013330,",
+            "year": 1993
+        },
+        {
+            "authors": [
+                "S. Merity",
+                "N.S. Keskar",
+                "R. Socher"
+            ],
+            "title": "Regularizing and Optimizing LSTM Language Models",
+            "venue": "International Conference on Learning Representations (ICLR),",
+            "year": 2018
+        },
+        {
+            "authors": [
+                "S. Merity",
+                "C. Xiong",
+                "J. Bradbury",
+                "R. Socher"
+            ],
+            "title": "Pointer sentinel mixture models",
+            "venue": "International Conference on Learning Representations (ICLR),",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "G. Mesnil",
+                "Y. Dauphin",
+                "K. Yao",
+                "Y. Bengio",
+                "L. Deng",
+                "D. Hakkani-Tur",
+                "X. He",
+                "L. Heck",
+                "G. Tur",
+                "D. Yu"
+            ],
+            "title": "Using recurrent neural networks for slot filling in spoken language understanding",
+            "venue": "IEEE/ACM Transactions on Audio, Speech, and Language Processing,",
+            "year": 2015
+        },
+        {
+            "authors": [
+                "Z. Mhammedi",
+                "A. Hellicar",
+                "A. Rahman",
+                "J. Bailey"
+            ],
+            "title": "Efficient orthogonal parametrisation of recurrent neural networks using householder reflections",
+            "venue": "International Conference on Machine Learning (ICML), pages 2401\u20132409,",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "S. Oymak"
+            ],
+            "title": "Stochastic gradient descent learns state equations with nonlinear activations",
+            "venue": "arXiv preprint arXiv:1809.03019,",
+            "year": 2018
+        },
+        {
+            "authors": [
+                "R. Pascanu",
+                "T. Mikolov",
+                "Y. Bengio"
+            ],
+            "title": "On the difficulty of training recurrent neural networks",
+            "venue": "International Conference on Machine Learning (ICML), pages 1310\u20131318,",
+            "year": 2013
+        },
+        {
+            "authors": [
+                "P.J. Price"
+            ],
+            "title": "Evaluation of spoken language systems: The atis domain",
+            "venue": "Speech and Natural Language: Proceedings of a Workshop Held at Hidden Valley, Pennsylvania, June 24-27, 1990,",
+            "year": 1990
+        },
+        {
+            "authors": [
+                "H. Sedghi",
+                "A. Anandkumar"
+            ],
+            "title": "Training input-output recurrent neural networks through spectral methods",
+            "venue": "CoRR, abs/1603.00954,",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "S. Tu",
+                "R. Boczar",
+                "A. Packard",
+                "B. Recht"
+            ],
+            "title": "Non-asymptotic analysis of robust control from coarse-grained identification",
+            "venue": "arXiv preprint arXiv:1707.04791,",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "A. Van Den Oord",
+                "S. Dieleman",
+                "H. Zen",
+                "K. Simonyan",
+                "O. Vinyals",
+                "A. Graves",
+                "N. Kalchbrenner",
+                "A. Senior",
+                "K. Kavukcuoglu"
+            ],
+            "title": "Wavenet: A generative model for raw audio",
+            "venue": "arXiv preprint arXiv:1609.03499,",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "A. Vaswani",
+                "N. Shazeer",
+                "N. Parmar",
+                "J. Uszkoreit",
+                "L. Jones",
+                "A.N. Gomez",
+                "L. Kaiser",
+                "I. Polosukhin"
+            ],
+            "title": "Attention is all you need",
+            "venue": "Advances in Neural Information Processing Systems (NeurIPS), pages 6000\u20136010,",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "E. Vorontsov",
+                "C. Trabelsi",
+                "S. Kadoury",
+                "C. Pal"
+            ],
+            "title": "On orthogonality and learning recurrent networks with long term dependencies",
+            "venue": "International Conference on Machine Learning (ICML), pages 3570\u20133578,",
+            "year": 2017
+        },
+        {
+            "authors": [
+                "S. Wisdom",
+                "T. Powers",
+                "J. Hershey",
+                "J. Le Roux",
+                "L. Atlas"
+            ],
+            "title": "Full-capacity unitary recurrent neural networks",
+            "venue": "Advances in Neural Information Processing Systems (NeurIPS), pages 4880\u20134888,",
+            "year": 2016
+        },
+        {
+            "authors": [
+                "J. Zhang",
+                "Q. Lei",
+                "I. Dhillon"
+            ],
+            "title": "Stabilizing gradients for deep neural networks via efficient SVD parameterization",
+            "venue": "International Conference on Machine Learning (ICML), pages 5806\u20135814,",
+            "year": 2018
+        }
+    ],
+    "sections": [
+        {
+            "heading": "1 Introduction",
+            "text": "Recurrent neural networks are a popular modeling choice for solving sequence learning problems arising in domains such as speech recognition and natural language processing. At the outset, recurrent neural networks are non-linear dynamical systems commonly trained to fit sequence data via some variant of gradient descent.\nStability is of fundamental importance in the study of dynamical system. Surprisingly, however, stability has had little impact on the practice of recurrent neural networks. Recurrent models trained in practice do not satisfy stability in an obvious manner, suggesting that perhaps training happens in a chaotic regime. The difficulty of training recurrent models has compelled practitioners to successfully replace recurrent models with non-recurrent, feed-forward architectures.\nThis state of affairs raises important unresolved questions."
+        },
+        {
+            "heading": "Is sequence modeling in practice inherently unstable? When and why are recurrent models really needed?",
+            "text": "In this work, we shed light on both of these questions through a theoretical and empirical investigation of stability in recurrent models.\nWe first prove stable recurrent models can be approximated by feed-forward networks. In particular, not only are the models equivalent for inference, they are also equivalent for training via gradient descent. While it is easy to contrive non-linear recurrent models that on some input\n\u2217Email: miller john@berkeley.edu \u2020Email: hardt@berkeley.edu\nar X\niv :1\n80 5.\n10 36\n9v 4\n[ cs\n.L G\n] 2\nM ar\n2 01\nsequence cannot be approximated by feed-forward models, our result implies such models are inevitably unstable. This means in particular they must have exploding gradients, which is in general an impediment to learnibility via gradient descent.\nSecond, across a variety of different sequence tasks, we show how recurrent models can often be made stable without loss in performance. We also show models that are nominally unstable often operate in the stable regime on the data distribution. Combined with our first result, these observation helps to explain why an increasingly large body of empirical research succeeds in replacing recurrent models with feed-forward models in important applications, including translation [6,26], speech synthesis [25], and language modeling [5]. While stability does not always hold in practice to begin with, it is often possible to generate a high-performing stable model by imposing stability during training.\nOur results also shed light on the effective representational properties of recurrent networks trained in practice. In particular, stable models cannot have long-term memory. Therefore, when stable and unstable models achieve similar results, either the task does not require long-term memory, or the unstable model does not have it."
+        },
+        {
+            "heading": "1.1 Contributions",
+            "text": "In this work, we make the following contributions.\n1. We present a generic definition of stable recurrent models in terms of non-linear dynamical systems and show how to ensure stability of several commonly used models. Previous work establishes stability for vanilla recurrent neural networks. We give new sufficient conditions for stability of long short-term memory (LSTM) networks. These sufficient conditions come with an efficient projection operator that can be used at training time to enforce stability.\n2. We prove, under the stability assumption, feed-forward networks can approximate recurrent networks for purposes of both inference and training by gradient descent. While simple in the case of inference, the training result relies on non-trivial stability properties of gradient descent.\n3. We conduct extensive experimentation on a variety of sequence benchmarks, show stable models often have comparable performance with their unstable counterparts, and discuss when, if ever, there is an intrinsic performance price to using stable models."
+        },
+        {
+            "heading": "2 Stable Recurrent Models",
+            "text": "In this section, we define stable recurrent models and illustrate the concept for various popular model classes. From a pragmatic perspective, stability roughly corresponds to the criterion that the gradients of the training objective do not explode over time. Common recurrent models can operate in both the stable and unstable regimes, depending on their parameters. To study stable variants of common architectures, we give sufficient conditions to ensure stability and describe how to efficiently enforce these conditions during training."
+        },
+        {
+            "heading": "2.1 Defining Stable Recurrent Models",
+            "text": "A recurrent model is a non-linear dynamical system given by a differentiable state-transition map \u03c6w : R n\u00d7Rd \u2192 Rn, parameterized by w \u2208 Rm. The hidden state ht \u2208 Rn evolves in discrete time\nsteps according to the update rule\nht = \u03c6w(ht\u22121, xt) , (1)\nwhere the vector xt \u2208 Rd is an arbitrary input provided to the system at time t. This general formulation allows us to unify many examples of interest. For instance, for a recurrent neural network, given weight matrices W and U , the state evolves according to\nht = \u03c6W,U (ht\u22121, xt) = tanh (Wht\u22121 + Uxt) .\nRecurrent models are typically trained using some variant of gradient descent. One natural\u2014 even if not strictly necessary\u2014requirement for gradient descent to work is that the gradients of the training objective do not explode over time. Stable recurrent models are precisely the class of models where the gradients cannot explode. They thus constitute a natural class of models where gradient descent can be expected to work. In general, we define a stable recurrent model as follows.\nDefinition 1. A recurrent model \u03c6w is stable if there exists some \u03bb < 1 such that, for any weights w \u2208 Rm, states h, h\u2032 \u2208 Rn, and input x \u2208 Rd,\u2225\u2225\u03c6w(h, x)\u2212 \u03c6w(h\u2032, x)\u2225\u2225 \u2264 \u03bb \u2225\u2225h\u2212 h\u2032\u2225\u2225 . (2)\nEquivalently, a recurrent model is stable if the map \u03c6w is \u03bb-contractive in h. If \u03c6w is \u03bb-stable, then \u2016\u2207h\u03c6w(h, x)\u2016 < \u03bb, and for Lipschitz loss p, \u2016\u2207wp\u2016 is always bounded [21].\nStable models are particularly well-behaved and well-justified from a theoretical perspective. For instance, at present, only stable linear dynamical systems are known to be learnable via gradient descent [7]. In unstable models, the gradients of the objective can explode, and it is a delicate matter to even show that gradient descent converges to a stationary point. The following proposition offers one such example. The proof is provided in the appendix.\nProposition 1. There exists an unstable system \u03c6w where gradient descent does not converge to a stationary point, and \u2016\u2207wp\u2016 \u2192 \u221e as the number of iterations N \u2192\u221e."
+        },
+        {
+            "heading": "2.2 Examples of Stable Recurrent Models",
+            "text": "In this section, we provide sufficient conditions to ensure stability for several common recurrent models. These conditions offer a way to require learning happens in the stable regime\u2013 after each iteration of gradient descent, one imposes the corresponding stability condition via projection.\nLinear dynamical systems and recurrent neural networks. Given a Lipschitz, point-wise non-linearity \u03c1 and matrices W \u2208 Rn\u00d7n and U \u2208 Rn\u00d7d, the state-transition map for a recurrent neural network (RNN) is\nht = \u03c1(Wht\u22121 + Uxt).\nIf \u03c1 is the identity, then the system is a linear dynamical system. [10] show if \u03c1 is L\u03c1-Lipschitz, then the model is stable provided \u2016W\u2016 < 1L\u03c1 . Indeed, for any states h, h\n\u2032, and any x,\u2225\u2225\u03c1(Wh+ Ux)\u2212 \u03c1(Wh\u2032 + Ux)\u2225\u2225 \u2264 L\u03c1 \u2225\u2225Wh+ Ux\u2212Wh\u2032 \u2212 Ux\u2225\u2225 \u2264 L\u03c1 \u2016W\u2016\u2225\u2225h\u2212 h\u2032\u2225\u2225 . In the case of a linear dynamical system, the model is stable provided \u2016W\u2016 < 1. Similarly, for the 1-Lipschitz tanh-nonlinearity, stability obtains provided \u2016W\u2016 < 1. In the appendix, we verify the assumptions required by the theorems given in the next section for this example. Imposing this condition during training corresponds to projecting onto the spectral norm ball.\nLong short-term memory networks. Long Short-Term Memory (LSTM) networks are another commonly used class of sequence models [9]. The state is a pair of vectors s = (c, h) \u2208 R2d, and the model is parameterized by eight matrices, W \u2208 Rd\u00d7d and U \u2208 Rd\u00d7n, for \u2208 {i, f, o, z}. The state-transition map \u03c6LSTM is given by\nft = \u03c3(Wfht\u22121 + Ufxt)\nit = \u03c3(Wiht\u22121 + Uixt)\not = \u03c3(Woht\u22121 + Uoxt)\nzt = tanh(Wzht\u22121 + Uzxt) ct = it \u25e6 zt + ft \u25e6 ct\u22121 ht = ot \u00b7 tanh(ct),\nwhere \u25e6 denotes elementwise multiplication, and \u03c3 is the logistic function. We provide conditions under which the iterated system \u03c6rLSTM = \u03c6LSTM \u25e6 \u00b7 \u00b7 \u00b7 \u25e6 \u03c6LSTM is stable. Let \u2016f\u2016\u221e = supt \u2016ft\u2016\u221e. If the weights Wf , Uf and inputs xt are bounded, then \u2016f\u2016\u221e < 1 since |\u03c3| < 1 for any finite input. This means the next state ct must \u201cforget\u201d a non-trivial portion of ct\u22121. We leverage this phenomenon to give sufficient conditions for \u03c6LSTM to be contractive in the `\u221e norm, which in turn implies the iterated system \u03c6 r LSTM is contractive in the `2 norm for r = O(log(d)). Let \u2016W\u2016\u221e denote the induced `\u221e matrix norm, which corresponds to the maximum absolute row sum maxi \u2211 j |Wij |.\nProposition 2. If \u2016Wi\u2016\u221e , \u2016Wo\u2016\u221e < (1\u2212 \u2016f\u2016\u221e), \u2016Wz\u2016\u221e \u2264 (1/4)(1 \u2212 \u2016f\u2016\u221e), \u2016Wf\u2016\u221e < (1 \u2212 \u2016f\u2016\u221e)2, and r = O(log(d)), then the iterated system \u03c6rLSTM is stable.\nThe proof is given in the appendix. The conditions given in Proposition 2 are fairly restrictive. Somewhat surprisingly we show in the experiments models satisfying these stability conditions still achieve good performance on a number of tasks. We leave it as an open problem to find different parameter regimes where the system is stable, as well as resolve whether the original system \u03c6LSTM is stable. Imposing these conditions during training and corresponds to simple rowwise normalization of the weight matrices and inputs. More details are provided in Section 4 and the appendix."
+        },
+        {
+            "heading": "3 Stable Recurrent Models Have Feed-forward Approximations",
+            "text": "In this section, we prove stable recurrent models can be well-approximated by feed-forward networks for the purposes of both inference and training by gradient descent. From a memory perspective, stable recurrent models are equivalent to feed-forward networks\u2014both models use the same amount of context to make predictions. This equivalence has important consequences for sequence modeling in practice. When a stable recurrent model achieves satisfactory performance on some task, a feedforward network can achieve similar performance. Consequently, if sequence learning in practice is inherently stable, then recurrent models may not be necessary. Conversely, if feed-forward models cannot match the performance of recurrent models, then sequence learning in practice is in the unstable regime."
+        },
+        {
+            "heading": "3.1 Truncated recurrent models",
+            "text": "For our purposes, the salient distinction between a recurrent and feed-forward model is the latter has finite-context. Therefore, we say a model is feed-forward if the prediction made by the model at step t is a function only of the inputs xt\u2212k, . . . , xt for some finite k.\nWhile there are many choices for a feed-forward approximation, we consider the simplest one\u2014 truncation of the system to some finite context k. In other words, the feed-forward approximation moves over the input sequence with a sliding window of length k producing an output every time the sliding window advances by one step. Formally, for context length k chosen in advance, we define the truncated model via the update rule\nhkt = \u03c6w(h k t\u22121, xt), h k t\u2212k = 0 . (3)\nNote that hkt is a function only of the previous k inputs xt\u2212k, . . . , xt. While this definition is perhaps an abuse of the term \u201cfeed-forward\u201d, the truncated model can be implemented as a standard autoregressive, depth-k feed-forward network, albeit with significant weight sharing.\nLet f denote a prediction function that maps a state ht to outputs f(ht) = yt. Let y k t denote the predictions from the truncated model. To simplify the presentation, the prediction function f is not parameterized. This is without loss of generality because it is always possible to fold the parameters into the system \u03c6w itself. In the sequel, we study\n\u2225\u2225yt \u2212 ykt \u2225\u2225 both during and after training."
+        },
+        {
+            "heading": "3.2 Approximation during inference",
+            "text": "Suppose we train a full recurrent model \u03c6w and obtain a prediction yt. For an appropriate choice of context k, the truncated model makes essentially the same prediction ykt as the full recurrent model. To show this result, we first control the difference between the hidden states of both models.\nLemma 1. Assume \u03c6w is \u03bb-contractive in h and Lx-Lipschitz in x. Assume the input sequence \u2016xt\u2016 \u2264 Bx for all t. If the truncation length k \u2265 log1/\u03bb ( LxBx\n(1\u2212\u03bb)\u03b5\n) , then the difference in hidden\nstates \u2225\u2225ht \u2212 hkt \u2225\u2225 \u2264 \u03b5.\nLemma 1 effectively says stable models do not have long-term memory\u2013 distant inputs do not change the states of the system. A proof is given in the appendix. If the prediction function is Lipschitz, Lemma 1 immediately implies the recurrent and truncated model make nearly identical predictions.\nProposition 3. If \u03c6w is a Lx-Lipschitz and \u03bb-contractive map, and f is Lf Lipschitz, and the truncation length k \u2265 log1/\u03bb ( LfLxBx (1\u2212\u03bb)\u03b5 ) , then \u2225\u2225yt \u2212 ykt \u2225\u2225 \u2264 \u03b5."
+        },
+        {
+            "heading": "3.3 Approximation during training via gradient descent",
+            "text": "Equipped with our inference result, we turn towards optimization. We show gradient descent for stable recurrent models finds essentially the same solutions as gradient descent for truncated models. Consequently, both the recurrent and truncated models found by gradient descent make essentially the same predictions.\nOur proof technique is to initialize both the recurrent and truncated models at the same point and track the divergence in weights throughout the course of gradient descent. Roughly, we show\nif k \u2248 O(log(N/\u03b5)), then after N steps of gradient descent, the difference in the weights between the recurrent and truncated models is at most \u03b5. Even if the gradients are similar for both models at the same point, it is a priori possible that slight differences in the gradients accumulate over time and lead to divergent weights where no meaningful comparison is possible. Building on similar techniques as [8], we show that gradient descent itself is stable, and this type of divergence cannot occur.\nOur gradient descent result requires two essential lemmas. The first bounds the difference in gradient between the full and the truncated model. The second establishes the gradient map of both the full and truncated models is Lipschitz. We defer proofs of both lemmas to the appendix.\nLet pT denote the loss function evaluated on recurrent model after T time steps, and define p k T similarly for the truncated model. Assume there some compact, convex domain \u0398 \u2282 Rm so that the map \u03c6w is stable for all choices of parameters w \u2208 \u0398. Lemma 2. Assume p (and therefore pk) is Lipschitz and smooth. Assume \u03c6w is smooth, \u03bbcontractive, and Lipschitz in x and w. Assume the inputs satisfy \u2016xt\u2016 \u2264 Bx, then\u2225\u2225\u2225\u2207wpT \u2212\u2207wpkT\u2225\u2225\u2225 = \u03b3k\u03bbk, where \u03b3 = O ( Bx(1\u2212 \u03bb)\u22122 ) , suppressing dependence on the Lipschitz and smoothness parameters. Lemma 3. For any w,w\u2032 \u2208 \u0398, suppose \u03c6w is smooth, \u03bb-contractive, and Lipschitz in w. If p is Lipschitz and smooth, then \u2225\u2225\u2207wpT (w)\u2212\u2207wpT (w\u2032)\u2225\u2225 \u2264 \u03b2 \u2225\u2225w \u2212 w\u2032\u2225\u2225 , where \u03b2 = O ( (1\u2212 \u03bb)\u22123 ) , suppressing dependence on the Lipschitz and smoothness parameters.\nLet wirecurr be the weights of the recurrent model on step i and define w i trunc similarly for the truncated model. At initialization, w0recurr = w 0 trunc. For k sufficiently large, Lemma 2 guarantees the difference between the gradient of the recurrent and truncated models is negligible. Therefore, after a gradient update,\n\u2225\u2225w1recurr \u2212 w1trunc\u2225\u2225 is small. Lemma 3 then guarantees that this small difference in weights does not lead to large differences in the gradient on the subsequent time step. For an appropriate choice of learning rate, formalizing this argument leads to the following proposition.\nProposition 4. Under the assumptions of Lemmas 2 and 3, for compact, convex \u0398, after N steps of projected gradient descent with step size \u03b1t = \u03b1/t, \u2225\u2225wNrecurr \u2212 wNtrunc\u2225\u2225 \u2264 \u03b1\u03b3k\u03bbkN\u03b1\u03b2+1. The decaying step size in our theorem is consistent with the regime in which gradient descent is known to be stable for non-convex training objectives [8]. While the decay is faster than many learning rates encountered in practice, classical results nonetheless show that with this learning rate gradient descent still converges to a stationary point; see p. 119 in [4] and references there. In the appendix, we give empirical evidence the O(1/t) rate is necessary for our theorem and show examples of stable systems trained with constant or O(1/ \u221a t) rates that do not satisfy our bound.\nCritically, the bound in Proposition 4 goes to 0 as k \u2192\u221e. In particular, if we take \u03b1 = 1 and k \u2265 \u2126(log(\u03b3N\u03b2/\u03b5)), then after N steps of projected gradient descent, \u2225\u2225wNrecurr \u2212 wNtrunc\u2225\u2225 \u2264 \u03b5. For this choice of k, we obtain the main theorem. The proof is left to the appendix.\nTheorem 1. Let p be Lipschitz and smooth. Assume \u03c6w is smooth, \u03bb-contractive, Lipschitz in x and w. Assume the inputs are bounded, and the prediction function f is Lf -Lipschitz. If k \u2265 \u2126(log(\u03b3N\u03b2/\u03b5)), then after N steps of projected gradient descent with step size \u03b1t = 1/t,\u2225\u2225yT \u2212 ykT\u2225\u2225 \u2264 \u03b5."
+        },
+        {
+            "heading": "4 Experiments",
+            "text": "In the experiments, we show stable recurrent models can achieve solid performance on several benchmark sequence tasks. Namely, we show unstable recurrent models can often be made stable without a loss in performance. In some cases, there is a small gap between the performance between unstable and stable models. We analyze whether this gap is indicative of a \u201cprice of stability\u201d and show the unstable models involved are stable in a data-dependent sense."
+        },
+        {
+            "heading": "4.1 Tasks",
+            "text": "We consider four benchmark sequence problems\u2013word-level language modeling, character-level language modeling, polyphonic music modeling, and slot-filling.\nLanguage modeling. In language modeling, given a sequence of words or characters, the model must predict the next word or character. For character-level language modeling, we train and evaluate models on Penn Treebank [15]. To increase the coverage of our experiments, we train and evaluate the word-level language models on the Wikitext-2 dataset, which is twice as large as Penn Treebank and features a larger vocabulary [17]. Performance is reported using bits-per-character for character-level models and perplexity for word-level models.\nPolyphonic music modeling. In polyphonic music modeling, a piece is represented as a sequence of 88-bit binary codes corresponding to the 88 keys on a piano, with a 1 indicating a key that is pressed at a given time. Given a sequence of codes, the task is to predict the next code. We evaluate our models on JSB Chorales, a polyphonic music dataset consisting of 382 harmonized chorales by J.S. Bach [1]. Performance is measured using negative log-likelihood.\nSlot-filling. In slot filling, the model takes as input a query like \u201cI want to Boston on Monday\u201d and outputs a class label for each word in the input, e.g. Boston maps to Departure City and Monday maps to Departure Time. We use the Airline Travel Information Systems (ATIS) benchmark and report the F1 score for each model [22]."
+        },
+        {
+            "heading": "4.2 Comparing Stable and Unstable Models",
+            "text": "For each task, we first train an unconstrained RNN and an unconstrained LSTM. All the hyperparameters are chosen via grid-search to maximize the performance of the unconstrained model. For consistency with our theoretical results in Section 3 and stability conditions in Section 2.2, both models have a single recurrent layer and are trained using plain SGD. In each case, the resulting model is unstable. However, we then retrain the best models using projected gradient descent to enforce stability without retuning the hyperparameters. In the RNN case, we constrain \u2016W\u2016 < 1. After each gradient update, we project the W onto the spectral norm ball by computing the SVD and thresholding the singular values to lie in [0, 1). In the LSTM case, after each gradient update, we normalize each row of the weight matrices to satisfy the sufficient conditions for stability given in Section 2.2. Further details are given in the appendix.\nStable and unstable models achieve similar performance. Table 1 gives a comparison of the performance between stable and unstable RNNs and LSTMs on each of the different tasks. Each of the reported metrics is computed on the held-out test set. We also show a representative comparison of learning curves for word-level language modeling and polyphonic music modeling in Figures 1(a) and 1(b).\nAcross all the tasks we considered, stable and unstable RNNs have roughly the same performance. Stable RNNs and LSTMs achieve results comparable to published baselines on slotfilling [18] and polyphonic music modeling [3]. On word and character level language modeling, both stable and unstable RNNs achieve comparable results to [3].\nOn the language modeling tasks, however, there is a gap between stable and unstable LSTM models. Given the restrictive conditions we place on the LSTM to ensure stability, it is surprising they work as well as they do. Weaker conditions ensuring stability of the LSTM could reduce this\ngap. It is also possible imposing stability comes at a cost in representational capacity required for some tasks."
+        },
+        {
+            "heading": "4.3 What is the \u201cprice of stability\u201d in sequence modeling?",
+            "text": "The gap between stable and unstable LSTMs on language modeling raises the question of whether there is an intrinsic performance cost for using stable models on some tasks. If we measure stability in a data-dependent fashion, then the unstable LSTM language models are stable, indicating this gap is illusory. However, in some cases with short sequences, instability can offer modeling benefits.\nLSTM language models are stable in a \u201cdata-dependent\u201d way. Our notion of stability is conservative and requires stability to hold for every input and pair of hidden states. If we instead consider a weaker, data-dependent notion of stability, the word and character-level LSTM models are stable (in the iterated sense of Proposition 2). In particular, we compute the stability parameter only using input sequences from the data. Furthermore, we only evaluate stability on hidden states reachable via gradient descent. More precisely, to estimate \u03bb, we run gradient ascent to find worst-case hidden states h, h\u2032 to maximize \u2016\u03c6w(h,x)\u2212\u03c6w(h \u2032,x)\u2016\n\u2016h\u2212h\u2032\u2016 . More details are provided in the appendix.\nThe data-dependent definition given above is a useful diagnostic\u2014 when the sufficient stability conditions fail to hold, the data-dependent condition addresses whether the model is still operating in the stable regime. Moreover, when the input representation is fixed during training, our theoretical results go through without modification when using the data-dependent definition.\nUsing the data-dependent measure, in Figure 2(a), we show the iterated character-level LSTM, \u03c6rLSTM, is stable for r \u2248 80 iterations. A similar result holds for the word-level language model for r \u2248 100. These findings are consistent with experiments in [14] which find LSTM trajectories converge after approximately 70 steps only when evaluated on sequences from the data. For language models, the \u201cprice of stability\u201d is therefore much smaller than the gap in Table 1 suggests\u2013 even the \u201cunstable\u201d models are operating in the stable regime on the data distribution.\nUnstable systems can offer performance improvements for short-time horizons. When sequences are short, training unstable models is less difficult because exploding gradients are less of an issue. In these case, unstable models can offer performance gains. To demonstrate this, we train truncated unstable models on the polyphonic music task for various values of the truncation parameter k. In Figure 2(b), we simultaneously plot the performance of the unstable model and the stability parameter \u03bb for the converged model for each k. For short-sequences, the final model is more unstable (\u03bb \u2248 3.5) and achieves a better test-likelihood. For longer sequence lengths, \u03bb decreases closer to the stable regime (\u03bb \u2248 1.5), and this improved test-likelihood performance disappears."
+        },
+        {
+            "heading": "4.4 Unstable Models Operate in the Stable Regime",
+            "text": "In the previous section, we showed nominally unstable models often satisfy a data-dependent notion of stability. In this section, we offer further evidence unstable models are operating in the stable regime. These results further help explain why stable and unstable models perform comparably in experiments.\nVanishing gradients. Stable models necessarily have vanishing gradients, and indeed this ingredient is a key ingredient in the proof of our training-time approximation result. For both word and character-level language models, we find both unstable RNNs and LSTMs also exhibit vanishing gradients. In Figures 3(a) and 3(b), we plot the average gradient of the loss at time t+i with respect to the input at time t, \u2016\u2207xtpt+i\u2016 as t ranges over the training set. For either language modeling task, the LSTM and the RNN suffer from limited sensitivity to distant inputs at initialization and throughout training. The gradients of the LSTM vanish more slowly than those of the RNN, but both models exhibit the same qualitative behavior.\nTruncating Unstable Models. The results in Section 3 show stable models can be truncated without loss of performance. In practice, unstable models can also be truncated without performance loss. In Figures 4(a) and 4(b), we show the performance of both LSTMs and RNNs for various values of the truncation parameter k on word-level language modeling and polyphonic music modeling. Initially, increasing k increases performance because the model can use more context to make predictions. However, in both cases, there is diminishing returns to larger values of the truncation parameter k. LSTMs are unaffected by longer truncation lengths, whereas the performance of RNNs slightly degrades as k becomes very large, possibly due to training instability. In either case, diminishing returns to performance for large values of k means truncation and therefore feed-forward approximation is possible even for these unstable models.\nProposition (4) holds for unstable models. In stable models, Proposition (4) in Section 3 ensures the distance between the weight matrices \u2016wrecurr \u2212 wtrunc\u2016 grows slowly as training progresses, and this rate decreases as k becomes large. In Figures 5(a) and 5(b), we show a similar result holds empirically for unstable word-level language models. All the models are initialized at the same point, and we track the distance between the hidden-to-hidden matrices W as training progresses. Training the full recurrent model is impractical, and we assume k = 65 well captures the full-recurrent model. In Figures 5(a) and 5(b), we plot \u2016Wk \u2212W65\u2016 for k \u2208 {5, 10, 15, 25, 35, 50, 64} throughout training. As suggested by Proposition (4), after an initial rapid increase in distance, \u2016Wk \u2212W65\u2016 grows slowly, as suggested by Proposition 4. Moreover, there is a diminishing return to choosing larger values of the truncation parameter k in terms of the accuracy of the approximation."
+        },
+        {
+            "heading": "5 Are recurrent models truly necessary?",
+            "text": "Our experiments show recurrent models trained in practice operate in the stable regime, and our theoretical results show stable recurrent models are approximable by feed-forward networks, As a consequence, we conjecture recurrent networks trained in practice are always approximable by\nfeed-forward networks. Even with this conjecture, we cannot yet conclude recurrent models as commonly conceived are unnecessary. First, our present proof techniques rely on truncated versions of recurrent models, and truncated recurrent architectures like LSTMs may provide useful inductive bias on some problems. Moreover, implementing the truncated approximation as a feed-forward network increases the number of weights by a factor of k over the original recurrent model. Declaring recurrent models truly superfluous would require both finding more parsimonious feed-forward approximations and proving natural feed-forward models, e.g. fully connected networks or CNNs, can approximate stable recurrent models during training. This remains an important question for future work."
+        },
+        {
+            "heading": "6 Related Work",
+            "text": "Learning dynamical systems with gradient descent has been a recent topic of interest in the machine learning community. [7] show gradient descent can efficiently learn a class of stable, linear dynamical systems, [20] shows gradient descent learns a class of stable, non-linear dynamical systems. Work by [23] gives a moment-based approach for learning some classes of stable non-linear recurrent neural networks. Our work explores the theoretical and empirical consequences of the stability assumption made in these works. In particular, our empirical results show models trained in practice can be made closer to those currently being analyzed theoretically without large performance penalties.\nFor linear dynamical systems, [24] exploit the connection between stability and truncation to learn a truncated approximation to the full stable system. Their approximation result is the same as our inference result for linear dynamical systems, and we extend this result to the non-linear setting. We also analyze the impact of truncation on training with gradient descent. Our training time analysis builds on the stability analysis of gradient descent in [8], but interestingly uses it for an entirely different purpose. Results of this kind are completely new to our knowledge.\nFor RNNs, the link between vanishing and exploding gradients and \u2016W\u2016 was identified in [21]. For 1-layer RNNs, [10] give sufficient conditions for stability in terms of the norm \u2016W\u2016 and the Lipschitz constant of the non-linearity. Our work additionally considers LSTMs and provides new\nsufficient conditions for stability. Moreover, we study the consequences of stability in terms of feed-forward approximation.\nA number of recent works have sought to avoid vanishing and exploding gradients by ensuring the system is an isometry, i.e. \u03bb = 1. In the RNN case, this amounts to constraining \u2016W\u2016 = 1 [2,11,12,19,28]. [27] observes strictly requiring \u2016W\u2016 = 1 reduces performance on several tasks, and instead proposes maintaining \u2016W\u2016 \u2208 [1 \u2212 \u03b5, 1 + \u03b5]. [29] maintains this \u201csoft-isometry\u201d constraint using a parameterization based on the SVD that obviates the need for the projection step used in our stable-RNN experiments. [13] sidestep these issues and stabilizes training using a residual parameterization of the model. At present, these unitary models have not yet seen widespread use, and our work shows much of the sequence learning in practice, even with nominally unstable models, actually occurs in the stable regime.\nFrom an empirical perspective, [14] introduce a non-chaotic recurrent architecture and demonstrate it can perform as well more complex models like LSTMs. [3] conduct a detailed evaluation of recurrent and convolutional, feed-forward models on a variety of sequence modeling tasks. In diverse settings, they find feed-forward models outperform their recurrent counterparts. Their experiments are complimentary to ours; we find recurrent models can often be replaced with stable recurrent models, which we show are equivalent to feed-forward networks."
+        },
+        {
+            "heading": "Acknowledgements",
+            "text": "This material is based upon work supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. DGE 1752814 and a generous grant from the AWS Cloud Credits for Research program."
+        },
+        {
+            "heading": "A Proofs from Section 2",
+            "text": "A.1 Gradient descent on unstable systems need not converge\nProof of Proposition 1. Consider a scalar linear dynamical system\nht = aht\u22121 + bxt (4)\ny\u0302t = ht, (5)\nwhere h0 = 0, a, b \u2208 R are parameters, and xt, yt \u2208 R are elements the input-output sequence {(xt, yt)}Tt=1, where L is the sequence length, and y\u0302t is the prediction at time t. Stability of the above system corresponds to |a| < 1.\nSuppose (xt, yt) = (1, 1) for t = 1, . . . , L. Then the desired system (4) simply computes the identity mapping. Suppose we use the squared-loss `(yt, y\u0302t) = (1/2)(yt \u2212 y\u0302t)2, and suppose further b = 1, so the problem reduces to learning a = 0. We first compute the gradient. Compactly write\nht = t\u22121\u2211 i=0 atb = ( 1\u2212 at 1\u2212 a ) .\nLet \u03b4t = (y\u0302t \u2212 yt). The gradient for step T is then\nd\nda `(yT , y\u0302T ) = \u03b4T\nd\nda = \u03b4T T\u22121\u2211 t=0 aT\u22121\u2212tht\n= \u03b4T T\u22121\u2211 t=0 aT\u22121\u2212t ( 1\u2212 at 1\u2212 a )\n= \u03b4T\n[ 1\n(1\u2212 a) T\u22121\u2211 t=0 at \u2212 Ta T\u22121 (1\u2212 a)\n]\n= \u03b4T [ (1\u2212 aT ) (1\u2212 a)2 \u2212 TaT\u22121 (1\u2212 a) ] .\nPlugging in yt = 1, this becomes\nd\nda `(yT , y\u0302T ) = ( (1\u2212 aT ) (1\u2212 a) \u2212 1 )[ (1\u2212 aT ) (1\u2212 a)2 \u2212 TaT\u22121 (1\u2212 a) ] . (6)\nFor large T , if |a| > 1, then aL grows exponentially with T and the gradient is approximately\nd\nda `(yT , y\u0302T ) \u2248\n( aT\u22121 \u2212 1 ) TaT\u22122 \u2248 Ta2T\u22123\nTherefore, if a0 is initialized outside of [\u22121, 1], the iterates ai from gradient descent with step size \u03b1i = (1/i) diverge, i.e. a\ni \u2192 \u221e, and from equation (6), it is clear that such ai are not stationary points.\nA.2 Proofs from section 2.2\nA.2.1 Recurrent neural networks\nAssume \u2016W\u2016 \u2264 \u03bb < 1 and \u2016U\u2016 \u2264 BU . Notice tanh\u2032(x) = 1\u2212 tanh(x)2, so since tanh(x) \u2208 [\u22121, 1], tanh(x) is 1-Lipschitz and 2-smooth. We previously showed the system is stable since, for any states h, h\u2032, \u2225\u2225tanh(Wh+ Ux)\u2212 tanh(Wh\u2032 + Ux)\u2225\u2225\n\u2264 \u2225\u2225Wh+ Ux\u2212Wh\u2032 \u2212 Ux\u2225\u2225\n\u2264 \u2016W\u2016 \u2225\u2225h\u2212 h\u2032\u2225\u2225 .\nUsing Lemma 1 with k = 0, \u2016ht\u2016 \u2264 BUBx(1\u2212\u03bb) for all t. Therefore, for any W,W \u2032, U,U \u2032,\u2225\u2225tanh(Wht + Ux)\u2212 tanh(W \u2032ht + U \u2032x)\u2225\u2225 \u2264 \u2225\u2225Wht + Ux\u2212W \u2032ht \u2212 U \u2032x\u2225\u2225\n\u2264 sup t \u2016ht\u2016 \u2225\u2225W \u2212W \u2032\u2225\u2225+Bx \u2225\u2225U \u2212 U \u2032\u2225\u2225 . \u2264 BUBx\n(1\u2212 \u03bb) \u2225\u2225W \u2212W \u2032\u2225\u2225+Bx \u2225\u2225U \u2212 U \u2032\u2225\u2225 ,\nso the model is Lipschitz in U,W . We can similarly argue the model is BU Lipschitz in x. For smoothness, the partial derivative with respect to h is\n\u2202\u03c6w(h, x)\n\u2202h = diag(tanh\u2032(Wh+ Ux))W,\nso for any h, h\u2032, bounding the `\u221e norm with the `2 norm,\u2225\u2225\u2225\u2225\u2202\u03c6w(h, x)\u2202h \u2212 \u2202\u03c6w(h\u2032, x)\u2202h \u2225\u2225\u2225\u2225 = \u2225\u2225diag(tanh\u2032(Wh+ Ux))W \u2212 diag(tanh\u2032(Wh\u2032 + Ux))W\u2225\u2225 \u2264 \u2016W\u2016\n\u2225\u2225diag(tanh\u2032(Wh+ Ux)\u2212 tanh\u2032(Wh\u2032 + Ux))\u2225\u2225 \u2264 2 \u2016W\u2016\n\u2225\u2225Wh+ Ux\u2212Wh\u2032 \u2212 Ux\u2225\u2225\u221e \u2264 2\u03bb2\n\u2225\u2225h\u2212 h\u2032\u2225\u2225 . For any W,W \u2032, U, U \u2032 satisfying our assumptions,\u2225\u2225\u2225\u2225\u2202\u03c6w(h, x)\u2202h \u2212 \u2202\u03c6w\u2032(h, x)\u2202h\n\u2225\u2225\u2225\u2225 = \u2225\u2225diag(tanh\u2032(Wh+ Ux))W \u2212 diag(tanh\u2032(W \u2032h+ U \u2032x))W \u2032\u2225\u2225 \u2264 \u2225\u2225diag(tanh\u2032(Wh+ Ux)\u2212 tanh\u2032(W \u2032h+ U \u2032x))\u2225\u2225 \u2016W\u2016 + \u2225\u2225diag(tanh\u2032(W \u2032h+ U \u2032x))\u2225\u2225\u2225\u2225W \u2212W \u2032\u2225\u2225\n\u2264 2\u03bb \u2225\u2225(W \u2212W \u2032)h+ (U \u2212 U \u2032)x\u2225\u2225\u221e + \u2225\u2225W \u2212W \u2032\u2225\u2225\n\u2264 2\u03bb \u2225\u2225(W \u2212W \u2032)\u2225\u2225 \u2016h\u2016+ 2\u03bb \u2225\u2225U \u2212 U \u2032\u2225\u2225 \u2016x\u2016+ \u2225\u2225W \u2212W \u2032\u2225\u2225 \u2264 2\u03bbBUBx + (1\u2212 \u03bb) (1\u2212 \u03bb)\n\u2225\u2225W \u2212W \u2032\u2225\u2225+ 2\u03bbBx \u2225\u2225U \u2212 U \u2032\u2225\u2225 . Similar manipulations establish \u2202\u03c6w(h,x)\u2202w is Lipschitz in h and w.\nA.2.2 LSTMs\nSimilar to the previous sections, we assume s0 = 0. The state-transition map is not Lipschitz in s, much less stable, unless \u2016c\u2016 is bounded. However, assuming the weights are bounded, we first prove this is always the case.\nLemma 4. Let \u2016f\u2016\u221e = supt \u2016ft\u2016\u221e. If \u2016Wf\u2016\u221e < \u221e, \u2016Uf\u2016\u221e < \u221e, and \u2016xt\u2016\u221e \u2264 Bx, then \u2016f\u2016\u221e < 1 and \u2016ct\u2016\u221e \u2264 1(1\u2212\u2016f\u2016\u221e) for all t. Proof of Lemma 4. Note |tanh(x)| , |\u03c3(x)| \u2264 1 for all x. Therefore, for any t, \u2016ht\u2016\u221e = \u2016ot \u25e6 tanh(ct)\u2016\u221e \u2264 1. Since \u03c3(x) < 1 for x <\u221e and \u03c3 is monotonically increasing\n\u2016ft\u2016\u221e \u2264 \u03c3 ( \u2016Wfht\u22121 + Ufxt\u2016\u221e ) \u2264 \u03c3 ( \u2016Wf\u2016\u221e \u2016ht\u22121\u2016\u221e + \u2016Uf\u2016\u221e \u2016xt\u2016\u221e\n) \u2264 \u03c3 (BW +BuBx) < 1.\nUsing the trivial bound, \u2016it\u2016\u221e \u2264 1 and \u2016zt\u2016\u221e \u2264 1, so \u2016ct+1\u2016\u221e = \u2016it \u25e6 zt + ft \u25e6 ct\u2016\u221e \u2264 1 + \u2016ft\u2016\u221e \u2016ct\u2016\u221e .\nUnrolling this recursion, we obtain a geometric series\n\u2016ct+1\u2016\u221e \u2264 t\u2211 i=0 \u2016ft\u2016i\u221e \u2264 1 (1\u2212 \u2016f\u2016\u221e) .\nProof of Proposition 2. We show \u03c6LSTM is \u03bb-contractive in the `\u221e-norm for some \u03bb < 1. For r \u2265 log1/\u03bb( \u221a d), this in turn implies the iterated system \u03c6rLSTM is contractive is the `2-norm.\nConsider the pair of reachable hidden states s = (c, h), s\u2032 = (c\u2032, h\u2032). By Lemma 4, c, c\u2032 are bounded. Analogous to the recurrent network case above, since \u03c3 is (1/4)-Lipschitz and tanh is 1-Lipschitz, \u2225\u2225i\u2212 i\u2032\u2225\u2225 \u2264 1\n4 \u2016Wi\u2016\u221e \u2225\u2225h\u2212 h\u2032\u2225\u2225\u221e\u2225\u2225f \u2212 f \u2032\u2225\u2225 \u2264 1 4 \u2016Wf\u2016\u221e\n\u2225\u2225h\u2212 h\u2032\u2225\u2225\u221e\u2225\u2225o\u2212 o\u2032\u2225\u2225 \u2264 1 4 \u2016Wo\u2016\u221e\n\u2225\u2225h\u2212 h\u2032\u2225\u2225\u221e\u2225\u2225z \u2212 z\u2032\u2225\u2225 \u2264 \u2016Wz\u2016\u221e \u2225\u2225h\u2212 h\u2032\u2225\u2225\u221e . Both \u2016z\u2016\u221e , \u2016i\u2016\u221e \u2264 1 since they\u2019re the output of a sigmoid. Letting c+ and c\u2032+ denote the state on the next time step, applying the triangle inequality,\u2225\u2225c+ \u2212 c\u2032+\u2225\u2225\u221e \u2264 \u2225\u2225i \u25e6 z \u2212 i\u2032 \u25e6 z\u2032\u2225\u2225\u221e + \u2225\u2225f \u25e6 c\u2212 f \u2032 \u25e6 c\u2032\u2225\u2225\u221e\n\u2264 \u2225\u2225(i\u2212 i\u2032) \u25e6 z\u2225\u2225\u221e + \u2225\u2225i\u2032 \u25e6 (z \u2212 z\u2032)\u2225\u2225\u221e + \u2225\u2225f \u25e6 (c\u2212 c\u2032)\u2225\u2225\u221e + \u2225\u2225c \u25e6 (f \u2212 f \u2032)\u2225\u2225\u221e\n\u2264 \u2225\u2225i\u2212 i\u2032\u2225\u2225\u221e \u2016z\u2016\u221e + \u2225\u2225z \u2212 z\u2032\u2225\u2225\u221e \u2225\u2225i\u2032\u2225\u2225\u221e + \u2225\u2225c\u2212 c\u2032\u2225\u2225\u221e \u2016f\u2016\u221e + \u2225\u2225f \u2212 f \u2032\u2225\u2225\u221e \u2016c\u2016\u221e\n\u2264 (\u2016Wi\u2016\u221e + \u2016c\u2016\u221e \u2016Wf\u2016\u221e\n4 + \u2016Wz\u2016\u221e )\u2225\u2225h\u2212 h\u2032\u2225\u2225\u221e + \u2016f\u2016\u221e \u2225\u2225c\u2212 c\u2032\u2225\u2225\u221e .\nA similar argument shows \u2225\u2225h+ \u2212 h\u2032+\u2225\u2225\u221e \u2264 \u2225\u2225o\u2212 o\u2032\u2225\u2225\u221e + \u2225\u2225c+ \u2212 c\u2032+\u2225\u2225\u221e \u2264 \u2016Wo\u2016\u221e4 \u2225\u2225h\u2212 h\u2032\u2225\u2225\u221e + \u2225\u2225c+ \u2212 c\u2032+\u2225\u2225\u221e . By assumption, (\u2016Wi\u2016\u221e + \u2016c\u2016\u221e \u2016Wf\u2016\u221e + \u2016Wo\u2016\u221e\n4 + \u2016Wz\u2016\u221e\n) < 1\u2212 \u2016f\u2016\u221e ,\nand so \u2225\u2225h+ \u2212 h\u2032+\u2225\u2225\u221e < (1\u2212 \u2016f\u2016\u221e) \u2225\u2225h\u2212 h\u2032\u2225\u2225\u221e + \u2016f\u2016\u221e \u2225\u2225c\u2212 c\u2032\u2225\u2225\u221e \u2264 \u2225\u2225s\u2212 s\u2032\u2225\u2225\u221e , as well as \u2225\u2225c+ \u2212 c\u2032+\u2225\u2225\u221e < (1\u2212 \u2016f\u2016\u221e) \u2225\u2225h\u2212 h\u2032\u2225\u2225\u221e + \u2016f\u2016\u221e \u2225\u2225c\u2212 c\u2032\u2225\u2225\u221e \u2264 \u2225\u2225s\u2212 s\u2032\u2225\u2225\u221e , which together imply \u2225\u2225s+ \u2212 s\u2032+\u2225\u2225\u221e < \u2225\u2225s\u2212 s\u2032\u2225\u2225\u221e , establishing \u03c6LSTM is contractive in the `\u221e norm."
+        },
+        {
+            "heading": "B Proofs from section 3",
+            "text": "Throughout this section, we assume the initial state h0 = 0. Without loss of generality, we also assume \u03c6w(0, 0) = 0 for all w. Otherwise, we can reparameterize \u03c6w(h, x) 7\u2192 \u03c6w(h, x) \u2212 \u03c6w(0, 0) without affecting expressivity of \u03c6w. For stable models, we also assume there some compact, convex domain \u0398 \u2282 Rm so that the map \u03c6w is stable for all choices of parameters w \u2208 \u0398.\nProof of Lemma 1. For any t \u2265 1, by triangle inequality,\n\u2016ht\u2016 = \u2016\u03c6w(ht\u22121, xt)\u2212 \u03c6w(0, 0)\u2016 \u2264 \u2016\u03c6w(ht\u22121, xt)\u2212 \u03c6w(0, xt)\u2016+ \u2016\u03c6w(0, xt)\u2212 \u03c6w(0, 0)\u2016 .\nApplying the stability and Lipschitz assumptions and then summing a geometric series,\n\u2016ht\u2016 \u2264 \u03bb \u2016ht\u22121\u2016+ Lx \u2016xt\u2016 \u2264 t\u2211 i=0 \u03bbiLxBx \u2264 LxBx (1\u2212 \u03bb) .\nNow, consider the difference between hidden states at time step t. Unrolling the iterates k steps and then using the previous display yields\u2225\u2225\u2225ht \u2212 hkt \u2225\u2225\u2225 = \u2225\u2225\u2225\u03c6w(ht\u22121, xt)\u2212 \u03c6w(hkt\u22121, xt)\u2225\u2225\u2225 \u2264 \u03bb \u2225\u2225\u2225ht\u22121 \u2212 hkt\u22121\u2225\u2225\u2225 \u2264 \u03bbk \u2016ht\u2212k\u2016 \u2264 \u03bbkLxBx(1\u2212 \u03bb) , and solving for k gives the result.\nB.1 Proofs from section 3.3\nBefore proceeding, we introduce notation for our smoothness assumption. We assume the map \u03c6w satisfies four smoothness conditions: for any reachable states h, h\u2032, and any weights w,w\u2032 \u2208 \u0398, there are some scalars \u03b2ww, \u03b2wh, \u03b2hw, \u03b2hh such that\n1. \u2225\u2225\u2225\u2202\u03c6w(h,x)\u2202w \u2212 \u2202\u03c6w\u2032 (h,x)\u2202w \u2225\u2225\u2225 \u2264 \u03b2ww \u2016w \u2212 w\u2032\u2016.\n2. \u2225\u2225\u2225\u2202\u03c6w(h,x)\u2202w \u2212 \u2202\u03c6w(h\u2032,x)\u2202w \u2225\u2225\u2225 \u2264 \u03b2wh \u2016h\u2212 h\u2032\u2016.\n3. \u2225\u2225\u2225\u2202\u03c6w(h,x)\u2202h \u2212 \u2202\u03c6w\u2032 (h,x)\u2202h \u2225\u2225\u2225 \u2264 \u03b2hw \u2016w \u2212 w\u2032\u2016.\n4. \u2225\u2225\u2225\u2202\u03c6w(h,x)\u2202h \u2212 \u2202\u03c6w(h\u2032,x)\u2202h \u2225\u2225\u2225 \u2264 \u03b2hh \u2016h\u2212 h\u2032\u2016.\nB.1.1 Gradient difference due to truncation is negligible\nIn the section, we argue the difference in gradient with respect to the weights between the recurrent and truncated models is O(k\u03bbk). For sufficiently large k (independent of the sequence length), the impact of truncation is therefore negligible. The proof leverages the \u201cvanishing-gradient\u201d phenomenon\u2013 the long-term components of the gradient of the full recurrent model quickly vanish. The remaining challenge is to show the short-term components of the gradient are similar for the full and recurrent models.\nProof of Lemma 2. The Jacobian of the loss with respect to the weights is\n\u2202pT \u2202w = \u2202pT \u2202hT ( T\u2211 t=0 \u2202hT \u2202ht \u2202ht \u2202w ) ,\nwhere \u2202ht\u2202w is the partial derivative of ht with respect to w, assuming ht\u22121 is constant with respect to w. Expanding the expression for the gradient, we wish to bound\n\u2225\u2225\u2207wpT (w)\u2212\u2207wpkT (w)\u2225\u2225 = \u2225\u2225\u2225\u2225\u2225 T\u2211 t=1 ( \u2202hT \u2202ht \u2202ht \u2202w )> \u2207hT pT \u2212 T\u2211 t=T\u2212k+1 ( \u2202hkT \u2202hkt \u2202hkt \u2202w )> \u2207hkT p k T \u2225\u2225\u2225\u2225\u2225 \u2264 \u2225\u2225\u2225\u2225\u2225 T\u2212k\u2211 t=1 ( \u2202hT \u2202ht \u2202ht \u2202w )> \u2207hT pT\n\u2225\u2225\u2225\u2225\u2225 +\nT\u2211 t=T\u2212k+1 \u2225\u2225\u2225\u2225\u2225 ( \u2202hT \u2202ht \u2202ht \u2202w )> \u2207hT pT \u2212 ( \u2202hkT \u2202hkt \u2202hkt \u2202w )> \u2207hkT pT \u2225\u2225\u2225\u2225\u2225 . The first term consists of the \u201clong-term components\u201d of the gradient for the recurrent model. The second term is the difference in the \u201cshort-term components\u201d of the gradients between the recurrent and truncated models. We bound each of these terms separately.\nFor the first term, by the Lipschitz assumptions, \u2016\u2207hT pT \u2016 \u2264 Lp and \u2016\u2207wht\u2016 \u2264 Lw. Since \u03c6w is \u03bb-contractive, so \u2225\u2225\u2225 \u2202ht\u2202ht\u22121\u2225\u2225\u2225 \u2264 \u03bb. Using submultiplicavity of the spectral norm,\u2225\u2225\u2225\u2225\u2225\u2202pT\u2202hT T\u2212k\u2211 t=0 \u2202pT \u2202ht \u2202ht \u2202w \u2225\u2225\u2225\u2225\u2225 \u2264 \u2016\u2207hT pT \u2016 T\u2212k\u2211 t=0 \u2225\u2225\u2225\u2225\u2225 T\u220f i=t \u2202hi \u2202hi\u22121 \u2225\u2225\u2225\u2225\u2225 \u2016\u2207wht\u2016 \u2264 LpLw T\u2212k\u2211 t=0 \u03bbT\u2212t \u2264 \u03bbk LpLw (1\u2212 \u03bb) .\nFocusing on the second term, by triangle inequality and smoothness,\nT\u2211 t=T\u2212k+1 \u2225\u2225\u2225\u2225\u2225 ( \u2202hT \u2202ht \u2202ht \u2202w )> \u2207hT pT \u2212 ( \u2202hkT \u2202hkt \u2202hkt \u2202w )> \u2207hkT pT \u2225\u2225\u2225\u2225\u2225 \u2264\nT\u2211 t=T\u2212k+1 \u2225\u2225\u2225\u2207hT pT \u2212\u2207hkT pkT\u2225\u2225\u2225 \u2225\u2225\u2225\u2225\u2202hkT\u2202hkt \u2202h k t \u2202w \u2225\u2225\u2225\u2225+ \u2016\u2207hT pT \u2016 \u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2202ht\u2202w \u2212 \u2202h k T \u2202hkt \u2202hkt \u2202w \u2225\u2225\u2225\u2225 \u2264\nT\u2211 t=T\u2212k+1 \u03b2p \u2225\u2225hT \u2212 hkT\u2225\u2225\u03bbT\u2212tLw\ufe38 \ufe37\ufe37 \ufe38\n(a)\n+Lp \u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2202ht\u2202w \u2212 \u2202h k T \u2202hkt \u2202hkt \u2202w \u2225\u2225\u2225\u2225\ufe38 \ufe37\ufe37 \ufe38 (b) .\nUsing Lemma 1 to upper bound (a),\nT\u2211 t=T\u2212k \u03b2p \u2225\u2225\u2225hT \u2212 hkT\u2225\u2225\u2225\u03bbT\u2212tLw \u2264 T\u2211 t=T\u2212k \u03bbT\u2212t \u03bbk\u03b2pLwLxBx (1\u2212 \u03bb) \u2264 \u03bbk\u03b2pLwLxBx (1\u2212 \u03bb)2 .\nUsing the triangle inequality, Lipschitz and smoothness, (b) is bounded by\nT\u2211 t=T\u2212k+1 Lp \u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2202ht\u2202w \u2212 \u2202h k T \u2202hkt \u2202hkt \u2202w \u2225\u2225\u2225\u2225 \u2264\nT\u2211 t=T\u2212k+1 Lp \u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2225\u2225\u2225\u2225\u2225\u2225\u2225\u2225\u2202ht\u2202w \u2212 \u2202hkt\u2202w \u2225\u2225\u2225\u2225+ Lp \u2225\u2225\u2225\u2225\u2202hkt\u2202w \u2225\u2225\u2225\u2225\u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2212 \u2202h k T \u2202hkt \u2225\u2225\u2225\u2225 \u2264\nT\u2211 t=T\u2212k+1 Lp\u03bb T\u2212t\u03b2wh \u2225\u2225\u2225ht \u2212 hkt \u2225\u2225\u2225+ LpLw \u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2212 \u2202h k T \u2202hkt \u2225\u2225\u2225\u2225 \u2264 k\u03bbkLp\u03b2whLxBx (1\u2212 \u03bb) + LpLw T\u2211\nt=T\u2212k+1\n\u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2212 \u2202h k T \u2202hkt \u2225\u2225\u2225\u2225\ufe38 \ufe37\ufe37 \ufe38 (c) ,\nwhere the last line used \u2225\u2225ht \u2212 hkt \u2225\u2225 \u2264 \u03bbt\u2212(T\u2212k) LxBx(1\u2212\u03bb) for t \u2265 T \u2212 k. It remains to bound (c), the difference of the hidden-to-hidden Jacobians. Peeling off one term at a time and applying triangle inequality, for any t \u2265 T \u2212 k + 1,\u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2212 \u2202h k T \u2202hkt \u2225\u2225\u2225\u2225 \u2264 \u2225\u2225\u2225\u2225\u2225 \u2202hT\u2202hT\u22121 \u2212 \u2202h k T \u2202hkT\u22121 \u2225\u2225\u2225\u2225\u2225 \u2225\u2225\u2225\u2225\u2202hT\u22121\u2202ht \u2225\u2225\u2225\u2225+ \u2225\u2225\u2225\u2225\u2225 \u2202hkT\u2202hkT\u22121 \u2225\u2225\u2225\u2225\u2225 \u2225\u2225\u2225\u2225\u2225\u2202hT\u22121\u2202ht \u2212 \u2202h k T\u22121 \u2202hkt\n\u2225\u2225\u2225\u2225\u2225 \u2264 \u03b2hh \u2016hT\u22121 \u2212 hT\u22121\u2016\u03bbT\u2212t\u22121 + \u03bb \u2225\u2225\u2225\u2225\u2225\u2202hT\u22121\u2202ht \u2212 \u2202h k T\u22121 \u2202hkt\n\u2225\u2225\u2225\u2225\u2225 \u2264\nT\u22121\u2211 i=t \u03b2hh\u03bb T\u2212t\u22121 \u2225\u2225hi \u2212 hki \u2225\u2225\n\u2264 \u03bbk \u03b2hhLxBx (1\u2212 \u03bb) T\u22121\u2211 i=t \u03bbi\u2212t \u2264 \u03bbk \u03b2hhLxBx (1\u2212 \u03bb)2 ,\nso (c) is bounded by k\u03bbk LpLw\u03b2hhLxBx\n(1\u2212\u03bb)2 . Ignoring Lipschitz and smoothness constants, we\u2019ve shown the entire sum is O ( k\u03bbk\n(1\u2212\u03bb)2\n) .\nB.1.2 Stable recurrent models are smooth\nIn this section, we prove that the gradient map \u2207wpT is Lipschitz. First, we show on the forward pass, the difference between hidden states ht(w) and h \u2032 t(w \u2032) obtained by running the model with weights w and w\u2032, respectively, is bounded in terms of \u2016w \u2212 w\u2032\u2016. Using smoothness of \u03c6, the difference in gradients can be written in terms of \u2016ht(w)\u2212 h\u2032t(w\u2032)\u2016, which in turn can be bounded in terms of \u2016w \u2212 w\u2032\u2016. We repeatedly leverage this fact to conclude the total difference in gradients must be similarly bounded.\nWe first show small differences in weights don\u2019t significantly change the trajectory of the recurrent model.\nLemma 5. For some w,w\u2032, suppose \u03c6w, \u03c6w\u2032 are \u03bb-contractive and Lw Lipschitz in w. Let ht(w), ht(w \u2032) be the hidden state at time t obtain from running the model with weights w,w\u2032 on common inputs {xt}. If h0(w) = h0(w\u2032), then \u2225\u2225ht(w)\u2212 ht(w\u2032)\u2225\u2225 \u2264 Lw \u2016w \u2212 w\u2032\u2016\n(1\u2212 \u03bb) .\nProof. By triangle inequality, followed by the Lipschitz and contractivity assumptions,\u2225\u2225ht(w)\u2212 ht(w\u2032)\u2225\u2225 = \u2225\u2225\u03c6w(ht\u22121(w), xt)\u2212 \u03c6w\u2032(ht\u22121(w\u2032), xt)\u2225\u2225\n\u2264 \u2016\u03c6w(ht\u22121(w), xt)\u2212 \u03c6w\u2032(ht\u22121(w), xt)\u2016+ \u2225\u2225\u03c6w\u2032(ht\u22121(w), xt)\u2212 \u03c6w\u2032(ht\u22121(w\u2032), xt)\u2225\u2225\n\u2264 Lw \u2225\u2225w \u2212 w\u2032\u2225\u2225+ \u03bb \u2225\u2225ht\u22121(w)\u2212 ht\u22121(w\u2032)\u2225\u2225 .\nIterating this argument and then using h0(w) = h0(w \u2032), we obtain a geometric series in \u03bb.\u2225\u2225ht(w)\u2212 ht(w\u2032)\u2225\u2225 \u2264 Lw \u2225\u2225w \u2212 w\u2032\u2225\u2225+ \u03bb\u2225\u2225ht\u22121(w)\u2212 ht\u22121(w\u2032)\u2225\u2225\n\u2264 t\u2211 i=0 Lw \u2225\u2225w \u2212 w\u2032\u2225\u2225\u03bbi \u2264 Lw \u2016w \u2212 w \u2032\u2016\n(1\u2212 \u03bb) .\nThe proof of Lemma 3 is similar in structure to Lemma 2, and follows from repeatedly using smoothness of \u03c6 and Lemma 5.\nProof of Lemma 3. Let h\u2032t = ht(w \u2032). Expanding the gradients and using \u2016ht(w)\u2212 ht(w\u2032)\u2016 \u2264\nLw\u2016w\u2212w\u2032\u2016 (1\u2212\u03bb) from Lemma 5.\u2225\u2225\u2207wpT (w)\u2212\u2207wpT (w\u2032)\u2225\u2225\n\u2264 T\u2211 t=1 \u2225\u2225\u2225\u2225\u2225 ( \u2202hT \u2202ht \u2202ht \u2202w )> \u2207hT pT \u2212 ( \u2202h\u2032T \u2202h\u2032t \u2202h\u2032t \u2202w )> \u2207h\u2032T pT \u2225\u2225\u2225\u2225\u2225 \u2264\nT\u2211 t=1 \u2225\u2225\u2225\u2207hT pT \u2212\u2207h\u2032T pT\u2225\u2225\u2225 \u2225\u2225\u2225\u2225\u2202h\u2032T\u2202h\u2032t \u2202h \u2032 t \u2202w \u2225\u2225\u2225\u2225+ \u2016\u2207hT pT \u2016 \u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2202ht\u2202w \u2212 \u2202h \u2032 T \u2202h\u2032t \u2202h\u2032t \u2202w \u2225\u2225\u2225\u2225 \u2264\nT\u2211 t=1 \u03b2p \u2225\u2225hT \u2212 h\u2032T\u2225\u2225\u03bbT\u2212tLw + Lp \u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2202ht\u2202w \u2212 \u2202h \u2032 T \u2202h\u2032t \u2202h\u2032t \u2202w \u2225\u2225\u2225\u2225 \u2264 \u03b2pL\n2 w \u2016w \u2212 w\u2032\u2016 (1\u2212 \u03bb)2 + Lp T\u2211 t=1 \u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2202ht\u2202w \u2212 \u2202h \u2032 T \u2202h\u2032t \u2202h\u2032t \u2202w \u2225\u2225\u2225\u2225\ufe38 \ufe37\ufe37 \ufe38 (a) .\nFocusing on term (a),\nLp T\u2211 t=1 \u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2202ht\u2202w \u2212 \u2202h \u2032 T \u2202h\u2032t \u2202h\u2032t \u2202w \u2225\u2225\u2225\u2225 \u2264 Lp\nT\u2211 t=1 \u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2212 \u2202h \u2032 T \u2202h\u2032t \u2225\u2225\u2225\u2225\u2225\u2225\u2225\u2225\u2202ht\u2202w \u2225\u2225\u2225\u2225+ Lp \u2225\u2225\u2225\u2225\u2202h\u2032T\u2202h\u2032t \u2225\u2225\u2225\u2225\u2225\u2225\u2225\u2225\u2202ht\u2202w \u2212 \u2202h\u2032t\u2202w \u2225\u2225\u2225\u2225\n\u2264 LpLw T\u2211 t=1 \u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2212 \u2202h \u2032 T \u2202h\u2032t \u2225\u2225\u2225\u2225+ Lp T\u2211 t=1 \u03bbT\u2212t ( \u03b2wh \u2225\u2225ht \u2212 h\u2032t\u2225\u2225+ \u03b2ww \u2225\u2225w \u2212 w\u2032\u2225\u2225) \u2264 LpLw\nT\u2211 t=1 \u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2212 \u2202h \u2032 T \u2202h\u2032t \u2225\u2225\u2225\u2225\ufe38 \ufe37\ufe37 \ufe38 (b) + Lp\u03b2whLw \u2016w \u2212 w\u2032\u2016 (1\u2212 \u03bb)2 + Lp\u03b2ww \u2016w \u2212 w\u2032\u2016 (1\u2212 \u03bb) ,\nwhere the penultimate line used,\u2225\u2225\u2225\u2225\u2202ht\u2202w \u2212 \u2202h\u2032t\u2202w \u2225\u2225\u2225\u2225 \u2264 \u2225\u2225\u2225\u2225\u2202\u03c6w(ht\u22121, xt)\u2202w \u2212 \u2202\u03c6w(h\u2032t\u22121, xt)\u2202w \u2225\u2225\u2225\u2225+ \u2225\u2225\u2225\u2225\u2202\u03c6w(h\u2032t\u22121, xt)\u2202w \u2212 \u2202\u03c6w\u2032(h\u2032t\u22121, xt)\u2202w \u2225\u2225\u2225\u2225\n\u2264 \u03b2wh \u2225\u2225h\u2212 h\u2032\u2225\u2225+ \u03b2ww \u2225\u2225w \u2212 w\u2032\u2225\u2225 .\nTo bound (b), we peel off terms one by one using the triangle inequality,\nLpLw T\u2211 t=1 \u2225\u2225\u2225\u2225\u2202hT\u2202ht \u2212 \u2202h \u2032 T \u2202h\u2032t \u2225\u2225\u2225\u2225 \u2264 LpLw\nT\u2211 t=1 \u2225\u2225\u2225\u2225 \u2202hT\u2202hT\u22121 \u2212 \u2202h \u2032 T \u2202h\u2032T\u22121 \u2225\u2225\u2225\u2225\u2225\u2225\u2225\u2225\u2202hT\u22121\u2202ht \u2225\u2225\u2225\u2225+ \u2225\u2225\u2225\u2225 \u2202h\u2032T\u2202h\u2032T\u22121 \u2225\u2225\u2225\u2225\u2225\u2225\u2225\u2225\u2202hT\u22121\u2202ht \u2212 \u2202h \u2032 T\u22121 \u2202h\u2032t \u2225\u2225\u2225\u2225 \u2264 LpLw\nT\u2211 t=1 [( \u03b2hh \u2225\u2225hT\u22121 \u2212 h\u2032T\u22121\u2225\u2225+ \u03b2hw \u2225\u2225w \u2212 w\u2032\u2225\u2225)\u03bbT\u2212t\u22121 + \u03bb \u2225\u2225\u2225\u2225\u2202hT\u22121\u2202ht \u2212 \u2202h \u2032 T\u22121 \u2202h\u2032t \u2225\u2225\u2225\u2225]\n\u2264 LpLw T\u2211 t=1\n[ \u03b2hw(T \u2212 t)\u03bbT\u2212t\u22121\n\u2225\u2225w \u2212 w\u2032\u2225\u2225+ \u03b2hh T\u2212t\u2211 i=1 \u2225\u2225hT\u2212i \u2212 h\u2032T\u2212i\u2225\u2225\u03bbT\u2212t\u22121 ]\n\u2264 LpLw T\u2211 t=1 [ \u03b2hw(T \u2212 t)\u03bbT\u2212t\u22121 \u2225\u2225w \u2212 w\u2032\u2225\u2225+ \u03b2hhLw \u2016w \u2212 w\u2032\u2016 (1\u2212 \u03bb) (T \u2212 t)\u03bb T\u2212t\u22121 ] \u2264 LpLw\u03b2hw \u2016w \u2212 w \u2032\u2016\n(1\u2212 \u03bb)2 + LpL 2 w\u03b2hh \u2016w \u2212 w\u2032\u2016 (1\u2212 \u03bb)3 .\nSupressing Lipschitz and smoothness constants, we\u2019ve shown the entire sum is O(1/(1 \u2212 \u03bb)3), as required.\nB.1.3 Gradient descent analysis\nEquipped with the smoothness and truncation lemmas (Lemmas 2 and 3), we turn towards proving the main gradient descent result.\nProof of Proposition 4. Let \u03a0\u0398 denote the Euclidean projection onto \u0398, and let \u03b4i = \u2225\u2225wirecurr \u2212 witrunc\u2225\u2225. Initially \u03b40 = 0, and on step i+ 1, we have the following recurrence relation for \u03b4i+1,\n\u03b4i+1 = \u2225\u2225wi+1recurr \u2212 wi+1trunc\u2225\u2225\n= \u2225\u2225\u2225\u03a0\u0398(wirecurr \u2212 \u03b1i\u2207pT (wi))\u2212\u03a0\u0398(witrunc \u2212 \u03b1i\u2207pkT (witrunc))\u2225\u2225\u2225\n\u2264 \u2225\u2225\u2225wirecurr \u2212 \u03b1i\u2207pT (wi))\u2212 witrunc \u2212 \u03b1i\u2207pkT (witrunc)\u2225\u2225\u2225\n\u2264 \u2225\u2225wirecurr \u2212 witrunc\u2225\u2225+ \u03b1i \u2225\u2225\u2225\u2207pT (wirecurr)\u2212\u2207pkT (witrunc)\u2225\u2225\u2225\n\u2264 \u03b4i + \u03b1i \u2225\u2225\u2207pT (wirecurr)\u2212\u2207pT (witrunc)\u2225\u2225+ \u03b1i \u2225\u2225\u2225\u2207pT (witrunc)\u2212\u2207pkT (witrunc)\u2225\u2225\u2225\n\u2264 \u03b4i + \u03b1i ( \u03b2\u03b4i + \u03b3k\u03bb k )\n\u2264 exp (\u03b1i\u03b2) \u03b4i + \u03b1i\u03b3k\u03bbk,\nthe penultimate line applied lemmas 2 and 3, and the last line used 1+x \u2264 ex for all x. Unwinding\nthe recurrence relation at step N ,\n\u03b4N \u2264 N\u2211 i=1  N\u220f j=i+1 exp(\u03b1j\u03b2) \u03b1i\u03b3k\u03bbk \u2264\nN\u2211 i=1  N\u220f j=i+1 exp ( \u03b1\u03b2 j ) \u03b1\u03b3k\u03bbki =\nN\u2211 i=1 exp \u03b1\u03b2 N\u2211 j=i+1 1 j  \u03b1\u03b3k\u03bbki . Bounding the inner summation via an integral, \u2211N j=i+1 1 j \u2264 log(N/i) and simplifying the resulting expression,\n\u03b4N \u2264 N\u2211 i=1 exp(\u03b1\u03b2 log(N/i)) \u03b1\u03b3k\u03bbk i\n= \u03b1\u03b3k\u03bbkN\u03b1\u03b2 N\u2211 i=1 1 i\u03b1\u03b2+1 \u2264 \u03b1\u03b3k\u03bbkN\u03b1\u03b2+1 .\nB.1.4 Proof of theorem 1\nProof of Theorem 1. Using f is Lf -Lipschitz and the triangle inequality,\u2225\u2225\u2225yT \u2212 ykT\u2225\u2225\u2225 \u2264 Lf \u2225\u2225\u2225hT (wNrecurr)\u2212 hkT (wNtrunc)\u2225\u2225\u2225 \u2264 Lf\n\u2225\u2225hT (wNrecurr)\u2212 hT (wNtrunc)\u2225\u2225+ Lf \u2225\u2225\u2225hT (wNtrunc)\u2212 hkT (wNtrunc)\u2225\u2225\u2225 . By Lemma 5, the first term is bounded by\nLw\u2016wNrecurr\u2212wNtrunc\u2016 (1\u2212\u03bb) , and by Lemma 1, the second term is\nbounded by \u03bbk LxBx(1\u2212\u03bb) . Using Proposition 4, after N steps of gradient descent, we have\u2225\u2225\u2225yT \u2212 ykT\u2225\u2225\u2225 \u2264 LfLw \u2225\u2225wNrecurr \u2212 wNtrunc\u2225\u2225(1\u2212 \u03bb) + \u03bbkLfLxBx(1\u2212 \u03bb) \u2264 k\u03bbk\u03b1LfLwN \u03b1\u03b2+1\n(1\u2212 \u03bb) + \u03bb kLfLxBx (1\u2212 \u03bb) ,\nand solving for k such that both terms are less than \u03b5/2 gives the result."
+        },
+        {
+            "heading": "C Experiments",
+            "text": "The O(1/t) rate may be necessary. The key result underlying Theorem 1 is the bound on the parameter difference \u2016wtrunc \u2212 wrecurr\u2016 while running gradient descent obtained in Proposition 4. We show this bound has the correct qualitative scaling using random instances and training\nrandomly initialized, stable linear dynamical systems and tanh-RNNs. In Figure 6, we plot the parameter error \u2225\u2225wttrunc \u2212 wtrecurr\u2225\u2225 as training progresses for both models (averaged over 10 runs). The error scales comparably with the bound given in Proposition 4. We also find for larger step-sizes like \u03b1/ \u221a t or constant \u03b1, the bound fails to hold, suggesting the O(1/t) condition is necessary.\nConcretely, we generate random problem instance by fixing a sequence length T = 200, sampling input data xt i.i.d.\u223c N (0, 4 \u00b7 I32), and sampling yT \u223c Unif[\u22122, 2]. Next, we set \u03bb = 0.75 and randomly initialize a stable linear dynamical system or RNN with tanh non-linearity by sampling Uij ,Wij i.i.d.\u223c N (0, 0.5) and thresholding the singular values of W so \u2016W\u2016 \u2264 \u03bb. We use the squared loss and prediction function f(ht, xt) = Cht+Dxt, where C,D i.i.d.\u223c N (0, I32). We fix the truncation length to k = 35, set the learning rate to \u03b1t = \u03b1/t for \u03b1 = 0.01, and take N = 200 gradient steps. These parameters are chosen so that the \u03b3k\u03bbkN\u03b1\u03b2+1 bound from Proposition 4 does not become vacuous \u2013 by triangle inequality, we always have \u2016wtrunc \u2212 wrecurr\u2016 \u2264 2\u03bb.\nStable vs. unstable models. The word and character level language modeling experiments are based on publically available code from [16]. The polyphonic music modeling code is based on the code in [3], and the slot-filling model is a reimplementation of [18] 1\nSince the sufficient conditions for stability derived in Section 2.2 only apply for networks with a single layer, we use a single layer RNN or LSTM for all experiments. Further, our theoretical results are only applicable for vanilla SGD, and not adaptive gradient methods, so all models are trained with SGD. Table 2 contains a summary of all the hyperparameters for each experiment.\nAll hyperparameters are shared between the stable and unstable variants of both models. In the RNN case, enforcing stability is conceptually simple, though computationally expensive. Since tanh is 1-Lipschitz, the RNN is stable as long as \u2016W\u2016 < 1. Therefore, after each gradient update, we project W onto the spectral norm ball by taking the SVD and thresholding the singular values to lie in [0, 1). In the LSTM case, enforcing stability is conceptually more difficult, but computationally\n1The word-level language modeling code is based on https://github.com/pytorch/examples/tree/master/word_ language_model, the character-level code is based on https://github.com/salesforce/awd-lstm-lm, and the polyphonic music modeling code is based on https://github.com/locuslab/TCN.\nsimple. To ensure the LSTM is stable, we appeal to Proposition 2. We enforce the following inequalities after each gradient update\n1. The hidden-to-hidden forget gate matrix should satisfy \u2016Wf\u2016\u221e < 0.128, which is enforced by normalizing the `1- norm of each row to have value at most 0.128.\n2. The input vectors xt must satisfy \u2016xt\u2016\u221e \u2264 Bx = 0.75, which is achieved by thresholding all values to lie in [\u22120.75, 0.75].\n3. The bias of the forget gate bf , must satsify \u2016bf\u2016\u221e \u2264 0.25, which is again achieved by thresholding all values to lie in [\u22120.25, 0.25].\n4. The input-hidden forget gate matrix Uf should satisfy \u2016Uf\u2016\u221e \u2264 0.25. This is enforced by normalizing the `1- norm of each row to have value at most 0.25.\n5. Given 1-4, the forget gate can take value at most f\u221e < 0.64. Consequently, we enforce \u2016Wi\u2016\u221e , \u2016Wo\u2016\u221e \u2264 0.36, \u2016Wz\u2016 \u2264 0.091, and \u2016Wf\u2016\u221e < min { 0.128, (1\u2212 0.64)2 } = 0.128.\nAfter 1-5 are enforced, by Proposition 2, the resulting (iterated)-LSTM is stable. Although the above description is somewhat complicated, the implementation boils down to normalizing the rows of the LSTM weight matrices, which can be done very efficiently in a few lines of PyTorch.\nData-dependent stability. Unlike the RNN, in an LSTM, it is not clear how to analytically compute the stability parameter \u03bb. Instead, we rely on a heuristic method to estimate \u03bb. Recall a model is stable if for all x, h, h\u2032, we have\nS(h, h\u2032, x) := \u2016\u03c6w(h, x)\u2212 \u03c6w(h\u2032, x)\u2016\n\u2016h\u2212 h\u2032\u2016 \u2264 \u03bb < 1. (7)\nTo estimate suph,h\u2032,x S(h, h \u2032, x), we do the following. First, we take x to be point in the training set. In the language modeling case, x is one of the learned word-vectors. We randomly sample and fix x, and then we perform gradient ascent on S(h, h\u2032, x) to find worst-case h, h\u2032. In our experiments, we initialize h, h\u2032 \u223c N (0, 0.1 \u00b7 I) and run gradient ascent with learning rate 0.9 for 1000 steps. This procedure is repeated 20 times, and we estimate \u03bb as the maximum value of S(h, h\u2032, x) encounted during any iteration from any of the 20 random starting points."
+        }
+    ],
+    "title": "Stable Recurrent Models",
+    "year": 2019
+}

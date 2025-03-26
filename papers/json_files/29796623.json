@@ -1,0 +1,324 @@
+{
+    "abstractText": "Internet protocols encapsulate a significant amount of state, making implementing the host software complex. In this paper, we define the Statecall Policy Language (SPL) which provides a usable middle ground between ad-hoc coding and formal reasoning. It enables programmers to embed automata in their code which can be statically modelchecked using SPIN and dynamically enforced. The performance overheads are minimal, and the automata also provide higher-level debugging capabilities. We also describe some practical uses of SPL by describing the automata used in an SSH server written entirely in OCaml/SPL. Constructing modern Internet servers is a difficult proposition, since the software must encapsulate a significant amount of state and deal with a variety of incoming packet types, complex configurations and versioning inconsistencies. Network applications are also expected to be liberal in interpreting received data packets and must reliably deal with timing and ordering issues arising from the \u201cbest-effort\u201d nature of Internet data traffic. Due to this complexity, mechanical verification techniques are very useful to guarantee safety, security and reliability properties. One mature formal method used to verify properties about systems is model checking. Software modelchecking involves: (i) creating an abstract model of a complex application; (ii) validating this model against the application; and (iii) checking safety properties against the abstract model. To non-experts, steps (i) and (ii) are often the most daunting. How does one decide which aspects of the application to include in the abstract model? How does one determine whether the abstraction inadvertently \u201chides\u201d critical bugs? If a counter-example is found, how does one determine whether this is a genuine bug or just a modeling artifact? In this paper, we present the Statecall Policy Language (SPL) which simplifies the model specification and validation tasks with a view to making model checking more accessible to regular programmers. SPL is a high-level modelling language which enables developers to specify models in terms of allowable program events (e.g. valid sequences of received network packets). We have implemented a compiler that translates SPL into both Promela and a generalpurpose programming language (e.g. OCaml). The generated Promela can be used with SPIN [1] in order to check static properties of the model. The OCaml code provides an executable model in the form of a safety monitor . A developer can link this safety monitor against their application in order to dynamically ensure that the application\u2019s behaviour does not deviate from the model. If the safety monitor detects that the application has violated the model then it logs this event and terminates the application. Although this technique simplifies model specification and validation it is, of course, not appropriate for all systems. For example, dynamically shutting down a fly-by-wire control system when a model violation is detected is not an option. However, we observe that there is a large class of applications where dynamic termination, while not desirable, is preferable to (say) a security breach. Melange [2] focusses on constructing correct, clean-room implementations of Internet applications using statically type-safe languages, and SPL delivers real benefits in this area. None of the major implementations of protocols such as HTTP (Apache), SMTP (Sendmail/Postfix), or DNS (BIND) are regularly model-checked by their development teams. All of them regularly suffer from serious security flaws ranging from low-level buffer overflows to subtle high-level protocol errors, some of which could have been caught by using model checking. In this paper, we use the Melange SSH [3] server as an example of how an application using SPL can be model-checked without sacrificing performance (\u00a73.1) and enforcing critical security properties (\u00a73.2) that are informally specified in the RFC documents. There is no \u201cperfect\u201d way of specifying complex state machines, and the literature contains many different languages for this purpose (e.g. SDL [4], Estelle [5], Statemate [6], or Esterel [7]). In recognition of this, the SPL language is very specialised to expressing valid sequences of packets for Internet protocols and is translated into a more general intermediate \u201cControl Flow Automaton\u201d representation first proposed by Henzinger et al. [8]. The output code is generated from this graph, allowing for other state machine languages to be used in the future without requiring the backend code generators to be rewritten. 1 Statecall Policy Language SPL is used to specify sequences of events which represent non-deterministic finite state automata. The automaton inputs are referred to as statecalls\u2014these can represent any program events such as the transmission of receipt of network packets or the completion of some computation. The syntax of the language is written using a familiar \u2019C\u2019-like syntax, with built-in support for nondeterministic choice operators in the style of Occam\u2019s ALT [9]. Statecalls are represented by capitalized identifiers, and SPL functions use lower-case identifiers. Semicolons are used to specify sequencing (e.g. S1; S2 specifies that the statecall S1 must occur before the statecall S2).",
+    "authors": [
+        {
+            "affiliations": [],
+            "name": "Anil Madhavapeddy"
+        }
+    ],
+    "id": "SP:41501f39a2fe6bddf6452e5f1865f76fd300f687",
+    "references": [
+        {
+            "authors": [
+                "G.J. Holzmann"
+            ],
+            "title": "The SPIN Model Checker",
+            "venue": "Addison-Wesley",
+            "year": 2003
+        },
+        {
+            "authors": [
+                "A. Madhavapeddy",
+                "A. Ho",
+                "T. Deegan",
+                "D. Scott",
+                "R. Sohan"
+            ],
+            "title": "Melange: creating a \u201dfunctional\u201d internet",
+            "venue": "In Ferreira, P., Gross, T.R., Veiga, L., eds.: EuroSys, ACM",
+            "year": 2007
+        },
+        {
+            "authors": [
+                "T. Ylonen",
+                "C. Lonvick"
+            ],
+            "title": "The Secure Shell (SSH) Protocol Architecture",
+            "venue": "RFC 4251 (Proposed Standard)",
+            "year": 2006
+        },
+        {
+            "authors": [
+                "SDL"
+            ],
+            "title": "SDL forum society",
+            "venue": "Technical Report Recommendation Z.100, International Telecommunications Union, Geneva",
+            "year": 1993
+        },
+        {
+            "authors": [
+                "ISO"
+            ],
+            "title": "Estelle\u2014a formal description technique based on an extended state transition model",
+            "venue": "ISO 9074, International Organisation for Standardization, Geneva",
+            "year": 1997
+        },
+        {
+            "authors": [
+                "D. Harel",
+                "H. Lachover",
+                "A. Naamad",
+                "A. Pnueli",
+                "M. Politi",
+                "R. Sherman",
+                "a. ShtulTrauring"
+            ],
+            "title": "Statemate: a working environment for the development of complex reactive systems",
+            "venue": "Proceedings of the 10th International Conference on Software Engineering (ICSE), Los Alamitos, CA, USA, IEEE Computer Society Press",
+            "year": 1988
+        },
+        {
+            "authors": [
+                "G. Berry"
+            ],
+            "title": "III",
+            "venue": "The Foundations of Esterel: Proof, Language, and Interaction (Essay in Honor of Robin Milner). MIT Press",
+            "year": 2000
+        },
+        {
+            "authors": [
+                "T.A. Henzinger",
+                "R. Jhala",
+                "R. Majumdar",
+                "G.C. Necula",
+                "G. Sutre",
+                "W. Weimer"
+            ],
+            "title": "Temporal-safety proofs for systems code",
+            "venue": "Proceedings of the 14th International Conference on Computer Aided Verification (CAV), London, UK, Springer-Verlag",
+            "year": 2002
+        },
+        {
+            "authors": [
+                "G. Jones"
+            ],
+            "title": "Programming in Occam",
+            "venue": "Prentice-Hall, Hertfordshire, United Kingdom",
+            "year": 1986
+        },
+        {
+            "authors": [
+                "H. Chen",
+                "D. Wagner"
+            ],
+            "title": "MOPS: an infrastructure for examining security properties of software",
+            "venue": "Proceedings of the 9th ACM Conference on Computer and Communications Security (CCS), New York, NY, USA, ACM Press",
+            "year": 2002
+        },
+        {
+            "authors": [
+                "E.R. Gansner",
+                "S.C. North"
+            ],
+            "title": "An open graph visualization system and its applications to software engineering",
+            "venue": "Software\u2014Practice and Experience 30(11)",
+            "year": 2000
+        },
+        {
+            "authors": [
+                "J.W. Backus",
+                "F.L. Bauer",
+                "J. Green",
+                "C. Katz",
+                "J. McCarthy",
+                "A.J. Perlis",
+                "H. Rutishauser",
+                "K. Samelson",
+                "B. Vauquois",
+                "J.H. Wegstein",
+                "A. van Wijngaarden",
+                "M. Woodger"
+            ],
+            "title": "Revised report on the algorithm language ALGOL 60",
+            "venue": "Communications of the ACM 6(1)",
+            "year": 1963
+        },
+        {
+            "authors": [
+                "L. Cardelli"
+            ],
+            "title": "Type systems",
+            "venue": "In Tucker, A.B., ed.: The Computer Science and Engineering Handbook. CRC Press",
+            "year": 1997
+        },
+        {
+            "authors": [
+                "F.B. Schneider"
+            ],
+            "title": "Enforceable security policies",
+            "venue": "ACM Transactions on Information Systems Security 3(1)",
+            "year": 2000
+        },
+        {
+            "authors": [
+                "A.V. Aho",
+                "J.D. Ullman"
+            ],
+            "title": "Principles of Compiler Design",
+            "venue": "Computer Science and Information Processing. Addison-Wesley, Reading, MA, USA",
+            "year": 1977
+        },
+        {
+            "authors": [
+                "D.J. Scott"
+            ],
+            "title": "Abstracting Application-Level Security Policy for Ubiquitous Computing",
+            "venue": "PhD thesis, University of Cambridge",
+            "year": 2005
+        },
+        {
+            "authors": [
+                "T. Ylonen",
+                "C. Lonvick"
+            ],
+            "title": "The Secure Shell (SSH) Authentication Protocol",
+            "venue": "RFC 4252 (Proposed Standard)",
+            "year": 2006
+        },
+        {
+            "authors": [
+                "T. Ylonen",
+                "C. Lonvick"
+            ],
+            "title": "The Secure Shell (SSH) Connection Protocol",
+            "venue": "RFC 4254 (Proposed Standard)",
+            "year": 2006
+        },
+        {
+            "authors": [
+                "J.C. Corbett",
+                "M.B. Dwyer",
+                "J. Hatcliff"
+            ],
+            "title": "A language framework for expressing checkable properties of dynamic software",
+            "venue": "In Havelund, K., Penix, J., Visser, W., eds.: Proceedings of the SPIN Software Model Checking Workshop. Volume 1885 of Lecture Notes in Computer Science., Springer",
+            "year": 2000
+        },
+        {
+            "authors": [
+                "J.C. Corbett",
+                "M.B. Dwyer",
+                "J. Hatcliff",
+                "Robby"
+            ],
+            "title": "Expressing checkable properties of dynamic systems: the Bandera Specification Language",
+            "venue": "International Journal on Software Tools for Technology Transfer 4(1)",
+            "year": 2002
+        },
+        {
+            "authors": [
+                "J.C. Corbett",
+                "M.B. Dwyer",
+                "J. Hatcliff",
+                "S. Laubach",
+                "C.S. P\u0103s\u0103reanu",
+                "Robby",
+                "H. Zheng"
+            ],
+            "title": "Bandera: extracting finite-state models from Java source code",
+            "venue": "Proceedings of the 22nd International Conference on Software Engineering (ICSE), New York, NY, USA, ACM Press",
+            "year": 2000
+        },
+        {
+            "authors": [
+                "G.C. Necula"
+            ],
+            "title": "Proof-carrying code",
+            "venue": "Proceedings of the 24th ACM SIGPLANSIGACT Symposium on Principles of Programming Languages (POPL), Paris, France, ACM Press",
+            "year": 1997
+        },
+        {
+            "authors": [
+                "R. Alur",
+                "B.Y. Wang"
+            ],
+            "title": "Verifying network protocol implementations by symbolic refinement checking",
+            "venue": "Proceedings of the 13th International Conference on Computer Aided Verification (CAV), London, UK, Springer-Verlag",
+            "year": 2001
+        },
+        {
+            "authors": [
+                "R. Sekar",
+                "V. Venkatakrishnan",
+                "S. Basu",
+                "S. Bhatkar",
+                "D.C. DuVarney"
+            ],
+            "title": "Modelcarrying code: a practical approach for safe execution of untrusted applications",
+            "venue": "Proceedings of the Nineteenth ACM symposium on Operating Systems Principles, New York, NY, USA, ACM Press",
+            "year": 2003
+        },
+        {
+            "authors": [
+                "D. Wagner",
+                "P. Soto"
+            ],
+            "title": "Mimicry attacks on host-based intrusion detection systems",
+            "venue": "In Atluri, V., ed.: Proceedings of the 9th ACM Conference on Computer and Communications Security (CCS), ACM",
+            "year": 2002
+        }
+    ],
+    "sections": [
+        {
+            "text": "Constructing modern Internet servers is a difficult proposition, since the software must encapsulate a significant amount of state and deal with a variety of incoming packet types, complex configurations and versioning inconsistencies. Network applications are also expected to be liberal in interpreting received data packets and must reliably deal with timing and ordering issues arising from the \u201cbest-effort\u201d nature of Internet data traffic.\nDue to this complexity, mechanical verification techniques are very useful to guarantee safety, security and reliability properties. One mature formal method used to verify properties about systems is model checking. Software modelchecking involves: (i) creating an abstract model of a complex application; (ii) validating this model against the application; and (iii) checking safety properties against the abstract model. To non-experts, steps (i) and (ii) are often the most daunting. How does one decide which aspects of the application to include in the abstract model? How does one determine whether the abstraction inadvertently \u201chides\u201d critical bugs? If a counter-example is found, how does one determine whether this is a genuine bug or just a modeling artifact?\nIn this paper, we present the Statecall Policy Language (SPL) which simplifies the model specification and validation tasks with a view to making model checking more accessible to regular programmers. SPL is a high-level modelling language which enables developers to specify models in terms of allowable program events (e.g. valid sequences of received network packets). We have implemented a compiler that translates SPL into both Promela and a generalpurpose programming language (e.g. OCaml). The generated Promela can be used with SPIN [1] in order to check static properties of the model. The OCaml code provides an executable model in the form of a safety monitor . A developer\ncan link this safety monitor against their application in order to dynamically ensure that the application\u2019s behaviour does not deviate from the model. If the safety monitor detects that the application has violated the model then it logs this event and terminates the application.\nAlthough this technique simplifies model specification and validation it is, of course, not appropriate for all systems. For example, dynamically shutting down a fly-by-wire control system when a model violation is detected is not an option. However, we observe that there is a large class of applications where dynamic termination, while not desirable, is preferable to (say) a security breach. Melange [2] focusses on constructing correct, clean-room implementations of Internet applications using statically type-safe languages, and SPL delivers real benefits in this area. None of the major implementations of protocols such as HTTP (Apache), SMTP (Sendmail/Postfix), or DNS (BIND) are regularly model-checked by their development teams. All of them regularly suffer from serious security flaws ranging from low-level buffer overflows to subtle high-level protocol errors, some of which could have been caught by using model checking. In this paper, we use the Melange SSH [3] server as an example of how an application using SPL can be model-checked without sacrificing performance (\u00a73.1) and enforcing critical security properties (\u00a73.2) that are informally specified in the RFC documents.\nThere is no \u201cperfect\u201d way of specifying complex state machines, and the literature contains many different languages for this purpose (e.g. SDL [4], Estelle [5], Statemate [6], or Esterel [7]). In recognition of this, the SPL language is very specialised to expressing valid sequences of packets for Internet protocols and is translated into a more general intermediate \u201cControl Flow Automaton\u201d representation first proposed by Henzinger et al. [8]. The output code is generated from this graph, allowing for other state machine languages to be used in the future without requiring the backend code generators to be rewritten."
+        },
+        {
+            "heading": "1 Statecall Policy Language",
+            "text": "SPL is used to specify sequences of events which represent non-deterministic finite state automata. The automaton inputs are referred to as statecalls\u2014these can represent any program events such as the transmission of receipt of network packets or the completion of some computation. The syntax of the language is written using a familiar \u2019C\u2019-like syntax, with built-in support for nondeterministic choice operators in the style of Occam\u2019s ALT [9]. Statecalls are represented by capitalized identifiers, and SPL functions use lower-case identifiers. Semicolons are used to specify sequencing (e.g. S1; S2 specifies that the statecall S1 must occur before the statecall S2)."
+        },
+        {
+            "heading": "1.1 Case Study",
+            "text": "Before specifying SPL more formally, we explain it via a simple case study\u2014 the UNIX ping utility which transmits and receives ICMP Echo requests and measures their latencies. A simple ping automaton with just 3 statecalls could be written as:\nautomaton ping() {\nInitialize;\nmultiple (1..) {\nTransmit_Ping;\nReceive_Ping;\n}\n}\nThis automaton guarantees that the statecalls must initially operate in the following order: Initialize, Transmit Ping, and Receive Ping. Since a realistic implementation of ping transmits and receives packets continuously, we also use the multiple keyword in our SPL specification. Using this automaton, the ping process can perform initialisation once, and then transmit and receive ping packets forever; an attempt to initialise more than once is not permitted. In a realistic network a ping response might never be received, and the non-deterministic either/or operator allows programmers to represent this scenario.\nautomaton ping() {\nInitialize;\nmultiple (1..) {\nTransmit_Ping;\neither {\nReceive_Ping;\n} or {\nTimeout_Ping;\n};\n}\n}\nping provides a number of command-line options that can modify the program behaviour. For example, ping -c 10 requests that only 10 ICMP packets be sent in total, and ping -w specifies that we must never timeout, but wait forever for a ping reply. We represent these constraints by introducing state variables into SPL as follows:\nautomaton ping(int max_count , int count , bool can_timeout) {\nInitialize;\nduring {\ncount = 0;\ndo {\nTransmit_Ping;\neither {\nReceive_Ping;\n} or (can_timeout) {\nTimeout_Ping;\n};\ncount = count + 1;\n} until (count >= max_count );\n} handle {\nSig_INFO;\nPrint_Summary;\n};\n}\nObserve that the either/or constructs can be conditionally guarded in the style of Occam\u2019s ALT, and state variables can be assigned in an imperative style. A long-running ping process would need to receive UNIX signals at any point in its execution, take some action, and return to its original execution. Signal handlers are often a source of bugs due to their extremely asynchronous nature [10]\u2014SPL provides a during/handle construct (used in the example above) which models them by permitting a state transition into alternative statement blocks during normal execution of an SPL specification.\nOnce we are satisfied that our SPL specification is of suitable granularity, the SPL compiler is run over it. The compiler outputs several targets: (i) a graphical visualisation using the Graphviz tool [11] as seen in Figure 1 for the example above; (ii) a non-deterministic model in the Promela language; and (iii) an executable model designed to be linked in with an application. The OCaml interface for the executable model is shown below:\nexception Bad_statecall\ntype t = [ \u2018Initialize | \u2018Print_summary | \u2018Receive_ping\n| \u2018Sig_info | \u2018Timeout_ping | \u2018Transmit_ping ]\ntype s\nval init : max_count:int -> count:int -> can_timeout:bool ->\nunit -> s\nval tick : s -> t -> s\nThis code is linked in with the main ping application, and appropriate calls to initialize the automaton and invoke statecalls are inserted in the code. Crucially, we do not mandate a single style of invoking statecalls; instead the programmer can choose between automatic mechanisms (e.g. MPL [2] packet parsing code can automatically invoke statecalls when transmitting or receiving packets), language-assisted means (e.g. functional combinators, object inheritance, or pre-processors such as cpp), or even careful manual insertion in places where other methods are inconvenient."
+        },
+        {
+            "heading": "1.2 Syntax and Typing Rules",
+            "text": "The SPL syntax is presented in Figure 2 using an extended Backus-Naur Form [12]. We represent terminals as term, tokens as token, alternation with {one | two}, optional elements as [optional], elements which must repeat once or more as (term)+ and elements which may appear never or many times as (term)*.\nSPL is a first order imperative language, extended from Cardelli\u2019s simple imperative language [13]. We distinguish between commands (without a return value) and expressions which do have a return value. Function and automaton names are distinct, and are considered commands. Function types are written\n\u03c11 \u00d7 . . . \u00d7 \u03c1i, or abbreviated to \u03c1. \u0393\u03b1 represents a global environment with type signatures for functions and \u0393 a per-function environment containing state variable bindings. SPL does not have any built-in functions, so all type signatures are obtained from the SPL specifications.\nTable 1 lists the imperative type judgements and Table 2 establishes the basic typing rules. Note that procedure environments contain only the variables passed in as arguments to the function declaration, and no global variables are permitted. Table 3 and Table 4 list the type rules for expressions and statements."
+        },
+        {
+            "heading": "2 Intermediate Representation",
+            "text": "This section defines the Control Flow Automaton graph used as an intermediate representation of SPL specifications (\u00a72.1), the semantics of multiple automata in the same SPL specification (\u00a72.2), and finally optimisations applied to the CFA to reduce the number of states (\u00a72.3). The CFA is a good abstraction for a software-based non-deterministic model and it is often used by model extraction tools (e.g. BLAST [8]) as the representation into which C source code is\nconverted. Since there are a myriad of state-machine languages similar to SPL which share the properties formalised by Schneider\u2019s software automata [14], our adoption of the CFA representation ensures that the back-ends of the SPL toolchain (e.g. the Promela output) remain useful even if the front-end language is changed into something specialised for another task."
+        },
+        {
+            "heading": "2.1 Control Flow Automaton",
+            "text": "The SPL compiler transforms specifications into an extended Control Flow Automaton (CFA) [8] graph. A CFA represents program states and a finite set of state variables in blocks, with the edges containing conditionals, assignments, statecalls or termination operations. The CFA is non-deterministic and multiple states can be active simultaneously. More formally, our extended control flow automaton C is a tuple (Q, q0, X, S,Op,\u2192) where Q is a finite set of control locations, q0 is the initial control location, X a finite set of typed variables, S a finite set of statecalls, Op a set of operations, and \u2192\u2286 (Q\u00d7Op\u00d7Q) a finite set of edges labeled with operations. An edge (q, op, q\u2032) can be denoted q\nop\u2212\u2192 q\u2032. The set Op of operations contains: (i) basic blocks of instructions, which consist of finite sequences of assignments svar = exp where svar is a state variable from X and exp is an equivalently typed expression over X; (ii) conditional predicates if(p), where p is a boolean expression over X that must be true for the edge to be taken; (iii) statecall predicates msg(s), where s is a statecall (s \u2208 S) received by the automaton; and (iv) abort traps, which immediately signal the termination of the automaton. From the perspective of a Mealy machine, the input alphabet \u03a3 consists of statecall predicates and the output alphabet \u2227 is\nthe remaining operations. Thus a CFA graph is driven purely by statecall inputs, and the other types of operations serve to hide the state space explosion of a typical software model.\nThe CFA graph is constructed from SPL statements by recursively applying transformation rules to an initial state I and a final state O. Figure 3 illustrates the transformations for the basic SPL statements diagrammatically with the circles and lines representing CFA nodes and edges. The diamonds indicate a recursive application of the transformation rules with the initial and final states mapped to the input and outputs of the diamond node. Nodes within the dashed ellipses (named \u03b1, \u03b2, \u03b3 and so on) are newly created by the transformation rule. The abort and exit keywords signal the end of the automaton and thus do not connect to their output states. Each transformation rule has an environment (\u0393\u00d7\u2206) where \u0393 is the list of always allowed statecalls as seen in allow blocks and \u2206 represents statecalls which result in a transition to a handle clause (generated by the during/handle statement). A during/handle statement first creates all the handler nodes and transforms the main block with the handlers registered in the \u2206 environment. A statecall node creates a statecall edge and inserts appropriate edges to deal with allow and during handlers.\nSome statements require the creation of new internal variables. The multiple call can optionally specify upper and lower bounds to the number of iterations; extra variables are automatically created to track these bounds in the CFA. during/handle statements create a new internal variable to track the state to which a handler must return. Function calls are either macro-expanded (if only called once) or temporary variables used to push and pop arguments in a single copy of the function graph (if called multiple times). An example of these internal variables can be seen in Figure 1 in our earlier ping sample."
+        },
+        {
+            "heading": "2.2 Multiple Automata",
+            "text": "It is often more convenient and readable to break down a complex protocol into smaller blocks which express the same protocol but with certain aspects factored out into simpler state machines. Accordingly, SPL specifications can define multiple automata, but the external interface hides this abstraction and only exposes a single, flat set of statecalls. The scope of automata names are global and flat; this is a deliberate design decision since the language is designed for light-weight abstractions that are embedded into portions of the main application code. Even a complex protocol such as SSH [3] can be broken down into smaller, more manageable automata\u2014we have listed some of these in Appendix A. In this section, we explain how statecalls are routed to the individual automata contained in an SPL specification.\nEach automaton executes in parallel and sees every statecall. If an automaton receives a statecall it was not expecting it reports an error. If any of the parallel automata report an error then the SPL model has been violated. When a statecall is received, it is dispatched only to automata which can potentially use that statecall at some stage in their execution.\nMore formally, let A represent an automaton or function definition in an SPL specification. Let V(A) represent the union of all the statecalls referenced in A, and F(A) be the list of all functions called from A. The potentially visible statecalls P(A) are the set of statecalls which the automaton A will use at some stage in its execution where P(A) = V(A) \u222a {P(F0) . . .P(Fn)}. A statecall is only dispatched to an automaton A if it is present in its potentially visible set P(A). Since the set of externally exposed statecalls Pall = {P(A0) . . .P(An)} is calculated by the union of all the potentially visible sets of the automata contained in an SPL specification, it trivially follows that every statecall will be dispatched to at least one automaton.\nThis mechanism allows complex protocols such as SSH to be broken down into simpler automata which are still connected together by common messages. The SPL compiler can output the list of statecalls which are shared between automata as a development aid; in practise while specifying Internet protocols we have observed that most automata share only one or two statecalls between them (normally global messages to indicate protocol termination or auth status)."
+        },
+        {
+            "heading": "2.3 Optimisation",
+            "text": "The transformation rules defined earlier (\u00a72.1) result in a CFA which has a number of redundant edges (e.g. if(true) conditionals). The SPL compiler reduces the number of states in the CFA without modifying the graph semantics. We iterate over the graph and perform constant folding [15] to simplify conditional expressions. Since SPL only has expressions with booleans and integers, the folding is a simple recursive pattern match.\nThe CFA is then traversed to eliminate redundant nodes: (i) for a node Qi, all edges from the node are of the form Qi if(true)\u2212\u2212\u2212\u2212\u2212\u2192 Qo or (ii) for a node Qo, all edges pointing to the node are of the form Qi if(true)\u2212\u2212\u2212\u2212\u2212\u2192 Qo. The initial state of the automaton is left unoptimised, so that automata can have a single entry point for simplicity."
+        },
+        {
+            "heading": "3 Compiler Outputs",
+            "text": "The SPL compiler outputs automata in: (i) OCaml to be embedded as a dynamic safety monitor; (ii) Promela to statically verify safety properties using a model checker such as Spin; and (iii) HTML/AJAX to permit debugging of SPL models embedded in an executing application. Although we specifically describe an OCaml interface here, the compiler can also be easily extended to other typesafe languages (e.g. Java or C#), allowing application authors to write programs in their language of choice and still use the SPL tool-chain.\nWhen describing each output, we will also analyze that output\u2019s use in the Melange SSH server. The Melange SSH server is written in pure OCaml, and uses the Meta Packet Language [2] to do the low-level packet parsing, and SPL to enforce the higher-level protocol constraints. The SSH protocol itself is defined in the form of Internet RFC documents [3]."
+        },
+        {
+            "heading": "3.1 OCaml",
+            "text": "The OCaml output from the SPL compiler is designed to: (i) dynamically enforce the SPL model and raise an exception if it is violated; and (ii) provide realtime monitoring, debugging and logging of the SPL models. The SPL compiler generates OCaml code with a simple external interface which provides a: (i) variant type of statecalls for that model; (ii) constructor for a fresh automaton; and (iii) tick function which accepts a statecall and advances the automaton.\nIf a bad statecall is received, the automaton raises an exception. The interface is purely functional, thus allowing an automaton to be \u201crolled back\u201d by keeping a list of previous automaton values.\nThe internal implementation takes several steps to make transitions as fast as possible. Since the only edges in the CFA which can \u201cblock\u201d during execution are the statecall edges, all other edges are statically unrolled during compile-time code generation. When unrolling non-statecall edges during code generation, assignment operations are statically tracked by the SPL compiler in a symbol table. This permits the compiler to apply constant folding when the resultant expressions are used as part of conditional nodes (or when creating new state descriptors). Multiple conditional checks involving the same variable are grouped into a single pattern match (this is useful in SPL specs with during/handle clauses). These are necessary even when using the optimising OCaml compiler since they represent constraints present in the SPL specification which are difficult to spot in the more low-level OCaml code output.\nThe performance impact of several automata running in parallel in an application is minimal. In the Melange SSH server, written purely in OCaml and using SPL specifications to enforce constraints in the transport and connection layers of the protocol, it has around a 2-3% impact on the throughput of the server during bulk copy operations (see Figure 4). Some of the SPL specifications used in the SSH server are listed in Appendix A, with the full versions present in the Melange source code at http://melange.recoil.org/."
+        },
+        {
+            "heading": "3.2 Model Checking",
+            "text": "The SPL compiler also output Promela models from the SPL input, providing an easy way to statically reason about properties which are then dynamically enforced by the OCaml run-time automata. In the case of the SSH protocol, the SPL specification for the transport, authentication and global channel handling is a complex state machine, and an exhaustive safety verification in Spin without any additional LTL constraints (i.e. testing assertions and invalid end-states) requires around 400MB of RAM and one minute to verify on a dual-G5 1.25GHz PowerMac. Spin reports the following statistics:\nState-vector 48 byte, depth reached 78709, errors: 0\n1.41264e+07 states, stored (1.99736e+07 visited)\n2.59918e+07 states, matched\n4.59654e+07 transitions (= visited+matched)\n7.85945e+07 atomic steps\nThe large number of atomic steps show the complexity reduction which results from the SPL compiler inserting atomic statements in the generated Promela to simulate the execution semantics of the OCaml safety monitors. Before this optimisation, messages would unnecessarily be interleaved and verification took orders of magnitude longer.\nWe now list some of the LTL formulae applied to the Promela output of the SSH global automaton and describe the security properties which they enforce. Unlike some other tools which translate state machine languages into Promela (e.g. Scott\u2019s SWIL language for interface descriptions [16]), we never require the manual modification of the Promela code (which would be dangerous since the equivalence between the model and the dynamically enforced SPL automaton would not be guaranteed any more). Instead, globally allocated state variables1 are exposed within the model which can be referenced with LTL formulae, as shown below:\n\u2013 (a \u2192 a) where (a \u2190 transport encrypted) which informally reads \u201conce the transport is encrypted, it will remain encrypted\u201d. This check ensures that the transport layer can never turn off encryption once a secure transport has been established for the lifetime of that connection.\n\u2013 (a\u2192 (a && b)) where (a\u2190 transport serv auth) and (b\u2190 transport encrypted) which informally reads \u201cin the transport automaton, once serv auth is true, both serv auth and encrypted remain\n1 Spin does not support partial order evaluation over local variables, so the SPL compiler safely promotes automaton-local variables to a global scope.\ntrue forever\u201d. This guarantees that authentication can only happen over an encrypted connection. \u2013 a where (a\u2190 auth success + auth failed < 2) informally reads \u201cin the auth automaton, success and failure must never simultaneously be true\u201d. This restriction lets us use two boolean variables instead of a larger integer to store the 3 values for undecided, success or failure authentication states. \u2013 (a\u2192 X(b || \u2666c)) where (a\u2190 p == Transmit Auth Success) and (b\u2190 auth success) and (c\u2190 err) informally reads \u201cwhen an authentication success packet is transmitted, it must immediately be followed by the success variable being true or always eventually lead to an error.\u201d \u2013 (a \u2192 (b || \u2666c)) where (a \u2190 p == Transmit Transport Accept Auth) and (b\u2190 transport encrypted) and (c\u2190 err) which informally reads \u201cif the authentication service is unlocked then the transport layer must be encrypted or an error always eventually occurs\u201d. This matches the security considerations section of the SSH authentication specification in RFC4252 [17] which states that \u201cit assumed (sic) that this runs over a secure transport layer protocol, which has already authenticated the server machine, established an encrypted communications channel [...]\u201d. \u2013 (a\u2192 (b || \u2666c)) where (a\u2190 p == Receive Channel Open Session) and (b \u2190 auth success) and (c \u2190 err) which informally reads \u201crequests to open a new channel are only allowed when authentication has been successful, or an error state is always eventually reached\u201d. This is in line with the security considerations section of the SSH connection specification in RFC4254 [18] which states that \u201cthis protocol is assumed to run on top of a secure, authenticated transport\u201d.\nThese properties all reflect restrictions expressed informally in the SSH specifications [3, 17, 18], and can now be sure to either work correctly in the running SSH server, or terminate the connection to prevent a potential security breach."
+        },
+        {
+            "heading": "3.3 AJAX Debugging",
+            "text": "The SPL compiler can also include debugging stubs in the executable automata, most usefully in the form of HTML/AJAX code which can be accessed via a web browser. This page contains a real-time graphical view of all the automata embedded in the program, along with the set of valid states they can transition to next. Since the granularity of the SPL automata are chosen by the programmer, this is much more useful than the \u201craw\u201d models obtained through static code analysis which often include a lot of superfluous information.\nFigure 5 shows a screen capture of the SPL AJAX debugger single-stepping through the global SPL automaton for the Melange SSH server. The mlssh server is blocked waiting for password authentication, having previously attempted to authenticate via null and public-key authentication. In our experience, the debugger was a valuable tool to debug complex protocol bugs in our implementation, as the single-stepping view via this debugger is significantly higher level than the alternative provided by either the native OCaml debugger or gdb."
+        },
+        {
+            "heading": "4 Related Work",
+            "text": "The Bandera tool-chain [19] is designed to ease the model-checking of Java source code. It includes components for program analysis and slicing, transformation, and visualisation. Bandera accepts Java source as input and requirements written in the Bandera Specification Language (BSL) [20]. A key design goal of BSL is to hide the intricacies of temporal logic by placing emphasis on common specification coding patterns (e.g. pre- and post-conditions to functions). BSL is also strongly tied to the source program code via references to variables and methods names. Much of Bandera\u2019s utility arises from its tools for model construction which eliminate redundant components [21], simplifying the eventual output.\nThe BLAST [8] project introduced the lazy abstraction paradigm for verifying safety properties about systems code. Lazy abstractions follows the following steps: (i) an abstraction is extracted from the source code; (ii) the abstraction is model-checked; and (iii) the model is then refined using counter-example analysis. The process is repeated until the model is sufficiently refined, and the resulting proof certificates are based on Proof Carrying Code [22]. This mechanism helps make the model extraction process more scalable by reducing the amount of time and effort required to create abstractions of systems code. In contrast to the conventional abtract-verify-refine loop, lazy abstraction builds abstract models on demand from the original source code. This results in a nonuniformedly detailed model which contains just enough detail to show a counterexample to the developer. SPL also provides an alternative way to provide nonuniform models by permitting the programmer to choose the level of granularity they want to write the models in.\nAlur and Wang have tackled the problem of model checking real-world protocols by extracting a specification from RFCs and using symbolic refinement checking to verify the model against protocol implementations written in C [23]. They evaluate their technique by creating and verifying models of DHCP and PPP, and conclude that \u201c[manual model extraction] is unavoidable for extracting specification models since RFC documents typically describe the protocols in a tabular, but informal, format\u201d.\nThe Model-Carrying Code (MCC) project led by Sekar combines the modelextraction techniques described earlier with system call interception to provide a platform for the safe execution of untrusted binaries [24]. Untrusted code is bundled with a model of its security-relevant behaviour which can be formally verified against a local security policy by a model checker. The execution of the binary is dynamically verified by syscall interception to fit the model and the application terminated if a violation occurs. As Wagner and Soto point out [25], the low-level nature of syscall interception makes it easy for attackers to launch an observationally equivalent attack by crafting a valid sequence of syscalls, and so this technique is only useful as a last-resort if more formal and reliable verification techniques against the source code cannot be applied. We have drawn inspiration from the work described above, in particular the MCC approach of providing static models and dynamic enforcement, but our work operates at a higher level with explicit support from the application source code."
+        },
+        {
+            "heading": "5 Conclusions",
+            "text": "We have described the Statecall Policy language, which aims to provide a usable mechanism for programmers to integrate lightweight models into complex networked software. We solve the code/model equivalence problem by specifying models in our SPL language, and compiling them to multiple outputs for different purposes\u2014model checking using Spin by outputting Promela code, dynamical enforcement executables in OCaml, and even HTML/AJAX stubs for run-time debugging. It is currently targeted at applications written in OCaml and model checked using Spin, but is simple to port to other languages and tools due to its use of the Control Flow Automaton intermediate graph.\nWe have also described practical uses of SPL in our complex Secure Shell server which uses several complex models to enforce critical security properties that are only informally specified in the official SSH RFCs.\nWe gratefully acknowledge funding from Intel Research and the UK Engineering and Physical Sciences Research Council grant EP/F024037/1."
+        },
+        {
+            "heading": "A SPL Policies for Secure Shell",
+            "text": "In this appendix, we list an excerpt of the SPL policies for the Secure Shell (SSH) protocol. The full policies may be found in the Melange source code. There are two automata listed here which run in parallel (\u00a72.2) and represent the transport and authentication layers respectively. The transport layer establishes an encrypted connection, and the authentication layer handles the negotiation of user credentials.\nautomaton transport (bool encrypted , bool serv_auth) {\nduring {\nalways_allow (Transmit_Transport_Debug ,\nReceive_Transport_Debug , Transmit_Transport_Ignore ,\nReceive_Transport_Ignore) {\nmultiple {\neither {\neither {\nTransmit_Transport_KexInit;\nReceive_Transport_KexInit;\n} or (encrypted) {\nReceive_Transport_KexInit;\nTransmit_Transport_KexInit;\n}\neither {\nExpect_DHInit;\nReceive_Dhgroupsha1_Init;\nTransmit_Dhgroupsha1_Reply;\n} or {\nExpect_GexInit;\nReceive_Dhgexsha1_Request;\nTransmit_Dhgexsha1_Group;\nReceive_Dhgexsha1_Init;\nTransmit_Dhgexsha1_Reply;\n}\nReceive_Transport_NewKeys;\nTransmit_Transport_NewKeys;\nencrypted = true;\n} or (encrypted && !serv_auth) {\nReceive_Transport_ServiceReq_UserAuth;\nTransmit_Transport_ServiceAccept_UserAuth;\nserv_auth = true;\n}\n}\n}\n} handle {\neither { Signal_HUP; }\nor {\neither { Receive_Transport_Disconnect; }\nor {\noptional { Signal_QUIT; }\nTransmit_Transport_Disconnect;\nexit;\n}\n} or { Receive_Transport_Unimplemented; }\n}\n}\nautomaton auth (bool success , bool failed) {\nTransmit_Transport_ServiceAccept_UserAuth;\nduring {\ndo {\nalways_allow (Transmit_Auth_Banner) {\neither {\nReceive_Auth_Req_None;\nTransmit_Auth_Failure;\n} or {\nReceive_Auth_Req_Password_Request;\neither {\nTransmit_Auth_Success;\nsuccess = true;\n} or {\nTransmit_Auth_Failure;\n}\n} or {\nReceive_Auth_Req_PublicKey_Request;\neither {\nTransmit_Auth_Success;\nsuccess = true;\n} or {\nTransmit_Auth_Failure;\n}\n} or {\nReceive_Auth_Req_PublicKey_Check;\neither {\nTransmit_Auth_PublicKey_OK;\n} or {\nTransmit_Auth_Failure;\n}\n} or {\nNotify_Auth_Permanent_Failure;\nfailed = true;\n}\n}\n} until (success || failed );\n} handle {\nTransmit_Transport_Disconnect;\nexit;\n}\n}"
+        }
+    ],
+    "title": "Combining Static Model Checking with Dynamic Enforcement using the Statecall Policy Language",
+    "year": 2009
+}
