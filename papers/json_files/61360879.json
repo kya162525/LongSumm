@@ -341,5 +341,6 @@
             "text": "The authors would like to thank Ian Goodfellow and Joan Brunafor insightful discussions."
         }
     ],
+    "title": "A Connection Between Generative Adversarial Networks, Inverse Reinforcement Learning, and Energy-Based Models",
     "year": 2016
 }

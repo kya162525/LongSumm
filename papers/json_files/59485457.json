@@ -458,5 +458,6 @@
             "text": "In Figures 7-9, we compare the test error of Snapshot Ensembles with the error of individual model snapshots. The blue curve shows the test error of a single model snapshot using a cyclic cosine learning rate. The green curve shows the test error when ensembling model snapshots over time. (Note that, unlike Figure 3, we construct these ensembles beginning with the earliest snapshots.) As a reference, the red dashed line in each panel represents the test error of single model trained for 300 epochs using a standard learning rate schedule. Without Snapshot Ensembles, in about half of the cases, the test error of final model using a cyclic learning rate\u2014the right most point in the blue curve\u2014is no better than using a standard learning rate schedule.\nOne can observe that under almost all settings, complete Snapshot Ensembles\u2014the right most points of the green curves\u2014outperform the single model baselines. In many cases, ensembles of just 2 or 3 model snapshots are able to match the performance of the single model trained with a standard learning rate. Not surprisingly, the ensembles of model snapshots consistently outperform any of its members, yielding a smooth curve of test error over time."
         }
     ],
+    "title": "SNAPSHOT ENSEMBLES: TRAIN 1, GET M FOR FREE",
     "year": 2017
 }
