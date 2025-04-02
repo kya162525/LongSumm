@@ -489,5 +489,6 @@
             "text": "Finally, we compared the asymptotic performance of the agents, both in terms of navigation (final rewards obtained at the end of the episode) and in terms of their representation in the policy LSTM. Rather than visualising the convolutional filters, we quantify the change in representation, with and\nwithout auxiliary task, in terms of position decoding, following the approach explained in Section 5.1. Specifically, we compare the baseline agent (LSTM A3C*) to a navigation agent with one auxiliary task (depth prediction), that gets about twice as many gradient updates for the same number of frames seen in the environment: once for the RL task and once for the auxiliary depth prediction task. As Table 3 shows, the performance of the baseline agent as well as the position decoding accuracy do significantly increase after twice the number of training steps (going from 57 points to 90 points, and from 33.4% to 66.5%, but do not reach the performance and position decoding accuracy of the Nav A3C+D2 agent after half the number of training frames. For this reason, we believe that the auxiliary task do more than simply accelerate training."
         }
     ],
+    "title": "LEARNING TO NAVIGATE IN COMPLEX ENVIRONMENTS",
     "year": 2017
 }

@@ -429,5 +429,6 @@
             "text": "Figure 9 shows additional learning curves. In particular in the left plot we show that the baselines (A3C FF and A3C LSTM) as well as Nav A3C agent without auxiliary losses, perform worse without reward clipping than with reward clipping. It seems that removing reward clipping makes learning unstable in absence of auxiliary tasks. For this particular reason we chose to show the baselines with reward clipping in our main results.\nThe right subplot of Figure 9 compares having depth as an input versus as a target. Note that using RGBD inputs to the Nav A3C agent performs even worse than predicting depth as a regression task, and in general is worse than predicting depth as a classification task."
         }
     ],
+    "title": "LEARNING TO NAVIGATE IN COMPLEX ENVIRONMENTS",
     "year": 2021
 }
