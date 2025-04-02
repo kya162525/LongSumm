@@ -569,5 +569,6 @@
             "text": "Mikolov et al. (2013) showed that word representations learned using word2vec exhibit semantic regularities, such as king \u2212 man + woman \u223c queen. Kiros et al. (2014) showed that similar regularities hold for joint image-language models. We find that order-embeddings exhibit a novel form of regularity, shown in Figure 4. The elementwise max and min operations in the embedding space roughly correspond to composition and abstraction, respectively."
         }
     ],
+    "title": "ORDER-EMBEDDINGS OF IMAGES AND LANGUAGE",
     "year": 2016
 }

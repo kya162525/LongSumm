@@ -235,5 +235,6 @@
             "text": "In this work, we propose a simple baseline method for text classification. Unlike unsupervisedly trained word vectors from word2vec, our word features can\nbe averaged together to form good sentence representations. In several tasks,fastText obtains performance on par with recently proposed methods inspired by deep learning, while being much faster. Although deep neural networks have in theory much higher representational power than shallow models, it is not clear if simple text classification problems such as sentiment analysis are the right ones to evaluate them. We will publish our code so that the research community can easily build on top of our work.\nAcknowledgement. We thank Gabriel Synnaeve, Herve\u0301 Ge\u0301gou, Jason Weston and Le\u0301on Bottou for their help and comments. We also thank Alexis Conneau, Duyu Tang and Zichao Zhang for providing us with information about their methods."
         }
     ],
+    "title": "Bag of Tricks for Efficient Text Classification",
     "year": 2016
 }

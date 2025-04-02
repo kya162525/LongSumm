@@ -376,5 +376,6 @@
             "text": "To give another way of looking at the results on the maze tasks, we show below the average success rate on our three random goal maze environments averaged across runs across the last 100 episodes of training."
         }
     ],
+    "title": "HIERARCHICAL RL USING AN ENSEMBLE OF PROPRIOCEPTIVE PERIODIC POLICIES",
     "year": 2019
 }

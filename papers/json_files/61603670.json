@@ -526,5 +526,6 @@
             "text": "This paper described the Wave Transactional Filesystem (WTF), a new distributed filesystem that enables applications to operate on multiple files transactionally without requiring complex application logic. A new filesystem abstraction calledfile slicing further boosts performance by modifying files more efficiently than traditional primitives permit. The main insight behind file slicing is that it enables applications to read and write using references to data that is stored elsewhere in the filesystem.\nA broad evaluation shows that WTF achieves throughput and latency similar to industry-standard HDFS, while simultaneously offering stronger guarantees and a richer API. A sample application built with file slicing outperforms traditional approaches by a factor of four by reducing the overall I/O cost.\nThe ability to make transactional changes to multiple files at scale is novel in the distributed systems space, and the file slicing APIs enable a new class of applications that are difficult to implement efficiently with current APIs. Together, these features are a potent combination that enables a new class of high performance applications."
         }
     ],
+    "title": "The Design and Implementation of a Wave Transactional Filesystem",
     "year": 2015
 }
