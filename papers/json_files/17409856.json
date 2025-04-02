@@ -338,5 +338,6 @@
             "text": "This work was partially supported by NSF Award IIS-1514268 and by a gift from Bloomberg L.P. We thank Dan Jurafsky, Andrew Ng, and Quoc\nLe for earlier feedback on the work, as well as Sam Bowman, Ziang Xie, and Jiwei Li for their valuable comments on the paper draft. Lastly, we thank NVIDIA Corporation for the donation of Tesla K40 GPUs as well as Andrew Ng and his group for letting us use their computing resources."
         }
     ],
+    "title": "Achieving Open Vocabulary Neural Machine Translation with Hybrid Word-Character Models",
     "year": 2016
 }
