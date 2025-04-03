@@ -1,0 +1,878 @@
+{
+  "abstractText": "A major goal of unsupervised learning is to discover data representations that are useful for subsequent tasks, without access to supervised labels during training. Typically, this involves minimizing a surrogate objective, such as the negative log likelihood of a generative model, with the hope that representations useful for subsequent tasks will arise as a side effect. In this work, we propose instead to directly target later desired tasks by meta-learning an unsupervised learning rule which leads to representations useful for those tasks. Specifically, we target semi-supervised classification performance, and we metalearn an algorithm – an unsupervised weight update rule – that produces representations useful for this task. Additionally, we constrain our unsupervised update rule to a be a biologically-motivated, neuron-local function, which enables it to generalize to different neural network architectures, datasets, and data modalities. We show that the meta-learned update rule produces useful features and sometimes outperforms existing unsupervised learning techniques. We further show that the meta-learned unsupervised update rule generalizes to train networks with different widths, depths, and nonlinearities. It also generalizes to train on data with randomly permuted input dimensions and even generalizes from image datasets to a text task.",
+  "authors": [
+    {
+      "affiliations": [],
+      "name": "Luke Metz"
+    },
+    {
+      "affiliations": [],
+      "name": "Niru Maheswaranathan"
+    },
+    {
+      "affiliations": [],
+      "name": "Brian Cheung"
+    }
+  ],
+  "id": "SP:b9a4348f72aaf19c7a5365a590085c5a863e6e49",
+  "references": [
+    {
+      "authors": [
+        "Sepp Hochreiter",
+        "A Steven Younger",
+        "Peter R Conwell"
+      ],
+      "title": "Learning to learn using gradient descent",
+      "venue": "In International Conference on Artificial Neural Networks,",
+      "year": 2001
+    },
+    {
+      "authors": [
+        "Juergen Schmidhuber"
+      ],
+      "title": "On learning how to learn learning strategies",
+      "year": 1995
+    },
+    {
+      "authors": [
+        "Geoffrey E Hinton",
+        "Ruslan R Salakhutdinov"
+      ],
+      "title": "Reducing the dimensionality of data with neural networks",
+      "year": 2006
+    },
+    {
+      "authors": [
+        "Pascal Vincent",
+        "Hugo Larochelle",
+        "Yoshua Bengio",
+        "Pierre-Antoine Manzagol"
+      ],
+      "title": "Extracting and composing robust features with denoising autoencoders",
+      "venue": "In Proceedings of the 25th international conference on Machine learning,",
+      "year": 2008
+    },
+    {
+      "authors": [
+        "Pascal Vincent",
+        "Hugo Larochelle",
+        "Isabelle Lajoie",
+        "Yoshua Bengio",
+        "Pierre-Antoine Manzagol"
+      ],
+      "title": "Stacked denoising autoencoders: Learning useful representations in a deep network with a local denoising criterion",
+      "venue": "Journal of Machine Learning Research,",
+      "year": 2010
+    },
+    {
+      "authors": [
+        "Diederik P Kingma",
+        "Max Welling"
+      ],
+      "title": "Auto-encoding variational bayes",
+      "venue": "arXiv preprint arXiv:1312.6114,",
+      "year": 2013
+    },
+    {
+      "authors": [
+        "Quoc V Le",
+        "Marc’Aurelio Ranzato",
+        "Rajat Monga",
+        "Matthieu Devin",
+        "Kai Chen",
+        "Greg S Corrado",
+        "Jeff Dean",
+        "Andrew Y Ng"
+      ],
+      "title": "Building high-level features using large scale unsupervised learning",
+      "venue": "arXiv preprint arXiv:1112.6209,",
+      "year": 2011
+    },
+    {
+      "authors": [
+        "Ian Goodfellow",
+        "Jean Pouget-Abadie",
+        "Mehdi Mirza",
+        "Bing Xu",
+        "David Warde-Farley",
+        "Sherjil Ozair",
+        "Aaron Courville",
+        "Yoshua Bengio"
+      ],
+      "title": "Generative adversarial nets",
+      "venue": "In Advances in neural information processing systems,",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "Alec Radford",
+        "Luke Metz",
+        "Soumith Chintala"
+      ],
+      "title": "Unsupervised representation learning with deep convolutional generative adversarial networks",
+      "venue": "arXiv preprint arXiv:1511.06434,",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "Jeff Donahue",
+        "Philipp Krähenbühl",
+        "Trevor Darrell"
+      ],
+      "title": "Adversarial feature learning",
+      "venue": "arXiv preprint arXiv:1605.09782,",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Vincent Dumoulin",
+        "Ishmael Belghazi",
+        "Ben Poole",
+        "Alex Lamb",
+        "Martin Arjovsky",
+        "Olivier Mastropietro",
+        "Aaron Courville"
+      ],
+      "title": "Adversarially learned inference",
+      "venue": "arXiv preprint arXiv:1606.00704,",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Mehdi Noroozi",
+        "Paolo Favaro"
+      ],
+      "title": "Unsupervised learning of visual representations by solving jigsaw puzzles",
+      "venue": "In European Conference on Computer Vision,",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Ishan Misra",
+        "C Lawrence Zitnick",
+        "Martial Hebert"
+      ],
+      "title": "Shuffle and learn: unsupervised learning using temporal order verification",
+      "venue": "In European Conference on Computer Vision,",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Pierre Sermanet",
+        "Corey Lynch",
+        "Jasmine Hsu",
+        "Sergey Levine"
+      ],
+      "title": "Time-contrastive networks: Self-supervised learning from multi-view observation",
+      "venue": "arXiv preprint arXiv:1704.06888,",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Adam Coates",
+        "Andrew Y Ng"
+      ],
+      "title": "Learning feature representations with k-means",
+      "venue": "In Neural networks: Tricks of the trade,",
+      "year": 2012
+    },
+    {
+      "authors": [
+        "Junyuan Xie",
+        "Ross Girshick",
+        "Ali Farhadi"
+      ],
+      "title": "Unsupervised deep embedding for clustering analysis",
+      "venue": "In International conference on machine learning,",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Piotr Bojanowski",
+        "Armand Joulin"
+      ],
+      "title": "Unsupervised learning by predicting noise",
+      "venue": "arXiv preprint arXiv:1704.05310,",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Jürgen Schmidhuber"
+      ],
+      "title": "Learning factorial codes by predictability minimization",
+      "venue": "Neural Computation,",
+      "year": 1992
+    },
+    {
+      "authors": [
+        "Sepp Hochreiter",
+        "Jürgen Schmidhuber"
+      ],
+      "title": "Feature extraction through lococode",
+      "venue": "Neural Computation,",
+      "year": 1999
+    },
+    {
+      "authors": [
+        "Bruno A Olshausen",
+        "David J Field"
+      ],
+      "title": "Sparse coding with an overcomplete basis set: A strategy employed by v1",
+      "venue": "Vision research,",
+      "year": 1997
+    },
+    {
+      "authors": [
+        "Jürgen Schmidhuber"
+      ],
+      "title": "Evolutionary principles in self-referential learning, or on learning how to learn: the meta-meta-.",
+      "venue": "hook. PhD thesis, Technische Universität München,",
+      "year": 1987
+    },
+    {
+      "authors": [
+        "Yoshua Bengio",
+        "Samy Bengio",
+        "Jocelyn Cloutier"
+      ],
+      "title": "Learning a synaptic learning",
+      "venue": "rule. Université de Montréal, Département d’informatique et de recherche opérationnelle,",
+      "year": 1990
+    },
+    {
+      "authors": [
+        "Samy Bengio",
+        "Yoshua Bengio",
+        "Jocelyn Cloutier",
+        "Jan Gecsei"
+      ],
+      "title": "On the optimization of a synaptic learning rule",
+      "venue": "In Preprints Conf. Optimality in Artificial and Biological Neural Networks,",
+      "year": 1992
+    },
+    {
+      "authors": [
+        "Thomas Philip Runarsson",
+        "Magnus Thor Jonsson"
+      ],
+      "title": "Evolution and design of distributed learning rules",
+      "venue": "In Combinations of Evolutionary Computation and Neural Networks,",
+      "year": 2000
+    },
+    {
+      "authors": [
+        "Oriol Vinyals",
+        "Charles Blundell",
+        "Tim Lillicrap",
+        "koray kavukcuoglu",
+        "Daan Wierstra"
+      ],
+      "title": "Matching networks for one shot learning",
+      "venue": "Advances in Neural Information Processing Systems",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Sachin Ravi",
+        "Hugo Larochelle"
+      ],
+      "title": "Optimization as a model for few-shot learning",
+      "venue": "International Conference on Learning Representations,",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Nikhil Mishra",
+        "Mostafa Rohaninejad",
+        "Xi Chen",
+        "Pieter Abbeel"
+      ],
+      "title": "Meta-learning with temporal convolutions",
+      "venue": "arXiv preprint arXiv:1707.03141,",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Chelsea Finn",
+        "Pieter Abbeel",
+        "Sergey Levine"
+      ],
+      "title": "Model-agnostic meta-learning for fast adaptation of deep networks",
+      "venue": "Proceedings of the 34th International Conference on Machine Learning,",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Jake Snell",
+        "Kevin Swersky",
+        "Richard Zemel"
+      ],
+      "title": "Prototypical networks for few-shot learning",
+      "venue": "In Advances in Neural Information Processing Systems,",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Mengye Ren",
+        "Eleni Triantafillou",
+        "Sachin Ravi",
+        "Jake Snell",
+        "Kevin Swersky",
+        "Joshua B Tenenbaum",
+        "Hugo Larochelle",
+        "Richard S Zemel"
+      ],
+      "title": "Meta-learning for semi-supervised few-shot classification",
+      "venue": "arXiv preprint arXiv:1803.00676,",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "Kyle Hsu",
+        "Sergey Levine",
+        "Chelsea Finn"
+      ],
+      "title": "Unsupervised learning via meta-learning",
+      "venue": "arXiv preprint arXiv:1810.02334,",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "Vikas Garg"
+      ],
+      "title": "Supervising unsupervised learning",
+      "venue": "In Advances in Neural Information Processing Systems,",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "Donald R Jones"
+      ],
+      "title": "A taxonomy of global optimization methods based on response surfaces",
+      "venue": "Journal of global optimization,",
+      "year": 2001
+    },
+    {
+      "authors": [
+        "Jasper Snoek",
+        "Hugo Larochelle",
+        "Ryan P Adams"
+      ],
+      "title": "Practical bayesian optimization of machine learning algorithms",
+      "venue": "In Advances in neural information processing systems,",
+      "year": 2012
+    },
+    {
+      "authors": [
+        "James S Bergstra",
+        "Rémi Bardenet",
+        "Yoshua Bengio",
+        "Balázs Kégl"
+      ],
+      "title": "Algorithms for hyper-parameter optimization",
+      "venue": "In Advances in neural information processing systems,",
+      "year": 2011
+    },
+    {
+      "authors": [
+        "James Bergstra",
+        "Yoshua Bengio"
+      ],
+      "title": "Random search for hyper-parameter optimization",
+      "venue": "Journal of Machine Learning Research,",
+      "year": 2012
+    },
+    {
+      "authors": [
+        "Kenneth O Stanley",
+        "Risto Miikkulainen"
+      ],
+      "title": "Evolving neural networks through augmenting topologies",
+      "venue": "Evolutionary computation,",
+      "year": 2002
+    },
+    {
+      "authors": [
+        "Barret Zoph",
+        "Quoc V. Le"
+      ],
+      "title": "Neural architecture search with reinforcement learning",
+      "venue": "International Conference on Learning Representations,",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Bowen Baker",
+        "Otkrist Gupta",
+        "Nikhil Naik",
+        "Ramesh Raskar"
+      ],
+      "title": "Designing neural network architectures using reinforcement learning",
+      "venue": "International Conference on Learning Representations,",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Barret Zoph",
+        "Vijay Vasudevan",
+        "Jonathon Shlens",
+        "Quoc V Le"
+      ],
+      "title": "Learning transferable architectures for scalable image recognition",
+      "venue": "Proceedings of the IEEE conference on computer vision and pattern recognition,",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "Esteban Real",
+        "Sherry Moore",
+        "Andrew Selle",
+        "Saurabh Saxena",
+        "Yutaka Leon Suematsu",
+        "Quoc Le",
+        "Alex Kurakin"
+      ],
+      "title": "Large-scale evolution of image classifiers",
+      "venue": "arXiv preprint arXiv:1703.01041,",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Dougal Maclaurin",
+        "David Duvenaud",
+        "Ryan Adams"
+      ],
+      "title": "Gradient-based hyperparameter optimization through reversible learning",
+      "venue": "In International Conference on Machine Learning,",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "Marcin Andrychowicz",
+        "Misha Denil",
+        "Sergio Gomez",
+        "Matthew W Hoffman",
+        "David Pfau",
+        "Tom Schaul",
+        "Nando de Freitas"
+      ],
+      "title": "Learning to learn by gradient descent by gradient descent",
+      "venue": "In Advances in Neural Information Processing Systems,",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Yutian Chen",
+        "Matthew W Hoffman",
+        "Sergio Gómez Colmenarejo",
+        "Misha Denil",
+        "Timothy P Lillicrap",
+        "Matt Botvinick",
+        "Nando de Freitas"
+      ],
+      "title": "Learning to learn without gradient descent by gradient descent",
+      "venue": "arXiv preprint arXiv:1611.03824,",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Ke Li",
+        "Jitendra Malik"
+      ],
+      "title": "Learning to optimize",
+      "venue": "International Conference on Learning Representations,",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Olga Wichrowska",
+        "Niru Maheswaranathan",
+        "Matthew W Hoffman",
+        "Sergio Gomez Colmenarejo",
+        "Misha Denil",
+        "Nando de Freitas",
+        "Jascha Sohl-Dickstein"
+      ],
+      "title": "Learned optimizers that scale and generalize",
+      "venue": "International Conference on Machine Learning,",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Irwan Bello",
+        "Barret Zoph",
+        "Vijay Vasudevan",
+        "Quoc Le"
+      ],
+      "title": "Neural optimizer search with reinforcement learning",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Rein Houthooft",
+        "Richard Y Chen",
+        "Phillip Isola",
+        "Bradly C Stadie",
+        "Filip Wolski",
+        "Jonathan Ho",
+        "Pieter Abbeel"
+      ],
+      "title": "Evolved policy gradients",
+      "venue": "arXiv preprint arXiv:1802.04821,",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "Sergey Ioffe",
+        "Christian Szegedy"
+      ],
+      "title": "Batch normalization: Accelerating deep network training by reducing internal covariate shift",
+      "venue": "Proceedings of the 32nd International Conference on Machine Learning,",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "James CR Whittington",
+        "Rafal Bogacz"
+      ],
+      "title": "An approximation of the error backpropagation algorithm in a predictive coding network with local hebbian synaptic plasticity",
+      "venue": "Neural computation,",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Timothy P Lillicrap",
+        "Daniel Cownden",
+        "Douglas B Tweed",
+        "Colin J Akerman"
+      ],
+      "title": "Random synaptic feedback weights support error backpropagation for deep learning",
+      "venue": "Nature communications,",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Razvan Pascanu",
+        "Tomas Mikolov",
+        "Yoshua Bengio"
+      ],
+      "title": "On the difficulty of training recurrent neural networks",
+      "venue": "In International Conference on Machine Learning,",
+      "year": 2013
+    },
+    {
+      "authors": [
+        "Amirreza Shaban",
+        "Ching-An Cheng",
+        "Nathan Hatch",
+        "Byron Boots"
+      ],
+      "title": "Truncated back-propagation for bilevel optimization",
+      "venue": "arXiv preprint arXiv:1810.10667,",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "Alex Krizhevsky",
+        "Geoffrey Hinton"
+      ],
+      "title": "Learning multiple layers of features from tiny images",
+      "year": 2009
+    },
+    {
+      "authors": [
+        "Olga Russakovsky",
+        "Jia Deng",
+        "Hao Su",
+        "Jonathan Krause",
+        "Sanjeev Satheesh",
+        "Sean Ma",
+        "Zhiheng Huang",
+        "Andrej Karpathy",
+        "Aditya Khosla",
+        "Michael Bernstein",
+        "Alexander C. Berg",
+        "Li Fei-Fei"
+      ],
+      "title": "ImageNet Large Scale Visual Recognition Challenge",
+      "venue": "International Journal of Computer Vision (IJCV),",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "Yann LeCun",
+        "Léon Bottou",
+        "Yoshua Bengio",
+        "Patrick Haffner"
+      ],
+      "title": "Gradient-based learning applied to document recognition",
+      "venue": "Proceedings of the IEEE,",
+      "year": 1998
+    },
+    {
+      "authors": [
+        "Han Xiao",
+        "Kashif Rasul",
+        "Roland Vollgraf"
+      ],
+      "title": "Fashion-mnist: a novel image dataset for benchmarking machine learning algorithms, 2017",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Andrew L. Maas",
+        "Raymond E. Daly",
+        "Peter T. Pham",
+        "Dan Huang",
+        "Andrew Y. Ng",
+        "Christopher Potts"
+      ],
+      "title": "Learning word vectors for sentiment analysis",
+      "venue": "In Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies,",
+      "year": 2011
+    },
+    {
+      "authors": [
+        "Martín Abadi",
+        "Paul Barham",
+        "Jianmin Chen",
+        "Zhifeng Chen",
+        "Andy Davis",
+        "Jeffrey Dean",
+        "Matthieu Devin",
+        "Sanjay Ghemawat",
+        "Geoffrey Irving",
+        "Michael Isard"
+      ],
+      "title": "Tensorflow: A system for large-scale machine learning",
+      "venue": "In OSDI,",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Andrew L Maas",
+        "Awni Y Hannun",
+        "Andrew Y Ng"
+      ],
+      "title": "Rectifier nonlinearities improve neural network acoustic models",
+      "venue": "In Proc. icml,",
+      "year": 2013
+    },
+    {
+      "authors": [
+        "Prajit Ramachandran",
+        "Barret Zoph",
+        "Quoc Le"
+      ],
+      "title": "Searching for activation",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Razvan Pascanu",
+        "Tomas Mikolov",
+        "Yoshua Bengio"
+      ],
+      "title": "Understanding the exploding gradient problem",
+      "venue": "CoRR, abs/1211.5063,",
+      "year": 2012
+    },
+    {
+      "authors": [
+        "Diederik P Kingma",
+        "Jimmy Ba"
+      ],
+      "title": "Adam: A method for stochastic optimization",
+      "venue": "arXiv preprint arXiv:1412.6980,",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "Volodymyr Mnih",
+        "Koray Kavukcuoglu",
+        "David Silver",
+        "Alex Graves",
+        "Ioannis Antonoglou",
+        "Daan Wierstra",
+        "Martin Riedmiller"
+      ],
+      "title": "Playing atari with deep reinforcement learning",
+      "venue": "arXiv preprint arXiv:1312.5602,",
+      "year": 2013
+    },
+    {
+      "authors": [
+        "Barak Pearlmutter"
+      ],
+      "title": "An investigation of the gradient descent process in neural networks",
+      "venue": "PhD thesis,",
+      "year": 1996
+    },
+    {
+      "authors": [
+        "Samuel S Schoenholz",
+        "Justin Gilmer",
+        "Surya Ganguli",
+        "Jascha Sohl-Dickstein"
+      ],
+      "title": "Deep information propagation",
+      "venue": "arXiv preprint arXiv:1611.01232,",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Pascanu"
+      ],
+      "title": "Training parameters of recurrent systems in general can lead to chaos",
+      "year": 2013
+    }
+  ],
+  "sections": [
+    {
+      "heading": "1 INTRODUCTION",
+      "text": "Supervised learning has proven extremely effective for many problems where large amounts of labeled training data are available. There is a common hope that unsupervised learning will prove similarly powerful in situations where labels are expensive, impractical to collect, or where the prediction target is unknown during training. Unsupervised learning however has yet to fulfill this promise. One explanation for this failure is that unsupervised representation learning algorithms are typically mismatched to the target task. Ideally, learned representations should linearly expose high level attributes of data (e.g. object identity) and perform well in semi-supervised settings. Many current unsupervised objectives, however, optimize for objectives such as log-likelihood of a generative model or reconstruction error, producing useful representations only as a side effect.\nUnsupervised representation learning seems uniquely suited for meta-learning (Hochreiter et al., 2001; Schmidhuber, 1995). Unlike most tasks where meta-learning is applied, unsupervised learning does not define an explicit objective, which makes it impossible to phrase the task as a standard optimization problem. It is possible, however, to directly express a meta-objective that captures the quality of representations produced by an unsupervised update rule by evaluating the usefulness of the representation for candidate tasks. In this work, we propose to meta-learn an unsupervised update rule by meta-training on a meta-objective that directly optimizes the utility of the unsupervised representation. Unlike hand-designed unsupervised learning rules, this meta-objective directly targets the usefulness of a representation generated from unlabeled data for later supervised tasks.\nBy recasting unsupervised representation learning as meta-learning, we treat the creation of the unsupervised update rule as a transfer learning problem. Instead of learning transferable features,\nar X\niv :1\n80 4.\n00 22\n2v 3\n[ cs\n.L G\n] 2\n6 Fe\nb 20\nwe learn a transferable learning rule which does not require access to labels and generalizes across both data domains and neural network architectures. Although we focus on the meta-objective of semi-supervised classification here, in principle a learning rule could be optimized to generate representations for any subsequent task."
+    },
+    {
+      "heading": "2 RELATED WORK",
+      "text": ""
+    },
+    {
+      "heading": "2.1 UNSUPERVISED REPRESENTATION LEARNING",
+      "text": "Unsupervised learning is a topic of broad and diverse interest. Here we briefly review several techniques that can lead to a useful latent representation of a dataset. In contrast to our work, each method imposes a manually defined training algorithm or loss function whereas we learn the algorithm that creates useful representations as determined by a meta-objective.\nAutoencoders (Hinton and Salakhutdinov, 2006) work by first compressing and optimizing reconstruction loss. Extensions have been made to de-noise data (Vincent et al., 2008; 2010), as well as compress information in an information theoretic way (Kingma and Welling, 2013). Le et al. (2011) further explored scaling up these unsupervised methods to large image datasets.\nGenerative adversarial networks (Goodfellow et al., 2014) take another approach to unsupervised feature learning. Instead of a loss function, an explicit min-max optimization is defined to learn a generative model of a data distribution. Recent work has shown that this training procedure can learn unsupervised features useful for few shot learning (Radford et al., 2015; Donahue et al., 2016; Dumoulin et al., 2016).\nOther techniques rely on self-supervision where labels are easily generated to create a non-trivial ‘supervised’ loss. Domain knowledge of the input is often necessary to define these losses. Noroozi and Favaro (2016) use unscrambling jigsaw-like crops of an image. Techniques used by Misra et al. (2016) and Sermanet et al. (2017) rely on using temporal ordering from videos.\nAnother approach to unsupervised learning relies on feature space design such as clustering. Coates and Ng (2012) showed that k-means can be used for feature learning. Xie et al. (2016) jointly learn features and cluster assignments. Bojanowski and Joulin (2017) develop a scalable technique to cluster by predicting noise. Other techniques such as Schmidhuber (1992), Hochreiter and Schmidhuber (1999), and Olshausen and Field (1997) define various desirable properties about the latent representation of the input, such as predictability, complexity of encoding mapping, independence, or sparsity, and optimize to achieve these properties."
+    },
+    {
+      "heading": "2.2 META LEARNING",
+      "text": "Most meta-learning algorithms consist of two levels of learning, or ‘loops’ of computation: an inner loop, where some form of learning occurs (e.g. an optimization process), and an outer loop or metatraining loop, which optimizes some aspect of the inner loop, parameterized by meta-parameters. The performance of the inner loop computation for a given set of meta-parameters is quantified by a meta-objective. Meta-training is then the process of adjusting the meta-parameters so that the inner loop performs well on this meta-objective. Meta-learning approaches differ by the computation performed in the inner loop, the domain, the choice of meta-parameters, and the method of optimizing the outer loop.\nSome of the earliest work in meta-learning includes work by Schmidhuber (1987), which explores a variety of meta-learning and self-referential algorithms. Similarly to our algorithm, Bengio et al. (1990; 1992) propose to learn a neuron local learning rule, though their approach differs in task and problem formulation. Additionally, Runarsson and Jonsson (2000) meta-learn supervised learning rules which mix local and global network information. A number of papers propose meta-learning for few shot learning (Vinyals et al., 2016; Ravi and Larochelle, 2016; Mishra et al., 2017; Finn et al., 2017; Snell et al., 2017), though these do not take advantage of unlabeled data. Others make use of both labeled and unlabeld data (Ren et al., 2018). Hsu et al. (2018) uses a task created with no supervision to then train few-shot detectors. Garg (2018) use meta-learning for unsupervised learning, primarily in the context of clustering and with a small number of meta-parameters.\nTo allow easy comparison against other existing approaches, we present a more extensive survey of previous work in meta-learning in table form in Table 1, highlighting differences in choice of task, structure of the meta-learning problem, choice of meta-architecture, and choice of domain.\nTo our knowledge, we are the first meta-learning approach to tackle the problem of unsupervised representation learning, where the inner loop consists of unsupervised learning. This contrasts with transfer learning, where a neural network is instead trained on a similar dataset, and then fine tuned or otherwise post-processed on the target dataset. We additionally believe we are the first representation meta-learning approach to generalize across input data modalities as well as datasets, the first to generalize across permutation of the input dimensions, and the first to generalize across neural network architectures (e.g. layer width, network depth, activation function)."
+    },
+    {
+      "heading": "3 MODEL DESIGN",
+      "text": "We consider a multilayer perceptron (MLP) with parameters φt as the base model. The inner loop of our meta-learning process trains this base model via iterative application of our learned update rule. See Figure 1 for a schematic illustration and Appendix A for a more detailed diagram.\nIn standard supervised learning, the ‘learned’ optimizer is stochastic gradient descent (SGD). A supervised loss l (x, y) is associated with this model, where x is a minibatch of inputs, and y are the corresponding labels. The parameters φt of the base model are then updated iteratively by performing SGD using the gradient ∂l(x,y)∂φt . This supervised update rule can be written as φt+1 = SupervisedUpdate(φt, xt, yt; θ), where t denotes the inner-loop iteration or step. Here θ are the meta-parameters of the optimizer, which consist of hyper-parameters such as learning rate and momentum.\nIn this work, our learned update is a parametric function which does not depend on label information, φt+1 = UnsupervisedUpdate(φt, xt; θ). This form of the update rule is general, it encompasses many unsupervised learning algorithms and all methods in Section 2.1.\nIn traditional learning algorithms, expert knowledge or a simple hyper-parameter search determines θ, which consists of a handful of meta-parameters such as learning rate and regularization constants. In contrast, our update rule will have orders of magnitude more meta-parameters, including the\nweights of a neural network. We train these meta-parameters by performing SGD on the sum of the MetaObjective over the course of (inner loop) training in order to find optimal parameters θ∗,\nθ∗ = argmin θ Etask [∑ t MetaObjective(φt) ] , (1)\nthat minimize the meta-objective over a distribution of training tasks. Note that φt is a function of θ since θ affects the optimization trajectory.\nIn the following sections, we briefly review the main components of this model: the base model, the UnsupervisedUpdate, and the MetaObjective. See the Appendix for a complete specification. Additionally, code and meta-trained parameters θ for our meta-learned UnsupervisedUpdate is available1."
+    },
+    {
+      "heading": "3.1 BASE MODEL",
+      "text": "Our base model consists of a standard fully connected multi-layer perceptron (MLP), with batch normalization (Ioffe and Szegedy, 2015), and ReLU nonlinearities. We chose this as opposed to a convolutional model to limit the inductive bias of convolutions in favor of learned behavior from the UnsupervisedUpdate. We call the pre-nonlinearity activations z1, · · · , zL, and post-nonlinearity activations x0, · · · , xL, where L is the total number of layers, and x0 ≡ x is the network input (raw data). The parameters are φ = { W 1, b1, V 1, · · · ,WL, bL, V L } , where W l and bl are the weights\nand biases (applied after batch norm) for layer l, and V l are the corresponding weights used in the backward pass."
+    },
+    {
+      "heading": "3.2 LEARNED UPDATE RULE",
+      "text": "We wish for our update rule to generalize across architectures with different widths, depths, or even network topologies. To achieve this, we design our update rule to be neuron-local, so that updates are a function of pre- and post- synaptic neurons in the base model, and are defined for any base model architecture. This has the added benefit that it makes the weight updates more similar to synaptic updates in biological neurons, which depend almost exclusively on local pre- and post-synaptic neuronal activity (Whittington and Bogacz, 2017). In practice, we relax this constraint and incorporate some cross neuron information to decorrelate neurons (see Appendix G.5 for more information).\nTo build these updates, each neuron i in every layer l in the base model has an MLP, referred to as an update network, associated with it, with output hlbi = MLP ( xlbi, zbi l, V l+1, δl+1; θ )\nwhere b indexes the training minibatch. The inputs to the MLP are the feedforward activations (xl & zl) defined above, and feedback weights and an error signal (V l and δl, respectively) which are defined below.\nAll update networks share meta-parameters θ. Evaluating the statistics of unit activation over a batch of data has proven helpful in supervised learning (Ioffe and Szegedy, 2015). It has similarly proven helpful in hand-designed unsupervised learning rules, such as sparse coding and clustering. We therefore allow hlbi to accumulate statistics across examples in each training minibatch.\nDuring an unsupervised training step, the base model is first run in a standard feed-forward fashion, populating xlbi, z l bi. As in supervised learning, an error signal δ l bi is then propagated backwards through the network. Unlike in supervised backprop, however, this error signal is generated by the corresponding update network for each unit. It is read out by linear projection of the per-neuron hidden state h, δlbi = lin ( hlbi ) , and propogated backward using a set of learned ‘backward weights’ (V l)T , rather than the transpose of the forward weights (W l)T as would be the case in backprop (diagrammed in Figure 1). This is done to be more biologically plausible (Lillicrap et al., 2016).\nAgain as in supervised learning, the weight updates (∆W l) are a product of pre- and post-synaptic signals. Unlike in supervised learning however, these signals are generated using the per-neuron update\n1https://github.com/tensorflow/models/tree/master/research/learning_ unsupervised_learning\nnetworks: ∆W lij = func ( hlbi, h l−1 bj ,Wij ) . The full weight update (which involves normalization and decorrelation across neurons) is defined in Appendix G.5."
+    },
+    {
+      "heading": "3.3 META-OBJECTIVE",
+      "text": "The meta-objective determines the quality of the unsupervised representations. In order to meta-train via SGD, this loss must be differentiable. The meta-objective we use in this work is based on fitting a linear regression to labeled examples with a small number of data points. In order to encourage the learning of features that generalize well, we estimate the linear regression weights on one minibatch {xa, ya} ofK data points, and evaluate the classification performance on a second minibatch {xb, yb} also with K datapoints,\nv̂ = argmin v (∥∥ya − vTxLa∥∥2 + λ ‖v‖2) , MetaObjective(·;φ) = CosDist (yb, v̂TxLb ) , (2) where xLa , x L b are features extracted from the base model on data xa, xb, respectively. The target labels ya, yb consist of one hot encoded labels and potentially also regression targets from data augmentation (e.g. rotation angle, see Section 4.2). We found that using a cosine distance, CosDist, rather than unnormalized squared error improved stability. Note this meta-objective is only used during meta-training and not used when applying the learned update rule. The inner loop computation is performed without labels via the UnsupervisedUpdate."
+    },
+    {
+      "heading": "4 TRAINING THE UPDATE RULE",
+      "text": ""
+    },
+    {
+      "heading": "4.1 APPROXIMATE GRADIENT BASED TRAINING",
+      "text": "We choose to meta-optimize via SGD as opposed to reinforcement learning or other black box methods, due to the superior convergence properties of SGD in high dimensions, and the high dimensional nature of θ. Training and computing derivatives through long recurrent computation of this form is notoriously difficult (Pascanu et al., 2013). To improve stability and reduce the computational cost we approximate the gradients ∂[MetaObjective]∂θ via truncated backprop through time (Shaban et al., 2018). Many additional design choices were also crucial to achieving stability and convergence in meta-learning, including the use of batch norm, and restricting the norm of the UnsupervisedUpdate update step (a full discussion of these and other choices is in Appendix B).\n4.2 META-TRAINING DISTRIBUTION AND GENERALIZATION\nGeneralization in our learned optimizer comes from both the form of the UnsupervisedUpdate (Section 3.2), and from the meta-training distribution. Our meta-training distribution is composed of both datasets and base model architectures.\nWe construct a set of training tasks consisting of CIFAR10 (Krizhevsky and Hinton, 2009) and multi-class classification from subsets of classes from Imagenet (Russakovsky et al., 2015) as well as from a dataset consisting of rendered fonts (Appendix H.1.1). We find that increased training dataset variation actually improves the meta-optimization process. To reduce computation we restrict the input data to 16x16 pixels or less during meta-training, and resize all datasets accordingly. For evaluation, we use MNIST (LeCun et al., 1998), Fashion MNIST (Xiao et al., 2017), IMDB (Maas et al., 2011), and a hold-out set of Imagenet classes. We additionally sample the base model architecture. We sample number of layers uniformly between 2-5 and the number of units per layer logarithmically between 64 to 512.\nAs part of preprocessing, we permute all inputs along the feature dimension, so that the UnsupervisedUpdate must learn a permutation invariant learning rule. Unlike other work, we focus explicitly on learning a learning algorithm as opposed to the discovery of fixed feature extractors that generalize across similar tasks. This makes the learning task much harder, as the UnsupervisedUpdate has to discover the relationship between pixels based solely on their joint statistics, and cannot “cheat” and memorize pixel identity. To provide further dataset variation, we additionally augment the data with shifts, rotations, and noise. We add these augmentation coefficients as additional regression targets for the meta-objective–e.g. rotate the image and predict the rotation angle as well as the image class. For additional details, see Appendix H.1.1."
+    },
+    {
+      "heading": "4.3 DISTRIBUTED IMPLEMENTATION",
+      "text": "We implement the above models in distributed TensorFlow (Abadi et al., 2016). Training uses 512 workers, each of which performs a sequence of partial unrolls of the inner loop UnsupervisedUpdate, and computes gradients of the meta-objective asynchronously. Training takes ∼8 days, and consists of ∼200 thousand updates to θ with minibatch size 256. Additional details are in Appendix C."
+    },
+    {
+      "heading": "5 EXPERIMENTAL RESULTS",
+      "text": "First, we examine limitations of existing unsupervised and meta learning methods. Then, we show meta-training and generalization properties of our learned optimizer and finally we conclude by visualizing how our learned update rule works. For details of the experimental setup, see Appendix H.\n5.1 OBJECTIVE FUNCTION MISMATCH AND EXISTING META-LEARNING METHODS\nTo illustrate the negative consequences of objective function mismatch in unsupervised learnin algorithms, we train a variational autoencoder on 16x16 CIFAR10. Over the course of training we evaluate classification performance from few shot classification using the learned latent representations. Training curves can be seen in Figure 2. Despite continuing to improve the VAE objective throughout training (not shown here), the classification accuracy decreases sharply later in training.\nTo demonstrate the reduced generalization that results from learning transferable features rather than an update algorithm, we train a prototypical network (Snell et al., 2017) with and without the input shuffling described in Section 4.2. As the prototypical network primarily learns transferrable features, performance is significantly hampered by input shuffling. Results are in Figure 2."
+    },
+    {
+      "heading": "5.2 META-OPTIMIZATION",
+      "text": "While training, we monitor a rolling average of the meta-objective averaged across all datasets, model architectures, and the number of unrolling steps performed. In Figure 3 the training loss is continuing to decrease after 200 hours of training, which suggests that the approximate training techniques still produce effective learning. In addition to this global number, we measure performance obtained by rolling out the UnsupervisedUpdate on various meta-training and meta-testing datasets. We see that on held out image datasets, such as MNIST and Fashion Mnist, the evaluation loss is still decreasing. However, for datasets in a different domain, such as IMDB sentiment prediction (Maas et al., 2011), we start to see meta-overfitting. For all remaining experimental results, unless otherwise stated, we use meta-parameters, θ, for the UnsupervisedUpdate resulting from 200 hours of meta-training."
+    },
+    {
+      "heading": "5.3 GENERALIZATION",
+      "text": "The goal of this work is to learn a general purpose unsupervised representation learning algorithm. As such, this algorithm must be able to generalize across a wide range of scenarios, including tasks that are not sampled i.i.d. from the meta-training distribution. In the following sections, we explore a subset of the factors we seek to generalize over.\nGeneralizing over datasets and domains\nIn Figure 4, we compare performance on few shot classification with 10 examples per class. We evaluate test performance on holdout datasets of MNIST and Fashion MNIST at 2 resolutions: 14×14 and 28×28 (larger than any dataset experienced in meta-training). On the same base model architecture, our learned UnsupervisedUpdate leads to performance better than a variational autoencoder, supervised learning on the labeled examples, and random initialization with trained readout layer.\nTo further explore generalization limits, we test our learned optimizer on data from a vastly different domain. We train on a binary text classification dataset: IMDB movie reviews (Maas et al., 2011), encoded by computing a bag of words with 1K words. We evaluate using a model 30 hours and 200 hours into meta-training (see Figure 4). Despite being trained exclusively on image datasets, the 30 hour learned optimizer improves upon the random initialization by almost 10%. When meta-training for longer, however, the learned optimizer “meta-overfits” to the image domain resulting in poor performance. This performance is quite low in an absolute sense, for this task. Nevertheless, we find\nthis result very exciting as we are unaware of any work showing this kind of transfer of learned rules from images to text.\nGeneralizing over network architectures\nWe train models of varying depths and unit counts with our learned optimizer and compare results at different points in training (Figure 5). We find that despite only training on networks with 2 to 5 layers and 64 to 512 units per layer, the learned rule generalizes to 11 layers and 10,000 units per layer.\nNext we look at generalization over different activation functions. We apply our learned optimizer on base models with a variety of different activation functions. Performance evaluated at different points in training (Figure 5). Despite training only on ReLU activations, our learned optimizer is able to improve on random initializations in all cases. For certain activations, leaky ReLU (Maas et al., 2013) and Swish (Ramachandran et al., 2017), there is little to no decrease in performance. Another interesting case is the step activation function. These activations are traditionally challenging to train as there is no useful gradient signal. Despite this, our learned UnsupervisedUpdate is capable of optimizing as it does not use base model gradients, and achieves performance double that of random initialization.\n5.4 HOW IT LEARNS AND HOW IT LEARNS TO LEARN\nTo analyze how our learned optimizer functions, we analyze the first layer filters over the course of meta-training. Despite the permutation invariant nature of our data (enforced by shuffling input image pixels before each unsupervised training run), the base model learns features such as those shown in Figure 6, which appear template-like for MNIST, and local-feature-like for CIFAR10. Early in training, there are coarse features, and a lot of noise. As the meta-training progresses, more interesting and local features emerge.\nIn an effort to understand what our algorithm learns to do, we fed it data from the two moons dataset. We find that despite being a 2D dataset, dissimilar from the image datasets used in meta-training, the learned model is still capable of manipulating and partially separating the data manifold in a purely unsupervised manner (Figure 6). We also find that almost all the variance in the embedding space is dominated by a few dimensions. As a comparison, we do the same analysis on MNIST. In this setting, the explained variance is spread out over more of the principal components. This makes sense as the generative process contains many more latent dimensions – at least enough to express the 10 digits."
+    },
+    {
+      "heading": "6 DISCUSSION",
+      "text": "In this work we meta-learn an unsupervised representation learning update rule. We show performance that matches or exceeds existing unsupervised learning on held out tasks. Additionally, the update rule can train models of varying widths, depths, and activation functions. More broadly, we demonstrate an application of meta-learning for learning complex optimization tasks where no objective is explicitly defined. Analogously to how increased data and compute have powered supervised learning, we believe this work is a proof of principle that the same can be done with algorithm design–replacing hand designed techniques with architectures designed for learning and learned from data via metalearning."
+    },
+    {
+      "heading": "ACKNOWLEDGMENTS",
+      "text": "We would like to thank Samy Bengio, David Dohan, Keren Gu, Gamaleldin Elsayed, C. Daniel Freeman, Sam Greydanus, Nando de Freitas, Ross Goroshin, Ishaan Gulrajani, Eric Jang, Hugo Larochelle, Jeremy Nixon, Esteban Real, Suharsh Sivakumar, Pavel Sountsov, Alex Toshev, George Tucker, Hoang Trieu Trinh, Olga Wichrowska, Lechao Xiao, Zongheng Yang, Jiaqi Zhai and the rest of the Google Brain team for extremely helpful conversations and feedback on this work.\nB STABILIZING GRADIENT BASED META-LEARNING TRAINING\nTraining and computing derivatives through recurrent computation of this form is notoriously difficult Pascanu et al. (2013). Training parameters of recurrent systems in general can lead to chaos. We used the usual techniques such as gradient clipping (Pascanu et al., 2012), small learning rates, and adaptive learning rate methods (in our case Adam (Kingma and Ba, 2014)), but in practice this\nwas not enough to train most UnsupervisedUpdate architectures. In this section we address other techniques needed for stable convergence.\nWhen training with truncated backprop the problem shifts from pure optimization to something more like optimizing on a Markov Decision Process where the state space is the base-model weights, φ, and the ‘policy’ is the learned optimizer. While traversing these states, the policy is constantly meta-optimized and changing, thus changing the distribution of states the optimizer reaches. This type of non-i.i.d training has been discussed at great length with respect to on and off-policy RL training algorithms (Mnih et al., 2013). Other works cast optimizer meta-learning as RL (Li and Malik, 2017) for this very reason, at a large cost in terms of gradient variance. In this work, we partially address this issue by training a large number of workers in parallel, to always maintain a diverse set of states when computing gradients.\nFor similar reasons, the number of steps per truncation, and the total number of unsupervised training steps, are both sampled in an attempt to limit the bias introduced by truncation.\nWe found restricting the maximum inner loop step size to be crucial for stability. Pearlmutter (1996) studied the effect of learning rates with respect to the stability of optimization and showed that as the learning rate increases gradients become chaotic. This effect was later demonstrated with respect to neural network training in Maclaurin et al. (2015). If learning rates are not constrained, we found that they rapidly grew and entered this chaotic regime.\nAnother technique we found useful in addressing these problems is the use of batch norm in both the base model and in the UnsupervisedUpdate rule. Multi-layer perceptron training traditionally requires very precise weight initialization for learning to occur. Poorly scaled initialization can make learning impossible (Schoenholz et al., 2016). When applying a learned optimizer, especially early in meta-training of the learned optimizer, it is very easy for the learned optimizer to cause high variance weights in the base model, after which recovery is difficult. Batch norm helps solve this issues by making more of the weight space usable."
+    },
+    {
+      "heading": "C DISTRIBUTED IMPLEMENTATION",
+      "text": "We implement the described models in distributed Tensorflow (Abadi et al., 2016). We construct a cluster of 512 workers, each of which computes gradients of the meta-objective asynchronously. Each worker trains on one task by first sampling a dataset, architecture, and a number of training steps. Next, each worker samples k unrolling steps, does k applications of the UnsupervisedUpdate(·; θ), computes the MetaObjective on each new state, computes ∂[MetaObjective]∂θ and sends this gradient to a parameter server. The final base-model state, φ, is then used as the starting point for the next unroll until the specified number of steps is reached. These gradients from different workers are batched and θ is updated with asynchronous SGD. By batching gradients as workers complete unrolls, we eliminate most gradient staleness while retaining the compute efficiency of asynchronous workers, especially given heterogeneous workloads which arise from dataset and model size variation. An overview of our training can be seen in algorithm F. Due to the small base models and the sequential nature of our compute workloads, we use multi core CPUs as opposed to GPUs. Training occurs over the course of ∼8 days with ∼200 thousand updates to θ with minibatch size 256."
+    },
+    {
+      "heading": "D MORE FILTERS OVER META-TRAINING",
+      "text": "Figure App.2: More filters extracted over the course of meta-training. Note, due to implementation reasons, the columns do not represent the same point / same iteration of θ. Each filter is extracted after 10k inner loop optimization steps, at φ10k. From top to bottom we show: MNIST, Tiny MNIST, Alphabet, CIFAR10, and Mini CIFAR10. Filters shift from noise at initialization to more local features later in meta-training."
+    },
+    {
+      "heading": "E META-TRAINING CURVES",
+      "text": "Figure App.3: Training curves for the meta-training and meta-evaluation task distributions. Our meta-train set consists of Mini Imagenet, Alphabet, and MiniCIFAR10. Our meta-test sets are Mini Imagenet Test, Tiny Fashion MNIST, Tiny MNIST and IMDB. Error bars denote standard deviation of evaluations with a fixed window of samples evaluated from a single model."
+    },
+    {
+      "heading": "F LEARNING ALGORITHM",
+      "text": "Initialize UnsupervisedUpdates parameters, θ0. Initialize meta-training step count v ← 0. Initialize shared gradient state S Initialize R to be max meta-training steps. while r < R on 512 workers in parallel do\nSample supervised task, D Sample base model f(·;φ) and initialize φ0 randomly Sample K truncated iterations Initialize learner iteration count: t← 0 for k = 1 to K do\nSample U unroll iterations for u = 0 to U do\nSample data, x, from D φt+u+1 = UnsupervisedUpdate(x, φt+u; θr)\nend for Initialize MetaObjective accumulator J ← 0 for u = 1 to U do\nfor m = 1 to M (number of MetaObjective evaluations per iteration) do Sample 2 batches of data, x,x′, and labels, y,y′ from D for both training and testing. J = J + 1UM MetaObjective(x, y, x\n′, y′, φt+u) end for\nend for Compute ∂J∂θr for the last U steps and store in S Update current unroll iteration: t← t+ U if size of S > meta-batch-size then\nTake averaged batch of gradients G from S θr+1 = θr −AdamUpdate(G) r ← r + 1\nend if end for\nend while Algorithm 1: Distributed Training Algorithm"
+    },
+    {
+      "heading": "G MODEL SPECIFICATION",
+      "text": "In this section we describe the details of our base model and learned optimizer. First, we describe the inner loop, and then we describe the meta-training procedure in more depth.\nIn the following sections, λname denotes a hyper-parameter for the learned update rule.\nThe design goals of this system are stated in the text body. At the time of writing, we were unaware of any similar systems, so as such the space of possible architectures was massive. Future work consists of simplifying and improving abstractions around algorithmic components.\nAn open source implementation of the UnsupervisedUpdate can be found at https: //github.com/tensorflow/models/tree/master/research/learning_ unsupervised_learning.\nG.1 INNER LOOP\nThe inner loop computation consists of iterative application of the UnsupervisedUpdate on a Base Model parameterized by φ,\nφt+1 = UnsupervisedUpdate(·, φt; θ), (App.1)\nwhere φ consists of forward weights, W l, biases, bl, parameterizing a multi-layer perceptron as well as backward weights, V l used by UnsupervisedUpdate when inner-loop training.\nThis computation can be broken down further as a forward pass on an unlabeled batch of data,\nx0 ∼ D (App.2) {x1..xL, z1..zL} = f(x0;φt), (App.3)\nwhere zl, and xl are the pre- and post-activations on layer l, and x0 is input data. We then compute weight updates:\n{(∆W 1···L)t, (∆b1···L)t, (∆V 1···L)t} = ComputeDeltaWeight(x0 · · ·xL, z1 · · · zL, φt; θ) (App.4)\nFinally, the next set of φ forward weights (W l), biases (bl), and backward weights (V l), are computed. We use an SGD like update but with the addition of a decay term. Equivalently, this can be seen as setting the weights and biases to an exponential moving average of the ∆W l, ∆V l, and ∆bl terms.\nW lt+1 = W l t (1− λφlr) + ∆W lλφlr (App.5)\nV lt+1 = V l t (1− λφlr) + ∆V lλφlr (App.6)\nblt+1 = b l t(1− λφlr) + ∆blλφlr (App.7)\nWe use λφlr = 3e − 4 in our work. ∆W l, ∆V l, ∆bl are computed via meta-learned functions (parameterized by θ).\nIn the following sections, we describe the functional form of the base model, f , as well as the functional form of ComputeDeltaWeight (·; θ)."
+    },
+    {
+      "heading": "G.2 BASE MODEL",
+      "text": "The base model, the model our learned update rule is training, is an L layer multi layer perception with batch norm. We define φ as this model’s parameters, consisting of weights (W l) and biases (bl) as well as the backward weights (V l) used only during inner-loop training (applications of UnsupervisedUpdate). We define N1..NL to be the sizes of the layers of the base model and N0 to be the size of the input data.\nφ = {W 1..WL, V 1..V L, b1..bL}, (App.8)\nwhere W l ∈ RN l−1,N l (App.9)\nV l ∈ RN l−1,N l (App.10)\nbl ∈ RN l\n(App.11) where N l is the hidden size of the network, N0 is the input size of data, and NL is the size of the output embedding. In this work, we fix the output layer: NL = 32 and vary the remaining the intermediate N1..(L−1) hidden sizes.\nThe forward computation parameterized by φ, consumes batches of unlabeled data from a dataset D: x0 ∼ D, x0 ∈ RB,N 0 (App.12)\nzl = BatchNorm ( xl−1W l ) + bl (App.13)\nxl = ReLU(zl) (App.14) for l = 1..L.\nWe define f(x;φ) as a function that returns the set of internal pre- and post-activation function hidden states as well as f̂(x;φ) as the function returning the final hidden state:\nf(x, φ) = {z1...zL, x0..xL, φ} (App.15) f̂(x, φ) = xL (App.16)"
+    },
+    {
+      "heading": "G.3 METAOBJECTIVE",
+      "text": "We define the MetaObjective to be a few shot linear regression. To increase stability and avoid undesirable loss landscapes, we additionally center, as well as normalize the predicted target before doing the loss computation. The full computation is as follows:\nMetaObjective(x, y, x′, y′, φ) :: (RB,N 0 ,RB,N classes ,RB,N 0 ,RB,N classes\n,Φ)→ R1, (App.17) where N classes is the number of classes, and y, y′ are one hot encoded labels.\nFirst, the inputs are converted to embeddings with the base model, xL = f̂(x;φ) (App.18)\nx′L = f̂(x′;φ) (App.19) Next, we center and normalize the prediction targets. We show this for y, but y′ is processed identically.\nȳ = 1\nBN classes B∑ i Nclasses∑ j yij (App.20)\nŷij = yij − ȳ√\n1 Nclasses ∑Nclasses a ‖ȳia‖ 2 2\n(App.21)\nWe then solve for the linear regression weights in closed form with features: xL and targets: ŷ. We account for a bias by concatenating a 1’s vector to the features.\nA = [xL;1] (App.22) C = ( (AtA) + Iλridge )−1 AT ŷ (App.23)\nWe then use these inferred regression weights C to make a prediction on the second batch of data, normalize the resulting prediction, and compute a final loss,\np = C[x′L;1] (App.24)\np̂bi = pbi ‖pb‖2\n(App.25)\nMetaObjective(·) = 1 B B∑ b ‖p̂b − ŷb‖22. (App.26)\nNote that due to the normalization of predictions and targets, this corresponds to a cosine distance (up to an offset and multiplicative factor)."
+    },
+    {
+      "heading": "G.4 UNSUPERVISEDUPDATE",
+      "text": "The learned update rule is parameterized by θ. In the following section, we denote all instances of θ with a subscript to be separate named learnable parameters of the UnsupervisedUpdate. θ is shared across all instantiations of the unsupervised learning rule (shared across layers). It is this weight sharing that lets us generalize across different network architectures.\nThe computation is split into a few main components: first, there is the forward pass, defined in f(x;φ). Next, there is a “backward” pass, which operates on the hidden states in a reverse order to propagate an error signal δl back down the network. In this process, a hidden state hl is created for each layer. These h are tensors with a batch, neuron and feature index: hl ∈ RB,N l,λhdims where λhdims = 64. Weight updates to W l and bl are then readout from these hl and other signals found both locally, and in aggregate along both batch and neuron."
+    },
+    {
+      "heading": "G.4.1 BACKWARD ERROR PROPAGATION",
+      "text": "In backprop, there exists a single scalar error signal that gets backpropagated back down the network. In our work, this error signal does not exist as there is no loss being optimized. Instead we have a learned top-down signal, dL, at the top of the network. Because we are no longer restricted to the form of backprop, we make this quantity a vector for each unit in the network, rather than a scalar,\nx0 ∼ D, x0 ∈ RB,Nx (App.27) {z1...zL, x0..xL, φ} = f(x;φ) (App.28)\ndL = TopD(xL; θtopD) (App.29) (App.30)\nwhere dl ∈ RB,N l,λdeltadims . In this work we set λdeltadims = 32. The architecture of TopD is a neural network that operates along every dimension of xL. The specification can be found in G.7.\nWe structure our error propagation similarly to the structure of the backpropagated error signal in a standard MLP with contributions to the error at every layer in the network,\nδlijd = d l ijd σ(zlijd) + λhdims∑ k (θerrorPropW )kd h l ijk + (θerrorPropB)d (App.31)\nwhere δl has the same shape as dl, and θerrorPropW ∈ Rλhdims,λdeltadims and θerrorPropB ∈ R λdeltadims . Note both θerrorPropW and θerrorPropB are shared for all layers l.\nIn a similar way to backprop, we move this signal down the network via multiplying by a backward weight matrix (V l). We do not use the previous weight matrix transpose as done in backprop, instead we learn a separate set of weights that are not tied to the forward weights and updated along with the forward weights as described in G.5. Additionally, we normalize the signal to have fixed second moment,\nd̃limd = N l+1∑ j δl+1ijd (V l+1)mj (App.32)\ndlimd = d̂ l imd\n( 1\nλdeltadims λdeltadims∑ a d̃lima\n)− 12 (App.33)\nThe internal hl ∈ RB,N l,λhdims vectors are computed via: hl = ComputeH ( dl, xl, zl; θcomputeH ) (App.34)\nThe architecture of ComputeH is a neural network that operates on every dimension of all the inputs. It can be found in G.8. These definitions are recursive, and are computed in order: hL, hL−1 · · ·h1, h0. With these computed, weight updates can be read out (Section G.5). When the corresponding symbols are not defined (e.g. z0) a zeros tensor with the correct shape is used instead."
+    },
+    {
+      "heading": "G.5 WEIGHT UPDATES",
+      "text": "The following is the implementation of ComputeDeltaWeight(x0 · · ·xL, z1 · · · zL, φ; θ) For a given layer, l, our weight updates are a mixture of multiple low rank readouts from hl and hl−1. These terms are then added together with a learnable weight, in θ to form a final update. The final update is then normalized mixed with the previous weights. We update both the forward, W l, and the backward, V l, using the same update rule parameters θ. We show the forward weight update rule here, and drop the backward for brevity.\nFor convenience, we define a low rank readout function LowRR that takes hl like tensors, and outputs a single lower rank tensor.\nLowRR ( ha, hb; Θ ) :: (App.35)(\nR B,Na,λhdims ,RB,N b,λhdims ) → RN” a,Nb (App.36)\nHere, Θ, is a placehoder for the parameters of the given readout. LowRR is defined as:\nΘ = {P a, P b} where P a ∈ Rλhdims,λgradc and P b ∈ Rλhdims,λgradc (App.37) raijp = ∑ k haijkP a kp (App.38)\nrbijp = ∑ k hbijkP b kp (App.39)\nLowRR (·)jp = B∑ i λgradc∑ k rbijkr a ipk\n1\nBλhdims (App.40)\nwhere λgradc = 4 and is the rank of the readout matrix (per batch element)."
+    },
+    {
+      "heading": "G.5.1 LOCAL TERMS",
+      "text": "This sequence of terms allow the weight to be adjusted as a function of state in the pre- and postsynaptic neurons. They should be viewed as a basis function representation of the way in which the weight changes as a function of pre- and post-synaptic neurons, and the current weight value. We express each of these contributions to the weight update as a sequence of weight update planes, with the ith plane written ∆W li ∈ RN\nl−1×N l . Each of these planes will be linearly summed, with coefficients generated as described in Equation App.57, in order to generate the eventual weight update.\nŴ l = W l√\n1 N l−1 ∑N l−1 i (W l)2i\n(App.41)\n∆W l1 = Ŵ l (App.42)\n∆W l2 = (Ŵ l)2sign(Ŵ l) (App.43) ∆W l3 = LowRR(h l−1, hl; θzero) (App.44) ∆W l4 = exp(−(Ŵ lb)2) LowRR(hl−1, hl; θrbf ) (App.45) ∆W l5 = W l b LowRR(hl−1, hl; θfirst) (App.46)\n∆W l6 = 1\nB B∑ b ( xl−1b − 1 B B∑ b′ xl−1b′ )T ( xlb − 1 B B∑ b′ xlb′ )T (App.47)"
+    },
+    {
+      "heading": "G.5.2 DECORRELATION TERMS",
+      "text": "Additional weight update planes are designed to aid units in remaining decorrelated from each other’s activity, and in decorrelating their receptive fields. Without terms like this, a common failure mode\nis for many units in a layer to develop near-identical representations. Here, Sli indicates a scratch matrix associated with weight update plane i and layer l.\nSl7 = 1√ N l−1 LowRR(hl−1, hl−1, θlinLowerSymm) (App.48)\n∆W l7 = 1√ 2\n[( Sl7 + ( Sl7 )T) (1− I)]W l (App.49)\nSl8 = 1√ N l−1 LowRR(hl−1, hl−1, θsqrLowerSymm) (App.50)\n∆W l8 = 1√ 2\n[( Sl8 + ( Sl8 )T) (1− I)](√1 + (W l)2 − 1) (App.51)\nSl9 = 1√ N l LowRR(hl, hl, θlinUpperSymm) (App.52)\n∆W l9 = 1√ 2 W l [( Sl9 + ( Sl9 )T) (1− I)] (App.53)\nSl10 = 1√ N l LowRR(hl, hl, θsqrUpperSymm) (App.54)\n∆W l10 = 1√ 2\n(√ 1 + (W l)2 − 1 )[( Sl10 + ( Sl10 )T) (1− I)] (App.55)\n(App.56)\nG.6 APPLICATION OF THE WEIGHT TERMS IN THE OPTIMIZER\nWe then normalize, re-weight, and merge each of these weight update planes into a single term, which will be used in the weight update step,\n˜∆W li = ∆W li√\n1 + 1 N l−1N l ∑N l−1 m ∑N l n ( ∆W limn )2 (App.57) (∆W lmerge)jk = 1\nB B∑ i (θmergeW )i ˜∆W lijk, (App.58)\nwhere θmergeW ∈ R10 (as we have 10 input planes). To prevent pathologies during training, we perform two post processing steps to prevent the learned optimizer from cheating, and increasing its effective learning rate, leading to instability. We only allow updates which do not decrease the weight matrix magnitude,\n∆W lorth = ∆W l merge − Ŵ l ReLU(∆Wmerge · Ŵ l), (App.59)\nwhere Ŵ l is W l scaled to have unit norm, and we normalize the length of the update,\n∆W lfinal = ∆W lorth√\n1 + 1 N l−1N l ∑N l−1 m ∑N l n ( ∆W lorth )2 mn\n(App.60)\nTo compute changes in the biases, we do a readout from hl. We put some constraints on this update to prevent the biases from pushing all units into the linear regime, and minimizing learning. We found this to be a possible pathology.\n∆blbase = 1\nB B∑ i λhdims∑ k (θBreadout)kh l ijk (App.61)\n∆blconstrained = ∆b l base − ReLU − 1 N l N l∑ i ( ∆blbase ) i  , (App.62)\nwhere θBreadout ∈ Rλhdims . We then normalize the update via the second moment:\n∆blfinal = ∆blconstrained\n1 N l ∑N l i (∆b l constrained) 2 i\n(App.63)\nFinally, we define ComputeDeltaWeight as all layer’s forward weight updates, and backward weight updates, and bias updates.\nComputeDeltaWeight(x0 · · ·xL, z1 · · · zL, φt; θ) = (∆W 1..Lfinal,∆b1..Lfinal,∆V 1..Lfinal) (App.64)\nG.7 TopD\nThis function performs various convolutions over the batch dimension and data dimension. For ease of notation, we use m as an intermediate variable. Additionally, we drop all convolution and batch norm parameterizations. They are all separate elements of θtopD. We define two 1D convolution operators that act on rank 3 tensors: ConvBatch which performs convolutions over the zeroth index, and ConvUnit which performs convolutions along the firs index. We define the S argument to be size of hidden units, and the K argument to be the kernel size of the 1D convolutions. Additionally, we set the second argument of BatchNorm to be the axis normalized over.\nTopD ( xL; θtopD ) :: RB,N L → RB,N L,λdeltadims (App.65)\nFirst, we reshape to add another dimension to the end of xL, in pseudocode:\nm0 = [x L] (App.66)\nNext, a convolution is performed on the batch dimension with a batch norm and a ReLU non linearity. This starts to pull information from around the batch into these channels.\nm1 = ConvBatch (m0, S = λtopdeltasize,K = 5) (App.67) m2 = ReLU (BatchNorm (m1, [0, 1])) (App.68)\n(App.69)\nWe set λtopdeltasize = 64. Next, a series of unit convolutions (convolutions over the last dimension) are performed. These act as compute over information composed from the nearby elements of the batch. These unit dimensions effectively rewrite the batch dimension. This restricts the model to operate on a fixed size batch.\nm3 = ConvUnit (m2, S = B,K = 3) (App.70) m4 = ReLU (BatchNorm (m3, [0, 1])) (App.71) m5 = ConvUnit (m4, S = B,K = 3) (App.72) m6 = ReLU (BatchNorm (m5, [0, 1])) (App.73)\nNext a series of 1D convolutions are performed over the batch dimension for more compute capacity.\nm7 = ConvBatch (m6, S = λtopdeltasize,K = 3) (App.74) m8 = ReLU (BatchNorm (m7, [0, 1])) (App.75) m9 = ConvBatch (m8, S = λtopdeltasize,K = 3) (App.76) m10 = ReLU (BatchNorm (m9, [0, 1])) (App.77)\nFinally, we convert the representations to the desired dimensions and output.\nm11 = ConvBatch (m10, S = λdeltadims,K = 3) (App.78) TopD ( xL; θtopD ) = m11 (App.79)\nG.8 ComputeH\nThis is the main computation performed while transfering signals down the network and the output is directly used for weight updates. It is defined as:\nComputeH ( dl, xl, zl,W l,W l+1, bl; θcomputeH ) ::(\nR B,N l,λdeltadims ,RB,N l ,RB,N l ,RN l−1,N l ,RN 1,N l+1 ,RN l ) → ( R B,N l,λhdims ) (App.80)\nThe outputs of the base model, (xl, zl), plus an additional positional embeddings are stacked then concatenated with d, to form a tensor in RB,N l,(4+λdeltadims):\n(p0)ij = sin( 2jπ\nN l ) (App.81)\n(p1)ij = cos( 2jπ\nN l ) (App.82)\nm0 = [x l, zl, p0, p1] where m0 ∈ RB,N l,4 (App.83)\nm1 = [m0; d l] (App.84)\nStatistics across the batch and unit dimensions, 0 and 1, are computed. We define a Statsi function bellow. We have 2 instances for both the zeroth and the first index, shown bellow is the zeroth index and the first is omitted.\nStats0 (w) :: R K0,K1 → RK 1,4 (App.85)\n(sl1)j = 1\nK0 K0∑ i abs(wij) (App.86)\n(sl2)j = √√√√ 1 K0 K0∑ i (wij)2 (App.87)\n(sµ)j = 1\nK0 K0∑ i wij (App.88)\n(sσ)j = √√√√ 1 K0 K0∑ i ((sµ)i − wij)2 (App.89)\nStats0 (w) = [sl1, sl2, sµ, sσ] (App.90)\nWe the compute statistics of the weight matrix below, and above. We tile the statistics to the appropriate dimensions and concatenate with normalized inputs as well as with the bias (also tiled appropriately).\n(s0)ijk = (Stats0 ( W l, 0 ) )j (App.91)\n(s1)ijk = (Stats1 ( W l+1, 1 ) )i (App.92)\nm2 = BatchNorm(m1, [0, 1]) (App.93)\nb̂ijk = b l j where b̂ ∈ RB,N\nl,1 (App.94)\nm3 = [s0; s1;m2; b̂] where m3 ∈ RB,N l,4+4+(4+λdeltadims)+1 (App.95)\nWith the inputs prepared, we next perform a series of convolutions on batch and unit dimensions, (0, 1).\nm4 = ConvBatch (m3, S = λcomputehsize,K = 3) (App.96) m5 = ReLU (BatchNorm (m4, [0, 1])) (App.97) m6 = ConvUnit (m5, S = λcomputehsize,K = 3) (App.98) m7 = ReLU (BatchNorm (m6, [0, 1])) (App.99) m8 = ConvBatch (m7, S = λcomputehsize,K = 3) (App.100) m9 = ReLU (BatchNorm (m8, [0, 1])) (App.101) m10 = ConvUnit (m9, S = λcomputehsize,K = 3) (App.102) m11 = ReLU (BatchNorm (m10, [0, 1])) (App.103)\nThe result is then output.\nComputeH (·; θcomputeH) = m11 (App.104)\nWe set λcomputehsize = 64 which is the inner computation size."
+    },
+    {
+      "heading": "H EXPERIMENTAL DETAILS",
+      "text": ""
+    },
+    {
+      "heading": "H.1 META TRAINING",
+      "text": ""
+    },
+    {
+      "heading": "H.1.1 TRAINING DATA DISTRIBUTION",
+      "text": "We trained on a data distribution consisting of tasks sampled uniformly over the following datasets. Half of our training tasks where constructed off of a dataset consisting of 1000 font rendered characters. We resized these to 14x14 black and white images. We call this the glyph dataset. \"Alphabet\" is an example of such a dataset consisting of alphabet characters. We used a mixture 10, 13, 14, 17, 20, and 30 way classification problems randomly sampled, as well as sampling from three 10-way classification problems sampled from specific types of images: letters of the alphabet, math symbols, and currency symbols. For half of the random sampling and all of the specialized selection we apply additional augmentation. This augmentation consists of random rotations (up to 360 degrees) and shifts up to +-5 pixels in the x and y directions. The parameters of the augmentation were inserted into the regression target of the MetaObjective as a curriculum of sorts and to provide diverse training signal.\nIn addition to the the glyph set, we additionally used Cifar10, resized to 16x16, as well as 10, 15, 20, and 25 way classification problems from imagenet. Once again we resized to 16x16 for compute reasons.\nWith a dataset selected, we apply additional augmentation with some probability consisting of the following augmentations. A per task dropout mask (fixed mask across all images in that task). A per example dropout mask (a random mask per image). A permutation sampled from a fixed number of pre created permutations per class. A per image random shift in the x direction each of image. All of these additional augmentations help with larger domain transfer."
+    },
+    {
+      "heading": "H.2 META-OPTIMIZATION",
+      "text": "We employ Adam (Kingma and Ba, 2014) as our meta-optimizer. We use a learning rate schedule of 3e-4 for the first 100k steps, then 1e-4 for next 50k steps, then 2e-5 for remainder of meta-training. We use gradient clipping of norm 5 on minibatchs of size 256.\nWe compute our meta-objective by averaging 5 evaluation of the linear regression. We use a ridge penalty of 0.1 for all this work.\nWhen computing truncated gradients, we initially sample the number of unrolled applications of the UnsupervisedUpdate in a uniform distribution of [2,4]. This is the number of steps gradients are backpropogated through. Over the course of 50k meta-training steps we uniformly increase this to [8,15]. This increases meta-training speed and stability as large unrolls early in training can be unstable and don’t seem to provide any value.\nFor sampling the number of truncated steps (number of times the above unrolls are performed), we use a shifted normal distribution – a normal distribution with the same mean and standard deviation. We chose this based on the expected distribution of the training step, φ iteration number, across the cluster of workers. We initially set the standard deviation low, 20, but slowly increased it over the course of 5000 steps to 20k steps. This slow increase also improved stability and training speed."
+    },
+    {
+      "heading": "H.3 EXPERIMENTAL SETUP",
+      "text": "For each experimental figure, we document the details."
+    },
+    {
+      "heading": "H.3.1 OBJECTIVE FUNCTION MISMATCH",
+      "text": "The VAE we used consists of 3 layers, size 128, with ReLU activations and batch norm between each layer. We then learn a projection to mean and log std of size 32. We sample, and use the inverse architecture to decode back to images. We use a quantized normal distribution (once again parameterized as mean and log std) as a posterior. We train with Adam with a learning rate of 1e-4. To isolate the effects of objective function mismatch and overfitting, we both train on the unlabeled training set and evaluate on the labeled training set instead of a validation set."
+    },
+    {
+      "heading": "H.3.2 GENERALIZATION: DATASET AND DOMAIN",
+      "text": "We use a 4 layer, size 128 unit architecture with a 32 layer embedding for all models. We select performance at 100k training steps for the VAE, and 3k for our learned optimizer.\nOur supervised learning baseline consists of the same architecture for the base model but with an additional layer that outputs log probabilities. We train with cross entropy loss on a dataset consisting of only 10 examples per class (to match the other numbers). Surprisingly, the noise from batch norm acts as a regularizer, and allowing us to avoid needing a complex early stopping scheme as test set performance simply plateaus over the course of 10k steps. We train with Adam with a learning rate of 3e-3, selected via a grid over learning rate on test set performance. In this setting, having a true validation set would dramatically lower the amount of labeled data available (only 100 labeled examples) and using the test set only aids in the this baseline’s performance.\nFor the IMDB experiments, we tokenized and selected the top 1K words with an additional set of tokens for unknown, sentence start, and sentence end. Our encoding consisted of a 1 if the word is present, otherwise 0. We used the same 4 layer, 128 hidden unit MLP with an addition layer outputting a 32 dimensional embedding.\nH.3.3 GENERALIZATION: NETWORK ARCHITECTURE\nWe used ReLU activations and 4 layers of size 128 with an additional layer to 32 units unless otherwise specified by the specific experiment."
+    },
+    {
+      "heading": "H.3.4 EXISTING META LEARNING MODELS",
+      "text": "We trained prototypical networks (Snell et al., 2017) on either intact or shuffled mini-Imagenet images. For shuffled images, we generated a fixed random permutation for the inputs independently for every instantiation of the base network (or ’episode’ in the meta-learning literature (Vinyals et al., 2016; Ravi and Larochelle, 2016)). The purpose of shuffling was to demonstrate the inductive bias of this type of meta-learning, namely that they do not generalize across data domain. Note that the base network trained was the same fully connected architecture like that used in this paper (3 layers, size 128, with ReLU activations and batch normalization between layers). Though the original paper used a convolutional architecture, here we swapped it with the fully connected architecture because the tied weights in a convolutional model do not make sense with shuffled pixels."
+    }
+  ],
+  "title": "META-LEARNING UPDATE RULES FOR UNSUPERVISED REPRESENTATION LEARNING",
+  "year": 2019
+}
