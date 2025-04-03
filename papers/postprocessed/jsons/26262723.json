@@ -1,0 +1,461 @@
+{
+  "abstractText": "Alzheimer’s disease (AD) is an irreversible and progressive brain disease that can be stopped or slowed down with medical treatment. Language changes serve as a sign that a patient’s cognitive functions have been impacted, potentially leading to early diagnosis. In this work, we use NLP techniques to classify and analyze the linguistic characteristics of AD patients using the DementiaBank dataset. We apply three neural models based on CNNs, LSTM-RNNs, and their combination, to distinguish between language samples from AD and control patients. We achieve a new independent benchmark accuracy for the AD classification task. More importantly, we next interpret what these neural models have learned about the linguistic characteristics of AD patients, via analysis based on activation clustering and first-derivative saliency techniques. We then perform novel automatic pattern discovery inside activation clusters, and consolidate AD patients’ distinctive grammar patterns. Additionally, we show that first derivative saliency can not only rediscover previous language patterns of AD patients, but also shed light on the limitations of neural models. Lastly, we also include analysis of gender-separated AD data.",
+  "authors": [
+    {
+      "affiliations": [],
+      "name": "Sweta Karlekar"
+    },
+    {
+      "affiliations": [],
+      "name": "Tong Niu"
+    },
+    {
+      "affiliations": [],
+      "name": "Mohit Bansal"
+    }
+  ],
+  "id": "SP:c624b6d6451163ee788ed4dae9217d9860e546ec",
+  "references": [
+    {
+      "authors": [
+        "Malika Aubakirova",
+        "Mohit Bansal."
+      ],
+      "title": "Interpreting neural networks to improve politeness comprehension",
+      "venue": "Proceedings of EMNLP.",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Kathryn A Bayles",
+        "T Azuma",
+        "RF Cruz",
+        "CK Tomoeda",
+        "JA Wood",
+        "Jr EB Montgomery."
+      ],
+      "title": "Gender differences in language of alzheimer disease patients revisited",
+      "venue": "Alzheimer disease and associated disorders, 13(3):138–146.",
+      "year": 1999
+    },
+    {
+      "authors": [
+        "Francois Boller",
+        "James Becker."
+      ],
+      "title": "Dementiabank database guide",
+      "venue": "University of Pittsburgh.",
+      "year": 2005
+    },
+    {
+      "authors": [
+        "J Galen Buckwalter",
+        "Albert A Rizzo",
+        "Richard McCleary",
+        "Rodman Shankle",
+        "Malcolm Dick",
+        "Victor W Henderson"
+      ],
+      "title": "Gender comparisons of cognitive performances among vascular dementia, alzheimer disease, and older adults without demen",
+      "year": 1996
+    },
+    {
+      "authors": [
+        "Ronan Collobert",
+        "Jason Weston",
+        "Léon Bottou",
+        "Michael Karlen",
+        "Koray Kavukcuoglu",
+        "Pavel Kuksa."
+      ],
+      "title": "Natural language processing (almost) from scratch",
+      "venue": "Journal of Machine Learning Research, 12(Aug):2493–2537.",
+      "year": 2011
+    },
+    {
+      "authors": [
+        "Mark Davies."
+      ],
+      "title": "The 385+ million word corpus of contemporary american english (1990–2008+): Design, architecture, and linguistic insights",
+      "venue": "International journal of corpus linguistics, 14(2):159–190.",
+      "year": 2009
+    },
+    {
+      "authors": [
+        "Lisa M Duke",
+        "Ben Seltzer",
+        "Jennifer E Seltzer",
+        "Jennifer J Vasterling."
+      ],
+      "title": "Cognitive components of deficit awareness in alzheimer’s disease",
+      "venue": "Neuropsychology, 16(3):359.",
+      "year": 2002
+    },
+    {
+      "authors": [
+        "Yarin Gal",
+        "Zoubin Ghahramani."
+      ],
+      "title": "A theoretically grounded application of dropout in recurrent neural networks",
+      "venue": "Advances in neural information processing systems, pages 1019–1027.",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Ross Girshick",
+        "Jeff Donahue",
+        "Trevor Darrell",
+        "Jitendra Malik."
+      ],
+      "title": "Rich feature hierarchies for accurate object detection and semantic segmentation",
+      "venue": "Proceedings of the IEEE conference on computer vision and pattern recognition, pages 580–587.",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "George G Glenner."
+      ],
+      "title": "Alzheimers disease",
+      "venue": "Biomedical Advances in Aging, pages 51–62. Springer.",
+      "year": 1990
+    },
+    {
+      "authors": [
+        "Alex Graves."
+      ],
+      "title": "Generating sequences with recurrent neural networks",
+      "venue": "arXiv preprint arXiv:1308.0850.",
+      "year": 2013
+    },
+    {
+      "authors": [
+        "Liesi E Hebert",
+        "Robert S Wilson",
+        "David W Gilley",
+        "Laurel A Beckett",
+        "Paul A Scherr",
+        "David A Bennett",
+        "Denis A Evans."
+      ],
+      "title": "Decline of language among women and men with alzheimer’s disease",
+      "venue": "The Journals of Gerontology Series B: Psychological Sci-",
+      "year": 2000
+    },
+    {
+      "authors": [
+        "William C Heindel",
+        "David P Salmon",
+        "Clifford W Shults",
+        "Patricia A Walicke",
+        "Nelson Butters"
+      ],
+      "title": "Neuropsychological evidence for multiple implicit memory systems: A comparison of alzheimer’s, huntington’s, and parkinson’s disease",
+      "year": 1989
+    },
+    {
+      "authors": [
+        "R Heun",
+        "M Kockler."
+      ],
+      "title": "Gender differences in the cognitive impairment in alzheimer’s disease",
+      "venue": "Archives of Women’s Mental Health, 4(4):129–137.",
+      "year": 2002
+    },
+    {
+      "authors": [
+        "Sepp Hochreiter",
+        "Jürgen Schmidhuber."
+      ],
+      "title": "Long short-term memory",
+      "venue": "Neural computation, 9(8):1735–1780.",
+      "year": 1997
+    },
+    {
+      "authors": [
+        "Akos Kádár",
+        "Grzegorz Chrupała",
+        "Afra Alishahi."
+      ],
+      "title": "Representation of linguistic form and function in recurrent neural networks",
+      "venue": "Computational Linguistics, 43(4):761–780.",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Diederik Kingma",
+        "Jimmy Ba."
+      ],
+      "title": "Adam: A method for stochastic optimization",
+      "venue": "arXiv preprint arXiv:1412.6980.",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "Alexandra König",
+        "Aharon Satt",
+        "Alexander Sorin",
+        "Ron Hoory",
+        "Orith Toledo-Ronen",
+        "Alexandre Derreumaux",
+        "Valeria Manera",
+        "Frans Verhey",
+        "Pauline Aalten",
+        "Phillipe H Robert"
+      ],
+      "title": "Automatic speech analysis for the assessment of patients",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "Alex Krizhevsky",
+        "Ilya Sutskever",
+        "Geoffrey E Hinton."
+      ],
+      "title": "Imagenet classification with deep convolutional neural networks",
+      "venue": "Advances in neural information processing systems, pages 1097–1105.",
+      "year": 2012
+    },
+    {
+      "authors": [
+        "Jiwei Li",
+        "Xinlei Chen",
+        "Eduard Hovy",
+        "Dan Jurafsky."
+      ],
+      "title": "Visualizing and understanding neural models in nlp",
+      "venue": "arXiv preprint arXiv:1506.01066.",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "Aravindh Mahendran",
+        "Andrea Vedaldi."
+      ],
+      "title": "Understanding deep image representations by inverting them",
+      "venue": "Proceedings of the IEEE conference on computer vision and pattern recognition, pages 5188–5196.",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "Guy McKhann",
+        "David Drachman",
+        "Marshall Folstein",
+        "Robert Katzman",
+        "Donald Price",
+        "Emanuel M Stadlan"
+      ],
+      "title": "Clinical diagnosis of alzheimer’s disease report of the nincds-adrda work group* under the auspices of department of health and human",
+      "year": 1984
+    },
+    {
+      "authors": [
+        "Susan McPherson",
+        "Carla Back",
+        "J Galen Buckwalter",
+        "Jeffrey L Cummings."
+      ],
+      "title": "Gender-related cognitive deficits in alzheimer’s disease",
+      "venue": "International Psychogeriatrics, 11(2):117–122.",
+      "year": 1999
+    },
+    {
+      "authors": [
+        "Sylvester O Orimaye",
+        "Jojo SM Wong",
+        "Karen J Golden",
+        "Chee P Wong",
+        "Ireneous N Soyiri."
+      ],
+      "title": "Predicting probable alzheimers disease using linguistic deficits and biomarkers",
+      "venue": "BMC bioinformatics, 18(1):34.",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Sylvester Olubolu Orimaye",
+        "Kah Yee Tai",
+        "Jojo SzeMeng Wong",
+        "Chee Piau Wong."
+      ],
+      "title": "Learning linguistic biomarkers for predicting mild cognitive impairment using compound skip-grams",
+      "venue": "arXiv preprint arXiv:1511.02436.",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "Sylvester Olubolu Orimaye",
+        "Jojo Sze-Meng Wong",
+        "Judyanne Sharmini Gilbert Fernandez."
+      ],
+      "title": "Deepdeep neural network language models for predicting mild cognitive impairment",
+      "venue": "BAI@ IJCAI, pages 14–20.",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Razvan Pascanu",
+        "Caglar Gulcehre",
+        "Kyunghyun Cho",
+        "Yoshua Bengio."
+      ],
+      "title": "How to construct deep recurrent neural networks",
+      "venue": "arXiv preprint arXiv:1312.6026.",
+      "year": 2013
+    },
+    {
+      "authors": [
+        "Razvan Pascanu",
+        "Tomas Mikolov",
+        "Yoshua Bengio."
+      ],
+      "title": "On the difficulty of training recurrent neural networks",
+      "venue": "International Conference on Machine Learning, pages 1310–1318.",
+      "year": 2013
+    },
+    {
+      "authors": [
+        "Danielle N Ripich",
+        "Stephen A Petrill",
+        "Peter J Whitehouse",
+        "Elaine W Ziol."
+      ],
+      "title": "Gender differences in language of ad patients a longitudinal study",
+      "venue": "Neurology, 45(2):299–302.",
+      "year": 1995
+    },
+    {
+      "authors": [
+        "Frank Rudzicz",
+        "Leila Chan Currie",
+        "Andrew Danks",
+        "Tejas Mehta",
+        "Shunan Zhao."
+      ],
+      "title": "Automatically identifying trouble-indicating speech behaviors in alzheimer’s disease",
+      "venue": "Proceedings of the 16th international ACM SIGACCESS conference on Com-",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "Wojciech Samek",
+        "Alexander Binder",
+        "Grégoire Montavon",
+        "Sebastian Lapuschkin",
+        "Klaus-Robert Müller."
+      ],
+      "title": "Evaluating the visualization of what a deep neural network has learned",
+      "venue": "IEEE transactions on neural networks and learning systems.",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Karen Simonyan",
+        "Andrea Vedaldi",
+        "Andrew Zisserman."
+      ],
+      "title": "Deep inside convolutional networks: Visualising image classification models and saliency maps",
+      "venue": "arXiv preprint arXiv:1312.6034.",
+      "year": 2013
+    },
+    {
+      "authors": [
+        "Nitish Srivastava",
+        "Geoffrey E Hinton",
+        "Alex Krizhevsky",
+        "Ilya Sutskever",
+        "Ruslan Salakhutdinov."
+      ],
+      "title": "Dropout: a simple way to prevent neural networks from overfitting",
+      "venue": "Journal of machine learning research, 15(1):1929–1958.",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "Caroline M Watson."
+      ],
+      "title": "An analysis of trouble and repair in the natural conversations of people with dementia of the alzheimer’s type",
+      "venue": "Aphasiology, 13(3):195–218.",
+      "year": 1999
+    },
+    {
+      "authors": [
+        "Matthew D Zeiler",
+        "Rob Fergus."
+      ],
+      "title": "Visualizing and understanding convolutional networks",
+      "venue": "European conference on computer vision, pages 818– 833. Springer.",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "Chunting Zhou",
+        "Chonglin Sun",
+        "Zhiyuan Liu",
+        "Francis Lau."
+      ],
+      "title": "A c-lstm neural network for text classification",
+      "venue": "arXiv preprint arXiv:1511.08630.",
+      "year": 2015
+    }
+  ],
+  "sections": [
+    {
+      "heading": "1 Introduction",
+      "text": "Alzheimer’s dementia is the most common form of dementia, caused by Alzheimer’s disease (AD). AD cannot be cured or reversed (Glenner, 1990). However, medication can be used to slow or halt degeneration especially when detected at an early stage. Current diagnoses often involve lengthy medical evaluations. One of the early symptoms of AD, cognitive impairment—which can be evidenced by issues with word-finding, impaired reasoning or judgment, and changes in language (McKhann et al., 1984)—is motivating lin-\nguists and computer scientists to help quickly diagnose people afflicted by this disease.\nThis task is challenging because it requires diverse linguistic and world knowledge. For example, the sentence “Well...there’s a mother standing there uh uh washing the dishes and the sink is overspilling...overflowing” is AD-positive. To distinguish this from a control sample, one needs to know that the word “overspill” is not common in American English (Davies, 2009), and the speaker is correcting themselves by saying “overspilling...overflowing”, which hints on signs of confusion and memory loss (Duke et al., 2002). Moreover, different grammar patterns emerge based on the scenario at hand. In addition, the characteristics of AD-affected speech vary between stages of disease progression (König et al., 2015), making it harder for feature-based approaches to adapt.\nMotivated by the shortcomings of manual feature-engineering for such a diverse and complex task, we first present three end-to-end neural models to address it. The first two are the widely adopted CNN and LSTM-RNN models, and the third is a stronger joint CNN-LSTM architecture. Our best-performing model requires only minimal feature engineering (namely automatic, commonly-used POS tags that are already present in the dataset) and establishes a new independent benchmark that outperforms previous AD classification scores.\nMore importantly, we next present interpretation results to explain what AD-relevant linguistic features these neural models are learning, via two visualization techniques: Activation Clustering (Girshick et al., 2014) and First Derivative Saliency (Simonyan et al., 2013), plus our novel approach of automatically discovering grammatical patterns common in different activation clusters. Furthermore, we split our dataset by gen-\nar X\niv :1\n80 4.\n06 44\n0v 1\n[ cs\n.C L\n] 1\n7 A\npr 2\n01 8\nder and analyze the performance of our model on each subsample of the data to illustrate that the features we find are not gender-specific. These methods not only help rediscover AD linguistic features that have been found by previous works— including short answers, bursts of speech, repeated requests for clarification, and starting with interjections—but also lead to new insights in AD characteristics via our automatic speech pattern extraction method. These findings could potentially help improve the accuracy and speed of medical diagnoses."
+    },
+    {
+      "heading": "2 Related Works",
+      "text": "Language-based Alzheimer’s Detection: Previous works using language to detect AD relied mainly on hand-crafted features from transcripts (Orimaye et al., 2017, 2015), occasionally using acoustic data (König et al., 2015; Rudzicz et al., 2014). The challenge with feature-based approaches is that they rely heavily on the researchers’ linguistics and medical expertise, and are also hard to generalize to other progression stages and disease types, which may correspond to different linguistic features. Hand-picked features may also become outdated as language and culture evolves. Moreover, some features may be too nuanced for humans to detect, especially at early stages of AD. In order to address these issues, Orimaye et al. (2016) adopted a deep neural network language model. However, a neural approach is usually a black-box and it is hard to interpret its reasoning for the final classification decisions. To make our approaches more interpretable while harvesting the benefits of neural approaches, we present three accurate neural models and include multiple visualization techniques to illustrate both their effectiveness and limitations. CNN-LSTM on NL Classification: CNN and LSTM (Hochreiter and Schmidhuber, 1997) have both been leveraged extensively for extracting features in natural language. Our best performing model CNN-LSTM is closely related to C-LSTM by Zhou et al. (2015), where an LSTM is laid on\ntop of a CNN model. This model has been shown to perform better at sentiment classification than either of its integral parts alone. Visualization Techniques for Neural Models: There have been various visualization techniques proposed for neural networks in both Computer Vision (Krizhevsky et al., 2012; Simonyan et al., 2013; Zeiler and Fergus, 2014; Samek et al., 2017; Mahendran and Vedaldi, 2015) and NLP (Li et al., 2015; Kádár et al., 2017). In this work, we adopt two visualization techniques: Activation Clustering (Girshick et al., 2014) following the politeness interpretation work of Aubakirova and Bansal (2016), which leads to insight on sentencelevel patterns, and First Derivative Saliency (Simonyan et al., 2013) following Li et al. (2015) and Aubakirova and Bansal (2016), which provides insight to the importance of each word in deciding the final classification label."
+    },
+    {
+      "heading": "3 Classification Models",
+      "text": "CNN: For each sentence, we apply an embedding and a convolutional layer, followed by a maxpooling layer (Collobert et al., 2011). The convolution features are obtained by applying filters of varying window sizes to each window of words. The result is then passed to a softmax layer that outputs probabilities over two classes. LSTM-RNN: CNNs are not specialized for capturing long-range sequential correlations (Pascanu et al., 2013a). We thus also experimented with an LSTM-RNN model, which consists of an embedding layer followed by an LSTM layer. The final state, containing information from the entire sentence, is fed to a fully-connected layer followed by a softmax layer to obtain the output probabilities. CNN-LSTM: Observing that both models achieve results comparable to previous best performing approach, and considering that they each have their own complementary strengths, we experimented with a combined architecture, laying an LSTM layer on top of CNN (See Figure 1). This CNN layer is identical to the vanilla CNN before the max-pooling layer, and the LSTM layer is identical to the vanilla LSTM-RNN after the embedding layer. More details are provided in the appendix."
+    },
+    {
+      "heading": "4 Experimental Setup",
+      "text": "Dataset This study utilizes DementiaBank (Boller and Becker, 2005), the largest publicly available dataset of transcripts and\naudio recordings of AD (and control) patient interviews.1 Patients were asked to perform various tasks; for example, in the “Boston Cookie Theft” description task, patients were shown an image and asked to describe what they see (See Figure 2). Other tasks include the ‘Recall Test’ in which patients were asked to recall attributes of a story they had been told previously. Each transcript in DementiaBank comes with automatic morphosyntactic analysis, such as standard part-of-speech tagging, description of tense, and repetition markers.2 Note that these features are generic, automatically-extracted linguistic properties and are not AD-specific. We broke each transcript into individual utterances to use as data samples. Note that we also removed utterances that did not have accompanying POS tags. This balancing reduced the amount of data but ensured fair comparison between models with tagged and untagged setups.\nTraining Details Our CNN model was a 2-D convolutional neural network. Filter sizes of [3, 4, 5] were used. Our LSTM-RNN had 2 layers. The CNN-LSTM model had filter sizes [3, 4, 5, 6] and 1 LSTM hidden layer. For each model, all hyperparameters were tuned using the dev set.\nSee appendix for dataset and training details."
+    },
+    {
+      "heading": "5 Results",
+      "text": "With untagged data, our CNN, LSTM and CNNLSTM models achieved an accuracy of 82.8%, 83.7% and 84.9%, respectively. When fed with the given POS-tagged data, our best-performing CNN-LSTM model achieved 91.1% in accuracy, setting a new benchmark accuracy for this task\n1http://dementia.talkbank.org 2http://talkbank.org/manuals/CHAT.docx\n(see Table 1 for more details).3 Compared to other related works, Orimaye et al. (2015, 2017) used AUC instead of accuracy, and König et al. (2015) did not use DementiaBank data. Rudzicz et al. (2014) achieved an accuracy of 67.0% on the DementiaBank dataset using audio features as well as transcripts. Orimaye et al. (2016) achieved an accuracy of 87.5% but only used 36 transcripts. Their test set is thus different from ours, leading to very little data and high variance. To the best of our knowledge, Orimaye et al. (2016) used the original transcripts, which include POS tags. Hence, most previous works on this topic are not directly comparable to our work, but we aim to establish a new independent, strong neural benchmark and then more importantly focus on visualization and interpretability of neural models.\nBased on error analysis of the POS-based CNN/RNN model’s classification result, we found that almost all AD-positive results are classified correctly as AD-positive. However, there is more error in classifying non-AD samples, which could be due to the fact that DementiaBank includes patients with probable and possible AD, each exhibiting various degrees of symptoms. Patients who are AD-positive may still have partially unaffected speech (similar to non-AD control patients’ speech). However, because all utterances from AD-positive interviews are tagged as ADpositive, these seemingly unaffected utterances are still tagged AD-positive. To further understand the errors of our model, 10% of the wrongly classified non-AD examples were randomly selected and analyzed. Of this smaller sample, 36.3% were short utterances such as “okay”, “alright”, “oh my”, etc. These forms of speech are utterances that are present in both classes, but more commonly found in AD-positive cases. The remaining 63.7% were examples of speech that could be classified either way without surrounding context, such as “she’s\n3We also tried using a bidirectional RNN, which gave 84.7%, 86.2% and 91.1% accuracies for our LSTM-RNN, CNN-RNN, and CNN-RNN-tagged models, respectively.\ndrying dishes” and “stool’s tipping over”. Hence, future work could incorporate context from surrounding samples in each interview to help distinguish between temporarily unaffected speech patterns in AD-positive patients and the continually unaffected speech of non-AD control patients."
+    },
+    {
+      "heading": "6 Analysis and Visualization",
+      "text": "We first present gender analysis of our results and then present interpretation of the linguistic cues our CNN-LSTM model identified via two visualization strategies: activation clustering (Girshick et al., 2014) and first-derivative saliency heat maps (Simonyan et al., 2013)."
+    },
+    {
+      "heading": "6.1 Gender Differences",
+      "text": "Many previous works have debated on the difference in language for male versus female patients with Alzheimer’s (Bayles et al., 1999; McPherson et al., 1999; Buckwalter et al., 1996; Ripich et al., 1995; Hebert et al., 2000; Heun and Kockler, 2002). In agreement with some of these previous works, we found that the sets of the top ten most common POS-tags for both AD-positive men and women are the same, i.e., we did not detect a significant difference in the language complexity or syntax of male and female patients with AD in our dataset. Moreover, our best performing model achieved 86.6% classification accuracy on solely the male data and 86.2% accuracy on solely the female data, demonstrating that it found no statistically significant difference between the ADpositive language of men versus women.4"
+    },
+    {
+      "heading": "6.2 Activation Clusters",
+      "text": "Activation clustering (Girshick et al., 2014) treats the activation values of n neurons per input as coordinates in an n-dimensional space. K-means clustering is then performed to group together inputs that maximally activate similar neurons.\n4Statistical insignificance calculated using the bootstrap test (Noreen, 1989; Efron and Tibshirani, 1994). We split our dataset based on gender and down-sampled the female data subset such that it had the same data-size and non-AD to AD data-ratio as the male data subset."
+    },
+    {
+      "heading": "6.2.1 Rediscovering Existing Strategies",
+      "text": "Our activation clusters corroborated previous studies, forming clusters around known linguistic characteristics of Alzheimer’s disease (Watson, 1999; Rudzicz et al., 2014). Short Answers and Bursts of Speech Clusters formed around short answers, which have been split up by natural pauses in speech. {‘okay’, ‘and’, ‘yes’, ‘oh !’, ‘yes’, ‘fine’} Repeated Requests for Clarification Another cluster formed around clarification questions and confusion about the task, specifically in the past tense. {‘Did I say facts ?’, ‘Did I get any ?’, ‘Did I say elephant ?’} Starting with Interjections Many clusters contain utterances that start with interjections such as “oh”, “well”, “so”, and “right”. {‘Well I gotta see it’, ‘Oh I just see a lot of uh...’, ‘So all the words that you can...’}"
+    },
+    {
+      "heading": "6.2.2 Automatic Cluster Pattern Analysis",
+      "text": "Next, we extend activation clustering to perform novel automatic pattern discovery inside different clusters, as opposed to manually looking for patterns as in Aubakirova and Bansal (2016). Finding the most common POS tags in each cluster allows us to better understand which grammatical structures are favored. No two clusters had exactly the same most-common POS tags, but many clusters shared similar top POS-tags on the same task.\nControl Clusters An example unaffected speech cluster for the Cookie task has the following as the most common POS tags: [(‘n’, .15), (‘det’, .13), (‘presp’, .07), (‘part’, .05)].5 This pattern follows other clusters of unaffected speech, with nouns, determiners, and participles always found in the most-used POS tags. To illustrate this, two other control clusters found for the Cookie task have very similar top POS tags and frequencies: [(‘n’, .13), (‘det’, .13),\n5POS tags used in this paper: v=verb, n=noun, pro=pronoun, adv=adverb, det=determiner, aux=auxiliary verb, prep=preposition, co=interjection, part=participle, presp=present participle. The frequencies of each POS tag are scaled based on the total number of tags in each cluster.\n(‘part’, .09), (‘presp’, .09)] and [(‘n’, .15), (‘det’, .13), (‘part’, .10), (‘presp’, .10)] (see Table 2 for side-by-side comparison of these clusters). For the same task, non-AD clusters contain the same top four POS tags.\nAD Clusters For the Recall task, one cluster of AD patients’ speech shows that the most common POS tags are [(‘n’, .15), (‘co’, .15), (‘v’, .06), (‘pro’, .06)]. Across samples from the Recall task, AD-marked clusters contained frequent interjections and verbs. On the other hand, in regards to the Cookie task, the most common POS tags for the AD cluster found are [(‘n’, .20), (‘det’, .14), (‘adj’, .05), (‘adv’, .04)], i.e., more adjectives and adverbs. Hence, between different tasks such as Cookie and Recall, the most commonly used POS tags for AD clusters are distinct.\nMoreover, qualitative analysis shows dissimilarities in the most common POS tags between the Cookie task’s AD and non-AD cluster(s). Table 3 shows the comparison between representative AD and non-AD clusters for the Cookie task. The ADpositive cluster has only 2 most-used POS tags in common with the non-AD cluster. In fact, none of the 3 non-AD clusters found in Table 2 have adjectives or adverbs in their most-used POS tags list, unlike the AD cluster in Table 3."
+    },
+    {
+      "heading": "6.3 First Derivative Saliency Heat Maps",
+      "text": "Saliency heat maps (Simonyan et al., 2013) illustrate which words in an input had the biggest impact on the classification of the whole sentence. This is done by taking the gradient of the final scores w.r.t. the word embeddings of the inputs.\nHeat Map Analysis The filler words “uh” and “um” are emphasized in Figure 3 (left), showing that they have a lot of influence on classification. The initial “and” is highlighted as well, corroborating the results of the activation clusters in that starting with a coordinating conjunction is a trait of Alzheimer’s speech. However, in Figure 3 (middle), the “uh” filler word is not highlighted, showing that most control patients do not use filler\nwords as heavily as Alzheimer’s patients. Instead, words that give structure to a sentence have the biggest impact on classification, such as definite articles and determiners (e.g., “the” and “that”). Figure 3 (middle) shows that the most highlighted words are “the”, “that” and “is”.\nVisualizing Limitations Furthermore, by visualizing an incorrectly classified example, we can learn about the limitations of our neural network. Figure 3 (right) illustrates a map of an incorrectly predicted sample. The model misclassified it due to the length of the utterance (activation clustering showed that AD patients tend to have short bursts of speech, see Section 6.2.1) and the heavy use of determiners. However, the repeated “um”s and starting with a coordinating conjunction strongly indicated AD, which confused our model. From Figure 3, the repeated use of filler words (i.e. “uh”) had the second most influence on classification. In future work, with more context data and advanced neural methods, our model’s next steps will be to learn how to better classify samples that strongly exhibit both AD and control features."
+    },
+    {
+      "heading": "7 Conclusion",
+      "text": "We applied three models to the AD classification task, and our CNN-LSTM model achieves a new benchmark accuracy in classifying AD using neural models. We illustrate with two visualization techniques how these models capture unique linguistic features present in AD patients. We also discussed gender analysis. Potential future work includes using more conversational context and implementing multi-class classification to differentiate among stages of AD. We also plan to apply this generalizable model to other similar neurological diseases, such as Diffuse Lewy Body disease and Huntington’s disease (Heindel et al., 1989)."
+    },
+    {
+      "heading": "Acknowledgments",
+      "text": "We thank the anonymous reviewers for their helpful comments. This work was supported by a Google Faculty Research Award, a Bloomberg Data Science Research Grant, an IBM Faculty Award, and NVidia GPU awards."
+    },
+    {
+      "heading": "A Supplementary Materials",
+      "text": "A.1 Training Details All models had a vocabulary size of 2396, and used an Adam optimizer (Kingma and Ba, 2014) with a learning rate of 1e−4. All gradient norms were clipped to 2.0 (Pascanu et al., 2013b; Graves, 2013). For each model, the hyperparameters were tuned using the development set.\nCNN We used a 2-D CNN. Filter sizes of [3, 4, 5] were used with 128 filters per filter size. Batch size was set to 128, and a dropout (Srivastava et al., 2014) of 0.80 was applied.\nLSTM Our LSTM had 2 layers with 128 hidden units. Batch size was 32, and a dropout of 0.70 was used.\nCNN-LSTM Our CNN-LSTM model consisted of an LSTM on top of a CNN. The CNN had 100 filters per filter size of [3, 4, 5, 6]. Embedding dimensions of 300 were used. An LSTM with 300 hidden units was used. Both dropout on the CNN and recurrent dropout (Gal and Ghahramani, 2016) on the LSTM used a dropout rate of 0.65.\nA.2 Dataset Details Each transcript in DementiaBank comes with automatic morphosyntactic analysis, such as standard part-of-speech tagging, description of tense, and markers for repetitions. This automatic tagging is identical to that done on other datasets, such as the CHILDES TalkBank, and is thus not specific to DementiaBank. This dataset features transcripts of 104 different control patients, and 208 different diagnosed dementia patients. There is a total of 1017 Alzheimer’s transcripts and 243 control transcripts. Each of these transcripts were then broken down by sentences and interruptions by the interviewer. We used each utterance by the patient as a data sample. Within the 14362 utterance samples, 11458 come from transcripts of Alzheimer’s-diagnosed interviewees and 2904 from those of control patients. Therefore, a majority-baseline classifier that always guesses AD-positive will achieve an accuracy of 79.8% in our dataset. Each utterance has a POStagged counterpart in the dataset. A 80/10/10 train/dev/test split was used for each setting."
+    }
+  ],
+  "title": "Detecting Linguistic Characteristics of Alzheimer’s Dementia by Interpreting Neural Models",
+  "year": 2018
+}

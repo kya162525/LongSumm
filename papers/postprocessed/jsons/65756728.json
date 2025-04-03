@@ -1,0 +1,558 @@
+{
+  "abstractText": "Graph Neural Networks (GNNs) are a powerful tool for machine learning on graphs. GNNs combine node feature information with the graph structure by recursively passing neural messages along edges of the input graph. However, incorporating both graph structure and feature information leads to complex models and explaining predictions made by GNNs remains unsolved. Here we propose GNNEXPLAINER, the first general, model-agnostic approach for providing interpretable explanations for predictions of any GNN-based model on any graph-based machine learning task. Given an instance, GNNEXPLAINER identifies a compact subgraph structure and a small subset of node features that have a crucial role in GNN’s prediction. Further, GNNEXPLAINER can generate consistent and concise explanations for an entire class of instances. We formulate GNNEXPLAINER as an optimization task that maximizes the mutual information between a GNN’s prediction and distribution of possible subgraph structures. Experiments on synthetic and real-world graphs show that our approach can identify important graph structures as well as node features, and outperforms alternative baseline approaches by up to 43.0% in explanation accuracy. GNNEXPLAINER provides a variety of benefits, from the ability to visualize semantically relevant structures to interpretability, to giving insights into errors of faulty GNNs.",
+  "authors": [
+    {
+      "affiliations": [],
+      "name": "Rex Ying"
+    },
+    {
+      "affiliations": [],
+      "name": "Dylan Bourgeois"
+    },
+    {
+      "affiliations": [],
+      "name": "Jiaxuan You"
+    },
+    {
+      "affiliations": [],
+      "name": "Marinka Zitnik"
+    },
+    {
+      "affiliations": [],
+      "name": "Jure Leskovec"
+    }
+  ],
+  "id": "SP:cd1049e3c3e78cc8cabb4b35b490cbf21bfaa1be",
+  "references": [
+    {
+      "authors": [
+        "A. Adadi",
+        "M. Berrada"
+      ],
+      "title": "Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)",
+      "venue": "IEEE Access, 6:52138–52160",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "J. Adebayo",
+        "J. Gilmer",
+        "M. Muelly",
+        "I. Goodfellow",
+        "M. Hardt",
+        "B. Kim"
+      ],
+      "title": "Sanity checks for saliency maps",
+      "venue": "NeurIPS",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "M. Gethsiyal Augasta",
+        "T. Kathirvalavakumar"
+      ],
+      "title": "Reverse Engineering the Neural Networks for Rule Extraction in Classification Problems",
+      "venue": "Neural Processing Letters,",
+      "year": 2012
+    },
+    {
+      "authors": [
+        "Peter W Battaglia",
+        "Jessica B Hamrick",
+        "Victor Bapst",
+        "Alvaro Sanchez-Gonzalez",
+        "Vinicius Zambaldi",
+        "Mateusz Malinowski",
+        "Andrea Tacchetti",
+        "David Raposo",
+        "Adam Santoro",
+        "Ryan Faulkner"
+      ],
+      "title": "Relational inductive biases, deep learning, and graph networks",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "J. Chen",
+        "J. Zhu",
+        "L. Song"
+      ],
+      "title": "Stochastic training of graph convolutional networks with variance reduction",
+      "venue": "ICML",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "Jianbo Chen",
+        "Le Song",
+        "Martin J Wainwright",
+        "Michael I Jordan"
+      ],
+      "title": "Learning to explain: An information-theoretic perspective on model interpretation",
+      "venue": "arXiv preprint arXiv:1802.07814,",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "Jie Chen",
+        "Tengfei Ma",
+        "Cao Xiao"
+      ],
+      "title": "Fastgcn: fast learning with graph convolutional networks via importance sampling",
+      "venue": "In ICLR,",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "Z. Chen",
+        "L. Li",
+        "J. Bruna"
+      ],
+      "title": "Supervised community detection with line graph neural networks",
+      "venue": "ICLR",
+      "year": 2019
+    },
+    {
+      "authors": [
+        "E. Cho",
+        "S. Myers",
+        "J. Leskovec"
+      ],
+      "title": "Friendship and mobility: user movement in location-based social networks",
+      "venue": "KDD",
+      "year": 2011
+    },
+    {
+      "authors": [
+        "A. Debnath"
+      ],
+      "title": "Structure-activity relationship of mutagenic aromatic and heteroaromatic nitro compounds. correlation with molecular orbital energies and hydrophobicity",
+      "venue": "Journal of Medicinal Chemistry,",
+      "year": 1991
+    },
+    {
+      "authors": [
+        "F. Doshi-Velez",
+        "B. Kim"
+      ],
+      "title": "Towards A Rigorous Science of Interpretable Machine Learning",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "D. Duvenaud"
+      ],
+      "title": "Convolutional networks on graphs for learning molecular fingerprints",
+      "venue": "In NIPS,",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "D. Erhan",
+        "Y. Bengio",
+        "A. Courville",
+        "P. Vincent"
+      ],
+      "title": "Visualizing higher-layer features of a deep network",
+      "venue": "University of Montreal, 1341(3):1",
+      "year": 2009
+    },
+    {
+      "authors": [
+        "A. Fisher",
+        "C. Rudin",
+        "F. Dominici"
+      ],
+      "title": "All Models are Wrong but many are Useful: Variable Importance for Black-Box, Proprietary, or Misspecified Prediction Models, using Model Class Reliance",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "R. Guidotti"
+      ],
+      "title": "A Survey of Methods for Explaining Black Box Models",
+      "venue": "ACM Comput. Surv.,",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "W. Hamilton",
+        "Z. Ying",
+        "J. Leskovec"
+      ],
+      "title": "Inductive representation learning on large graphs",
+      "venue": "NIPS",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "G. Hooker"
+      ],
+      "title": "Discovering additive structure in black box functions",
+      "venue": "KDD",
+      "year": 2004
+    },
+    {
+      "authors": [
+        "W.B. Huang",
+        "T. Zhang",
+        "Y. Rong",
+        "J. Huang"
+      ],
+      "title": "Adaptive sampling towards fast graph representation learning",
+      "venue": "NeurIPS",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "Bo Kang",
+        "Jefrey Lijffijt",
+        "Tijl De Bie"
+      ],
+      "title": "Explaine: An approach for explaining network embedding-based link predictions",
+      "year": 1904
+    },
+    {
+      "authors": [
+        "Diederik P Kingma",
+        "Max Welling"
+      ],
+      "title": "Auto-encoding variational bayes",
+      "venue": "In NeurIPS,",
+      "year": 2013
+    },
+    {
+      "authors": [
+        "T.N. Kipf",
+        "M. Welling"
+      ],
+      "title": "Semi-supervised classification with graph convolutional networks",
+      "venue": "ICLR",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Thomas Kipf",
+        "Ethan Fetaya",
+        "Kuan-Chieh Wang",
+        "Max Welling",
+        "Richard Zemel"
+      ],
+      "title": "Neural relational inference for interacting systems",
+      "venue": "In ICML,",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "P.W. Koh",
+        "P. Liang"
+      ],
+      "title": "Understanding black-box predictions via influence functions",
+      "venue": "ICML",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Srijan Kumar",
+        "William L Hamilton",
+        "Jure Leskovec",
+        "Dan Jurafsky"
+      ],
+      "title": "Community interaction and conflict on the web",
+      "venue": "In WWW,",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "H. Lakkaraju",
+        "E. Kamar",
+        "R. Caruana"
+      ],
+      "title": "and J",
+      "venue": "Leskovec. Interpretable & Explorable Approximations of Black Box Models",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Y. Li",
+        "D. Tarlow",
+        "M. Brockschmidt",
+        "R. Zemel"
+      ],
+      "title": "Gated graph sequence neural networks",
+      "venue": "arXiv:1511.05493",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "S. Lundberg",
+        "Su-In Lee"
+      ],
+      "title": "A Unified Approach to Interpreting Model Predictions",
+      "venue": "In NIPS,",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "D. Neil"
+      ],
+      "title": "Interpretable Graph Convolutional Neural Networks for Inference on Noisy Knowledge Graphs",
+      "venue": "In ML4H Workshop at NeurIPS,",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "M. Ribeiro",
+        "S. Singh",
+        "C. Guestrin"
+      ],
+      "title": "Why should i trust you?: Explaining the predictions of any classifier",
+      "venue": "KDD",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "G.J. Schmitz",
+        "C. Aldrich",
+        "F.S. Gouws"
+      ],
+      "title": "ANN-DT: an algorithm for extraction of decision trees from artificial neural networks",
+      "venue": "IEEE Transactions on Neural Networks",
+      "year": 1999
+    },
+    {
+      "authors": [
+        "A. Shrikumar",
+        "P. Greenside",
+        "A. Kundaje"
+      ],
+      "title": "Learning Important Features Through Propagating Activation Differences",
+      "venue": "ICML",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "M. Sundararajan",
+        "A. Taly",
+        "Q. Yan"
+      ],
+      "title": "Axiomatic Attribution for Deep Networks",
+      "venue": "ICML",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "P. Velickovic",
+        "G. Cucurull",
+        "A. Casanova",
+        "A. Romero",
+        "P. Liò",
+        "Y. Bengio"
+      ],
+      "title": "Graph attention networks",
+      "venue": "ICLR",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "T. Xie",
+        "J. Grossman"
+      ],
+      "title": "Crystal graph convolutional neural networks for an accurate and interpretable prediction of material properties",
+      "venue": "Phys. Rev. Lett.",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "K. Xu",
+        "W. Hu",
+        "J. Leskovec"
+      ],
+      "title": "and S",
+      "venue": "Jegelka. How powerful are graph neural networks? In ICRL",
+      "year": 2019
+    },
+    {
+      "authors": [
+        "K. Xu",
+        "C. Li",
+        "Y. Tian",
+        "T. Sonobe",
+        "K. Kawarabayashi",
+        "S. Jegelka"
+      ],
+      "title": "Representation learning on graphs with jumping knowledge networks",
+      "venue": "ICML",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "Pinar Yanardag",
+        "SVN Vishwanathan"
+      ],
+      "title": "Deep graph kernels",
+      "venue": "In KDD, pages 1365–1374",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "C. Yeh",
+        "J. Kim",
+        "I. Yen",
+        "P. Ravikumar"
+      ],
+      "title": "Representer point selection for explaining deep neural networks",
+      "venue": "NeurIPS",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "R. Ying",
+        "R. He",
+        "K. Chen",
+        "P. Eksombatchai",
+        "W. Hamilton",
+        "J. Leskovec"
+      ],
+      "title": "Graph convolutional neural networks for web-scale recommender systems",
+      "venue": "KDD",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "Z. Ying",
+        "J. You",
+        "C. Morris",
+        "X. Ren",
+        "W. Hamilton",
+        "J. Leskovec"
+      ],
+      "title": "Hierarchical graph representation learning with differentiable pooling",
+      "venue": "NeurIPS",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "J. You",
+        "B. Liu",
+        "R. Ying",
+        "V. Pande",
+        "J. Leskovec"
+      ],
+      "title": "Graph convolutional policy network for goal-directed molecular graph generation",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "J. You"
+      ],
+      "title": "Rex Ying",
+      "venue": "and J. Leskovec. Position-aware graph neural networks. In ICML",
+      "year": 2019
+    },
+    {
+      "authors": [
+        "M. Zeiler",
+        "R. Fergus"
+      ],
+      "title": "Visualizing and Understanding Convolutional Networks",
+      "venue": "In ECCV",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "M. Zhang",
+        "Y. Chen"
+      ],
+      "title": "Link prediction based on graph neural networks",
+      "venue": "NIPS",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "J. Zhou",
+        "G. Cui",
+        "Z. Zhang",
+        "C. Yang",
+        "Z. Liu",
+        "M. Sun"
+      ],
+      "title": "Graph Neural Networks: A Review of Methods and Applications",
+      "venue": "arXiv:1812.08434",
+      "year": 2018
+    },
+    {
+      "authors": [
+        "J. Zilke",
+        "E. Loza Mencia",
+        "F. Janssen"
+      ],
+      "title": "DeepRED - Rule Extraction from Deep Neural Networks",
+      "venue": "Discovery Science. Springer International Publishing",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "L. Zintgraf",
+        "T. Cohen",
+        "T. Adel",
+        "M. Welling"
+      ],
+      "title": "Visualizing deep neural network decisions: Prediction difference analysis",
+      "venue": "ICLR",
+      "year": 2017
+    }
+  ],
+  "sections": [
+    {
+      "heading": "1 Introduction",
+      "text": "In many real-world applications, including social, information, chemical, and biological domains, data can be naturally modeled as graphs [9, 41, 49]. Graphs are powerful data representations but are challenging to work with because they require modeling of rich relational information as well as node feature information [45, 46]. To address this challenge, Graph Neural Networks (GNNs) have emerged as state-of-the-art for machine learning on graphs, due to their ability to recursively incorporate information from neighboring nodes in the graph, naturally capturing both graph structure and node features [16, 21, 40, 44].\nDespite their strengths, GNNs lack transparency as they do not easily allow for a human-intelligible explanation of their predictions. Yet, the ability to understand GNN’s predictions is important and useful for several reasons: (i) it can increase trust in the GNN model, (ii) it improves model’s transparency in a growing number of decision-critical applications pertaining to fairness, privacy and other safety challenges [11], and (iii) it allows practitioners to get an understanding of the network characteristics, identify and correct systematic patterns of mistakes made by models before deploying them in the real world.\nWhile currently there are no methods for explaining GNNs, recent approaches for explaining other types of neural networks have taken one of two main routes. One line of work locally approximates\n33rd Conference on Neural Information Processing Systems (NeurIPS 2019), Vancouver, Canada.\nar X\niv :1\n90 3.\n03 89\n4v 4\n[ cs\n.L G\n] 1\n3 N\nov 2\nmodels with simpler surrogate models, which are then probed for explanations [25, 29, 30]. Other methods carefully examine models for relevant features and find good qualitative interpretations of high level features [6, 13, 27, 32] or identify influential input instances [23, 38]. However, these approaches fall short in their ability to incorporate relational information, the essence of graphs. Since this aspect is crucial for the success of machine learning on graphs, any explanation of GNN’s predictions should leverage rich relational information provided by the graph as well as node features.\nHere we propose GNNEXPLAINER, an approach for explaining predictions made by GNNs. GNNEXPLAINER takes a trained GNN and its prediction(s), and it returns an explanation in the form of a small subgraph of the input graph together with a small subset of node features that are most influential for the prediction(s) (Figure 1). The approach is model-agnostic and can explain predictions of any GNN on any machine learning task for graphs, including node classification, link prediction, and graph classification. It handles single- as well as multi-instance explanations. In the case of single-instance explanations, GNNEXPLAINER explains a GNN’s prediction for one particular instance (i.e., a node label, a new link, a graph-level label). In the case of multi-instance explanations, GNNEXPLAINER provides an explanation that consistently explains a set of instances (e.g., nodes of a given class).\nGNNEXPLAINER specifies an explanation as a rich subgraph of the entire graph the GNN was trained on, such that the subgraph maximizes the mutual information with GNN’s prediction(s). This is achieved by formulating a mean field variational approximation and learning a real-valued graph mask which selects the important subgraph of the GNN’s computation graph. Simultaneously, GNNEXPLAINER also learns a feature mask that masks out unimportant node features (Figure 1).\nWe evaluate GNNEXPLAINER on synthetic as well as real-world graphs. Experiments show that GNNEXPLAINER provides consistent and concise explanations of GNN’s predictions. On synthetic graphs with planted network motifs, which play a role in determining node labels, we show that GNNEXPLAINER accurately identifies the subgraphs/motifs as well as node features that determine node labels outperforming alternative baseline approaches by up to 43.0% in explanation accuracy. Further, using two real-world datasets we show how GNNEXPLAINER can provide important domain insights by robustly identifying important graph structures and node features that influence a GNN’s predictions. Specifically, using molecular graphs and social interaction networks, we show that GNNEXPLAINER can identify important domain-specific graph structures, such as NO2 chemical groups or ring structures in molecules, and star structures in Reddit threads. Overall, experiments demonstrate that GNNEXPLAINER provides consistent and concise explanations for GNN-based models for different machine learning tasks on graphs."
+    },
+    {
+      "heading": "2 Related work",
+      "text": "Although the problem of explaining GNNs is not well-studied, the related problems of interpretability and neural debugging received substantial attention in machine learning. At a high level, we can group those interpretability methods for non-graph neural networks into two main families.\nMethods in the first family formulate simple proxy models of full neural networks. This can be done in a model-agnostic way, usually by learning a locally faithful approximation around the prediction, for example through linear models [29] or sets of rules, representing sufficient conditions on the prediction [3, 25, 47]. Methods in the second family identify important aspects of the computation, for example, through feature gradients [13, 43], backpropagation of neurons’ contributions to the input features [6, 31, 32], and counterfactual reasoning [19]. However, the saliency maps [43] produced by these methods have been shown to be misleading in some instances [2] and prone to issues like gradient saturation [31, 32]. These issues are exacerbated on discrete inputs such as graph adjacency matrices since the gradient values can be very large but only on very small intervals. Because of that, such approaches are not suitable for explaining predictions made by neural networks on graphs.\nInstead of creating new, inherently interpretable models, post-hoc interpretability methods [1, 14, 15, 17, 23, 38] consider models as black boxes and then probe them for relevant information. However, no work has been done to leverage relational structures like graphs. The lack of methods for explaining predictions on graph-structured data is problematic, as in many cases, predictions on graphs are induced by a complex combination of nodes and paths of edges between them. For example, in some tasks, an edge is important only when another alternative path exists in the graph to form a cycle, and those two features, only when considered together, can accurately predict node labels [10, 12]. Their joint contribution thus cannot be modeled as a simple linear combinations of individual contributions.\nFinally, recent GNN models augment interpretability via attention mechanisms [28, 33, 34]. However, although the learned edge attention values can indicate important graph structure, the values are the same for predictions across all nodes. Thus, this contradicts with many applications where an edge is essential for predicting the label of one node but not the label of another node. Furthermore, these approaches are either limited to specific GNN architectures or cannot explain predictions by jointly considering both graph structure and node feature information.\n3 Formulating explanations for graph neural networks\nLet G denote a graph on edges E and nodes V that are associated with d-dimensional node features X = {x1, . . . , xn}, xi ∈ Rd. Without loss of generality, we consider the problem of explaining a node classification task (see Section 4.4 for other tasks). Let f denote a label function on nodes f : V 7→ {1, . . . , C} that maps every node in V to one of C classes. The GNN model Φ is optimized on all nodes in the training set and is then used for prediction, i.e., to approximate f on new nodes."
+    },
+    {
+      "heading": "3.1 Background on graph neural networks",
+      "text": "At layer l, the update of GNN model Φ involves three key computations [4, 45, 46]. (1) First, the model computes neural messages between every pair of nodes. The message for node pair (vi, vj) is a function MSG of vi’s and vj’s representations hl−1i and h l−1 j in the previous layer and of the relation rij between the nodes: mlij = MSG(h l−1 i ,h l−1 j , rij). (2) Second, for each node vi, GNN aggregates\nmessages from vi’s neighborhood Nvi and calculates an aggregated message Mi via an aggregation method AGG [16, 35]: M li = AGG({mlij |vj ∈ Nvi}), where Nvi is neighborhood of node vi whose definition depends on a particular GNN variant. (3) Finally, GNN takes the aggregated message M li along with vi’s representation hl−1i from the previous layer, and it non-linearly transforms them to obtain vi’s representation hli at layer l: h l i = UPDATE(M l i ,h l−1 i ). The final embedding for node vi after L layers of computation is zi = hLi . Our GNNEXPLAINER provides explanations for any GNN that can be formulated in terms of MSG, AGG, and UPDATE computations."
+    },
+    {
+      "heading": "3.2 GNNEXPLAINER: Problem formulation",
+      "text": "Our key insight is the observation that the computation graph of node v, which is defined by the GNN’s neighborhood-based aggregation (Figure 2), fully determines all the information the GNN uses to generate prediction ŷ at node v. In particular, v’s computation graph tells the GNN how to generate v’s embedding z. Let us denote that computation graph by Gc(v), the associated binary adjacency matrix byAc(v) ∈ {0, 1}n×n, and the associated feature set byXc(v) = {xj |vj ∈ Gc(v)}. The GNN model Φ learns a conditional distribution PΦ(Y |Gc, Xc), where Y is a random variable representing labels {1, . . . , C}, indicating the probability of nodes belonging to each of C classes. A GNN’s prediction is given by ŷ = Φ(Gc(v), Xc(v)), meaning that it is fully determined by the model Φ, graph structural information Gc(v), and node feature information Xc(v). In effect, this observation implies that we only need to consider graph structure Gc(v) and node features Xc(v) to explain ŷ (Figure 2A). Formally, GNNEXPLAINER generates explanation for prediction ŷ as (GS , X F S ), where GS is a small subgraph of the computation graph. XS is the associated feature of GS , and XFS is a small subset of node features (masked out by the mask F , i.e., X F S = {xFj |vj ∈ GS}) that are most important for explaining ŷ (Figure 2B)."
+    },
+    {
+      "heading": "4 GNNEXPLAINER",
+      "text": "Next we describe our approach GNNEXPLAINER. Given a trained GNN model Φ and a prediction (i.e., single-instance explanation, Sections 4.1 and 4.2) or a set of predictions (i.e., multi-instance explanations, Section 4.3), the GNNEXPLAINER will generate an explanation by identifying a subgraph of the computation graph and a subset of node features that are most influential for the model Φ’s prediction. In the case of explaining a set of predictions, GNNEXPLAINER will aggregate individual explanations in the set and automatically summarize it with a prototype. We conclude this section with a discussion on how GNNEXPLAINER can be used for any machine learning task on graphs, including link prediction and graph classification (Section 4.4)."
+    },
+    {
+      "heading": "4.1 Single-instance explanations",
+      "text": "Given a node v, our goal is to identify a subgraph GS ⊆ Gc and the associated features XS = {xj |vj ∈ GS} that are important for the GNN’s prediction ŷ. For now, we assume that XS is a small subset of d-dimensional node features; we will later discuss how to automatically determine which dimensions of node features need to be included in explanations (Section 4.2). We formalize the notion of importance using mutual information MI and formulate the GNNEXPLAINER as the following optimization framework:\nmax GS\nMI (Y, (GS , XS)) = H(Y )−H(Y |G = GS , X = XS). (1)\nFor node v, MI quantifies the change in the probability of prediction ŷ = Φ(Gc, Xc) when v’s computation graph is limited to explanation subgraph GS and its node features are limited to XS .\nFor example, consider the situation where vj ∈ Gc(vi), vj 6= vi. Then, if removing vj from Gc(vi) strongly decreases the probability of prediction ŷi, the node vj is a good counterfactual explanation for the prediction at vi. Similarly, consider the situation where (vj , vk) ∈ Gc(vi), vj , vk 6= vi. Then, if removing an edge between vj and vk strongly decreases the probability of prediction ŷi then the absence of that edge is a good counterfactual explanation for the prediction at vi.\nExamining Eq. (1), we see that the entropy term H(Y ) is constant because Φ is fixed for a trained GNN. As a result, maximizing mutual information between the predicted label distribution Y and\nexplanation (GS , XS) is equivalent to minimizing conditional entropy H(Y |G = GS , X = XS), which can be expressed as follows:\nH(Y |G=GS , X=XS) = −EY |GS ,XS [logPΦ(Y |G=GS , X=XS)] . (2)\nExplanation for prediction ŷ is thus a subgraph GS that minimizes uncertainty of Φ when the GNN computation is limited to GS . In effect, GS maximizes probability of ŷ (Figure 2). To obtain a compact explanation, we impose a constraint on GS’s size as: |GS | ≤ KM , so that GS has at most KM nodes. In effect, this implies that GNNEXPLAINER aims to denoise Gc by taking KM edges that give the highest mutual information with the prediction. GNNEXPLAINER’s optimization framework. Direct optimization of GNNEXPLAINER’s objective is not tractable as Gc has exponentially many subgraphs GS that are candidate explanations for ŷ. We thus consider a fractional adjacency matrix1 for subgraphs GS , i.e., AS ∈ [0, 1]n×n, and enforce the subgraph constraint as: AS [j, k] ≤ Ac[j, k] for all j, k. This continuous relaxation can be interpreted as a variational approximation of distribution of subgraphs of Gc. In particular, if we treat GS ∼ G as a random graph variable, the objective in Eq. (2) becomes:\nmin G EGS∼GH(Y |G = GS , X = XS), (3)\nWith convexity assumption, Jensen’s inequality gives the following upper bound:\nmin G H(Y |G = EG [GS ], X = XS). (4)\nIn practice, due to the complexity of neural networks, the convexity assumption does not hold. However, experimentally, we found that minimizing this objective with regularization often leads to a local minimum corresponding to high-quality explanations.\nTo tractably estimate EG , we use mean-field variational approximation and decompose G into a multivariate Bernoulli distribution as: PG(GS) = ∏ (j,k)∈Gc AS [j, k]. This allows us to estimate the expectation with respect to the mean-field approximation, thereby obtaining AS in which (j, k)-th entry represents the expectation on whether edge (vj , vk) exists. We observed empirically that this approximation together with a regularizer for promoting discreteness [40] converges to good local minima despite the non-convexity of GNNs. The conditional entropy in Equation 4 can be optimized by replacing the EG [GS ] to be optimized by a masking of the computation graph of adjacency matrix, Ac σ(M), where M ∈ Rn×n denotes the mask that we need to learn, denotes element-wise multiplication, and σ denotes the sigmoid that maps the mask to [0, 1]n×n.\nIn some applications, instead of finding an explanation in terms of model’s confidence, the users care more about “why does the trained model predict a certain class label”, or “how to make the trained model predict a desired class label”. We can modify the conditional entropy objective in Equation 4 with a cross entropy objective between the label class and the model prediction2. To answer these queries, a computationally efficient version of GNNEXPLAINER’s objective, which we optimize using gradient descent, is as follows:\nmin M − C∑ c=1 1[y = c] logPΦ(Y = y|G = Ac σ(M), X = Xc), (5)\nThe masking approach is also found in Neural Relational Inference [22], albeit with different motivation and objective. Lastly, we compute the element-wise multiplication of σ(M) and Ac and remove low values in M through thresholding to arrive at the explanation GS for the GNN model’s prediction ŷ at node v.\n4.2 Joint learning of graph structural and node feature information\nTo identify what node features are most important for prediction ŷ, GNNEXPLAINER learns a feature selector F for nodes in explanation GS . Instead of defining XS to consists of all node features, i.e.,\n1For typed edges, we define GS ∈ [0, 1]Ce×n×n where Ce is the number of edge types. 2The label class is the predicted label class by the GNN model to be explained, when answering “why does the trained model predict a certain class label”. “how to make the trained model predict a desired class label” can be answered by using the ground-truth label class.\nXS = {xj |vj ∈ GS}, GNNEXPLAINER considers XFS as a subset of features of nodes in GS , which are defined through a binary feature selector F ∈ {0, 1}d (Figure 2B):\nXFS = {xFj |vj ∈ GS}, xFj = [xj,t1 , . . . , xj,tk ] for Fti = 1, (6) where xFj has node features that are not masked out by F . Explanation (GS , XS) is then jointly optimized for maximizing the mutual information objective:\nmax GS ,F\nMI (Y, (GS , F )) = H(Y )−H(Y |G = GS , X = XFS ), (7)\nwhich represents a modified objective function from Eq. (1) that considers structural and node feature information to generate an explanation for prediction ŷ. Learning binary feature selector F . We specify XFS as XS F , where F acts as a feature mask that we need to learn. Intuitively, if a particular feature is not important, the corresponding weights in GNN’s weight matrix take values close to zero. In effect, this implies that masking the feature out does not decrease predicted probability for ŷ. Conversely, if the feature is important then masking it out would decrease predicted probability. However, in some cases this approach ignores features that are important for prediction but take values close to zero. To address this issue we marginalize over all feature subsets and use a Monte Carlo estimate to sample from empirical marginal distribution for nodes in XS during training [48]. Further, we use a reparametrization trick [20] to backpropagate gradients in Eq. (7) to the feature mask F . In particular, to backpropagate through a d-dimensional random variable X we reparametrize X as: X = Z + (XS − Z) F s.t. ∑ j Fj ≤ KF , where Z is a d-dimensional random variable sampled from the empirical distribution and KF is a parameter representing the maximum number of features to be kept in the explanation. Integrating additional constraints into explanations. To impose further properties on the explanation we can extend GNNEXPLAINER’s objective function in Eq. (7) with regularization terms. For example, we use element-wise entropy to encourage structural and node feature masks to be discrete. Further, GNNEXPLAINER can encode domain-specific constraints through techniques like Lagrange multiplier of constraints or additional regularization terms. We include a number of regularization terms to produce explanations with desired properties. We penalize large size of the explanation by adding the sum of all elements of the mask paramters as the regularization term.\nFinally, it is important to note that each explanation must be a valid computation graph. In particular, explanation (GS , XS) needs to allow GNN’s neural messages to flow towards node v such that GNN can make prediction ŷ. Importantly, GNNEXPLAINER automatically provides explanations that represent valid computation graphs because it optimizes structural masks across entire computation graphs. Even if a disconnected edge is important for neural message-passing, it will not be selected for explanation as it cannot influence GNN’s prediction. In effect, this implies that the explanation GS tends to be a small connected subgraph.\n4.3 Multi-instance explanations through graph prototypes\nThe output of a single-instance explanation (Sections 4.1 and 4.2) is a small subgraph of the input graph and a small subset of associated node features that are most influential for a single prediction. To answer questions like “How did a GNN predict that a given set of nodes all have label c?”, we need to obtain a global explanation of class c. Our goal here is to provide insight into how the identified subgraph for a particular node relates to a graph structure that explains an entire class. GNNEXPLAINER can provide multi-instance explanations based on graph alignments and prototypes. Our approach has two stages:\nFirst, for a given class c (or, any set of predictions that we want to explain), we first choose a reference node vc, for example, by computing the mean embedding of all nodes assigned to c. We then take explanation GS(vc) for reference vc and align it to explanations of other nodes assigned to class c. Finding optimal matching of large graphs is challenging in practice. However, the singleinstance GNNEXPLAINER generates small graphs (Section 4.2) and thus near-optimal pairwise graph matchings can be efficiently computed.\nSecond, we aggregate aligned adjacency matrices into a graph prototype Aproto using, for example, a robust median-based approach. Prototype Aproto gives insights into graph patterns shared between nodes that belong to the same class. One can then study prediction for a particular node by comparing explanation for that node’s prediction (i.e., returned by single-instance explanation approach) to the prototype (see Appendix for more information)."
+    },
+    {
+      "heading": "4.4 GNNEXPLAINER model extensions",
+      "text": "Any machine learning task on graphs. In addition to explaining node classification, GNNEXPLAINER provides explanations for link prediction and graph classification with no change to its optimization algorithm. When predicting a link (vj , vk), GNNEXPLAINER learns two masks XS(vj) and XS(vk) for both endpoints of the link. When classifying a graph, the adjacency matrix in Eq. (5) is the union of adjacency matrices for all nodes in the graph whose label we want to explain. However, note that in graph classification, unlike node classification, due to the aggregation of node embeddings, it is no longer true that the explanation GS is necessarily a connected subgraph. Depending on application, in some scenarios such as chemistry where explanation is a functional group and should be connected, one can extract the largest connected component as the explanation. Any GNN model. Modern GNNs are based on message passing architectures on the input graph. The message passing computation graphs can be composed in many different ways and GNNEXPLAINER can account for all of them. Thus, GNNEXPLAINER can be applied to: Graph Convolutional Networks [21], Gated Graph Sequence Neural Networks [26], Jumping Knowledge Networks [36], Attention Networks [33], Graph Networks [4], GNNs with various node aggregation schemes [7, 5, 18, 16, 40, 39, 35], Line-Graph NNs [8], position-aware GNN [42], and many other GNN architectures. Computational complexity. The number of parameters in GNNEXPLAINER’s optimization depends on the size of computation graph Gc for node v whose prediction we aim to explain. In particular, Gc(v)’s adjacency matrix Ac(v) is equal to the size of the mask M , which needs to be learned by GNNEXPLAINER. However, since computation graphs are typically relatively small, compared to the size of exhaustive L-hop neighborhoods (e.g., 2-3 hop neighborhoods [21], sampling-based neighborhoods [39], neighborhoods with attention [33]), GNNEXPLAINER can effectively generate explanations even when input graphs are large."
+    },
+    {
+      "heading": "5 Experiments",
+      "text": "We begin by describing the graphs, alternative baseline approaches, and experimental setup. We then present experiments on explaining GNNs for node classification and graph classification tasks. Our qualitative and quantitative analysis demonstrates that GNNEXPLAINER is accurate and effective in identifying explanations, both in terms of graph structure and node features. Synthetic datasets. We construct four kinds of node classification datasets (Table 1). (1) In BASHAPES, we start with a base Barabási-Albert (BA) graph on 300 nodes and a set of 80 five-node “house”-structured network motifs, which are attached to randomly selected nodes of the base graph. The resulting graph is further perturbed by adding 0.1N random edges. Nodes are assigned to 4 classes based on their structural roles. In a house-structured motif, there are 3 types of roles: the top, middle and bottom node of the house. Therefore there are 4 different classes, corresponding to nodes at the top, middle, bottom of houses, and nodes that do not belong to a house. (2) BA-COMMUNITY dataset is a union of two BA-SHAPES graphs. Nodes have normally distributed feature vectors and are assigned to one of 8 classes based on their structural roles and community memberships. (3) In TREE-CYCLES, we start with a base 8-level balanced binary tree and 80 six-node cycle motifs, which are attached to random nodes of the base graph. (4) TREE-GRID is the same as TREE-CYCLES except that 3-by-3 grid motifs are attached to the base tree graph in place of cycle motifs. Real-world datasets. We consider two graph classification datasets: (1) MUTAG is a dataset of 4,337 molecule graphs labeled according to their mutagenic effect on the Gram-negative bacterium S. typhimurium [10]. (2) REDDIT-BINARY is a dataset of 2,000 graphs, each representing an online discussion thread on Reddit. In each graph, nodes are users participating in a thread, and edges indicate that one user replied to another user’s comment. Graphs are labeled according to the type of user interactions in the thread: r/IAmA and r/AskReddit contain Question-Answer interactions, while r/TrollXChromosomes and r/atheism contain Online-Discussion interactions [37]. Alternative baseline approaches. Many explainability methods cannot be directly applied to graphs (Section 2). Nevertheless, we here consider the following alternative approaches that can provide insights into predictions made by GNNs: (1) GRAD is a gradient-based method. We compute gradient of the GNN’s loss function with respect to the adjacency matrix and the associated node features, similar to a saliency map approach. (2) ATT is a graph attention GNN (GAT) [33] that learns attention weights for edges in the computation graph, which we use as a proxy measure of edge importance. While ATT does consider graph structure, it does not explain using node features and can only explain GAT models. Furthermore, in ATT it is not obvious which attention weights need to be used for edge\nBA-Shapes\nBase\nMotif\nNode Features None Nonewhere = community ID\nGraph structure Graph structureNode feature information Explanation\ncontent Explanation accuracy\nAtt Grad\nGNNExplainer\nCommunity 1Community 0\nBA-Community Tree-Cycles\nNone\nTree-Grid\nGraph structure Graph structure\n0.925 0.882\n0.815 0.739\n0.750 0.836\n0.824\n0.905 0.948\n0.612\n0.667 0.875\nTable 1: Illustration of synthetic datasets (refer to “Synthetic datasets” for details) together with performance evaluation of GNNEXPLAINER and alternative baseline explainability approaches.\nA B\nB A\n-S ha\npe s\nB A\n-C om\nm un\nity\nTr ee\n-C yc\nle s\nTr ee\n-G rid\nComputation graph Grad Ground TruthAttComputation graph Grad Att Ground TruthGNNExplainer GNNExplainer\nFigure 3: Evaluation of single-instance explanations. A-B. Shown are exemplar explanation subgraphs for node classification task on four synthetic datasets. Each method provides explanation for the red node’s prediction.\nimportance, since a 1-hop neighbor of a node can also be a 2-hop neighbor of the same node due to cycles. Each edge’s importance is thus computed as the average attention weight across all layers. Setup and implementation details. For each dataset, we first train a single GNN for each dataset, and use GRAD and GNNEXPLAINER to explain the predictions made by the GNN. Note that the ATT baseline requires using a graph attention architecture like GAT [33]. We thus train a separate GAT model on the same dataset and use the learned edge attention weights for explanation. Hyperparameters KM ,KF control the size of subgraph and feature explanations respectively, which is informed by prior knowledge about the dataset. For synthetic datasets, we set KM to be the size of ground truth. On real-world datasets, we set KM = 10. We set KF = 5 for all datasets. We further fix our weight regularization hyperparameters across all node and graph classification experiments. We refer readers to the Appendix for more training details (Code and datasets are available at https://github.com/RexYing/gnn-model-explainer). Results. We investigate questions: Does GNNEXPLAINER provide sensible explanations? How do explanations compare to the ground-truth knowledge? How does GNNEXPLAINER perform on various graph-based prediction tasks? Can it explain predictions made by different GNNs? 1) Quantitative analyses. Results on node classification datasets are shown in Table 1. We have ground-truth explanations for synthetic datasets and we use them to calculate explanation accuracy for all explanation methods. Specifically, we formalize the explanation problem as a binary classification task, where edges in the ground-truth explanation are treated as labels and importance weights given by explainability method are viewed as prediction scores. A better explainability method predicts\nGraph classification Node classificationA B\nC O Cl H N F Br S P I NaK LiCa\nNot applicable Not applicable\nMolecular graph with node features Computation graph of red node with node featuresInput to\nGNN\nNode’s structural roleMolecule’s mutagenicity GNN’s\nPrediction\nGround Truth Feature Importance\nGNNExplainer\nGrad\nAtt\nFigure 5: Visualization of features that are important for a GNN’s prediction. A. Shown is a representative molecular graph from MUTAG dataset (top). Importance of the associated graph features is visualized with a heatmap (bottom). In contrast with baselines, GNNEXPLAINER correctly identifies features that are important for predicting the molecule’s mutagenicity, i.e. C, O, H, and N atoms. B. Shown is a computation graph of a red node from BA-COMMUNITY dataset (top). Again, GNNEXPLAINER successfully identifies the node feature that is important for predicting the structural role of the node but baseline methods fail.\nhigh scores for edges that are in the ground-truth explanation, and thus achieves higher explanation accuracy. Results show that GNNEXPLAINER outperforms alternative approaches by 17.1% on average. Further, GNNEXPLAINER achieves up to 43.0% higher accuracy on the hardest TREE-GRID dataset. 2) Qualitative analyses. Results are shown in Figures 3–5. In a topology-based prediction task with no node features, e.g. BA-SHAPES and TREE-CYCLES, GNNEXPLAINER correctly identifies network motifs that explain node labels, i.e. structural labels (Figure 3). As illustrated in the figures, house, cycle and tree motifs are identified by GNNEXPLAINER but not by baseline methods. In Figure 4, we investigate explanations for graph classification task. In MUTAG example, colors indicate node features, which represent atoms (hydrogen H, carbon C, etc). GNNEXPLAINER correctly identifies carbon ring as well as chemical groups NH2 and NO2, which are known to be mutagenic [10].\nFurther, in REDDIT-BINARY example, we see that Question-Answer graphs (2nd row in Figure 4B) have 2-3 high degree nodes that simultaneously connect to many low degree nodes, which makes sense because in QA threads on Reddit we typically have 2-3 experts who all answer many different questions [24]. Conversely, we observe that discussion patterns commonly exhibit tree-like patterns (2nd row in Figure 4A), since a thread on Reddit is usually a reaction to a single topic [24]. On the other hand, GRAD and ATT methods give incorrect or incomplete explanations. For example, both baseline methods miss cycle motifs in MUTAG dataset and more complex grid motifs in TREE-GRID dataset. Furthermore, although edge attention weights in ATT can be interpreted as importance scores for message passing, the weights are shared across all nodes in input the graph, and as such ATT fails to provide high quality single-instance explanations.\nAn essential criterion for explanations is that they must be interpretable, i.e., provide a qualitative understanding of the relationship between the input nodes and the prediction. Such a requirement implies that explanations should be easy to understand while remaining exhaustive. This means that a GNN explainer should take into account both the structure of the underlying graph as well as the associated features when they are available. Figure 5 shows results of an experiment in which GNNEXPLAINER jointly considers structural information as well as information from a small number of feature dimensions3. While GNNEXPLAINER indeed highlights a compact feature representation in Figure 5, gradient-based approaches struggle to cope with the added noise, giving high importance scores to irrelevant feature dimensions.\nFurther experiments on multi-instance explanations using graph prototypes are in Appendix."
+    },
+    {
+      "heading": "6 Conclusion",
+      "text": "We present GNNEXPLAINER, a novel method for explaining predictions of any GNN on any graphbased machine learning task without requiring modification of the underlying GNN architecture or re-training. We show how GNNEXPLAINER can leverage recursive neighborhood-aggregation scheme of graph neural networks to identify important graph pathways as well as highlight relevant node feature information that is passed along edges of the pathways. While the problem of explainability of machine-learning predictions has received substantial attention in recent literature, our work is unique in the sense that it presents an approach that operates on relational structures—graphs with rich\n3Feature explanations are shown for the two datasets with node features, i.e., MUTAG and BA-COMMUNITY.\nnode features—and provides a straightforward interface for making sense out of GNN predictions, debugging GNN models, and identifying systematic patterns of mistakes."
+    },
+    {
+      "heading": "Acknowledgments",
+      "text": "Jure Leskovec is a Chan Zuckerberg Biohub investigator. We gratefully acknowledge the support of DARPA under FA865018C7880 (ASED) and MSC; NIH under No. U54EB020405 (Mobilize); ARO under No. 38796-Z8424103 (MURI); IARPA under No. 2017-17071900005 (HFC), NSF under No. OAC-1835598 (CINES) and HDR; Stanford Data Science Initiative, Chan Zuckerberg Biohub, JD.com, Amazon, Boeing, Docomo, Huawei, Hitachi, Observe, Siemens, UST Global. The U.S. Government is authorized to reproduce and distribute reprints for Governmental purposes notwithstanding any copyright notation thereon. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views, policies, or endorsements, either expressed or implied, of DARPA, NIH, ONR, or the U.S. Government."
+    },
+    {
+      "heading": "A Multi-instance explanations",
+      "text": "The problem of multi-instance explanations for graph neural networks is challenging and an important area to study.\nHere we propose a solution based on GNNEXPLAINER to find common components of explanations for a set of 10 explanations for 10 different instances in the same label class. More research in this area is necessary to design efficient Multi-instance explanation methods. The main challenges in practice is mainly due to the difficulty to perform graph alignment under noise and variances of node neighborhood structures for nodes in the same class. The problem is closely related to finding the maximum common subgraphs of explanation graphs, which is an NP-hard problem. In the following we introduces a neural approach to this problem. However, note that existing graph libraries (based on heuristics or integer programming relaxation) to find the maximal common subgraph of graphs can be employed to replace the neural components of the following procedure, when trying to identify and align with a prototype.\nThe output of a single-instance GNNEXPLAINER indicates what graph structural and node feature information is important for a given prediction. To obtain an understanding of “why is a given set of nodes classified with label y”, we want to also obtain a global explanation of the class, which can shed light on how the identified structure for a given node is related to a prototypical structure unique for its label. To this end, we propose an alignment-based multi-instance GNNEXPLAINER.\nFor any given class, we first choose a reference node. Intuitively, this node should be a prototypical node for the class. Such node can be found by computing the mean of the embeddings of all nodes in the class, and choose the node whose embedding is the closest to the mean. Alternatively, if one has prior knowledge about the important computation subgraph, one can choose one which matches most to the prior knowledge.\nGiven the reference node for class c, vc, and its associated important computation subgraph GS(vc), we align each of the identified computation subgraphs for all nodes in class c to the reference GS(vc). Utilizing the idea in the context of differentiable pooling [40], we use the a relaxed alignment matrix to find correspondence between nodes in an computation subgraph GS(v) and nodes in the reference computation subgraph GS(vc). Let Av and Xv be the adjacency matrix and the associated feature matrix of the to-be-aligned computation subgraph. Similarly let A∗ be the adjacency matrix and associated feature matrix of the reference computation subgraph. Then we optimize the relaxed alignment matrix P ∈ Rnv×n∗ , where nv is the number of nodes in GS(v), and n∗ is the number of nodes in GS(vc) as follows:\nmin P |PTAvP −A∗|+ |PTXv −X∗|. (8)\nThe first term in Eq. (8) specifies that after alignment, the aligned adjacency for GS(v) should be as close to A∗ as possible. The second term in the equation specifies that the features should for the aligned nodes should also be close.\nIn practice, it is often non-trivial for the relaxed graph matching to find a good optimum for matching 2 large graphs. However, thanks to the single-instance explainer, which produces concise subgraphs for important message-passing, a matching that is close to the best alignment can be efficiently computed. Prototype by alignment. We align the adjacency matrices of all nodes in class c, such that they are aligned with respect to the ordering defined by the reference adjacency matrix. We then use median to generate a prototype that is resistent to outliers, Aproto = median(Ai), where Ai is the aligned adjacency matrix representing explanation for i-th node in class c. Prototype Aproto allows users to gain insights into structural graph patterns shared between nodes that belong to the same class. Users can then investigate a particular node by comparing its explanation to the class prototype.\nB Experiments on multi-instance explanations and prototypes\nIn the context of multi-instance explanations, an explainer must not only highlight information locally relevant to a particular prediction, but also help emphasize higher-level correlations across instances. These instances can be related in arbitrary ways, but the most evident is class-membership. The assumption is that members of a class share common characteristics, and the model should help highlight them. For example, mutagenic compounds are often found to have certain characteristic functional groups that such NO2, a pair of Oxygen atoms together with a Nitrogen atom. A trained eye might notice that Figure 6 already hints at their presence. The evidence grows stronger when a prototype is generated by GNNEXPLAINER, shown in Figure 6. The model is able to pick-up on this functional structure, and promote it as archetypal of mutagenic compounds."
+    },
+    {
+      "heading": "C Further implementation details",
+      "text": "Training details. We use the Adam optimizer to train both the GNN and explaination methods. All GNN models are trained for 1000 epochs with learning rate 0.001, reaching accuracy of at least 85% for graph classification datasets, and 95% for node classification datasets. The train/validation/test split is 80/10/10% for all datasets. In GNNEXPLAINER, we use the same optimizer and learning rate, and train for 100 - 300 epochs. This is efficient since GNNEXPLAINER only needs to be trained on a local computation graph with < 100 nodes. Regularization. In addition to graph size constraint and graph laplacian constraint, we further impose the feature size constraint, which constrains that the number of unmasked features do not exceed a threshold. The regularization hyperparameters for subgraph size is 0.005; for laplacian is 0.5; for feature explanation is 0.1. The same values of hyperparameters are used across all experiments. Subgraph extraction. To extract the explanation subgraph GS , we first compute the importance weights on edges (gradients for GRAD baseline, attention weights for ATT baseline, and masked adjacency for GNNEXPLAINER). A threshold is used to remove low-weight edges, and identify the explanation subgraph GS . The ground truth explanations of all datasets are connected subgraphs. Therefore, we identify the explanation as the connected component containing the explained node in GS . For graph classification, we identify the explanation by the maximum connected component of GS . For all methods, we perform a search to find the maximum threshold such that the explanation is at least of size KM . When multiple edges have tied importance weights, all of them are included in the explanation."
+    }
+  ],
+  "title": "GNNExplainer: Generating Explanations for Graph Neural Networks",
+  "year": 2019
+}
