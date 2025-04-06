@@ -1,0 +1,449 @@
+UNSUPERVISED LEARNING VIA META-LEARNING
+A central goal of unsupervised learning is to acquire representations from unlabeled data or experience that can be used for more effective learning of downstream tasks from modest amounts of labeled data. Many prior unsupervised learning works aim to do so by developing proxy objectives based on reconstruction, disentanglement, prediction, and other metrics. Instead, we develop an unsupervised learning method that explicitly optimizes for the ability to learn a variety of tasks from small amounts of data. To do so, we construct tasks from unlabeled data in an automatic way and run meta-learning over the constructed tasks. Surprisingly, we find that, when integrated with meta-learning, relatively simple task construction mechanisms, such as clustering unsupervised representations, lead to good performance on a variety of downstream tasks. Our experiments across four image datasets indicate that our unsupervised meta-learning approach acquires a learning algorithm without any labeled data that is applicable to a wide range of downstream classification tasks, improving upon the representation learned by four prior unsupervised learning methods.
+1 INTRODUCTION
+Unsupervised learning is a fundamental, unsolved problem (Hastie et al., 2009) and has seen promising results in domains such as image recognition (Le et al., 2013) and natural language understanding (Ramachandran et al., 2017). A central use case of unsupervised learning methods is enabling better or more efficient learning of downstream tasks by, by training on top of unsupervised representations (Reed et al., 2014; Cheung et al., 2015; Chen et al., 2016) or fine-tuning a learned model (Erhan et al., 2010). However, since the downstream objective requires access to supervision, the objectives used for unsupervised learning are only a rough proxy for downstream performance. If a central goal of unsupervised learning is to learn useful representations, can we derive an unsupervised learning objective that explicitly takes into account how the representation will be used?
+The use of unsupervised representations for downstream tasks is closely related to the objective of meta-learning techniques: finding a learning procedure that is more efficient and effective than learning from scratch. However, unlike unsupervised learning, meta-learning methods require large, labeled datasets and hand-specified task distributions. We propose a method that aims to learn a learning procedure, without supervision, that is useful for solving a wide range of new, userspecified tasks. With only raw, unlabeled observations, our model’s goal is to learn a useful prior such that, after meta-training, when presented with a modestly-sized dataset for a human-specified task, the model can transfer its prior experience to efficiently learn to perform the new task. If we can build such an unsupervised meta-learning algorithm, we can enable few-shot learning of new tasks without needing any labeled data nor any pre-defined tasks.
+To perform unsupervised meta-learning, we need to construct a set of tasks in an unsupervised and automated fashion. We study several options for how the tasks can be generated automatically from the unlabeled data. We find that a good task distribution should be diverse, but also not too difficult: naı̈ve random approaches for task generation can produce tasks that contain insufficient regularity to enable useful meta-learning. To that end, our method proposes tasks by first learning a representation of the input via unsupervised learning (a variety of unsupervised methods can be used here),
+†Work done as a visiting student researcher at the University of California, Berkeley.
+ar X
+iv :1
+81 0.
+02 33
+4v 2
+[ cs
+.L G
+] 6
+O ct
+2 01
+8
+and then performing an overcomplete partitioning of the dataset to construct numerous potential categorizations of the data. We show how we can derive classification tasks from these categorizations, for use with meta-learning algorithms. Surprisingly, even with relatively simple mechanisms for task construction, such as k-means clustering, this kind of unsupervised meta-learning can acquire priors that, when used to learn new tasks, can learn those tasks more effectively than methods that use unsupervised representations directly. That is, the learning algorithm acquired through unsupervised meta-learning achieves better downstream performance than the original representation used to derive meta-training tasks, without introducing any additional assumptions or supervision.
+The core idea of this paper is that meta-learning combined with unsupervised task construction can lead to representations that are more useful for learning downstream tasks, compared to existing approaches. In the following sections, we formalize our unsupervised meta-learning problem assumptions and goal, which match those of unsupervised learning, and we develop an unsupervised learning algorithm that performs meta-learning on tasks constructed by clustering unsupervised representations. We instantiate our method with two meta-learning algorithms and compare to state-of-the-art unsupervised learning methods. Across four image datasets (MNIST, Omniglot, miniImageNet, and CelebA), we find that our method consistently leads to effective downstream learning of a variety of tasks, including character recognition tasks, object classification tasks, and attribute recognition tasks, without requiring any labels or hand-designed tasks during meta-learning and where hyperparameters of our method are held constant across all domains. We show that, even though our unsupervised meta-learning algorithm trains for one-shot generalization, one instantiation of our approach performs well not only on few-shot learning, but also when learning downstream tasks with up to 50 training examples per class. In fact, some of our results begin to approach the performance of fully-supervised meta-learning techniques trained with fully-specified task distributions.
+2 UNSUPERVISED META-LEARNING
+In this section, we describe our problem setting in relation to that of unsupervised and semisupervised learning, and present our approach.
+2.1 PROBLEM STATEMENT
+Our goal is to leverage unlabeled data for efficient learning of a range of downstream tasks. Hence, during unsupervised learning, we assume access to an unlabeled dataset D = {xi}. Then, after unsupervised learning, we want to apply what was learned with the unlabeled data towards learning a variety of downstream, human-specified tasks from a modest amount of labeled data, potentially as few as a single example per class. These downstream tasks may, in general, involve data with different underlying classes or attributes (in contrast to typical semi-supervised learning problem assumptions), but are assumed to have inputs from the same distribution as the one from which datapoints in D are drawn. Concretely, we assume that downstream tasks are M -way classification tasks, and that the goal is to learn an accurate classifier using K labeled datapoints (xk,yk) from each of the M classes, where K is relatively small (i.e. between 1 and 50).
+An algorithm that solves this problem needs to leverage the unsupervised data in a way that produces an effective procedure to learn the downstream tasks. Akin to unsupervised learning, and in contrast to the typical semi-supervised learning problem statement, the unsupervised learning phase involves no access to information about the downstream tasks, other than the fact that they are M -way classification tasks, for variable M upper-bounded by N . The upper bound N is assumed to be known during unsupervised learning, but otherwise, the values of M and K are not known a priori. As a result, the unsupervised learning phase needs to acquire a sufficiently general prior for applicability to a range of classification tasks with variable quantities of data and classes. This problem definition is our prototype for a practical use-case in which an application-specific image recognition model needs to be fitted without an abundance of labeled data.
+2.2 ALGORITHM OVERVIEW
+We approach this problem from a meta-learning perspective, framing the goal as the acquisition, from unlabeled data, of an efficient learning procedure that is transferable to human-designed tasks. In particular, we aim to construct classification tasks from the unlabeled data and then learn how
+to efficiently learn these tasks. If such unsupervised tasks are adequately structured and diverse, then meta-learning these tasks should enable fast learning of new, human-provided tasks. A key question, then, is how to automatically construct such classification tasks from unlabeled data. The first naı̈ve approach we could consider is randomly sampling from D and applying random labels. However, with such a scheme there is no consistency between a task’s training data and query data, and hence nothing to be learned during each task, let alone across tasks. We find in our experiments that this results in failed meta-learning. In the unsupervised learning literature, common distance functions operating in learned embedding spaces have been shown to qualitatively correspond to semantic meaning (e.g., see Cheung et al. (2015); Bojanowski & Joulin (2017); Caron et al. (2018)). We consider using such an embedding space to construct tasks with internal structure. We note that, while a given representation may not be directly suitable for highly-efficient learning of new tasks (which would require the representation to be precisely aligned or adaptable to the classes of those tasks), we can still leverage it for the construction of structured and diverse tasks, a process for which requirements are less strict.
+Overall, our algorithm consists of the following steps: (1) use unsupervised learning to map unlabeled datapoints into embeddings, (2) construct tasks using the unsupervised embeddings, and (3) run meta-learning across the tasks to learn a learning procedure. Then, at meta-test time, we deploy the learning procedure to various downstream tasks. In the rest of this section, we discuss these steps in more detail, including a discussion of multiple ways to derive tasks from unsupervised embeddings.
+2.3 DEFINITIONS
+Before presenting our approach in detail, we formally define the notion of an unsupervised representation learning algorithm, a downstream task, a meta-learning algorithm, and a meta-learning task generation procedure.
+Unsupervised representation learning. We define an unsupervised learning algorithm U as a procedure that takes as input an unlabeled dataset (i.e. D) and produces a mapping from datapoints x to embeddings z.
+Task. We define an M -way K-shot classification task T to consist of K training datapoints and labels {(xk, lk)} per class, which are used for learning a classifier, and Q query datapoints and labels per class, on which the learned classifier is evaluated. That is, a task consists of K +Q = R datapoints and labels for each of the M classes.
+Meta-learning. A supervised meta-learning algorithmM(·) takes as input a set of supervised metatraining tasks {Tt} and produces a learning procedureF(·). At meta-test time, F ingests the training data of a new, held-out task Tt′ to produce a classifier ft′(·). This classifier can be used to predict the label of new datapoints: l̂ = ft′(x). At a high level, the quintessential meta-learning strategy is to haveM iterate over {Tt}, cycling between applying the current form of the learning procedure F on training data from Tt, assessing its performance by calculating some loss L on the task’s query data, and optimizing L to improve the learning procedure. We build upon two meta-learning algorithms: model agnostic meta-learning (MAML) (Finn et al., 2017) and prototypical networks (ProtoNets) (Snell et al., 2017). MAML aims to learn the initial parameters of a deep network such that one or a few gradient steps leads to effective generalization; concretely, it specifiesF as gradient descent starting from a meta-learned weight initialization. ProtoNets aim to learn an embedding such that a class can be effectively represented by the mean of its examples’ embeddings; F is the computation of these class prototypes via the meta-learned embedding, and f is a linear classifier that predicts the class whose prototype is closest in Euclidean distance to the query’s embedding.
+Task generation for meta-learning. We briefly summarize how tasks are typically generated from labeled datasets {(xi,yi)} for supervised meta-learning, as introduced by Santoro et al. (2016). For simplicity, consider the case where the labels are discrete scalar values yi. To construct an N -way classification task T (assuming N is not greater than the number of unique yi), we can sample N classes, sample R datapoints {xr}n for each of the N classes, and sample a permutation of N onehot task-specific labels (ln) to be assigned to each of theN sampled classes. The task is then defined as T = {(xn,r, ln) | xn,r ∈ {xr}n}. The learner F only uses K of the R examples of each class to learn ft; the remaining Q datapoints are held out for assessment.
+Algorithm 1 CACTUs for classification 1: procedure CACTUS(U ,D, P, k, T,N,Km-tr, Q) 2: Run unsupervised learning algorithm U on D, resulting in a model capable of producing embeddings
+{zi} from observations {xi}. 3: Run k-means on {zi} P times (with random scaling) to generate a set of partitions {Pp = {Cc}p}. 4: for t from 1 to the number of desired tasks T do 5: Sample a partition P from the set of partitions {Pp}. 6: Sample a cluster Cn without replacement from P for each of the N classes desired for each task. 7: Sample an embedding zr without replacement from Cn for each of the R = Km-tr +Q training and query examples desired for each class, and note the corresponding datapoint xn,r . 8: Sample a permutation (ln) of N one-hot labels. 9: Construct Tt = {(xn,r, ln)}.
+10: return {Tt}
+2.4 UNSUPERVISED META-LEARNING WITH AUTOMATICALLY CONSTRUCTED TASKS
+We return to the key question of how to perform unsupervised meta-learning by constructing tasks from unlabeled data D = {xi}. Notice that in the supervised meta-learning task generation procedure detailed in Section 2.3, the labels yi induce a partition P = {Cc} over {xi} by assigning all datapoints with label yc to subset Cc. Once a partition is at hand, task generation is simple; we can reduce the problem of constructing tasks to that of constructing a partition over {xi}. All we need now is a principled alternative to human-specified labels for defining the partition.
+As motivated previously, we first run an out-of-the-box unsupervised learning algorithm U on D, then map the data {xi} into the embedding space Z , producing {zi}. The simplest way to define a partition on {zi} (and correspondingly, {xi}) is to use random hyperplanes to sliceZ into subspaces and assign the embeddings that lie in the c-th non-empty subspace to subset Cc. However, a given hyperplane can group together two arbitrarily far embeddings, or separate two arbitrarily close ones. This problem can be partially alleviated by extending the hyperplane boundaries with a non-zero margin, as empirically shown in Section 4.2. But, we can obtain subsets that are both distinctive and internally coherent by instead performing clustering, letting the c-th cluster define subset Cc. To produce a diverse task set, we generate P partitions {Pp} by running clustering P times, applying random scaling to the embedding dimensions to induce a different metric for each run of clustering. We use the k-means clustering algorithm for its simplicity, computational tractability, and effectiveness. We derive tasks for meta-learning from the clusterings using the procedure detailed in Section 2.3, except we begin the construction of each task by sampling a partition from {Pp}. With the partitions being constructed over {zi}, we have one more design decision to make: should we perform meta-learning on embeddings or images? We consider that, to successfully solve new evaluation tasks, a learning procedure F that takes embeddings as input would depend on the embedding function’s ability to generalize to out-of-distribution observations. On the other hand, by meta-learning on images, F can separately adapt f to each evaluation task from the rawest level of representation. Thus, we choose to meta-learn on images.
+We call our method Clustering to Automatically Construct Tasks for Unsupervised meta-learning (CACTUs). We detail the task construction algorithm in Algorithm 1, and provide an illustration of the complete approach in Figure 1.
+3 RELATED WORK
+The method we propose aims to address the unsupervised learning problem (Hastie et al., 2009; Le et al., 2013), namely acquiring a transferable learning procedure without labels. We show that our method is complementary to a number of unsupervised representation learning methods, including ACAI (Berthelot et al., 2018), BiGAN (Donahue et al., 2017; Dumoulin et al., 2017), DeepCluster (Caron et al., 2018), and InfoGAN (Chen et al., 2016): our method achieves better performance on few-shot learning tasks compared to directly learning on top of these representations. The ability to use what was learned during unsupervised learning to better or more efficiently learn a variety of downstream tasks, i.e. unsupervised pre-training, is arguably one of the most practical applications of unsupervised learning methods and has a long history in neural network training (Hinton et al.,
+2006; Bengio et al., 2007; Ranzato et al., 2006; Vincent et al., 2008; Erhan et al., 2010). Unsupervised pre-training has demonstrated success in a number of domains, including speech recognition Yu et al. (2010), image classification (Zhang et al., 2017), machine translation (Ramachandran et al., 2017), and text classification (Dai & Le, 2015; Howard & Ruder, 2018; Radford et al., 2018). Our approach can be viewed as an unsupervised learning algorithm that explicitly optimizes for few-shot transferability. As a result, we can expect it to better learn human-specified downstream tasks, compared to unsupervised learning methods that optimize for other metrics, such as reconstruction Vincent et al. (2010); Higgins et al. (2017), fidelity of constructed images (Radford et al., 2016; Salimans et al., 2016; Donahue et al., 2017; Dumoulin et al., 2017), representation interpolation (Berthelot et al., 2018), disentanglement (Bengio et al., 2013; Reed et al., 2014; Cheung et al., 2015; Chen et al., 2016; Mathieu et al., 2016; Denton & Birodkar, 2017), and clustering (Coates & Ng, 2012; Krähenbühl et al., 2016; Bojanowski & Joulin, 2017; Caron et al., 2018). We empirically evaluate this hypothesis in the next section. In contrast to many previous evaluations of unsupervised pre-training, we focus on settings in which only a small amount of data for the downstream tasks is available, where the unsupervised data can be maximally useful.
+Unsupervised pre-training followed by supervised learning can be viewed as a special case of the semi-supervised learning problem (Zhu, 2011; Kingma et al., 2014; Rasmus et al., 2015; Oliver et al., 2018). However, in contrast to our problem statement, semi-supervised learning methods assume that a significant proportion of the unlabeled data, if not all of it, shares underlying labels with the labeled data. Additionally, our approach and other unsupervised learning methods are wellsuited for transferring their learned representation to many possible downstream tasks or labelings, whereas semi-supervised learning methods typically optimize for performance on a single task, with respect to a single labeling of the data.
+Our method builds upon the ideas of meta-learning (Schmidhuber, 1987; Bengio et al., 1991; Naik & Mammone, 1992) and few-shot learning (Santoro et al., 2016; Vinyals et al., 2016; Ravi & Larochelle, 2017; Munkhdalai & Yu, 2017; Snell et al., 2017). We apply two meta-learning algorithms, model-agnostic meta-learning (Finn et al., 2017) and prototypical networks (Snell et al., 2017), to tasks constructed in an unsupervised manner. Similar to our problem setting, some prior works have aimed to learn an unsupervised learning procedure with supervised data (Garg & Kalai, 2017; Metz et al., 2018). Instead, we consider a problem setting that is entirely unsupervised, aiming to learn efficient learning algorithms using unlabeled datasets. Our problem setting is similar to that considered by Gupta et al. (2018), but we develop an approach that is suitable for supervised downstream tasks, rather than reinforcement learning problems, and demonstrate our algorithm on problems with high-dimensional visual observations.
+4 EXPERIMENTS
+We begin the experimental section by presenting our research questions and how our experiments are designed to address them.
+Benefit of Meta-Learning. Is there any significant benefit to doing meta-learning on tasks derived from unsupervised representations, or are the representations themselves already sufficient for downstream supervised learning of new tasks? To investigate this, we run MAML and ProtoNets on
+tasks generated via CACTUs (CACTUs-MAML, CACTUs-ProtoNets). We measure performance by comparing to five alternate algorithms. Embedding knn-nearest neighbors first infers the embeddings of the downstream task images. For a query test image, it predicts the plurality vote of the labels of the knn training images that are closest in the embedding space (by L2 distance) to the query’s embedding. Embedding linear classifier also begins by inferring the embeddings of the downstream task images. It then fits a linear classifier using the NK training embeddings and labels, and predicts labels for the query embeddings using the classifier. Embedding multilayer perceptron is essentially embedding linear classifier but with a hidden layer of 128 units and tuned dropout (Srivastava et al., 2014). To isolate the effect of meta-learning on images, we also compare to embedding cluster matching, i.e. directly using the meta-training clusters for classification by labeling clusters with a task’s training data via plurality vote. If a query datapoint maps to an unlabeled cluster, the closest labeled cluster is used. Finally, as a baseline, we also train a model with the MAML architecture from scratch for each evaluation task.
+We also investigate this question in the scenario of an idealized version of our problem statement in which (1) embeddings are already very well-suited to solving the downstream tasks and (2) the data distributions of meta-training and meta-test time perfectly overlap. We use the MNIST dataset for this purpose. For details, please see Appendix A.
+Different Embedding Spaces. Does the proposed unsupervised task-generation procedure result in successful meta-learning for many distinct methods for learning the task-generating embeddings? To investigate this, we run unsupervised meta-learning using four unsupervised learning algorithms to learn the embeddings: ACAI (Berthelot et al., 2018), BiGAN (Donahue et al., 2017), DeepCluster (Caron et al., 2018), and InfoGAN (Chen et al., 2016). These four approaches collectively cover the following range of objectives and frameworks in the unsupervised learning literature: generative modeling, two-player games, reconstruction, representation interpolation, discriminative clustering, and information maximization. We describe these methods in more detail in Appendix B.
+Applicability to Different Tasks. Can unsupervised meta-learning yield a good prior for a variety of task types? In other words, can unsupervised meta-learning yield a good representation for tasks that assess the ability to distinguish between features on different scales, or tasks with various amounts of supervision signal? To investigate this, we evaluate our procedure on tasks assessing recognition of character identity, object identity, and facial attributes. For this purpose we choose to use the existing Omniglot and miniImageNet datasets, but also construct a new few-shot classification benchmark based on the CelebA dataset and its binary attribute annotations. For miniImageNet, we consider both few-shot downstream tasks and tasks involving larger datasets (up to 50-shot). For details on the datasets and tasks, please see Appendix C.
+Oracle. How does the performance of our unsupervised meta-learning method compare to supervised meta-learning with a human-specified, near-optimal task distribution derived from a labeled dataset? To investigate this, we use labeled versions of the meta-training datasets to run MAML and ProtoNets as supervised meta-learning algorithms (Oracle-MAML, Oracle-ProtoNets). To facilitate fair comparison with the unsupervised variants, we control for the relevant hyperparameters.
+Task Construction Ablation. How do the alternatives for constructing tasks from the embeddings, as introduced in Section 2.4, compare? To investigate this, we run MAML on tasks constructed via clustering (CACTUs-MAML) and MAML on tasks constructed via random hyperplane slices of the embedding space with varying margin (Hyperplanes-MAML). The latter partitioning procedure is detailed in Appendix D. For the experiments where tasks are constructed via clustering, we also investigate the effect of sampling based on a single partition versus multiple partitions. We additionally experiment with tasks based on random assignments of images to “clusters” (Random-MAML) with the Omniglot dataset.
+4.1 EXPERIMENTAL PROTOCOL SUMMARY
+As discussed by Oliver et al. (2018), keeping proper experimental protocol is particularly important when evaluating unsupervised and semi-supervised learning algorithms. Our foremost concern is to avoid falsely embellishing the capabilities of our approach by overfitting to the specific datasets and task types that we consider. To this end, we adhere to two key principles. We do not do any architecture engineering: we use architectures from prior work as-is, or lightly adapt them to our needs if necessary. We also keep hyperparameters related to the unsupervised meta-learning
+stage as constant as possible across all experiments, including the MAML and ProtoNets model architectures. We assume knowledge of an upper bound on the number of classes N present in each downstream meta-testing task for each dataset. However, regardless of the number of shots K, we do not assume knowledge of K during unsupervised meta-learning; hence, we fix the meta-training algorithm to use N -way 1-shot tasks.
+We partition each dataset into train, validation, and test splits. For Omniglot and miniImageNet, these splits contain disjoint sets of classes. For all algorithms, we run unsupervised learning on the unlabeled training split and report performance on downstream tasks generated from the labeled data of the testing split, generated using the procedure from Section 2.3. For the supervised meta-learning oracles, meta-training tasks are constructed in the same manner but from the dataset’s training split. See Figure 2 for illustrative examples of embedding-derived clusters and evaluation tasks.
+To facilitate troubleshooting, we used the labels of the validation split (instead of clustering embeddings) to construct tasks for meta-validation. However, because our aim is to perform meta-learning without supervision, we did not tune hyperparameters beyond performing a simple sanity test. After preliminary exploration, we fixed MAML and ProtoNets hyperparameters across all respective experiments. We use a fixed number of meta-training iterations, since there is no suitable criterion for early stopping. For detailed hyperparameter and architecture information, please see Appendix E.
+When we experiment with the methods used as comparisons to unsupervised meta-learning, we err on the side of providing more supervision and data than technically allowed. Specifically, we separately tune hyperparameters for each dataset and each amount of supervision signal in an evaluation task on the labeled version of the validation split. When necessary, we also use the entire testing split’s statistics to perform dimensionality reduction.
+4.2 RESULTS
+Primary results (excluding MNIST) are summarized in Tables 1, 2, and 3. Task construction ablations are summarized in Tables 4 and 5.
+Benefit of Meta-Learning. CACTUs-MAML consistently yields a learning procedure that results in more successful downstream task performance than all other unsupervised methods, including those that learn on top of the embedding that generated meta-training tasks for MAML. We find the same result for CACTUs-ProtoNets for 1-shot downstream tasks. However, as noted by Snell et al. (2017), ProtoNets perform best when meta-training shot and meta-testing shot are matched; this characteristic prevents ProtoNets from improving upon ACAI for 20-way 5-shot Omniglot and upon DeepCluster for 50-shot miniImageNet. We attribute the success of CACTUs-based metalearning over the embedding-based methods to two factors: its practice in distinguishing between many distinct sets of clusters from modest amounts of signal, and the underlying classes of the test-
+ing split data being out-of-distribution. In principle, the latter factor is solely responsible for the success over embedding cluster matching, since this algorithm can be viewed as a meta-learner on embeddings that trivially obtains perfect accuracy (via memorization) on the meta-training tasks. The same factor also helps explain why training from standard network initialization is, in general, competitive with directly using the task-generating embedding as a representation. On the other hand, the MNIST results (Table 8 in Appendix F) suggest that when the meta-training and meta-testing data distributions have perfect overlap and the embedding is well-suited enough that embedding cluster matching alone can achieve high performance, CACTUs-MAML yields only a small relative benefit, as we would expect.
+Different Embedding Spaces. CACTUs is effective for a variety of unsupervised learning methods used for task generation. The performance of unsupervised meta-learning can largely be predicted by the performance of the embedding-based non-meta-learning methods. For example, the ACAI embedding does well with Omniglot, leading to the best unsupervised results with ACAI CACTUsMAML. Likewise, on miniImageNet, the best performing prior embedding (DeepCluster) also corresponds to the best performing unsupervised meta-learner (DeepCluster CACTUs-MAML).
+Applicability to Different Tasks. CACTUs-MAML learns an effective prior for a variety of task types. This can be attributed to the application-agnostic task-generation process and the expressive power of MAML (Finn & Levine, 2018). We also observe that, despite all meta-learning models being trained for N -way 1-shot classification of unsupervised tasks, the models work well for a variety of M -way K-shot tasks, where M ≤ N and K ≤ 50. As mentioned previously, the representation that CACTUs-ProtoNets learns is best suited for downstream tasks which match the single shot used for meta-training.
+Oracle. The penalty for not having ground truth labels to construct near-optimal tasks ranges from substantial to severe, depending on the difficulty of the downstream task. Easier downstream tasks (which have fewer classes and/or more supervision) incur less of a penalty. We conjecture that with such tasks, the difference in the usefulness of the priors matters less since the downstream task-specific evidence has more power to shape the posterior.
+Task Construction Ablation. As seen in Tables 4 and 5, CACTUs-MAML consistently outperforms Hyperplanes-MAML with any margin. We hypothesize that this is due to the issues with zero-margin Hyperplanes-MAML pointed out in Section 2.4, and the fact that nonzero-margin Hyperplanes-MAML is able to use less of the training split to generate tasks than CACTUs-MAML is. Using non-zero margin with Hyperplanes-MAML is crucial for miniImageNet, but not for Omniglot. We conjecture that the enforced degree of separation between classes is needed for miniImageNet because of the dataset’s high diversity. Meta-learning on random tasks (Table 4) results in a prior that is much less useful than any other considered algorithm, including standard network initialization; evidently, practicing badly is worse than not practicing at all.
+Note on Overfitting. Because of the combinatorially many unsupervised tasks we can create from multiple partitions of the dataset, we do not observe substantial overfitting to the unsupervised metatraining tasks. However, we observe that meta-training performance is sometimes worse than metatest time performance, which is likely due to a portion of the automatically generated tasks being based on nonsensical clusters (for examples, see Figure 2). Additionally, we find that, with a few exceptions, using multiple partitions has a regularizing effect on the meta-learner: a diverse task set reduces overfitting to the meta-training tasks and increases the applicability of the learned prior.
+5 DISCUSSION
+We demonstrate that meta-learning on tasks produced using simple mechanisms based on unsupervised representations improves upon the utility of these representations in learning downstream tasks. We empirically show that this holds across instances of datasets, task difficulties, and unsupervised representations, while fixing key hyperparameters across all experiments.
+In a sense, CACTUs can be seen as a facilitating interface between an unsupervised representation learning method and a meta-learning algorithm. As shown in the results, the meta-learner’s performance significantly depends on the nature and quality of the task-generating embedding. We can expect our method to yield better performance as the methods that produce these embedding functions improve, becoming better suited for generating diverse yet distinctive clusterings of the data. However, the gap between CACTUs and supervised meta-learning will likely persist because, with the latter, the meta-training task distribution is human-designed to mimic the expected evaluation task distribution as much as possible. Indeed, to some extent, supervised meta-learning algorithms offload the effort of designing and tuning algorithms onto the effort of designing and tuning task distributions. With its evaluation-agnostic task generation, CACTUs-based meta-learning trades off performance in specific use-cases for broad applicability and the ability to train on unlabeled data. In principle, CACTUs-based meta-learning may outperform supervised meta-learning when the latter is trained on a misaligned task distribution. We leave this investigation to future work.
+A potential concern of our experimental evaluation is that MNIST, Omniglot, and miniImageNet exhibit particular structure in the underlying class distribution (i.e., perfectly balanced classes), since they were designed to be supervised learning benchmarks. In more practical applications of machine learning, such structure would likely not exist. Our CelebA results indicate that CACTUs is effective even in the case of a dataset without neatly balanced classes or attributes. An interesting direction for future work is to better characterize the performance of CACTUs and other unsupervised learning methods with highly-unstructured, unlabeled datasets.
+Since MAML and ProtoNets produce nothing more than a learned representation, our method can be viewed as deriving, from a previous unsupervised representation, a new representation particularly suited for learning downstream tasks. aBeyond visual classification tasks, the notion of using unsupervised pre-training is generally applicable to a wide range of domains, including regression, speech (Oord et al., 2018), language (Howard & Ruder, 2018), and reinforcement learning (Shelhamer et al., 2017). Hence, our unsupervised meta-learning approach has the potential to improve unsupervised representations for a variety of such domains, an exciting avenue for future work.
+ACKNOWLEDGMENTS
+We thank Kelvin Xu, Richard Zhang, Brian Cheung, Ben Poole, Aäron van den Oord, Luke Metz, and Siddharth Reddy for feedback on an early draft of this paper.
+APPENDIX A MNIST EXPERIMENTS
+The MNIST dataset consists of 70,000 hand-drawn examples of the 10 numerical digits. Our split respects the original MNIST 60,000/10,000 training/testing split. We assess on 10-way classification tasks. This setup results in examples from all 10 digits being present for both meta-training and meta-testing, making the probem setting essentially equivalent to that of semi-supervised learning sans a fixed permutation of the labels. The MNIST scenario is thus a special case of the problem setting considered in the rest of the paper. For MNIST, we only experiment with MAML as the meta-learning algorithm.
+For ACAI and InfoGAN we constructed the validation split from the last 5,000 examples of the training split; for BiGAN this figure was 10,000. After training the ACAI model and inferring embeddings, manually assigning labels to 10 clusters by inspection results in a classification accuracy of 96.00% on the testing split. As the ACAI authors observe, we found it important to whiten the ACAI embeddings before clustering. The same metric for the InfoGAN embedding (taking an argmax over the categorical dimensions instead of actually running clustering) is 96.83%. Note that these results are an upper-bound for embedding cluster matching. To see this, consider the 10-way 1-shot scenario. 1 example sampled from each cluster is insufficient to guarantee the optimal label for that cluster; 1 example sampled from each label is not guaranteed to each end up in the optimal category.
+Aside from CACTUs-MAML, embedding knn-nearest neighbors, embedding linear classifier, and embedding direct clustering, we also ran CACTUs-MAML on embeddings instead of raw images, using a simple model with 2 hidden layers with 64 units each, and all other MAML hyperparameters being the same as in Table 6.
+Departing from the fixed k = 500 used for all other datasets, we deliberately use k = 10 to better understand the limitations of CACTUs-MAML. The results can be seen in Table 8 in Appendix C. In brief, with the better embeddings (ACAI and InfoGAN), there is only little benefit of CACTUsMAML over embedding cluster matching. Additionally, even in the best cases, CACTUs-MAML falls short of state-of-the-art semi-supervised learning methods.
+APPENDIX B THE UNSUPERVISED LEARNING ZOO
+We evaluate four distinct unsupervised learning methods for learning the task-generating embeddings.
+In adversarially constrained autoencoder interpolation (ACAI), a convolutional autoencoder’s pixelwise L2 loss is regularized with a term encouraging meaningful interpolations in the latent space (Berthelot et al., 2018). Specifically, a critic network takes as input a synthetic image generated from a convex combination of the latents of two dataset samples, and regresses to the mixing factor. The decoder of the autoencoder and the generator for the critic are one and the same. The regularization term is minimized when the autoencoder fools the critic into predicting that the synthetic image is a real sample.
+The bidirectional GAN (BiGAN) is an instance of a generative-adversarial framework in which the generator produces both synthetic image and embedding from real embedding and image, respectively (Donahue et al., 2017; Dumoulin et al., 2017). Discrimination is done in joint imageembedding space.
+The DeepCluster method does discriminative clustering by alternating between clustering the features of a convolutional neural network and using the clusters as labels to optimize the network weights via backpropagating a standard classification loss (Caron et al., 2018).
+The InfoGAN framework conceptually decomposes the generator’s input into a latent code and incompressible noise (Chen et al., 2016). The structure of the latent code is hand-specified based on knowledge of the dataset. The canonical GAN minimax objective is regularized with a mutual information term between the code and the generated image. In practice, this term is optimized using variational inference, involving the approximation of the posterior with an auxiliary distribution Q(code|image) parameterized by a recognition network.
+Whereas ACAI explicitly optimizes pixel-wise reconstruction error, BiGAN only encourages the fidelity of generated image and latent samples with respect to their respective prior distributions. While InfoGAN also encourages the fidelity of generated images, it leverages domain-specific knowledge to impose a favorable structure on the embedding space and information-theoretic methods for optimization. DeepCluster departs from the aforementioned methods in that it is not concerned with generation or decoding, and only seeks to learn general-purpose visual features by way of end-to-end discriminative clustering.
+APPENDIX C DATASET INFORMATION
+The Omniglot dataset consists of 1623 characters each with 20 hand-drawn examples. Ignoring the alphabets from which the characters originate, we use 1100, 100, and 423 characters for our training, validation, and testing splits. The miniImageNet dataset consists of 100 classes each with 600 examples. The images are predominantly natural and realistic. We use the same training/validation/testing splits of 64/16/20 classes as proposed by Ravi & Larochelle (2017). The CelebA dataset includes 202,599 facial images of celebrities and 40 binary attributes that annotate every image. We follow the prescribed 162,770/19,867/19,962 data split.
+For Omniglot and miniImageNet, supervised meta-learning tasks and evaluation tasks are constructed exactly as detailed in Section 2.3: for an N -way K-shot task with Q queries per class, we sample N classes from the data split and K + Q datapoints per class, labeling the task’s data with a random permutation of N one-hot vectors.
+For CelebA, we consider binary classification tasks (i.e., 2-way), each defined by 3 attributes and an ordering of 3 Booleans, one for each attribute. Every image in a task-specific class shares all task-specific attributes with each other and none with images in the other class. For example, the task illustrated in Figure 2 involves distinguishing between images whose subjects satisfy not Sideburns, Straight Hair, and not Young, and those whose subjects satisfy Sideburns, not Straight Hair, and Young. To keep with the idea of having distinct classes for meta-training and meta-testing, we split the task-defining attributes. For the supervised meta-learning oracle, we construct meta-training tasks from the first 20 attributes (when alphabetically ordered), meta-validation tasks from the next 10, and meta-testing tasks from the last 10. Discarding tasks with too few examples in either class, this results in 4287, 391, and 402 task prototypes (but many more possible tasks). We use the same meta-test time tasks to evaluate the unsupervised methods. We only consider assessment with 5-shot tasks because, given that there are multiple attributes other than the task-defining ones, any 1-shot task is likely to be ill-defined.
+APPENDIX D TASK CONSTRUCTION VIA RANDOM HYPERPLANES
+In this section, we describe how to generate tasks via random hyperplanes in the embedding space. We first describe a procedure to generate a partition P of the set of embeddings {zi} for constructing meta-training tasks. A given hyperplane slices the embedding space into two, so for an N -way task, we need H = dlog2Ne hyperplanes to define sufficiently many subsets/classes for a task. To randomly define a hyperplane in d-dimensional embedding space, we sample a normal vector n and a point on the plane z0, each with d elements. For an embedding point z, the signed point-plane distance is given by n|n|2 · (z− z0). Defining H hyperplanes in this manner, we discard embeddings for which the signed point-plane distance to any of the H hyperplanes lies within (−m,m), where m is a desired margin. The H hyperplanes collectively define 2H subspaces. We assign embedding points in the c-th subspace to subset Cc. We define the partition as P = {Cc}. We prune subsets that do not have at least R = Km-tr +Q members, and check that the partition has at least N remaining subsets; if not, we reject the partition and restart the procedure. After obtaining partitions {Pp}, meta-training tasks can be generated by following Algorithm 1 from Line 4.
+In terms of practical implementation, we pre-compute 1000 hyperplanes and pruned pairs of subsets of {zi}. We generate partitions by sampling combinations of the hyperplanes and taking intersections of their associated subsets to define the elements of the partition. We determine the number of partitions needed for a given Hyperplanes-MAML run by the number of meta-training tasks desired for the meta-learner: we fix 100 tasks per partition.
+APPENDIX E HYPERPARAMETERS AND ARCHITECTURES
+E.1 MAML
+For MNIST and Omniglot we use the same 4-block convolutional architecture as used by Finn et al. (2017) for their Omniglot experiments, but with 32 filters (instead of 64) for each convolutional layer. For miniImageNet and CelebA we used the same architecture as Finn et al. (2017) used for their miniImageNet experiments. When evaluating the trained 20-way Omniglot model with 5-way tasks, we prune the unused output dimensions. The outer optimizer is Adam (Kingma & Ba, 2014), and the inner optimizer is SGD. We build on the authors’ publicly available codebase found at https://github.com/cbfinn/maml.
+When using batch normalization (Ioffe & Szegedy, 2015) to process a task’s training or query inputs, we observe that using only 1 query datapoint per class can allow the model to exploit batch statistics, learning a strategy analogous to a process of elimination that causes significant, but spurious, improvement in accuracy. To mitigate this, we fix 5 queries per class for every task’s evaluation phase, meta-training or meta-testing.
+E.2 PROTONETS
+For the three considered datasets we use the same architecture as used by Snell et al. (2017) for their Omniglot and miniImageNet experiments. This is a 4-block convolutional architecture with each block consisting of a convolutional layer with 64 3 × 3 filters, stride 1, and padding 1, followed by BatchNorm, ReLU activation, and 2 × 2 MaxPooling. The ProtoNets embedding is simply the flattened output of the last block. We follow the authors and use the Adam optimizer, but do not use a learning rate scheduler. We build upon the authors’ publicly available codebase found at https://github.com/jakesnell/prototypical-networks.
+E.3 USE OF UNSUPERVISED LEARNING METHODS
+ACAI (Berthelot et al., 2018): We run ACAI for MNIST and Omniglot. We pad the images by 2 and use the authors’ architecture. We use a 256-dimensional embedding for all datasets. We build upon the authors’ publicly available codebase found at https://github.com/brain-research/acai.
+We unsuccessfully try running ACAI on 64× 64 miniImageNet and CelebA. To facilitate this input size, we add one block consisting of two convolutional layers (512 filters each) and one downsampling/upsampling layer to the encoder and decoder. However, because of ACAI’s pixel-wise reconstruction loss, for these datasets the ACAI embedding prioritizes information about the few “features” that dominate the reconstruction pixel count, resulting in clusters that only corresponded to a limited range of factors, such as background color and pose. For curiosity’s sake, we tried running meta-learning on tasks derived from these uninteresting clusters anyways, and found that the meta-learner quickly produced a learning procedure that obtained high accuracy on the meta-training tasks. However, this learned prior was not useful for solving downstream tasks.
+BiGAN (Donahue et al., 2017): For MNIST, we follow the BiGAN authors and specify a uniform 50-dimensional prior on the unit hypercube for the latent. The BiGAN authors use a 200- dimensional version of the same prior for their ImageNet experiments, so we follow suit for Omniglot, miniImageNet, and CelebA. For MNIST and Omniglot, we use the permutation-invariant architecture (i.e. fully connected layers only) used by the authors for their MNIST results; for miniImageNet and CelebA, we randomly crop to 64×64 and use the AlexNet-inspired architecture used by Donahue et al. (2017) for their ImageNet results. We build upon the authors’ publicly available codebase found at https://github.com/jeffdonahue/bigan.
+DeepCluster (Caron et al., 2018): We run DeepCluster for miniImageNet and CelebA, which we respectively randomly crop and resize to 64×64. We modify the first layer of the AlexNet architecture used by the authors to accommodate this input size. We follow the authors and use the input to the (linear) output layer as the embedding. These are 4096-dimensional, so we follow the authors and apply PCA to reduce the dimensionality to 256, followed by whitening. We build upon the authors’ publicly available codebase found at https://github.com/facebookresearch/deepcluster.
+InfoGAN (Chen et al., 2016): We only run InfoGAN for MNIST. We follow the InfoGAN authors and specify the product of a 10-way categorical distribution and a 2-dimensional uniform distribution as the latent code. Given an image, we use the recognition network to obtain its embedding. We build upon the authors’ publicly available codebase found at https://github.com/openai/InfoGAN.
+APPENDIX F EXPERIMENTAL RESULTS
+The following pages contain full experimental results for the MNIST, Omniglot, miniImageNet, and CelebA datasets, including consolidated versions of the tables found in the main text and some comparisons to prior work. The metric is classification accuracy averaged over 1000 tasks based on human-specified labels of the testing split, with 95% confidence intervals. d: dimensionality of embedding, h: number of hidden units in a fully connected layer, k: number of clusters in a partition, P : number of partitions used during meta-learning, m: margin on boundary-defining hyperplanes.
+Ta bl
+e 8:
+M N
+IS T
+di gi
+tc la
+ss ifi
+ca tio
+n re
+su lts
+av er
+ag ed
+ov er
+10 00
+ta sk
+s. ±
+de no
+te s
+a 95
+% co
+nfi de
+nc e
+in te
+rv al
+.k :n
+um be
+ro fc
+lu st
+er s
+in a
+pa rt
+iti on
+,P :n
+um be
+ro fp
+ar tit
+io ns
+us ed
+du ri ng m et ale ar ni ng
+A lg
+or ith
+m \
+(w ay
+,s ho
+t) (1
+0, 1)
+(1 0,
+5) (1
+0, 10
+)
+AC A
+I, d =
+2 5 6
+E m
+be dd
+in g k
+nn -n
+ea re
+st ne
+ig hb
+or s
+74 .4
+9 ±
+0. 82
+% 88
+.8 0 ±
+0. 27
+% 91
+.9 0 ±
+0. 17 % E m be dd in g lin ea rc la ss ifi er 76 .5 3 ± 0. 81 % 92 .1 7 ± 0. 25 % 94 .5 8 ± 0. 15 % E m be dd in g cl us te rm at ch in g, k = 1 0 91 .2 8 ± 0. 58 % 95 .9 2 ± 0. 16 % 96 .0 1 ± 0. 12 % C A C T U sM A M L on im ag es (o ur s) ,P = 1 ,k = 1 0 92 .6 6 ± 0. 34 % 96 .0 8 ± 0. 12 % 96 .2 9 ± 0. 12 % C A C T U sM A M L on em be dd in gs (o ur s) ,P = 1 ,k = 1 0 94 .7 7 ± 0. 28 % 96 .5 6 ± 0. 11 % 96 .8 0 ± 0. 11 % B iG A N ,d = 5 0 E m be dd in g k nn -n ea re st ne ig hb or s 29 .2 5 ± 0. 83 % 44 .5 9 ± 0. 44 % 51 .9 8 ± 0. 30 % E m be dd in g lin ea rc la ss ifi er 30 .8 6 ± 0. 89 % 51 .6 9 ± 0. 44 % 60 .7 0 ± 0. 31 % E m be dd in g cl us te rm at ch in g, k = 1 0 33 .7 2 ± 0. 54 % 50 .2 1 ± 0. 36 % 52 .9 5 ± 0. 34 % C A C T U sM A M L on im ag es (o ur s) ,P = 1 ,k = 1 0 43 .7 5 ± 0. 46 % 62 .2 0 ± 0. 33 % 68 .3 8 ± 0. 29 % C A C T U sM A M L on im ag es (o ur s) ,P = 1 0 0 ,k = 1 0 49 .7 3 ± 0. 45 % 77 .0 5 ± 0. 30 % 83 .9 0 ± 0. 24 % C A C T U sM A M L on em be dd in gs (o ur s) ,P = 1 ,k = 1 0 36 .3 3 ± 0. 48 % 51 .7 8 ± 0. 34 % 57 .4 1 ± 0. 30 % C A C T U sM A M L on em be dd in gs (o ur s) ,P = 1 0 0 ,k = 1 0 37 .3 2 ± 0. 41 % 60 .7 4 ± 0. 34 % 67 .3 4 ± 0. 30 % In fo G A N ,d = 1 2 E m be dd in g k nn -n ea re st ne ig hb or s 94 .5 3 ± 0. 51 % 96 .0 5 ± 0. 17 % 96 .2 4 ± 0. 12 % E m be dd in g lin ea rc la ss ifi er 95 .7 8 ± 0. 42 % 96 .6 1 ± 0. 21 % 96 .8 5 ± 0. 11 % E m be dd in g cl us te rm at ch in g, k = 1 0 93 .4 2 ± 0. 57 % 96 .9 7 ± 0. 15 % 96 .9 9 ± 0. 10 % C A C T U sM A M L on im ag es (o ur s) ,P = 1 ,k = 1 0 95 .3 0 ± 0. 23 % 97 .1 8 ± 0. 10 % 97 .2 8 ± 0. 10 % C A C T U sM A M L on im ag es (o ur s) ,P = 1 0 0 ,k = 1 0 96 .0 8 ± 0. 19 % 97 .2 2 ± 0. 10 % 97 .3 1 ± 0. 09 % C A C T U sM A M L on em be dd in gs (o ur s) ,P = 1 ,k = 1 0 96 .6 9 ± 0. 17 % 97 .1 3 ± 0. 10 % 97 .2 3 ± 0. 10 % C A C T U sM A M L on em be dd in gs (o ur s) ,P = 1 0 0 ,k = 1 0 96 .4 8 ± 0. 17 % 97 .0 8 ± 0. 10 % 97 .2 2 ± 0. 10 % Su pe rv is ed pr etr ai ni ng O ra cl eM A M L (c on tr ol ) 97 .3 1 ± 0. 17 % 98 .5 1 ± 0. 07 % 98 .5 1 ± 0. 07 %
+Ta bl
+e 9:
+O m
+ni gl
+ot ch
+ar ac
+te r
+cl as
+si fic
+at io
+n re
+su lts
+av er
+ag ed
+ov er
+10 00
+ta sk
+s. ±
+de no
+te s
+a 95
+% co
+nfi de
+nc e
+in te
+rv al
+. d
+: di
+m en
+si on
+al ity
+of em
+be dd
+in g,
+h :
+nu m
+be r
+of hi
+dd en
+un its
+in a
+fu lly
+co nn
+ec te
+d la
+ye r, k
+:n um
+be ro
+fc lu
+st er
+s in
+a pa
+rt iti
+on ,P
+:n um
+be ro
+fp ar
+tit io
+ns us
+ed du
+ri ng
+m et
+ale
+ar ni
+ng ,m
+:m ar
+gi n
+on bo
+un da
+ry -d
+efi ni
+ng hy
+pe rp
+la ne
+s.
+A lg
+or ith
+m \
+(w ay
+,s ho
+t) (5
+,1 )
+(5 ,5
+) (2
+0, 1)
+(2 0,
+5)
+B as
+el in es Tr ai ni
+ng fr
+om sc
+ra tc
+h 52
+.5 0 ±
+0. 84
+% 74
+.7 8 ±
+0. 69
+% 24
+.9 1 ±
+0. 33
+% 47
+.6 2 ±
+0. 44 % R an do m -M A M L ,P = 2 4 0 0 ,k = 5 0 0 25 .9 9 ± 0. 73 % 25 .7 4 ± 0. 69 % 6. 51 ± 0. 18 % 6. 74 ± 0. 18 % AC A I, d = 2 5 6 E m be dd in g k nn -n ea re st ne ig hb or s 57 .4 6 ± 1. 35 % 81 .1 6 ± 0. 57 % 39 .7 3 ± 0. 38 % 66 .3 8 ± 0. 36 % E m be dd in g lin ea rc la ss ifi er 61 .0 8 ± 1. 32 % 81 .8 2 ± 0. 58 % 43 .2 0 ± 0. 69 % 66 .3 3 ± 0. 36 % E m be dd in g M L P w ith dr op ou t, h = 1 2 8 51 .9 5 ± 0. 82 % 77 .2 0 ± 0. 65 % 30 .6 5 ± 0. 39 % 58 .6 2 ± 0. 41 % E m be dd in g cl us te rm at ch in g, k = 5 0 0 54 .9 4 ± 0. 85 % 71 .0 9 ± 0. 77 % 32 .1 9 ± 0. 40 % 45 .9 3 ± 0. 40 % H yp er pl an es -M A M L (o ur s) ,P = 2 4 0 0 ,m = 0 62 .3 4 ± 0. 82 % 81 .8 1 ± 0. 60 % 39 .3 0 ± 0. 37 % 63 .1 8 ± 0. 38 % H yp er pl an es -M A M L (o ur s) ,P = 2 4 0 0 ,m = 1 .2 62 .4 4 ± 0. 82 % 83 .2 0 ± 0. 58 % 41 .8 6 ± 0. 38 % 65 .2 3 ± 0. 37 % C A C T U sM A M L (o ur s) ,P = 1 ,k = 5 0 0 66 .4 9 ± 0. 80 % 85 .6 0 ± 0. 53 % 45 .0 4 ± 0. 41 % 69 .1 4 ± 0. 36 % C A C T U sM A M L (o ur s) ,P = 1 0 0 ,k = 5 0 0 68 .8 4 ± 0. 80 % 87 .7 8 ± 0. 50 % 48 .0 9 ± 0. 41 % 73 .3 6 ± 0. 34 % C A C T U sPr ot oN et s (o ur s) ,P = 1 0 0 ,k = 5 0 0 68 .1 2 ± 0. 84 % 83 .5 8 ± 0. 61 % 47 .7 5 ± 0. 43 % 66 .2 7 ± 0. 37 % B iG A N ,d = 2 0 0 E m be dd in g k nn -n ea re st ne ig hb or s 49 .5 5 ± 1. 27 % 68 .0 6 ± 0. 71 % 27 .3 7 ± 0. 33 % 46 .7 0 ± 0. 36 % E m be dd in g lin ea rc la ss ifi er 48 .2 8 ± 1. 25 % 68 .7 2 ± 0. 66 % 27 .8 0 ± 0. 61 % 45 .8 2 ± 0. 37 % E m be dd in g M L P w ith dr op ou t, h = 1 2 8 40 .5 4 ± 0. 79 % 62 .5 6 ± 0. 79 % 19 .9 2 ± 0. 32 % 40 .7 1 ± 0. 40 % E m be dd in g cl us te rm at ch in g, k = 5 0 0 43 .9 6 ± 0. 80 % 58 .6 2 ± 0. 78 % 21 .5 4 ± 0. 32 % 31 .0 6 ± 0. 37 % H yp er pl an es -M A M L (o ur s) ,P = 2 4 0 0 ,m = 0 53 .6 0 ± 0. 82 % 74 .6 0 ± 0. 69 % 29 .0 2 ± 0. 33 % 50 .7 7 ± 0. 39 % H yp er pl an es -M A M L (o ur s) ,P = 2 4 0 0 ,m = 0 .5 53 .1 8 ± 0. 81 % 73 .5 5 ± 0. 69 % 29 .9 8 ± 0. 35 % 50 .1 4 ± 0. 38 % C A C T U sM A M L (o ur s) ,P = 1 ,k = 5 0 0 55 .9 2 ± 0. 80 % 76 .2 8 ± 0. 65 % 32 .4 4 ± 0. 35 % 54 .2 2 ± 0. 39 % C A C T U sM A M L (o ur s) ,P = 1 0 0 ,k = 5 0 0 58 .1 8 ± 0. 81 % 78 .6 6 ± 0. 65 % 35 .5 6 ± 0. 36 % 58 .6 2 ± 0. 38 % C A C T U sPr ot oN et s (o ur s) ,P = 1 0 0 ,k = 5 0 0 54 .7 4 ± 0. 82 % 71 .6 9 ± 0. 73 % 33 .4 0 ± 0. 37 % 50 .6 2 ± 0. 39 % Su pe rv is ed m et ale ar ni ng O ra cl eM A M L (c on tr ol ) 94 .4 6 ± 0. 35 % 98 .8 3 ± 0. 12 % 84 .6 0 ± 0. 32 % 96 .2 9 ± 0. 13 % O ra cl ePr ot oN et s (c on tr ol ) 98 .3 5 ± 0. 22 % 99 .5 8 ± 0. 09 % 95 .3 1 ± 0. 18 % 98 .8 1 ± 0. 07 % O ra cl eM A M L † (F in n et al ., 20 17 ) 98 .7 ± 0. 4 % 99 .9 ± 0. 1 % 95 .8 ± 0. 3 % 98 .9 ± 0. 2 % † R es ul tu se d 64 fil te rs pe rc on vo lu tio na ll ay er ,3 × da ta au gm en ta tio n, an d fo ld ed th e va lid at io n se ti nt o th e tr ai ni ng se t af te rh yp er pa ra m et er tu ni ng .
+Ta bl
+e 10
+:m in
+iI m
+ag eN
+et ob
+je ct
+cl as
+si fic
+at io
+n re
+su lts
+av er
+ag ed
+ov er
+10 00
+ta sk
+s. Fo
+rc om
+pa ri
+so n
+pu rp
+os es
+,w e
+on ly
+sh ow
+re su
+lts fr
+om pr
+io rs
+up er
+vi se
+d m
+et a-
+le ar
+ni ng
+m et
+ho ds
+th at
+us e
+th e
+sa m
+e 4-
+bl oc
+k m
+et a-
+le ar
+ne ra
+rc hi
+te ct
+ur e
+w e
+co ns
+id er
+.± de
+no te
+s a
+95 %
+co nfi
+de nc
+e in
+te rv
+al .d
+:d im
+en si
+on al
+ity of
+em be
+dd in
+g, h
+:n um
+be ro
+fh id
+de n
+un its
+in a
+fu lly
+co nn
+ec te
+d la
+ye r,
+k :n
+um be
+ro fc
+lu st
+er s
+in a
+pa rt
+iti on
+,P :n
+um be
+ro fp
+ar tit
+io ns
+us ed
+du ri
+ng m
+et a-
+le ar
+ni ng
+,m :m
+ar gi
+n on
+bo un
+da ry
+-d efi
+ni ng
+hy pe
+rp la
+ne s.
+A lg
+or ith
+m \
+(w ay
+,s ho
+t) (5
+,1 )
+(5 ,5
+) (5
+,2 0)
+(5 ,5
+0)
+B as
+el in es Tr ai ni
+ng fr
+om sc
+ra tc
+h 27
+.5 9 ±
+0. 59
+% 38
+.4 8 ±
+0. 66
+% 51
+.5 3 ±
+0. 72
+% 59
+.6 3 ±
+0. 74
+%
+B iG
+A N
+,d =
+2 0 0
+E m
+be dd
+in g k
+nn -n
+ea re
+st ne
+ig hb
+or s
+25 .5
+6 ±
+1. 08
+% 31
+.1 0 ±
+0. 63
+% 37
+.3 1 ±
+0. 40
+% 43
+.6 0 ±
+0. 37 % E m be dd in g lin ea rc la ss ifi er 27 .0 8 ± 1. 24 % 33 .9 1 ± 0. 64 % 44 .0 0 ± 0. 45 % 50 .4 1 ± 0. 37 % E m be dd in g M L P w ith dr op ou t, h = 1 2 8 22 .9 1 ± 0. 54 % 29 .0 6 ± 0. 63 % 40 .0 6 ± 0. 72 % 48 .3 6 ± 0. 71 % E m be dd in g cl us te rm at ch in g, k = 5 0 0 24 .6 3 ± 0. 56 % 29 .4 9 ± 0. 58 % 33 .8 9 ± 0. 63 % 36 .1 3 ± 0. 64 % H yp er pl an es -M A M L (o ur s) ,P = 4 8 0 0 ,m = 0 20 .0 0 ± 0. 00 % 20 .0 0 ± 0. 00 % 20 .0 0 ± 0. 00 % 20 .0 0 ± 0. 00 % H yp er pl an es -M A M L (o ur s) ,P = 4 8 0 0 ,m = 0 .9 29 .6 7 ± 0. 64 % 41 .9 2 ± 0. 69 % 51 .3 2 ± 0. 71 % 54 .7 2 ± 0. 71 % C A C T U sM A M L (o ur s) ,P = 1 ,k = 5 0 0 37 .7 5 ± 0. 74 % 52 .5 9 ± 0. 75 % 62 .7 0 ± 0. 68 % 67 .9 8 ± 0. 68 % C A C T U sM A M L (o ur s) ,P = 5 0 ,k = 5 0 0 36 .2 4 ± 0. 74 % 51 .2 8 ± 0. 68 % 61 .3 3 ± 0. 67 % 66 .9 1 ± 0. 68 % C A C T U sPr ot oN et s (o ur s) ,P = 5 0 ,k = 5 0 0 36 .6 2 ± 0. 70 % 50 .1 6 ± 0. 73 % 59 .5 6 ± 0. 68 % 63 .2 7 ± 0. 67 % D ee pC lu st er ,d = 2 5 6 E m be dd in g k nn -n ea re st ne ig hb or s 28 .9 0 ± 1. 25 % 42 .2 5 ± 0. 67 % 56 .4 4 ± 0. 43 % 63 .9 0 ± 0. 38 % E m be dd in g lin ea rc la ss ifi er 29 .4 4 ± 1. 22 % 39 .7 9 ± 0. 64 % 56 .1 9 ± 0. 43 % 65 .2 8 ± 0. 34 % E m be dd in g M L P w ith dr op ou t, h = 1 2 8 29 .0 3 ± 0. 61 % 39 .6 7 ± 0. 69 % 52 .7 1 ± 0. 62 % 60 .9 5 ± 0. 63 % E m be dd in g cl us te rm at ch in g, k = 5 0 0 22 .2 0 ± 0. 50 % 23 .5 0 ± 0. 52 % 24 .9 7 ± 0. 54 % 26 .8 7 ± 0. 55 % H yp er pl an es -M A M L (o ur s) ,P = 4 8 0 0 ,m = 0 20 .0 2 ± 0. 06 % 20 .0 1 ± 0. 01 % 20 .0 0 ± 0. 01 % 20 .0 1 ± 0. 02 % H yp er pl an es -M A M L (o ur s) ,P = 4 8 0 0 ,m = 0 .1 35 .8 5 ± 0. 66 % 49 .5 4 ± 0. 72 % 60 .6 8 ± 0. 69 % 65 .5 5 ± 0. 66 % C A C T U sM A M L (o ur s) ,P = 1 ,k = 5 0 0 38 .7 5 ± 0. 70 % 52 .7 3 ± 0. 72 % 62 .7 2 ± 0. 69 % 67 .7 7 ± 0. 62 % C A C T U sM A M L (o ur s) ,P = 5 0 ,k = 5 0 0 39 .9 0 ± 0. 74 % 53 .9 7 ± 0. 70 % 63 .8 4 ± 0. 70 % 69 .6 4 ± 0. 63 % C A C T U sPr ot oN et s (o ur s) ,P = 5 0 ,k = 5 0 0 39 .1 8 ± 0. 71 % 53 .3 6 ± 0. 70 % 61 .5 4 ± 0. 68 % 63 .5 5 ± 0. 64 % Su pe rv is ed m et ale ar ni ng O ra cl eM A M L (c on tr ol ) 46 .8 1 ± 0. 77 % 62 .1 3 ± 0. 72 % 71 .0 3 ± 0. 69 % 75 .5 4 ± 0. 62 % O ra cl ePr ot oN et s (c on tr ol ) 46 .5 6 ± 0. 76 % 62 .2 9 ± 0. 71 % 70 .0 5 ± 0. 65 % 72 .0 4 ± 0. 60 % O ra cl eM A M L (F in n et al ., 20 17 ) 48 .7 0 ± 1. 84 % 63 .1 1 ± 0. 92 % M et ale ar ne rL ST M (R av i& L ar oc he lle ,2 01 7) 43 .4 4 ± 0. 77 % 60 .6 0 ± 0. 71 % M at ch in g ne tw or k FC E (V in ya ls et al ., 20 16 ) 43 .5 6 ± 0. 84 % 55 .3 1 ± 0. 73 % Su pe rv is ed pr etr ai ni ng Fi ne tu ni ng (R av i& L ar oc he lle ,2 01 7) 28 .8 6 ± 0. 54 % 49 .7 9 ± 0. 79 % N ea re st ne ig hb or s (R av i& L ar oc he lle ,2 01 7) 41 .0 8 ± 0. 70 % 51 .0 4 ± 0. 65 %

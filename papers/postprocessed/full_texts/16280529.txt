@@ -1,0 +1,195 @@
+Stochastic Backpropagation through Mixture Density Distributions
+The ability to backpropagate stochastic gradients through continuous latent distributions has been crucial to the emergence of variational autoencoders [4, 6, 7, 3] and stochastic gradient variational Bayes [2, 5, 1]. The key ingredient is an unbiased and low-variance way of estimating gradients with respect to distribution parameters from gradients evaluated at distribution samples. The “reparameterization trick” [6] provides a class of transforms yielding such estimators for many continuous distributions, including the Gaussian and other members of the location-scale family. However the trick does not readily extend to mixture density models, due to the difficulty of reparameterizing the discrete distribution over mixture weights. This report describes an alternative transform, applicable to any continuous multivariate distribution with a differentiable density function from which samples can be drawn, and uses it to derive an unbiased estimator for mixture density weight derivatives. Combined with the reparameterization trick applied to the individual mixture components, this estimator makes it straightforward to train variational autoencoders with mixture-distributed latent variables, or to perform stochastic variational inference with a mixture density variational posterior. General Result Let f(x) be a probability density function (PDF) over x ∈ R and cumulative density function (CDF) F (x). f can be rewritten as
+1. Introduction
+ar X
+iv :1
+60 7.
+05 69
+0v 1
+[ cs
+.N E
+] 1
+General Result
+Let f(x) be a probability density function (PDF) over x ∈ RD and cumulative density function (CDF) F (x). f can be rewritten as
+f(x) =
+D ∏
+d=1
+fd(xd|x<d) (1)
+where x<d = x1, . . . , xd−1, f1(x1|x<1) = f1(x1) and fd is the marginal PDF of xd conditioned on x<d. A sample x̂ can be drawn from f using the multivariate quantile transform: first draw a vector of D independent samples
+u = (u1, . . . , uD) from U(0, 1), then recursively define x̂ as
+x̂1 = F −1 1 (u1) (2) x̂d = F −1 d (ud|x̂<d) (3)
+where F−1d is the quantile function (inverse CDF) corresponding to the PDF fd. Inverting Eq. 3 and applying the definition of a univariate CDF yields
+Fd(x̂d|x̂<d) =
+∫ x̂d
+t=−∞
+fd(t|x̂<d)dt = ud (4)
+Assume that f depends on some parameter θ. The general form of Leibniz integral rule tells us that
+∂Fd(x̂d|x̂<d)
+∂θ = fd(x̂d|x̂<d)
+∂x̂d
+∂θ +
+∫ x̂d
+t=−∞
+∂fd(t|x̂<d)
+∂θ dt =
+∂ud
+∂θ = 0 (5)
+and therefore ∂x̂d
+∂θ = −
+1
+fd(x̂d|x̂<d)
+∫ x̂d
+t=−∞
+∂fd(t|x̂<d)
+∂θ dt (6)
+If the above integral is intractable it can be estimated with Monte-Carlo sampling, as long as fd(t|x̂<d) can be sampled and Fd(x̂d|x̂<d) is tractable:
+∫ x̂d
+t=−∞
+∂fd(t|x̂<d)
+∂θ dt =
+∫ x̂d
+t=−∞
+fd(t|x̂<d) ∂ log fd(t|x̂<d)
+∂θ dt (7)
+= Fd(x̂d|x̂<d)
+∫ ∞
+t=−∞
+fd(t ≤ x̂d|x̂<d) ∂ log fd(t|x̂<d)
+∂θ dt (8)
+≈ Fd(x̂d|x̂<d)
+N
+N ∑
+n=1
+∂ log fd(t n|x̂<d)
+∂θ ; tn ∼ fd(t ≤ x̂d|x̂<d) (9)
+where
+fd(t ≤ x̂d|x̂<d) =
+{
+fd(t|x̂<d) Fd(x̂d|x̂<d) if t ≤ x̂d 0 otherwise (10)
+which can be sampled by drawing from fd(t|x̂<d) and rejecting the result if it is greater than x̂d.
+Let h be the expectation over f of an arbitrary differentiable function g of x (e.g. a loss function) and denote by Q(u) the sample from f returned by the quantile transform applied to u. Then
+h =
+∫
+u∈[0,1]D g(Q(u))du (11)
+and hence
+∂h ∂θ =
+∫
+u∈[0,1]D
+∂g(Q(u))
+∂θ du (12)
+=
+∫
+u∈[0,1]D
+D ∑
+d=1
+∂g(Q(u))
+∂Qd(u)
+∂Qd(u)
+∂θ du (13)
+which can be estimated with Monte-Carlo sampling:
+∂h ∂θ ≈ 1 N
+N ∑
+n=1
+D ∑
+d=1
+∂g(xn)
+∂xnd
+∂xnd ∂θ
+(14)
+where xn ∼ f(x). Note that the above estimator does not require Q to be known, as long as f can be sampled.
+Application to Mixture Density Weights
+If f is a mixture density distribution with K components then
+f(x) = K ∑
+k=1
+πkf k(x) (15)
+and
+fd(xd|x<d) =
+K ∑
+k=1
+Pr(k|x<d)f k d (xd|x<d) (16)
+where Pr(k|x<d) is the posterior responsibility of the component k, given the prior mixture density weight πk and the observation sequence x<d.
+In what follows we will assume that the mixture components have diagonal covariance, so that fkd (xd|x<d) = f k d (xd). It should be possible to extend the analysis to non-diagonal components, but that is left for future work. Abbreviating Pr(k|x<d) to p k d and applying the diagonal covariance of the components, Eq. 16 becomes
+fd(xd|x<d) = ∑
+k
+pkdf k d (xd) (17)
+where pkd is defined by the following recurrence relation:
+pk1 = πk (18) pkd = pkd−1f k d−1(xd−1)
+fd−1(xd−1|x<d−1) (19)
+We seek the derivatives of h with respect to the mixture weights πj , after the weights have been normalised (e.g. by a softmax function). Setting xd = t and differentiating Eq. 17 gives
+∂fd(t|x<d)
+∂πj =
+∑
+k
+[
+∂pkd ∂πj fkd (t) + ∂fkd (t) ∂t ∂t ∂πj pkd
+]
+(20)
+Setting x = x̂ where x̂ is a sample drawn from f , and observing that ∂t ∂πj = 0 if
+t does not depend on f , we can substitute the above into Eq. 6 to get
+∂x̂d ∂πj = −
+1
+fd(x̂d|x̂<d)
+∑
+k
+∂pkd ∂πj ∫ x̂d
+t=−∞
+fkd (t)dt (21)
+= − 1
+fd(x̂d|x̂<d)
+∑
+k
+∂ log pkd ∂πj pkdF k d (x̂d) (22)
+Differentiating Eq. 19 yields (after some rearrangement)
+∂ log pkd ∂πj = ∂ log pkd−1 ∂πj − ∑
+l
+pld ∂ log pld−1
+∂πj (23)
++
+[
+∂ log fkd−1(x̂d−1)
+∂x̂d−1 − ∑
+l
+pld ∂ log f ld−1(x̂d−1)
+∂x̂d−1
+]
+∂x̂d−1
+∂πj (24)
+∂ log pkd ∂πj and ∂x̂d ∂πj can then be obtained with a joint recursion, starting from the initial conditions
+∂ log pk1 ∂πj = δjk πj (25)
+∂x̂1 ∂πj = −
+F j 1 (x̂1) f1(x̂1) (26)
+We are now ready to approximate ∂h ∂πj by substituting into Eq. 14:
+∂h
+∂πj ≈
+1
+N
+N ∑
+n=1
+D ∑
+d=1
+∂g(xn)
+∂xnd ∂xnd ∂πj ; xn ∼ f(x) (27)
+Pseudocode for the complete computation is provided in Algorithm 1.
+initialise ∂h ∂πj ← 0 for n = 1 to N do draw x ∼ f(x) pk1 ← πk ∂ log pk
+1 ∂πj ← δjk πj
+∂x1 ∂πj ← −
+F j 1 (x1) f1(x1)
+f1(x1)← ∑ k πkf k 1 (x1) for d = 2 to D do fd(xd|x<d)← ∑ k p k df k d (xd)
+pkd ← pkd−1f k d−1(xd−1)
+fd−1(xd−1|x<d−1)
+∂ log pkd ∂πj ← ∂ log pkd−1 ∂πj − ∑ l p l d ∂ log pld−1 ∂πj +
+∂xd−1 ∂πj
+[
+∂ log fkd−1(xd−1)
+∂xd−1 − ∑ l p l d
+∂ log f ld−1(xd−1)
+∂xd−1
+]
+∂xd ∂πj ← − 1 fd(xd|x<d)
+∑
+k ∂ log pkd ∂πj pkdF k d (xd)
+end for ∂h ∂πj ← ∂h ∂πj + ∑ d ∂g(x) ∂xd ∂xd ∂πj
+end for ∂h ∂πj ← 1 N ∂h ∂πj
+Algorithm 1: Stochastic Backpropagation through Mixture Density Weights
+Acknowledgements
+Useful discussions and comments were provided by Ivo Danihelka, Danilo Rezende, Remi Munos, Diederik Kingma, Charles Blundell, Mevlana Gemici, Nando de Freitas, and Andriy Mnih.
