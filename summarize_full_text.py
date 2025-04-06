@@ -8,7 +8,7 @@ from tqdm import tqdm
 path = "./papers/postprocessed/full_texts/"
 files = os.listdir(path)
 
-gold_summaries = json.load(open("./id_summary_map.json", "r"))
+gold_summaries = json.load(open("./abstractive_summaries/id_summary_map.json", "r"))
 id_score_map = {}
 
 for file in tqdm(files):
@@ -51,5 +51,5 @@ for file in tqdm(files):
     }
 
     # Save the results to a JSON file
-    with open("./id_score_map.json", "w") as f:
+    with open("./experiments/summarization_with_full_text.json", "w") as f:
         json.dump(id_score_map, f, indent=4)
