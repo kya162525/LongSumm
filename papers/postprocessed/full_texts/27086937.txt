@@ -1,0 +1,308 @@
+Network-regularized Sparse Logistic Regression Models for Clinical Risk Prediction and Biomarker Discovery
+Molecular profiling data (e.g., gene expression) has been used for clinical risk prediction and biomarker discovery. However, it is necessary to integrate other prior knowledge like biological pathways or gene interaction networks to improve the predictive ability and biological interpretability of biomarkers. Here, we first introduce a general regularized Logistic Regression (LR) framework with regularized term λ‖w‖1 + ηwMw, which can reduce to different penalties, including Lasso, elastic net, and network-regularized terms with different M . This framework can be easily solved in a unified manner by a cyclic coordinate descent algorithm which can avoid inverse matrix operation and accelerate the computing speed. However, if those estimated wi and wj have opposite signs, then the traditional network-regularized penalty may not perform well. To address it, we introduce a novel network-regularized sparse LR model with a new penalty λ‖w‖1 + η|w|M |w| to consider the difference between the absolute values of the coefficients. And we develop two efficient algorithms to solve it. Finally, we test our methods and compare them with the related ones using simulated and real data to show their efficiency. Index Terms —Sparse logistic regression, network-regularized penalty, survival risk prediction, feature selection
+1 INTRODUCTION
+P REDICTING clinical risk and discovering molecularprognostic signatures are key topics in genomic studies [1], [2]. Large number of genomic datasets (e.g., TCGA [3], [4]) have been rapidly generated on cancer and other complex disease [3], [5], [6], [7]. These available cancer genomic data provides us an unprecedented opportunity to predict the development risk of cancer via integrating diverse molecular profiling data [8], [5]. Recently, some prognostic models have been proposed via integrating clinical and gene expression data [9], [10], [11]. Most of these methods are based on the Cox proportional hazards model [12] and a few are designed based on other machine learning methods for this task. We can also easily dichotomize the survival time into a binary outcome and obtain a typical classification problem which can been solved by many supervised machine learning methods.
+Logistic regression (LR) is one of such a classical method and has been widely used for classification [13]. However the traditional LR model employs all (or most) variables for predicting and lead to a non-sparse solution with limited interpretability. The sparsity principle is an important strategy for interpretable analysis in statistics and machine learning. Recently, a number of studies have focused on developing regularized or penalized LR models to encourage sparse solutions and use a limited number of variables for
+• Wenwen Min, and Juan Liu are with the State Key Laboratory of Software Engineering, School of Computer, Wuhan University, Wuhan 430072, China. E-mail: {mww, liujuan}@whu.edu.cn. • Shihua Zhang is with National Center for Mathematics and Interdisciplinary Sciences, Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Beijing 100190, China. E-mail: zsh@amss.ac.cn.
+Manuscript received XXX, 2016; revised XXX, 2016.
+predicting [14], [15], [16], [17], [18], [19], [20]. Many of the penalized LR models apply Lasso as a penalty function to induce sparsity. However the Lasso fails to select strongly correlated variables together and tends to select a variable from them [21]. Thus, many generalizations of the Lasso have been proposed to solve the limits of Lasso [22], including elastic net, group Lasso, and fused Lasso, etc. On the other hand, some researchers proposed refined regression models with network-based penalties [23], [24], [25]. These models are expect to get more accurate prediction and better interpretability via integrating prior knowledge.
+Motivated by the development of sparse coding and network-regularized norm [23], [26], we address the double tasks – feature selection and class prediction – by using a network-based penalty in the Logistic Regression (LR) framework. Specifically, we first focus on a traditional network-regularized penalty:
+R1(w) = λ‖w‖1 + ηwTLw, (1) where L is the normalized Laplacian matrix encoding a prior network (e.g., a protein interaction network). The first term is a L1-norm penalty to induce sparsity. The second term wTLw = ∑ i∼j Aij(wi/ √ di − wj/ √ dj)
+2 is a quadratic-Laplacian norm penalty to force the coefficients of w to be smooth. More importantly, it is a convex penalty. Thus, such a regularized LR model and its reduced forms can be solved effectively. However if those estimated wi and wj have opposite signs, then the traditional networkregularized penalty may not perform well. To address this limitation, we focus on a novel network-based penalty [27]:
+R2(w) = λ‖w‖1 + η|w|TL|w|, (2) where |w|TL|w| = ∑i∼j Aij(|wi|/ √ di − |wj |/ √ dj) 2 which is adopted to eliminate the effects of symbols of the
+2 estimated coefficients. However, the novel penalty is not differentiable at the zero point. Intuitively, it is a challenge issue to solve such a regularized LR model using the conventional gradient descent method. Here we develop two methods to solve it. We first propose to use the following penalty:
+λ
+p∑
+i=1
+|wi|+ η ∑
+i∼j
+Aij
+( sign(ŵi)wi√
+di − sign(ŵj)wj√ dj
+)2
+to replaceR2, i.e., |wi| ≈ sign(ŵi)wi, where ŵ is computed using the maximum likelihood estimation for classical LR model. The new penalty is a convex function and has been used for a regression model [24]. Similarly, we can effectively solve this regularized LR model. We also try to solve the novel penalty (R2(w)) directly. Fortunately, Hastie et al. [28] (see Page 112) find that R2 has a good property (i.e., condition regularity [28], [29]), which inspires us to solve it via a cycle coordinate descent algorithm.
+To sum up, our key contributions are two-fold. First, we introduce a unified Network-regularized Sparse LR (NSLR) framework enabling the Lasso, elastic net and networkregularized LR models are all special cases of it. More importantly, this framework can be efficiently solved using a coordinate-wise Newton algorithm. Second, we propose a novel network-regularized LR model to eliminate the sensitivity of the conventional network-regularized penalty to the signs of estimated coefficients. Here we adopt an approximate algorithm and a coordinate-wise Newton algorithm to solve it, respectively. Finally, we apply our methods to Glioblastoma multiforme (GBM) gene expression and cancer clinical data from TCGA database [3], and a protein interaction network data from Pathway Commons [30] for survival risk prediction and biomarker discovery. Our first key is to identify some gene biomarkers for survival risk prediction. In addition, based on the prediction probability scores of GBM patients, we can divide them into different subtypes relating to survival output. Furthermore, we apply our methods to a lung cancer dataset with two subtypes including Lung adenocarcinoma (LUAD) and Lung squamous-cell carcinoma (LUSC) to identify subtypespecific biomarkers.
+2 METHOD
+In this section, we first briefly review the typical logistic regression model and an iteratively re-weight least squares (IRLS) learning strategy based on a coordinate-wise Newton method. We further introduce the two network-regularized LR models together with the basic regularized LR models (Lasso and elastic net) in a unified framework in Section 2.3 and suggest a general coordinate-wise Newton algorithm for solving this framework. Lastly, we propose a novel network-regularized sparse LR model in Section 2.5. We can use an approximate strategy (AdaNet.LR in Section 2.3) to solve it. In addition, we also develop an efficient coordinatewise Newton algorithm to solve the AdaNet.LR directly (Section 2.5).
+2.1 Logistic Regression
+Here we consider a binary classification problem. Given n training samples D = {(x1, y1), · · · , (xn, yn)} where xi ∈
+R p is a p-dimensional column vector and label yi ∈ {0, 1}. We first write the logistic function as follows:
+p(x;w, b) = Pr(y = 1|x;w, b) = 1 1 + exp(−wTx− b) .
+For convenience, let w = (w, b) and x = (x, 1). We can rewrite it:
+p(x;w) = Pr(y = 1|x;w) = 1 1 + exp(−wTx) , (3)
+where w is the weight vector of coefficients, and p(·) is a sigmoid function. Here we assume that the n training examples are generated independently. We thus can obtain the following log-likelihood:
+ℓ(w) = n∑
+i=1
+logPr(yi|xi;w)
+= n∑
+i=1
+{yi log p(xi;w) + (1− yi) log(1− p(xi;w))}
+= n∑
+i=1
+{yiwTxi − log(1 + exp(wTxi)}. (4)
+2.2 A Learning Algorithm for Logistic Regression
+Clearly, the above likelihood is a convex function. Thus we can maximize the likelihood via its gradient equations with respect to w:
+∇wℓ(w) = n∑
+i=1
+{xi(yi − p(xi;w))}
+= XT (y − p) = ~0, (5)
+where y = (y1, · · · , yn) is a n-dimensional column vector, X = (x1, · · · ,xn) is a n × (p + 1) matrix and p = (p(x1;w), · · · , p(xn;w)) is also a n-dimensional column vector. Here we adapt a Newton (or Newton-Raphson) algorithm to maximize problem (4). To this end, we first compute the Hessian matrix H of Eq. (4).
+H(w) = ∇2wℓ(w) = − n∑
+i=1
+{xixTi p(xi;w)(1 − p(xi;w))}
+= −XTΛX, (6)
+where Λ is a n×n diagonal matrix with Λii = p(xi;w)(1− p(xi;w)). Starting with w
+old, we thus can obtain a Newton update rule:
+wnew = wold − [H(wold)]−1∇wℓ(w) |w=wold . (7)
+Combining Eq. (5), Eq. (6) and Eq. (7), we can rewrite the Newton update step as follows:
+wnew = wold + (XTΛX)−1XT (y − p) = (XTΛX)−1XTΛz, (8)
+where z = Xwold + Λ−1(y − p). We can see that the Newton update step is equivalent to solve the following linear equations with respect to wnew :
+(XTΛX)wnew −XTΛz = 0. (9)
+3 g e n e sample
+X s a m p le y
+Protein-protein Interaction Network
+L
+Model
+label
+death (1) or alive (0)
+525 samples
+2/3 training 1/3 testing
+survival
+analysis
+death within
+one year?
+survival analysis death within one year?
+(136Y; 157N) (68Y; 79N)
+training
+classifier
+testing
+classifier
+BA
+Fig. 1: (A) A novel network-regularized sparse logistic regression framework by considering the difference between the absolute values of the coefficients. It combines the gene expression data, the normalized Laplacian matrix L encoding the protein interaction network and the clinical binary outcome to train a prediction model. (B) Illustration of sample divisions with an application using GBM data from TCGA. Here we collect a total of 525 GBM samples which are randomly divided into two subsets, including 350 training samples and 175 testing samples. We dichotomize the survival time of patients into clinical binary outcomes to formulate it into a classification problem. For each patient, we dichotomize its survival time into a binary outcome based on his/her survival time. For training samples, there are 57 censored patients kept for using in survival analysis. For testing samples, there are 32 censored patients. In the training process, we first remove those censored samples to train the regularized LR models. Then, we re-test all the training data and all the testing data (including censored samples) with the trained models. Based on the predicted LR scores computed via Pr(y = 1|x;w), we divide all the training and testing samples into different risk groups for further survival analysis.
+Note that the diagonal matrix Λ and the vector z are updated using the following two formulas:
+Λii = p(xi;w old)(1− p(xi;wold)), (10)
+zi = x T i w
+old + yi − p(xi;wold)
+Λii . (11)
+Since XTΛX = (Λ1/2X)T (Λ1/2X) is a symmetric positive semi-definite matrix, we can obtain the optimal solution of linear system (9) via minimizing the following Quadratic Program (QP) problem:
+wnew = argmin w
+1 2 wT (XTΛX)w −wT (XTΛz). (12)
+That is to say that each Newton update step in Eq. (7) is equivalent to minimize a QP problem. To avoid inverse matrix operation, we apply a cyclic coordinate descent method [31], [32] to solve these QP problems. After a few steps of Newton update, we can get the optimal solution of Eq. (4). This process is also known as the iteratively re-weight least squares (IRLS) strategy [33], [34].
+2.3 A Unified Regularized Logistic Regression Framework
+Here we first introduce the Network-regularized Sparse LR (NSLR) models in a unified regularized LR framework as follows:
+min w,b {− 1 n ℓ(w, b) +R(w)} (13)
+with
+R(w) = λ{α p∑
+i=1
+|wi|+ (1− α)
+2 wTMw}, (14)
+where n denotes the number of samples and α ∈ [0, 1]. We can solve this framework via the above IRLS strategy. In other words, each Newton update step of Eq. (13) is equivalent to solving a new QP problem. For convenience, we define the coefficient vector w = (w1, · · · ,wp) and θ = (w1, · · · ,wp, b), where b is the intercept. Then, the QP problem can be defined as follows:
+L(w, b) = 1 2n θT (XTΛX)θ − 1 n θT (XTΛz) +R(w), (15) where R(w) is a generalized network-regularized penalty. With different M in R(w), the penalty reduces to different cases including Lasso, Elastic net and two networkregularized ones.
+Case 1: M = 0. The penalty function Eq. (14) reduces
+to R(w) = λ p∑
+i=1 |wi|, which is the Lasso penalty [35]. We
+denote this case as Lasso.LR. It has been widely used in bioinformatics [14], [15], [17]. However, Lasso has some potential limits [21]. For example, it fails to select strongly correlated variable group and only selects one variable from such group and ignores the others in it.
+Case 2: M = I. The penalty function Eq. (14) reduces
+to R(w) = λ p∑
+i=1 |wi| + (1/2)ηwTw, which is the so-called
+4 Elastic net penalty [21]. We denote this case as Elastic.LR which has adopted in [21]. However, to incorporate the known biological networks, a network-regularized penalty is needed in LR model.
+Case 3: M = L, where L = I − D1/2AD1/2 is a symmetric normalized Laplacian matrix and A ∈ Rp×p is the adjacency matrix for a given prior network (e.g., a protein interaction network). If vertex i and vertex j are connected, then Aij = 1 and Aij = 0 otherwise. The degree of vertex i is defined by di = ∑p j=1 Aij . Thus, L = (Lij) can be re-written as follows:
+Lij =    1, if i = j and di 6= 0, − Aij√ didj , if i and j are connected,
+0, otherwise.
+(16)
+Li and Li [23] applied such a network-regularized regression model for analyzing genomic data. Zhang et al. [36] applied this penalty into the LR model for molecular pathway identification. We denote the Network-regularized LR model as Network.LR. They solve this model using the CVX package which was implemented for solving convex optimization problems [37]. In this paper, compared with the method based on CVX, we develop a simple coordinatewise Newton algorithm to avoid inverse matrix operation. However, the typical network-regularized penalty ignores that the pairwise variables of coefficients (linked in the prior network) may have opposite signs.
+Case 4: M = L∗. To consider the signs of the estimated vector w, we can adopt an adaptive network-based penalty R(w):
+λ1
+p∑
+i=1
+|wi|+ η1 ∑
+i∼j
+Aij
+( sign(ŵi)wi√
+di − sign(ŵj)wj√ dj
+)2 ,
+where λ1 = λα, η1 = λ(1−α)
+2 and ŵ is computed using the maximum likelihood estimation for the classical LR model. It can considered as an approximation of |wj | using sign(ŵj)wj . At same time, L ∗ can be re-written as:
+L∗ij =    1, if i = j and di 6= 0, − sign(ŵi)sign(ŵj)Aij√ didj , if i and j are connected,
+0, otherwise.
+(17)
+Here we denote the Adaptive Network-regularized LR as AdaNet.LR.
+In addition to the four cases, we also consider a novel network-regularized penalty: R(w) = λ∑pi=1 |wi| + η|w|TM |w| [27], to consider the opposite signs of pairwise variables directly. The new penalty can eliminate the sensitivity of the typical one to the signs of the feature correlation. However, it is non-differentiable at zero point and thus the general gradient descent method cannot solve AbsNet.LR directly. In the Section 2.5, we will introduce a clever way to solve it. Note that the AdaNet.LR model can be regarded as an approximation of the AbsNet.LR model.
+2.4 A Learning Algorithm for NSLR
+Here we apply a coordinate-wise Newton algorithm to solve the NSLR framework. We first use a cyclic coordinate
+descent algorithm [31], [32] to solve the QP problem in Eq. (15). Without loss of generality, we extend the p × p matrix M to a (p+ 1)× (p+ 1) matrix as follows:
+M ← [ M 0
+0 0
+] .
+Let λ = n · λ and w = (w1, · · · ,wp, b). We can obtain a unified form of Eq. (15):
+L(w) = 1 2 wT (XTΛX)w −wT (XTΛz) +R(w), (18) whereR(w) = λ{α∑pi=1 |wi|+(1−α)/2wTMw}. We can easily prove that the objective function (18) is a convex one. To minimize it, we first obtain the gradient of w as follows:
+∇wL(w) = (XTΛX)w−XTΛz+α~s+(1−α)λMw, (19) where ~s is a column vector. Let B = XTΛX +(1−α)λM , and t = XTΛz. Furthermore, we can also obtain the gradient with respect to wj :
+∂L ∂wj = Bjjwj+ ∑
+i6=j
+Bjiwi−tj+αλsj , j = 1, · · · , p, (20)
+where sj = sign(wj) if wj 6= 0, sj = 0 otherwise. Let ∂L ∂wj = 0,
+thus we have the following update rule for wj :
+wj = S(tj − ∑
+i6=j
+Bjiwi, αλ)/Bjj , (21)
+where the soft-thresholding function is defined as
+S(a, ρ) = sign(a)(|a| − ρ)+. Similarly, we can also get the update rule for the bias term b (note that b = wp+1). Given k = p+1, then we write the gradient of b:
+∂L ∂b = Bkkwk + ∑
+i6=k
+Bkiwi − tk. (22)
+Let ∂L∂b = 0. It leads to the update rule for b:
+b = (tk − ∑
+i6=k
+Bkiwi)/Bkk. (23)
+Briefly, here we employ the iteratively re-weight least squares (IRLS) strategy to solve the unified regularized LR framework. In each iteration, we first update Eq. (10) and Eq. (11) to get a new constrained QP problem (18). Then we apply a cycle coordinate descent algorithm to solve it. This process is repeated until convergence. To summarize, we propose the following Algorithm 1.
+2.5 A Novel Network-regularized LR
+In the subsection, we focus on a novel Network-regularized Logistic Regression model with absolute operation (AbsNet.LR) as follows:
+min w,b {− 1 n ℓ(w, b) + λ
+p∑
+i=1
+|wi|+ η|w|TL|w|}, (24)
+5 Algorithm 1 NSLR learning algorithm
+Require: Training data D = {X,y}, a penalty matrix M ∈ R p×p, two parameters λ and α. Ensure: w. 1: Initialize w = 0 2: Set λ = n · λ where n is the number of samples. 3: repeat 4: Update Λ using Eq. (10) 5: Update z using Eq. (11) 6: Update B = XTΛX + (1− α)λM and t = XTΛz 7: for j = 1 to p do 8: Update wj using Eq. (21) 9: end for 10: Update the intercept b using Eq. (23) 11: Compute the criteria J = −(1/n)ℓ(w, b) + R(w) for testing convergence 12: until The objective function J converges a minimum 13: return w
+where ℓ(w, b) = n∑
+i=1 {yiwTxi − log(1 + exp(wTxi)} and
+|w| = (w1,w2, · · · ,wp)T . As we have discussed that AdaNet.LR model can be considered as an approximation of it (see Section 2.3 for Case 4). AdaNet.LR applies a convex penalty to replace the one in Eq. (24) enabling it can be solved by NSLR algorithm (Algorithm 1). In the subsection we employ a coordinate-wise Newton algorithm to solve it directly. For each Newton update step, we focus on the following optimization problem:
+L(w, b) = 1 2n wT (XTΛX)w − 1 n wT (XTΛz) +R(w),
+(25) where R(w) = λ{α∑pi=1 |wi| + (1 − α)/2|w|TL|w|}. The coordinate-wise descent strategy does not work for some penalties (e.g., fused lasso) [28]. However, Hastie et al. [28] (see page 112) find the penalty R(w) shows a good property: condition regularity, implying that if the iteration moving along all coordinate directions fails to enable the objective function decrease, then it achieves the minimum [28], [29]. Thus we can minimize Eq. (25) via a cycle coordinate descent method. For convenience, let B = XTΛX , t = XTΛz and η = λ(1 − α)/2, we can rewrite the subproblem as follows:
+Lk = 1
+2n (Bkkw
+2 k + 2
+∑
+j 6=k
+Bkjwjwk + ∑
+j 6=k
+∑
+i6=k
+Bjiwjwi)
+− 1 n (wktk +
+∑
+j 6=k
+wjtj) + λ(|wk|+ ∑
+j 6=k
+|wj |)
++ηLkkw 2 k + 2η
+∑
+j 6=k
+Lkj |wj ||wk|
++η ∑
+j 6=k
+∑
+i6=k
+Lji|wj ||wi|. (26)
+Then we have the subgradient equation of wk:
+∂L ∂wk = (1/n)(Bkkwk + ∑
+j 6=k
+Bkjwj)− (1/n)tk + λsk
++2η(Lkkwk + sk ∑
+j 6=k
+Lkj |wj |). (27)
+Let ∂L∂wk = 0 and τ = Bkk + 2nηLkk. We obtain the following update rule:
+wk = S(tk − ∑
+j 6=k
+Bkjwj , nλ+ 2nη ∑
+j 6=k
+Lkj |wj |)/τ. (28)
+Similarly, we can also get the update rule for the bias term b. The sub-gradient is given by
+∂L ∂b = Bkkwk + ∑
+i6=k
+Bkiwi − tk, (29)
+where k = p + 1, and b = wk. Let ∂L ∂b = 0. It leads to the update rule:
+b = (tk − ∑
+i6=k
+Bkiwi)/Bkk. (30)
+To summarize, we propose the Algorithm 2 to solve the AbsNet.LR model.
+Algorithm 2 AbsNet.LR learning algorithm
+Require: Training data D = {X,y}, a normalized Laplacian matrix L ∈ Rp×p, two parameters λ and α. Ensure: w. 1: Initialize w = 0 2: Set λ = n · λ, where n is the number of samples. 3: repeat 4: Update Λ using Eq. (10) 5: Update z using Eq. (11) 6: Update B = XTΛX and t = XTΛz 7: for k = 1 to p do 8: Update wk using Eq. (28) 9: end for 10: Update the intercept b using Eq. (30) 11: Compute the criteria J = −(1/n)ℓ(w, b) + R(w) for testing convergence 12: until The objective function J converges to a mimimum 13: return w
+Tuning parameter selection. Selecting the regularized parameters {λ, α} for NSLR and AbsNet.LR is a very important task. Here these parameters are selected via maximizing the index – Area Under Curve (AUC). Suppose there are n1 positive class samples and n2 negative class samples in a given dataset. Given a binary classifier, {s1, · · · , sn1} are the scores for the positive points and {t1, · · · , tn2} are the scores for the negative points. The AUC of this classifier is calculated using the following formula:
+AUC = 1
+n1n2
+n1∑
+i=1
+n2∑
+j=1
+( I(si > tj) + 1
+2 I(si = tj)
+) , (31)
+where I(si > tj) is 1, if si > tj , and 0 otherwise. However, sometimes the parameter selection may be unnecessary in a real application. For example, we may choose suitable parameters to obtain a solution for the desired degree of sparsity.
+3 SYNTHETIC DATA EXPERIMENTS
+To compare the performance of different regularized LR models, we first generate a sparse coefficient vector w with p = 100 and a bias term b as follows:
+w = [sample(N (0, 1), 40), rep(0, 60)], b = 0,
+6 where sample(N (0, 1), 40) denotes a vector of length 40, whose elements are sampled from a standard normal distribution, and rep(0, 60) denotes a vector of length 60, whose entries are zero. To generate an expression matrix X ∈ R500×100, we define a covariance matrix of the variables Σ ∈ R100×100, where Σij = 0.6 when 1 ≤ i 6= j ≤ 40, Σii = 1 when i = 1, · · · , 100 and the others entries are zero. It can ensure that the 40 feature vectors are strong correlated in X . We generate the X using the function “mvrnorm” in the MASS R package with parameters mu = 0 and sigma = Σ. Furthermore, we also compute the binary response y = (y1, · · · ,y500) based on a Bernoulli distribution with the following formula:
+yi = I(p(xi) ≥ 0.5), p(xi) = 1
+1 + exp(−wTxi − b) ,
+where xi denotes the i-th column of X T . Finally, we also generate a prior network A ∈ R100×100, whose node pairs among all the first 40 nodes are connected with probability p11 = 0.3, and the remaining ones are connected with probability p12 = 0.1. Note we set the observed matrix X∗ = X + γǫ, where the elements of ǫ are randomly sampled from a standard normal distribution, and γ = 3 is used to control the signal-to-noise ratio. The observed X∗ contains 500 samples with 100 features. We randomly select 300 samples as the training samples and the remaining samples as the testing samples. We test all regularized LR models on the synthetic training data using 5-fold crossvalidation strategy to select the optimal parameters. We repeat the simulations over 50 times. We then compute the average AUCs of 50 experiments about classification on the testing synthetic data. To compare the performance on variable selection, we also calculate the average sensitivity/specificity scores with respect to the selected variables (nonzero of w), and the average numbers of edges of the selected variables in the prior network.
+Here we define the sensitivity as the percentage of true non-zero entries discovered, and the specificity as the percentage of true zero entries discovered, respectively. The overall results are shown in Table 1. Generally, these network-based regularized LR models (especially AbsNet.LR) are superior to other algorithms with respect to AUCs. Moreover, AbsNet.LR obtains the relatively higher sensitivity in the selected variables, and relatively larger number of edges of them in the prior network compared to others.
+4 APPLICATION TO GBM DATA
+
+4.1 The GBM Data
+We download the level 3 gene expression data (Broad Institute HT-HG-U133A platform) and clinical data of GBM
+from the TCGA database [3]. We employ two alternative methods to impute the missing data in gene expression profiling: (1) the k-nearest neighbor algorithm (knn) method implemented as the “impute” R package; (2) the mean of considered genes. We find that the two methods only have little effect on the final results. Thus, we simply adopt the second method to impute the missing data. We obtain the gene expression data of 1,2042 genes across 525 patients. Furthermore, we standardize the expression of each gene across all samples using the “scale” function in R. We also download a protein interaction network (PPI) data from Pathway Commons [30]. Finally, we obtain a gene expression data with 1,0963 genes and a PPI network with 24,8403 edges. Here our goal of this application is to predict the survival risk of GBM patients (Fig. 1A). We first dichotomize the survival time of patients into a binary outcome through a designated cutoff. Here we consider one year as the cutoff time to balance the number of positive and negative samples (Fig. 1B and Table 2).
+We apply the univariate Cox proportional hazard model [12] to assess and filter the 1,0963 genes of GBM gene expression data (Table 2). Finally, we obtain 2001 genes with P < 0.05 for further analysis. Only those genes are used in all the regularized LR models.
+4.2 Results of the GBM Data
+We first randomly select 2/3 samples (n = 350) as the training samples and 1/3 samples (n = 175) as the testing samples (Fig. 1B). We consider λ ∈ {0.001, 0.01, 0.05, 0.1, 0.2, 0.3, 0.4} and α ∈ {0.05, 0.1, 0.2, 0.5, 0.7, 0.9} to form a total of 42 pair parameter sets. We first learn the different regularized LR methods on the GBM training data using 5-fold cross-validation. Then we test all the methods on the GBM testing data. We find the regularized LR models are superior to the typical LR model (Table 3). Generally, Lasso.LR is inferior to other regularized methods (Elastic.LR, Network.LR, AdaNet.LR and AbsNet.LR) whose results are relatively consistent. However, AbsNet.LR, AdaNet.LR and Network.LR identify a gene set with more edges via integrating the prior network data. All these results imply the importance of integrating the prior protein interaction network data to improve the prediction accuracy and biological interpretation. Therefore, we only focus on the result analysis of AbsNet.LR which obtains AUC = 0.6627 with λ = 0.3 and α = 0.1, and a gene set with 157 genes.
+To evaluate the biological relevance of the identified gene set, we apply the DAVID online web tool [38] to perform the Gene Ontology (GO) biological processes enrichment analysis. The GO biological processes with p-values < 0.05 are selected as significant ones. We find the genes is related to some important ones including positive regulation of kinase activity, synaptic transmission glutamatergic and inositol metabolic process. The identified biological processes
+7 1aturday Seminar KM curve for training data KM curve for testing dataA B E F NETO2 RPS28 CETP ZNF208 MTHFSD SMYD3 LDB1 KCNG1 NEU2 EDG5 ELSPBP1 CACNA1D TFR2 RPL39L HOXD11 HOXD10 PITX1 SRD5A2L CLEC5A DDIT3 HEMK1 CRELD1 BDH1 ETNK2 PRKAG2 AKR1B1 GABRA4 PPFIA4 EEF1A2
+NPTXR
+CLEC5A TFR2 RPL39L BDH1 PITX1 HOXD11 HOXD10 DDIT3 AKR1B1 SMYD3 EDG5 NEU2 GABRA4 KCNG1 LDB1 ZNF208 NETO2 CETP RPS28 ELSPBP1 CACNA1D SRD5A2L ETNK2 HEMK1 CRELD1 MTHFSD PRKAG2 PPFIA4 NPTXR EEF1A2
+p<0.002 (testing data)p<4.0e-06 (training data)
+training data testing data
+0 .0
+0 .2
+0 .4
+0 .6
+0 .8
+1 .0
+0 .0
+0 .2
+0 .4
+0 .6
+0 .8
+1 .0
+high int low high int low 2
+0
+4
+0
+6 0
+8
+0
+a g
+e (
+y e
+a rs
+)
+2 0
+4 0
+6 0
+8 0
+high int low high int low
+0 1 2 3 4
+time (years) time (years)
+s u
+rv iv
+a l
+0 1 2 3 4
+C D
+Fig. 2: Performance evaluation in the training and testing data. We divide the GBM patients into different groups according to their estimated LR scores. (A) and (B) Kaplan-Meier (KM) survival curves for for low-, intermediate (int)-, and high-risk groups. P -values are computed using the log-rank test. (C) and (D) Age distribution in the three GBM patient groups with p-value <4.0e-06 for training data and p-value < 0.002 for testing data (using an analysis of variance model ). (E) and (F) The expression heat maps of the training and testing data based on the top 30 genes.
+are consistent with recent literature reports. For example ‘the positive regulation of protein kinase activity’ process is well-known to be related to GBM and its activation is a key mechanism for GBM development [39].
+Furthermore, we extract the top 30 genes corresponding to the largest absolute values of the estimated coefficients (by the AbsNet.LR). Based on the top 30 genes, we re-train the typical LR model in the training data. In the independent testing data, LR obtain an AUC of 0.6727. However, on average, only AUC of 0.55 are obtained with randomly select 30 genes. Next, based on the built LR model, we re-test all the training data and all testing data (Fig. 1B) and based on the predicted LR scores computed via Pr(y = 1|x;w), we divide all the training and testing samples into three groups, called low-, intermediate- and high-risk ones, respectively (Fig. 2A and B). We can also see the expression heat maps of the top 30 genes with the three groups (Fig. 2E and 2F). We find that some genes in the specific group are high expressed, while some are low expressed in the other group. Interestingly, we also find that these top genes form a set of sub-networks (e.g., Fig. 3A and B), which are sugested to be related with GBM [40], [41], [42], [43].
+8
+Furthermore, we study whether the defined groups have significant relationships with some other clinical variables (e.g., age). We find that the patients of high-risk group are old than those in low and intermediate-risk group on both training and testing data (Fig. 2C and D). All these results show that the identified gene set is related to the survival outcome of GBM patients.
+5 APPLICATION TO LUNG CANCER DATA
+
+5.1 Non-Small Cell Lung Cancer Expression Data
+We download two subtypes of non-small cell lung cancer gene expression datasets from TCGA [4], including Lung adenocarcinoma (LUAD) with 350 samples and Lung squamous-cell carcinoma (LUSC) with 315 samples. Here we consider the level 3 expression data of TCGA which is quantified at the gene and transcript levels using RNA-Seq data by an expectation maximization method [44]. Then the expression values are log2-transformed. We first process the LUAD and LUSC gene expression data to keep the genes that are appeared in the KEGG pathway database from the Molecular Signatures Database (MSigDB) [45]. Finally, we obtain 3230 genes related with 151 KEGG pathways. Here we consider each KEGG pathway as a fully connected subnetwork to build a prior network with 143438 edges.
+5.2 Results of the Lung Cancer Data
+Here we apply all the methods to the lung cancer data to identify subtype-specific biomarkers. Compared to the integration of PPI network in the GBM data, we focus on the KEGG pathway as the prior information. We randomly select all the samples of 2/3 as the training samples and remaining ones are as the independent test samples. We show the results from all the regularized LR models in the independent training set (Table 4). In total, 69 genes are selected by the AbsNet.LR. All the genes identified by other regularized LR models (Lasso.LR, Elastic.LR, Network.LR and AdaNet.LR) are included in the 69 genes. The network-regularized LR models give similar results, which are superior to that of typical LR and Lasso.LR models. In addition, compared to the other network-regularized LR models, AbsNet.LR identifies a gene set with more edges in the KEGG pathway network.
+Furthermore, we evaluate the biological relevance of the identified 69 genes using the DAVID online web tool [38] and find several significantly enriched KEGG pathways relating to lung cancer, including metabolism of xenobiotics by cytochrome P450 (GSTA2, CYP3A5, CYP2F1, CYP3A7, CYP2C9, CYP2C8, UGT2A1) [46], linoleic acid metabolism (CYP3A5, CYP3A7, CYP2C9, AKR1B10, CYP2C8) [47] and retinol metabolism (CYP3A5, CYP3A7, CYP2C9, CYP2C8, UGT2A1, RPE65) [48] and so on.
+6 COMPUTING PLATFORM AND RUNNING TIME
+All scripts were run on a desktop personal computer with an Inter(R) Core(TM) i7-4770 CPU@ 3.4 GHz and 16 GB memory running Windows OS and R 3.2.5. The code is available at http://page.amss.ac.cn/shihua.zhang/. For the synthetic data experiments, the memory used is about 140 MB and the running time is about 0.7 hours. For the application to GBM data, the memory used is about 150 MB and the running time is about 0.8 hours. For the application to lung cancer data, the memory used is about 160 MB and the running time is about 1 hour.
+7 CONCLUSION
+In this paper, we first introduce the typical networkregularized LR models with others in a unified framework. Although the typical network-regularized LR model can incorporate such prior information to get better biological interpretability, it fails to focus on the opposite effect of variables with different signs. To solve this limitation, we adopt a novel network-regularized penalty R = λ‖w‖1 + η|w|TL|w| into LR model (denoted as AbsNet.LR). However, the novel penalty is not differentiable
+9 at the zero point, enforcing it is hard to be solved using the typical gradient descent method. To this end, we first adapt the adaptive network-regularized penalty (note that it is convex) to approximate this novel network-regularized penalty and develop an adaptive network-regularized LR (AdaNet.LR) model which can be solved easily using the NSLR algorithm (Algorithm 1). We further find that the novel network-regularized penalty has a good property – condition regularity [28], [29], which inspires us to solve it via a cycle coordinate-wise Newton algorithm efficiently. We note that the binary LR-based classification models can be easily extended to the multiclass or multinomial classification problem [34], [49].
+Applications to the synthetic data show that the present methods are more effective compared to the typical ones. We also apply them to the GBM expression and a protein interaction network data to predict mortality probability of patients within one year. In addition, we apply them to a lung cancer expression data of two subtypes to identify subtype-specific biomarkers. We find a gene set with 69 genes which are tightly connected in the prior network. Functional enrichment analysis of these genes discovers a few KEGG pathways relating to the lung cancer clearly.
+ACKNOWLEDGMENT
+Shihua Zhang and Juan Liu are the corresponding authors of this paper. Wenwen Min would like to thank the support of National Center for Mathematics and Interdisciplinary Sciences, Academy of Mathematics and Systems Science, CAS during his visit. This work was supported by the National Science Foundation of China [61379092, 61422309, 61621003], the Strategic Priority Research Program of the Chinese Academy of Sciences (CAS) (XDB13040600), the Outstanding Young Scientist Program of CAS, CAS Frontier Science Research Key Project – Top Young Scientist (No. QYZDB-SSW-SYS008) and the Key Laboratory of Random Complex Structures and Data Science, CAS.
