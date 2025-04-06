@@ -9,10 +9,14 @@ path = "./papers/postprocessed/full_texts/"
 files = os.listdir(path)
 
 gold_summaries = json.load(open("./abstractive_summaries/id_summary_map.json", "r"))
-id_score_map = {}
+id_score_map = json.load(open("./experiments/summarization_with_full_text.json", "r"))
 
 for file in tqdm(files):
     file_name = file.split(".")[0]
+
+    if file_name in id_score_map:
+        continue
+
     gold_summary = gold_summaries.get(file_name, None)
     if gold_summary is None:
         print(f"No gold summary found for {file_name}. Skipping...")
