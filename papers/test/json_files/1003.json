@@ -1,0 +1,393 @@
+{
+  "abstractText": "Emotion detection from text has become a popular task due to the key role of emotions in human-machine interaction. Current approaches represent text as a sparse bag-of-words vector. In this work, we propose a new approach that utilizes pre-trained, dense word embedding representations. We introduce an ensemble approach combining both sparse and dense representations. Our experiments include ve datasets for emotion detection from di erent domains and show an average improvement of 11.6% in macro average F1-score.",
+  "authors": [
+    {
+      "affiliations": [],
+      "name": "Jonathan Herzig"
+    },
+    {
+      "affiliations": [],
+      "name": "Michal Shmueli-Scheuer"
+    },
+    {
+      "affiliations": [],
+      "name": "David Konopnicki"
+    }
+  ],
+  "id": "SP:5f0b7f7da93953440fb545904e9036e4ee0e66be",
+  "references": [
+    {
+      "authors": [
+        "Ebba Cecilia Ovesdotter Alm"
+      ],
+      "title": "A ect in text and speech. ProQuest",
+      "year": 2008
+    },
+    {
+      "authors": [
+        "Saima Aman",
+        "Stan Szpakowicz"
+      ],
+      "title": "Identifying expressions of emotion in text",
+      "venue": "In Text, Speech and Dialogue",
+      "year": 2007
+    },
+    {
+      "authors": [
+        "Alina Andreevskaia",
+        "Sabine Bergler"
+      ],
+      "title": "When Specialists and Generalists Work Together: Overcoming Domain Dependence in Sentiment Tagging",
+      "venue": "In ACL",
+      "year": 2008
+    },
+    {
+      "authors": [
+        "Lea Canales",
+        "Patricio Martinez-Barco"
+      ],
+      "title": "Emotion Detection from text: A Survey",
+      "venue": "Processing in the 5th Information Systems Research Working Days (JISIC",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "Soumaya Cha ar",
+        "Diana Inkpen"
+      ],
+      "title": "Using a heterogeneous dataset for emotion analysis in text",
+      "venue": "In Advances in Arti cial Intelligence",
+      "year": 2011
+    },
+    {
+      "authors": [
+        "Roddy Cowie",
+        "Ellen Douglas-Cowie",
+        "Nicolas Tsapatsoulis",
+        "George Votsis",
+        "Stefanos Kollias",
+        "Winfried Fellenz",
+        "John G Taylor"
+      ],
+      "title": "Emotion recognition in human-computer interaction",
+      "venue": "Signal Processing Magazine, IEEE 18,",
+      "year": 2001
+    },
+    {
+      "authors": [
+        "Taner Danisman",
+        "Adil Alpkocak"
+      ],
+      "title": "Feeler: Emotion classi cation of text using vector space model",
+      "venue": "In AISB 2008 Convention Communication, Interaction and Social Intelligence,",
+      "year": 2008
+    },
+    {
+      "authors": [
+        "Kaibo Duan",
+        "S Sathiya Keerthi",
+        "Wei Chu",
+        "Shirish Krishnaj Shevade",
+        "Aun Neow Poo"
+      ],
+      "title": "Multi-category classi cation by soft-max combination of binary classi ers",
+      "venue": "In Multiple classi er systems",
+      "year": 2003
+    },
+    {
+      "authors": [
+        "Paul Ekman"
+      ],
+      "title": "An argument for basic emotions",
+      "venue": "Cognition & Emotion 6,",
+      "year": 1992
+    },
+    {
+      "authors": [
+        "Gabriel Forgues",
+        "Joelle Pineau",
+        "Jean-Marie Larchevêque",
+        "Réal Tremblay"
+      ],
+      "title": "Bootstrapping Dialog Systems with Word Embeddings",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "Yoav Goldberg"
+      ],
+      "title": "Neural Network Methods for Natural Language Processing",
+      "venue": "Synthesis Lectures on Human Language Technologies 10,",
+      "year": 2017
+    },
+    {
+      "authors": [
+        "Isabelle Guyon",
+        "André"
+      ],
+      "title": "An introduction to variable and feature selection",
+      "venue": "The Journal of Machine Learning Research",
+      "year": 2003
+    },
+    {
+      "authors": [
+        "Jonathan Herzig",
+        "Guy Feigenblat",
+        "Michal Shmueli-Scheuer",
+        "David Konopnicki",
+        "Anat Rafaeli",
+        "Daniel Altman",
+        "David Spivak"
+      ],
+      "title": "Classifying Emotions in Customer Support Dialogues in Social Media",
+      "venue": "In 17th Annual Meeting of the Special Interest Group on Discourse and Dialogue",
+      "year": 2016
+    },
+    {
+      "authors": [
+        "Yoon Kim"
+      ],
+      "title": "Convolutional Neural Networks for Sentence",
+      "venue": "Classi cation. CoRR",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "Ludmila I Kuncheva",
+        "Christopher J Whitaker"
+      ],
+      "title": "Measures of diversity in classi er ensembles and their relationship with the ensemble accuracy",
+      "venue": "Machine learning 51,",
+      "year": 2003
+    },
+    {
+      "authors": [
+        "Quoc V Le",
+        "Tomas Mikolov"
+      ],
+      "title": "Distributed representations of sentences and documents",
+      "venue": "arXiv preprint arXiv:1405.4053",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "Irene Lopatovska",
+        "Ioannis Arapakis"
+      ],
+      "title": "Theories, methods and current research on emotions in library and information science, information retrieval and human–computer interaction",
+      "venue": "Information Processing & Management 47,",
+      "year": 2011
+    },
+    {
+      "authors": [
+        "Tomas Mikolov",
+        "Kai Chen",
+        "Greg Corrado",
+        "Je rey Dean"
+      ],
+      "title": "E cient estimation of word representations in vector space",
+      "year": 2013
+    },
+    {
+      "authors": [
+        "Saif Mohammad"
+      ],
+      "title": "Portable features for classifying emotional text",
+      "venue": "In Proceedings of NAACL HLT",
+      "year": 2012
+    },
+    {
+      "authors": [
+        "Saif M. Mohammad"
+      ],
+      "title": "Emotional Tweets",
+      "venue": "Proceedings of the First Joint Conference on Lexical and Computational Semantics - Volume 1: Proceedings of the Main Conference and the Shared Task, and Volume 2: Proceedings of the Sixth International Workshop on Semantic Evaluation (SemEval",
+      "year": 2012
+    },
+    {
+      "authors": [
+        "Saif M Mohammad"
+      ],
+      "title": "Sentiment analysis: Detecting valence, emotions, and other a ectual states from text",
+      "venue": "Emotion Measurement",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "Saif M Mohammad",
+        "Peter D Turney"
+      ],
+      "title": "Crowdsourcing a word–emotion association lexicon",
+      "venue": "Computational Intelligence 29,",
+      "year": 2013
+    },
+    {
+      "authors": [
+        "Je rey Pennington",
+        "Richard Socher",
+        "Christopher D. Manning"
+      ],
+      "title": "GloVe: Global Vectors for Word Representation",
+      "venue": "In EMNLP",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "Nataliia Plotnikova",
+        "Micha Kohl",
+        "Kevin Volkert",
+        "Andreas Lerner",
+        "Natalie Dykes",
+        "Heiko Ermer",
+        "Stefan Evert"
+      ],
+      "title": "KLUEless: Polarity classi cation and association",
+      "venue": "In Proceedings of the 9th International Workshop on Semantic Evaluation",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "Ashequl Qadir",
+        "Ellen Rilo"
+      ],
+      "title": "Learning Emotion Indicators from Tweets: Hashtags, Hashtag Patterns, and Phrases",
+      "venue": "In Proceedings of EMNLP",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "Klaus R Scherer",
+        "Harald G Wallbott"
+      ],
+      "title": "Evidence for universality and cultural variation of di erential emotion response patterning",
+      "venue": "Journal of personality and social psychology 66,",
+      "year": 1994
+    },
+    {
+      "authors": [
+        "Aliaksei Severyn",
+        "Alessandro Moschitti"
+      ],
+      "title": "UNITN: Training Deep Convolutional Neural Network for Twitter Sentiment Classi cation",
+      "venue": "In Proceedings of the 9th International Workshop on Semantic Evaluation (SemEval",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "Carlo Strapparava",
+        "Rada Mihalcea"
+      ],
+      "title": "Semeval-2007 task 14: A ective text",
+      "venue": "In Proceedings of the 4th International Workshop on Semantic Evaluations. Association for Computational Linguistics,",
+      "year": 2007
+    },
+    {
+      "authors": [
+        "Duyu Tang",
+        "Bing Qin",
+        "Ting Liu"
+      ],
+      "title": "Document Modeling with Gated Recurrent Neural Network for Sentiment Classi cation",
+      "venue": "In Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing",
+      "year": 2015
+    },
+    {
+      "authors": [
+        "Duyu Tang",
+        "Furu Wei",
+        "Nan Yang",
+        "Ming Zhou",
+        "Ting Liu",
+        "Bing Qin"
+      ],
+      "title": "Learning Sentiment-Speci c Word Embedding for Twitter Sentiment Classi cation",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "Bincy Thomas",
+        "KA Dhanya",
+        "P Vinod"
+      ],
+      "title": "Synthesized feature space for multiclass emotion classi cation",
+      "venue": "In Networks & Soft Computing (ICNSC),",
+      "year": 2014
+    },
+    {
+      "authors": [
+        "W. Wang",
+        "L. Chen",
+        "K. Thirunarayan",
+        "A.P. Sheth"
+      ],
+      "title": "Harnessing Twitter Big Data for Automatic Emotion Identi cation",
+      "venue": "In Privacy, Security, Risk and Trust (PASSAT),",
+      "year": 2012
+    },
+    {
+      "authors": [
+        "Yichen Wang",
+        "Aditya Pal"
+      ],
+      "title": "Detecting emotions in social media: a constrained optimization approach",
+      "venue": "In Proceedings of the 24th International Conference on Arti cial Intelligence",
+      "year": 2015
+    }
+  ],
+  "sections": [
+    {
+      "heading": "1 INTRODUCTION",
+      "text": "Emotions are an important element of human nature and detecting them in the textual messages written by users has many applications in information retrieval [17] and human-computer interaction [6]. A common approach to emotion analysis and modeling is categorization, e.g., according to Ekman’s basic emotions; namely, anger, disgust, fear, happiness, sadness, and surprise [9]. Approaches to categorical emotion classi cation based on text often employ supervised machine learning classi ers, which require labeled training data.\nCurrently, two types of datasets labeled with emotions are publicly available: manually labeled, and pseudo-labeled. Manual annotation requires high cognitive capabilities of multiple human annotators per sample. As a result, the quality of these datasets is usually high. However, the task is tedious, time-consuming, and expensive [4], and thus, these datasets are usually small (in the order of thousands of annotated samples). Manual annotations are usually applied to domain speci c datasets (e.g., news headlines). To overcome these limitations, pseudo-labeled datasets are gathered from social media platforms where social media posts are explicitly tagged by the author by using the hashtag symbol (#) or by adding emoticons 1. This tagged data can be used to create large-scale training data labeled with emotions in a non-speci c domain as in [20].\nGiven such a dataset (manually or pseudo labeled), it is then common to train a linear classi er based on bag-of-words (BOW) 1http://techcrunch.com/2013/04/09/facebook-mood/\nPermission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for pro t or commercial advantage and that copies bear this notice and the full citation on the rst page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior speci c permission and/or a fee. Request permissions from permissions@acm.org. ICTIR’17, October 1–4, 2017, Amsterdam, The Netherlands. © 2017 ACM. 978-1-4503-4490-6/17/10. . . $15.00 DOI: 10.1145/3121050.3121093\nrepresentation: representing text samples as sparse vectors, where each vector entry corresponds to the presence of a speci c feature (such as n-grams, punctuation and other) [21].\nAs reported recently by [11], deep learning is a promising approach for solving NLP tasks including text classi cation. While the aforementioned approach utilizes BOW representation and linear classi ers, neural network methods are based on dense vector representations of text samples (word embedding) and are nonlinear. Such word embedding representation captures syntactic and semantic knowledge, which can improve the emotion detection task. For example, in such a representation the words “awful\" and “terrible\" are expected to have similar vector representations.\nGenerating high quality word vectors requires large-scale data and computing power. When generation is not an option, one can utilize pre-trained representations; the most popular pre-trained representations are based on word2vec [18] and GloVe [23] algorithms, and were trained on large corpora.\nInspired by the good results of the deep learning approach, we aim at using these techniques for emotion detection. Pseudo-labeled large-scale data is suitable for deep learning techniques, however, it exhibits low accuracy when classifying domain speci c data, even after domain adaptation [20] (using linear models). On the other hand, the manually annotated data is highly accurate, but it is not large enough to form an appropriate base for deep learning techniques, as these models tend to over t small size datasets. In order to utilize the high quality but small size datasets, we propose an ensemble approach that combines both a linear model based on BOW, and a non-linear model based on the pre-trained word vectors. In addition, we propose a new method for realizing a sentence level representation from the single words vectors.\nTo our knowledge, this is the rst research that shows how to utilize pre-trained word vectors to improve emotion detection from text in domain-speci c datasets."
+    },
+    {
+      "heading": "2 RELATEDWORK",
+      "text": "Approaches to categorical emotion classi cation often employ onevs-rest machine learning classi ers (a binary classi er for each emotion), typically SVM [19, 25] or logistic regression [32], using textual features such as n-grams, lexicon based, and POS features.\nIn the domain of sentiment analysis, which is closely related to emotion detection, Tang et al. [30] showed that encoding sentiment information into the word embeddings using Twitter data, as a part of a neural network based system, outperformed previous approaches. [16, 29] focused on generating document level embeddings in sentiment classi cation. These works all require the availability of large-scale data. In our setting, we only have small datasets, thus, we used pre-trained vectors.\nPre-trained word vectors were used as an input to neural networks to improve sentiment analysis classi cation [14, 27]. This approach also requires large-scale data for the neural network training. Forgues [10] used pre-trained word vectors and a linear classi er to classify user intents in dialog systems, however their task and methodology is di erent than ours."
+    },
+    {
+      "heading": "3 EMOTION CLASSIFIERS",
+      "text": "In this section we describe the two di erent classi ers we created and an ensemble method that combines their output. The two classi ers are based on di erent document representations. Depending on the dataset being used, the classi cation task can be represented as a multi-class or a multi-label problem. For both types of problems we used a one-vs-rest SVM classi er. Thus, given some test sample, a classi er outputs the decision function value for each emotion that appears in the training data. The classes associated with the test sample are then taken to be the emotion with the highest decision function value (for multi-class) or the set of emotions with a positive decision function value (for multi-label)."
+    },
+    {
+      "heading": "3.1 BOW Classi er",
+      "text": "In our rst approach we used an SVM classi er with a linear kernel, and represented every document as a BOW. We extracted various ngrams (after lemmatization), punctuation and social media features. Namely, unigrams, bigrams, NRC lexicon features (number of terms in a post associated with each a ect label in NRC lexicon [22]), and presence of exclamation marks, question marks, usernames, links, happy emoticons, and sad emoticons.\nWe used TFIDF weights for the values of n-gram features (this was experimentally superior to using binary weights), and removed n-grams that appeared in less than two documents. We further removed 10% of the remaining features that got the lowest scores in a χ2 statistical test. We handled negation similarly to [24]."
+    },
+    {
+      "heading": "3.2 Word Embedding-Based Classi er",
+      "text": "Word embedding based vectors can be combined to represent a document into a xed size vector. We have experimented with several document representations, combining the word vectors, following the notation:\ndwe (t1, ..., tk ) = 1∑k\ni=1 ai k∑ i=1 ai · v (ti ) , (1)\nwhere dwe is the word embedding based vector representation for document d with k terms, v is some pre-trained word-to-vector mapping (described in Section 5), and ai is some weight indicating the relative importance of term ti . The document representations we experimented with include: CBOW (continuous bag of words) [18]: in this case, ∀i,ai = 1, which means uniform weights for all terms. TFIDF weights: ai is the TFIDF weight for term ti . In case ti was not present in the training data, we smoothed its IDF weight as if it appeared in one document (this yielded better performance than discarding the term). Classi er weights (CLASS): in this approach we calculated a weight function, w (t , e ) for each term t in the training data which indicates its importance in classifying a document as expressing\nemotion e . We did this by rst representing the documents in a BOW binary vector representation where we only extracted unigram features. Then, for each e we trained an SVM model with a linear kernel and took m(e, t ) to be the weight associated by the model with each term t in the training data. Motivated by Guyon [12] who showed that |m(e, t ) | is an indicative feature selection criterion, we de ne:\nw (t , e ) = |m (e, t ) | − µe\nσe , (2)\nwhere µe and σe are the corresponding average and standard deviation of model weights in absolute value. We now de ne:\nai =   1 ti < V or w (ti , e ) < 1 w (ti , e ) else\n(3)\n, where V is the vocabulary generated from the training data. In words, a low constant weight is assigned to terms which did not appear in the training data, or were found to be less discriminative. For other terms, the weight is proportional to the words discriminative power. This method captures the notion that some terms in a document are more important in its embedded representation since they are more informative given the classi cation task. Note that, in this method, a di erent document representation is used for every emotion e since the discriminative power of every word (and hence its weight ai ) is di erent for each emotion. This is a novel embedded document representation method, and as detailed in Section 5, it is superior in comparison to the other representation methods we experimented with.\nSimilarly to our BOW classi er, we used an SVM classi er in this approach as well, but since we represented a document as a low-dimensional vector, we allowed non-linearity by using an RBF kernel. This yielded better results than using a linear kernel."
+    },
+    {
+      "heading": "3.3 Ensemble Methods",
+      "text": "Ensembles tend to achieve better results when there is a signi cant diversity among the classi ers [15]. Thus, we utilized the above classi ers that are based on di erent document representations, to form an ensemble model. As a preliminary step, we transformed the above classi ers’ decision function value output to represent probabilities, using softmax transformation for multi-class problems [8], and sigmoid transformation for multi-label problems. The ensemble methods we experimented with, follow the notation:\nmen (d ) = α · (mbow (d )) + (1 − α ) · (mwe (d )) , (4)\nwheremen (d ) is the output probability vector for the ensemble classi er given a test document d ,mbow (d ) andmwe (d ) are the output probability vectors of the BOW and the word embedding based classi ers respectively, and α is a parameter which corresponds to the speci c ensemble method used. We have experimented with the following weighed average probabilities methods: equal weights (α = 0.5), stacking (α is learned by an additional classi er) and precision-based weighting [3] (α re ects the ratio between the macro precision scores for the two classi ers over the training data). We have found in our setting that precision-based weighting achieved the best performance, thus we report results using this method only."
+    },
+    {
+      "heading": "4 DATASETS",
+      "text": "We experimented with the following ve emotion detection datasets from di erent domains (summarized in Table 1): • ISEAR [26] contains labeled sentences where participants who\nhave di erent cultural backgrounds reported experiences and reactions for seven emotions. • SemEval [28] contains newspaper headlines labeled with the six Ekman emotions by six annotators. For our experiments, we considered the most dominant emotion as the headline label as in [19]. • Fairy Tales [1] includes sentences from fairy tales, labeled with ve emotions by six annotators. For our experiments, we used only sentences with high annotation agreement of four identical emotion labels, as in [5]. • Blog Posts [2] consists of emotion-rich sentences collected from blogs labeled with emotions by four annotators. We considered only sentences for which the annotators agreed on the emotion category, as in [2]. • Customer Support Dialogs in Twitter [13] consists of customer turns from customer support dialogs in Twitter, labeled by ve annotators with nine emotions relevant to customer care."
+    },
+    {
+      "heading": "5 EXPERIMENTS",
+      "text": ""
+    },
+    {
+      "heading": "5.1 Experimental Setup",
+      "text": "We tuned the hyper-parameters for our classi ers using a grid search over a validation dataset collected from Twitter, presented in [33]. This process yielded the following hyper-parameter values that we used in all of our experiments below. Penalty parameter for BOW classi er: C = 0.5 ; Penalty and kernel parameters for the word embedding based classi er: C = 4, γ = 0.1.\nWe evaluated our methods for each dataset by using 10-fold crossvalidation. Our baseline is the BOW classi er described above. This\nwas used as a state-of-the-art approach for emotion detection in short texts in many cases, e.g., [19, 31] and more.\nEmotion detection datasets are labeled with multiple emotions and are imbalanced. Thus, we evaluated the classi cation performance for all emotion classes by using macro average F1-score. We used scikit-learn 2 for an SVM implementation and spaCy 3 for n-grams extraction."
+    },
+    {
+      "heading": "5.2 BOW Classi er Comparison",
+      "text": "We compared our BOW classi er baseline with previous work which presented cross-validation results on the datasets we experimented with. Table 2 shows results presented in the original work that introduced the dataset, or in an advanced work. The table shows that our BOW classi er results correspond to previous work, which validates our baseline’s implementation."
+    },
+    {
+      "heading": "5.3 Word Embedding Methods Comparison",
+      "text": "We compared the quality of two publicly available pre-trained word vector sources, based on GloVe4 and Word2Vec (GoogleNews)5, in terms of emotion detection performance. Vectors from both sources are 300 dimensional.\nTable 3 depicts the macro F1-scores for each dataset and each document representation method that is based on word vectors, as detailed in Section 3.2. Results show that for all datasets and representation methods, word vectors trained by GloVe achieved higher performance than using Word2Vec based vectors. For example, on average, CBOW representation for GloVe source showed a 4% improvement in F1-score relative to Word2Vec. Thus, we used GloVe based pre-trained word vectors below. Also, the CLASS method we\n2http://scikit-learn.org/stable/ 3https://spacy.io/ 4http://nlp.stanford.edu/data/glove.840B.300d.zip 5https://code.google.com/archive/p/word2vec/\nproposed outperformed the other embedded document representation methods."
+    },
+    {
+      "heading": "5.4 Ensemble Results",
+      "text": "Table 4 depicts the macro F1-scores for each dataset, and for the di erent models: BOW is our baseline, presented in Section 3.1. EN-CBOW, EN-TFIDF and EN-CLASS are the ensemble models of BOW and the corresponding embedded representations presented in Section 3.2.\nOur ensemble methods outperformed the baseline for each document representation method. The best result, which is also signi - cantly better for each dataset, is of EN-CLASS model that achieved an average relative improvement of 11.6% in F1-score over all datasets. These results indicate the advantage in combining both BOW and embedded document representations for emotion detection from text."
+    },
+    {
+      "heading": "6 CONCLUSIONS",
+      "text": "This work studied the use of pre-trained word vectors for emotion detection. We presented CLASS, a novel method for representing a document as a dense vector based on the importance of the document’s terms in respect to emotion classi cation. Our results show that an ensemble that combines BOW and embedded representations using our CLASS method, outperforms previous approaches for domain-speci c datasets. In comparison to other deep-learning methods, our approach ts a small number of model parameters and requires little computing power.\nFor Future work we plan to investigate the use of deep learning models trained on domain adapted pseudo-labeled large-scale datasets. We also plan to investigate transfer learning for multidomain emotion detection."
+    }
+  ],
+  "title": "Emotion Detection from Text via Ensemble Classification Using Word Embeddings",
+  "year": 2017
+}
