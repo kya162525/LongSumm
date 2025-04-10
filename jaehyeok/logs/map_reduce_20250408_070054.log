@@ -1,0 +1,15 @@
+2025-04-08 07:00:54,743 - INFO - Starting map-reduce summarization process
+2025-04-08 07:00:54,743 - INFO - Found 522 files to process in ./papers/postprocessed/full_texts/
+2025-04-08 07:00:54,743 - INFO - Loading gold summaries
+2025-04-08 07:00:54,752 - INFO - Loading existing results file
+2025-04-08 07:00:54,752 - INFO - No existing results file found, creating new one
+2025-04-08 07:00:54,753 - INFO - Processing document: 8240954
+2025-04-08 07:00:54,754 - INFO - Starting map-reduce summarization
+2025-04-08 07:00:54,754 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:00:54,838 - INFO - Adjusted chunk size from 10000 to 20954 to target 10 chunks
+2025-04-08 07:00:54,873 - INFO - Text split into 11 chunks (chunk size: 20954)
+2025-04-08 07:00:54,873 - INFO - Summarizing chunk 1/11
+2025-04-08 07:03:10,678 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-08 07:03:10,678 - INFO - Summarizing chunk 2/11
+2025-04-08 07:05:21,517 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-08 07:05:21,517 - INFO - Summarizing chunk 3/11
