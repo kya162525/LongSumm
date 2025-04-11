@@ -1,0 +1,403 @@
+2025-04-10 23:50:45,685 - INFO - Starting map-reduce summarization process
+2025-04-10 23:50:45,685 - INFO - Found 22 files to process in ./papers/test/full_texts/
+2025-04-10 23:50:45,685 - INFO - Loading existing results file
+2025-04-10 23:50:45,685 - INFO - No existing results file found, creating new one
+2025-04-10 23:50:45,686 - INFO - Processing document: 1009
+2025-04-10 23:50:45,686 - INFO - Starting map-reduce summarization
+2025-04-10 23:50:45,686 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-10 23:50:45,707 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-10 23:50:45,712 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-10 23:50:45,712 - INFO - Summarizing chunk 1/4
+2025-04-10 23:53:17,939 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-10 23:53:17,940 - INFO - Summarizing chunk 2/4
+2025-04-10 23:54:28,885 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-10 23:54:28,886 - INFO - Summarizing chunk 3/4
+2025-04-10 23:55:57,048 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-10 23:55:57,048 - INFO - Summarizing chunk 4/4
+2025-04-10 23:56:48,731 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-10 23:56:48,732 - INFO - Combining chunk summaries into final summary
+2025-04-10 23:58:45,496 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-10 23:58:45,496 - INFO - Map-reduce summarization completed
+2025-04-10 23:58:45,496 - INFO - Saving results for 1009
+2025-04-10 23:58:45,496 - ERROR - Error processing document 1009: Object of type set is not JSON serializable
+2025-04-10 23:58:45,496 - ERROR - Continuing with next document...
+2025-04-10 23:58:45,497 - INFO - Processing document: 1003
+2025-04-10 23:58:45,497 - INFO - Starting map-reduce summarization
+2025-04-10 23:58:45,497 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-10 23:58:45,499 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-10 23:58:45,502 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-10 23:58:45,502 - INFO - Summarizing chunk 1/2
+2025-04-11 00:00:21,905 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:00:21,906 - INFO - Summarizing chunk 2/2
+2025-04-11 00:00:52,503 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:00:52,504 - INFO - Combining chunk summaries into final summary
+2025-04-11 00:01:26,427 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:01:26,427 - INFO - Map-reduce summarization completed
+2025-04-11 00:01:26,427 - INFO - Saving results for 1003
+2025-04-11 00:01:26,427 - ERROR - Error processing document 1003: Object of type set is not JSON serializable
+2025-04-11 00:01:26,427 - ERROR - Continuing with next document...
+2025-04-11 00:01:26,428 - INFO - Processing document: 1018
+2025-04-11 00:01:26,428 - INFO - Starting map-reduce summarization
+2025-04-11 00:01:26,428 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 00:01:26,433 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-11 00:01:26,438 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-11 00:01:26,438 - INFO - Summarizing chunk 1/5
+2025-04-11 00:02:49,197 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:02:49,198 - INFO - Summarizing chunk 2/5
+2025-04-11 00:04:30,683 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:04:30,683 - INFO - Summarizing chunk 3/5
+2025-04-11 00:06:25,909 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:06:25,909 - INFO - Summarizing chunk 4/5
+2025-04-11 00:07:25,566 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:07:25,566 - INFO - Summarizing chunk 5/5
+2025-04-11 00:08:26,660 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:08:26,661 - INFO - Combining chunk summaries into final summary
+2025-04-11 00:10:03,291 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:10:03,292 - INFO - Map-reduce summarization completed
+2025-04-11 00:10:03,292 - INFO - Saving results for 1018
+2025-04-11 00:10:03,292 - ERROR - Error processing document 1018: Object of type set is not JSON serializable
+2025-04-11 00:10:03,292 - ERROR - Continuing with next document...
+2025-04-11 00:10:03,292 - INFO - Processing document: 1002
+2025-04-11 00:10:03,292 - INFO - Starting map-reduce summarization
+2025-04-11 00:10:03,292 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 00:10:03,296 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-11 00:10:03,299 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-11 00:10:03,300 - INFO - Summarizing chunk 1/3
+2025-04-11 00:11:26,279 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:11:26,280 - INFO - Summarizing chunk 2/3
+2025-04-11 00:12:52,473 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:12:52,474 - INFO - Summarizing chunk 3/3
+2025-04-11 00:13:24,939 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:13:24,940 - INFO - Combining chunk summaries into final summary
+2025-04-11 00:14:21,994 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:14:21,995 - INFO - Map-reduce summarization completed
+2025-04-11 00:14:21,995 - INFO - Saving results for 1002
+2025-04-11 00:14:21,995 - ERROR - Error processing document 1002: Object of type set is not JSON serializable
+2025-04-11 00:14:21,995 - ERROR - Continuing with next document...
+2025-04-11 00:14:21,995 - INFO - Processing document: 1006
+2025-04-11 00:14:21,996 - INFO - Starting map-reduce summarization
+2025-04-11 00:14:21,996 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 00:14:22,000 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-11 00:14:22,004 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-11 00:14:22,005 - INFO - Summarizing chunk 1/3
+2025-04-11 00:15:52,375 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:15:52,376 - INFO - Summarizing chunk 2/3
+2025-04-11 00:16:41,623 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:16:41,623 - INFO - Summarizing chunk 3/3
+2025-04-11 00:17:27,409 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:17:27,409 - INFO - Combining chunk summaries into final summary
+2025-04-11 00:18:19,144 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:18:19,144 - INFO - Map-reduce summarization completed
+2025-04-11 00:18:19,145 - INFO - Saving results for 1006
+2025-04-11 00:18:19,145 - ERROR - Error processing document 1006: Object of type set is not JSON serializable
+2025-04-11 00:18:19,145 - ERROR - Continuing with next document...
+2025-04-11 00:18:19,145 - INFO - Processing document: 1010
+2025-04-11 00:18:19,145 - INFO - Starting map-reduce summarization
+2025-04-11 00:18:19,145 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 00:18:19,153 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-11 00:18:19,162 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-11 00:18:19,162 - INFO - Summarizing chunk 1/5
+2025-04-11 00:19:08,285 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:19:08,286 - INFO - Summarizing chunk 2/5
+2025-04-11 00:19:37,428 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:19:37,429 - INFO - Summarizing chunk 3/5
+2025-04-11 00:20:55,354 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:20:55,355 - INFO - Summarizing chunk 4/5
+2025-04-11 00:22:03,459 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:22:03,460 - INFO - Summarizing chunk 5/5
+2025-04-11 00:22:58,820 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:22:58,821 - INFO - Combining chunk summaries into final summary
+2025-04-11 00:23:48,417 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:23:48,418 - INFO - Map-reduce summarization completed
+2025-04-11 00:23:48,418 - INFO - Saving results for 1010
+2025-04-11 00:23:48,418 - ERROR - Error processing document 1010: Object of type set is not JSON serializable
+2025-04-11 00:23:48,418 - ERROR - Continuing with next document...
+2025-04-11 00:23:48,419 - INFO - Processing document: 1014
+2025-04-11 00:23:48,419 - INFO - Starting map-reduce summarization
+2025-04-11 00:23:48,419 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 00:23:48,423 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 00:23:48,427 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 00:23:48,427 - INFO - Summarizing chunk 1/4
+2025-04-11 00:24:33,287 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:24:33,288 - INFO - Summarizing chunk 2/4
+2025-04-11 00:25:56,164 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:25:56,165 - INFO - Summarizing chunk 3/4
+2025-04-11 00:27:26,281 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:27:26,282 - INFO - Summarizing chunk 4/4
+2025-04-11 00:27:53,469 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:27:53,470 - INFO - Combining chunk summaries into final summary
+2025-04-11 00:28:51,020 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:28:51,020 - INFO - Map-reduce summarization completed
+2025-04-11 00:28:51,020 - INFO - Saving results for 1014
+2025-04-11 00:28:51,020 - ERROR - Error processing document 1014: Object of type set is not JSON serializable
+2025-04-11 00:28:51,020 - ERROR - Continuing with next document...
+2025-04-11 00:28:51,020 - INFO - Processing document: 1001
+2025-04-11 00:28:51,021 - INFO - Starting map-reduce summarization
+2025-04-11 00:28:51,021 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 00:28:51,028 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 00:28:51,034 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 00:28:51,035 - INFO - Summarizing chunk 1/4
+2025-04-11 00:30:32,887 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:30:32,888 - INFO - Summarizing chunk 2/4
+2025-04-11 00:32:09,741 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:32:09,742 - INFO - Summarizing chunk 3/4
+2025-04-11 00:33:18,096 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:33:18,097 - INFO - Summarizing chunk 4/4
+2025-04-11 00:34:10,664 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:34:10,665 - INFO - Combining chunk summaries into final summary
+2025-04-11 00:36:01,026 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:36:01,026 - INFO - Map-reduce summarization completed
+2025-04-11 00:36:01,027 - INFO - Saving results for 1001
+2025-04-11 00:36:01,027 - ERROR - Error processing document 1001: Object of type set is not JSON serializable
+2025-04-11 00:36:01,027 - ERROR - Continuing with next document...
+2025-04-11 00:36:01,027 - INFO - Processing document: 1008
+2025-04-11 00:36:01,027 - INFO - Starting map-reduce summarization
+2025-04-11 00:36:01,027 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 00:36:01,030 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-11 00:36:01,033 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-11 00:36:01,033 - INFO - Summarizing chunk 1/2
+2025-04-11 00:37:22,229 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:37:22,230 - INFO - Summarizing chunk 2/2
+2025-04-11 00:37:59,206 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:37:59,207 - INFO - Combining chunk summaries into final summary
+2025-04-11 00:38:53,820 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:38:53,821 - INFO - Map-reduce summarization completed
+2025-04-11 00:38:53,821 - INFO - Saving results for 1008
+2025-04-11 00:38:53,821 - ERROR - Error processing document 1008: Object of type set is not JSON serializable
+2025-04-11 00:38:53,821 - ERROR - Continuing with next document...
+2025-04-11 00:38:53,821 - INFO - Processing document: 1013
+2025-04-11 00:38:53,822 - INFO - Starting map-reduce summarization
+2025-04-11 00:38:53,822 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 00:38:53,830 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-11 00:38:53,837 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-11 00:38:53,837 - INFO - Summarizing chunk 1/5
+2025-04-11 00:40:28,308 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:40:28,309 - INFO - Summarizing chunk 2/5
+2025-04-11 00:41:59,255 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:41:59,255 - INFO - Summarizing chunk 3/5
+2025-04-11 00:43:11,015 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:43:11,016 - INFO - Summarizing chunk 4/5
+2025-04-11 00:44:45,689 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:44:45,689 - INFO - Summarizing chunk 5/5
+2025-04-11 00:45:09,030 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:45:09,031 - INFO - Combining chunk summaries into final summary
+2025-04-11 00:47:08,048 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:47:08,049 - INFO - Map-reduce summarization completed
+2025-04-11 00:47:08,049 - INFO - Saving results for 1013
+2025-04-11 00:47:08,049 - ERROR - Error processing document 1013: Object of type set is not JSON serializable
+2025-04-11 00:47:08,050 - ERROR - Continuing with next document...
+2025-04-11 00:47:08,050 - INFO - Processing document: 1015
+2025-04-11 00:47:08,050 - INFO - Starting map-reduce summarization
+2025-04-11 00:47:08,050 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 00:47:08,053 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-11 00:47:08,056 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-11 00:47:08,056 - INFO - Summarizing chunk 1/2
+2025-04-11 00:48:50,456 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:48:50,456 - INFO - Summarizing chunk 2/2
+2025-04-11 00:49:22,831 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:49:22,832 - INFO - Combining chunk summaries into final summary
+2025-04-11 00:50:08,279 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:50:08,279 - INFO - Map-reduce summarization completed
+2025-04-11 00:50:08,279 - INFO - Saving results for 1015
+2025-04-11 00:50:08,279 - ERROR - Error processing document 1015: Object of type set is not JSON serializable
+2025-04-11 00:50:08,279 - ERROR - Continuing with next document...
+2025-04-11 00:50:08,279 - INFO - Processing document: 1016
+2025-04-11 00:50:08,280 - INFO - Starting map-reduce summarization
+2025-04-11 00:50:08,280 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 00:50:08,284 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 00:50:08,289 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 00:50:08,289 - INFO - Summarizing chunk 1/4
+2025-04-11 00:50:52,418 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:50:52,418 - INFO - Summarizing chunk 2/4
+2025-04-11 00:51:57,164 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:51:57,164 - INFO - Summarizing chunk 3/4
+2025-04-11 00:53:42,211 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:53:42,212 - INFO - Summarizing chunk 4/4
+2025-04-11 00:54:20,111 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:54:20,111 - INFO - Combining chunk summaries into final summary
+2025-04-11 00:55:33,521 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:55:33,522 - INFO - Map-reduce summarization completed
+2025-04-11 00:55:33,522 - INFO - Saving results for 1016
+2025-04-11 00:55:33,522 - ERROR - Error processing document 1016: Object of type set is not JSON serializable
+2025-04-11 00:55:33,522 - ERROR - Continuing with next document...
+2025-04-11 00:55:33,522 - INFO - Processing document: 1020
+2025-04-11 00:55:33,522 - INFO - Starting map-reduce summarization
+2025-04-11 00:55:33,522 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 00:55:33,527 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-11 00:55:33,531 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-11 00:55:33,532 - INFO - Summarizing chunk 1/3
+2025-04-11 00:57:14,373 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:57:14,373 - INFO - Summarizing chunk 2/3
+2025-04-11 00:58:04,229 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:58:04,229 - INFO - Summarizing chunk 3/3
+2025-04-11 00:58:43,396 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:58:43,397 - INFO - Combining chunk summaries into final summary
+2025-04-11 00:59:44,191 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 00:59:44,191 - INFO - Map-reduce summarization completed
+2025-04-11 00:59:44,191 - INFO - Saving results for 1020
+2025-04-11 00:59:44,191 - ERROR - Error processing document 1020: Object of type set is not JSON serializable
+2025-04-11 00:59:44,191 - ERROR - Continuing with next document...
+2025-04-11 00:59:44,191 - INFO - Processing document: 1011
+2025-04-11 00:59:44,192 - INFO - Starting map-reduce summarization
+2025-04-11 00:59:44,192 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 00:59:44,194 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-11 00:59:44,197 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-11 00:59:44,197 - INFO - Summarizing chunk 1/2
+2025-04-11 01:00:28,846 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:00:28,847 - INFO - Summarizing chunk 2/2
+2025-04-11 01:01:10,794 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:01:10,795 - INFO - Combining chunk summaries into final summary
+2025-04-11 01:01:53,820 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:01:53,820 - INFO - Map-reduce summarization completed
+2025-04-11 01:01:53,820 - INFO - Saving results for 1011
+2025-04-11 01:01:53,821 - ERROR - Error processing document 1011: Object of type set is not JSON serializable
+2025-04-11 01:01:53,821 - ERROR - Continuing with next document...
+2025-04-11 01:01:53,821 - INFO - Processing document: 1021
+2025-04-11 01:01:53,821 - INFO - Starting map-reduce summarization
+2025-04-11 01:01:53,821 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 01:01:53,828 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-11 01:01:53,834 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-11 01:01:53,834 - INFO - Summarizing chunk 1/5
+2025-04-11 01:04:13,278 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:04:13,279 - INFO - Summarizing chunk 2/5
+2025-04-11 01:06:05,650 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:06:05,650 - INFO - Summarizing chunk 3/5
+2025-04-11 01:07:23,909 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:07:23,910 - INFO - Summarizing chunk 4/5
+2025-04-11 01:08:52,017 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:08:52,018 - INFO - Summarizing chunk 5/5
+2025-04-11 01:09:45,296 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:09:45,297 - INFO - Combining chunk summaries into final summary
+2025-04-11 01:11:32,197 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:11:32,197 - INFO - Map-reduce summarization completed
+2025-04-11 01:11:32,197 - INFO - Saving results for 1021
+2025-04-11 01:11:32,198 - ERROR - Error processing document 1021: Object of type set is not JSON serializable
+2025-04-11 01:11:32,198 - ERROR - Continuing with next document...
+2025-04-11 01:11:32,198 - INFO - Processing document: 1012
+2025-04-11 01:11:32,198 - INFO - Starting map-reduce summarization
+2025-04-11 01:11:32,198 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 01:11:32,203 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-11 01:11:32,207 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-11 01:11:32,208 - INFO - Summarizing chunk 1/3
+2025-04-11 01:13:06,005 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:13:06,006 - INFO - Summarizing chunk 2/3
+2025-04-11 01:14:35,891 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:14:35,892 - INFO - Summarizing chunk 3/3
+2025-04-11 01:15:27,586 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:15:27,586 - INFO - Combining chunk summaries into final summary
+2025-04-11 01:16:33,101 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:16:33,101 - INFO - Map-reduce summarization completed
+2025-04-11 01:16:33,101 - INFO - Saving results for 1012
+2025-04-11 01:16:33,101 - ERROR - Error processing document 1012: Object of type set is not JSON serializable
+2025-04-11 01:16:33,101 - ERROR - Continuing with next document...
+2025-04-11 01:16:33,102 - INFO - Processing document: 1017
+2025-04-11 01:16:33,102 - INFO - Starting map-reduce summarization
+2025-04-11 01:16:33,102 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 01:16:33,108 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 01:16:33,114 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 01:16:33,114 - INFO - Summarizing chunk 1/4
+2025-04-11 01:17:19,329 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:17:19,330 - INFO - Summarizing chunk 2/4
+2025-04-11 01:19:18,829 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:19:18,830 - INFO - Summarizing chunk 3/4
+2025-04-11 01:20:57,523 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:20:57,524 - INFO - Summarizing chunk 4/4
+2025-04-11 01:21:37,313 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:21:37,314 - INFO - Combining chunk summaries into final summary
+2025-04-11 01:23:13,811 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:23:13,811 - INFO - Map-reduce summarization completed
+2025-04-11 01:23:13,811 - INFO - Saving results for 1017
+2025-04-11 01:23:13,811 - ERROR - Error processing document 1017: Object of type set is not JSON serializable
+2025-04-11 01:23:13,811 - ERROR - Continuing with next document...
+2025-04-11 01:23:13,812 - INFO - Processing document: 1000
+2025-04-11 01:23:13,812 - INFO - Starting map-reduce summarization
+2025-04-11 01:23:13,812 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 01:23:13,816 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 01:23:13,821 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 01:23:13,821 - INFO - Summarizing chunk 1/4
+2025-04-11 01:25:20,702 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:25:20,703 - INFO - Summarizing chunk 2/4
+2025-04-11 01:26:16,242 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:26:16,243 - INFO - Summarizing chunk 3/4
+2025-04-11 01:27:32,743 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:27:32,743 - INFO - Summarizing chunk 4/4
+2025-04-11 01:27:48,710 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:27:48,710 - INFO - Combining chunk summaries into final summary
+2025-04-11 01:28:55,574 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:28:55,574 - INFO - Map-reduce summarization completed
+2025-04-11 01:28:55,574 - INFO - Saving results for 1000
+2025-04-11 01:28:55,574 - ERROR - Error processing document 1000: Object of type set is not JSON serializable
+2025-04-11 01:28:55,574 - ERROR - Continuing with next document...
+2025-04-11 01:28:55,575 - INFO - Processing document: 1005
+2025-04-11 01:28:55,575 - INFO - Starting map-reduce summarization
+2025-04-11 01:28:55,575 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 01:28:55,580 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 01:28:55,585 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 01:28:55,585 - INFO - Summarizing chunk 1/4
+2025-04-11 01:30:09,041 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:30:09,041 - INFO - Summarizing chunk 2/4
+2025-04-11 01:31:01,028 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:31:01,029 - INFO - Summarizing chunk 3/4
+2025-04-11 01:32:25,247 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:32:25,248 - INFO - Summarizing chunk 4/4
+2025-04-11 01:33:05,515 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:33:05,516 - INFO - Combining chunk summaries into final summary
+2025-04-11 01:34:26,689 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:34:26,689 - INFO - Map-reduce summarization completed
+2025-04-11 01:34:26,689 - INFO - Saving results for 1005
+2025-04-11 01:34:26,689 - ERROR - Error processing document 1005: Object of type set is not JSON serializable
+2025-04-11 01:34:26,689 - ERROR - Continuing with next document...
+2025-04-11 01:34:26,689 - INFO - Processing document: 1019
+2025-04-11 01:34:26,690 - INFO - Starting map-reduce summarization
+2025-04-11 01:34:26,690 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 01:34:26,694 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-11 01:34:26,699 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-11 01:34:26,700 - INFO - Summarizing chunk 1/3
+2025-04-11 01:35:43,969 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:35:43,970 - INFO - Summarizing chunk 2/3
+2025-04-11 01:37:15,729 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:37:15,730 - INFO - Summarizing chunk 3/3
+2025-04-11 01:38:29,404 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:38:29,405 - INFO - Combining chunk summaries into final summary
+2025-04-11 01:39:34,190 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:39:34,190 - INFO - Map-reduce summarization completed
+2025-04-11 01:39:34,190 - INFO - Saving results for 1019
+2025-04-11 01:39:34,190 - ERROR - Error processing document 1019: Object of type set is not JSON serializable
+2025-04-11 01:39:34,190 - ERROR - Continuing with next document...
+2025-04-11 01:39:34,190 - INFO - Processing document: 1007
+2025-04-11 01:39:34,191 - INFO - Starting map-reduce summarization
+2025-04-11 01:39:34,191 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 01:39:34,195 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-11 01:39:34,199 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-11 01:39:34,199 - INFO - Summarizing chunk 1/3
+2025-04-11 01:41:20,591 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:41:20,591 - INFO - Summarizing chunk 2/3
+2025-04-11 01:42:40,055 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:42:40,056 - INFO - Summarizing chunk 3/3
+2025-04-11 01:43:35,847 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:43:35,848 - INFO - Combining chunk summaries into final summary
+2025-04-11 01:44:33,296 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:44:33,296 - INFO - Map-reduce summarization completed
+2025-04-11 01:44:33,296 - INFO - Saving results for 1007
+2025-04-11 01:44:33,296 - ERROR - Error processing document 1007: Object of type set is not JSON serializable
+2025-04-11 01:44:33,296 - ERROR - Continuing with next document...
+2025-04-11 01:44:33,296 - INFO - Processing document: 1004
+2025-04-11 01:44:33,296 - INFO - Starting map-reduce summarization
+2025-04-11 01:44:33,297 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 01:44:33,301 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 01:44:33,306 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 01:44:33,307 - INFO - Summarizing chunk 1/4
+2025-04-11 01:46:24,259 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:46:24,260 - INFO - Summarizing chunk 2/4
+2025-04-11 01:48:07,342 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:48:07,343 - INFO - Summarizing chunk 3/4
+2025-04-11 01:49:03,260 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:49:03,260 - INFO - Summarizing chunk 4/4
+2025-04-11 01:49:46,135 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:49:46,136 - INFO - Combining chunk summaries into final summary
+2025-04-11 01:51:31,729 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 01:51:31,729 - INFO - Map-reduce summarization completed
+2025-04-11 01:51:31,729 - INFO - Saving results for 1004
+2025-04-11 01:51:31,730 - ERROR - Error processing document 1004: Object of type set is not JSON serializable
+2025-04-11 01:51:31,730 - ERROR - Continuing with next document...
+2025-04-11 01:51:31,730 - INFO - Map-reduce summarization process completed
