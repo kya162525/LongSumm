@@ -1,0 +1,2209 @@
+2025-04-08 07:19:18,628 - INFO - Starting map-reduce summarization process
+2025-04-08 07:19:18,629 - INFO - Found 522 files to process in ./papers/postprocessed/full_texts/
+2025-04-08 07:19:18,629 - INFO - Loading gold summaries
+2025-04-08 07:19:18,637 - INFO - Loading existing results file
+2025-04-08 07:19:18,638 - INFO - No existing results file found, creating new one
+2025-04-08 07:19:18,638 - INFO - Processing document: 8240954
+2025-04-08 07:19:18,639 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,639 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,724 - INFO - Adjusted chunk size from 10000 to 20954 to target 10 chunks
+2025-04-08 07:19:18,760 - INFO - Text split into 11 chunks (chunk size: 20954)
+2025-04-08 07:19:18,761 - INFO - Summarizing chunk 1/11
+2025-04-08 07:19:18,762 - ERROR - Error processing document 8240954: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,762 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,763 - INFO - Processing document: 9563928
+2025-04-08 07:19:18,763 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,763 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,766 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:18,769 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:18,769 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:18,770 - ERROR - Error processing document 9563928: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,770 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,770 - INFO - Processing document: 8136900
+2025-04-08 07:19:18,770 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,770 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,779 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:18,788 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:18,789 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:18,790 - ERROR - Error processing document 8136900: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,790 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,790 - INFO - Processing document: 58874274
+2025-04-08 07:19:18,790 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,790 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,800 - INFO - Using original chunk size 10000, resulted in 8 chunks
+2025-04-08 07:19:18,809 - INFO - Text split into 8 chunks (chunk size: 10000)
+2025-04-08 07:19:18,809 - INFO - Summarizing chunk 1/8
+2025-04-08 07:19:18,810 - ERROR - Error processing document 58874274: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,810 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,810 - INFO - Processing document: 92451519
+2025-04-08 07:19:18,810 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,810 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,815 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:18,819 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:18,819 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:18,820 - ERROR - Error processing document 92451519: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,820 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,820 - INFO - Processing document: 71546396
+2025-04-08 07:19:18,820 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,820 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,830 - INFO - Using original chunk size 10000, resulted in 8 chunks
+2025-04-08 07:19:18,839 - INFO - Text split into 8 chunks (chunk size: 10000)
+2025-04-08 07:19:18,839 - INFO - Summarizing chunk 1/8
+2025-04-08 07:19:18,840 - ERROR - Error processing document 71546396: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,840 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,840 - INFO - Processing document: 36679338
+2025-04-08 07:19:18,840 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,840 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,847 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:18,854 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:18,855 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:18,856 - ERROR - Error processing document 36679338: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,856 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,856 - INFO - Processing document: 83248182
+2025-04-08 07:19:18,856 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,856 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,862 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:18,867 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:18,867 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:18,868 - ERROR - Error processing document 83248182: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,868 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,868 - INFO - Processing document: 19173630
+2025-04-08 07:19:18,868 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,868 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,871 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:18,875 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:18,875 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:18,876 - ERROR - Error processing document 19173630: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,876 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,876 - INFO - Processing document: 34524227
+2025-04-08 07:19:18,876 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,876 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,884 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:18,892 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:18,892 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:18,893 - ERROR - Error processing document 34524227: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,893 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,893 - INFO - Processing document: 76514111
+2025-04-08 07:19:18,893 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,893 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,895 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:18,897 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:18,897 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:18,898 - ERROR - Error processing document 76514111: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,898 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,898 - INFO - Processing document: 7305163
+2025-04-08 07:19:18,898 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,898 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,914 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:18,929 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:18,929 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:18,930 - ERROR - Error processing document 7305163: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,930 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,930 - INFO - Processing document: 3953515
+2025-04-08 07:19:18,930 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,930 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,935 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:18,941 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:18,941 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:18,942 - ERROR - Error processing document 3953515: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,942 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,942 - INFO - Processing document: 34187605
+2025-04-08 07:19:18,942 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,942 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,947 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:18,953 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:18,953 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:18,954 - ERROR - Error processing document 34187605: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,954 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,954 - INFO - Processing document: 99341732
+2025-04-08 07:19:18,954 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,954 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,965 - INFO - Using original chunk size 10000, resulted in 8 chunks
+2025-04-08 07:19:18,976 - INFO - Text split into 8 chunks (chunk size: 10000)
+2025-04-08 07:19:18,976 - INFO - Summarizing chunk 1/8
+2025-04-08 07:19:18,977 - ERROR - Error processing document 99341732: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,977 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,977 - INFO - Processing document: 21050319
+2025-04-08 07:19:18,977 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,977 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:18,985 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:18,992 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:18,992 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:18,993 - ERROR - Error processing document 21050319: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:18,993 - ERROR - Continuing with next document...
+2025-04-08 07:19:18,993 - INFO - Processing document: 24169489
+2025-04-08 07:19:18,993 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:18,993 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,006 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:19,019 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:19,019 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:19,020 - ERROR - Error processing document 24169489: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,020 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,020 - INFO - Processing document: 94646863
+2025-04-08 07:19:19,020 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,020 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,025 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:19,030 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:19,030 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:19,031 - ERROR - Error processing document 94646863: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,031 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,031 - INFO - Processing document: 435175
+2025-04-08 07:19:19,031 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,031 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,036 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,041 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,041 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,042 - ERROR - Error processing document 435175: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,042 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,042 - INFO - Processing document: 51458146
+2025-04-08 07:19:19,042 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,042 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,049 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:19,057 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:19,057 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:19,058 - ERROR - Error processing document 51458146: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,058 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,058 - INFO - Processing document: 29962756
+2025-04-08 07:19:19,058 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,058 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,064 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,070 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,070 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,071 - ERROR - Error processing document 29962756: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,071 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,071 - INFO - Processing document: 74261188
+2025-04-08 07:19:19,071 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,071 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,080 - INFO - Using original chunk size 10000, resulted in 8 chunks
+2025-04-08 07:19:19,090 - INFO - Text split into 8 chunks (chunk size: 10000)
+2025-04-08 07:19:19,090 - INFO - Summarizing chunk 1/8
+2025-04-08 07:19:19,091 - ERROR - Error processing document 74261188: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,091 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,091 - INFO - Processing document: 88049354
+2025-04-08 07:19:19,091 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,091 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,097 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:19,101 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:19,102 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:19,102 - ERROR - Error processing document 88049354: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,102 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,102 - INFO - Processing document: 55048906
+2025-04-08 07:19:19,103 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,103 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,107 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,110 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,111 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,111 - ERROR - Error processing document 55048906: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,111 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,112 - INFO - Processing document: 71425952
+2025-04-08 07:19:19,112 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,112 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,125 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:19,137 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:19,138 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:19,138 - ERROR - Error processing document 71425952: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,139 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,139 - INFO - Processing document: 70176908
+2025-04-08 07:19:19,139 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,139 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,143 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:19,147 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:19,147 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:19,148 - ERROR - Error processing document 70176908: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,148 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,148 - INFO - Processing document: 28171009
+2025-04-08 07:19:19,148 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,148 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,150 - INFO - Using original chunk size 10000, resulted in 1 chunks
+2025-04-08 07:19:19,151 - INFO - Text split into 1 chunks (chunk size: 10000)
+2025-04-08 07:19:19,152 - INFO - Summarizing chunk 1/1
+2025-04-08 07:19:19,152 - ERROR - Error processing document 28171009: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,152 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,153 - INFO - Processing document: 42851012
+2025-04-08 07:19:19,153 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,153 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,158 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,162 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,163 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,164 - ERROR - Error processing document 42851012: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,164 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,164 - INFO - Processing document: 13187019
+2025-04-08 07:19:19,164 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,164 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,166 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:19,168 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:19,168 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:19,169 - ERROR - Error processing document 13187019: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,169 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,169 - INFO - Processing document: 67930407
+2025-04-08 07:19:19,169 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,169 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,175 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:19,180 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:19,181 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:19,181 - ERROR - Error processing document 67930407: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,181 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,181 - INFO - Processing document: 7570292
+2025-04-08 07:19:19,181 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,181 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,189 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:19,196 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:19,196 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:19,197 - ERROR - Error processing document 7570292: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,197 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,197 - INFO - Processing document: 97980035
+2025-04-08 07:19:19,197 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,198 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,207 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:19,216 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:19,216 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:19,217 - ERROR - Error processing document 97980035: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,217 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,217 - INFO - Processing document: 88246188
+2025-04-08 07:19:19,217 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,217 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,226 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:19,234 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:19,234 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:19,235 - ERROR - Error processing document 88246188: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,235 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,235 - INFO - Processing document: 82220044
+2025-04-08 07:19:19,235 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,235 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,245 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:19,255 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:19,255 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:19,256 - ERROR - Error processing document 82220044: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,256 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,256 - INFO - Processing document: 75389943
+2025-04-08 07:19:19,256 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,256 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,261 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:19,267 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:19,267 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:19,268 - ERROR - Error processing document 75389943: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,268 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,268 - INFO - Processing document: 11773091
+2025-04-08 07:19:19,268 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,268 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,278 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:19,287 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:19,287 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:19,288 - ERROR - Error processing document 11773091: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,288 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,288 - INFO - Processing document: 52464539
+2025-04-08 07:19:19,288 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,288 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,301 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:19,314 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:19,315 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:19,315 - ERROR - Error processing document 52464539: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,315 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,315 - INFO - Processing document: 80262838
+2025-04-08 07:19:19,316 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,316 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,319 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,323 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,323 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,324 - ERROR - Error processing document 80262838: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,324 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,324 - INFO - Processing document: 80421460
+2025-04-08 07:19:19,324 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,324 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,333 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:19,342 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:19,342 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:19,343 - ERROR - Error processing document 80421460: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,343 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,343 - INFO - Processing document: 49333267
+2025-04-08 07:19:19,343 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,343 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,350 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:19,358 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:19,358 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:19,359 - ERROR - Error processing document 49333267: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,359 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,359 - INFO - Processing document: 65062778
+2025-04-08 07:19:19,359 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,359 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,361 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:19,364 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:19,364 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:19,365 - ERROR - Error processing document 65062778: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,365 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,365 - INFO - Processing document: 187460
+2025-04-08 07:19:19,365 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,365 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,372 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:19,380 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:19,380 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:19,381 - ERROR - Error processing document 187460: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,381 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,381 - INFO - Processing document: 97923725
+2025-04-08 07:19:19,381 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,381 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,390 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:19,400 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:19,400 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:19,401 - ERROR - Error processing document 97923725: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,401 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,402 - INFO - Processing document: 29474820
+2025-04-08 07:19:19,402 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,402 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,406 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,409 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,410 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,410 - ERROR - Error processing document 29474820: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,411 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,411 - INFO - Processing document: 17980043
+2025-04-08 07:19:19,411 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,411 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,415 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,424 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,425 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,426 - ERROR - Error processing document 17980043: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,426 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,426 - INFO - Processing document: 93544751
+2025-04-08 07:19:19,426 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,426 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,437 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:19,445 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:19,445 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:19,446 - ERROR - Error processing document 93544751: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,446 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,446 - INFO - Processing document: 68642594
+2025-04-08 07:19:19,446 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,446 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,457 - INFO - Using original chunk size 10000, resulted in 9 chunks
+2025-04-08 07:19:19,469 - INFO - Text split into 9 chunks (chunk size: 10000)
+2025-04-08 07:19:19,469 - INFO - Summarizing chunk 1/9
+2025-04-08 07:19:19,470 - ERROR - Error processing document 68642594: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,470 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,470 - INFO - Processing document: 66226432
+2025-04-08 07:19:19,470 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,470 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,475 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,482 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,483 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,484 - ERROR - Error processing document 66226432: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,484 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,484 - INFO - Processing document: 63758896
+2025-04-08 07:19:19,484 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,485 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,491 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,496 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,497 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,497 - ERROR - Error processing document 63758896: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,498 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,498 - INFO - Processing document: 76854692
+2025-04-08 07:19:19,498 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,498 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,502 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:19,507 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:19,507 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:19,508 - ERROR - Error processing document 76854692: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,508 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,508 - INFO - Processing document: 22744554
+2025-04-08 07:19:19,508 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,508 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,513 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:19,517 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:19,518 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:19,518 - ERROR - Error processing document 22744554: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,518 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,518 - INFO - Processing document: 687757
+2025-04-08 07:19:19,519 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,519 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,523 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,527 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,528 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,528 - ERROR - Error processing document 687757: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,528 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,528 - INFO - Processing document: 4647896
+2025-04-08 07:19:19,529 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,529 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,532 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,535 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,536 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,536 - ERROR - Error processing document 4647896: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,536 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,536 - INFO - Processing document: 88532041
+2025-04-08 07:19:19,537 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,537 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,540 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,545 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,545 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,546 - ERROR - Error processing document 88532041: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,546 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,546 - INFO - Processing document: 59963771
+2025-04-08 07:19:19,546 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,547 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,551 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,555 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,555 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,556 - ERROR - Error processing document 59963771: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,556 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,556 - INFO - Processing document: 81262575
+2025-04-08 07:19:19,556 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,556 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,558 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:19,559 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:19,559 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:19,560 - ERROR - Error processing document 81262575: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,560 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,560 - INFO - Processing document: 89628084
+2025-04-08 07:19:19,560 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,560 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,568 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:19,580 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:19,581 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:19,582 - ERROR - Error processing document 89628084: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,582 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,582 - INFO - Processing document: 39674358
+2025-04-08 07:19:19,582 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,582 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,589 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:19,596 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:19,597 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:19,598 - ERROR - Error processing document 39674358: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,598 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,598 - INFO - Processing document: 63188694
+2025-04-08 07:19:19,598 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,598 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,604 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:19,610 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:19,610 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:19,611 - ERROR - Error processing document 63188694: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,611 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,611 - INFO - Processing document: 597051
+2025-04-08 07:19:19,611 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,611 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,616 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:19,623 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:19,623 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:19,624 - ERROR - Error processing document 597051: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,624 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,624 - INFO - Processing document: 29796623
+2025-04-08 07:19:19,624 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,625 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,629 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:19,633 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:19,633 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:19,634 - ERROR - Error processing document 29796623: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,634 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,635 - INFO - Processing document: 80770343
+2025-04-08 07:19:19,635 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,635 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,640 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,644 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,644 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,645 - ERROR - Error processing document 80770343: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,645 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,645 - INFO - Processing document: 24312671
+2025-04-08 07:19:19,645 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,645 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,653 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:19,660 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:19,661 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:19,662 - ERROR - Error processing document 24312671: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,662 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,662 - INFO - Processing document: 45765062
+2025-04-08 07:19:19,662 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,662 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,672 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:19,683 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:19,683 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:19,684 - ERROR - Error processing document 45765062: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,684 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,684 - INFO - Processing document: 78412080
+2025-04-08 07:19:19,684 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,684 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,692 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:19,700 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:19,700 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:19,701 - ERROR - Error processing document 78412080: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,701 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,701 - INFO - Processing document: 88969640
+2025-04-08 07:19:19,701 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,701 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,706 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:19,712 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:19,712 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:19,713 - ERROR - Error processing document 88969640: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,713 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,713 - INFO - Processing document: 85839366
+2025-04-08 07:19:19,713 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,713 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,722 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:19,731 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:19,732 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:19,733 - ERROR - Error processing document 85839366: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,733 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,733 - INFO - Processing document: 43687503
+2025-04-08 07:19:19,733 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,733 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,741 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:19,749 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:19,749 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:19,750 - ERROR - Error processing document 43687503: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,750 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,750 - INFO - Processing document: 84548548
+2025-04-08 07:19:19,751 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,751 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,758 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:19,766 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:19,766 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:19,767 - ERROR - Error processing document 84548548: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,767 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,767 - INFO - Processing document: 4728464
+2025-04-08 07:19:19,767 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,767 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,771 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,775 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,776 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,777 - ERROR - Error processing document 4728464: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,777 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,777 - INFO - Processing document: 82387857
+2025-04-08 07:19:19,777 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,777 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,792 - INFO - Using original chunk size 10000, resulted in 8 chunks
+2025-04-08 07:19:19,806 - INFO - Text split into 8 chunks (chunk size: 10000)
+2025-04-08 07:19:19,807 - INFO - Summarizing chunk 1/8
+2025-04-08 07:19:19,807 - ERROR - Error processing document 82387857: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,807 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,807 - INFO - Processing document: 26955055
+2025-04-08 07:19:19,808 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,808 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,813 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:19,818 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:19,818 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:19,819 - ERROR - Error processing document 26955055: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,819 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,819 - INFO - Processing document: 96599676
+2025-04-08 07:19:19,819 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,819 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,826 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:19,832 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:19,832 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:19,833 - ERROR - Error processing document 96599676: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,833 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,833 - INFO - Processing document: 74374635
+2025-04-08 07:19:19,833 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,833 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,838 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,842 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,843 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,843 - ERROR - Error processing document 74374635: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,843 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,843 - INFO - Processing document: 82626355
+2025-04-08 07:19:19,844 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,844 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,869 - INFO - Using original chunk size 10000, resulted in 9 chunks
+2025-04-08 07:19:19,890 - INFO - Text split into 9 chunks (chunk size: 10000)
+2025-04-08 07:19:19,891 - INFO - Summarizing chunk 1/9
+2025-04-08 07:19:19,892 - ERROR - Error processing document 82626355: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,892 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,892 - INFO - Processing document: 17675091
+2025-04-08 07:19:19,892 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,892 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,897 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,902 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,902 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,903 - ERROR - Error processing document 17675091: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,903 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,903 - INFO - Processing document: 65847395
+2025-04-08 07:19:19,904 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,904 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,907 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:19,911 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:19,911 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:19,912 - ERROR - Error processing document 65847395: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,912 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,912 - INFO - Processing document: 10374612
+2025-04-08 07:19:19,912 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,912 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,920 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:19,929 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:19,929 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:19,930 - ERROR - Error processing document 10374612: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,930 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,930 - INFO - Processing document: 15084340
+2025-04-08 07:19:19,930 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,930 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,936 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:19,941 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:19,941 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:19,942 - ERROR - Error processing document 15084340: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,942 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,942 - INFO - Processing document: 93195231
+2025-04-08 07:19:19,942 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,942 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,947 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:19,952 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:19,952 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:19,953 - ERROR - Error processing document 93195231: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:19,953 - ERROR - Continuing with next document...
+2025-04-08 07:19:19,953 - INFO - Processing document: 78860785
+2025-04-08 07:19:19,953 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:19,953 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:19,977 - INFO - Adjusted chunk size from 10000 to 11279 to target 10 chunks
+2025-04-08 07:19:20,001 - INFO - Text split into 11 chunks (chunk size: 11279)
+2025-04-08 07:19:20,001 - INFO - Summarizing chunk 1/11
+2025-04-08 07:19:20,002 - ERROR - Error processing document 78860785: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,002 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,002 - INFO - Processing document: 4536127
+2025-04-08 07:19:20,002 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,002 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,010 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:20,017 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:20,017 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:20,018 - ERROR - Error processing document 4536127: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,018 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,018 - INFO - Processing document: 31021586
+2025-04-08 07:19:20,018 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,018 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,025 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:20,032 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:20,033 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:20,033 - ERROR - Error processing document 31021586: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,033 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,034 - INFO - Processing document: 69502658
+2025-04-08 07:19:20,034 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,034 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,043 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:20,052 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:20,052 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:20,053 - ERROR - Error processing document 69502658: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,053 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,053 - INFO - Processing document: 263861
+2025-04-08 07:19:20,053 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,053 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,061 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:20,072 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:20,073 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:20,074 - ERROR - Error processing document 263861: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,074 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,074 - INFO - Processing document: 59320034
+2025-04-08 07:19:20,074 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,074 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,087 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:20,098 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:20,098 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:20,099 - ERROR - Error processing document 59320034: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,099 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,100 - INFO - Processing document: 42045072
+2025-04-08 07:19:20,100 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,100 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,108 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,116 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,116 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,117 - ERROR - Error processing document 42045072: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,117 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,117 - INFO - Processing document: 4216862
+2025-04-08 07:19:20,117 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,117 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,123 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,128 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,129 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,130 - ERROR - Error processing document 4216862: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,130 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,130 - INFO - Processing document: 98238949
+2025-04-08 07:19:20,130 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,130 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,134 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,139 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,139 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,140 - ERROR - Error processing document 98238949: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,140 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,140 - INFO - Processing document: 47686356
+2025-04-08 07:19:20,140 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,140 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,146 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,151 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,151 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,152 - ERROR - Error processing document 47686356: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,152 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,152 - INFO - Processing document: 35928796
+2025-04-08 07:19:20,152 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,152 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,156 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,160 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,160 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,161 - ERROR - Error processing document 35928796: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,161 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,161 - INFO - Processing document: 17409856
+2025-04-08 07:19:20,161 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,161 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,166 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,170 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,171 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,172 - ERROR - Error processing document 17409856: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,172 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,172 - INFO - Processing document: 98757756
+2025-04-08 07:19:20,172 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,172 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,178 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,183 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,183 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,184 - ERROR - Error processing document 98757756: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,184 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,184 - INFO - Processing document: 61360879
+2025-04-08 07:19:20,184 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,184 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,188 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,193 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,193 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,194 - ERROR - Error processing document 61360879: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,194 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,194 - INFO - Processing document: 47798365
+2025-04-08 07:19:20,194 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,194 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,198 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,203 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,203 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,204 - ERROR - Error processing document 47798365: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,204 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,204 - INFO - Processing document: 17350626
+2025-04-08 07:19:20,204 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,204 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,208 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,211 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,212 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,212 - ERROR - Error processing document 17350626: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,212 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,213 - INFO - Processing document: 5225266
+2025-04-08 07:19:20,213 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,213 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,218 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,224 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,224 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,225 - ERROR - Error processing document 5225266: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,225 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,225 - INFO - Processing document: 70719243
+2025-04-08 07:19:20,225 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,225 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,236 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:20,246 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:20,247 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:20,247 - ERROR - Error processing document 70719243: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,248 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,248 - INFO - Processing document: 60516406
+2025-04-08 07:19:20,248 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,248 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,251 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,255 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,255 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,256 - ERROR - Error processing document 60516406: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,256 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,257 - INFO - Processing document: 53721399
+2025-04-08 07:19:20,257 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,257 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,260 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,264 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,264 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,265 - ERROR - Error processing document 53721399: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,265 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,265 - INFO - Processing document: 92908954
+2025-04-08 07:19:20,266 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,266 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,273 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:20,280 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:20,280 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:20,281 - ERROR - Error processing document 92908954: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,281 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,281 - INFO - Processing document: 49519055
+2025-04-08 07:19:20,281 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,281 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,289 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:20,298 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:20,298 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:20,299 - ERROR - Error processing document 49519055: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,299 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,299 - INFO - Processing document: 2577868
+2025-04-08 07:19:20,299 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,299 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,303 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,307 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,308 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,308 - ERROR - Error processing document 2577868: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,309 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,309 - INFO - Processing document: 63848470
+2025-04-08 07:19:20,309 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,309 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,313 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,317 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,317 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,318 - ERROR - Error processing document 63848470: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,318 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,318 - INFO - Processing document: 81057283
+2025-04-08 07:19:20,318 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,319 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,320 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:20,322 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:20,322 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:20,323 - ERROR - Error processing document 81057283: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,323 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,323 - INFO - Processing document: 48074885
+2025-04-08 07:19:20,323 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,323 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,325 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:20,327 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:20,328 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:20,328 - ERROR - Error processing document 48074885: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,328 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,328 - INFO - Processing document: 96217072
+2025-04-08 07:19:20,328 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,329 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,331 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:20,334 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:20,334 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:20,335 - ERROR - Error processing document 96217072: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,335 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,335 - INFO - Processing document: 7255717
+2025-04-08 07:19:20,335 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,335 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,340 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,345 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,345 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,346 - ERROR - Error processing document 7255717: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,346 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,346 - INFO - Processing document: 6726365
+2025-04-08 07:19:20,346 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,346 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,353 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:20,359 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:20,360 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:20,360 - ERROR - Error processing document 6726365: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,360 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,360 - INFO - Processing document: 34958521
+2025-04-08 07:19:20,361 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,361 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,368 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:20,375 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:20,375 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:20,376 - ERROR - Error processing document 34958521: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,376 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,376 - INFO - Processing document: 93460473
+2025-04-08 07:19:20,377 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,377 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,380 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,384 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,384 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,385 - ERROR - Error processing document 93460473: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,385 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,385 - INFO - Processing document: 67744436
+2025-04-08 07:19:20,385 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,385 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,389 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,392 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,392 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,393 - ERROR - Error processing document 67744436: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,393 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,393 - INFO - Processing document: 81001972
+2025-04-08 07:19:20,393 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,393 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,403 - INFO - Using original chunk size 10000, resulted in 8 chunks
+2025-04-08 07:19:20,412 - INFO - Text split into 8 chunks (chunk size: 10000)
+2025-04-08 07:19:20,413 - INFO - Summarizing chunk 1/8
+2025-04-08 07:19:20,413 - ERROR - Error processing document 81001972: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,413 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,414 - INFO - Processing document: 76817909
+2025-04-08 07:19:20,414 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,414 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,420 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,426 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,426 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,427 - ERROR - Error processing document 76817909: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,427 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,427 - INFO - Processing document: 27321339
+2025-04-08 07:19:20,427 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,427 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,435 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:20,442 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:20,442 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:20,443 - ERROR - Error processing document 27321339: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,443 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,443 - INFO - Processing document: 3913778
+2025-04-08 07:19:20,443 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,443 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,450 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:20,458 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:20,458 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:20,458 - ERROR - Error processing document 3913778: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,459 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,459 - INFO - Processing document: 89581601
+2025-04-08 07:19:20,459 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,459 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,462 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,466 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,466 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,467 - ERROR - Error processing document 89581601: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,467 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,467 - INFO - Processing document: 46342402
+2025-04-08 07:19:20,467 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,467 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,472 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,477 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,477 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,478 - ERROR - Error processing document 46342402: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,478 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,478 - INFO - Processing document: 21542239
+2025-04-08 07:19:20,478 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,478 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,483 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,489 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,489 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,490 - ERROR - Error processing document 21542239: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,490 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,490 - INFO - Processing document: 79471009
+2025-04-08 07:19:20,490 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,490 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,495 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,501 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,501 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,502 - ERROR - Error processing document 79471009: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,502 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,502 - INFO - Processing document: 93060618
+2025-04-08 07:19:20,502 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,502 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,507 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,513 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,513 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,513 - ERROR - Error processing document 93060618: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,514 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,514 - INFO - Processing document: 86423785
+2025-04-08 07:19:20,514 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,514 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,518 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,522 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,523 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,523 - ERROR - Error processing document 86423785: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,523 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,523 - INFO - Processing document: 32248697
+2025-04-08 07:19:20,523 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,523 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,528 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,532 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,532 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,533 - ERROR - Error processing document 32248697: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,533 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,533 - INFO - Processing document: 51254358
+2025-04-08 07:19:20,533 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,533 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,541 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:20,548 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:20,549 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:20,549 - ERROR - Error processing document 51254358: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,549 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,549 - INFO - Processing document: 77684000
+2025-04-08 07:19:20,549 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,549 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,553 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,557 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,558 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,558 - ERROR - Error processing document 77684000: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,558 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,558 - INFO - Processing document: 33015723
+2025-04-08 07:19:20,559 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,559 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,567 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,575 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,576 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,576 - ERROR - Error processing document 33015723: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,576 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,577 - INFO - Processing document: 24928430
+2025-04-08 07:19:20,577 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,577 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,591 - INFO - Using original chunk size 10000, resulted in 8 chunks
+2025-04-08 07:19:20,605 - INFO - Text split into 8 chunks (chunk size: 10000)
+2025-04-08 07:19:20,605 - INFO - Summarizing chunk 1/8
+2025-04-08 07:19:20,606 - ERROR - Error processing document 24928430: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,606 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,606 - INFO - Processing document: 43280550
+2025-04-08 07:19:20,606 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,606 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,611 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,615 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,616 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,616 - ERROR - Error processing document 43280550: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,617 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,617 - INFO - Processing document: 37171167
+2025-04-08 07:19:20,617 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,617 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,622 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,628 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,628 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,629 - ERROR - Error processing document 37171167: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,629 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,629 - INFO - Processing document: 90421095
+2025-04-08 07:19:20,629 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,629 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,639 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:20,649 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:20,649 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:20,650 - ERROR - Error processing document 90421095: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,650 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,650 - INFO - Processing document: 44210578
+2025-04-08 07:19:20,650 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,650 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,652 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:20,654 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:20,655 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:20,655 - ERROR - Error processing document 44210578: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,655 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,656 - INFO - Processing document: 96002700
+2025-04-08 07:19:20,656 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,656 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,667 - INFO - Using original chunk size 10000, resulted in 9 chunks
+2025-04-08 07:19:20,678 - INFO - Text split into 9 chunks (chunk size: 10000)
+2025-04-08 07:19:20,679 - INFO - Summarizing chunk 1/9
+2025-04-08 07:19:20,679 - ERROR - Error processing document 96002700: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,679 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,679 - INFO - Processing document: 8784223
+2025-04-08 07:19:20,680 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,680 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,685 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,691 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,691 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,692 - ERROR - Error processing document 8784223: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,692 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,692 - INFO - Processing document: 79512250
+2025-04-08 07:19:20,692 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,692 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,696 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,700 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,701 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,701 - ERROR - Error processing document 79512250: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,702 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,702 - INFO - Processing document: 30877354
+2025-04-08 07:19:20,702 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,702 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,705 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:20,709 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:20,709 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:20,709 - ERROR - Error processing document 30877354: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,710 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,710 - INFO - Processing document: 6827132
+2025-04-08 07:19:20,710 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,710 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,717 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:20,725 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:20,725 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:20,726 - ERROR - Error processing document 6827132: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,726 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,726 - INFO - Processing document: 97381495
+2025-04-08 07:19:20,726 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,726 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,737 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:20,748 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:20,749 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:20,749 - ERROR - Error processing document 97381495: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,749 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,749 - INFO - Processing document: 70889889
+2025-04-08 07:19:20,749 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,749 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,753 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,756 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,756 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,757 - ERROR - Error processing document 70889889: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,757 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,757 - INFO - Processing document: 2774914
+2025-04-08 07:19:20,757 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,757 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,762 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,767 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,767 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,768 - ERROR - Error processing document 2774914: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,768 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,768 - INFO - Processing document: 73414525
+2025-04-08 07:19:20,768 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,768 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,771 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,773 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,774 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,774 - ERROR - Error processing document 73414525: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,774 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,774 - INFO - Processing document: 60253398
+2025-04-08 07:19:20,775 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,775 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,784 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:20,793 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:20,794 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:20,794 - ERROR - Error processing document 60253398: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,794 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,794 - INFO - Processing document: 45795840
+2025-04-08 07:19:20,795 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,795 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,803 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:20,812 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:20,812 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:20,813 - ERROR - Error processing document 45795840: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,813 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,813 - INFO - Processing document: 87041789
+2025-04-08 07:19:20,813 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,813 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,834 - INFO - Using original chunk size 10000, resulted in 10 chunks
+2025-04-08 07:19:20,854 - INFO - Text split into 10 chunks (chunk size: 10000)
+2025-04-08 07:19:20,855 - INFO - Summarizing chunk 1/10
+2025-04-08 07:19:20,855 - ERROR - Error processing document 87041789: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,855 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,855 - INFO - Processing document: 12175403
+2025-04-08 07:19:20,856 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,856 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,863 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,871 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,871 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,872 - ERROR - Error processing document 12175403: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,872 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,872 - INFO - Processing document: 38469042
+2025-04-08 07:19:20,872 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,872 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,876 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,879 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,880 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,880 - ERROR - Error processing document 38469042: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,881 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,881 - INFO - Processing document: 45601881
+2025-04-08 07:19:20,881 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,881 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,893 - INFO - Adjusted chunk size from 10000 to 11071 to target 10 chunks
+2025-04-08 07:19:20,905 - INFO - Text split into 11 chunks (chunk size: 11071)
+2025-04-08 07:19:20,906 - INFO - Summarizing chunk 1/11
+2025-04-08 07:19:20,907 - ERROR - Error processing document 45601881: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,907 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,907 - INFO - Processing document: 50438213
+2025-04-08 07:19:20,907 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,907 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,915 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:20,924 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:20,924 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:20,925 - ERROR - Error processing document 50438213: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,925 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,925 - INFO - Processing document: 14310989
+2025-04-08 07:19:20,925 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,925 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,939 - INFO - Using original chunk size 10000, resulted in 10 chunks
+2025-04-08 07:19:20,953 - INFO - Text split into 10 chunks (chunk size: 10000)
+2025-04-08 07:19:20,954 - INFO - Summarizing chunk 1/10
+2025-04-08 07:19:20,955 - ERROR - Error processing document 14310989: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,955 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,955 - INFO - Processing document: 86524123
+2025-04-08 07:19:20,955 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,955 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,960 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,964 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,965 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,965 - ERROR - Error processing document 86524123: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,966 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,966 - INFO - Processing document: 58884367
+2025-04-08 07:19:20,966 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,966 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,970 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,974 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,974 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,975 - ERROR - Error processing document 58884367: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,975 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,975 - INFO - Processing document: 98781755
+2025-04-08 07:19:20,975 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,975 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,980 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:20,984 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:20,984 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:20,985 - ERROR - Error processing document 98781755: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,985 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,985 - INFO - Processing document: 13655370
+2025-04-08 07:19:20,985 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,985 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,990 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:20,995 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:20,995 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:20,996 - ERROR - Error processing document 13655370: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:20,996 - ERROR - Continuing with next document...
+2025-04-08 07:19:20,996 - INFO - Processing document: 97703387
+2025-04-08 07:19:20,996 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:20,996 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:20,999 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,002 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,002 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,003 - ERROR - Error processing document 97703387: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,003 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,003 - INFO - Processing document: 62996279
+2025-04-08 07:19:21,003 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,003 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,008 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,012 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,012 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,013 - ERROR - Error processing document 62996279: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,013 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,013 - INFO - Processing document: 6777051
+2025-04-08 07:19:21,013 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,013 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,020 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:21,028 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:21,028 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:21,029 - ERROR - Error processing document 6777051: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,029 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,029 - INFO - Processing document: 60641106
+2025-04-08 07:19:21,029 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,029 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,033 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,037 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,037 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,038 - ERROR - Error processing document 60641106: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,038 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,038 - INFO - Processing document: 56843191
+2025-04-08 07:19:21,038 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,038 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,042 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:21,046 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:21,046 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:21,047 - ERROR - Error processing document 56843191: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,047 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,047 - INFO - Processing document: 54139177
+2025-04-08 07:19:21,047 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,047 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,055 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:21,063 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:21,064 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:21,064 - ERROR - Error processing document 54139177: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,065 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,065 - INFO - Processing document: 43514018
+2025-04-08 07:19:21,065 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,065 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,069 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,072 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,073 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,073 - ERROR - Error processing document 43514018: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,074 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,074 - INFO - Processing document: 13237217
+2025-04-08 07:19:21,074 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,074 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,091 - INFO - Using original chunk size 10000, resulted in 9 chunks
+2025-04-08 07:19:21,107 - INFO - Text split into 9 chunks (chunk size: 10000)
+2025-04-08 07:19:21,107 - INFO - Summarizing chunk 1/9
+2025-04-08 07:19:21,108 - ERROR - Error processing document 13237217: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,108 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,108 - INFO - Processing document: 22030520
+2025-04-08 07:19:21,108 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,108 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,117 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:21,126 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:21,127 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:21,127 - ERROR - Error processing document 22030520: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,127 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,127 - INFO - Processing document: 93106503
+2025-04-08 07:19:21,128 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,128 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,132 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,137 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,138 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,138 - ERROR - Error processing document 93106503: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,138 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,138 - INFO - Processing document: 96747724
+2025-04-08 07:19:21,138 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,139 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,150 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:21,161 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:21,161 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:21,162 - ERROR - Error processing document 96747724: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,162 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,162 - INFO - Processing document: 68340528
+2025-04-08 07:19:21,162 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,162 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,168 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:21,173 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:21,174 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:21,174 - ERROR - Error processing document 68340528: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,174 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,174 - INFO - Processing document: 7157784
+2025-04-08 07:19:21,175 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,175 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,179 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,183 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,183 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,184 - ERROR - Error processing document 7157784: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,184 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,184 - INFO - Processing document: 74193008
+2025-04-08 07:19:21,184 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,184 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,190 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:21,195 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:21,195 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:21,196 - ERROR - Error processing document 74193008: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,196 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,196 - INFO - Processing document: 61558513
+2025-04-08 07:19:21,196 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,196 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,201 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,205 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,205 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,206 - ERROR - Error processing document 61558513: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,206 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,206 - INFO - Processing document: 90011197
+2025-04-08 07:19:21,206 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,206 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,215 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:21,223 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:21,224 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:21,224 - ERROR - Error processing document 90011197: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,224 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,225 - INFO - Processing document: 87411149
+2025-04-08 07:19:21,225 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,225 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,241 - INFO - Using original chunk size 10000, resulted in 9 chunks
+2025-04-08 07:19:21,257 - INFO - Text split into 9 chunks (chunk size: 10000)
+2025-04-08 07:19:21,257 - INFO - Summarizing chunk 1/9
+2025-04-08 07:19:21,258 - ERROR - Error processing document 87411149: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,258 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,258 - INFO - Processing document: 47723293
+2025-04-08 07:19:21,258 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,258 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,263 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,268 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,268 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,269 - ERROR - Error processing document 47723293: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,269 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,269 - INFO - Processing document: 13793499
+2025-04-08 07:19:21,269 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,269 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,275 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:21,281 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:21,281 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:21,282 - ERROR - Error processing document 13793499: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,282 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,282 - INFO - Processing document: 3855110
+2025-04-08 07:19:21,282 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,282 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,324 - INFO - Adjusted chunk size from 10000 to 12269 to target 10 chunks
+2025-04-08 07:19:21,365 - INFO - Text split into 11 chunks (chunk size: 12269)
+2025-04-08 07:19:21,366 - INFO - Summarizing chunk 1/11
+2025-04-08 07:19:21,366 - ERROR - Error processing document 3855110: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,367 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,367 - INFO - Processing document: 39353178
+2025-04-08 07:19:21,367 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,367 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,370 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,373 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,373 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,374 - ERROR - Error processing document 39353178: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,374 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,374 - INFO - Processing document: 8984509
+2025-04-08 07:19:21,374 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,374 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,382 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:21,390 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:21,390 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:21,391 - ERROR - Error processing document 8984509: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,391 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,391 - INFO - Processing document: 65756728
+2025-04-08 07:19:21,391 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,391 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,398 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:21,404 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:21,404 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:21,405 - ERROR - Error processing document 65756728: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,405 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,405 - INFO - Processing document: 68635574
+2025-04-08 07:19:21,405 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,405 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,413 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:21,422 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:21,422 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:21,423 - ERROR - Error processing document 68635574: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,423 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,423 - INFO - Processing document: 73705154
+2025-04-08 07:19:21,423 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,423 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,430 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:21,437 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:21,437 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:21,438 - ERROR - Error processing document 73705154: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,438 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,438 - INFO - Processing document: 11684235
+2025-04-08 07:19:21,438 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,438 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,444 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:21,450 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:21,450 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:21,451 - ERROR - Error processing document 11684235: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,451 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,451 - INFO - Processing document: 39570633
+2025-04-08 07:19:21,451 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,451 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,454 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,458 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,458 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,459 - ERROR - Error processing document 39570633: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,459 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,459 - INFO - Processing document: 30485653
+2025-04-08 07:19:21,459 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,459 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,463 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,466 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,466 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,467 - ERROR - Error processing document 30485653: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,467 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,467 - INFO - Processing document: 81465314
+2025-04-08 07:19:21,467 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,467 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,470 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,474 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,475 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,475 - ERROR - Error processing document 81465314: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,475 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,475 - INFO - Processing document: 66302705
+2025-04-08 07:19:21,476 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,476 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,483 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:21,497 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:21,497 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:21,498 - ERROR - Error processing document 66302705: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,498 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,498 - INFO - Processing document: 25809281
+2025-04-08 07:19:21,498 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,498 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,501 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:21,503 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:21,503 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:21,504 - ERROR - Error processing document 25809281: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,504 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,504 - INFO - Processing document: 65123124
+2025-04-08 07:19:21,505 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,505 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,513 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:21,520 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:21,521 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:21,521 - ERROR - Error processing document 65123124: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,521 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,522 - INFO - Processing document: 45186835
+2025-04-08 07:19:21,522 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,522 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,529 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:21,536 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:21,536 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:21,537 - ERROR - Error processing document 45186835: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,537 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,537 - INFO - Processing document: 33126132
+2025-04-08 07:19:21,537 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,537 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,545 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:21,553 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:21,553 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:21,554 - ERROR - Error processing document 33126132: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,554 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,554 - INFO - Processing document: 21532550
+2025-04-08 07:19:21,554 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,554 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,559 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:21,564 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:21,564 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:21,565 - ERROR - Error processing document 21532550: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,565 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,565 - INFO - Processing document: 91929013
+2025-04-08 07:19:21,565 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,565 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,570 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,574 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,574 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,575 - ERROR - Error processing document 91929013: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,575 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,575 - INFO - Processing document: 12239056
+2025-04-08 07:19:21,575 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,575 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,581 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:21,588 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:21,588 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:21,589 - ERROR - Error processing document 12239056: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,589 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,589 - INFO - Processing document: 66099843
+2025-04-08 07:19:21,589 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,589 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,593 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,597 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,598 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,598 - ERROR - Error processing document 66099843: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,599 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,599 - INFO - Processing document: 63531440
+2025-04-08 07:19:21,599 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,599 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,603 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,607 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,608 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,608 - ERROR - Error processing document 63531440: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,608 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,608 - INFO - Processing document: 63621777
+2025-04-08 07:19:21,609 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,609 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,614 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:21,619 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:21,619 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:21,620 - ERROR - Error processing document 63621777: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,620 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,620 - INFO - Processing document: 27300559
+2025-04-08 07:19:21,620 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,620 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,630 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:21,639 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:21,639 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:21,640 - ERROR - Error processing document 27300559: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,640 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,640 - INFO - Processing document: 15765418
+2025-04-08 07:19:21,640 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,640 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,646 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:21,652 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:21,652 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:21,653 - ERROR - Error processing document 15765418: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,653 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,653 - INFO - Processing document: 35247822
+2025-04-08 07:19:21,653 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,653 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,658 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,663 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,663 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,664 - ERROR - Error processing document 35247822: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,664 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,664 - INFO - Processing document: 39357436
+2025-04-08 07:19:21,664 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,664 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,668 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,673 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,673 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,674 - ERROR - Error processing document 39357436: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,674 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,674 - INFO - Processing document: 87460557
+2025-04-08 07:19:21,674 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,674 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,686 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:21,698 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:21,698 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:21,699 - ERROR - Error processing document 87460557: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,699 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,699 - INFO - Processing document: 51116334
+2025-04-08 07:19:21,699 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,699 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,703 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,706 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,707 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,708 - ERROR - Error processing document 51116334: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,708 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,708 - INFO - Processing document: 57934330
+2025-04-08 07:19:21,708 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,708 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,714 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:21,721 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:21,721 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:21,722 - ERROR - Error processing document 57934330: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,722 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,722 - INFO - Processing document: 77737945
+2025-04-08 07:19:21,722 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,722 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,726 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,729 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,730 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,730 - ERROR - Error processing document 77737945: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,731 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,731 - INFO - Processing document: 26473847
+2025-04-08 07:19:21,731 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,731 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,735 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,739 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,740 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,740 - ERROR - Error processing document 26473847: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,740 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,741 - INFO - Processing document: 25710556
+2025-04-08 07:19:21,741 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,741 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,747 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:21,752 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:21,752 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:21,753 - ERROR - Error processing document 25710556: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,753 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,753 - INFO - Processing document: 85853580
+2025-04-08 07:19:21,753 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,753 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,757 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,761 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,761 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,762 - ERROR - Error processing document 85853580: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,762 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,762 - INFO - Processing document: 96831204
+2025-04-08 07:19:21,762 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,762 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,766 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,770 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,770 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,771 - ERROR - Error processing document 96831204: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,771 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,771 - INFO - Processing document: 85505359
+2025-04-08 07:19:21,771 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,771 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,779 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:21,792 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:21,792 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:21,793 - ERROR - Error processing document 85505359: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,793 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,793 - INFO - Processing document: 64175585
+2025-04-08 07:19:21,794 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,794 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,804 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:21,815 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:21,816 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:21,816 - ERROR - Error processing document 64175585: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,816 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,816 - INFO - Processing document: 74977893
+2025-04-08 07:19:21,816 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,817 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,825 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:21,833 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:21,833 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:21,834 - ERROR - Error processing document 74977893: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,834 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,834 - INFO - Processing document: 87885377
+2025-04-08 07:19:21,834 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,834 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,838 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,842 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,843 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,843 - ERROR - Error processing document 87885377: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,843 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,843 - INFO - Processing document: 85820029
+2025-04-08 07:19:21,844 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,844 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,848 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,852 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,852 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,853 - ERROR - Error processing document 85820029: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,853 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,853 - INFO - Processing document: 69537377
+2025-04-08 07:19:21,853 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,853 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,855 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:21,857 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:21,857 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:21,858 - ERROR - Error processing document 69537377: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,858 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,858 - INFO - Processing document: 2905851
+2025-04-08 07:19:21,858 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,858 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,864 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:21,870 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:21,871 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:21,871 - ERROR - Error processing document 2905851: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,872 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,872 - INFO - Processing document: 70691684
+2025-04-08 07:19:21,872 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,872 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,876 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:21,881 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:21,881 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:21,882 - ERROR - Error processing document 70691684: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,882 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,882 - INFO - Processing document: 48141212
+2025-04-08 07:19:21,882 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,882 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,890 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:21,897 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:21,898 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:21,898 - ERROR - Error processing document 48141212: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,898 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,899 - INFO - Processing document: 72992946
+2025-04-08 07:19:21,899 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,899 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,903 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:21,907 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:21,907 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:21,908 - ERROR - Error processing document 72992946: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,908 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,908 - INFO - Processing document: 41467472
+2025-04-08 07:19:21,908 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,908 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,913 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:21,919 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:21,919 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:21,920 - ERROR - Error processing document 41467472: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,920 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,920 - INFO - Processing document: 11779349
+2025-04-08 07:19:21,920 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,920 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,928 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:21,936 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:21,936 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:21,937 - ERROR - Error processing document 11779349: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,937 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,937 - INFO - Processing document: 50538257
+2025-04-08 07:19:21,937 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,937 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,942 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:21,947 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:21,947 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:21,947 - ERROR - Error processing document 50538257: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,948 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,948 - INFO - Processing document: 19050347
+2025-04-08 07:19:21,948 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,948 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,950 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:21,952 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:21,952 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:21,953 - ERROR - Error processing document 19050347: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,953 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,953 - INFO - Processing document: 91637218
+2025-04-08 07:19:21,953 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,954 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,958 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,963 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,964 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,964 - ERROR - Error processing document 91637218: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,964 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,964 - INFO - Processing document: 37775721
+2025-04-08 07:19:21,964 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,964 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,966 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:21,968 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:21,969 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:21,969 - ERROR - Error processing document 37775721: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,969 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,969 - INFO - Processing document: 26105266
+2025-04-08 07:19:21,969 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,970 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,973 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,976 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,977 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,977 - ERROR - Error processing document 26105266: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,977 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,977 - INFO - Processing document: 8601517
+2025-04-08 07:19:21,978 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,978 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,982 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:21,987 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:21,987 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:21,988 - ERROR - Error processing document 8601517: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,988 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,988 - INFO - Processing document: 49139111
+2025-04-08 07:19:21,988 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,988 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:21,993 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:21,997 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:21,998 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:21,998 - ERROR - Error processing document 49139111: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:21,998 - ERROR - Continuing with next document...
+2025-04-08 07:19:21,999 - INFO - Processing document: 98262950
+2025-04-08 07:19:21,999 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:21,999 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,004 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:22,010 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:22,010 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:22,011 - ERROR - Error processing document 98262950: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,011 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,011 - INFO - Processing document: 36200725
+2025-04-08 07:19:22,011 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,011 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,015 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:22,020 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:22,020 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:22,021 - ERROR - Error processing document 36200725: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,021 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,021 - INFO - Processing document: 31194274
+2025-04-08 07:19:22,021 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,021 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,027 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:22,033 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:22,033 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:22,034 - ERROR - Error processing document 31194274: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,034 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,034 - INFO - Processing document: 11481096
+2025-04-08 07:19:22,034 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,034 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,038 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:22,043 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:22,043 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:22,044 - ERROR - Error processing document 11481096: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,044 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,044 - INFO - Processing document: 4830217
+2025-04-08 07:19:22,044 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,044 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,054 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:22,063 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:22,064 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:22,065 - ERROR - Error processing document 4830217: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,065 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,065 - INFO - Processing document: 11542688
+2025-04-08 07:19:22,065 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,065 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,077 - INFO - Using original chunk size 10000, resulted in 8 chunks
+2025-04-08 07:19:22,088 - INFO - Text split into 8 chunks (chunk size: 10000)
+2025-04-08 07:19:22,088 - INFO - Summarizing chunk 1/8
+2025-04-08 07:19:22,089 - ERROR - Error processing document 11542688: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,089 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,089 - INFO - Processing document: 39382584
+2025-04-08 07:19:22,089 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,089 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,094 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:22,098 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:22,099 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:22,099 - ERROR - Error processing document 39382584: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,099 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,099 - INFO - Processing document: 99440206
+2025-04-08 07:19:22,100 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,100 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,103 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:22,107 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:22,108 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:22,109 - ERROR - Error processing document 99440206: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,109 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,109 - INFO - Processing document: 12711637
+2025-04-08 07:19:22,109 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,109 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,111 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:22,113 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:22,113 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:22,114 - ERROR - Error processing document 12711637: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,114 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,114 - INFO - Processing document: 18322264
+2025-04-08 07:19:22,114 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,114 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,119 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:22,124 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:22,124 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:22,125 - ERROR - Error processing document 18322264: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,125 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,125 - INFO - Processing document: 23426061
+2025-04-08 07:19:22,125 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,125 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,129 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:22,133 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:22,133 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:22,134 - ERROR - Error processing document 23426061: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,134 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,134 - INFO - Processing document: 83267919
+2025-04-08 07:19:22,134 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,134 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,140 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:22,146 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:22,146 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:22,147 - ERROR - Error processing document 83267919: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,147 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,147 - INFO - Processing document: 4353776
+2025-04-08 07:19:22,147 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,147 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,154 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:22,160 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:22,161 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:22,161 - ERROR - Error processing document 4353776: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,161 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,162 - INFO - Processing document: 69119323
+2025-04-08 07:19:22,162 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,162 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,165 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:22,169 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:22,170 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:22,170 - ERROR - Error processing document 69119323: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,170 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,170 - INFO - Processing document: 56196
+2025-04-08 07:19:22,171 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,171 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,176 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:22,180 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:22,181 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:22,181 - ERROR - Error processing document 56196: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,181 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,182 - INFO - Processing document: 22546727
+2025-04-08 07:19:22,182 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,182 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,187 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:22,193 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:22,193 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:22,194 - ERROR - Error processing document 22546727: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,194 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,194 - INFO - Processing document: 58308538
+2025-04-08 07:19:22,194 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,194 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,197 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:22,200 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:22,200 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:22,201 - ERROR - Error processing document 58308538: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,201 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,201 - INFO - Processing document: 84030160
+2025-04-08 07:19:22,201 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,201 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,207 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:22,211 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:22,212 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:22,213 - ERROR - Error processing document 84030160: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,213 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,213 - INFO - Processing document: 26668230
+2025-04-08 07:19:22,213 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,213 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,222 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:22,230 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:22,231 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:22,231 - ERROR - Error processing document 26668230: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,232 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,232 - INFO - Processing document: 39038842
+2025-04-08 07:19:22,232 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,232 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,240 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:22,248 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:22,248 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:22,249 - ERROR - Error processing document 39038842: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,249 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,249 - INFO - Processing document: 70140653
+2025-04-08 07:19:22,249 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,249 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,252 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:22,256 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:22,256 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:22,257 - ERROR - Error processing document 70140653: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,257 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,257 - INFO - Processing document: 75937139
+2025-04-08 07:19:22,257 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,257 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,263 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:22,269 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:22,269 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:22,270 - ERROR - Error processing document 75937139: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,270 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,270 - INFO - Processing document: 23313716
+2025-04-08 07:19:22,270 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,270 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,279 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:22,288 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:22,288 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:22,288 - ERROR - Error processing document 23313716: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,289 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,289 - INFO - Processing document: 8455503
+2025-04-08 07:19:22,289 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,289 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,297 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:22,305 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:22,305 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:22,305 - ERROR - Error processing document 8455503: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,306 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,306 - INFO - Processing document: 67696398
+2025-04-08 07:19:22,306 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,306 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,315 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:22,324 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:22,324 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:22,325 - ERROR - Error processing document 67696398: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,325 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,325 - INFO - Processing document: 2899329
+2025-04-08 07:19:22,325 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,325 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,330 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:22,336 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:22,336 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:22,337 - ERROR - Error processing document 2899329: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,337 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,337 - INFO - Processing document: 16280529
+2025-04-08 07:19:22,337 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,337 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,338 - INFO - Using original chunk size 10000, resulted in 1 chunks
+2025-04-08 07:19:22,339 - INFO - Text split into 1 chunks (chunk size: 10000)
+2025-04-08 07:19:22,339 - INFO - Summarizing chunk 1/1
+2025-04-08 07:19:22,340 - ERROR - Error processing document 16280529: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,340 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,340 - INFO - Processing document: 73424952
+2025-04-08 07:19:22,340 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,340 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,437 - INFO - Adjusted chunk size from 10000 to 39596 to target 10 chunks
+2025-04-08 07:19:22,540 - INFO - Text split into 11 chunks (chunk size: 39596)
+2025-04-08 07:19:22,540 - INFO - Summarizing chunk 1/11
+2025-04-08 07:19:22,541 - ERROR - Error processing document 73424952: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,541 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,541 - INFO - Processing document: 33714440
+2025-04-08 07:19:22,541 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,541 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,545 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:22,549 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:22,549 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:22,550 - ERROR - Error processing document 33714440: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,550 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,550 - INFO - Processing document: 65102009
+2025-04-08 07:19:22,550 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,550 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,556 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:22,562 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:22,563 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:22,563 - ERROR - Error processing document 65102009: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,564 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,564 - INFO - Processing document: 1055799
+2025-04-08 07:19:22,564 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,564 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,573 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:22,582 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:22,582 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:22,583 - ERROR - Error processing document 1055799: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,583 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,583 - INFO - Processing document: 75442340
+2025-04-08 07:19:22,583 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,583 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,586 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:22,590 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:22,590 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:22,591 - ERROR - Error processing document 75442340: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,591 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,591 - INFO - Processing document: 7590139
+2025-04-08 07:19:22,592 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,592 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,598 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:22,605 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:22,605 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:22,606 - ERROR - Error processing document 7590139: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,606 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,606 - INFO - Processing document: 37479343
+2025-04-08 07:19:22,606 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,606 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,619 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:22,632 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:22,632 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:22,633 - ERROR - Error processing document 37479343: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,633 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,633 - INFO - Processing document: 30621133
+2025-04-08 07:19:22,633 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,633 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,637 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:22,641 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:22,641 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:22,642 - ERROR - Error processing document 30621133: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,642 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,642 - INFO - Processing document: 15757806
+2025-04-08 07:19:22,642 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,642 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,647 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:22,652 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:22,653 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:22,653 - ERROR - Error processing document 15757806: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,653 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,653 - INFO - Processing document: 43650136
+2025-04-08 07:19:22,654 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,654 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,657 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:22,661 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:22,661 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:22,662 - ERROR - Error processing document 43650136: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,662 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,662 - INFO - Processing document: 96308075
+2025-04-08 07:19:22,662 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,662 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,671 - INFO - Using original chunk size 10000, resulted in 7 chunks
+2025-04-08 07:19:22,679 - INFO - Text split into 7 chunks (chunk size: 10000)
+2025-04-08 07:19:22,680 - INFO - Summarizing chunk 1/7
+2025-04-08 07:19:22,680 - ERROR - Error processing document 96308075: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,680 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,681 - INFO - Processing document: 57613420
+2025-04-08 07:19:22,681 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,681 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,694 - INFO - Using original chunk size 10000, resulted in 8 chunks
+2025-04-08 07:19:22,709 - INFO - Text split into 8 chunks (chunk size: 10000)
+2025-04-08 07:19:22,709 - INFO - Summarizing chunk 1/8
+2025-04-08 07:19:22,710 - ERROR - Error processing document 57613420: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,710 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,710 - INFO - Processing document: 29981772
+2025-04-08 07:19:22,710 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,710 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,712 - INFO - Using original chunk size 10000, resulted in 1 chunks
+2025-04-08 07:19:22,714 - INFO - Text split into 1 chunks (chunk size: 10000)
+2025-04-08 07:19:22,714 - INFO - Summarizing chunk 1/1
+2025-04-08 07:19:22,715 - ERROR - Error processing document 29981772: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,715 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,715 - INFO - Processing document: 72922440
+2025-04-08 07:19:22,715 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,715 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,721 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:22,727 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:22,727 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:22,728 - ERROR - Error processing document 72922440: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,728 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,728 - INFO - Processing document: 82821959
+2025-04-08 07:19:22,728 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,728 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,736 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:22,744 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:22,745 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:22,745 - ERROR - Error processing document 82821959: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,745 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,745 - INFO - Processing document: 82314288
+2025-04-08 07:19:22,746 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,746 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,752 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:22,758 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:22,759 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:22,759 - ERROR - Error processing document 82314288: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,760 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,760 - INFO - Processing document: 66006367
+2025-04-08 07:19:22,760 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,760 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,772 - INFO - Using original chunk size 10000, resulted in 9 chunks
+2025-04-08 07:19:22,785 - INFO - Text split into 9 chunks (chunk size: 10000)
+2025-04-08 07:19:22,786 - INFO - Summarizing chunk 1/9
+2025-04-08 07:19:22,786 - ERROR - Error processing document 66006367: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,787 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,787 - INFO - Processing document: 43791696
+2025-04-08 07:19:22,787 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,787 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,796 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:22,806 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:22,806 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:22,807 - ERROR - Error processing document 43791696: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,807 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,807 - INFO - Processing document: 2852538
+2025-04-08 07:19:22,807 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,808 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,813 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-08 07:19:22,818 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-08 07:19:22,818 - INFO - Summarizing chunk 1/4
+2025-04-08 07:19:22,819 - ERROR - Error processing document 2852538: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,819 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,819 - INFO - Processing document: 78841597
+2025-04-08 07:19:22,820 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,820 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,829 - INFO - Using original chunk size 10000, resulted in 6 chunks
+2025-04-08 07:19:22,838 - INFO - Text split into 6 chunks (chunk size: 10000)
+2025-04-08 07:19:22,838 - INFO - Summarizing chunk 1/6
+2025-04-08 07:19:22,839 - ERROR - Error processing document 78841597: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,839 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,839 - INFO - Processing document: 78499306
+2025-04-08 07:19:22,839 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,839 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,857 - INFO - Using original chunk size 10000, resulted in 8 chunks
+2025-04-08 07:19:22,876 - INFO - Text split into 8 chunks (chunk size: 10000)
+2025-04-08 07:19:22,876 - INFO - Summarizing chunk 1/8
+2025-04-08 07:19:22,877 - ERROR - Error processing document 78499306: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,877 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,877 - INFO - Processing document: 85933068
+2025-04-08 07:19:22,877 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,877 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,881 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-08 07:19:22,885 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-08 07:19:22,885 - INFO - Summarizing chunk 1/3
+2025-04-08 07:19:22,886 - ERROR - Error processing document 85933068: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,886 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,886 - INFO - Processing document: 24753674
+2025-04-08 07:19:22,886 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,886 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,893 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:22,900 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:22,901 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:22,902 - ERROR - Error processing document 24753674: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,902 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,902 - INFO - Processing document: 22127536
+2025-04-08 07:19:22,902 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,902 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,904 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-08 07:19:22,907 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-08 07:19:22,907 - INFO - Summarizing chunk 1/2
+2025-04-08 07:19:22,908 - ERROR - Error processing document 22127536: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,908 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,908 - INFO - Processing document: 42731227
+2025-04-08 07:19:22,908 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,908 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,913 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-08 07:19:22,919 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-08 07:19:22,919 - INFO - Summarizing chunk 1/5
+2025-04-08 07:19:22,920 - ERROR - Error processing document 42731227: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-04-08 07:19:22,920 - ERROR - Continuing with next document...
+2025-04-08 07:19:22,920 - INFO - Processing document: 79305631
+2025-04-08 07:19:22,920 - INFO - Starting map-reduce summarization
+2025-04-08 07:19:22,920 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-08 07:19:22,924 - INFO - Using original chunk size 10000, resulted in 4 chunks
