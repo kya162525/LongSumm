@@ -1,0 +1,381 @@
+2025-04-11 07:51:53,045 - INFO - Starting map-reduce summarization process
+2025-04-11 07:51:53,045 - INFO - Found 22 files to process in ./papers/test/full_texts/
+2025-04-11 07:51:53,045 - INFO - Loading existing results file
+2025-04-11 07:51:53,045 - INFO - No existing results file found, creating new one
+2025-04-11 07:51:53,046 - INFO - Processing document: 1009
+2025-04-11 07:51:53,046 - INFO - Starting map-reduce summarization
+2025-04-11 07:51:53,046 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 07:51:53,068 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 07:51:53,073 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 07:51:53,073 - INFO - Summarizing chunk 1/4
+2025-04-11 07:53:48,982 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 07:53:48,983 - INFO - Summarizing chunk 2/4
+2025-04-11 07:55:07,895 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 07:55:07,896 - INFO - Summarizing chunk 3/4
+2025-04-11 07:56:33,973 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 07:56:33,973 - INFO - Summarizing chunk 4/4
+2025-04-11 07:57:23,423 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 07:57:23,424 - INFO - Combining chunk summaries into final summary
+2025-04-11 07:59:13,921 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 07:59:13,921 - INFO - Map-reduce summarization completed
+2025-04-11 07:59:13,921 - INFO - Saving results for 1009
+2025-04-11 07:59:13,921 - INFO - Successfully processed and saved results for 1009
+2025-04-11 07:59:13,921 - INFO - Processing document: 1003
+2025-04-11 07:59:13,922 - INFO - Starting map-reduce summarization
+2025-04-11 07:59:13,922 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 07:59:13,924 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-11 07:59:13,927 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-11 07:59:13,927 - INFO - Summarizing chunk 1/2
+2025-04-11 08:00:38,823 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:00:38,824 - INFO - Summarizing chunk 2/2
+2025-04-11 08:01:24,524 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:01:24,525 - INFO - Combining chunk summaries into final summary
+2025-04-11 08:02:00,807 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:02:00,807 - INFO - Map-reduce summarization completed
+2025-04-11 08:02:00,807 - INFO - Saving results for 1003
+2025-04-11 08:02:00,808 - INFO - Successfully processed and saved results for 1003
+2025-04-11 08:02:00,808 - INFO - Processing document: 1018
+2025-04-11 08:02:00,808 - INFO - Starting map-reduce summarization
+2025-04-11 08:02:00,808 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 08:02:00,813 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-11 08:02:00,818 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-11 08:02:00,819 - INFO - Summarizing chunk 1/5
+2025-04-11 08:03:10,800 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:03:10,801 - INFO - Summarizing chunk 2/5
+2025-04-11 08:04:35,913 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:04:35,914 - INFO - Summarizing chunk 3/5
+2025-04-11 08:06:18,357 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:06:18,357 - INFO - Summarizing chunk 4/5
+2025-04-11 08:07:15,971 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:07:15,971 - INFO - Summarizing chunk 5/5
+2025-04-11 08:08:16,064 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:08:16,064 - INFO - Combining chunk summaries into final summary
+2025-04-11 08:09:45,381 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:09:45,381 - INFO - Map-reduce summarization completed
+2025-04-11 08:09:45,382 - INFO - Saving results for 1018
+2025-04-11 08:09:45,382 - INFO - Successfully processed and saved results for 1018
+2025-04-11 08:09:45,382 - INFO - Processing document: 1002
+2025-04-11 08:09:45,382 - INFO - Starting map-reduce summarization
+2025-04-11 08:09:45,382 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 08:09:45,386 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-11 08:09:45,389 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-11 08:09:45,389 - INFO - Summarizing chunk 1/3
+2025-04-11 08:11:11,142 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:11:11,143 - INFO - Summarizing chunk 2/3
+2025-04-11 08:12:27,324 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:12:27,325 - INFO - Summarizing chunk 3/3
+2025-04-11 08:12:53,295 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:12:53,296 - INFO - Combining chunk summaries into final summary
+2025-04-11 08:13:42,779 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:13:42,779 - INFO - Map-reduce summarization completed
+2025-04-11 08:13:42,779 - INFO - Saving results for 1002
+2025-04-11 08:13:42,779 - INFO - Successfully processed and saved results for 1002
+2025-04-11 08:13:42,780 - INFO - Processing document: 1006
+2025-04-11 08:13:42,780 - INFO - Starting map-reduce summarization
+2025-04-11 08:13:42,780 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 08:13:42,784 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-11 08:13:42,789 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-11 08:13:42,789 - INFO - Summarizing chunk 1/3
+2025-04-11 08:14:48,419 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:14:48,420 - INFO - Summarizing chunk 2/3
+2025-04-11 08:15:35,051 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:15:35,051 - INFO - Summarizing chunk 3/3
+2025-04-11 08:16:17,992 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:16:17,993 - INFO - Combining chunk summaries into final summary
+2025-04-11 08:17:11,324 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:17:11,324 - INFO - Map-reduce summarization completed
+2025-04-11 08:17:11,325 - INFO - Saving results for 1006
+2025-04-11 08:17:11,325 - INFO - Successfully processed and saved results for 1006
+2025-04-11 08:17:11,325 - INFO - Processing document: 1010
+2025-04-11 08:17:11,325 - INFO - Starting map-reduce summarization
+2025-04-11 08:17:11,325 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 08:17:11,334 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-11 08:17:11,341 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-11 08:17:11,342 - INFO - Summarizing chunk 1/5
+2025-04-11 08:18:23,419 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:18:23,420 - INFO - Summarizing chunk 2/5
+2025-04-11 08:19:09,981 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:19:09,982 - INFO - Summarizing chunk 3/5
+2025-04-11 08:20:23,250 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:20:23,251 - INFO - Summarizing chunk 4/5
+2025-04-11 08:21:39,821 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:21:39,821 - INFO - Summarizing chunk 5/5
+2025-04-11 08:22:42,044 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:22:42,045 - INFO - Combining chunk summaries into final summary
+2025-04-11 08:24:52,698 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:24:52,699 - INFO - Map-reduce summarization completed
+2025-04-11 08:24:52,699 - INFO - Saving results for 1010
+2025-04-11 08:24:52,699 - INFO - Successfully processed and saved results for 1010
+2025-04-11 08:24:52,699 - INFO - Processing document: 1014
+2025-04-11 08:24:52,699 - INFO - Starting map-reduce summarization
+2025-04-11 08:24:52,699 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 08:24:52,704 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 08:24:52,708 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 08:24:52,709 - INFO - Summarizing chunk 1/4
+2025-04-11 08:25:45,135 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:25:45,136 - INFO - Summarizing chunk 2/4
+2025-04-11 08:27:06,403 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:27:06,404 - INFO - Summarizing chunk 3/4
+2025-04-11 08:28:35,188 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:28:35,189 - INFO - Summarizing chunk 4/4
+2025-04-11 08:29:04,382 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:29:04,383 - INFO - Combining chunk summaries into final summary
+2025-04-11 08:29:54,535 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:29:54,536 - INFO - Map-reduce summarization completed
+2025-04-11 08:29:54,536 - INFO - Saving results for 1014
+2025-04-11 08:29:54,536 - INFO - Successfully processed and saved results for 1014
+2025-04-11 08:29:54,536 - INFO - Processing document: 1001
+2025-04-11 08:29:54,537 - INFO - Starting map-reduce summarization
+2025-04-11 08:29:54,537 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 08:29:54,543 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 08:29:54,549 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 08:29:54,549 - INFO - Summarizing chunk 1/4
+2025-04-11 08:31:55,546 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:31:55,547 - INFO - Summarizing chunk 2/4
+2025-04-11 08:33:18,229 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:33:18,230 - INFO - Summarizing chunk 3/4
+2025-04-11 08:34:34,534 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:34:34,534 - INFO - Summarizing chunk 4/4
+2025-04-11 08:35:57,700 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:35:57,700 - INFO - Combining chunk summaries into final summary
+2025-04-11 08:37:41,539 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:37:41,539 - INFO - Map-reduce summarization completed
+2025-04-11 08:37:41,539 - INFO - Saving results for 1001
+2025-04-11 08:37:41,540 - INFO - Successfully processed and saved results for 1001
+2025-04-11 08:37:41,540 - INFO - Processing document: 1008
+2025-04-11 08:37:41,540 - INFO - Starting map-reduce summarization
+2025-04-11 08:37:41,540 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 08:37:41,543 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-11 08:37:41,546 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-11 08:37:41,546 - INFO - Summarizing chunk 1/2
+2025-04-11 08:39:41,779 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:39:41,780 - INFO - Summarizing chunk 2/2
+2025-04-11 08:40:35,863 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:40:35,863 - INFO - Combining chunk summaries into final summary
+2025-04-11 08:41:33,917 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:41:33,918 - INFO - Map-reduce summarization completed
+2025-04-11 08:41:33,918 - INFO - Saving results for 1008
+2025-04-11 08:41:33,918 - INFO - Successfully processed and saved results for 1008
+2025-04-11 08:41:33,918 - INFO - Processing document: 1013
+2025-04-11 08:41:33,919 - INFO - Starting map-reduce summarization
+2025-04-11 08:41:33,919 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 08:41:33,926 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-11 08:41:33,933 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-11 08:41:33,934 - INFO - Summarizing chunk 1/5
+2025-04-11 08:43:04,053 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:43:04,053 - INFO - Summarizing chunk 2/5
+2025-04-11 08:44:47,179 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:44:47,180 - INFO - Summarizing chunk 3/5
+2025-04-11 08:45:43,965 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:45:43,966 - INFO - Summarizing chunk 4/5
+2025-04-11 08:46:54,078 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:46:54,079 - INFO - Summarizing chunk 5/5
+2025-04-11 08:47:22,096 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:47:22,096 - INFO - Combining chunk summaries into final summary
+2025-04-11 08:48:58,592 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:48:58,593 - INFO - Map-reduce summarization completed
+2025-04-11 08:48:58,593 - INFO - Saving results for 1013
+2025-04-11 08:48:58,593 - INFO - Successfully processed and saved results for 1013
+2025-04-11 08:48:58,594 - INFO - Processing document: 1015
+2025-04-11 08:48:58,594 - INFO - Starting map-reduce summarization
+2025-04-11 08:48:58,594 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 08:48:58,596 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-11 08:48:58,598 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-11 08:48:58,599 - INFO - Summarizing chunk 1/2
+2025-04-11 08:50:11,758 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:50:11,759 - INFO - Summarizing chunk 2/2
+2025-04-11 08:50:44,304 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:50:44,305 - INFO - Combining chunk summaries into final summary
+2025-04-11 08:51:25,455 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:51:25,456 - INFO - Map-reduce summarization completed
+2025-04-11 08:51:25,456 - INFO - Saving results for 1015
+2025-04-11 08:51:25,456 - INFO - Successfully processed and saved results for 1015
+2025-04-11 08:51:25,456 - INFO - Processing document: 1016
+2025-04-11 08:51:25,456 - INFO - Starting map-reduce summarization
+2025-04-11 08:51:25,456 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 08:51:25,461 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 08:51:25,466 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 08:51:25,466 - INFO - Summarizing chunk 1/4
+2025-04-11 08:52:28,891 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:52:28,891 - INFO - Summarizing chunk 2/4
+2025-04-11 08:54:00,881 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:54:00,882 - INFO - Summarizing chunk 3/4
+2025-04-11 08:55:22,938 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:55:22,939 - INFO - Summarizing chunk 4/4
+2025-04-11 08:56:03,482 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:56:03,483 - INFO - Combining chunk summaries into final summary
+2025-04-11 08:57:02,673 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:57:02,673 - INFO - Map-reduce summarization completed
+2025-04-11 08:57:02,673 - INFO - Saving results for 1016
+2025-04-11 08:57:02,674 - INFO - Successfully processed and saved results for 1016
+2025-04-11 08:57:02,674 - INFO - Processing document: 1020
+2025-04-11 08:57:02,674 - INFO - Starting map-reduce summarization
+2025-04-11 08:57:02,674 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 08:57:02,679 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-11 08:57:02,684 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-11 08:57:02,684 - INFO - Summarizing chunk 1/3
+2025-04-11 08:58:22,486 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:58:22,486 - INFO - Summarizing chunk 2/3
+2025-04-11 08:59:04,229 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:59:04,230 - INFO - Summarizing chunk 3/3
+2025-04-11 08:59:39,706 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 08:59:39,707 - INFO - Combining chunk summaries into final summary
+2025-04-11 09:00:23,125 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:00:23,125 - INFO - Map-reduce summarization completed
+2025-04-11 09:00:23,126 - INFO - Saving results for 1020
+2025-04-11 09:00:23,126 - INFO - Successfully processed and saved results for 1020
+2025-04-11 09:00:23,126 - INFO - Processing document: 1011
+2025-04-11 09:00:23,126 - INFO - Starting map-reduce summarization
+2025-04-11 09:00:23,126 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 09:00:23,129 - INFO - Using original chunk size 10000, resulted in 2 chunks
+2025-04-11 09:00:23,131 - INFO - Text split into 2 chunks (chunk size: 10000)
+2025-04-11 09:00:23,132 - INFO - Summarizing chunk 1/2
+2025-04-11 09:01:00,969 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:01:00,970 - INFO - Summarizing chunk 2/2
+2025-04-11 09:01:43,328 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:01:43,329 - INFO - Combining chunk summaries into final summary
+2025-04-11 09:02:19,117 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:02:19,118 - INFO - Map-reduce summarization completed
+2025-04-11 09:02:19,118 - INFO - Saving results for 1011
+2025-04-11 09:02:19,118 - INFO - Successfully processed and saved results for 1011
+2025-04-11 09:02:19,118 - INFO - Processing document: 1021
+2025-04-11 09:02:19,118 - INFO - Starting map-reduce summarization
+2025-04-11 09:02:19,119 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 09:02:19,125 - INFO - Using original chunk size 10000, resulted in 5 chunks
+2025-04-11 09:02:19,131 - INFO - Text split into 5 chunks (chunk size: 10000)
+2025-04-11 09:02:19,131 - INFO - Summarizing chunk 1/5
+2025-04-11 09:04:10,481 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:04:10,481 - INFO - Summarizing chunk 2/5
+2025-04-11 09:06:24,937 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:06:24,938 - INFO - Summarizing chunk 3/5
+2025-04-11 09:07:40,775 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:07:40,776 - INFO - Summarizing chunk 4/5
+2025-04-11 09:09:07,421 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:09:07,422 - INFO - Summarizing chunk 5/5
+2025-04-11 09:10:08,640 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:10:08,640 - INFO - Combining chunk summaries into final summary
+2025-04-11 09:11:31,626 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:11:31,627 - INFO - Map-reduce summarization completed
+2025-04-11 09:11:31,627 - INFO - Saving results for 1021
+2025-04-11 09:11:31,627 - INFO - Successfully processed and saved results for 1021
+2025-04-11 09:11:31,628 - INFO - Processing document: 1012
+2025-04-11 09:11:31,628 - INFO - Starting map-reduce summarization
+2025-04-11 09:11:31,628 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 09:11:31,633 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-11 09:11:31,637 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-11 09:11:31,638 - INFO - Summarizing chunk 1/3
+2025-04-11 09:12:40,655 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:12:40,656 - INFO - Summarizing chunk 2/3
+2025-04-11 09:13:40,183 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:13:40,184 - INFO - Summarizing chunk 3/3
+2025-04-11 09:14:20,605 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:14:20,605 - INFO - Combining chunk summaries into final summary
+2025-04-11 09:15:14,307 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:15:14,307 - INFO - Map-reduce summarization completed
+2025-04-11 09:15:14,307 - INFO - Saving results for 1012
+2025-04-11 09:15:14,307 - INFO - Successfully processed and saved results for 1012
+2025-04-11 09:15:14,308 - INFO - Processing document: 1017
+2025-04-11 09:15:14,308 - INFO - Starting map-reduce summarization
+2025-04-11 09:15:14,308 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 09:15:14,314 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 09:15:14,320 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 09:15:14,320 - INFO - Summarizing chunk 1/4
+2025-04-11 09:16:03,651 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:16:03,652 - INFO - Summarizing chunk 2/4
+2025-04-11 09:18:05,647 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:18:05,648 - INFO - Summarizing chunk 3/4
+2025-04-11 09:19:36,670 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:19:36,670 - INFO - Summarizing chunk 4/4
+2025-04-11 09:20:19,551 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:20:19,552 - INFO - Combining chunk summaries into final summary
+2025-04-11 09:22:01,287 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:22:01,287 - INFO - Map-reduce summarization completed
+2025-04-11 09:22:01,287 - INFO - Saving results for 1017
+2025-04-11 09:22:01,288 - INFO - Successfully processed and saved results for 1017
+2025-04-11 09:22:01,288 - INFO - Processing document: 1000
+2025-04-11 09:22:01,288 - INFO - Starting map-reduce summarization
+2025-04-11 09:22:01,288 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 09:22:01,292 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 09:22:01,297 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 09:22:01,297 - INFO - Summarizing chunk 1/4
+2025-04-11 09:24:10,394 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:24:10,395 - INFO - Summarizing chunk 2/4
+2025-04-11 09:25:47,187 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:25:47,187 - INFO - Summarizing chunk 3/4
+2025-04-11 09:26:58,723 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:26:58,724 - INFO - Summarizing chunk 4/4
+2025-04-11 09:27:16,444 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:27:16,445 - INFO - Combining chunk summaries into final summary
+2025-04-11 09:28:40,925 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:28:40,925 - INFO - Map-reduce summarization completed
+2025-04-11 09:28:40,925 - INFO - Saving results for 1000
+2025-04-11 09:28:40,926 - INFO - Successfully processed and saved results for 1000
+2025-04-11 09:28:40,926 - INFO - Processing document: 1005
+2025-04-11 09:28:40,926 - INFO - Starting map-reduce summarization
+2025-04-11 09:28:40,926 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 09:28:40,934 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 09:28:40,938 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 09:28:40,939 - INFO - Summarizing chunk 1/4
+2025-04-11 09:29:52,875 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:29:52,875 - INFO - Summarizing chunk 2/4
+2025-04-11 09:31:03,515 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:31:03,515 - INFO - Summarizing chunk 3/4
+2025-04-11 09:32:25,628 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:32:25,629 - INFO - Summarizing chunk 4/4
+2025-04-11 09:33:04,257 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:33:04,257 - INFO - Combining chunk summaries into final summary
+2025-04-11 09:34:18,982 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:34:18,982 - INFO - Map-reduce summarization completed
+2025-04-11 09:34:18,982 - INFO - Saving results for 1005
+2025-04-11 09:34:18,982 - INFO - Successfully processed and saved results for 1005
+2025-04-11 09:34:18,983 - INFO - Processing document: 1019
+2025-04-11 09:34:18,983 - INFO - Starting map-reduce summarization
+2025-04-11 09:34:18,983 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 09:34:18,988 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-11 09:34:18,992 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-11 09:34:18,993 - INFO - Summarizing chunk 1/3
+2025-04-11 09:36:23,689 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:36:23,689 - INFO - Summarizing chunk 2/3
+2025-04-11 09:38:22,252 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:38:22,253 - INFO - Summarizing chunk 3/3
+2025-04-11 09:39:23,588 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:39:23,589 - INFO - Combining chunk summaries into final summary
+2025-04-11 09:41:13,961 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:41:13,961 - INFO - Map-reduce summarization completed
+2025-04-11 09:41:13,962 - INFO - Saving results for 1019
+2025-04-11 09:41:13,962 - INFO - Successfully processed and saved results for 1019
+2025-04-11 09:41:13,962 - INFO - Processing document: 1007
+2025-04-11 09:41:13,962 - INFO - Starting map-reduce summarization
+2025-04-11 09:41:13,962 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 09:41:13,966 - INFO - Using original chunk size 10000, resulted in 3 chunks
+2025-04-11 09:41:13,970 - INFO - Text split into 3 chunks (chunk size: 10000)
+2025-04-11 09:41:13,970 - INFO - Summarizing chunk 1/3
+2025-04-11 09:43:20,566 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:43:20,567 - INFO - Summarizing chunk 2/3
+2025-04-11 09:45:03,083 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:45:03,083 - INFO - Summarizing chunk 3/3
+2025-04-11 09:45:52,904 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:45:52,905 - INFO - Combining chunk summaries into final summary
+2025-04-11 09:47:09,751 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:47:09,751 - INFO - Map-reduce summarization completed
+2025-04-11 09:47:09,751 - INFO - Saving results for 1007
+2025-04-11 09:47:09,752 - INFO - Successfully processed and saved results for 1007
+2025-04-11 09:47:09,752 - INFO - Processing document: 1004
+2025-04-11 09:47:09,752 - INFO - Starting map-reduce summarization
+2025-04-11 09:47:09,752 - INFO - Adjusting chunk size, starting with initial size of 10000
+2025-04-11 09:47:09,757 - INFO - Using original chunk size 10000, resulted in 4 chunks
+2025-04-11 09:47:09,762 - INFO - Text split into 4 chunks (chunk size: 10000)
+2025-04-11 09:47:09,762 - INFO - Summarizing chunk 1/4
+2025-04-11 09:48:49,975 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:48:49,975 - INFO - Summarizing chunk 2/4
+2025-04-11 09:50:14,739 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:50:14,739 - INFO - Summarizing chunk 3/4
+2025-04-11 09:51:06,861 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:51:06,862 - INFO - Summarizing chunk 4/4
+2025-04-11 09:51:34,269 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:51:34,270 - INFO - Combining chunk summaries into final summary
+2025-04-11 09:52:32,021 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-11 09:52:32,021 - INFO - Map-reduce summarization completed
+2025-04-11 09:52:32,021 - INFO - Saving results for 1004
+2025-04-11 09:52:32,022 - INFO - Successfully processed and saved results for 1004
+2025-04-11 09:52:32,022 - INFO - Map-reduce summarization process completed
