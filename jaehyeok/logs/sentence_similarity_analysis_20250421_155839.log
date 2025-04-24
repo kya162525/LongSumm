@@ -1,0 +1,561 @@
+2025-04-21 15:58:39,758 - INFO - Loading model: all-MiniLM-L6-v2
+2025-04-21 15:58:39,768 - INFO - Use pytorch device_name: cuda:0
+2025-04-21 15:58:39,768 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-21 15:58:42,220 - INFO - Loading papers from ./papers/json_files
+2025-04-21 15:58:42,220 - INFO - Loading valid paper IDs
+2025-04-21 15:58:42,220 - INFO - Loaded 488 valid paper IDs
+2025-04-21 15:58:42,220 - INFO - Found 525 JSON files
+2025-04-21 15:58:42,302 - INFO - Loaded 484 papers
+2025-04-21 15:58:42,302 - INFO - Loading existing results file
+2025-04-21 15:58:42,302 - INFO - No existing results file found, creating new one
+2025-04-21 15:58:42,302 - INFO - Loading gold summaries
+2025-04-21 15:58:42,302 - INFO - Loading gold summaries from ./abstractive_summaries/id_summary_map.json
+2025-04-21 15:58:42,307 - INFO - Loaded 530 gold summaries
+2025-04-21 15:58:42,911 - INFO - Paper 58793266: analyzed 14 sections with 32 summary sentences
+2025-04-21 15:58:42,912 - WARNING - No sections found in paper
+2025-04-21 15:58:42,912 - INFO - Paper 82387857: analyzed 0 sections with 36 summary sentences
+2025-04-21 15:58:43,194 - INFO - Paper 5180208: analyzed 15 sections with 15 summary sentences
+2025-04-21 15:58:43,398 - INFO - Paper 43791696: analyzed 1 sections with 17 summary sentences
+2025-04-21 15:58:44,088 - INFO - Paper 78841597: analyzed 25 sections with 25 summary sentences
+2025-04-21 15:58:44,439 - INFO - Paper 90600191: analyzed 16 sections with 29 summary sentences
+2025-04-21 15:58:44,736 - INFO - Paper 66226432: analyzed 13 sections with 19 summary sentences
+2025-04-21 15:58:45,372 - INFO - Paper 64175585: analyzed 19 sections with 42 summary sentences
+2025-04-21 15:58:45,714 - INFO - Paper 21542239: analyzed 16 sections with 28 summary sentences
+2025-04-21 15:58:46,056 - INFO - Paper 88049354: analyzed 12 sections with 35 summary sentences
+2025-04-21 15:58:46,285 - INFO - Paper 1907968: analyzed 10 sections with 35 summary sentences
+2025-04-21 15:58:46,639 - INFO - Paper 59485457: analyzed 10 sections with 30 summary sentences
+2025-04-21 15:58:47,359 - INFO - Paper 69976012: analyzed 26 sections with 28 summary sentences
+2025-04-21 15:58:47,739 - INFO - Paper 86524123: analyzed 13 sections with 32 summary sentences
+2025-04-21 15:58:47,740 - WARNING - No sections found in paper
+2025-04-21 15:58:47,740 - INFO - Paper 48141212: analyzed 0 sections with 57 summary sentences
+2025-04-21 15:58:48,355 - INFO - Paper 1055799: analyzed 22 sections with 18 summary sentences
+2025-04-21 15:58:48,651 - INFO - Paper 75442340: analyzed 13 sections with 24 summary sentences
+2025-04-21 15:58:49,284 - INFO - Paper 41840073: analyzed 18 sections with 58 summary sentences
+2025-04-21 15:58:49,285 - WARNING - No sections found in paper
+2025-04-21 15:58:49,285 - INFO - Paper 187460: analyzed 0 sections with 26 summary sentences
+2025-04-21 15:58:49,989 - INFO - Paper 29796623: analyzed 15 sections with 37 summary sentences
+2025-04-21 15:58:50,464 - INFO - Paper 98238949: analyzed 18 sections with 24 summary sentences
+2025-04-21 15:58:50,677 - INFO - Paper 51450104: analyzed 10 sections with 20 summary sentences
+2025-04-21 15:58:51,745 - INFO - Paper 43018598: analyzed 26 sections with 57 summary sentences
+2025-04-21 15:58:52,126 - INFO - Paper 78339451: analyzed 20 sections with 28 summary sentences
+2025-04-21 15:58:52,315 - INFO - Paper 39570633: analyzed 10 sections with 20 summary sentences
+2025-04-21 15:58:52,637 - INFO - Paper 87558652: analyzed 11 sections with 23 summary sentences
+2025-04-21 15:58:53,017 - INFO - Paper 96831204: analyzed 13 sections with 19 summary sentences
+2025-04-21 15:58:53,318 - INFO - Paper 85853580: analyzed 14 sections with 21 summary sentences
+2025-04-21 15:58:53,723 - INFO - Paper 97703387: analyzed 12 sections with 34 summary sentences
+2025-04-21 15:58:54,622 - INFO - Paper 50388820: analyzed 27 sections with 64 summary sentences
+2025-04-21 15:58:54,995 - INFO - Paper 83248182: analyzed 16 sections with 11 summary sentences
+2025-04-21 15:58:55,760 - INFO - Paper 99341732: analyzed 16 sections with 60 summary sentences
+2025-04-21 15:58:56,027 - INFO - Paper 48074885: analyzed 9 sections with 27 summary sentences
+2025-04-21 15:58:56,374 - INFO - Paper 11006232: analyzed 8 sections with 34 summary sentences
+2025-04-21 15:58:56,816 - INFO - Paper 63511892: analyzed 21 sections with 17 summary sentences
+2025-04-21 15:58:57,357 - INFO - Paper 24312671: analyzed 24 sections with 23 summary sentences
+2025-04-21 15:58:57,816 - INFO - Paper 8363020: analyzed 14 sections with 45 summary sentences
+2025-04-21 15:58:58,188 - INFO - Paper 23426061: analyzed 15 sections with 41 summary sentences
+2025-04-21 15:58:58,836 - INFO - Paper 29703573: analyzed 19 sections with 49 summary sentences
+2025-04-21 15:58:59,861 - INFO - Paper 80421460: analyzed 20 sections with 43 summary sentences
+2025-04-21 15:59:00,376 - INFO - Paper 45538669: analyzed 18 sections with 49 summary sentences
+2025-04-21 15:59:01,294 - INFO - Paper 25710556: analyzed 22 sections with 77 summary sentences
+2025-04-21 15:59:01,626 - INFO - Paper 66099843: analyzed 9 sections with 33 summary sentences
+2025-04-21 15:59:02,063 - INFO - Paper 23929837: analyzed 12 sections with 81 summary sentences
+2025-04-21 15:59:02,518 - INFO - Paper 53935450: analyzed 10 sections with 57 summary sentences
+2025-04-21 15:59:02,682 - INFO - Paper 80897282: analyzed 13 sections with 7 summary sentences
+2025-04-21 15:59:03,497 - INFO - Paper 6777051: analyzed 29 sections with 34 summary sentences
+2025-04-21 15:59:03,498 - WARNING - No sections found in paper
+2025-04-21 15:59:03,498 - INFO - Paper 27300559: analyzed 0 sections with 28 summary sentences
+2025-04-21 15:59:04,179 - INFO - Paper 414696: analyzed 37 sections with 5 summary sentences
+2025-04-21 15:59:05,155 - INFO - Paper 202387: analyzed 24 sections with 44 summary sentences
+2025-04-21 15:59:05,553 - INFO - Paper 91637218: analyzed 15 sections with 29 summary sentences
+2025-04-21 15:59:05,809 - INFO - Paper 22546727: analyzed 15 sections with 8 summary sentences
+2025-04-21 15:59:06,353 - INFO - Paper 56196: analyzed 17 sections with 41 summary sentences
+2025-04-21 15:59:06,779 - INFO - Paper 89853012: analyzed 13 sections with 46 summary sentences
+2025-04-21 15:59:07,668 - INFO - Paper 85839366: analyzed 16 sections with 66 summary sentences
+2025-04-21 15:59:08,075 - INFO - Paper 22744554: analyzed 13 sections with 49 summary sentences
+2025-04-21 15:59:08,336 - INFO - Paper 19050347: analyzed 8 sections with 31 summary sentences
+2025-04-21 15:59:08,624 - INFO - Paper 93218559: analyzed 12 sections with 8 summary sentences
+2025-04-21 15:59:09,096 - INFO - Paper 88548359: analyzed 16 sections with 20 summary sentences
+2025-04-21 15:59:09,329 - INFO - Paper 35704901: analyzed 15 sections with 13 summary sentences
+2025-04-21 15:59:09,762 - INFO - Paper 58308538: analyzed 15 sections with 47 summary sentences
+2025-04-21 15:59:10,371 - INFO - Paper 84548548: analyzed 23 sections with 38 summary sentences
+2025-04-21 15:59:11,080 - INFO - Paper 62302416: analyzed 16 sections with 35 summary sentences
+2025-04-21 15:59:11,407 - INFO - Paper 58884367: analyzed 16 sections with 23 summary sentences
+2025-04-21 15:59:11,684 - INFO - Paper 11684235: analyzed 9 sections with 19 summary sentences
+2025-04-21 15:59:11,684 - WARNING - No sections found in paper
+2025-04-21 15:59:11,685 - INFO - Paper 69502658: analyzed 0 sections with 32 summary sentences
+2025-04-21 15:59:12,213 - INFO - Paper 68642594: analyzed 15 sections with 38 summary sentences
+2025-04-21 15:59:12,422 - INFO - Paper 97381495: analyzed 1 sections with 58 summary sentences
+2025-04-21 15:59:12,769 - INFO - Paper 88532041: analyzed 18 sections with 24 summary sentences
+2025-04-21 15:59:13,236 - INFO - Paper 82314288: analyzed 19 sections with 46 summary sentences
+2025-04-21 15:59:14,000 - INFO - Paper 78860785: analyzed 12 sections with 10 summary sentences
+2025-04-21 15:59:14,707 - INFO - Paper 24753674: analyzed 16 sections with 36 summary sentences
+2025-04-21 15:59:15,050 - INFO - Paper 36278339: analyzed 14 sections with 21 summary sentences
+2025-04-21 15:59:15,051 - WARNING - No sections found in paper
+2025-04-21 15:59:15,051 - INFO - Paper 78861774: analyzed 0 sections with 39 summary sentences
+2025-04-21 15:59:15,052 - WARNING - No sections found in paper
+2025-04-21 15:59:15,052 - INFO - Paper 26262723: analyzed 0 sections with 31 summary sentences
+2025-04-21 15:59:15,053 - WARNING - No sections found in paper
+2025-04-21 15:59:15,053 - INFO - Paper 85123331: analyzed 0 sections with 40 summary sentences
+2025-04-21 15:59:15,054 - WARNING - No sections found in paper
+2025-04-21 15:59:15,054 - INFO - Paper 93195231: analyzed 0 sections with 62 summary sentences
+2025-04-21 15:59:15,506 - INFO - Paper 34187605: analyzed 24 sections with 15 summary sentences
+2025-04-21 15:59:16,049 - INFO - Paper 57956236: analyzed 18 sections with 61 summary sentences
+2025-04-21 15:59:16,049 - WARNING - No sections found in paper
+2025-04-21 15:59:16,049 - INFO - Paper 3855110: analyzed 0 sections with 20 summary sentences
+2025-04-21 15:59:16,739 - INFO - Paper 16124640: analyzed 17 sections with 35 summary sentences
+2025-04-21 15:59:16,740 - WARNING - No sections found in paper
+2025-04-21 15:59:16,740 - INFO - Paper 93025332: analyzed 0 sections with 56 summary sentences
+2025-04-21 15:59:17,634 - INFO - Paper 75952682: analyzed 1 sections with 36 summary sentences
+2025-04-21 15:59:17,636 - WARNING - No sections found in paper
+2025-04-21 15:59:17,636 - INFO - Paper 22030520: analyzed 0 sections with 71 summary sentences
+2025-04-21 15:59:17,854 - INFO - Paper 7590139: analyzed 6 sections with 30 summary sentences
+2025-04-21 15:59:17,855 - WARNING - No sections found in paper
+2025-04-21 15:59:17,855 - INFO - Paper 17601393: analyzed 0 sections with 63 summary sentences
+2025-04-21 15:59:18,725 - INFO - Paper 53269747: analyzed 31 sections with 24 summary sentences
+2025-04-21 15:59:18,725 - WARNING - No sections found in paper
+2025-04-21 15:59:18,725 - INFO - Paper 11481096: analyzed 0 sections with 14 summary sentences
+2025-04-21 15:59:18,914 - INFO - Paper 96217072: analyzed 11 sections with 16 summary sentences
+2025-04-21 15:59:18,915 - WARNING - No sections found in paper
+2025-04-21 15:59:18,915 - INFO - Paper 10374612: analyzed 0 sections with 29 summary sentences
+2025-04-21 15:59:19,222 - INFO - Paper 37796162: analyzed 16 sections with 11 summary sentences
+2025-04-21 15:59:19,514 - INFO - Paper 4216862: analyzed 11 sections with 13 summary sentences
+2025-04-21 15:59:20,027 - INFO - Paper 72744034: analyzed 10 sections with 37 summary sentences
+2025-04-21 15:59:20,212 - INFO - Paper 4647896: analyzed 12 sections with 16 summary sentences
+2025-04-21 15:59:20,213 - WARNING - No sections found in paper
+2025-04-21 15:59:20,213 - INFO - Paper 9563928: analyzed 0 sections with 55 summary sentences
+2025-04-21 15:59:20,812 - INFO - Paper 57613420: analyzed 28 sections with 12 summary sentences
+2025-04-21 15:59:20,813 - WARNING - No sections found in paper
+2025-04-21 15:59:20,813 - INFO - Paper 51458146: analyzed 0 sections with 27 summary sentences
+2025-04-21 15:59:21,436 - INFO - Paper 40883301: analyzed 17 sections with 59 summary sentences
+2025-04-21 15:59:21,437 - WARNING - No sections found in paper
+2025-04-21 15:59:21,437 - INFO - Paper 57228237: analyzed 0 sections with 19 summary sentences
+2025-04-21 15:59:21,438 - WARNING - No sections found in paper
+2025-04-21 15:59:21,438 - INFO - Paper 8984509: analyzed 0 sections with 57 summary sentences
+2025-04-21 15:59:21,888 - INFO - Paper 7570292: analyzed 19 sections with 18 summary sentences
+2025-04-21 15:59:22,291 - INFO - Paper 84030160: analyzed 12 sections with 29 summary sentences
+2025-04-21 15:59:22,534 - INFO - Paper 48411412: analyzed 8 sections with 30 summary sentences
+2025-04-21 15:59:23,043 - INFO - Paper 61580548: analyzed 13 sections with 36 summary sentences
+2025-04-21 15:59:23,514 - INFO - Paper 97291551: analyzed 10 sections with 50 summary sentences
+2025-04-21 15:59:23,869 - INFO - Paper 5674972: analyzed 17 sections with 21 summary sentences
+2025-04-21 15:59:24,501 - INFO - Paper 26105266: analyzed 20 sections with 62 summary sentences
+2025-04-21 15:59:24,503 - WARNING - No sections found in paper
+2025-04-21 15:59:24,503 - INFO - Paper 50524744: analyzed 0 sections with 53 summary sentences
+2025-04-21 15:59:24,756 - INFO - Paper 93060618: analyzed 15 sections with 27 summary sentences
+2025-04-21 15:59:25,778 - INFO - Paper 57114772: analyzed 23 sections with 45 summary sentences
+2025-04-21 15:59:26,117 - INFO - Paper 36200725: analyzed 12 sections with 62 summary sentences
+2025-04-21 15:59:26,543 - INFO - Paper 72922440: analyzed 16 sections with 45 summary sentences
+2025-04-21 15:59:26,778 - INFO - Paper 7120002: analyzed 12 sections with 23 summary sentences
+2025-04-21 15:59:27,162 - INFO - Paper 91633253: analyzed 9 sections with 37 summary sentences
+2025-04-21 15:59:27,539 - INFO - Paper 31459000: analyzed 14 sections with 51 summary sentences
+2025-04-21 15:59:28,113 - INFO - Paper 33427271: analyzed 13 sections with 18 summary sentences
+2025-04-21 15:59:29,412 - INFO - Paper 78499306: analyzed 46 sections with 32 summary sentences
+2025-04-21 15:59:30,602 - INFO - Paper 13135318: analyzed 30 sections with 49 summary sentences
+2025-04-21 15:59:30,603 - WARNING - No sections found in paper
+2025-04-21 15:59:30,603 - INFO - Paper 11354749: analyzed 0 sections with 45 summary sentences
+2025-04-21 15:59:30,923 - INFO - Paper 94646863: analyzed 12 sections with 26 summary sentences
+2025-04-21 15:59:31,458 - INFO - Paper 8151447: analyzed 9 sections with 49 summary sentences
+2025-04-21 15:59:31,598 - INFO - Paper 55048906: analyzed 6 sections with 31 summary sentences
+2025-04-21 15:59:32,176 - INFO - Paper 17350626: analyzed 17 sections with 61 summary sentences
+2025-04-21 15:59:32,717 - INFO - Paper 80770343: analyzed 15 sections with 59 summary sentences
+2025-04-21 15:59:32,862 - INFO - Paper 78190587: analyzed 8 sections with 17 summary sentences
+2025-04-21 15:59:32,863 - WARNING - No sections found in paper
+2025-04-21 15:59:32,863 - INFO - Paper 27051635: analyzed 0 sections with 24 summary sentences
+2025-04-21 15:59:33,132 - INFO - Paper 97980035: analyzed 9 sections with 22 summary sentences
+2025-04-21 15:59:33,527 - INFO - Paper 7255717: analyzed 13 sections with 41 summary sentences
+2025-04-21 15:59:34,036 - INFO - Paper 38779502: analyzed 13 sections with 47 summary sentences
+2025-04-21 15:59:34,844 - INFO - Paper 65595064: analyzed 16 sections with 50 summary sentences
+2025-04-21 15:59:35,203 - INFO - Paper 4206973: analyzed 18 sections with 6 summary sentences
+2025-04-21 15:59:36,218 - INFO - Paper 14819310: analyzed 21 sections with 62 summary sentences
+2025-04-21 15:59:37,583 - INFO - Paper 5550259: analyzed 31 sections with 53 summary sentences
+2025-04-21 15:59:37,706 - INFO - Paper 99295545: analyzed 10 sections with 12 summary sentences
+2025-04-21 15:59:37,706 - WARNING - No sections found in paper
+2025-04-21 15:59:37,706 - INFO - Paper 45186835: analyzed 0 sections with 22 summary sentences
+2025-04-21 15:59:38,234 - INFO - Paper 3953515: analyzed 16 sections with 36 summary sentences
+2025-04-21 15:59:38,483 - INFO - Paper 30748495: analyzed 9 sections with 20 summary sentences
+2025-04-21 15:59:38,944 - INFO - Paper 91812941: analyzed 14 sections with 29 summary sentences
+2025-04-21 15:59:39,938 - INFO - Paper 2899329: analyzed 23 sections with 48 summary sentences
+2025-04-21 15:59:41,067 - INFO - Paper 11542688: analyzed 31 sections with 37 summary sentences
+2025-04-21 15:59:41,690 - INFO - Paper 8087311: analyzed 26 sections with 28 summary sentences
+2025-04-21 15:59:42,052 - INFO - Paper 70889889: analyzed 13 sections with 41 summary sentences
+2025-04-21 15:59:42,552 - INFO - Paper 93598871: analyzed 16 sections with 21 summary sentences
+2025-04-21 15:59:42,768 - INFO - Paper 62056200: analyzed 8 sections with 12 summary sentences
+2025-04-21 15:59:43,123 - INFO - Paper 71370947: analyzed 9 sections with 42 summary sentences
+2025-04-21 15:59:43,124 - WARNING - No sections found in paper
+2025-04-21 15:59:43,124 - INFO - Paper 24169489: analyzed 0 sections with 51 summary sentences
+2025-04-21 15:59:43,125 - WARNING - No sections found in paper
+2025-04-21 15:59:43,125 - INFO - Paper 24000799: analyzed 0 sections with 20 summary sentences
+2025-04-21 15:59:44,039 - INFO - Paper 52464539: analyzed 18 sections with 56 summary sentences
+2025-04-21 15:59:44,346 - INFO - Paper 77684000: analyzed 12 sections with 32 summary sentences
+2025-04-21 15:59:45,257 - INFO - Paper 96747724: analyzed 25 sections with 50 summary sentences
+2025-04-21 15:59:45,332 - INFO - Paper 29981772: analyzed 4 sections with 11 summary sentences
+2025-04-21 15:59:45,895 - INFO - Paper 31303819: analyzed 17 sections with 28 summary sentences
+2025-04-21 15:59:46,210 - INFO - Paper 31194274: analyzed 5 sections with 39 summary sentences
+2025-04-21 15:59:46,682 - INFO - Paper 51116334: analyzed 18 sections with 59 summary sentences
+2025-04-21 15:59:46,683 - WARNING - No sections found in paper
+2025-04-21 15:59:46,683 - INFO - Paper 41161677: analyzed 0 sections with 45 summary sentences
+2025-04-21 15:59:46,825 - INFO - Paper 81057283: analyzed 4 sections with 30 summary sentences
+2025-04-21 15:59:47,261 - INFO - Paper 45435119: analyzed 8 sections with 27 summary sentences
+2025-04-21 15:59:47,544 - INFO - Paper 85820029: analyzed 12 sections with 11 summary sentences
+2025-04-21 15:59:47,767 - INFO - Paper 93142771: analyzed 13 sections with 21 summary sentences
+2025-04-21 15:59:48,025 - INFO - Paper 87068449: analyzed 12 sections with 16 summary sentences
+2025-04-21 15:59:48,728 - INFO - Paper 11779349: analyzed 17 sections with 41 summary sentences
+2025-04-21 15:59:49,945 - INFO - Paper 4784102: analyzed 30 sections with 16 summary sentences
+2025-04-21 15:59:50,678 - INFO - Paper 27321339: analyzed 19 sections with 34 summary sentences
+2025-04-21 15:59:51,396 - INFO - Paper 12625177: analyzed 17 sections with 47 summary sentences
+2025-04-21 15:59:51,958 - INFO - Paper 18958324: analyzed 12 sections with 50 summary sentences
+2025-04-21 15:59:52,271 - INFO - Paper 33015723: analyzed 8 sections with 8 summary sentences
+2025-04-21 15:59:52,272 - WARNING - No sections found in paper
+2025-04-21 15:59:52,273 - INFO - Paper 8455503: analyzed 0 sections with 58 summary sentences
+2025-04-21 15:59:52,713 - INFO - Paper 66681632: analyzed 16 sections with 37 summary sentences
+2025-04-21 15:59:53,312 - INFO - Paper 91200961: analyzed 14 sections with 83 summary sentences
+2025-04-21 15:59:53,599 - INFO - Paper 687757: analyzed 13 sections with 14 summary sentences
+2025-04-21 15:59:54,864 - INFO - Paper 11773091: analyzed 36 sections with 58 summary sentences
+2025-04-21 15:59:55,603 - INFO - Paper 26668230: analyzed 20 sections with 34 summary sentences
+2025-04-21 15:59:55,945 - INFO - Paper 80719489: analyzed 9 sections with 69 summary sentences
+2025-04-21 15:59:56,585 - INFO - Paper 34958521: analyzed 14 sections with 45 summary sentences
+2025-04-21 15:59:57,411 - INFO - Paper 45795840: analyzed 19 sections with 70 summary sentences
+2025-04-21 15:59:57,922 - INFO - Paper 83267919: analyzed 11 sections with 51 summary sentences
+2025-04-21 15:59:58,270 - INFO - Paper 23242120: analyzed 12 sections with 18 summary sentences
+2025-04-21 15:59:59,040 - INFO - Paper 7912651: analyzed 29 sections with 27 summary sentences
+2025-04-21 15:59:59,737 - INFO - Paper 27086937: analyzed 16 sections with 13 summary sentences
+2025-04-21 15:59:59,738 - WARNING - No sections found in paper
+2025-04-21 15:59:59,738 - INFO - Paper 17539393: analyzed 0 sections with 73 summary sentences
+2025-04-21 16:00:00,207 - INFO - Paper 93980002: analyzed 22 sections with 16 summary sentences
+2025-04-21 16:00:00,869 - INFO - Paper 61603670: analyzed 18 sections with 49 summary sentences
+2025-04-21 16:00:01,233 - INFO - Paper 7157784: analyzed 12 sections with 24 summary sentences
+2025-04-21 16:00:02,042 - INFO - Paper 56472821: analyzed 32 sections with 23 summary sentences
+2025-04-21 16:00:02,234 - INFO - Paper 73180675: analyzed 4 sections with 74 summary sentences
+2025-04-21 16:00:02,508 - INFO - Paper 98262950: analyzed 7 sections with 53 summary sentences
+2025-04-21 16:00:03,923 - INFO - Paper 87208689: analyzed 32 sections with 60 summary sentences
+2025-04-21 16:00:04,533 - INFO - Paper 46342402: analyzed 16 sections with 41 summary sentences
+2025-04-21 16:00:04,879 - INFO - Paper 11636296: analyzed 20 sections with 29 summary sentences
+2025-04-21 16:00:05,628 - INFO - Paper 69467563: analyzed 18 sections with 44 summary sentences
+2025-04-21 16:00:05,838 - INFO - Paper 70481957: analyzed 11 sections with 10 summary sentences
+2025-04-21 16:00:06,012 - INFO - Paper 76514111: analyzed 10 sections with 25 summary sentences
+2025-04-21 16:00:06,704 - INFO - Paper 73515355: analyzed 20 sections with 49 summary sentences
+2025-04-21 16:00:08,057 - INFO - Paper 75865335: analyzed 29 sections with 39 summary sentences
+2025-04-21 16:00:08,369 - INFO - Paper 41467472: analyzed 14 sections with 6 summary sentences
+2025-04-21 16:00:08,652 - INFO - Paper 31543932: analyzed 18 sections with 8 summary sentences
+2025-04-21 16:00:09,369 - INFO - Paper 15084340: analyzed 11 sections with 50 summary sentences
+2025-04-21 16:00:09,537 - INFO - Paper 30877354: analyzed 7 sections with 28 summary sentences
+2025-04-21 16:00:09,538 - WARNING - No sections found in paper
+2025-04-21 16:00:09,538 - INFO - Paper 63755811: analyzed 0 sections with 21 summary sentences
+2025-04-21 16:00:09,656 - INFO - Paper 12175403: analyzed 2 sections with 9 summary sentences
+2025-04-21 16:00:10,582 - INFO - Paper 74156567: analyzed 23 sections with 64 summary sentences
+2025-04-21 16:00:10,950 - INFO - Paper 60516406: analyzed 13 sections with 35 summary sentences
+2025-04-21 16:00:11,721 - INFO - Paper 65123124: analyzed 26 sections with 31 summary sentences
+2025-04-21 16:00:11,981 - INFO - Paper 24510148: analyzed 8 sections with 19 summary sentences
+2025-04-21 16:00:12,350 - INFO - Paper 97932426: analyzed 14 sections with 30 summary sentences
+2025-04-21 16:00:12,669 - INFO - Paper 80262838: analyzed 16 sections with 26 summary sentences
+2025-04-21 16:00:13,099 - INFO - Paper 10218080: analyzed 22 sections with 15 summary sentences
+2025-04-21 16:00:13,723 - INFO - Paper 76817909: analyzed 17 sections with 23 summary sentences
+2025-04-21 16:00:14,880 - INFO - Paper 96308075: analyzed 27 sections with 39 summary sentences
+2025-04-21 16:00:15,334 - INFO - Paper 97592875: analyzed 18 sections with 11 summary sentences
+2025-04-21 16:00:15,607 - INFO - Paper 69119323: analyzed 13 sections with 14 summary sentences
+2025-04-21 16:00:15,958 - INFO - Paper 7904666: analyzed 14 sections with 10 summary sentences
+2025-04-21 16:00:17,229 - INFO - Paper 87041789: analyzed 26 sections with 50 summary sentences
+2025-04-21 16:00:17,675 - INFO - Paper 81916449: analyzed 18 sections with 24 summary sentences
+2025-04-21 16:00:18,172 - INFO - Paper 2852538: analyzed 13 sections with 48 summary sentences
+2025-04-21 16:00:18,540 - INFO - Paper 62996279: analyzed 9 sections with 15 summary sentences
+2025-04-21 16:00:18,714 - INFO - Paper 18304114: analyzed 7 sections with 14 summary sentences
+2025-04-21 16:00:19,447 - INFO - Paper 87827594: analyzed 15 sections with 30 summary sentences
+2025-04-21 16:00:19,823 - INFO - Paper 43280550: analyzed 20 sections with 28 summary sentences
+2025-04-21 16:00:20,099 - INFO - Paper 99878837: analyzed 12 sections with 26 summary sentences
+2025-04-21 16:00:21,026 - INFO - Paper 263861: analyzed 25 sections with 61 summary sentences
+2025-04-21 16:00:21,292 - INFO - Paper 39357436: analyzed 15 sections with 16 summary sentences
+2025-04-21 16:00:22,054 - INFO - Paper 82626355: analyzed 15 sections with 57 summary sentences
+2025-04-21 16:00:22,289 - INFO - Paper 39353178: analyzed 6 sections with 34 summary sentences
+2025-04-21 16:00:22,778 - INFO - Paper 86508243: analyzed 17 sections with 61 summary sentences
+2025-04-21 16:00:23,157 - INFO - Paper 63758896: analyzed 19 sections with 14 summary sentences
+2025-04-21 16:00:23,748 - INFO - Paper 72529720: analyzed 14 sections with 77 summary sentences
+2025-04-21 16:00:24,000 - INFO - Paper 63531440: analyzed 10 sections with 12 summary sentences
+2025-04-21 16:00:24,447 - INFO - Paper 15643187: analyzed 19 sections with 35 summary sentences
+2025-04-21 16:00:24,448 - WARNING - No sections found in paper
+2025-04-21 16:00:24,448 - INFO - Paper 82821959: analyzed 0 sections with 36 summary sentences
+2025-04-21 16:00:24,871 - INFO - Paper 47257042: analyzed 27 sections with 16 summary sentences
+2025-04-21 16:00:25,636 - INFO - Paper 33126132: analyzed 15 sections with 38 summary sentences
+2025-04-21 16:00:27,041 - INFO - Paper 81780960: analyzed 39 sections with 50 summary sentences
+2025-04-21 16:00:27,384 - INFO - Paper 30485653: analyzed 9 sections with 70 summary sentences
+2025-04-21 16:00:27,385 - WARNING - No sections found in paper
+2025-04-21 16:00:27,385 - INFO - Paper 36197895: analyzed 0 sections with 55 summary sentences
+2025-04-21 16:00:27,386 - WARNING - No sections found in paper
+2025-04-21 16:00:27,386 - INFO - Paper 68340528: analyzed 0 sections with 55 summary sentences
+2025-04-21 16:00:28,260 - INFO - Paper 68399070: analyzed 23 sections with 68 summary sentences
+2025-04-21 16:00:28,908 - INFO - Paper 23942242: analyzed 14 sections with 43 summary sentences
+2025-04-21 16:00:29,387 - INFO - Paper 30905451: analyzed 33 sections with 15 summary sentences
+2025-04-21 16:00:29,515 - INFO - Paper 38469042: analyzed 2 sections with 47 summary sentences
+2025-04-21 16:00:30,047 - INFO - Paper 96002700: analyzed 15 sections with 42 summary sentences
+2025-04-21 16:00:30,734 - INFO - Paper 35247822: analyzed 22 sections with 38 summary sentences
+2025-04-21 16:00:31,010 - INFO - Paper 85933068: analyzed 15 sections with 14 summary sentences
+2025-04-21 16:00:31,503 - INFO - Paper 38830210: analyzed 17 sections with 15 summary sentences
+2025-04-21 16:00:32,340 - INFO - Paper 82220044: analyzed 17 sections with 39 summary sentences
+2025-04-21 16:00:33,208 - INFO - Paper 45518901: analyzed 18 sections with 65 summary sentences
+2025-04-21 16:00:33,607 - INFO - Paper 86423785: analyzed 13 sections with 23 summary sentences
+2025-04-21 16:00:33,608 - WARNING - No sections found in paper
+2025-04-21 16:00:33,608 - INFO - Paper 88655260: analyzed 0 sections with 54 summary sentences
+2025-04-21 16:00:33,940 - INFO - Paper 43687503: analyzed 5 sections with 26 summary sentences
+2025-04-21 16:00:34,163 - INFO - Paper 70335565: analyzed 5 sections with 35 summary sentences
+2025-04-21 16:00:34,535 - INFO - Paper 72788236: analyzed 18 sections with 18 summary sentences
+2025-04-21 16:00:34,536 - WARNING - No sections found in paper
+2025-04-21 16:00:34,536 - INFO - Paper 49139111: analyzed 0 sections with 49 summary sentences
+2025-04-21 16:00:35,568 - INFO - Paper 30995172: analyzed 29 sections with 52 summary sentences
+2025-04-21 16:00:35,980 - INFO - Paper 26955055: analyzed 16 sections with 21 summary sentences
+2025-04-21 16:00:36,738 - INFO - Paper 26277001: analyzed 25 sections with 31 summary sentences
+2025-04-21 16:00:37,059 - INFO - Paper 12279648: analyzed 11 sections with 12 summary sentences
+2025-04-21 16:00:38,112 - INFO - Paper 31021586: analyzed 24 sections with 62 summary sentences
+2025-04-21 16:00:38,696 - INFO - Paper 11418476: analyzed 17 sections with 40 summary sentences
+2025-04-21 16:00:39,286 - INFO - Paper 14310989: analyzed 11 sections with 23 summary sentences
+2025-04-21 16:00:40,327 - INFO - Paper 76874430: analyzed 22 sections with 64 summary sentences
+2025-04-21 16:00:40,543 - INFO - Paper 79512250: analyzed 12 sections with 15 summary sentences
+2025-04-21 16:00:40,838 - INFO - Paper 35973587: analyzed 11 sections with 37 summary sentences
+2025-04-21 16:00:41,199 - INFO - Paper 38867178: analyzed 22 sections with 13 summary sentences
+2025-04-21 16:00:42,086 - INFO - Paper 25766140: analyzed 14 sections with 52 summary sentences
+2025-04-21 16:00:42,088 - WARNING - No sections found in paper
+2025-04-21 16:00:42,088 - INFO - Paper 92615357: analyzed 0 sections with 56 summary sentences
+2025-04-21 16:00:42,553 - INFO - Paper 44210578: analyzed 14 sections with 30 summary sentences
+2025-04-21 16:00:42,968 - INFO - Paper 59277766: analyzed 14 sections with 38 summary sentences
+2025-04-21 16:00:43,243 - INFO - Paper 45043151: analyzed 8 sections with 42 summary sentences
+2025-04-21 16:00:43,244 - WARNING - No sections found in paper
+2025-04-21 16:00:43,244 - INFO - Paper 65756728: analyzed 0 sections with 43 summary sentences
+2025-04-21 16:00:43,647 - INFO - Paper 15757806: analyzed 15 sections with 39 summary sentences
+2025-04-21 16:00:43,648 - WARNING - No sections found in paper
+2025-04-21 16:00:43,648 - INFO - Paper 13040160: analyzed 0 sections with 37 summary sentences
+2025-04-21 16:00:44,063 - INFO - Paper 19173630: analyzed 10 sections with 79 summary sentences
+2025-04-21 16:00:45,067 - INFO - Paper 78412080: analyzed 27 sections with 53 summary sentences
+2025-04-21 16:00:45,067 - WARNING - No sections found in paper
+2025-04-21 16:00:45,067 - INFO - Paper 99440206: analyzed 0 sections with 8 summary sentences
+2025-04-21 16:00:45,625 - INFO - Paper 47698609: analyzed 10 sections with 25 summary sentences
+2025-04-21 16:00:46,595 - INFO - Paper 60253398: analyzed 22 sections with 62 summary sentences
+2025-04-21 16:00:47,138 - INFO - Paper 40774761: analyzed 31 sections with 5 summary sentences
+2025-04-21 16:00:48,471 - INFO - Paper 84655302: analyzed 37 sections with 51 summary sentences
+2025-04-21 16:00:48,797 - INFO - Paper 70691684: analyzed 16 sections with 10 summary sentences
+2025-04-21 16:00:49,354 - INFO - Paper 53809041: analyzed 21 sections with 20 summary sentences
+2025-04-21 16:00:49,868 - INFO - Paper 5262509: analyzed 36 sections with 7 summary sentences
+2025-04-21 16:00:50,177 - INFO - Paper 49439664: analyzed 13 sections with 14 summary sentences
+2025-04-21 16:00:51,208 - INFO - Paper 87411149: analyzed 24 sections with 60 summary sentences
+2025-04-21 16:00:51,736 - INFO - Paper 17409856: analyzed 18 sections with 31 summary sentences
+2025-04-21 16:00:52,174 - INFO - Paper 30789903: analyzed 15 sections with 21 summary sentences
+2025-04-21 16:00:52,766 - INFO - Paper 8264189: analyzed 18 sections with 39 summary sentences
+2025-04-21 16:00:53,052 - INFO - Paper 80004741: analyzed 16 sections with 11 summary sentences
+2025-04-21 16:00:53,608 - INFO - Paper 32533290: analyzed 10 sections with 65 summary sentences
+2025-04-21 16:00:53,873 - INFO - Paper 8136900: analyzed 12 sections with 10 summary sentences
+2025-04-21 16:00:54,557 - INFO - Paper 518237: analyzed 17 sections with 62 summary sentences
+2025-04-21 16:00:54,862 - INFO - Paper 77737945: analyzed 16 sections with 20 summary sentences
+2025-04-21 16:00:55,234 - INFO - Paper 18322264: analyzed 16 sections with 22 summary sentences
+2025-04-21 16:00:55,483 - INFO - Paper 16973018: analyzed 9 sections with 16 summary sentences
+2025-04-21 16:00:55,484 - WARNING - No sections found in paper
+2025-04-21 16:00:55,484 - INFO - Paper 76635514: analyzed 0 sections with 44 summary sentences
+2025-04-21 16:00:56,093 - INFO - Paper 79471009: analyzed 17 sections with 31 summary sentences
+2025-04-21 16:00:56,601 - INFO - Paper 65102009: analyzed 13 sections with 33 summary sentences
+2025-04-21 16:00:56,602 - WARNING - No sections found in paper
+2025-04-21 16:00:56,602 - INFO - Paper 35377831: analyzed 0 sections with 62 summary sentences
+2025-04-21 16:00:56,602 - WARNING - No sections found in paper
+2025-04-21 16:00:56,602 - INFO - Paper 77534612: analyzed 0 sections with 13 summary sentences
+2025-04-21 16:00:56,939 - INFO - Paper 6799048: analyzed 17 sections with 13 summary sentences
+2025-04-21 16:00:57,812 - INFO - Paper 66357293: analyzed 22 sections with 57 summary sentences
+2025-04-21 16:00:58,502 - INFO - Paper 32338938: analyzed 17 sections with 50 summary sentences
+2025-04-21 16:00:59,042 - INFO - Paper 79305631: analyzed 13 sections with 59 summary sentences
+2025-04-21 16:00:59,270 - INFO - Paper 17980043: analyzed 12 sections with 12 summary sentences
+2025-04-21 16:00:59,845 - INFO - Paper 66112363: analyzed 11 sections with 49 summary sentences
+2025-04-21 16:01:00,569 - INFO - Paper 42443464: analyzed 25 sections with 24 summary sentences
+2025-04-21 16:01:01,720 - INFO - Paper 16027177: analyzed 19 sections with 62 summary sentences
+2025-04-21 16:01:02,412 - INFO - Paper 66912872: analyzed 17 sections with 54 summary sentences
+2025-04-21 16:01:03,018 - INFO - Paper 24824894: analyzed 14 sections with 53 summary sentences
+2025-04-21 16:01:03,329 - INFO - Paper 75937139: analyzed 10 sections with 39 summary sentences
+2025-04-21 16:01:03,679 - INFO - Paper 71425952: analyzed 7 sections with 11 summary sentences
+2025-04-21 16:01:03,796 - INFO - Paper 37775721: analyzed 7 sections with 10 summary sentences
+2025-04-21 16:01:04,114 - INFO - Paper 26515037: analyzed 16 sections with 25 summary sentences
+2025-04-21 16:01:04,269 - INFO - Paper 99668388: analyzed 9 sections with 16 summary sentences
+2025-04-21 16:01:05,115 - INFO - Paper 90421095: analyzed 26 sections with 49 summary sentences
+2025-04-21 16:01:05,232 - INFO - Paper 69537377: analyzed 9 sections with 11 summary sentences
+2025-04-21 16:01:05,410 - INFO - Paper 16280529: analyzed 4 sections with 21 summary sentences
+2025-04-21 16:01:05,411 - WARNING - No sections found in paper
+2025-04-21 16:01:05,411 - INFO - Paper 13793499: analyzed 0 sections with 50 summary sentences
+2025-04-21 16:01:05,701 - INFO - Paper 49519055: analyzed 14 sections with 12 summary sentences
+2025-04-21 16:01:05,702 - WARNING - No sections found in paper
+2025-04-21 16:01:05,702 - INFO - Paper 23313716: analyzed 0 sections with 60 summary sentences
+2025-04-21 16:01:06,077 - INFO - Paper 37010180: analyzed 11 sections with 61 summary sentences
+2025-04-21 16:01:06,580 - INFO - Paper 47686356: analyzed 12 sections with 28 summary sentences
+2025-04-21 16:01:06,826 - INFO - Paper 3517250: analyzed 11 sections with 15 summary sentences
+2025-04-21 16:01:07,402 - INFO - Paper 47723293: analyzed 22 sections with 37 summary sentences
+2025-04-21 16:01:07,682 - INFO - Paper 18521109: analyzed 7 sections with 35 summary sentences
+2025-04-21 16:01:07,845 - INFO - Paper 62769214: analyzed 8 sections with 25 summary sentences
+2025-04-21 16:01:07,846 - WARNING - No sections found in paper
+2025-04-21 16:01:07,846 - INFO - Paper 88969640: analyzed 0 sections with 18 summary sentences
+2025-04-21 16:01:12,813 - INFO - Paper 73424952: analyzed 285 sections with 6 summary sentences
+2025-04-21 16:01:13,117 - INFO - Paper 89581601: analyzed 9 sections with 27 summary sentences
+2025-04-21 16:01:13,719 - INFO - Paper 42731227: analyzed 19 sections with 9 summary sentences
+2025-04-21 16:01:14,129 - INFO - Paper 597051: analyzed 11 sections with 55 summary sentences
+2025-04-21 16:01:14,430 - INFO - Paper 21919380: analyzed 13 sections with 18 summary sentences
+2025-04-21 16:01:15,448 - INFO - Paper 51254358: analyzed 24 sections with 50 summary sentences
+2025-04-21 16:01:15,820 - INFO - Paper 36272485: analyzed 11 sections with 38 summary sentences
+2025-04-21 16:01:16,355 - INFO - Paper 43650136: analyzed 15 sections with 34 summary sentences
+2025-04-21 16:01:16,759 - INFO - Paper 69481324: analyzed 12 sections with 21 summary sentences
+2025-04-21 16:01:17,225 - INFO - Paper 57934330: analyzed 16 sections with 9 summary sentences
+2025-04-21 16:01:17,678 - INFO - Paper 8601517: analyzed 15 sections with 36 summary sentences
+2025-04-21 16:01:17,679 - WARNING - No sections found in paper
+2025-04-21 16:01:17,679 - INFO - Paper 49333267: analyzed 0 sections with 60 summary sentences
+2025-04-21 16:01:18,002 - INFO - Paper 94730041: analyzed 12 sections with 25 summary sentences
+2025-04-21 16:01:18,318 - INFO - Paper 24950879: analyzed 13 sections with 20 summary sentences
+2025-04-21 16:01:18,678 - INFO - Paper 74164301: analyzed 19 sections with 24 summary sentences
+2025-04-21 16:01:19,191 - INFO - Paper 59320034: analyzed 16 sections with 26 summary sentences
+2025-04-21 16:01:19,452 - INFO - Paper 21532550: analyzed 12 sections with 10 summary sentences
+2025-04-21 16:01:20,320 - INFO - Paper 21145042: analyzed 19 sections with 62 summary sentences
+2025-04-21 16:01:20,675 - INFO - Paper 52492536: analyzed 11 sections with 34 summary sentences
+2025-04-21 16:01:21,018 - INFO - Paper 92451519: analyzed 12 sections with 17 summary sentences
+2025-04-21 16:01:21,220 - INFO - Paper 86675541: analyzed 5 sections with 38 summary sentences
+2025-04-21 16:01:21,667 - INFO - Paper 16057781: analyzed 12 sections with 35 summary sentences
+2025-04-21 16:01:22,241 - INFO - Paper 12239056: analyzed 12 sections with 75 summary sentences
+2025-04-21 16:01:22,243 - WARNING - No sections found in paper
+2025-04-21 16:01:22,243 - INFO - Paper 17754953: analyzed 0 sections with 59 summary sentences
+2025-04-21 16:01:22,560 - INFO - Paper 50897768: analyzed 10 sections with 52 summary sentences
+2025-04-21 16:01:22,776 - INFO - Paper 17675091: analyzed 6 sections with 50 summary sentences
+2025-04-21 16:01:23,475 - INFO - Paper 37263635: analyzed 18 sections with 48 summary sentences
+2025-04-21 16:01:23,847 - INFO - Paper 16973657: analyzed 16 sections with 18 summary sentences
+2025-04-21 16:01:24,389 - INFO - Paper 46416317: analyzed 18 sections with 27 summary sentences
+2025-04-21 16:01:25,088 - INFO - Paper 69694249: analyzed 27 sections with 22 summary sentences
+2025-04-21 16:01:25,665 - INFO - Paper 61360879: analyzed 20 sections with 28 summary sentences
+2025-04-21 16:01:26,533 - INFO - Paper 97923725: analyzed 21 sections with 36 summary sentences
+2025-04-21 16:01:26,838 - INFO - Paper 35928796: analyzed 7 sections with 46 summary sentences
+2025-04-21 16:01:27,687 - INFO - Paper 23675750: analyzed 23 sections with 61 summary sentences
+2025-04-21 16:01:27,688 - WARNING - No sections found in paper
+2025-04-21 16:01:27,688 - INFO - Paper 85505359: analyzed 0 sections with 56 summary sentences
+2025-04-21 16:01:28,834 - INFO - Paper 99384474: analyzed 25 sections with 63 summary sentences
+2025-04-21 16:01:29,395 - INFO - Paper 31183232: analyzed 17 sections with 17 summary sentences
+2025-04-21 16:01:29,780 - INFO - Paper 30189879: analyzed 16 sections with 34 summary sentences
+2025-04-21 16:01:30,453 - INFO - Paper 68635574: analyzed 21 sections with 16 summary sentences
+2025-04-21 16:01:31,204 - INFO - Paper 84480736: analyzed 19 sections with 52 summary sentences
+2025-04-21 16:01:31,205 - WARNING - No sections found in paper
+2025-04-21 16:01:31,205 - INFO - Paper 28037079: analyzed 0 sections with 51 summary sentences
+2025-04-21 16:01:31,885 - INFO - Paper 52208833: analyzed 26 sections with 42 summary sentences
+2025-04-21 16:01:32,348 - INFO - Paper 15062404: analyzed 14 sections with 41 summary sentences
+2025-04-21 16:01:32,743 - INFO - Paper 81535007: analyzed 13 sections with 16 summary sentences
+2025-04-21 16:01:33,310 - INFO - Paper 11790475: analyzed 20 sections with 11 summary sentences
+2025-04-21 16:01:33,637 - INFO - Paper 4728464: analyzed 12 sections with 34 summary sentences
+2025-04-21 16:01:34,423 - INFO - Paper 63188694: analyzed 21 sections with 59 summary sentences
+2025-04-21 16:01:35,169 - INFO - Paper 48091191: analyzed 16 sections with 40 summary sentences
+2025-04-21 16:01:35,170 - WARNING - No sections found in paper
+2025-04-21 16:01:35,170 - INFO - Paper 92908954: analyzed 0 sections with 33 summary sentences
+2025-04-21 16:01:36,114 - INFO - Paper 24928430: analyzed 19 sections with 33 summary sentences
+2025-04-21 16:01:36,849 - INFO - Paper 54139177: analyzed 25 sections with 24 summary sentences
+2025-04-21 16:01:37,422 - INFO - Paper 4353776: analyzed 20 sections with 25 summary sentences
+2025-04-21 16:01:37,423 - WARNING - No sections found in paper
+2025-04-21 16:01:37,423 - INFO - Paper 37135417: analyzed 0 sections with 48 summary sentences
+2025-04-21 16:01:38,695 - INFO - Paper 39038842: analyzed 34 sections with 59 summary sentences
+2025-04-21 16:01:39,588 - INFO - Paper 13655370: analyzed 11 sections with 54 summary sentences
+2025-04-21 16:01:40,025 - INFO - Paper 75389943: analyzed 19 sections with 25 summary sentences
+2025-04-21 16:01:40,574 - INFO - Paper 50538257: analyzed 19 sections with 26 summary sentences
+2025-04-21 16:01:40,720 - INFO - Paper 25809281: analyzed 11 sections with 7 summary sentences
+2025-04-21 16:01:41,436 - INFO - Paper 21050319: analyzed 20 sections with 50 summary sentences
+2025-04-21 16:01:41,813 - INFO - Paper 435175: analyzed 22 sections with 17 summary sentences
+2025-04-21 16:01:41,940 - INFO - Paper 12711637: analyzed 8 sections with 15 summary sentences
+2025-04-21 16:01:42,313 - INFO - Paper 8799962: analyzed 12 sections with 16 summary sentences
+2025-04-21 16:01:42,790 - INFO - Paper 73414525: analyzed 18 sections with 33 summary sentences
+2025-04-21 16:01:43,332 - INFO - Paper 11112277: analyzed 18 sections with 51 summary sentences
+2025-04-21 16:01:43,332 - WARNING - No sections found in paper
+2025-04-21 16:01:43,332 - INFO - Paper 47798365: analyzed 0 sections with 8 summary sentences
+2025-04-21 16:01:43,701 - INFO - Paper 30621133: analyzed 14 sections with 39 summary sentences
+2025-04-21 16:01:43,942 - INFO - Paper 56843191: analyzed 12 sections with 11 summary sentences
+2025-04-21 16:01:44,568 - INFO - Paper 5681713: analyzed 29 sections with 9 summary sentences
+2025-04-21 16:01:45,241 - INFO - Paper 45612165: analyzed 19 sections with 46 summary sentences
+2025-04-21 16:01:45,982 - INFO - Paper 4830217: analyzed 12 sections with 43 summary sentences
+2025-04-21 16:01:46,376 - INFO - Paper 67930407: analyzed 17 sections with 20 summary sentences
+2025-04-21 16:01:46,719 - INFO - Paper 37171167: analyzed 11 sections with 23 summary sentences
+2025-04-21 16:01:46,963 - INFO - Paper 29962756: analyzed 14 sections with 15 summary sentences
+2025-04-21 16:01:46,964 - WARNING - No sections found in paper
+2025-04-21 16:01:46,964 - INFO - Paper 81001972: analyzed 0 sections with 48 summary sentences
+2025-04-21 16:01:47,598 - INFO - Paper 82043898: analyzed 10 sections with 34 summary sentences
+2025-04-21 16:01:48,145 - INFO - Paper 98757756: analyzed 13 sections with 53 summary sentences
+2025-04-21 16:01:48,956 - INFO - Paper 66006367: analyzed 39 sections with 22 summary sentences
+2025-04-21 16:01:49,873 - INFO - Paper 88246188: analyzed 14 sections with 87 summary sentences
+2025-04-21 16:01:50,249 - INFO - Paper 2905851: analyzed 18 sections with 21 summary sentences
+2025-04-21 16:01:50,692 - INFO - Paper 15765418: analyzed 15 sections with 18 summary sentences
+2025-04-21 16:01:50,694 - WARNING - No sections found in paper
+2025-04-21 16:01:50,694 - INFO - Paper 89628084: analyzed 0 sections with 63 summary sentences
+2025-04-21 16:01:50,695 - WARNING - No sections found in paper
+2025-04-21 16:01:50,695 - INFO - Paper 28727146: analyzed 0 sections with 51 summary sentences
+2025-04-21 16:01:50,958 - INFO - Paper 26473847: analyzed 10 sections with 32 summary sentences
+2025-04-21 16:01:51,608 - INFO - Paper 10587146: analyzed 13 sections with 62 summary sentences
+2025-04-21 16:01:51,873 - INFO - Paper 69013017: analyzed 7 sections with 62 summary sentences
+2025-04-21 16:01:53,091 - INFO - Paper 67696398: analyzed 32 sections with 49 summary sentences
+2025-04-21 16:01:53,526 - INFO - Paper 36679338: analyzed 27 sections with 10 summary sentences
+2025-04-21 16:01:53,527 - WARNING - No sections found in paper
+2025-04-21 16:01:53,527 - INFO - Paper 58874274: analyzed 0 sections with 15 summary sentences
+2025-04-21 16:01:53,993 - INFO - Paper 47469397: analyzed 17 sections with 25 summary sentences
+2025-04-21 16:01:54,259 - INFO - Paper 94015576: analyzed 11 sections with 13 summary sentences
+2025-04-21 16:01:54,260 - WARNING - No sections found in paper
+2025-04-21 16:01:54,260 - INFO - Paper 75962230: analyzed 0 sections with 47 summary sentences
+2025-04-21 16:01:54,678 - INFO - Paper 7415123: analyzed 18 sections with 26 summary sentences
+2025-04-21 16:01:56,026 - INFO - Paper 11313245: analyzed 30 sections with 63 summary sentences
+2025-04-21 16:01:56,304 - INFO - Paper 2774914: analyzed 14 sections with 15 summary sentences
+2025-04-21 16:01:56,551 - INFO - Paper 42045072: analyzed 13 sections with 28 summary sentences
+2025-04-21 16:01:57,673 - INFO - Paper 71546396: analyzed 25 sections with 51 summary sentences
+2025-04-21 16:01:57,937 - INFO - Paper 55410278: analyzed 13 sections with 39 summary sentences
+2025-04-21 16:01:58,949 - INFO - Paper 87460557: analyzed 27 sections with 27 summary sentences
+2025-04-21 16:01:59,356 - INFO - Paper 29474820: analyzed 10 sections with 63 summary sentences
+2025-04-21 16:01:59,357 - WARNING - No sections found in paper
+2025-04-21 16:01:59,357 - INFO - Paper 3913778: analyzed 0 sections with 41 summary sentences
+2025-04-21 16:01:59,680 - INFO - Paper 91929013: analyzed 13 sections with 26 summary sentences
+2025-04-21 16:02:00,218 - INFO - Paper 39382584: analyzed 19 sections with 44 summary sentences
+2025-04-21 16:02:01,496 - INFO - Paper 90525296: analyzed 23 sections with 49 summary sentences
+2025-04-21 16:02:01,992 - INFO - Paper 91325283: analyzed 12 sections with 40 summary sentences
+2025-04-21 16:02:02,869 - INFO - Paper 32560739: analyzed 38 sections with 11 summary sentences
+2025-04-21 16:02:03,986 - INFO - Paper 44148071: analyzed 28 sections with 35 summary sentences
+2025-04-21 16:02:04,387 - INFO - Paper 63848470: analyzed 15 sections with 20 summary sentences
+2025-04-21 16:02:04,663 - INFO - Paper 1540690: analyzed 12 sections with 20 summary sentences
+2025-04-21 16:02:05,281 - INFO - Paper 67744436: analyzed 18 sections with 74 summary sentences
+2025-04-21 16:02:05,626 - INFO - Paper 8784223: analyzed 12 sections with 41 summary sentences
+2025-04-21 16:02:06,258 - INFO - Paper 61558513: analyzed 18 sections with 35 summary sentences
+2025-04-21 16:02:06,540 - INFO - Paper 47397989: analyzed 13 sections with 29 summary sentences
+2025-04-21 16:02:06,889 - INFO - Paper 93460473: analyzed 15 sections with 27 summary sentences
+2025-04-21 16:02:07,277 - INFO - Paper 22528856: analyzed 19 sections with 13 summary sentences
+2025-04-21 16:02:07,278 - WARNING - No sections found in paper
+2025-04-21 16:02:07,278 - INFO - Paper 93544751: analyzed 0 sections with 24 summary sentences
+2025-04-21 16:02:07,864 - INFO - Paper 4536127: analyzed 16 sections with 64 summary sentences
+2025-04-21 16:02:08,489 - INFO - Paper 6726365: analyzed 27 sections with 28 summary sentences
+2025-04-21 16:02:09,253 - INFO - Paper 74193008: analyzed 14 sections with 38 summary sentences
+2025-04-21 16:02:09,644 - INFO - Paper 66403710: analyzed 22 sections with 16 summary sentences
+2025-04-21 16:02:10,241 - INFO - Paper 42200029: analyzed 13 sections with 56 summary sentences
+2025-04-21 16:02:11,151 - INFO - Paper 45601881: analyzed 18 sections with 50 summary sentences
+2025-04-21 16:02:11,503 - INFO - Paper 2577868: analyzed 16 sections with 19 summary sentences
+2025-04-21 16:02:12,293 - INFO - Paper 89767636: analyzed 34 sections with 27 summary sentences
+2025-04-21 16:02:13,379 - INFO - Paper 46507565: analyzed 25 sections with 63 summary sentences
+2025-04-21 16:02:14,323 - INFO - Paper 7305163: analyzed 23 sections with 52 summary sentences
+2025-04-21 16:02:14,482 - INFO - Paper 81262575: analyzed 7 sections with 18 summary sentences
+2025-04-21 16:02:14,730 - INFO - Paper 65062778: analyzed 9 sections with 11 summary sentences
+2025-04-21 16:02:15,004 - INFO - Paper 57983162: analyzed 8 sections with 44 summary sentences
+2025-04-21 16:02:15,463 - INFO - Paper 87885377: analyzed 15 sections with 38 summary sentences
+2025-04-21 16:02:15,682 - INFO - Paper 98781755: analyzed 8 sections with 14 summary sentences
+2025-04-21 16:02:16,195 - INFO - Paper 20550713: analyzed 18 sections with 10 summary sentences
+2025-04-21 16:02:16,196 - WARNING - No sections found in paper
+2025-04-21 16:02:16,196 - INFO - Paper 74261188: analyzed 0 sections with 19 summary sentences
+2025-04-21 16:02:16,439 - INFO - Paper 53721399: analyzed 9 sections with 30 summary sentences
+2025-04-21 16:02:17,709 - INFO - Paper 36051826: analyzed 34 sections with 59 summary sentences
+2025-04-21 16:02:19,190 - INFO - Paper 11791786: analyzed 28 sections with 57 summary sentences
+2025-04-21 16:02:19,903 - INFO - Paper 45765062: analyzed 16 sections with 53 summary sentences
+2025-04-21 16:02:20,099 - INFO - Paper 81465314: analyzed 11 sections with 7 summary sentences
+2025-04-21 16:02:20,345 - INFO - Paper 32248697: analyzed 10 sections with 24 summary sentences
+2025-04-21 16:02:20,621 - INFO - Paper 42851012: analyzed 16 sections with 13 summary sentences
+2025-04-21 16:02:21,290 - INFO - Paper 66883240: analyzed 16 sections with 38 summary sentences
+2025-04-21 16:02:22,370 - INFO - Paper 5225266: analyzed 24 sections with 65 summary sentences
+2025-04-21 16:02:22,658 - INFO - Paper 11836666: analyzed 10 sections with 24 summary sentences
+2025-04-21 16:02:23,439 - INFO - Paper 40771210: analyzed 20 sections with 56 summary sentences
+2025-04-21 16:02:24,234 - INFO - Paper 63621777: analyzed 11 sections with 56 summary sentences
+2025-04-21 16:02:25,324 - INFO - Paper 39674358: analyzed 30 sections with 58 summary sentences
+2025-04-21 16:02:25,325 - WARNING - No sections found in paper
+2025-04-21 16:02:25,325 - INFO - Paper 66302705: analyzed 0 sections with 54 summary sentences
+2025-04-21 16:02:25,917 - INFO - Paper 50438213: analyzed 25 sections with 16 summary sentences
+2025-04-21 16:02:27,367 - INFO - Paper 61298922: analyzed 39 sections with 64 summary sentences
+2025-04-21 16:02:27,368 - WARNING - No sections found in paper
+2025-04-21 16:02:27,368 - INFO - Paper 13187019: analyzed 0 sections with 34 summary sentences
+2025-04-21 16:02:27,797 - INFO - Paper 60887948: analyzed 18 sections with 29 summary sentences
+2025-04-21 16:02:27,798 - WARNING - No sections found in paper
+2025-04-21 16:02:27,798 - INFO - Paper 37479343: analyzed 0 sections with 60 summary sentences
+2025-04-21 16:02:29,362 - INFO - Paper 91451160: analyzed 24 sections with 39 summary sentences
+2025-04-21 16:02:29,594 - INFO - Paper 71225651: analyzed 10 sections with 24 summary sentences
+2025-04-21 16:02:30,109 - INFO - Paper 90011197: analyzed 27 sections with 18 summary sentences
+2025-04-21 16:02:30,257 - INFO - Paper 22127536: analyzed 8 sections with 18 summary sentences
+2025-04-21 16:02:30,258 - WARNING - No sections found in paper
+2025-04-21 16:02:30,258 - INFO - Paper 6827132: analyzed 0 sections with 37 summary sentences
+2025-04-21 16:02:30,546 - INFO - Paper 36779622: analyzed 13 sections with 21 summary sentences
+2025-04-21 16:02:31,018 - INFO - Paper 33714440: analyzed 13 sections with 57 summary sentences
+2025-04-21 16:02:31,023 - INFO - Saving results to ./jaehyeok/results/sentence_similarity_analysis.json

@@ -1,0 +1,609 @@
+2025-04-21 15:43:21,976 - INFO - Loading model: all-MiniLM-L6-v2
+2025-04-21 15:43:21,988 - INFO - Use pytorch device_name: cuda:0
+2025-04-21 15:43:21,988 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-21 15:43:24,723 - INFO - Loading papers from ./papers/json_files
+2025-04-21 15:43:24,723 - INFO - Loading valid paper IDs
+2025-04-21 15:43:24,723 - INFO - Loaded 488 valid paper IDs
+2025-04-21 15:43:24,724 - INFO - Found 525 JSON files
+2025-04-21 15:43:24,805 - INFO - Loaded 484 papers
+2025-04-21 15:43:24,805 - INFO - Loading existing results file
+2025-04-21 15:43:24,805 - INFO - No existing results file found, creating new one
+2025-04-21 15:43:24,805 - INFO - Loading gold summaries
+2025-04-21 15:43:24,805 - INFO - Loading gold summaries from ./abstractive_summaries/id_summary_map.json
+2025-04-21 15:43:24,811 - INFO - Loaded 530 gold summaries
+2025-04-21 15:43:25,420 - INFO - Paper 58793266: analyzed 14 sections with 32 summary sentences
+2025-04-21 15:43:25,421 - WARNING - No sections found in paper
+2025-04-21 15:43:25,421 - INFO - Paper 82387857: analyzed 0 sections with 36 summary sentences
+2025-04-21 15:43:25,706 - INFO - Paper 5180208: analyzed 15 sections with 15 summary sentences
+2025-04-21 15:43:25,908 - INFO - Paper 43791696: analyzed 1 sections with 17 summary sentences
+2025-04-21 15:43:26,587 - INFO - Paper 78841597: analyzed 25 sections with 25 summary sentences
+2025-04-21 15:43:26,936 - INFO - Paper 90600191: analyzed 16 sections with 29 summary sentences
+2025-04-21 15:43:27,233 - INFO - Paper 66226432: analyzed 13 sections with 19 summary sentences
+2025-04-21 15:43:27,866 - INFO - Paper 64175585: analyzed 19 sections with 42 summary sentences
+2025-04-21 15:43:28,205 - INFO - Paper 21542239: analyzed 16 sections with 28 summary sentences
+2025-04-21 15:43:28,545 - INFO - Paper 88049354: analyzed 12 sections with 35 summary sentences
+2025-04-21 15:43:28,545 - ERROR - Error analyzing paper 88049354: Object of type int64 is not JSON serializable
+2025-04-21 15:43:28,779 - INFO - Paper 1907968: analyzed 10 sections with 35 summary sentences
+2025-04-21 15:43:29,132 - INFO - Paper 59485457: analyzed 10 sections with 30 summary sentences
+2025-04-21 15:43:29,851 - INFO - Paper 69976012: analyzed 26 sections with 28 summary sentences
+2025-04-21 15:43:30,229 - INFO - Paper 86524123: analyzed 13 sections with 32 summary sentences
+2025-04-21 15:43:30,230 - WARNING - No sections found in paper
+2025-04-21 15:43:30,230 - INFO - Paper 48141212: analyzed 0 sections with 57 summary sentences
+2025-04-21 15:43:30,850 - INFO - Paper 1055799: analyzed 22 sections with 18 summary sentences
+2025-04-21 15:43:31,143 - INFO - Paper 75442340: analyzed 13 sections with 24 summary sentences
+2025-04-21 15:43:31,774 - INFO - Paper 41840073: analyzed 18 sections with 58 summary sentences
+2025-04-21 15:43:31,775 - WARNING - No sections found in paper
+2025-04-21 15:43:31,775 - INFO - Paper 187460: analyzed 0 sections with 26 summary sentences
+2025-04-21 15:43:32,485 - INFO - Paper 29796623: analyzed 15 sections with 37 summary sentences
+2025-04-21 15:43:32,485 - ERROR - Error analyzing paper 29796623: Object of type int64 is not JSON serializable
+2025-04-21 15:43:32,948 - INFO - Paper 98238949: analyzed 18 sections with 24 summary sentences
+2025-04-21 15:43:33,161 - INFO - Paper 51450104: analyzed 10 sections with 20 summary sentences
+2025-04-21 15:43:34,218 - INFO - Paper 43018598: analyzed 26 sections with 57 summary sentences
+2025-04-21 15:43:34,613 - INFO - Paper 78339451: analyzed 20 sections with 28 summary sentences
+2025-04-21 15:43:34,822 - INFO - Paper 39570633: analyzed 10 sections with 20 summary sentences
+2025-04-21 15:43:35,141 - INFO - Paper 87558652: analyzed 11 sections with 23 summary sentences
+2025-04-21 15:43:35,524 - INFO - Paper 96831204: analyzed 13 sections with 19 summary sentences
+2025-04-21 15:43:35,819 - INFO - Paper 85853580: analyzed 14 sections with 21 summary sentences
+2025-04-21 15:43:36,214 - INFO - Paper 97703387: analyzed 12 sections with 34 summary sentences
+2025-04-21 15:43:37,126 - INFO - Paper 50388820: analyzed 27 sections with 64 summary sentences
+2025-04-21 15:43:37,126 - ERROR - Error analyzing paper 50388820: Object of type int64 is not JSON serializable
+2025-04-21 15:43:37,493 - INFO - Paper 83248182: analyzed 16 sections with 11 summary sentences
+2025-04-21 15:43:38,254 - INFO - Paper 99341732: analyzed 16 sections with 60 summary sentences
+2025-04-21 15:43:38,522 - INFO - Paper 48074885: analyzed 9 sections with 27 summary sentences
+2025-04-21 15:43:38,867 - INFO - Paper 11006232: analyzed 8 sections with 34 summary sentences
+2025-04-21 15:43:39,312 - INFO - Paper 63511892: analyzed 21 sections with 17 summary sentences
+2025-04-21 15:43:39,861 - INFO - Paper 24312671: analyzed 24 sections with 23 summary sentences
+2025-04-21 15:43:40,320 - INFO - Paper 8363020: analyzed 14 sections with 45 summary sentences
+2025-04-21 15:43:40,701 - INFO - Paper 23426061: analyzed 15 sections with 41 summary sentences
+2025-04-21 15:43:41,350 - INFO - Paper 29703573: analyzed 19 sections with 49 summary sentences
+2025-04-21 15:43:42,392 - INFO - Paper 80421460: analyzed 20 sections with 43 summary sentences
+2025-04-21 15:43:42,392 - ERROR - Error analyzing paper 80421460: Object of type int64 is not JSON serializable
+2025-04-21 15:43:42,916 - INFO - Paper 45538669: analyzed 18 sections with 49 summary sentences
+2025-04-21 15:43:43,822 - INFO - Paper 25710556: analyzed 22 sections with 77 summary sentences
+2025-04-21 15:43:44,155 - INFO - Paper 66099843: analyzed 9 sections with 33 summary sentences
+2025-04-21 15:43:44,589 - INFO - Paper 23929837: analyzed 12 sections with 81 summary sentences
+2025-04-21 15:43:45,040 - INFO - Paper 53935450: analyzed 10 sections with 57 summary sentences
+2025-04-21 15:43:45,203 - INFO - Paper 80897282: analyzed 13 sections with 7 summary sentences
+2025-04-21 15:43:46,018 - INFO - Paper 6777051: analyzed 29 sections with 34 summary sentences
+2025-04-21 15:43:46,019 - WARNING - No sections found in paper
+2025-04-21 15:43:46,019 - INFO - Paper 27300559: analyzed 0 sections with 28 summary sentences
+2025-04-21 15:43:46,701 - INFO - Paper 414696: analyzed 37 sections with 5 summary sentences
+2025-04-21 15:43:47,675 - INFO - Paper 202387: analyzed 24 sections with 44 summary sentences
+2025-04-21 15:43:47,676 - ERROR - Error analyzing paper 202387: Object of type int64 is not JSON serializable
+2025-04-21 15:43:48,080 - INFO - Paper 91637218: analyzed 15 sections with 29 summary sentences
+2025-04-21 15:43:48,337 - INFO - Paper 22546727: analyzed 15 sections with 8 summary sentences
+2025-04-21 15:43:48,890 - INFO - Paper 56196: analyzed 17 sections with 41 summary sentences
+2025-04-21 15:43:49,309 - INFO - Paper 89853012: analyzed 13 sections with 46 summary sentences
+2025-04-21 15:43:50,193 - INFO - Paper 85839366: analyzed 16 sections with 66 summary sentences
+2025-04-21 15:43:50,606 - INFO - Paper 22744554: analyzed 13 sections with 49 summary sentences
+2025-04-21 15:43:50,869 - INFO - Paper 19050347: analyzed 8 sections with 31 summary sentences
+2025-04-21 15:43:51,157 - INFO - Paper 93218559: analyzed 12 sections with 8 summary sentences
+2025-04-21 15:43:51,632 - INFO - Paper 88548359: analyzed 16 sections with 20 summary sentences
+2025-04-21 15:43:51,867 - INFO - Paper 35704901: analyzed 15 sections with 13 summary sentences
+2025-04-21 15:43:51,868 - ERROR - Error analyzing paper 35704901: Object of type int64 is not JSON serializable
+2025-04-21 15:43:52,308 - INFO - Paper 58308538: analyzed 15 sections with 47 summary sentences
+2025-04-21 15:43:52,918 - INFO - Paper 84548548: analyzed 23 sections with 38 summary sentences
+2025-04-21 15:43:53,642 - INFO - Paper 62302416: analyzed 16 sections with 35 summary sentences
+2025-04-21 15:43:53,959 - INFO - Paper 58884367: analyzed 16 sections with 23 summary sentences
+2025-04-21 15:43:54,239 - INFO - Paper 11684235: analyzed 9 sections with 19 summary sentences
+2025-04-21 15:43:54,240 - WARNING - No sections found in paper
+2025-04-21 15:43:54,240 - INFO - Paper 69502658: analyzed 0 sections with 32 summary sentences
+2025-04-21 15:43:54,768 - INFO - Paper 68642594: analyzed 15 sections with 38 summary sentences
+2025-04-21 15:43:54,978 - INFO - Paper 97381495: analyzed 1 sections with 58 summary sentences
+2025-04-21 15:43:55,329 - INFO - Paper 88532041: analyzed 18 sections with 24 summary sentences
+2025-04-21 15:43:55,801 - INFO - Paper 82314288: analyzed 19 sections with 46 summary sentences
+2025-04-21 15:43:55,801 - ERROR - Error analyzing paper 82314288: Object of type int64 is not JSON serializable
+2025-04-21 15:43:56,564 - INFO - Paper 78860785: analyzed 12 sections with 10 summary sentences
+2025-04-21 15:43:57,268 - INFO - Paper 24753674: analyzed 16 sections with 36 summary sentences
+2025-04-21 15:43:57,606 - INFO - Paper 36278339: analyzed 14 sections with 21 summary sentences
+2025-04-21 15:43:57,607 - WARNING - No sections found in paper
+2025-04-21 15:43:57,607 - INFO - Paper 78861774: analyzed 0 sections with 39 summary sentences
+2025-04-21 15:43:57,608 - WARNING - No sections found in paper
+2025-04-21 15:43:57,608 - INFO - Paper 26262723: analyzed 0 sections with 31 summary sentences
+2025-04-21 15:43:57,609 - WARNING - No sections found in paper
+2025-04-21 15:43:57,609 - INFO - Paper 85123331: analyzed 0 sections with 40 summary sentences
+2025-04-21 15:43:57,610 - WARNING - No sections found in paper
+2025-04-21 15:43:57,610 - INFO - Paper 93195231: analyzed 0 sections with 62 summary sentences
+2025-04-21 15:43:58,058 - INFO - Paper 34187605: analyzed 24 sections with 15 summary sentences
+2025-04-21 15:43:58,602 - INFO - Paper 57956236: analyzed 18 sections with 61 summary sentences
+2025-04-21 15:43:58,602 - WARNING - No sections found in paper
+2025-04-21 15:43:58,602 - INFO - Paper 3855110: analyzed 0 sections with 20 summary sentences
+2025-04-21 15:43:58,603 - ERROR - Error analyzing paper 3855110: Object of type int64 is not JSON serializable
+2025-04-21 15:43:59,305 - INFO - Paper 16124640: analyzed 17 sections with 35 summary sentences
+2025-04-21 15:43:59,306 - WARNING - No sections found in paper
+2025-04-21 15:43:59,306 - INFO - Paper 93025332: analyzed 0 sections with 56 summary sentences
+2025-04-21 15:44:00,194 - INFO - Paper 75952682: analyzed 1 sections with 36 summary sentences
+2025-04-21 15:44:00,196 - WARNING - No sections found in paper
+2025-04-21 15:44:00,196 - INFO - Paper 22030520: analyzed 0 sections with 71 summary sentences
+2025-04-21 15:44:00,413 - INFO - Paper 7590139: analyzed 6 sections with 30 summary sentences
+2025-04-21 15:44:00,415 - WARNING - No sections found in paper
+2025-04-21 15:44:00,415 - INFO - Paper 17601393: analyzed 0 sections with 63 summary sentences
+2025-04-21 15:44:01,291 - INFO - Paper 53269747: analyzed 31 sections with 24 summary sentences
+2025-04-21 15:44:01,291 - WARNING - No sections found in paper
+2025-04-21 15:44:01,291 - INFO - Paper 11481096: analyzed 0 sections with 14 summary sentences
+2025-04-21 15:44:01,479 - INFO - Paper 96217072: analyzed 11 sections with 16 summary sentences
+2025-04-21 15:44:01,480 - WARNING - No sections found in paper
+2025-04-21 15:44:01,480 - INFO - Paper 10374612: analyzed 0 sections with 29 summary sentences
+2025-04-21 15:44:01,480 - ERROR - Error analyzing paper 10374612: Object of type int64 is not JSON serializable
+2025-04-21 15:44:01,790 - INFO - Paper 37796162: analyzed 16 sections with 11 summary sentences
+2025-04-21 15:44:02,077 - INFO - Paper 4216862: analyzed 11 sections with 13 summary sentences
+2025-04-21 15:44:02,592 - INFO - Paper 72744034: analyzed 10 sections with 37 summary sentences
+2025-04-21 15:44:02,776 - INFO - Paper 4647896: analyzed 12 sections with 16 summary sentences
+2025-04-21 15:44:02,778 - WARNING - No sections found in paper
+2025-04-21 15:44:02,778 - INFO - Paper 9563928: analyzed 0 sections with 55 summary sentences
+2025-04-21 15:44:03,364 - INFO - Paper 57613420: analyzed 28 sections with 12 summary sentences
+2025-04-21 15:44:03,364 - WARNING - No sections found in paper
+2025-04-21 15:44:03,364 - INFO - Paper 51458146: analyzed 0 sections with 27 summary sentences
+2025-04-21 15:44:03,984 - INFO - Paper 40883301: analyzed 17 sections with 59 summary sentences
+2025-04-21 15:44:03,985 - WARNING - No sections found in paper
+2025-04-21 15:44:03,985 - INFO - Paper 57228237: analyzed 0 sections with 19 summary sentences
+2025-04-21 15:44:03,986 - WARNING - No sections found in paper
+2025-04-21 15:44:03,986 - INFO - Paper 8984509: analyzed 0 sections with 57 summary sentences
+2025-04-21 15:44:03,986 - ERROR - Error analyzing paper 8984509: Object of type int64 is not JSON serializable
+2025-04-21 15:44:04,436 - INFO - Paper 7570292: analyzed 19 sections with 18 summary sentences
+2025-04-21 15:44:04,838 - INFO - Paper 84030160: analyzed 12 sections with 29 summary sentences
+2025-04-21 15:44:05,079 - INFO - Paper 48411412: analyzed 8 sections with 30 summary sentences
+2025-04-21 15:44:05,587 - INFO - Paper 61580548: analyzed 13 sections with 36 summary sentences
+2025-04-21 15:44:06,057 - INFO - Paper 97291551: analyzed 10 sections with 50 summary sentences
+2025-04-21 15:44:06,416 - INFO - Paper 5674972: analyzed 17 sections with 21 summary sentences
+2025-04-21 15:44:07,053 - INFO - Paper 26105266: analyzed 20 sections with 62 summary sentences
+2025-04-21 15:44:07,054 - WARNING - No sections found in paper
+2025-04-21 15:44:07,055 - INFO - Paper 50524744: analyzed 0 sections with 53 summary sentences
+2025-04-21 15:44:07,309 - INFO - Paper 93060618: analyzed 15 sections with 27 summary sentences
+2025-04-21 15:44:08,327 - INFO - Paper 57114772: analyzed 23 sections with 45 summary sentences
+2025-04-21 15:44:08,327 - ERROR - Error analyzing paper 57114772: Object of type int64 is not JSON serializable
+2025-04-21 15:44:08,669 - INFO - Paper 36200725: analyzed 12 sections with 62 summary sentences
+2025-04-21 15:44:09,101 - INFO - Paper 72922440: analyzed 16 sections with 45 summary sentences
+2025-04-21 15:44:09,339 - INFO - Paper 7120002: analyzed 12 sections with 23 summary sentences
+2025-04-21 15:44:09,725 - INFO - Paper 91633253: analyzed 9 sections with 37 summary sentences
+2025-04-21 15:44:10,105 - INFO - Paper 31459000: analyzed 14 sections with 51 summary sentences
+2025-04-21 15:44:10,684 - INFO - Paper 33427271: analyzed 13 sections with 18 summary sentences
+2025-04-21 15:44:11,985 - INFO - Paper 78499306: analyzed 46 sections with 32 summary sentences
+2025-04-21 15:44:13,183 - INFO - Paper 13135318: analyzed 30 sections with 49 summary sentences
+2025-04-21 15:44:13,184 - WARNING - No sections found in paper
+2025-04-21 15:44:13,185 - INFO - Paper 11354749: analyzed 0 sections with 45 summary sentences
+2025-04-21 15:44:13,502 - INFO - Paper 94646863: analyzed 12 sections with 26 summary sentences
+2025-04-21 15:44:13,502 - ERROR - Error analyzing paper 94646863: Object of type int64 is not JSON serializable
+2025-04-21 15:44:14,030 - INFO - Paper 8151447: analyzed 9 sections with 49 summary sentences
+2025-04-21 15:44:14,173 - INFO - Paper 55048906: analyzed 6 sections with 31 summary sentences
+2025-04-21 15:44:14,750 - INFO - Paper 17350626: analyzed 17 sections with 61 summary sentences
+2025-04-21 15:44:15,284 - INFO - Paper 80770343: analyzed 15 sections with 59 summary sentences
+2025-04-21 15:44:15,429 - INFO - Paper 78190587: analyzed 8 sections with 17 summary sentences
+2025-04-21 15:44:15,430 - WARNING - No sections found in paper
+2025-04-21 15:44:15,430 - INFO - Paper 27051635: analyzed 0 sections with 24 summary sentences
+2025-04-21 15:44:15,700 - INFO - Paper 97980035: analyzed 9 sections with 22 summary sentences
+2025-04-21 15:44:16,098 - INFO - Paper 7255717: analyzed 13 sections with 41 summary sentences
+2025-04-21 15:44:16,609 - INFO - Paper 38779502: analyzed 13 sections with 47 summary sentences
+2025-04-21 15:44:17,413 - INFO - Paper 65595064: analyzed 16 sections with 50 summary sentences
+2025-04-21 15:44:17,414 - ERROR - Error analyzing paper 65595064: Object of type int64 is not JSON serializable
+2025-04-21 15:44:17,771 - INFO - Paper 4206973: analyzed 18 sections with 6 summary sentences
+2025-04-21 15:44:18,789 - INFO - Paper 14819310: analyzed 21 sections with 62 summary sentences
+2025-04-21 15:44:20,160 - INFO - Paper 5550259: analyzed 31 sections with 53 summary sentences
+2025-04-21 15:44:20,285 - INFO - Paper 99295545: analyzed 10 sections with 12 summary sentences
+2025-04-21 15:44:20,285 - WARNING - No sections found in paper
+2025-04-21 15:44:20,286 - INFO - Paper 45186835: analyzed 0 sections with 22 summary sentences
+2025-04-21 15:44:20,817 - INFO - Paper 3953515: analyzed 16 sections with 36 summary sentences
+2025-04-21 15:44:21,064 - INFO - Paper 30748495: analyzed 9 sections with 20 summary sentences
+2025-04-21 15:44:21,531 - INFO - Paper 91812941: analyzed 14 sections with 29 summary sentences
+2025-04-21 15:44:22,527 - INFO - Paper 2899329: analyzed 23 sections with 48 summary sentences
+2025-04-21 15:44:23,652 - INFO - Paper 11542688: analyzed 31 sections with 37 summary sentences
+2025-04-21 15:44:23,653 - ERROR - Error analyzing paper 11542688: Object of type int64 is not JSON serializable
+2025-04-21 15:44:24,280 - INFO - Paper 8087311: analyzed 26 sections with 28 summary sentences
+2025-04-21 15:44:24,643 - INFO - Paper 70889889: analyzed 13 sections with 41 summary sentences
+2025-04-21 15:44:25,141 - INFO - Paper 93598871: analyzed 16 sections with 21 summary sentences
+2025-04-21 15:44:25,368 - INFO - Paper 62056200: analyzed 8 sections with 12 summary sentences
+2025-04-21 15:44:25,728 - INFO - Paper 71370947: analyzed 9 sections with 42 summary sentences
+2025-04-21 15:44:25,729 - WARNING - No sections found in paper
+2025-04-21 15:44:25,729 - INFO - Paper 24169489: analyzed 0 sections with 51 summary sentences
+2025-04-21 15:44:25,729 - WARNING - No sections found in paper
+2025-04-21 15:44:25,729 - INFO - Paper 24000799: analyzed 0 sections with 20 summary sentences
+2025-04-21 15:44:26,645 - INFO - Paper 52464539: analyzed 18 sections with 56 summary sentences
+2025-04-21 15:44:26,957 - INFO - Paper 77684000: analyzed 12 sections with 32 summary sentences
+2025-04-21 15:44:27,871 - INFO - Paper 96747724: analyzed 25 sections with 50 summary sentences
+2025-04-21 15:44:27,871 - ERROR - Error analyzing paper 96747724: Object of type int64 is not JSON serializable
+2025-04-21 15:44:27,945 - INFO - Paper 29981772: analyzed 4 sections with 11 summary sentences
+2025-04-21 15:44:28,510 - INFO - Paper 31303819: analyzed 17 sections with 28 summary sentences
+2025-04-21 15:44:28,828 - INFO - Paper 31194274: analyzed 5 sections with 39 summary sentences
+2025-04-21 15:44:29,303 - INFO - Paper 51116334: analyzed 18 sections with 59 summary sentences
+2025-04-21 15:44:29,304 - WARNING - No sections found in paper
+2025-04-21 15:44:29,304 - INFO - Paper 41161677: analyzed 0 sections with 45 summary sentences
+2025-04-21 15:44:29,446 - INFO - Paper 81057283: analyzed 4 sections with 30 summary sentences
+2025-04-21 15:44:29,882 - INFO - Paper 45435119: analyzed 8 sections with 27 summary sentences
+2025-04-21 15:44:30,163 - INFO - Paper 85820029: analyzed 12 sections with 11 summary sentences
+2025-04-21 15:44:30,390 - INFO - Paper 93142771: analyzed 13 sections with 21 summary sentences
+2025-04-21 15:44:30,653 - INFO - Paper 87068449: analyzed 12 sections with 16 summary sentences
+2025-04-21 15:44:30,654 - ERROR - Error analyzing paper 87068449: Object of type int64 is not JSON serializable
+2025-04-21 15:44:31,352 - INFO - Paper 11779349: analyzed 17 sections with 41 summary sentences
+2025-04-21 15:44:32,572 - INFO - Paper 4784102: analyzed 30 sections with 16 summary sentences
+2025-04-21 15:44:33,294 - INFO - Paper 27321339: analyzed 19 sections with 34 summary sentences
+2025-04-21 15:44:33,991 - INFO - Paper 12625177: analyzed 17 sections with 47 summary sentences
+2025-04-21 15:44:34,550 - INFO - Paper 18958324: analyzed 12 sections with 50 summary sentences
+2025-04-21 15:44:34,850 - INFO - Paper 33015723: analyzed 8 sections with 8 summary sentences
+2025-04-21 15:44:34,852 - WARNING - No sections found in paper
+2025-04-21 15:44:34,852 - INFO - Paper 8455503: analyzed 0 sections with 58 summary sentences
+2025-04-21 15:44:35,287 - INFO - Paper 66681632: analyzed 16 sections with 37 summary sentences
+2025-04-21 15:44:35,880 - INFO - Paper 91200961: analyzed 14 sections with 83 summary sentences
+2025-04-21 15:44:36,173 - INFO - Paper 687757: analyzed 13 sections with 14 summary sentences
+2025-04-21 15:44:36,173 - ERROR - Error analyzing paper 687757: Object of type int64 is not JSON serializable
+2025-04-21 15:44:37,439 - INFO - Paper 11773091: analyzed 36 sections with 58 summary sentences
+2025-04-21 15:44:38,173 - INFO - Paper 26668230: analyzed 20 sections with 34 summary sentences
+2025-04-21 15:44:38,518 - INFO - Paper 80719489: analyzed 9 sections with 69 summary sentences
+2025-04-21 15:44:39,164 - INFO - Paper 34958521: analyzed 14 sections with 45 summary sentences
+2025-04-21 15:44:39,995 - INFO - Paper 45795840: analyzed 19 sections with 70 summary sentences
+2025-04-21 15:44:40,510 - INFO - Paper 83267919: analyzed 11 sections with 51 summary sentences
+2025-04-21 15:44:40,861 - INFO - Paper 23242120: analyzed 12 sections with 18 summary sentences
+2025-04-21 15:44:41,654 - INFO - Paper 7912651: analyzed 29 sections with 27 summary sentences
+2025-04-21 15:44:42,355 - INFO - Paper 27086937: analyzed 16 sections with 13 summary sentences
+2025-04-21 15:44:42,356 - WARNING - No sections found in paper
+2025-04-21 15:44:42,356 - INFO - Paper 17539393: analyzed 0 sections with 73 summary sentences
+2025-04-21 15:44:42,357 - ERROR - Error analyzing paper 17539393: Object of type int64 is not JSON serializable
+2025-04-21 15:44:42,829 - INFO - Paper 93980002: analyzed 22 sections with 16 summary sentences
+2025-04-21 15:44:43,473 - INFO - Paper 61603670: analyzed 18 sections with 49 summary sentences
+2025-04-21 15:44:43,819 - INFO - Paper 7157784: analyzed 12 sections with 24 summary sentences
+2025-04-21 15:44:44,606 - INFO - Paper 56472821: analyzed 32 sections with 23 summary sentences
+2025-04-21 15:44:44,791 - INFO - Paper 73180675: analyzed 4 sections with 74 summary sentences
+2025-04-21 15:44:45,064 - INFO - Paper 98262950: analyzed 7 sections with 53 summary sentences
+2025-04-21 15:44:46,474 - INFO - Paper 87208689: analyzed 32 sections with 60 summary sentences
+2025-04-21 15:44:47,081 - INFO - Paper 46342402: analyzed 16 sections with 41 summary sentences
+2025-04-21 15:44:47,428 - INFO - Paper 11636296: analyzed 20 sections with 29 summary sentences
+2025-04-21 15:44:48,186 - INFO - Paper 69467563: analyzed 18 sections with 44 summary sentences
+2025-04-21 15:44:48,186 - ERROR - Error analyzing paper 69467563: Object of type int64 is not JSON serializable
+2025-04-21 15:44:48,408 - INFO - Paper 70481957: analyzed 11 sections with 10 summary sentences
+2025-04-21 15:44:48,582 - INFO - Paper 76514111: analyzed 10 sections with 25 summary sentences
+2025-04-21 15:44:49,270 - INFO - Paper 73515355: analyzed 20 sections with 49 summary sentences
+2025-04-21 15:44:50,624 - INFO - Paper 75865335: analyzed 29 sections with 39 summary sentences
+2025-04-21 15:44:50,936 - INFO - Paper 41467472: analyzed 14 sections with 6 summary sentences
+2025-04-21 15:44:51,214 - INFO - Paper 31543932: analyzed 18 sections with 8 summary sentences
+2025-04-21 15:44:51,939 - INFO - Paper 15084340: analyzed 11 sections with 50 summary sentences
+2025-04-21 15:44:52,116 - INFO - Paper 30877354: analyzed 7 sections with 28 summary sentences
+2025-04-21 15:44:52,117 - WARNING - No sections found in paper
+2025-04-21 15:44:52,117 - INFO - Paper 63755811: analyzed 0 sections with 21 summary sentences
+2025-04-21 15:44:52,240 - INFO - Paper 12175403: analyzed 2 sections with 9 summary sentences
+2025-04-21 15:44:52,241 - ERROR - Error analyzing paper 12175403: Object of type int64 is not JSON serializable
+2025-04-21 15:44:53,174 - INFO - Paper 74156567: analyzed 23 sections with 64 summary sentences
+2025-04-21 15:44:53,553 - INFO - Paper 60516406: analyzed 13 sections with 35 summary sentences
+2025-04-21 15:44:54,323 - INFO - Paper 65123124: analyzed 26 sections with 31 summary sentences
+2025-04-21 15:44:54,581 - INFO - Paper 24510148: analyzed 8 sections with 19 summary sentences
+2025-04-21 15:44:54,952 - INFO - Paper 97932426: analyzed 14 sections with 30 summary sentences
+2025-04-21 15:44:55,290 - INFO - Paper 80262838: analyzed 16 sections with 26 summary sentences
+2025-04-21 15:44:55,721 - INFO - Paper 10218080: analyzed 22 sections with 15 summary sentences
+2025-04-21 15:44:56,346 - INFO - Paper 76817909: analyzed 17 sections with 23 summary sentences
+2025-04-21 15:44:57,500 - INFO - Paper 96308075: analyzed 27 sections with 39 summary sentences
+2025-04-21 15:44:57,969 - INFO - Paper 97592875: analyzed 18 sections with 11 summary sentences
+2025-04-21 15:44:57,969 - ERROR - Error analyzing paper 97592875: Object of type int64 is not JSON serializable
+2025-04-21 15:44:58,244 - INFO - Paper 69119323: analyzed 13 sections with 14 summary sentences
+2025-04-21 15:44:58,594 - INFO - Paper 7904666: analyzed 14 sections with 10 summary sentences
+2025-04-21 15:44:59,865 - INFO - Paper 87041789: analyzed 26 sections with 50 summary sentences
+2025-04-21 15:45:00,308 - INFO - Paper 81916449: analyzed 18 sections with 24 summary sentences
+2025-04-21 15:45:00,810 - INFO - Paper 2852538: analyzed 13 sections with 48 summary sentences
+2025-04-21 15:45:01,195 - INFO - Paper 62996279: analyzed 9 sections with 15 summary sentences
+2025-04-21 15:45:01,370 - INFO - Paper 18304114: analyzed 7 sections with 14 summary sentences
+2025-04-21 15:45:02,131 - INFO - Paper 87827594: analyzed 15 sections with 30 summary sentences
+2025-04-21 15:45:02,513 - INFO - Paper 43280550: analyzed 20 sections with 28 summary sentences
+2025-04-21 15:45:02,815 - INFO - Paper 99878837: analyzed 12 sections with 26 summary sentences
+2025-04-21 15:45:02,815 - ERROR - Error analyzing paper 99878837: Object of type int64 is not JSON serializable
+2025-04-21 15:45:03,745 - INFO - Paper 263861: analyzed 25 sections with 61 summary sentences
+2025-04-21 15:45:04,014 - INFO - Paper 39357436: analyzed 15 sections with 16 summary sentences
+2025-04-21 15:45:04,774 - INFO - Paper 82626355: analyzed 15 sections with 57 summary sentences
+2025-04-21 15:45:05,007 - INFO - Paper 39353178: analyzed 6 sections with 34 summary sentences
+2025-04-21 15:45:05,498 - INFO - Paper 86508243: analyzed 17 sections with 61 summary sentences
+2025-04-21 15:45:05,881 - INFO - Paper 63758896: analyzed 19 sections with 14 summary sentences
+2025-04-21 15:45:06,471 - INFO - Paper 72529720: analyzed 14 sections with 77 summary sentences
+2025-04-21 15:45:06,727 - INFO - Paper 63531440: analyzed 10 sections with 12 summary sentences
+2025-04-21 15:45:07,176 - INFO - Paper 15643187: analyzed 19 sections with 35 summary sentences
+2025-04-21 15:45:07,177 - WARNING - No sections found in paper
+2025-04-21 15:45:07,177 - INFO - Paper 82821959: analyzed 0 sections with 36 summary sentences
+2025-04-21 15:45:07,177 - ERROR - Error analyzing paper 82821959: Object of type int64 is not JSON serializable
+2025-04-21 15:45:07,592 - INFO - Paper 47257042: analyzed 27 sections with 16 summary sentences
+2025-04-21 15:45:08,355 - INFO - Paper 33126132: analyzed 15 sections with 38 summary sentences
+2025-04-21 15:45:09,767 - INFO - Paper 81780960: analyzed 39 sections with 50 summary sentences
+2025-04-21 15:45:10,112 - INFO - Paper 30485653: analyzed 9 sections with 70 summary sentences
+2025-04-21 15:45:10,113 - WARNING - No sections found in paper
+2025-04-21 15:45:10,113 - INFO - Paper 36197895: analyzed 0 sections with 55 summary sentences
+2025-04-21 15:45:10,114 - WARNING - No sections found in paper
+2025-04-21 15:45:10,114 - INFO - Paper 68340528: analyzed 0 sections with 55 summary sentences
+2025-04-21 15:45:10,995 - INFO - Paper 68399070: analyzed 23 sections with 68 summary sentences
+2025-04-21 15:45:11,670 - INFO - Paper 23942242: analyzed 14 sections with 43 summary sentences
+2025-04-21 15:45:12,156 - INFO - Paper 30905451: analyzed 33 sections with 15 summary sentences
+2025-04-21 15:45:12,285 - INFO - Paper 38469042: analyzed 2 sections with 47 summary sentences
+2025-04-21 15:45:12,285 - ERROR - Error analyzing paper 38469042: Object of type int64 is not JSON serializable
+2025-04-21 15:45:12,819 - INFO - Paper 96002700: analyzed 15 sections with 42 summary sentences
+2025-04-21 15:45:13,496 - INFO - Paper 35247822: analyzed 22 sections with 38 summary sentences
+2025-04-21 15:45:13,776 - INFO - Paper 85933068: analyzed 15 sections with 14 summary sentences
+2025-04-21 15:45:14,270 - INFO - Paper 38830210: analyzed 17 sections with 15 summary sentences
+2025-04-21 15:45:15,086 - INFO - Paper 82220044: analyzed 17 sections with 39 summary sentences
+2025-04-21 15:45:15,948 - INFO - Paper 45518901: analyzed 18 sections with 65 summary sentences
+2025-04-21 15:45:16,473 - INFO - Paper 86423785: analyzed 13 sections with 23 summary sentences
+2025-04-21 15:45:16,474 - WARNING - No sections found in paper
+2025-04-21 15:45:16,474 - INFO - Paper 88655260: analyzed 0 sections with 54 summary sentences
+2025-04-21 15:45:16,808 - INFO - Paper 43687503: analyzed 5 sections with 26 summary sentences
+2025-04-21 15:45:17,033 - INFO - Paper 70335565: analyzed 5 sections with 35 summary sentences
+2025-04-21 15:45:17,034 - ERROR - Error analyzing paper 70335565: Object of type int64 is not JSON serializable
+2025-04-21 15:45:17,395 - INFO - Paper 72788236: analyzed 18 sections with 18 summary sentences
+2025-04-21 15:45:17,396 - WARNING - No sections found in paper
+2025-04-21 15:45:17,396 - INFO - Paper 49139111: analyzed 0 sections with 49 summary sentences
+2025-04-21 15:45:18,428 - INFO - Paper 30995172: analyzed 29 sections with 52 summary sentences
+2025-04-21 15:45:18,845 - INFO - Paper 26955055: analyzed 16 sections with 21 summary sentences
+2025-04-21 15:45:19,602 - INFO - Paper 26277001: analyzed 25 sections with 31 summary sentences
+2025-04-21 15:45:19,921 - INFO - Paper 12279648: analyzed 11 sections with 12 summary sentences
+2025-04-21 15:45:20,978 - INFO - Paper 31021586: analyzed 24 sections with 62 summary sentences
+2025-04-21 15:45:21,585 - INFO - Paper 11418476: analyzed 17 sections with 40 summary sentences
+2025-04-21 15:45:22,180 - INFO - Paper 14310989: analyzed 11 sections with 23 summary sentences
+2025-04-21 15:45:23,225 - INFO - Paper 76874430: analyzed 22 sections with 64 summary sentences
+2025-04-21 15:45:23,225 - ERROR - Error analyzing paper 76874430: Object of type int64 is not JSON serializable
+2025-04-21 15:45:23,432 - INFO - Paper 79512250: analyzed 12 sections with 15 summary sentences
+2025-04-21 15:45:23,730 - INFO - Paper 35973587: analyzed 11 sections with 37 summary sentences
+2025-04-21 15:45:24,093 - INFO - Paper 38867178: analyzed 22 sections with 13 summary sentences
+2025-04-21 15:45:24,985 - INFO - Paper 25766140: analyzed 14 sections with 52 summary sentences
+2025-04-21 15:45:24,986 - WARNING - No sections found in paper
+2025-04-21 15:45:24,986 - INFO - Paper 92615357: analyzed 0 sections with 56 summary sentences
+2025-04-21 15:45:25,443 - INFO - Paper 44210578: analyzed 14 sections with 30 summary sentences
+2025-04-21 15:45:25,858 - INFO - Paper 59277766: analyzed 14 sections with 38 summary sentences
+2025-04-21 15:45:26,133 - INFO - Paper 45043151: analyzed 8 sections with 42 summary sentences
+2025-04-21 15:45:26,134 - WARNING - No sections found in paper
+2025-04-21 15:45:26,134 - INFO - Paper 65756728: analyzed 0 sections with 43 summary sentences
+2025-04-21 15:45:26,537 - INFO - Paper 15757806: analyzed 15 sections with 39 summary sentences
+2025-04-21 15:45:26,537 - ERROR - Error analyzing paper 15757806: Object of type int64 is not JSON serializable
+2025-04-21 15:45:26,538 - WARNING - No sections found in paper
+2025-04-21 15:45:26,538 - INFO - Paper 13040160: analyzed 0 sections with 37 summary sentences
+2025-04-21 15:45:26,963 - INFO - Paper 19173630: analyzed 10 sections with 79 summary sentences
+2025-04-21 15:45:27,962 - INFO - Paper 78412080: analyzed 27 sections with 53 summary sentences
+2025-04-21 15:45:27,962 - WARNING - No sections found in paper
+2025-04-21 15:45:27,962 - INFO - Paper 99440206: analyzed 0 sections with 8 summary sentences
+2025-04-21 15:45:28,515 - INFO - Paper 47698609: analyzed 10 sections with 25 summary sentences
+2025-04-21 15:45:29,491 - INFO - Paper 60253398: analyzed 22 sections with 62 summary sentences
+2025-04-21 15:45:30,031 - INFO - Paper 40774761: analyzed 31 sections with 5 summary sentences
+2025-04-21 15:45:31,360 - INFO - Paper 84655302: analyzed 37 sections with 51 summary sentences
+2025-04-21 15:45:31,686 - INFO - Paper 70691684: analyzed 16 sections with 10 summary sentences
+2025-04-21 15:45:32,256 - INFO - Paper 53809041: analyzed 21 sections with 20 summary sentences
+2025-04-21 15:45:32,257 - ERROR - Error analyzing paper 53809041: Object of type int64 is not JSON serializable
+2025-04-21 15:45:32,777 - INFO - Paper 5262509: analyzed 36 sections with 7 summary sentences
+2025-04-21 15:45:33,086 - INFO - Paper 49439664: analyzed 13 sections with 14 summary sentences
+2025-04-21 15:45:34,107 - INFO - Paper 87411149: analyzed 24 sections with 60 summary sentences
+2025-04-21 15:45:34,636 - INFO - Paper 17409856: analyzed 18 sections with 31 summary sentences
+2025-04-21 15:45:35,070 - INFO - Paper 30789903: analyzed 15 sections with 21 summary sentences
+2025-04-21 15:45:35,651 - INFO - Paper 8264189: analyzed 18 sections with 39 summary sentences
+2025-04-21 15:45:35,939 - INFO - Paper 80004741: analyzed 16 sections with 11 summary sentences
+2025-04-21 15:45:36,496 - INFO - Paper 32533290: analyzed 10 sections with 65 summary sentences
+2025-04-21 15:45:36,768 - INFO - Paper 8136900: analyzed 12 sections with 10 summary sentences
+2025-04-21 15:45:37,461 - INFO - Paper 518237: analyzed 17 sections with 62 summary sentences
+2025-04-21 15:45:37,461 - ERROR - Error analyzing paper 518237: Object of type int64 is not JSON serializable
+2025-04-21 15:45:37,766 - INFO - Paper 77737945: analyzed 16 sections with 20 summary sentences
+2025-04-21 15:45:38,132 - INFO - Paper 18322264: analyzed 16 sections with 22 summary sentences
+2025-04-21 15:45:38,384 - INFO - Paper 16973018: analyzed 9 sections with 16 summary sentences
+2025-04-21 15:45:38,385 - WARNING - No sections found in paper
+2025-04-21 15:45:38,385 - INFO - Paper 76635514: analyzed 0 sections with 44 summary sentences
+2025-04-21 15:45:38,993 - INFO - Paper 79471009: analyzed 17 sections with 31 summary sentences
+2025-04-21 15:45:39,499 - INFO - Paper 65102009: analyzed 13 sections with 33 summary sentences
+2025-04-21 15:45:39,501 - WARNING - No sections found in paper
+2025-04-21 15:45:39,501 - INFO - Paper 35377831: analyzed 0 sections with 62 summary sentences
+2025-04-21 15:45:39,501 - WARNING - No sections found in paper
+2025-04-21 15:45:39,501 - INFO - Paper 77534612: analyzed 0 sections with 13 summary sentences
+2025-04-21 15:45:39,838 - INFO - Paper 6799048: analyzed 17 sections with 13 summary sentences
+2025-04-21 15:45:40,709 - INFO - Paper 66357293: analyzed 22 sections with 57 summary sentences
+2025-04-21 15:45:40,709 - ERROR - Error analyzing paper 66357293: Object of type int64 is not JSON serializable
+2025-04-21 15:45:41,400 - INFO - Paper 32338938: analyzed 17 sections with 50 summary sentences
+2025-04-21 15:45:41,937 - INFO - Paper 79305631: analyzed 13 sections with 59 summary sentences
+2025-04-21 15:45:42,172 - INFO - Paper 17980043: analyzed 12 sections with 12 summary sentences
+2025-04-21 15:45:42,746 - INFO - Paper 66112363: analyzed 11 sections with 49 summary sentences
+2025-04-21 15:45:43,471 - INFO - Paper 42443464: analyzed 25 sections with 24 summary sentences
+2025-04-21 15:45:44,621 - INFO - Paper 16027177: analyzed 19 sections with 62 summary sentences
+2025-04-21 15:45:45,309 - INFO - Paper 66912872: analyzed 17 sections with 54 summary sentences
+2025-04-21 15:45:45,914 - INFO - Paper 24824894: analyzed 14 sections with 53 summary sentences
+2025-04-21 15:45:46,223 - INFO - Paper 75937139: analyzed 10 sections with 39 summary sentences
+2025-04-21 15:45:46,574 - INFO - Paper 71425952: analyzed 7 sections with 11 summary sentences
+2025-04-21 15:45:46,575 - ERROR - Error analyzing paper 71425952: Object of type int64 is not JSON serializable
+2025-04-21 15:45:46,692 - INFO - Paper 37775721: analyzed 7 sections with 10 summary sentences
+2025-04-21 15:45:47,013 - INFO - Paper 26515037: analyzed 16 sections with 25 summary sentences
+2025-04-21 15:45:47,170 - INFO - Paper 99668388: analyzed 9 sections with 16 summary sentences
+2025-04-21 15:45:48,014 - INFO - Paper 90421095: analyzed 26 sections with 49 summary sentences
+2025-04-21 15:45:48,130 - INFO - Paper 69537377: analyzed 9 sections with 11 summary sentences
+2025-04-21 15:45:48,305 - INFO - Paper 16280529: analyzed 4 sections with 21 summary sentences
+2025-04-21 15:45:48,306 - WARNING - No sections found in paper
+2025-04-21 15:45:48,306 - INFO - Paper 13793499: analyzed 0 sections with 50 summary sentences
+2025-04-21 15:45:48,595 - INFO - Paper 49519055: analyzed 14 sections with 12 summary sentences
+2025-04-21 15:45:48,596 - WARNING - No sections found in paper
+2025-04-21 15:45:48,597 - INFO - Paper 23313716: analyzed 0 sections with 60 summary sentences
+2025-04-21 15:45:48,974 - INFO - Paper 37010180: analyzed 11 sections with 61 summary sentences
+2025-04-21 15:45:48,975 - ERROR - Error analyzing paper 37010180: Object of type int64 is not JSON serializable
+2025-04-21 15:45:49,465 - INFO - Paper 47686356: analyzed 12 sections with 28 summary sentences
+2025-04-21 15:45:49,712 - INFO - Paper 3517250: analyzed 11 sections with 15 summary sentences
+2025-04-21 15:45:50,285 - INFO - Paper 47723293: analyzed 22 sections with 37 summary sentences
+2025-04-21 15:45:50,578 - INFO - Paper 18521109: analyzed 7 sections with 35 summary sentences
+2025-04-21 15:45:50,737 - INFO - Paper 62769214: analyzed 8 sections with 25 summary sentences
+2025-04-21 15:45:50,737 - WARNING - No sections found in paper
+2025-04-21 15:45:50,737 - INFO - Paper 88969640: analyzed 0 sections with 18 summary sentences
+2025-04-21 15:45:55,757 - INFO - Paper 73424952: analyzed 285 sections with 6 summary sentences
+2025-04-21 15:45:56,059 - INFO - Paper 89581601: analyzed 9 sections with 27 summary sentences
+2025-04-21 15:45:56,665 - INFO - Paper 42731227: analyzed 19 sections with 9 summary sentences
+2025-04-21 15:45:57,074 - INFO - Paper 597051: analyzed 11 sections with 55 summary sentences
+2025-04-21 15:45:57,075 - ERROR - Error analyzing paper 597051: Object of type int64 is not JSON serializable
+2025-04-21 15:45:57,375 - INFO - Paper 21919380: analyzed 13 sections with 18 summary sentences
+2025-04-21 15:45:58,393 - INFO - Paper 51254358: analyzed 24 sections with 50 summary sentences
+2025-04-21 15:45:58,765 - INFO - Paper 36272485: analyzed 11 sections with 38 summary sentences
+2025-04-21 15:45:59,306 - INFO - Paper 43650136: analyzed 15 sections with 34 summary sentences
+2025-04-21 15:45:59,710 - INFO - Paper 69481324: analyzed 12 sections with 21 summary sentences
+2025-04-21 15:46:00,174 - INFO - Paper 57934330: analyzed 16 sections with 9 summary sentences
+2025-04-21 15:46:00,624 - INFO - Paper 8601517: analyzed 15 sections with 36 summary sentences
+2025-04-21 15:46:00,625 - WARNING - No sections found in paper
+2025-04-21 15:46:00,625 - INFO - Paper 49333267: analyzed 0 sections with 60 summary sentences
+2025-04-21 15:46:00,950 - INFO - Paper 94730041: analyzed 12 sections with 25 summary sentences
+2025-04-21 15:46:01,267 - INFO - Paper 24950879: analyzed 13 sections with 20 summary sentences
+2025-04-21 15:46:01,267 - ERROR - Error analyzing paper 24950879: Object of type int64 is not JSON serializable
+2025-04-21 15:46:01,629 - INFO - Paper 74164301: analyzed 19 sections with 24 summary sentences
+2025-04-21 15:46:02,153 - INFO - Paper 59320034: analyzed 16 sections with 26 summary sentences
+2025-04-21 15:46:02,413 - INFO - Paper 21532550: analyzed 12 sections with 10 summary sentences
+2025-04-21 15:46:03,283 - INFO - Paper 21145042: analyzed 19 sections with 62 summary sentences
+2025-04-21 15:46:03,624 - INFO - Paper 52492536: analyzed 11 sections with 34 summary sentences
+2025-04-21 15:46:03,969 - INFO - Paper 92451519: analyzed 12 sections with 17 summary sentences
+2025-04-21 15:46:04,170 - INFO - Paper 86675541: analyzed 5 sections with 38 summary sentences
+2025-04-21 15:46:04,605 - INFO - Paper 16057781: analyzed 12 sections with 35 summary sentences
+2025-04-21 15:46:05,151 - INFO - Paper 12239056: analyzed 12 sections with 75 summary sentences
+2025-04-21 15:46:05,152 - WARNING - No sections found in paper
+2025-04-21 15:46:05,153 - INFO - Paper 17754953: analyzed 0 sections with 59 summary sentences
+2025-04-21 15:46:05,153 - ERROR - Error analyzing paper 17754953: Object of type int64 is not JSON serializable
+2025-04-21 15:46:05,461 - INFO - Paper 50897768: analyzed 10 sections with 52 summary sentences
+2025-04-21 15:46:05,674 - INFO - Paper 17675091: analyzed 6 sections with 50 summary sentences
+2025-04-21 15:46:06,360 - INFO - Paper 37263635: analyzed 18 sections with 48 summary sentences
+2025-04-21 15:46:06,732 - INFO - Paper 16973657: analyzed 16 sections with 18 summary sentences
+2025-04-21 15:46:07,275 - INFO - Paper 46416317: analyzed 18 sections with 27 summary sentences
+2025-04-21 15:46:07,963 - INFO - Paper 69694249: analyzed 27 sections with 22 summary sentences
+2025-04-21 15:46:08,531 - INFO - Paper 61360879: analyzed 20 sections with 28 summary sentences
+2025-04-21 15:46:09,394 - INFO - Paper 97923725: analyzed 21 sections with 36 summary sentences
+2025-04-21 15:46:09,698 - INFO - Paper 35928796: analyzed 7 sections with 46 summary sentences
+2025-04-21 15:46:10,537 - INFO - Paper 23675750: analyzed 23 sections with 61 summary sentences
+2025-04-21 15:46:10,537 - ERROR - Error analyzing paper 23675750: Object of type int64 is not JSON serializable
+2025-04-21 15:46:10,539 - WARNING - No sections found in paper
+2025-04-21 15:46:10,539 - INFO - Paper 85505359: analyzed 0 sections with 56 summary sentences
+2025-04-21 15:46:11,666 - INFO - Paper 99384474: analyzed 25 sections with 63 summary sentences
+2025-04-21 15:46:12,227 - INFO - Paper 31183232: analyzed 17 sections with 17 summary sentences
+2025-04-21 15:46:12,609 - INFO - Paper 30189879: analyzed 16 sections with 34 summary sentences
+2025-04-21 15:46:13,275 - INFO - Paper 68635574: analyzed 21 sections with 16 summary sentences
+2025-04-21 15:46:14,005 - INFO - Paper 84480736: analyzed 19 sections with 52 summary sentences
+2025-04-21 15:46:14,006 - WARNING - No sections found in paper
+2025-04-21 15:46:14,006 - INFO - Paper 28037079: analyzed 0 sections with 51 summary sentences
+2025-04-21 15:46:14,680 - INFO - Paper 52208833: analyzed 26 sections with 42 summary sentences
+2025-04-21 15:46:15,130 - INFO - Paper 15062404: analyzed 14 sections with 41 summary sentences
+2025-04-21 15:46:15,516 - INFO - Paper 81535007: analyzed 13 sections with 16 summary sentences
+2025-04-21 15:46:15,516 - ERROR - Error analyzing paper 81535007: Object of type int64 is not JSON serializable
+2025-04-21 15:46:16,083 - INFO - Paper 11790475: analyzed 20 sections with 11 summary sentences
+2025-04-21 15:46:16,403 - INFO - Paper 4728464: analyzed 12 sections with 34 summary sentences
+2025-04-21 15:46:17,176 - INFO - Paper 63188694: analyzed 21 sections with 59 summary sentences
+2025-04-21 15:46:17,917 - INFO - Paper 48091191: analyzed 16 sections with 40 summary sentences
+2025-04-21 15:46:17,918 - WARNING - No sections found in paper
+2025-04-21 15:46:17,918 - INFO - Paper 92908954: analyzed 0 sections with 33 summary sentences
+2025-04-21 15:46:18,853 - INFO - Paper 24928430: analyzed 19 sections with 33 summary sentences
+2025-04-21 15:46:19,578 - INFO - Paper 54139177: analyzed 25 sections with 24 summary sentences
+2025-04-21 15:46:20,145 - INFO - Paper 4353776: analyzed 20 sections with 25 summary sentences
+2025-04-21 15:46:20,146 - WARNING - No sections found in paper
+2025-04-21 15:46:20,146 - INFO - Paper 37135417: analyzed 0 sections with 48 summary sentences
+2025-04-21 15:46:21,421 - INFO - Paper 39038842: analyzed 34 sections with 59 summary sentences
+2025-04-21 15:46:21,421 - ERROR - Error analyzing paper 39038842: Object of type int64 is not JSON serializable
+2025-04-21 15:46:22,313 - INFO - Paper 13655370: analyzed 11 sections with 54 summary sentences
+2025-04-21 15:46:22,744 - INFO - Paper 75389943: analyzed 19 sections with 25 summary sentences
+2025-04-21 15:46:23,286 - INFO - Paper 50538257: analyzed 19 sections with 26 summary sentences
+2025-04-21 15:46:23,429 - INFO - Paper 25809281: analyzed 11 sections with 7 summary sentences
+2025-04-21 15:46:24,145 - INFO - Paper 21050319: analyzed 20 sections with 50 summary sentences
+2025-04-21 15:46:24,526 - INFO - Paper 435175: analyzed 22 sections with 17 summary sentences
+2025-04-21 15:46:24,654 - INFO - Paper 12711637: analyzed 8 sections with 15 summary sentences
+2025-04-21 15:46:25,018 - INFO - Paper 8799962: analyzed 12 sections with 16 summary sentences
+2025-04-21 15:46:25,502 - INFO - Paper 73414525: analyzed 18 sections with 33 summary sentences
+2025-04-21 15:46:26,039 - INFO - Paper 11112277: analyzed 18 sections with 51 summary sentences
+2025-04-21 15:46:26,039 - ERROR - Error analyzing paper 11112277: Object of type int64 is not JSON serializable
+2025-04-21 15:46:26,039 - WARNING - No sections found in paper
+2025-04-21 15:46:26,039 - INFO - Paper 47798365: analyzed 0 sections with 8 summary sentences
+2025-04-21 15:46:26,409 - INFO - Paper 30621133: analyzed 14 sections with 39 summary sentences
+2025-04-21 15:46:26,647 - INFO - Paper 56843191: analyzed 12 sections with 11 summary sentences
+2025-04-21 15:46:27,257 - INFO - Paper 5681713: analyzed 29 sections with 9 summary sentences
+2025-04-21 15:46:27,926 - INFO - Paper 45612165: analyzed 19 sections with 46 summary sentences
+2025-04-21 15:46:28,653 - INFO - Paper 4830217: analyzed 12 sections with 43 summary sentences
+2025-04-21 15:46:29,044 - INFO - Paper 67930407: analyzed 17 sections with 20 summary sentences
+2025-04-21 15:46:29,384 - INFO - Paper 37171167: analyzed 11 sections with 23 summary sentences
+2025-04-21 15:46:29,629 - INFO - Paper 29962756: analyzed 14 sections with 15 summary sentences
+2025-04-21 15:46:29,630 - WARNING - No sections found in paper
+2025-04-21 15:46:29,630 - INFO - Paper 81001972: analyzed 0 sections with 48 summary sentences
+2025-04-21 15:46:29,630 - ERROR - Error analyzing paper 81001972: Object of type int64 is not JSON serializable
+2025-04-21 15:46:30,253 - INFO - Paper 82043898: analyzed 10 sections with 34 summary sentences
+2025-04-21 15:46:30,799 - INFO - Paper 98757756: analyzed 13 sections with 53 summary sentences
+2025-04-21 15:46:31,605 - INFO - Paper 66006367: analyzed 39 sections with 22 summary sentences
+2025-04-21 15:46:32,518 - INFO - Paper 88246188: analyzed 14 sections with 87 summary sentences
+2025-04-21 15:46:32,889 - INFO - Paper 2905851: analyzed 18 sections with 21 summary sentences
+2025-04-21 15:46:33,321 - INFO - Paper 15765418: analyzed 15 sections with 18 summary sentences
+2025-04-21 15:46:33,322 - WARNING - No sections found in paper
+2025-04-21 15:46:33,322 - INFO - Paper 89628084: analyzed 0 sections with 63 summary sentences
+2025-04-21 15:46:33,323 - WARNING - No sections found in paper
+2025-04-21 15:46:33,323 - INFO - Paper 28727146: analyzed 0 sections with 51 summary sentences
+2025-04-21 15:46:33,585 - INFO - Paper 26473847: analyzed 10 sections with 32 summary sentences
+2025-04-21 15:46:34,220 - INFO - Paper 10587146: analyzed 13 sections with 62 summary sentences
+2025-04-21 15:46:34,220 - ERROR - Error analyzing paper 10587146: Object of type int64 is not JSON serializable
+2025-04-21 15:46:34,480 - INFO - Paper 69013017: analyzed 7 sections with 62 summary sentences
+2025-04-21 15:46:35,669 - INFO - Paper 67696398: analyzed 32 sections with 49 summary sentences
+2025-04-21 15:46:36,109 - INFO - Paper 36679338: analyzed 27 sections with 10 summary sentences
+2025-04-21 15:46:36,109 - WARNING - No sections found in paper
+2025-04-21 15:46:36,109 - INFO - Paper 58874274: analyzed 0 sections with 15 summary sentences
+2025-04-21 15:46:36,587 - INFO - Paper 47469397: analyzed 17 sections with 25 summary sentences
+2025-04-21 15:46:36,856 - INFO - Paper 94015576: analyzed 11 sections with 13 summary sentences
+2025-04-21 15:46:36,857 - WARNING - No sections found in paper
+2025-04-21 15:46:36,857 - INFO - Paper 75962230: analyzed 0 sections with 47 summary sentences
+2025-04-21 15:46:37,272 - INFO - Paper 7415123: analyzed 18 sections with 26 summary sentences
+2025-04-21 15:46:38,613 - INFO - Paper 11313245: analyzed 30 sections with 63 summary sentences
+2025-04-21 15:46:38,894 - INFO - Paper 2774914: analyzed 14 sections with 15 summary sentences
+2025-04-21 15:46:38,894 - ERROR - Error analyzing paper 2774914: Object of type int64 is not JSON serializable
+2025-04-21 15:46:39,149 - INFO - Paper 42045072: analyzed 13 sections with 28 summary sentences
+2025-04-21 15:46:40,277 - INFO - Paper 71546396: analyzed 25 sections with 51 summary sentences
+2025-04-21 15:46:40,550 - INFO - Paper 55410278: analyzed 13 sections with 39 summary sentences
+2025-04-21 15:46:41,574 - INFO - Paper 87460557: analyzed 27 sections with 27 summary sentences
+2025-04-21 15:46:41,984 - INFO - Paper 29474820: analyzed 10 sections with 63 summary sentences
+2025-04-21 15:46:41,985 - WARNING - No sections found in paper
+2025-04-21 15:46:41,985 - INFO - Paper 3913778: analyzed 0 sections with 41 summary sentences
+2025-04-21 15:46:42,311 - INFO - Paper 91929013: analyzed 13 sections with 26 summary sentences
+2025-04-21 15:46:42,855 - INFO - Paper 39382584: analyzed 19 sections with 44 summary sentences
+2025-04-21 15:46:44,117 - INFO - Paper 90525296: analyzed 23 sections with 49 summary sentences
+2025-04-21 15:46:44,618 - INFO - Paper 91325283: analyzed 12 sections with 40 summary sentences
+2025-04-21 15:46:44,618 - ERROR - Error analyzing paper 91325283: Object of type int64 is not JSON serializable
+2025-04-21 15:46:45,485 - INFO - Paper 32560739: analyzed 38 sections with 11 summary sentences
+2025-04-21 15:46:46,604 - INFO - Paper 44148071: analyzed 28 sections with 35 summary sentences
+2025-04-21 15:46:47,012 - INFO - Paper 63848470: analyzed 15 sections with 20 summary sentences
+2025-04-21 15:46:47,291 - INFO - Paper 1540690: analyzed 12 sections with 20 summary sentences
+2025-04-21 15:46:47,908 - INFO - Paper 67744436: analyzed 18 sections with 74 summary sentences
+2025-04-21 15:46:48,255 - INFO - Paper 8784223: analyzed 12 sections with 41 summary sentences
+2025-04-21 15:46:48,888 - INFO - Paper 61558513: analyzed 18 sections with 35 summary sentences
+2025-04-21 15:46:49,170 - INFO - Paper 47397989: analyzed 13 sections with 29 summary sentences
+2025-04-21 15:46:49,521 - INFO - Paper 93460473: analyzed 15 sections with 27 summary sentences
+2025-04-21 15:46:49,908 - INFO - Paper 22528856: analyzed 19 sections with 13 summary sentences
+2025-04-21 15:46:49,909 - ERROR - Error analyzing paper 22528856: Object of type int64 is not JSON serializable
+2025-04-21 15:46:49,909 - WARNING - No sections found in paper
+2025-04-21 15:46:49,910 - INFO - Paper 93544751: analyzed 0 sections with 24 summary sentences
+2025-04-21 15:46:50,510 - INFO - Paper 4536127: analyzed 16 sections with 64 summary sentences
+2025-04-21 15:46:51,138 - INFO - Paper 6726365: analyzed 27 sections with 28 summary sentences
+2025-04-21 15:46:51,892 - INFO - Paper 74193008: analyzed 14 sections with 38 summary sentences
+2025-04-21 15:46:52,296 - INFO - Paper 66403710: analyzed 22 sections with 16 summary sentences
+2025-04-21 15:46:52,885 - INFO - Paper 42200029: analyzed 13 sections with 56 summary sentences
+2025-04-21 15:46:53,778 - INFO - Paper 45601881: analyzed 18 sections with 50 summary sentences
+2025-04-21 15:46:54,126 - INFO - Paper 2577868: analyzed 16 sections with 19 summary sentences
+2025-04-21 15:46:54,917 - INFO - Paper 89767636: analyzed 34 sections with 27 summary sentences
+2025-04-21 15:46:56,002 - INFO - Paper 46507565: analyzed 25 sections with 63 summary sentences
+2025-04-21 15:46:56,002 - ERROR - Error analyzing paper 46507565: Object of type int64 is not JSON serializable
+2025-04-21 15:46:56,928 - INFO - Paper 7305163: analyzed 23 sections with 52 summary sentences
+2025-04-21 15:46:57,083 - INFO - Paper 81262575: analyzed 7 sections with 18 summary sentences
+2025-04-21 15:46:57,330 - INFO - Paper 65062778: analyzed 9 sections with 11 summary sentences
+2025-04-21 15:46:57,602 - INFO - Paper 57983162: analyzed 8 sections with 44 summary sentences
+2025-04-21 15:46:58,057 - INFO - Paper 87885377: analyzed 15 sections with 38 summary sentences
+2025-04-21 15:46:58,274 - INFO - Paper 98781755: analyzed 8 sections with 14 summary sentences
+2025-04-21 15:46:58,792 - INFO - Paper 20550713: analyzed 18 sections with 10 summary sentences
+2025-04-21 15:46:58,793 - WARNING - No sections found in paper
+2025-04-21 15:46:58,793 - INFO - Paper 74261188: analyzed 0 sections with 19 summary sentences
+2025-04-21 15:46:59,041 - INFO - Paper 53721399: analyzed 9 sections with 30 summary sentences
+2025-04-21 15:47:00,305 - INFO - Paper 36051826: analyzed 34 sections with 59 summary sentences
+2025-04-21 15:47:00,306 - ERROR - Error analyzing paper 36051826: Object of type int64 is not JSON serializable
+2025-04-21 15:47:01,783 - INFO - Paper 11791786: analyzed 28 sections with 57 summary sentences
+2025-04-21 15:47:02,497 - INFO - Paper 45765062: analyzed 16 sections with 53 summary sentences
+2025-04-21 15:47:02,703 - INFO - Paper 81465314: analyzed 11 sections with 7 summary sentences
+2025-04-21 15:47:02,952 - INFO - Paper 32248697: analyzed 10 sections with 24 summary sentences
+2025-04-21 15:47:03,220 - INFO - Paper 42851012: analyzed 16 sections with 13 summary sentences
+2025-04-21 15:47:03,883 - INFO - Paper 66883240: analyzed 16 sections with 38 summary sentences
+2025-04-21 15:47:04,947 - INFO - Paper 5225266: analyzed 24 sections with 65 summary sentences
+2025-04-21 15:47:05,236 - INFO - Paper 11836666: analyzed 10 sections with 24 summary sentences
+2025-04-21 15:47:06,017 - INFO - Paper 40771210: analyzed 20 sections with 56 summary sentences
+2025-04-21 15:47:06,811 - INFO - Paper 63621777: analyzed 11 sections with 56 summary sentences
+2025-04-21 15:47:06,812 - ERROR - Error analyzing paper 63621777: Object of type int64 is not JSON serializable
+2025-04-21 15:47:07,898 - INFO - Paper 39674358: analyzed 30 sections with 58 summary sentences
+2025-04-21 15:47:07,899 - WARNING - No sections found in paper
+2025-04-21 15:47:07,899 - INFO - Paper 66302705: analyzed 0 sections with 54 summary sentences
+2025-04-21 15:47:08,499 - INFO - Paper 50438213: analyzed 25 sections with 16 summary sentences
+2025-04-21 15:47:09,954 - INFO - Paper 61298922: analyzed 39 sections with 64 summary sentences
+2025-04-21 15:47:09,955 - WARNING - No sections found in paper
+2025-04-21 15:47:09,955 - INFO - Paper 13187019: analyzed 0 sections with 34 summary sentences
+2025-04-21 15:47:10,388 - INFO - Paper 60887948: analyzed 18 sections with 29 summary sentences
+2025-04-21 15:47:10,389 - WARNING - No sections found in paper
+2025-04-21 15:47:10,389 - INFO - Paper 37479343: analyzed 0 sections with 60 summary sentences
+2025-04-21 15:47:11,949 - INFO - Paper 91451160: analyzed 24 sections with 39 summary sentences
+2025-04-21 15:47:12,184 - INFO - Paper 71225651: analyzed 10 sections with 24 summary sentences
+2025-04-21 15:47:12,698 - INFO - Paper 90011197: analyzed 27 sections with 18 summary sentences
+2025-04-21 15:47:12,698 - ERROR - Error analyzing paper 90011197: Object of type int64 is not JSON serializable
+2025-04-21 15:47:12,846 - INFO - Paper 22127536: analyzed 8 sections with 18 summary sentences
+2025-04-21 15:47:12,847 - WARNING - No sections found in paper
+2025-04-21 15:47:12,847 - INFO - Paper 6827132: analyzed 0 sections with 37 summary sentences
+2025-04-21 15:47:13,127 - INFO - Paper 36779622: analyzed 13 sections with 21 summary sentences
+2025-04-21 15:47:13,598 - INFO - Paper 33714440: analyzed 13 sections with 57 summary sentences
+2025-04-21 15:47:13,603 - INFO - Saving results to ./jaehyeok/results/sentence_similarity_analysis.json
