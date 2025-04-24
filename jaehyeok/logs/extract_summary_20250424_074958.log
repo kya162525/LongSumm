@@ -1,0 +1,1022 @@
+2025-04-24 07:49:58,594 - INFO - Loading gold summaries
+2025-04-24 07:49:58,600 - INFO - Starting to process papers using abstract method
+2025-04-24 07:49:58,600 - INFO - Loading existing results file: ./jaehyeok/results/summarization_abstract.json
+2025-04-24 07:49:58,600 - INFO - No existing results file found, creating new one
+2025-04-24 07:49:58,600 - INFO - Found 522 JSON files to process
+2025-04-24 07:49:58,613 - INFO - Using default tokenizer.
+2025-04-24 07:49:58,643 - INFO - Successfully processed and saved results for 58793266
+2025-04-24 07:49:58,651 - INFO - Using default tokenizer.
+2025-04-24 07:49:58,714 - INFO - Successfully processed and saved results for 82387857
+2025-04-24 07:49:58,725 - INFO - Using default tokenizer.
+2025-04-24 07:49:58,743 - INFO - Successfully processed and saved results for 5180208
+2025-04-24 07:49:58,753 - INFO - Using default tokenizer.
+2025-04-24 07:49:58,783 - INFO - Successfully processed and saved results for 43791696
+2025-04-24 07:49:58,788 - INFO - Using default tokenizer.
+2025-04-24 07:49:58,811 - INFO - Successfully processed and saved results for 78841597
+2025-04-24 07:49:58,815 - INFO - Using default tokenizer.
+2025-04-24 07:49:58,843 - INFO - Successfully processed and saved results for 90600191
+2025-04-24 07:49:58,844 - INFO - Using default tokenizer.
+2025-04-24 07:49:58,870 - INFO - Successfully processed and saved results for 66226432
+2025-04-24 07:49:58,870 - INFO - Using default tokenizer.
+2025-04-24 07:49:58,911 - INFO - Successfully processed and saved results for 64175585
+2025-04-24 07:49:58,915 - INFO - Using default tokenizer.
+2025-04-24 07:49:58,948 - INFO - Successfully processed and saved results for 21542239
+2025-04-24 07:49:58,956 - INFO - Using default tokenizer.
+2025-04-24 07:49:58,986 - INFO - Successfully processed and saved results for 88049354
+2025-04-24 07:49:58,996 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,029 - INFO - Successfully processed and saved results for 1907968
+2025-04-24 07:49:59,030 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,059 - INFO - Successfully processed and saved results for 59485457
+2025-04-24 07:49:59,064 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,089 - INFO - Successfully processed and saved results for 69976012
+2025-04-24 07:49:59,090 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,130 - INFO - Successfully processed and saved results for 86524123
+2025-04-24 07:49:59,130 - INFO - Skipping 63993374 - not in valid_ids list
+2025-04-24 07:49:59,130 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,179 - INFO - Successfully processed and saved results for 48141212
+2025-04-24 07:49:59,188 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,222 - INFO - Successfully processed and saved results for 1055799
+2025-04-24 07:49:59,223 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,259 - INFO - Successfully processed and saved results for 75442340
+2025-04-24 07:49:59,266 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,346 - INFO - Successfully processed and saved results for 41840073
+2025-04-24 07:49:59,354 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,377 - INFO - Successfully processed and saved results for 187460
+2025-04-24 07:49:59,380 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,601 - INFO - Successfully processed and saved results for 29796623
+2025-04-24 07:49:59,602 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,623 - INFO - Successfully processed and saved results for 98238949
+2025-04-24 07:49:59,623 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,644 - INFO - Successfully processed and saved results for 51450104
+2025-04-24 07:49:59,650 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,838 - INFO - Successfully processed and saved results for 43018598
+2025-04-24 07:49:59,839 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,858 - INFO - Successfully processed and saved results for 78339451
+2025-04-24 07:49:59,859 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,878 - INFO - Successfully processed and saved results for 39570633
+2025-04-24 07:49:59,879 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,898 - INFO - Successfully processed and saved results for 87558652
+2025-04-24 07:49:59,899 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,917 - INFO - Successfully processed and saved results for 96831204
+2025-04-24 07:49:59,918 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,943 - INFO - Successfully processed and saved results for 85853580
+2025-04-24 07:49:59,944 - INFO - Using default tokenizer.
+2025-04-24 07:49:59,975 - INFO - Successfully processed and saved results for 97703387
+2025-04-24 07:49:59,977 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,073 - INFO - Successfully processed and saved results for 50388820
+2025-04-24 07:50:00,075 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,094 - INFO - Successfully processed and saved results for 83248182
+2025-04-24 07:50:00,102 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,156 - INFO - Successfully processed and saved results for 99341732
+2025-04-24 07:50:00,157 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,177 - INFO - Successfully processed and saved results for 48074885
+2025-04-24 07:50:00,188 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,232 - INFO - Successfully processed and saved results for 11006232
+2025-04-24 07:50:00,234 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,251 - INFO - Successfully processed and saved results for 63511892
+2025-04-24 07:50:00,252 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,276 - INFO - Successfully processed and saved results for 24312671
+2025-04-24 07:50:00,277 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,336 - INFO - Successfully processed and saved results for 8363020
+2025-04-24 07:50:00,338 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,393 - INFO - Successfully processed and saved results for 23426061
+2025-04-24 07:50:00,394 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,468 - INFO - Successfully processed and saved results for 29703573
+2025-04-24 07:50:00,469 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,548 - INFO - Successfully processed and saved results for 80421460
+2025-04-24 07:50:00,549 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,582 - INFO - Successfully processed and saved results for 45538669
+2025-04-24 07:50:00,584 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,640 - INFO - Successfully processed and saved results for 25710556
+2025-04-24 07:50:00,641 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,665 - INFO - Successfully processed and saved results for 66099843
+2025-04-24 07:50:00,667 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,741 - INFO - Successfully processed and saved results for 23929837
+2025-04-24 07:50:00,743 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,799 - INFO - Successfully processed and saved results for 53935450
+2025-04-24 07:50:00,800 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,808 - INFO - Successfully processed and saved results for 80897282
+2025-04-24 07:50:00,822 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,857 - INFO - Successfully processed and saved results for 6777051
+2025-04-24 07:50:00,862 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,898 - INFO - Successfully processed and saved results for 27300559
+2025-04-24 07:50:00,900 - INFO - Using default tokenizer.
+2025-04-24 07:50:00,912 - INFO - Successfully processed and saved results for 414696
+2025-04-24 07:50:00,926 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,032 - INFO - Successfully processed and saved results for 202387
+2025-04-24 07:50:01,034 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,067 - INFO - Successfully processed and saved results for 91637218
+2025-04-24 07:50:01,105 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,114 - INFO - Successfully processed and saved results for 22546727
+2025-04-24 07:50:01,148 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,177 - INFO - Successfully processed and saved results for 56196
+2025-04-24 07:50:01,177 - INFO - Skipping 74977893 - not in valid_ids list
+2025-04-24 07:50:01,178 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,212 - INFO - Successfully processed and saved results for 89853012
+2025-04-24 07:50:01,214 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,288 - INFO - Successfully processed and saved results for 85839366
+2025-04-24 07:50:01,290 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,345 - INFO - Successfully processed and saved results for 22744554
+2025-04-24 07:50:01,350 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,377 - INFO - Successfully processed and saved results for 19050347
+2025-04-24 07:50:01,377 - INFO - Skipping 70140653 - not in valid_ids list
+2025-04-24 07:50:01,379 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,394 - INFO - Successfully processed and saved results for 93218559
+2025-04-24 07:50:01,396 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,405 - INFO - Successfully processed and saved results for 88548359
+2025-04-24 07:50:01,410 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,436 - INFO - Successfully processed and saved results for 35704901
+2025-04-24 07:50:01,438 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,468 - INFO - Successfully processed and saved results for 58308538
+2025-04-24 07:50:01,469 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,527 - INFO - Successfully processed and saved results for 84548548
+2025-04-24 07:50:01,529 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,547 - INFO - Successfully processed and saved results for 62302416
+2025-04-24 07:50:01,549 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,568 - INFO - Successfully processed and saved results for 58884367
+2025-04-24 07:50:01,570 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,621 - INFO - Successfully processed and saved results for 11684235
+2025-04-24 07:50:01,623 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,669 - INFO - Successfully processed and saved results for 69502658
+2025-04-24 07:50:01,671 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,695 - INFO - Successfully processed and saved results for 68642594
+2025-04-24 07:50:01,697 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,733 - INFO - Successfully processed and saved results for 97381495
+2025-04-24 07:50:01,734 - INFO - Skipping 1050101 - not in valid_ids list
+2025-04-24 07:50:01,735 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,752 - INFO - Successfully processed and saved results for 88532041
+2025-04-24 07:50:01,753 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,806 - INFO - Successfully processed and saved results for 82314288
+2025-04-24 07:50:01,808 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,825 - INFO - Successfully processed and saved results for 78860785
+2025-04-24 07:50:01,827 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,860 - INFO - Successfully processed and saved results for 24753674
+2025-04-24 07:50:01,862 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,884 - INFO - Successfully processed and saved results for 36278339
+2025-04-24 07:50:01,886 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,932 - INFO - Successfully processed and saved results for 78861774
+2025-04-24 07:50:01,934 - INFO - Using default tokenizer.
+2025-04-24 07:50:01,976 - INFO - Successfully processed and saved results for 26262723
+2025-04-24 07:50:01,978 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,011 - INFO - Successfully processed and saved results for 85123331
+2025-04-24 07:50:02,012 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,074 - INFO - Successfully processed and saved results for 93195231
+2025-04-24 07:50:02,074 - INFO - Skipping 65847395 - not in valid_ids list
+2025-04-24 07:50:02,076 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,165 - INFO - Successfully processed and saved results for 34187605
+2025-04-24 07:50:02,167 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,203 - INFO - Successfully processed and saved results for 57956236
+2025-04-24 07:50:02,205 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,238 - INFO - Successfully processed and saved results for 3855110
+2025-04-24 07:50:02,240 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,278 - INFO - Successfully processed and saved results for 16124640
+2025-04-24 07:50:02,280 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,330 - INFO - Successfully processed and saved results for 93025332
+2025-04-24 07:50:02,333 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,395 - INFO - Successfully processed and saved results for 75952682
+2025-04-24 07:50:02,397 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,485 - INFO - Successfully processed and saved results for 22030520
+2025-04-24 07:50:02,487 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,700 - INFO - Successfully processed and saved results for 7590139
+2025-04-24 07:50:02,702 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,793 - INFO - Successfully processed and saved results for 17601393
+2025-04-24 07:50:02,804 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,848 - INFO - Successfully processed and saved results for 53269747
+2025-04-24 07:50:02,850 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,860 - INFO - Successfully processed and saved results for 11481096
+2025-04-24 07:50:02,862 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,882 - INFO - Successfully processed and saved results for 96217072
+2025-04-24 07:50:02,895 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,925 - INFO - Successfully processed and saved results for 10374612
+2025-04-24 07:50:02,927 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,945 - INFO - Successfully processed and saved results for 37796162
+2025-04-24 07:50:02,945 - INFO - Skipping 24431610 - not in valid_ids list
+2025-04-24 07:50:02,947 - INFO - Using default tokenizer.
+2025-04-24 07:50:02,959 - INFO - Successfully processed and saved results for 4216862
+2025-04-24 07:50:02,961 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,025 - INFO - Successfully processed and saved results for 72744034
+2025-04-24 07:50:03,026 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,047 - INFO - Successfully processed and saved results for 4647896
+2025-04-24 07:50:03,049 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,113 - INFO - Successfully processed and saved results for 9563928
+2025-04-24 07:50:03,116 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,136 - INFO - Successfully processed and saved results for 57613420
+2025-04-24 07:50:03,138 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,181 - INFO - Successfully processed and saved results for 51458146
+2025-04-24 07:50:03,183 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,236 - INFO - Successfully processed and saved results for 40883301
+2025-04-24 07:50:03,238 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,279 - INFO - Successfully processed and saved results for 57228237
+2025-04-24 07:50:03,281 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,374 - INFO - Successfully processed and saved results for 8984509
+2025-04-24 07:50:03,376 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,396 - INFO - Successfully processed and saved results for 7570292
+2025-04-24 07:50:03,398 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,444 - INFO - Successfully processed and saved results for 84030160
+2025-04-24 07:50:03,446 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,467 - INFO - Successfully processed and saved results for 48411412
+2025-04-24 07:50:03,469 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,522 - INFO - Successfully processed and saved results for 61580548
+2025-04-24 07:50:03,524 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,584 - INFO - Successfully processed and saved results for 97291551
+2025-04-24 07:50:03,586 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,611 - INFO - Successfully processed and saved results for 5674972
+2025-04-24 07:50:03,617 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,656 - INFO - Successfully processed and saved results for 26105266
+2025-04-24 07:50:03,662 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,737 - INFO - Successfully processed and saved results for 50524744
+2025-04-24 07:50:03,739 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,758 - INFO - Successfully processed and saved results for 93060618
+2025-04-24 07:50:03,761 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,857 - INFO - Successfully processed and saved results for 57114772
+2025-04-24 07:50:03,860 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,900 - INFO - Successfully processed and saved results for 36200725
+2025-04-24 07:50:03,902 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,944 - INFO - Successfully processed and saved results for 72922440
+2025-04-24 07:50:03,946 - INFO - Using default tokenizer.
+2025-04-24 07:50:03,974 - INFO - Successfully processed and saved results for 7120002
+2025-04-24 07:50:03,976 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,016 - INFO - Successfully processed and saved results for 91633253
+2025-04-24 07:50:04,018 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,068 - INFO - Successfully processed and saved results for 31459000
+2025-04-24 07:50:04,071 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,098 - INFO - Successfully processed and saved results for 33427271
+2025-04-24 07:50:04,100 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,138 - INFO - Successfully processed and saved results for 78499306
+2025-04-24 07:50:04,141 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,208 - INFO - Successfully processed and saved results for 13135318
+2025-04-24 07:50:04,211 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,240 - INFO - Successfully processed and saved results for 11354749
+2025-04-24 07:50:04,243 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,271 - INFO - Successfully processed and saved results for 94646863
+2025-04-24 07:50:04,274 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,360 - INFO - Successfully processed and saved results for 8151447
+2025-04-24 07:50:04,363 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,385 - INFO - Successfully processed and saved results for 55048906
+2025-04-24 07:50:04,388 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,437 - INFO - Successfully processed and saved results for 17350626
+2025-04-24 07:50:04,440 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,482 - INFO - Successfully processed and saved results for 80770343
+2025-04-24 07:50:04,484 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,499 - INFO - Successfully processed and saved results for 78190587
+2025-04-24 07:50:04,502 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,544 - INFO - Successfully processed and saved results for 27051635
+2025-04-24 07:50:04,546 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,590 - INFO - Successfully processed and saved results for 97980035
+2025-04-24 07:50:04,592 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,640 - INFO - Successfully processed and saved results for 7255717
+2025-04-24 07:50:04,643 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,691 - INFO - Successfully processed and saved results for 38779502
+2025-04-24 07:50:04,694 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,773 - INFO - Successfully processed and saved results for 65595064
+2025-04-24 07:50:04,776 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,790 - INFO - Successfully processed and saved results for 4206973
+2025-04-24 07:50:04,793 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,878 - INFO - Successfully processed and saved results for 14819310
+2025-04-24 07:50:04,881 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,983 - INFO - Successfully processed and saved results for 5550259
+2025-04-24 07:50:04,986 - INFO - Using default tokenizer.
+2025-04-24 07:50:04,998 - INFO - Successfully processed and saved results for 99295545
+2025-04-24 07:50:04,998 - INFO - Skipping 74374635 - not in valid_ids list
+2025-04-24 07:50:05,001 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,041 - INFO - Successfully processed and saved results for 45186835
+2025-04-24 07:50:05,044 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,099 - INFO - Successfully processed and saved results for 3953515
+2025-04-24 07:50:05,102 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,126 - INFO - Successfully processed and saved results for 30748495
+2025-04-24 07:50:05,132 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,174 - INFO - Successfully processed and saved results for 91812941
+2025-04-24 07:50:05,177 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,264 - INFO - Successfully processed and saved results for 2899329
+2025-04-24 07:50:05,264 - INFO - Skipping 59963771 - not in valid_ids list
+2025-04-24 07:50:05,267 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,321 - INFO - Successfully processed and saved results for 11542688
+2025-04-24 07:50:05,324 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,353 - INFO - Successfully processed and saved results for 8087311
+2025-04-24 07:50:05,356 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,390 - INFO - Successfully processed and saved results for 70889889
+2025-04-24 07:50:05,393 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,436 - INFO - Successfully processed and saved results for 93598871
+2025-04-24 07:50:05,439 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,456 - INFO - Successfully processed and saved results for 62056200
+2025-04-24 07:50:05,459 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,496 - INFO - Successfully processed and saved results for 71370947
+2025-04-24 07:50:05,499 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,583 - INFO - Successfully processed and saved results for 24169489
+2025-04-24 07:50:05,583 - INFO - Skipping 13237217 - not in valid_ids list
+2025-04-24 07:50:05,590 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,619 - INFO - Successfully processed and saved results for 24000799
+2025-04-24 07:50:05,621 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,705 - INFO - Successfully processed and saved results for 52464539
+2025-04-24 07:50:05,708 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,735 - INFO - Successfully processed and saved results for 77684000
+2025-04-24 07:50:05,738 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,826 - INFO - Successfully processed and saved results for 96747724
+2025-04-24 07:50:05,829 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,842 - INFO - Successfully processed and saved results for 29981772
+2025-04-24 07:50:05,842 - INFO - Skipping 72992946 - not in valid_ids list
+2025-04-24 07:50:05,845 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,888 - INFO - Successfully processed and saved results for 31303819
+2025-04-24 07:50:05,891 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,943 - INFO - Successfully processed and saved results for 31194274
+2025-04-24 07:50:05,946 - INFO - Using default tokenizer.
+2025-04-24 07:50:05,993 - INFO - Successfully processed and saved results for 51116334
+2025-04-24 07:50:05,996 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,042 - INFO - Successfully processed and saved results for 41161677
+2025-04-24 07:50:06,045 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,075 - INFO - Successfully processed and saved results for 81057283
+2025-04-24 07:50:06,115 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,156 - INFO - Successfully processed and saved results for 45435119
+2025-04-24 07:50:06,159 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,179 - INFO - Successfully processed and saved results for 85820029
+2025-04-24 07:50:06,182 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,197 - INFO - Successfully processed and saved results for 93142771
+2025-04-24 07:50:06,200 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,226 - INFO - Successfully processed and saved results for 87068449
+2025-04-24 07:50:06,229 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,278 - INFO - Successfully processed and saved results for 11779349
+2025-04-24 07:50:06,281 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,331 - INFO - Successfully processed and saved results for 4784102
+2025-04-24 07:50:06,332 - INFO - Skipping 81623492 - not in valid_ids list
+2025-04-24 07:50:06,335 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,379 - INFO - Successfully processed and saved results for 27321339
+2025-04-24 07:50:06,382 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,444 - INFO - Successfully processed and saved results for 12625177
+2025-04-24 07:50:06,448 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,509 - INFO - Successfully processed and saved results for 18958324
+2025-04-24 07:50:06,511 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,527 - INFO - Successfully processed and saved results for 33015723
+2025-04-24 07:50:06,530 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,652 - INFO - Successfully processed and saved results for 8455503
+2025-04-24 07:50:06,655 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,684 - INFO - Successfully processed and saved results for 66681632
+2025-04-24 07:50:06,684 - INFO - Skipping 74971632 - not in valid_ids list
+2025-04-24 07:50:06,687 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,740 - INFO - Successfully processed and saved results for 91200961
+2025-04-24 07:50:06,752 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,769 - INFO - Successfully processed and saved results for 687757
+2025-04-24 07:50:06,773 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,842 - INFO - Successfully processed and saved results for 11773091
+2025-04-24 07:50:06,846 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,880 - INFO - Successfully processed and saved results for 26668230
+2025-04-24 07:50:06,883 - INFO - Using default tokenizer.
+2025-04-24 07:50:06,935 - INFO - Successfully processed and saved results for 80719489
+2025-04-24 07:50:06,935 - INFO - Skipping 60641106 - not in valid_ids list
+2025-04-24 07:50:06,939 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,052 - INFO - Successfully processed and saved results for 34958521
+2025-04-24 07:50:07,055 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,229 - INFO - Successfully processed and saved results for 45795840
+2025-04-24 07:50:07,233 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,299 - INFO - Successfully processed and saved results for 83267919
+2025-04-24 07:50:07,303 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,331 - INFO - Successfully processed and saved results for 23242120
+2025-04-24 07:50:07,335 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,377 - INFO - Successfully processed and saved results for 7912651
+2025-04-24 07:50:07,380 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,413 - INFO - Successfully processed and saved results for 27086937
+2025-04-24 07:50:07,417 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,566 - INFO - Successfully processed and saved results for 17539393
+2025-04-24 07:50:07,569 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,609 - INFO - Successfully processed and saved results for 93980002
+2025-04-24 07:50:07,613 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,662 - INFO - Successfully processed and saved results for 61603670
+2025-04-24 07:50:07,665 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,691 - INFO - Successfully processed and saved results for 7157784
+2025-04-24 07:50:07,694 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,729 - INFO - Successfully processed and saved results for 56472821
+2025-04-24 07:50:07,732 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,768 - INFO - Successfully processed and saved results for 73180675
+2025-04-24 07:50:07,772 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,833 - INFO - Successfully processed and saved results for 98262950
+2025-04-24 07:50:07,836 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,894 - INFO - Successfully processed and saved results for 87208689
+2025-04-24 07:50:07,898 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,936 - INFO - Successfully processed and saved results for 46342402
+2025-04-24 07:50:07,940 - INFO - Using default tokenizer.
+2025-04-24 07:50:07,967 - INFO - Successfully processed and saved results for 11636296
+2025-04-24 07:50:07,971 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,045 - INFO - Successfully processed and saved results for 69467563
+2025-04-24 07:50:08,048 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,064 - INFO - Successfully processed and saved results for 70481957
+2025-04-24 07:50:08,064 - INFO - Skipping 963444 - not in valid_ids list
+2025-04-24 07:50:08,067 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,088 - INFO - Successfully processed and saved results for 76514111
+2025-04-24 07:50:08,091 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,184 - INFO - Successfully processed and saved results for 73515355
+2025-04-24 07:50:08,188 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,235 - INFO - Successfully processed and saved results for 75865335
+2025-04-24 07:50:08,238 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,253 - INFO - Successfully processed and saved results for 41467472
+2025-04-24 07:50:08,256 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,272 - INFO - Successfully processed and saved results for 31543932
+2025-04-24 07:50:08,276 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,293 - INFO - Successfully processed and saved results for 34524227
+2025-04-24 07:50:08,297 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,364 - INFO - Successfully processed and saved results for 15084340
+2025-04-24 07:50:08,368 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,388 - INFO - Successfully processed and saved results for 30877354
+2025-04-24 07:50:08,391 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,426 - INFO - Successfully processed and saved results for 63755811
+2025-04-24 07:50:08,429 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,455 - INFO - Successfully processed and saved results for 12175403
+2025-04-24 07:50:08,468 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,560 - INFO - Successfully processed and saved results for 74156567
+2025-04-24 07:50:08,563 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,603 - INFO - Successfully processed and saved results for 60516406
+2025-04-24 07:50:08,606 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,643 - INFO - Successfully processed and saved results for 65123124
+2025-04-24 07:50:08,648 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,692 - INFO - Successfully processed and saved results for 24510148
+2025-04-24 07:50:08,696 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,735 - INFO - Successfully processed and saved results for 97932426
+2025-04-24 07:50:08,738 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,762 - INFO - Successfully processed and saved results for 80262838
+2025-04-24 07:50:08,766 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,796 - INFO - Successfully processed and saved results for 10218080
+2025-04-24 07:50:08,817 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,850 - INFO - Successfully processed and saved results for 76817909
+2025-04-24 07:50:08,850 - INFO - Skipping 43813190 - not in valid_ids list
+2025-04-24 07:50:08,854 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,946 - INFO - Successfully processed and saved results for 96308075
+2025-04-24 07:50:08,950 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,966 - INFO - Successfully processed and saved results for 97592875
+2025-04-24 07:50:08,970 - INFO - Using default tokenizer.
+2025-04-24 07:50:08,987 - INFO - Successfully processed and saved results for 69119323
+2025-04-24 07:50:08,990 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,015 - INFO - Successfully processed and saved results for 7904666
+2025-04-24 07:50:09,019 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,133 - INFO - Successfully processed and saved results for 87041789
+2025-04-24 07:50:09,137 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,164 - INFO - Successfully processed and saved results for 81916449
+2025-04-24 07:50:09,165 - INFO - Skipping 70176908 - not in valid_ids list
+2025-04-24 07:50:09,168 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,240 - INFO - Successfully processed and saved results for 2852538
+2025-04-24 07:50:09,244 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,269 - INFO - Successfully processed and saved results for 62996279
+2025-04-24 07:50:09,273 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,294 - INFO - Successfully processed and saved results for 18304114
+2025-04-24 07:50:09,298 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,338 - INFO - Successfully processed and saved results for 87827594
+2025-04-24 07:50:09,348 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,375 - INFO - Successfully processed and saved results for 43280550
+2025-04-24 07:50:09,380 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,404 - INFO - Successfully processed and saved results for 99878837
+2025-04-24 07:50:09,408 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,491 - INFO - Successfully processed and saved results for 263861
+2025-04-24 07:50:09,491 - INFO - Skipping 53851426 - not in valid_ids list
+2025-04-24 07:50:09,494 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,528 - INFO - Successfully processed and saved results for 39357436
+2025-04-24 07:50:09,532 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,609 - INFO - Successfully processed and saved results for 82626355
+2025-04-24 07:50:09,612 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,646 - INFO - Successfully processed and saved results for 39353178
+2025-04-24 07:50:09,650 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,703 - INFO - Successfully processed and saved results for 86508243
+2025-04-24 07:50:09,707 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,735 - INFO - Successfully processed and saved results for 63758896
+2025-04-24 07:50:09,739 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,812 - INFO - Successfully processed and saved results for 74547298
+2025-04-24 07:50:09,815 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,907 - INFO - Successfully processed and saved results for 72529720
+2025-04-24 07:50:09,911 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,942 - INFO - Successfully processed and saved results for 63531440
+2025-04-24 07:50:09,946 - INFO - Using default tokenizer.
+2025-04-24 07:50:09,979 - INFO - Successfully processed and saved results for 15643187
+2025-04-24 07:50:09,982 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,075 - INFO - Successfully processed and saved results for 82821959
+2025-04-24 07:50:10,079 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,105 - INFO - Successfully processed and saved results for 47257042
+2025-04-24 07:50:10,109 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,168 - INFO - Successfully processed and saved results for 33126132
+2025-04-24 07:50:10,172 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,237 - INFO - Successfully processed and saved results for 81780960
+2025-04-24 07:50:10,241 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,279 - INFO - Successfully processed and saved results for 30485653
+2025-04-24 07:50:10,284 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,484 - INFO - Successfully processed and saved results for 36197895
+2025-04-24 07:50:10,488 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,581 - INFO - Successfully processed and saved results for 68340528
+2025-04-24 07:50:10,585 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,642 - INFO - Successfully processed and saved results for 68399070
+2025-04-24 07:50:10,647 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,751 - INFO - Successfully processed and saved results for 23942242
+2025-04-24 07:50:10,755 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,782 - INFO - Successfully processed and saved results for 30905451
+2025-04-24 07:50:10,786 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,846 - INFO - Successfully processed and saved results for 38469042
+2025-04-24 07:50:10,850 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,882 - INFO - Successfully processed and saved results for 96002700
+2025-04-24 07:50:10,886 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,924 - INFO - Successfully processed and saved results for 35247822
+2025-04-24 07:50:10,924 - INFO - Skipping 96599676 - not in valid_ids list
+2025-04-24 07:50:10,928 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,955 - INFO - Successfully processed and saved results for 85933068
+2025-04-24 07:50:10,960 - INFO - Using default tokenizer.
+2025-04-24 07:50:10,987 - INFO - Successfully processed and saved results for 38830210
+2025-04-24 07:50:10,991 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,056 - INFO - Successfully processed and saved results for 82220044
+2025-04-24 07:50:11,061 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,159 - INFO - Successfully processed and saved results for 45518901
+2025-04-24 07:50:11,159 - INFO - Skipping 4741660 - not in valid_ids list
+2025-04-24 07:50:11,167 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,196 - INFO - Successfully processed and saved results for 86423785
+2025-04-24 07:50:11,200 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,311 - INFO - Successfully processed and saved results for 88655260
+2025-04-24 07:50:11,315 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,416 - INFO - Successfully processed and saved results for 43687503
+2025-04-24 07:50:11,421 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,455 - INFO - Successfully processed and saved results for 70335565
+2025-04-24 07:50:11,460 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,482 - INFO - Successfully processed and saved results for 72788236
+2025-04-24 07:50:11,487 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,526 - INFO - Successfully processed and saved results for 49139111
+2025-04-24 07:50:11,531 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,595 - INFO - Successfully processed and saved results for 30995172
+2025-04-24 07:50:11,607 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,645 - INFO - Successfully processed and saved results for 26955055
+2025-04-24 07:50:11,650 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,695 - INFO - Successfully processed and saved results for 26277001
+2025-04-24 07:50:11,699 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,730 - INFO - Successfully processed and saved results for 12279648
+2025-04-24 07:50:11,735 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,802 - INFO - Successfully processed and saved results for 31021586
+2025-04-24 07:50:11,807 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,843 - INFO - Successfully processed and saved results for 11418476
+2025-04-24 07:50:11,844 - INFO - Skipping 81034618 - not in valid_ids list
+2025-04-24 07:50:11,853 - INFO - Using default tokenizer.
+2025-04-24 07:50:11,899 - INFO - Successfully processed and saved results for 14310989
+2025-04-24 07:50:11,904 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,005 - INFO - Successfully processed and saved results for 76874430
+2025-04-24 07:50:12,005 - INFO - Skipping 28171009 - not in valid_ids list
+2025-04-24 07:50:12,005 - INFO - Skipping 43514018 - not in valid_ids list
+2025-04-24 07:50:12,009 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,034 - INFO - Successfully processed and saved results for 79512250
+2025-04-24 07:50:12,039 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,078 - INFO - Successfully processed and saved results for 35973587
+2025-04-24 07:50:12,083 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,106 - INFO - Successfully processed and saved results for 38867178
+2025-04-24 07:50:12,115 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,192 - INFO - Successfully processed and saved results for 25766140
+2025-04-24 07:50:12,197 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,267 - INFO - Successfully processed and saved results for 92615357
+2025-04-24 07:50:12,271 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,307 - INFO - Successfully processed and saved results for 44210578
+2025-04-24 07:50:12,311 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,378 - INFO - Successfully processed and saved results for 59277766
+2025-04-24 07:50:12,382 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,412 - INFO - Successfully processed and saved results for 45043151
+2025-04-24 07:50:12,417 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,496 - INFO - Successfully processed and saved results for 65756728
+2025-04-24 07:50:12,501 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,557 - INFO - Successfully processed and saved results for 15757806
+2025-04-24 07:50:12,562 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,632 - INFO - Successfully processed and saved results for 13040160
+2025-04-24 07:50:12,637 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,698 - INFO - Successfully processed and saved results for 19173630
+2025-04-24 07:50:12,699 - INFO - Skipping 95858167 - not in valid_ids list
+2025-04-24 07:50:12,703 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,756 - INFO - Successfully processed and saved results for 78412080
+2025-04-24 07:50:12,761 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,787 - INFO - Successfully processed and saved results for 99440206
+2025-04-24 07:50:12,791 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,827 - INFO - Successfully processed and saved results for 47698609
+2025-04-24 07:50:12,832 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,910 - INFO - Successfully processed and saved results for 60253398
+2025-04-24 07:50:12,915 - INFO - Using default tokenizer.
+2025-04-24 07:50:12,935 - INFO - Successfully processed and saved results for 40774761
+2025-04-24 07:50:12,940 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,024 - INFO - Successfully processed and saved results for 84655302
+2025-04-24 07:50:13,024 - INFO - Skipping 27264933 - not in valid_ids list
+2025-04-24 07:50:13,028 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,054 - INFO - Successfully processed and saved results for 70691684
+2025-04-24 07:50:13,059 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,086 - INFO - Successfully processed and saved results for 53809041
+2025-04-24 07:50:13,091 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,109 - INFO - Successfully processed and saved results for 5262509
+2025-04-24 07:50:13,114 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,134 - INFO - Successfully processed and saved results for 49439664
+2025-04-24 07:50:13,139 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,228 - INFO - Successfully processed and saved results for 87411149
+2025-04-24 07:50:13,232 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,277 - INFO - Successfully processed and saved results for 17409856
+2025-04-24 07:50:13,281 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,332 - INFO - Successfully processed and saved results for 30789903
+2025-04-24 07:50:13,337 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,386 - INFO - Successfully processed and saved results for 8264189
+2025-04-24 07:50:13,391 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,407 - INFO - Successfully processed and saved results for 80004741
+2025-04-24 07:50:13,411 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,637 - INFO - Successfully processed and saved results for 32533290
+2025-04-24 07:50:13,641 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,665 - INFO - Successfully processed and saved results for 8136900
+2025-04-24 07:50:13,670 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,749 - INFO - Successfully processed and saved results for 518237
+2025-04-24 07:50:13,754 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,783 - INFO - Successfully processed and saved results for 77737945
+2025-04-24 07:50:13,788 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,813 - INFO - Successfully processed and saved results for 18322264
+2025-04-24 07:50:13,818 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,845 - INFO - Successfully processed and saved results for 16973018
+2025-04-24 07:50:13,850 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,916 - INFO - Successfully processed and saved results for 76635514
+2025-04-24 07:50:13,921 - INFO - Using default tokenizer.
+2025-04-24 07:50:13,971 - INFO - Successfully processed and saved results for 79471009
+2025-04-24 07:50:13,976 - INFO - Using default tokenizer.
+2025-04-24 07:50:14,012 - INFO - Successfully processed and saved results for 65102009
+2025-04-24 07:50:14,017 - INFO - Using default tokenizer.
+2025-04-24 07:50:14,134 - INFO - Successfully processed and saved results for 35377831
+2025-04-24 07:50:14,139 - INFO - Using default tokenizer.
+2025-04-24 07:50:14,163 - INFO - Successfully processed and saved results for 77534612
+2025-04-24 07:50:14,168 - INFO - Using default tokenizer.
+2025-04-24 07:50:14,191 - INFO - Successfully processed and saved results for 6799048
+2025-04-24 07:50:14,197 - INFO - Using default tokenizer.
+2025-04-24 07:50:14,301 - INFO - Successfully processed and saved results for 66357293
+2025-04-24 07:50:14,306 - INFO - Using default tokenizer.
+2025-04-24 07:50:14,369 - INFO - Successfully processed and saved results for 32338938
+2025-04-24 07:50:14,374 - INFO - Using default tokenizer.
+2025-04-24 07:50:14,463 - INFO - Successfully processed and saved results for 79305631
+2025-04-24 07:50:14,468 - INFO - Using default tokenizer.
+2025-04-24 07:50:14,493 - INFO - Successfully processed and saved results for 17980043
+2025-04-24 07:50:14,499 - INFO - Using default tokenizer.
+2025-04-24 07:50:14,578 - INFO - Successfully processed and saved results for 66112363
+2025-04-24 07:50:14,583 - INFO - Using default tokenizer.
+2025-04-24 07:50:14,616 - INFO - Successfully processed and saved results for 42443464
+2025-04-24 07:50:14,621 - INFO - Using default tokenizer.
+2025-04-24 07:50:14,731 - INFO - Successfully processed and saved results for 75779006
+2025-04-24 07:50:14,736 - INFO - Using default tokenizer.
+2025-04-24 07:50:14,858 - INFO - Successfully processed and saved results for 16027177
+2025-04-24 07:50:14,863 - INFO - Using default tokenizer.
+2025-04-24 07:50:14,948 - INFO - Successfully processed and saved results for 66912872
+2025-04-24 07:50:14,953 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,028 - INFO - Successfully processed and saved results for 24824894
+2025-04-24 07:50:15,034 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,078 - INFO - Successfully processed and saved results for 75937139
+2025-04-24 07:50:15,084 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,145 - INFO - Successfully processed and saved results for 1873334
+2025-04-24 07:50:15,151 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,167 - INFO - Successfully processed and saved results for 71425952
+2025-04-24 07:50:15,172 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,190 - INFO - Successfully processed and saved results for 37775721
+2025-04-24 07:50:15,196 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,223 - INFO - Successfully processed and saved results for 26515037
+2025-04-24 07:50:15,229 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,248 - INFO - Successfully processed and saved results for 99668388
+2025-04-24 07:50:15,248 - INFO - Skipping 1077676 - not in valid_ids list
+2025-04-24 07:50:15,254 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,349 - INFO - Successfully processed and saved results for 90421095
+2025-04-24 07:50:15,358 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,379 - INFO - Successfully processed and saved results for 69537377
+2025-04-24 07:50:15,384 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,431 - INFO - Successfully processed and saved results for 16280529
+2025-04-24 07:50:15,436 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,514 - INFO - Successfully processed and saved results for 13793499
+2025-04-24 07:50:15,519 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,553 - INFO - Successfully processed and saved results for 49519055
+2025-04-24 07:50:15,559 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,672 - INFO - Successfully processed and saved results for 23313716
+2025-04-24 07:50:15,678 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,753 - INFO - Successfully processed and saved results for 37010180
+2025-04-24 07:50:15,758 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,811 - INFO - Successfully processed and saved results for 47686356
+2025-04-24 07:50:15,817 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,853 - INFO - Successfully processed and saved results for 3517250
+2025-04-24 07:50:15,858 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,899 - INFO - Successfully processed and saved results for 47723293
+2025-04-24 07:50:15,905 - INFO - Using default tokenizer.
+2025-04-24 07:50:15,965 - INFO - Successfully processed and saved results for 18521109
+2025-04-24 07:50:15,976 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,021 - INFO - Successfully processed and saved results for 62769214
+2025-04-24 07:50:16,027 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,071 - INFO - Successfully processed and saved results for 88969640
+2025-04-24 07:50:16,078 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,115 - INFO - Successfully processed and saved results for 73424952
+2025-04-24 07:50:16,121 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,167 - INFO - Successfully processed and saved results for 89581601
+2025-04-24 07:50:16,184 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,230 - INFO - Successfully processed and saved results for 42731227
+2025-04-24 07:50:16,230 - INFO - Skipping 6469050 - not in valid_ids list
+2025-04-24 07:50:16,236 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,293 - INFO - Successfully processed and saved results for 597051
+2025-04-24 07:50:16,299 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,328 - INFO - Successfully processed and saved results for 21919380
+2025-04-24 07:50:16,334 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,425 - INFO - Successfully processed and saved results for 51254358
+2025-04-24 07:50:16,430 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,489 - INFO - Successfully processed and saved results for 36272485
+2025-04-24 07:50:16,495 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,560 - INFO - Successfully processed and saved results for 43650136
+2025-04-24 07:50:16,565 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,609 - INFO - Successfully processed and saved results for 69481324
+2025-04-24 07:50:16,614 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,651 - INFO - Successfully processed and saved results for 57934330
+2025-04-24 07:50:16,657 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,701 - INFO - Successfully processed and saved results for 8601517
+2025-04-24 07:50:16,706 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,783 - INFO - Successfully processed and saved results for 49333267
+2025-04-24 07:50:16,789 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,830 - INFO - Successfully processed and saved results for 94730041
+2025-04-24 07:50:16,836 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,865 - INFO - Successfully processed and saved results for 24950879
+2025-04-24 07:50:16,871 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,911 - INFO - Successfully processed and saved results for 74164301
+2025-04-24 07:50:16,917 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,965 - INFO - Successfully processed and saved results for 59320034
+2025-04-24 07:50:16,965 - INFO - Skipping 8240954 - not in valid_ids list
+2025-04-24 07:50:16,971 - INFO - Using default tokenizer.
+2025-04-24 07:50:16,997 - INFO - Successfully processed and saved results for 21532550
+2025-04-24 07:50:17,002 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,062 - INFO - Successfully processed and saved results for 21145042
+2025-04-24 07:50:17,068 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,113 - INFO - Successfully processed and saved results for 52492536
+2025-04-24 07:50:17,119 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,159 - INFO - Successfully processed and saved results for 92451519
+2025-04-24 07:50:17,164 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,218 - INFO - Successfully processed and saved results for 86675541
+2025-04-24 07:50:17,224 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,269 - INFO - Successfully processed and saved results for 16057781
+2025-04-24 07:50:17,274 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,354 - INFO - Successfully processed and saved results for 12239056
+2025-04-24 07:50:17,359 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,452 - INFO - Successfully processed and saved results for 17754953
+2025-04-24 07:50:17,452 - INFO - Skipping 70719243 - not in valid_ids list
+2025-04-24 07:50:17,458 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,519 - INFO - Successfully processed and saved results for 50897768
+2025-04-24 07:50:17,525 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,588 - INFO - Successfully processed and saved results for 17675091
+2025-04-24 07:50:17,594 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,661 - INFO - Successfully processed and saved results for 37263635
+2025-04-24 07:50:17,667 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,698 - INFO - Successfully processed and saved results for 16973657
+2025-04-24 07:50:17,699 - INFO - Skipping 76854692 - not in valid_ids list
+2025-04-24 07:50:17,706 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,739 - INFO - Successfully processed and saved results for 46416317
+2025-04-24 07:50:17,745 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,783 - INFO - Successfully processed and saved results for 69694249
+2025-04-24 07:50:17,788 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,855 - INFO - Successfully processed and saved results for 61360879
+2025-04-24 07:50:17,861 - INFO - Using default tokenizer.
+2025-04-24 07:50:17,925 - INFO - Successfully processed and saved results for 97923725
+2025-04-24 07:50:17,931 - INFO - Using default tokenizer.
+2025-04-24 07:50:18,001 - INFO - Successfully processed and saved results for 35928796
+2025-04-24 07:50:18,007 - INFO - Using default tokenizer.
+2025-04-24 07:50:18,081 - INFO - Successfully processed and saved results for 23675750
+2025-04-24 07:50:18,086 - INFO - Using default tokenizer.
+2025-04-24 07:50:18,250 - INFO - Successfully processed and saved results for 85505359
+2025-04-24 07:50:18,256 - INFO - Using default tokenizer.
+2025-04-24 07:50:18,322 - INFO - Successfully processed and saved results for 99384474
+2025-04-24 07:50:18,327 - INFO - Using default tokenizer.
+2025-04-24 07:50:18,362 - INFO - Successfully processed and saved results for 31183232
+2025-04-24 07:50:18,368 - INFO - Using default tokenizer.
+2025-04-24 07:50:18,408 - INFO - Successfully processed and saved results for 30189879
+2025-04-24 07:50:18,415 - INFO - Using default tokenizer.
+2025-04-24 07:50:18,457 - INFO - Successfully processed and saved results for 68635574
+2025-04-24 07:50:18,470 - INFO - Using default tokenizer.
+2025-04-24 07:50:18,562 - INFO - Successfully processed and saved results for 84480736
+2025-04-24 07:50:18,568 - INFO - Using default tokenizer.
+2025-04-24 07:50:18,666 - INFO - Successfully processed and saved results for 28037079
+2025-04-24 07:50:18,671 - INFO - Using default tokenizer.
+2025-04-24 07:50:18,726 - INFO - Successfully processed and saved results for 52208833
+2025-04-24 07:50:18,726 - INFO - Skipping 73705154 - not in valid_ids list
+2025-04-24 07:50:18,732 - INFO - Using default tokenizer.
+2025-04-24 07:50:18,805 - INFO - Successfully processed and saved results for 15062404
+2025-04-24 07:50:18,818 - INFO - Using default tokenizer.
+2025-04-24 07:50:18,862 - INFO - Successfully processed and saved results for 81535007
+2025-04-24 07:50:18,874 - INFO - Using default tokenizer.
+2025-04-24 07:50:18,908 - INFO - Successfully processed and saved results for 11790475
+2025-04-24 07:50:18,914 - INFO - Using default tokenizer.
+2025-04-24 07:50:18,945 - INFO - Successfully processed and saved results for 4728464
+2025-04-24 07:50:18,951 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,062 - INFO - Successfully processed and saved results for 63188694
+2025-04-24 07:50:19,068 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,127 - INFO - Successfully processed and saved results for 48091191
+2025-04-24 07:50:19,133 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,197 - INFO - Successfully processed and saved results for 92908954
+2025-04-24 07:50:19,204 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,268 - INFO - Successfully processed and saved results for 24928430
+2025-04-24 07:50:19,274 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,316 - INFO - Successfully processed and saved results for 54139177
+2025-04-24 07:50:19,322 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,352 - INFO - Successfully processed and saved results for 4353776
+2025-04-24 07:50:19,359 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,451 - INFO - Successfully processed and saved results for 37135417
+2025-04-24 07:50:19,458 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,583 - INFO - Successfully processed and saved results for 39038842
+2025-04-24 07:50:19,589 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,697 - INFO - Successfully processed and saved results for 13655370
+2025-04-24 07:50:19,704 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,756 - INFO - Successfully processed and saved results for 75389943
+2025-04-24 07:50:19,764 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,814 - INFO - Successfully processed and saved results for 50538257
+2025-04-24 07:50:19,820 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,843 - INFO - Successfully processed and saved results for 25809281
+2025-04-24 07:50:19,849 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,905 - INFO - Successfully processed and saved results for 21050319
+2025-04-24 07:50:19,911 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,939 - INFO - Successfully processed and saved results for 435175
+2025-04-24 07:50:19,939 - INFO - Skipping 18000122 - not in valid_ids list
+2025-04-24 07:50:19,946 - INFO - Using default tokenizer.
+2025-04-24 07:50:19,982 - INFO - Successfully processed and saved results for 12711637
+2025-04-24 07:50:19,988 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,027 - INFO - Successfully processed and saved results for 8799962
+2025-04-24 07:50:20,034 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,088 - INFO - Successfully processed and saved results for 73414525
+2025-04-24 07:50:20,095 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,172 - INFO - Successfully processed and saved results for 11112277
+2025-04-24 07:50:20,179 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,206 - INFO - Successfully processed and saved results for 47798365
+2025-04-24 07:50:20,212 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,273 - INFO - Successfully processed and saved results for 30621133
+2025-04-24 07:50:20,280 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,328 - INFO - Successfully processed and saved results for 56843191
+2025-04-24 07:50:20,335 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,362 - INFO - Successfully processed and saved results for 5681713
+2025-04-24 07:50:20,368 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,441 - INFO - Successfully processed and saved results for 45612165
+2025-04-24 07:50:20,447 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,518 - INFO - Successfully processed and saved results for 4830217
+2025-04-24 07:50:20,530 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,574 - INFO - Successfully processed and saved results for 67930407
+2025-04-24 07:50:20,581 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,621 - INFO - Successfully processed and saved results for 37171167
+2025-04-24 07:50:20,628 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,655 - INFO - Successfully processed and saved results for 29962756
+2025-04-24 07:50:20,662 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,729 - INFO - Successfully processed and saved results for 81001972
+2025-04-24 07:50:20,736 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,814 - INFO - Successfully processed and saved results for 82043898
+2025-04-24 07:50:20,820 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,934 - INFO - Successfully processed and saved results for 98757756
+2025-04-24 07:50:20,941 - INFO - Using default tokenizer.
+2025-04-24 07:50:20,968 - INFO - Successfully processed and saved results for 66006367
+2025-04-24 07:50:20,975 - INFO - Using default tokenizer.
+2025-04-24 07:50:21,068 - INFO - Successfully processed and saved results for 88246188
+2025-04-24 07:50:21,075 - INFO - Using default tokenizer.
+2025-04-24 07:50:21,109 - INFO - Successfully processed and saved results for 2905851
+2025-04-24 07:50:21,116 - INFO - Using default tokenizer.
+2025-04-24 07:50:21,160 - INFO - Successfully processed and saved results for 15765418
+2025-04-24 07:50:21,194 - INFO - Using default tokenizer.
+2025-04-24 07:50:21,309 - INFO - Successfully processed and saved results for 89628084
+2025-04-24 07:50:21,315 - INFO - Using default tokenizer.
+2025-04-24 07:50:21,393 - INFO - Successfully processed and saved results for 28727146
+2025-04-24 07:50:21,399 - INFO - Using default tokenizer.
+2025-04-24 07:50:21,545 - INFO - Successfully processed and saved results for 26473847
+2025-04-24 07:50:21,552 - INFO - Using default tokenizer.
+2025-04-24 07:50:21,624 - INFO - Successfully processed and saved results for 10587146
+2025-04-24 07:50:21,631 - INFO - Using default tokenizer.
+2025-04-24 07:50:21,696 - INFO - Successfully processed and saved results for 69013017
+2025-04-24 07:50:21,703 - INFO - Using default tokenizer.
+2025-04-24 07:50:21,774 - INFO - Successfully processed and saved results for 67696398
+2025-04-24 07:50:21,782 - INFO - Using default tokenizer.
+2025-04-24 07:50:21,820 - INFO - Successfully processed and saved results for 36679338
+2025-04-24 07:50:21,828 - INFO - Using default tokenizer.
+2025-04-24 07:50:21,897 - INFO - Successfully processed and saved results for 58874274
+2025-04-24 07:50:21,904 - INFO - Using default tokenizer.
+2025-04-24 07:50:21,945 - INFO - Successfully processed and saved results for 47469397
+2025-04-24 07:50:21,951 - INFO - Using default tokenizer.
+2025-04-24 07:50:21,986 - INFO - Successfully processed and saved results for 94015576
+2025-04-24 07:50:21,993 - INFO - Using default tokenizer.
+2025-04-24 07:50:22,154 - INFO - Successfully processed and saved results for 75962230
+2025-04-24 07:50:22,161 - INFO - Using default tokenizer.
+2025-04-24 07:50:22,229 - INFO - Successfully processed and saved results for 7415123
+2025-04-24 07:50:22,238 - INFO - Using default tokenizer.
+2025-04-24 07:50:22,334 - INFO - Successfully processed and saved results for 11313245
+2025-04-24 07:50:22,341 - INFO - Using default tokenizer.
+2025-04-24 07:50:22,374 - INFO - Successfully processed and saved results for 2774914
+2025-04-24 07:50:22,384 - INFO - Using default tokenizer.
+2025-04-24 07:50:22,431 - INFO - Successfully processed and saved results for 42045072
+2025-04-24 07:50:22,439 - INFO - Using default tokenizer.
+2025-04-24 07:50:22,558 - INFO - Successfully processed and saved results for 71546396
+2025-04-24 07:50:22,565 - INFO - Using default tokenizer.
+2025-04-24 07:50:22,625 - INFO - Successfully processed and saved results for 55410278
+2025-04-24 07:50:22,633 - INFO - Using default tokenizer.
+2025-04-24 07:50:22,698 - INFO - Successfully processed and saved results for 87460557
+2025-04-24 07:50:22,705 - INFO - Using default tokenizer.
+2025-04-24 07:50:22,781 - INFO - Successfully processed and saved results for 29474820
+2025-04-24 07:50:22,789 - INFO - Using default tokenizer.
+2025-04-24 07:50:22,902 - INFO - Successfully processed and saved results for 3913778
+2025-04-24 07:50:22,909 - INFO - Using default tokenizer.
+2025-04-24 07:50:22,945 - INFO - Successfully processed and saved results for 91929013
+2025-04-24 07:50:22,951 - INFO - Using default tokenizer.
+2025-04-24 07:50:22,984 - INFO - Successfully processed and saved results for 39382584
+2025-04-24 07:50:22,992 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,058 - INFO - Successfully processed and saved results for 90525296
+2025-04-24 07:50:23,066 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,111 - INFO - Successfully processed and saved results for 91325283
+2025-04-24 07:50:23,118 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,196 - INFO - Successfully processed and saved results for 32560739
+2025-04-24 07:50:23,204 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,265 - INFO - Successfully processed and saved results for 44148071
+2025-04-24 07:50:23,271 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,310 - INFO - Successfully processed and saved results for 63848470
+2025-04-24 07:50:23,317 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,354 - INFO - Successfully processed and saved results for 1540690
+2025-04-24 07:50:23,361 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,423 - INFO - Successfully processed and saved results for 67744436
+2025-04-24 07:50:23,431 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,492 - INFO - Successfully processed and saved results for 8784223
+2025-04-24 07:50:23,492 - INFO - Skipping 79091650 - not in valid_ids list
+2025-04-24 07:50:23,499 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,559 - INFO - Successfully processed and saved results for 61558513
+2025-04-24 07:50:23,566 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,602 - INFO - Successfully processed and saved results for 47397989
+2025-04-24 07:50:23,609 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,640 - INFO - Successfully processed and saved results for 93460473
+2025-04-24 07:50:23,647 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,676 - INFO - Successfully processed and saved results for 22528856
+2025-04-24 07:50:23,684 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,734 - INFO - Successfully processed and saved results for 93544751
+2025-04-24 07:50:23,742 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,859 - INFO - Successfully processed and saved results for 4536127
+2025-04-24 07:50:23,866 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,917 - INFO - Successfully processed and saved results for 6726365
+2025-04-24 07:50:23,924 - INFO - Using default tokenizer.
+2025-04-24 07:50:23,981 - INFO - Successfully processed and saved results for 74193008
+2025-04-24 07:50:23,989 - INFO - Using default tokenizer.
+2025-04-24 07:50:24,031 - INFO - Successfully processed and saved results for 66403710
+2025-04-24 07:50:24,038 - INFO - Using default tokenizer.
+2025-04-24 07:50:24,132 - INFO - Successfully processed and saved results for 42200029
+2025-04-24 07:50:24,139 - INFO - Using default tokenizer.
+2025-04-24 07:50:24,299 - INFO - Successfully processed and saved results for 45601881
+2025-04-24 07:50:24,306 - INFO - Using default tokenizer.
+2025-04-24 07:50:24,342 - INFO - Successfully processed and saved results for 2577868
+2025-04-24 07:50:24,350 - INFO - Using default tokenizer.
+2025-04-24 07:50:24,399 - INFO - Successfully processed and saved results for 89767636
+2025-04-24 07:50:24,407 - INFO - Using default tokenizer.
+2025-04-24 07:50:24,492 - INFO - Successfully processed and saved results for 46507565
+2025-04-24 07:50:24,499 - INFO - Using default tokenizer.
+2025-04-24 07:50:24,600 - INFO - Successfully processed and saved results for 7305163
+2025-04-24 07:50:24,606 - INFO - Using default tokenizer.
+2025-04-24 07:50:24,631 - INFO - Successfully processed and saved results for 81262575
+2025-04-24 07:50:24,640 - INFO - Using default tokenizer.
+2025-04-24 07:50:24,674 - INFO - Successfully processed and saved results for 65062778
+2025-04-24 07:50:24,682 - INFO - Using default tokenizer.
+2025-04-24 07:50:24,748 - INFO - Successfully processed and saved results for 57983162
+2025-04-24 07:50:24,755 - INFO - Using default tokenizer.
+2025-04-24 07:50:24,821 - INFO - Successfully processed and saved results for 87885377
+2025-04-24 07:50:24,829 - INFO - Using default tokenizer.
+2025-04-24 07:50:24,871 - INFO - Successfully processed and saved results for 98781755
+2025-04-24 07:50:24,876 - INFO - Using default tokenizer.
+2025-04-24 07:50:24,900 - INFO - Successfully processed and saved results for 20550713
+2025-04-24 07:50:24,908 - INFO - Using default tokenizer.
+2025-04-24 07:50:24,943 - INFO - Successfully processed and saved results for 74261188
+2025-04-24 07:50:24,951 - INFO - Using default tokenizer.
+2025-04-24 07:50:25,004 - INFO - Successfully processed and saved results for 53721399
+2025-04-24 07:50:25,014 - INFO - Using default tokenizer.
+2025-04-24 07:50:25,110 - INFO - Successfully processed and saved results for 36051826
+2025-04-24 07:50:25,117 - INFO - Using default tokenizer.
+2025-04-24 07:50:25,250 - INFO - Successfully processed and saved results for 11791786
+2025-04-24 07:50:25,257 - INFO - Using default tokenizer.
+2025-04-24 07:50:25,356 - INFO - Successfully processed and saved results for 45765062
+2025-04-24 07:50:25,363 - INFO - Using default tokenizer.
+2025-04-24 07:50:25,392 - INFO - Successfully processed and saved results for 81465314
+2025-04-24 07:50:25,393 - INFO - Skipping 58600020 - not in valid_ids list
+2025-04-24 07:50:25,401 - INFO - Using default tokenizer.
+2025-04-24 07:50:25,455 - INFO - Successfully processed and saved results for 32248697
+2025-04-24 07:50:25,463 - INFO - Using default tokenizer.
+2025-04-24 07:50:25,493 - INFO - Successfully processed and saved results for 42851012
+2025-04-24 07:50:25,500 - INFO - Using default tokenizer.
+2025-04-24 07:50:25,553 - INFO - Successfully processed and saved results for 66883240
+2025-04-24 07:50:25,561 - INFO - Using default tokenizer.
+2025-04-24 07:50:25,659 - INFO - Successfully processed and saved results for 5225266
+2025-04-24 07:50:25,667 - INFO - Using default tokenizer.
+2025-04-24 07:50:25,718 - INFO - Successfully processed and saved results for 11836666
+2025-04-24 07:50:25,727 - INFO - Using default tokenizer.
+2025-04-24 07:50:25,808 - INFO - Successfully processed and saved results for 40771210
+2025-04-24 07:50:25,816 - INFO - Using default tokenizer.
+2025-04-24 07:50:25,873 - INFO - Successfully processed and saved results for 63621777
+2025-04-24 07:50:25,881 - INFO - Using default tokenizer.
+2025-04-24 07:50:25,953 - INFO - Successfully processed and saved results for 39674358
+2025-04-24 07:50:25,953 - INFO - Skipping 93106503 - not in valid_ids list
+2025-04-24 07:50:25,961 - INFO - Using default tokenizer.
+2025-04-24 07:50:26,089 - INFO - Successfully processed and saved results for 66302705
+2025-04-24 07:50:26,097 - INFO - Using default tokenizer.
+2025-04-24 07:50:26,132 - INFO - Successfully processed and saved results for 50438213
+2025-04-24 07:50:26,142 - INFO - Using default tokenizer.
+2025-04-24 07:50:26,279 - INFO - Successfully processed and saved results for 61298922
+2025-04-24 07:50:26,286 - INFO - Using default tokenizer.
+2025-04-24 07:50:26,346 - INFO - Successfully processed and saved results for 13187019
+2025-04-24 07:50:26,353 - INFO - Using default tokenizer.
+2025-04-24 07:50:26,400 - INFO - Successfully processed and saved results for 60887948
+2025-04-24 07:50:26,409 - INFO - Using default tokenizer.
+2025-04-24 07:50:26,534 - INFO - Successfully processed and saved results for 37479343
+2025-04-24 07:50:26,542 - INFO - Using default tokenizer.
+2025-04-24 07:50:26,617 - INFO - Successfully processed and saved results for 91451160
+2025-04-24 07:50:26,624 - INFO - Using default tokenizer.
+2025-04-24 07:50:26,661 - INFO - Successfully processed and saved results for 71225651
+2025-04-24 07:50:26,669 - INFO - Using default tokenizer.
+2025-04-24 07:50:26,699 - INFO - Successfully processed and saved results for 90011197
+2025-04-24 07:50:26,706 - INFO - Using default tokenizer.
+2025-04-24 07:50:26,738 - INFO - Successfully processed and saved results for 22127536
+2025-04-24 07:50:26,747 - INFO - Using default tokenizer.
+2025-04-24 07:50:26,836 - INFO - Successfully processed and saved results for 6827132
+2025-04-24 07:50:26,844 - INFO - Using default tokenizer.
+2025-04-24 07:50:26,889 - INFO - Successfully processed and saved results for 36779622
+2025-04-24 07:50:26,897 - INFO - Using default tokenizer.
+2025-04-24 07:50:27,003 - INFO - Successfully processed and saved results for 33714440
+2025-04-24 07:50:27,004 - INFO - Completed processing papers using abstract method
+2025-04-24 07:50:27,004 - INFO - Calculating average ROUGE scores
+2025-04-24 07:50:27,004 - INFO - Average ROUGE scores across 488 papers: {'rouge1': 0.25500320819601124, 'rouge2': 0.0731056521023467, 'rougeL': 0.12832064776993216}
+2025-04-24 07:50:27,020 - INFO - Saved all evaluation results to ./jaehyeok/results/all_results_abstract.json
+2025-04-24 07:50:27,020 - INFO - Extraction process completed using abstract method
+2025-04-24 07:50:27,020 - INFO - Average ROUGE scores: {'rouge1': 0.25500320819601124, 'rouge2': 0.0731056521023467, 'rougeL': 0.12832064776993216}
+2025-04-24 07:50:27,020 - INFO - All individual paper results saved to ./jaehyeok/results/all_results_abstract.json

@@ -12,8 +12,6 @@ import re
 
 # Create logs directory if it doesn't exist
 os.makedirs("./jaehyeok/logs", exist_ok=True)
-
-# Configure logging with timestamp in filename
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 log_filename = f"./jaehyeok/logs/extract_summary_{timestamp}.log"
 
@@ -101,12 +99,6 @@ def evaluate_summary(generated_summary: str, gold_summary: str) -> Dict:
     return rouge_score
 
 def process_papers(method: str, num_sentences: int = 1, keyword: str = None) -> Dict:
-    """Process all papers and generate summaries based on the specified method."""
-    if method in ["first", "last"]:
-        logging.info(f"Starting to process papers using {method} method with {num_sentences} sentences")
-    else:
-        logging.info(f"Starting to process papers using heading extraction with keyword '{keyword}'")
-    
     # Path to JSON files
     json_path = "./papers/postprocessed/jsons"
     
@@ -119,8 +111,13 @@ def process_papers(method: str, num_sentences: int = 1, keyword: str = None) -> 
     
     # Try to load existing results, create new file if doesn't exist
     if method in ["first", "last"]:
+        logging.info(f"Starting to process papers using {method} method with {num_sentences} sentences")
         result_filename = f"./jaehyeok/results/summarization_{method}_{num_sentences}.json"
+    elif method in ["abstract"]:
+        logging.info(f"Starting to process papers using {method} method")
+        result_filename = f"./jaehyeok/results/summarization_{method}.json"
     else:
+        logging.info(f"Starting to process papers using heading extraction with keyword '{keyword}'")
         result_filename = f"./jaehyeok/results/summarization_heading_{keyword}.json"
         
     try:
@@ -136,26 +133,21 @@ def process_papers(method: str, num_sentences: int = 1, keyword: str = None) -> 
     logging.info(f"Found {len(json_files)} JSON files to process")
 
     # Load valid IDs from JSON file
-    
-    with open("/Users/jaehyeoklee/git/LongSumm/valid_ids.json", 'r') as f:
+    with open("./valid_ids.json", 'r') as f:
         valid_ids = json.load(f)
 
     for json_file in tqdm(json_files, desc="Processing papers"):
         paper_id = json_file.split('.')[0]
         
-        # Skip if paper_id is not in valid_ids
+        # Skip if paper_id
         if paper_id not in valid_ids:
             logging.info(f"Skipping {paper_id} - not in valid_ids list")
             continue
-
-        # Skip if already processed
         if paper_id in results:
             logging.info(f"Skipping {paper_id} - already processed")
             continue
-        
-        # Skip if no gold summary
         if paper_id not in gold_summaries:
-            logging.warning(f"No gold summary found for {paper_id}. Skipping...")
+            logging.warning(f"Skipping {paper_id} - No gold summary found for {paper_id}")
             continue
         
         try:
@@ -174,13 +166,14 @@ def process_papers(method: str, num_sentences: int = 1, keyword: str = None) -> 
                 summary = extract_last_sentences(paper['sections'], num_sentences)
             elif method == "heading":
                 summary = extract_by_heading(paper['sections'], keyword)
+            elif method == "abstract":
+                summary = paper.get('abstractText', "")
             else:
                 logging.error(f"Unknown method: {method}")
                 continue
             
-            # Skip if no summary could be generated
             if not summary:
-                logging.warning(f"No summary could be generated for {paper_id} using method {method}. Skipping...")
+                logging.warning(f"Skipping {paper_id} - No summary could be generated using method {method}.")
                 continue
             
             # Evaluate summary
@@ -242,7 +235,7 @@ def main():
     parser.add_argument(
         "--method", 
         type=str, 
-        choices=["first", "last", "heading"], 
+        choices=["first", "last", "heading", "abstract"], 
         default="first",
         help="Method to extract sentences: 'first' for first sentences, 'last' for last sentences, 'heading' for sections with specific headings"
     )
@@ -276,8 +269,10 @@ def main():
     # Save all results
     if args.method in ["first", "last"]:
         result_filename = f"./jaehyeok/results/all_results_{args.method}_{args.num_sentences}.json"
+    elif args.method in ["abstract"]:
+        result_filename = f"./jaehyeok/results/all_results_{args.method}.json"
     else:
-        result_filename = f"./jaehyeok/results/all_results_heading_{args.keyword}.json"
+        result_filename = f"./jaehyeok/results/all_results_{args.method}_{args.keyword}.json"
         
     with open(result_filename, "w") as f:
         json.dump(results, f, indent=4)
@@ -286,17 +281,15 @@ def main():
     # Also save average scores separately
     if args.method in ["first", "last"]:
         avg_filename = f"./jaehyeok/results/avg_scores_{args.method}_{args.num_sentences}.json"
+    elif args.method in ["abstract"]:
+        avg_filename = f"./jaehyeok/results/avg_scores_{args.method}.json"
     else:
-        avg_filename = f"./jaehyeok/results/avg_scores_heading_{args.keyword}.json"
+        avg_filename = f"./jaehyeok/results/avg_scores_{args.method}_{args.keyword}.json"
         
     with open(avg_filename, "w") as f:
         json.dump(avg_scores, f, indent=4)
     
     logging.info(f"Extraction process completed using {args.method} method")
-    if args.method in ["first", "last"]:
-        logging.info(f"Used {args.num_sentences} sentences per section")
-    else:
-        logging.info(f"Extracted sections with headings containing '{args.keyword}'")
     logging.info(f"Average ROUGE scores: {avg_scores}")
     logging.info(f"All individual paper results saved to {result_filename}")
 
