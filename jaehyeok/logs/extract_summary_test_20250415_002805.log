@@ -1,0 +1,6 @@
+2025-04-15 00:28:05,155 - INFO - Starting to process test papers using heading extraction with keyword 'introduction'
+2025-04-15 00:28:05,155 - ERROR - Test JSON files path does not exist: ./papers/test_json_files/
+2025-04-15 00:28:05,155 - INFO - Saved all test summaries to ./jaehyeok/results/test_results_heading_introduction.json
+2025-04-15 00:28:05,155 - INFO - Test extraction process completed using heading method
+2025-04-15 00:28:05,155 - INFO - Extracted sections with headings containing 'introduction'
+2025-04-15 00:28:05,155 - INFO - Each individual summary is saved in ./jaehyeok/results/test_summaries_heading_introduction/
