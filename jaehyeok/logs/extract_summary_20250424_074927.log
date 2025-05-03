@@ -1,0 +1,5 @@
+2025-04-24 07:49:27,746 - INFO - Loading gold summaries
+2025-04-24 07:49:27,752 - INFO - Starting to process papers using abstract method
+2025-04-24 07:49:27,752 - INFO - Loading existing results file: ./jaehyeok/results/summarization_abstract.json
+2025-04-24 07:49:27,753 - INFO - No existing results file found, creating new one
+2025-04-24 07:49:27,753 - INFO - Found 522 JSON files to process

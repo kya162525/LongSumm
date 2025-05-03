@@ -1,0 +1,49 @@
+2025-04-24 16:12:31,904 - INFO - Loading data from ./jaehyeok/datasets/pairs_datasets.jsonl
+2025-04-24 16:12:32,056 - INFO - Loaded 7152 entries
+2025-04-24 16:12:32,056 - INFO - Loading gold summaries from ./abstractive_summaries/id_summary_map.json
+2025-04-24 16:12:32,063 - INFO - Loaded 530 gold summaries
+2025-04-24 16:12:32,063 - INFO - Generating summaries with similarity threshold: 0.5
+2025-04-24 16:12:32,068 - INFO - Generated 421 summaries
+2025-04-24 16:12:32,068 - INFO - Evaluating summaries
+2025-04-24 16:12:32,069 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,145 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,199 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,210 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,307 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,391 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,432 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,542 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,592 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,630 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,680 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,721 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,792 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,839 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,896 - INFO - Using default tokenizer.
+2025-04-24 16:12:32,974 - INFO - Using default tokenizer.
+2025-04-24 16:12:33,124 - INFO - Using default tokenizer.
+2025-04-24 16:12:33,232 - INFO - Using default tokenizer.
+2025-04-24 16:12:33,299 - INFO - Using default tokenizer.
+2025-04-24 16:12:33,331 - INFO - Using default tokenizer.
+2025-04-24 16:12:33,585 - INFO - Using default tokenizer.
+2025-04-24 16:12:33,634 - INFO - Using default tokenizer.
+2025-04-24 16:12:33,666 - INFO - Using default tokenizer.
+2025-04-24 16:12:33,694 - INFO - Using default tokenizer.
+2025-04-24 16:12:33,745 - INFO - Using default tokenizer.
+2025-04-24 16:12:33,805 - INFO - Using default tokenizer.
+2025-04-24 16:12:33,875 - INFO - Using default tokenizer.
+2025-04-24 16:12:34,145 - INFO - Using default tokenizer.
+2025-04-24 16:12:34,149 - INFO - Using default tokenizer.
+2025-04-24 16:12:34,306 - INFO - Using default tokenizer.
+2025-04-24 16:12:34,327 - INFO - Using default tokenizer.
+2025-04-24 16:12:34,354 - INFO - Using default tokenizer.
+2025-04-24 16:12:34,414 - INFO - Using default tokenizer.
+2025-04-24 16:12:34,476 - INFO - Using default tokenizer.
+2025-04-24 16:12:34,583 - INFO - Using default tokenizer.
+2025-04-24 16:12:34,613 - INFO - Using default tokenizer.
+2025-04-24 16:12:34,824 - INFO - Using default tokenizer.
+2025-04-24 16:12:34,998 - INFO - Using default tokenizer.
+2025-04-24 16:12:35,083 - INFO - Using default tokenizer.
+2025-04-24 16:12:35,256 - INFO - Using default tokenizer.
+2025-04-24 16:12:35,280 - INFO - Using default tokenizer.
+2025-04-24 16:12:35,346 - INFO - Using default tokenizer.
