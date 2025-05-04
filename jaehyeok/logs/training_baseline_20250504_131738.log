@@ -1,0 +1,50 @@
+2025-05-04 13:17:38,834 - INFO - Loading dataset from ./jaehyeok/datasets/mapping_gold_summary_for_training_sets.json
+2025-05-04 13:17:38,987 - INFO - Loaded dataset with 488 papers
+2025-05-04 13:17:38,987 - INFO - Preparing training data...
+2025-05-04 13:17:38,987 - INFO - Loading papers from ./papers/postprocessed/full_texts/
+2025-05-04 13:17:39,033 - INFO - Successfully loaded 522 papers
+2025-05-04 13:17:42,217 - INFO - Training TF-IDF vectorizer...
+2025-05-04 13:19:17,095 - INFO - Created balanced dataset with 29218 sentences, 14609 positive examples (50.00%)
+2025-05-04 13:19:17,110 - INFO - Training and evaluating models...
+2025-05-04 13:19:17,119 - INFO - Training set: 23374 examples, Test set: 5844 examples
+2025-05-04 13:19:17,119 - INFO - Training LogisticRegression...
+2025-05-04 13:19:18,271 - INFO - LogisticRegression cross-validation F1: 0.5967 ± 0.0085
+2025-05-04 13:19:18,275 - INFO - LogisticRegression test set - Precision: 0.5727, Recall: 0.6105, F1: 0.5910
+2025-05-04 13:19:18,284 - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.58      0.54      0.56      2922
+           1       0.57      0.61      0.59      2922
+
+    accuracy                           0.58      5844
+   macro avg       0.58      0.58      0.58      5844
+weighted avg       0.58      0.58      0.58      5844
+
+2025-05-04 13:19:18,284 - INFO - Training RandomForest...
+2025-05-04 13:19:36,753 - INFO - RandomForest cross-validation F1: 0.5912 ± 0.0073
+2025-05-04 13:19:36,850 - INFO - RandomForest test set - Precision: 0.5662, Recall: 0.5969, F1: 0.5811
+2025-05-04 13:19:36,857 - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.57      0.54      0.56      2922
+           1       0.57      0.60      0.58      2922
+
+    accuracy                           0.57      5844
+   macro avg       0.57      0.57      0.57      5844
+weighted avg       0.57      0.57      0.57      5844
+
+2025-05-04 13:19:36,857 - INFO - Training GradientBoosting...
+2025-05-04 13:19:52,499 - INFO - GradientBoosting cross-validation F1: 0.6304 ± 0.0069
+2025-05-04 13:19:52,508 - INFO - GradientBoosting test set - Precision: 0.5768, Recall: 0.6725, F1: 0.6210
+2025-05-04 13:19:52,515 - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.61      0.51      0.55      2922
+           1       0.58      0.67      0.62      2922
+
+    accuracy                           0.59      5844
+   macro avg       0.59      0.59      0.59      5844
+weighted avg       0.59      0.59      0.59      5844
+
+2025-05-04 13:19:52,515 - INFO - Best model: GradientBoosting with F1 score: 0.6210
+2025-05-04 13:19:52,602 - INFO - Training completed. Models and results saved to ./jaehyeok/models/

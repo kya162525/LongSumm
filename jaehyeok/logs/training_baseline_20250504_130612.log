@@ -1,0 +1,6 @@
+2025-05-04 13:06:12,848 - INFO - Loading dataset from ./jaehyeok/datasets/mapping_gold_summary_for_training_sets.json
+2025-05-04 13:06:13,003 - INFO - Loaded dataset with 488 papers
+2025-05-04 13:06:13,003 - INFO - Preparing training data...
+2025-05-04 13:06:13,003 - INFO - Loading papers from ./papers/postprocessed/full_texts/
+2025-05-04 13:06:13,052 - INFO - Successfully loaded 522 papers
+2025-05-04 13:06:16,226 - INFO - Training TF-IDF vectorizer...
