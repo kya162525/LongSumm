@@ -1,0 +1,166 @@
+2025-05-15 14:34:03,637 - INFO - LoRA is enabled with the following configuration:
+2025-05-15 14:34:03,637 - INFO -   LoRA rank (r): 8
+2025-05-15 14:34:03,637 - INFO -   LoRA alpha: 32
+2025-05-15 14:34:03,637 - INFO -   LoRA dropout: 0.05
+2025-05-15 14:34:03,637 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-15 14:34:03,638 - INFO - Loading data...
+2025-05-15 14:34:03,638 - INFO - Found 522 paper files
+Loading paper texts: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 4662.46it/s]
+2025-05-15 14:34:03,757 - INFO - Loading gold summaries
+2025-05-15 14:34:03,762 - INFO - Found 530 gold summaries
+2025-05-15 14:34:03,762 - INFO - Preparing dataset...
+2025-05-15 14:34:03,762 - INFO - Created dataset with 522 paper-summary pairs
+2025-05-15 14:34:03,823 - INFO - Splitting dataset: 80.0% train, 19.999999999999996% validation
+2025-05-15 14:34:03,825 - INFO - Training set: 417 examples
+2025-05-15 14:34:03,826 - INFO - Validation set: 105 examples
+2025-05-15 14:34:03,826 - INFO - Loading model and tokenizer: Qwen/Qwen3-14B
+tokenizer_config.json: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9.68k/9.68k [00:00<00:00, 8.46MB/s]
+vocab.json: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.78M/2.78M [00:00<00:00, 2.99MB/s]
+merges.txt: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1.67M/1.67M [00:00<00:00, 64.6MB/s]
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 14:34:06,975 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+tokenizer.json: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11.4M/11.4M [00:00<00:00, 50.8MB/s]
+config.json: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 728/728 [00:00<00:00, 7.73MB/s]
+model.safetensors.index.json: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 36.5k/36.5k [00:00<00:00, 36.6MB/s]
+Fetching 8 files:   0%|                                                                                                                                                                  | 0/8 [00:00<?, ?it/s]Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 14:34:10,717 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 14:34:10,722 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 14:34:10,729 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 14:34:10,729 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 14:34:10,730 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 14:34:10,736 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+                                                                                                                                                                                                               Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 14:34:11,104 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 14:34:11,114 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Fetching 8 files:   0%|                                                                                                                                                                  | 0/8 [00:04<?, ?it/s]
+model-00001-of-00008.safetensors:   2%|██▊                                                                                                                                | 83.9M/3.84G [00:03<03:08, 20.0MB/s]Traceback (most recent call last):
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map                                          | 147M/3.84G [00:07<04:10, 14.8MB/s]
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))                                                                                        | 62.9M/1.91G [00:07<04:06, 7.51MB/s]
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__                                                           | 41.9M/3.96G [00:07<12:31, 5.22MB/s]
+    for obj in iterable:etensors:   1%|█                                                                                                                                  | 31.5M/3.96G [00:07<16:05, 4.07MB/s]
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator      | 41.9M/3.96G [00:07<12:16, 5.33MB/s]
+    yield _result_or_cancel(fs.pop())%|██▍                                                                                                                                | 73.4M/3.96G [00:07<05:27, 11.9MB/s]
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel    | 31.5M/3.96G [00:06<12:05, 5.42MB/s]
+    return fut.result(timeout)rs:   0%|▎                                                                                                                                  | 10.5M/3.96G [00:04<29:54, 2.20MB/s]
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 453, in result
+    self._condition.wait(timeout)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py", line 320, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/jaehyeoklee/git/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 322, in <module>
+    main()
+  File "/Users/jaehyeoklee/git/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 284, in main
+    model, tokenizer = setup_model_and_tokenizer()
+  File "/Users/jaehyeoklee/git/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 156, in setup_model_and_tokenizer
+    model = AutoModelForCausalLM.from_pretrained(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4260, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1152, in _get_resolved_checkpoint_files
+    checkpoint_files, sharded_metadata = get_checkpoint_shard_files(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 1115, in get_checkpoint_shard_files
+    cached_filenames = cached_files(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 439, in cached_files
+    snapshot_download(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 296, in snapshot_download
+    thread_map(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 49, in _executor_map
+    with PoolExecutor(max_workers=max_workers, initializer=tqdm_class.set_lock,
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 649, in __exit__
+    self.shutdown(wait=True)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/thread.py", line 235, in shutdown
+    t.join()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 453, in result
+    self._condition.wait(timeout)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py", line 320, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/jaehyeoklee/git/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 322, in <module>
+    main()
+  File "/Users/jaehyeoklee/git/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 284, in main
+    model, tokenizer = setup_model_and_tokenizer()
+  File "/Users/jaehyeoklee/git/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 156, in setup_model_and_tokenizer
+    model = AutoModelForCausalLM.from_pretrained(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4260, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1152, in _get_resolved_checkpoint_files
+    checkpoint_files, sharded_metadata = get_checkpoint_shard_files(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 1115, in get_checkpoint_shard_files
+    cached_filenames = cached_files(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 439, in cached_files
+    snapshot_download(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 296, in snapshot_download
+    thread_map(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 49, in _executor_map
+    with PoolExecutor(max_workers=max_workers, initializer=tqdm_class.set_lock,
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 649, in __exit__
+    self.shutdown(wait=True)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/thread.py", line 235, in shutdown
+    t.join()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt
+                                                                                                                                                                                                               Exception ignored in: <module 'threading' from '/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py'>
+Traceback (most recent call last):  4%|█████▊                                                                                                                              | 168M/3.84G [00:09<04:41, 13.1MB/s]
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py", line 1537, in _shutdown                          | 73.4M/1.91G [00:09<04:01, 7.63MB/s]
+    atexit_call()008.safetensors:   1%|█▋                                                                                                                                 | 52.4M/3.96G [00:09<13:10, 4.94MB/s]
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()of-00008.safetensors:   1%|█▋                                                                                                                                 | 52.4M/3.96G [00:09<11:43, 5.56MB/s]
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py", line 1096, in join                                | 105M/3.96G [00:09<04:50, 13.3MB/s]
+    self._wait_for_tstate_lock():   1%|█▋                                                                                                                                 | 52.4M/3.96G [00:08<09:50, 6.62MB/s]
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock              | 21.0M/3.96G [00:08<26:24, 2.49MB/s]
+    if lock.acquire(block, timeout):
+KeyboardInterrupt:

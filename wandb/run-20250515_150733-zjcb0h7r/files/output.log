@@ -1,0 +1,155 @@
+2025-05-15 15:07:34,135 - INFO - LoRA is enabled with the following configuration:
+2025-05-15 15:07:34,136 - INFO -   LoRA rank (r): 8
+2025-05-15 15:07:34,136 - INFO -   LoRA alpha: 32
+2025-05-15 15:07:34,136 - INFO -   LoRA dropout: 0.05
+2025-05-15 15:07:34,136 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-15 15:07:34,136 - INFO - Loading data...
+2025-05-15 15:07:34,136 - INFO - Found 522 paper files
+Loading paper texts: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 5661.25it/s]
+2025-05-15 15:07:34,234 - INFO - Loading gold summaries
+2025-05-15 15:07:34,238 - INFO - Found 530 gold summaries
+2025-05-15 15:07:34,239 - INFO - Preparing dataset...
+2025-05-15 15:07:34,239 - INFO - Loaded 488 valid paper IDs for filtering
+Filtering papers:   0%|                                                                                                                                                                | 0/522 [00:00<?, ?it/s]2025-05-15 15:07:34,239 - INFO - Skipping 74374635 - not in valid IDs
+2025-05-15 15:07:34,239 - INFO - Skipping 28171009 - not in valid IDs
+2025-05-15 15:07:34,239 - INFO - Skipping 95858167 - not in valid IDs
+2025-05-15 15:07:34,239 - INFO - Skipping 93106503 - not in valid IDs
+2025-05-15 15:07:34,239 - INFO - Skipping 58600020 - not in valid IDs
+2025-05-15 15:07:34,239 - INFO - Skipping 81623492 - not in valid IDs
+2025-05-15 15:07:34,240 - INFO - Skipping 65847395 - not in valid IDs
+2025-05-15 15:07:34,240 - INFO - Skipping 72992946 - not in valid IDs
+2025-05-15 15:07:34,240 - INFO - Skipping 74977893 - not in valid IDs
+2025-05-15 15:07:34,240 - INFO - Skipping 13237217 - not in valid IDs
+2025-05-15 15:07:34,240 - INFO - Skipping 75952682 - paper too long (210276 characters)
+2025-05-15 15:07:34,240 - INFO - Skipping 73424952 - paper too long (395979 characters)
+2025-05-15 15:07:34,240 - INFO - Skipping 1077676 - not in valid IDs
+2025-05-15 15:07:34,240 - INFO - Skipping 70719243 - not in valid IDs
+2025-05-15 15:07:34,240 - INFO - Skipping 6469050 - not in valid IDs
+2025-05-15 15:07:34,240 - INFO - Skipping 59963771 - not in valid IDs
+2025-05-15 15:07:34,240 - INFO - Skipping 43514018 - not in valid IDs
+2025-05-15 15:07:34,240 - INFO - Skipping 70140653 - not in valid IDs
+2025-05-15 15:07:34,240 - INFO - Skipping 27264933 - not in valid IDs
+2025-05-15 15:07:34,240 - INFO - Skipping 63993374 - not in valid IDs
+2025-05-15 15:07:34,241 - INFO - Skipping 44148071 - paper too long (142806 characters)
+2025-05-15 15:07:34,241 - INFO - Skipping 96599676 - not in valid IDs
+2025-05-15 15:07:34,241 - INFO - Skipping 70176908 - not in valid IDs
+2025-05-15 15:07:34,241 - INFO - Skipping 53851426 - not in valid IDs
+2025-05-15 15:07:34,241 - INFO - Skipping 963444 - not in valid IDs
+2025-05-15 15:07:34,241 - INFO - Skipping 24431610 - not in valid IDs
+2025-05-15 15:07:34,241 - INFO - Skipping 76854692 - not in valid IDs
+2025-05-15 15:07:34,241 - INFO - Skipping 73705154 - not in valid IDs
+2025-05-15 15:07:34,241 - INFO - Skipping 4741660 - not in valid IDs
+2025-05-15 15:07:34,241 - INFO - Skipping 1050101 - not in valid IDs
+2025-05-15 15:07:34,241 - INFO - Skipping 18000122 - not in valid IDs
+2025-05-15 15:07:34,241 - INFO - Skipping 79091650 - not in valid IDs
+2025-05-15 15:07:34,241 - INFO - Skipping 8240954 - not in valid IDs
+2025-05-15 15:07:34,241 - INFO - Skipping 74971632 - not in valid IDs
+2025-05-15 15:07:34,242 - INFO - Skipping 60641106 - not in valid IDs
+2025-05-15 15:07:34,242 - INFO - Skipping 43813190 - not in valid IDs
+2025-05-15 15:07:34,242 - INFO - Skipping 81034618 - not in valid IDs
+Filtering papers: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 188451.26it/s]
+2025-05-15 15:07:34,242 - INFO - Filtering statistics:
+2025-05-15 15:07:34,242 - INFO -   total_papers: 522
+2025-05-15 15:07:34,242 - INFO -   no_gold_summary: 0
+2025-05-15 15:07:34,242 - INFO -   not_in_valid_ids: 34
+2025-05-15 15:07:34,242 - INFO -   paper_too_long: 3
+2025-05-15 15:07:34,242 - INFO -   summary_too_long: 0
+2025-05-15 15:07:34,242 - INFO -   accepted: 485
+2025-05-15 15:07:34,242 - INFO - Created dataset with 485 paper-summary pairs after filtering
+2025-05-15 15:07:34,302 - INFO - Splitting dataset: 80.0% train, 19.999999999999996% validation
+2025-05-15 15:07:34,304 - INFO - Training set: 388 examples
+2025-05-15 15:07:34,304 - INFO - Validation set: 97 examples
+2025-05-15 15:07:34,304 - INFO - Loading model and tokenizer: Qwen/Qwen3-14B
+Fetching 8 files:   0%|                                                                                                                                                                  | 0/8 [00:01<?, ?it/s]
+model-00004-of-00008.safetensors:   0%|                                                                                                                                            | 0.00/3.96G [00:01<?, ?B/s]
+model-00006-of-00008.safetensors:   0%|                                                                                                                                            | 0.00/3.96G [00:01<?, ?B/s]
+model-00008-of-00008.safetensors:   0%|                                                                                                                                            | 0.00/1.91G [00:01<?, ?B/s]
+model-00007-of-00008.safetensors:   0%|                                                                                                                                            | 0.00/3.96G [00:01<?, ?B/s]
+model-00005-of-00008.safetensors:   0%|                                                                                                                                            | 0.00/3.96G [00:00<?, ?B/s]
+model-00001-of-00008.safetensors:   0%|                                                                                                                                            | 0.00/3.84G [00:01<?, ?B/s]
+model-00003-of-00008.safetensors:   0%|                                                                                                                                            | 0.00/3.96G [00:01<?, ?B/s]
+model-00002-of-00008.safetensors:   0%|                                                                                                                                            | 0.00/3.96G [00:00<?, ?B/s]
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/jaehyeoklee/git/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 381, in <module>
+    main()
+  File "/Users/jaehyeoklee/git/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 343, in main
+    model, tokenizer = setup_model_and_tokenizer()
+  File "/Users/jaehyeoklee/git/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 215, in setup_model_and_tokenizer
+    model = AutoModelForCausalLM.from_pretrained(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4260, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1152, in _get_resolved_checkpoint_files
+    checkpoint_files, sharded_metadata = get_checkpoint_shard_files(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 1115, in get_checkpoint_shard_files
+    cached_filenames = cached_files(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 439, in cached_files
+    snapshot_download(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 296, in snapshot_download
+    thread_map(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 453, in result
+    self._condition.wait(timeout)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py", line 320, in wait
+    waiter.acquire()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/jaehyeoklee/git/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 381, in <module>
+    main()
+  File "/Users/jaehyeoklee/git/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 343, in main
+    model, tokenizer = setup_model_and_tokenizer()
+  File "/Users/jaehyeoklee/git/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 215, in setup_model_and_tokenizer
+    model = AutoModelForCausalLM.from_pretrained(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4260, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1152, in _get_resolved_checkpoint_files
+    checkpoint_files, sharded_metadata = get_checkpoint_shard_files(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 1115, in get_checkpoint_shard_files
+    cached_filenames = cached_files(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 439, in cached_files
+    snapshot_download(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 296, in snapshot_download
+    thread_map(
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+  File "/Users/jaehyeoklee/git/LongSumm/.venv/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 453, in result
+    self._condition.wait(timeout)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py", line 320, in wait
+    waiter.acquire()
+KeyboardInterrupt
