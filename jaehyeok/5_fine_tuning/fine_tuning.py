@@ -13,6 +13,7 @@ from transformers import (
     AutoTokenizer,
     TrainingArguments,
     Trainer,
+    TrainerCallback,
     DataCollatorForSeq2Seq,
 )
 from datasets import Dataset
@@ -45,12 +46,12 @@ logging.basicConfig(
 )
 
 # Model configuration
-MODEL_NAME = "Qwen/Qwen3-14B"
+MODEL_NAME = "Qwen/Qwen3-8B"
 MAX_INPUT_LENGTH = 32768
 MAX_OUTPUT_LENGTH = 32768
 TRAIN_RATIO = 0.8
 BATCH_SIZE = 1
-GRADIENT_ACCUMULATION_STEPS = 8
+GRADIENT_ACCUMULATION_STEPS = 16
 LEARNING_RATE = 2e-5
 NUM_EPOCHS = 1
 WARMUP_STEPS = 10
@@ -244,16 +245,17 @@ def setup_training(model, tokenizer, train_dataset, val_dataset, run_name):
         learning_rate=LEARNING_RATE,
         num_train_epochs=NUM_EPOCHS,
         warmup_steps=WARMUP_STEPS,
-        evaluation_strategy="steps",
+        eval_strategy="steps",
         eval_steps=SAVE_STEPS,
         save_steps=SAVE_STEPS,
         save_total_limit=3,
         load_best_model_at_end=True,
         report_to="wandb",
-        logging_steps=100,
+        logging_steps=10,
         remove_unused_columns=False,
         push_to_hub=False,
-        fp16=True,
+        # fp16=True
+        bf16=True,
     )
     
     # Initialize data collator
@@ -270,7 +272,8 @@ def setup_training(model, tokenizer, train_dataset, val_dataset, run_name):
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
         data_collator=data_collator,
-        tokenizer=tokenizer,
+        # tokenizer=tokenizer,
+        # label_names=["labels"],
     )
     
     return trainer
@@ -283,7 +286,10 @@ def push_to_hub(trainer, model_name, step):
     try:
         if USE_LORA:
             # For LoRA models, we need to use PeftModel.from_pretrained
-            model = PeftModel.from_pretrained(save_dir)
+            model = PeftModel.from_pretrained(save_dir,
+                    load_in_4bit=True,           # 4-bit QLoRA
+                    torch_dtype="auto",
+                    device_map="auto")
             tokenizer = AutoTokenizer.from_pretrained(save_dir)
         else:
             model = AutoModelForCausalLM.from_pretrained(save_dir)
@@ -295,27 +301,30 @@ def push_to_hub(trainer, model_name, step):
     except Exception as e:
         logging.error(f"Failed to push model to Hub: {e}")
 
-class PushToHubCallback:
-    def __init__(self, trainer, model_name):
+class PushToHubCallback(TrainerCallback):
+    def __init__(self, trainer, model_name, push_every_n_steps=100):
         self.trainer = trainer
         self.model_name = model_name
+        self.push_every_n_steps = push_every_n_steps
         self.best_metric = float('inf')
-        
+
     def on_step_end(self, args, state, control, **kwargs):
-        if state.global_step % PUSH_TO_HUB_STEPS == 0:
+        if state.global_step > 0 and state.global_step % self.push_every_n_steps == 0:
+            logging.info(f"Pushing model at step {state.global_step} to Hub: {self.model_name}")
             push_to_hub(self.trainer, self.model_name, state.global_step)
-            
+
     def on_evaluate(self, args, state, control, metrics=None, **kwargs):
         if metrics and "eval_loss" in metrics:
             if metrics["eval_loss"] < self.best_metric:
                 self.best_metric = metrics["eval_loss"]
+                logging.info(f"New best eval_loss {self.best_metric:.4f} at step {state.global_step}. Pushing best model.")
                 push_to_hub(self.trainer, f"{self.model_name}-best", state.global_step)
 
 def main():
     logging.info("Starting fine-tuning process")
     
     # Initialize wandb
-    run_name = f"qwen2.5-14b-fine-tune-{timestamp}"
+    run_name = f"qwen3-8b-fine-tune-{timestamp}"
     if USE_LORA:
         run_name += "-lora"
     wandb.init(project="qwen-summarization", name=run_name)
@@ -361,7 +370,7 @@ def main():
     trainer = setup_training(model, tokenizer, tokenized_train, tokenized_val, run_name)
     
     # Add callback for pushing to Hub
-    push_callback = PushToHubCallback(trainer, f"jaehyeoklee/qwen2.5-14b-longsumm")
+    push_callback = PushToHubCallback(trainer, f"jaehyeoklee/qwen3-8b-longsumm")
     trainer.add_callback(push_callback)
     
     # Start training
@@ -371,7 +380,7 @@ def main():
     # Save and push final model
     logging.info("Training completed, saving final model")
     trainer.save_model(f"./jaehyeok/models/{run_name}-final")
-    push_to_hub(trainer, f"jaehyeoklee/qwen2.5-14b-longsumm-final", "final")
+    push_to_hub(trainer, f"jaehyeoklee/qwen3-8b-longsumm-final", "final")
     
     # Finish wandb session
     wandb.finish()

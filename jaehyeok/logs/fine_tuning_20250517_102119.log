@@ -1,0 +1,68 @@
+2025-05-17 10:21:19,541 - INFO - Starting fine-tuning process
+2025-05-17 10:21:21,240 - INFO - LoRA is enabled with the following configuration:
+2025-05-17 10:21:21,240 - INFO -   LoRA rank (r): 8
+2025-05-17 10:21:21,241 - INFO -   LoRA alpha: 32
+2025-05-17 10:21:21,241 - INFO -   LoRA dropout: 0.05
+2025-05-17 10:21:21,241 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-17 10:21:21,241 - INFO - Loading data...
+2025-05-17 10:21:21,241 - INFO - Found 522 paper files
+2025-05-17 10:21:21,285 - INFO - Loading gold summaries
+2025-05-17 10:21:21,292 - INFO - Found 530 gold summaries
+2025-05-17 10:21:21,293 - INFO - Preparing dataset...
+2025-05-17 10:21:21,293 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-17 10:21:21,293 - INFO - Skipping 24431610 - not in valid IDs
+2025-05-17 10:21:21,293 - INFO - Skipping 44148071 - paper too long (142806 characters)
+2025-05-17 10:21:21,294 - INFO - Skipping 53851426 - not in valid IDs
+2025-05-17 10:21:21,294 - INFO - Skipping 28171009 - not in valid IDs
+2025-05-17 10:21:21,294 - INFO - Skipping 79091650 - not in valid IDs
+2025-05-17 10:21:21,294 - INFO - Skipping 4741660 - not in valid IDs
+2025-05-17 10:21:21,294 - INFO - Skipping 75952682 - paper too long (210276 characters)
+2025-05-17 10:21:21,294 - INFO - Skipping 74977893 - not in valid IDs
+2025-05-17 10:21:21,294 - INFO - Skipping 43514018 - not in valid IDs
+2025-05-17 10:21:21,295 - INFO - Skipping 70719243 - not in valid IDs
+2025-05-17 10:21:21,295 - INFO - Skipping 74971632 - not in valid IDs
+2025-05-17 10:21:21,295 - INFO - Skipping 6469050 - not in valid IDs
+2025-05-17 10:21:21,295 - INFO - Skipping 27264933 - not in valid IDs
+2025-05-17 10:21:21,295 - INFO - Skipping 81623492 - not in valid IDs
+2025-05-17 10:21:21,295 - INFO - Skipping 93106503 - not in valid IDs
+2025-05-17 10:21:21,295 - INFO - Skipping 13237217 - not in valid IDs
+2025-05-17 10:21:21,296 - INFO - Skipping 96599676 - not in valid IDs
+2025-05-17 10:21:21,296 - INFO - Skipping 81034618 - not in valid IDs
+2025-05-17 10:21:21,296 - INFO - Skipping 70176908 - not in valid IDs
+2025-05-17 10:21:21,296 - INFO - Skipping 73424952 - paper too long (395979 characters)
+2025-05-17 10:21:21,296 - INFO - Skipping 43813190 - not in valid IDs
+2025-05-17 10:21:21,296 - INFO - Skipping 76854692 - not in valid IDs
+2025-05-17 10:21:21,297 - INFO - Skipping 8240954 - not in valid IDs
+2025-05-17 10:21:21,297 - INFO - Skipping 72992946 - not in valid IDs
+2025-05-17 10:21:21,297 - INFO - Skipping 73705154 - not in valid IDs
+2025-05-17 10:21:21,297 - INFO - Skipping 74374635 - not in valid IDs
+2025-05-17 10:21:21,297 - INFO - Skipping 59963771 - not in valid IDs
+2025-05-17 10:21:21,297 - INFO - Skipping 60641106 - not in valid IDs
+2025-05-17 10:21:21,297 - INFO - Skipping 95858167 - not in valid IDs
+2025-05-17 10:21:21,298 - INFO - Skipping 1050101 - not in valid IDs
+2025-05-17 10:21:21,298 - INFO - Skipping 58600020 - not in valid IDs
+2025-05-17 10:21:21,298 - INFO - Skipping 63993374 - not in valid IDs
+2025-05-17 10:21:21,298 - INFO - Skipping 1077676 - not in valid IDs
+2025-05-17 10:21:21,298 - INFO - Skipping 65847395 - not in valid IDs
+2025-05-17 10:21:21,298 - INFO - Skipping 963444 - not in valid IDs
+2025-05-17 10:21:21,299 - INFO - Skipping 18000122 - not in valid IDs
+2025-05-17 10:21:21,299 - INFO - Skipping 70140653 - not in valid IDs
+2025-05-17 10:21:21,299 - INFO - Filtering statistics:
+2025-05-17 10:21:21,299 - INFO -   total_papers: 522
+2025-05-17 10:21:21,299 - INFO -   no_gold_summary: 0
+2025-05-17 10:21:21,299 - INFO -   not_in_valid_ids: 34
+2025-05-17 10:21:21,300 - INFO -   paper_too_long: 3
+2025-05-17 10:21:21,300 - INFO -   summary_too_long: 0
+2025-05-17 10:21:21,300 - INFO -   accepted: 485
+2025-05-17 10:21:21,300 - INFO - Created dataset with 485 paper-summary pairs after filtering
+2025-05-17 10:21:21,419 - INFO - Splitting dataset: 80.0% train, 19.999999999999996% validation
+2025-05-17 10:21:21,423 - INFO - Training set: 388 examples
+2025-05-17 10:21:21,423 - INFO - Validation set: 97 examples
+2025-05-17 10:21:21,423 - INFO - Loading model and tokenizer: Qwen/Qwen3-14B
+2025-05-17 10:21:22,666 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-05-17 10:21:27,510 - INFO - Applying LoRA adapters to the model
+2025-05-17 10:21:40,652 - INFO - LoRA adapters applied successfully
+2025-05-17 10:21:40,653 - INFO - Tokenizing datasets
+2025-05-17 10:21:45,208 - INFO - Setting up training configuration
+2025-05-17 10:21:45,251 - INFO - Starting training
+2025-05-17 10:21:45,534 - INFO - Training started
