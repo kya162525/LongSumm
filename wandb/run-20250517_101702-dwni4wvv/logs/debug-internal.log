@@ -1,0 +1,15 @@
+{"time":"2025-05-17T10:17:02.186471694Z","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/root/workspace/LongSumm/wandb/run-20250517_101702-dwni4wvv/logs/debug-core.log"}
+{"time":"2025-05-17T10:17:02.627424532Z","level":"INFO","msg":"created new stream","id":"dwni4wvv"}
+{"time":"2025-05-17T10:17:02.627470087Z","level":"INFO","msg":"stream: started","id":"dwni4wvv"}
+{"time":"2025-05-17T10:17:02.627485516Z","level":"INFO","msg":"writer: Do: started","stream_id":"dwni4wvv"}
+{"time":"2025-05-17T10:17:02.627513288Z","level":"INFO","msg":"handler: started","stream_id":"dwni4wvv"}
+{"time":"2025-05-17T10:17:02.627625377Z","level":"INFO","msg":"sender: started","stream_id":"dwni4wvv"}
+{"time":"2025-05-17T10:17:02.974574649Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-17T10:17:34.387365784Z","level":"INFO","msg":"stream: closing","id":"dwni4wvv"}
+{"time":"2025-05-17T10:17:34.387423061Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-17T10:17:34.389578158Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-17T10:17:36.281058252Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-17T10:17:40.09486225Z","level":"INFO","msg":"handler: closed","stream_id":"dwni4wvv"}
+{"time":"2025-05-17T10:17:40.094934765Z","level":"INFO","msg":"writer: Close: closed","stream_id":"dwni4wvv"}
+{"time":"2025-05-17T10:17:40.0949538Z","level":"INFO","msg":"sender: closed","stream_id":"dwni4wvv"}
+{"time":"2025-05-17T10:17:40.095041304Z","level":"INFO","msg":"stream: closed","id":"dwni4wvv"}

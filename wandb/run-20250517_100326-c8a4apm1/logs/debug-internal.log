@@ -1,0 +1,7 @@
+{"time":"2025-05-17T10:03:26.924827331Z","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/root/workspace/LongSumm/wandb/run-20250517_100326-c8a4apm1/logs/debug-core.log"}
+{"time":"2025-05-17T10:03:27.387511166Z","level":"INFO","msg":"created new stream","id":"c8a4apm1"}
+{"time":"2025-05-17T10:03:27.387558174Z","level":"INFO","msg":"stream: started","id":"c8a4apm1"}
+{"time":"2025-05-17T10:03:27.387597988Z","level":"INFO","msg":"handler: started","stream_id":"c8a4apm1"}
+{"time":"2025-05-17T10:03:27.387592177Z","level":"INFO","msg":"writer: Do: started","stream_id":"c8a4apm1"}
+{"time":"2025-05-17T10:03:27.387628375Z","level":"INFO","msg":"sender: started","stream_id":"c8a4apm1"}
+{"time":"2025-05-17T10:03:27.781482512Z","level":"INFO","msg":"Starting system monitor"}
