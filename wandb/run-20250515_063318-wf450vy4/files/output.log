@@ -1,0 +1,164 @@
+2025-05-15 06:33:19,386 - INFO - LoRA is enabled with the following configuration:
+2025-05-15 06:33:19,386 - INFO -   LoRA rank (r): 8
+2025-05-15 06:33:19,386 - INFO -   LoRA alpha: 32
+2025-05-15 06:33:19,386 - INFO -   LoRA dropout: 0.05
+2025-05-15 06:33:19,386 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-15 06:33:19,386 - INFO - Loading data...
+2025-05-15 06:33:19,387 - INFO - Found 522 paper files
+Loading paper texts: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 13957.31it/s]
+2025-05-15 06:33:19,425 - INFO - Loading gold summaries
+2025-05-15 06:33:19,432 - INFO - Found 530 gold summaries
+2025-05-15 06:33:19,432 - INFO - Preparing dataset...
+2025-05-15 06:33:19,432 - INFO - Loaded 488 valid paper IDs for filtering
+Filtering papers:   0%|                                                                                                                                                                                                                                    | 0/522 [00:00<?, ?it/s]2025-05-15 06:33:19,433 - INFO - Skipping 93106503 - not in valid IDs
+2025-05-15 06:33:19,433 - INFO - Skipping 44148071 - paper too long (142806 characters)
+2025-05-15 06:33:19,433 - INFO - Skipping 75952682 - paper too long (210276 characters)
+2025-05-15 06:33:19,433 - INFO - Skipping 95858167 - not in valid IDs
+2025-05-15 06:33:19,433 - INFO - Skipping 74971632 - not in valid IDs
+2025-05-15 06:33:19,433 - INFO - Skipping 59963771 - not in valid IDs
+2025-05-15 06:33:19,434 - INFO - Skipping 70176908 - not in valid IDs
+2025-05-15 06:33:19,434 - INFO - Skipping 6469050 - not in valid IDs
+2025-05-15 06:33:19,434 - INFO - Skipping 63993374 - not in valid IDs
+2025-05-15 06:33:19,434 - INFO - Skipping 13237217 - not in valid IDs
+2025-05-15 06:33:19,434 - INFO - Skipping 27264933 - not in valid IDs
+2025-05-15 06:33:19,434 - INFO - Skipping 8240954 - not in valid IDs
+2025-05-15 06:33:19,434 - INFO - Skipping 43813190 - not in valid IDs
+2025-05-15 06:33:19,435 - INFO - Skipping 43514018 - not in valid IDs
+2025-05-15 06:33:19,435 - INFO - Skipping 74374635 - not in valid IDs
+2025-05-15 06:33:19,435 - INFO - Skipping 72992946 - not in valid IDs
+2025-05-15 06:33:19,435 - INFO - Skipping 73705154 - not in valid IDs
+2025-05-15 06:33:19,435 - INFO - Skipping 79091650 - not in valid IDs
+2025-05-15 06:33:19,435 - INFO - Skipping 81623492 - not in valid IDs
+2025-05-15 06:33:19,435 - INFO - Skipping 28171009 - not in valid IDs
+2025-05-15 06:33:19,435 - INFO - Skipping 74977893 - not in valid IDs
+2025-05-15 06:33:19,436 - INFO - Skipping 18000122 - not in valid IDs
+2025-05-15 06:33:19,436 - INFO - Skipping 70140653 - not in valid IDs
+2025-05-15 06:33:19,436 - INFO - Skipping 96599676 - not in valid IDs
+2025-05-15 06:33:19,436 - INFO - Skipping 1050101 - not in valid IDs
+2025-05-15 06:33:19,436 - INFO - Skipping 24431610 - not in valid IDs
+2025-05-15 06:33:19,436 - INFO - Skipping 53851426 - not in valid IDs
+2025-05-15 06:33:19,436 - INFO - Skipping 81034618 - not in valid IDs
+2025-05-15 06:33:19,436 - INFO - Skipping 4741660 - not in valid IDs
+2025-05-15 06:33:19,436 - INFO - Skipping 70719243 - not in valid IDs
+2025-05-15 06:33:19,436 - INFO - Skipping 65847395 - not in valid IDs
+2025-05-15 06:33:19,437 - INFO - Skipping 58600020 - not in valid IDs
+2025-05-15 06:33:19,437 - INFO - Skipping 73424952 - paper too long (395979 characters)
+2025-05-15 06:33:19,437 - INFO - Skipping 1077676 - not in valid IDs
+2025-05-15 06:33:19,437 - INFO - Skipping 963444 - not in valid IDs
+2025-05-15 06:33:19,437 - INFO - Skipping 60641106 - not in valid IDs
+2025-05-15 06:33:19,437 - INFO - Skipping 76854692 - not in valid IDs
+Filtering papers: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 111211.80it/s]
+2025-05-15 06:33:19,437 - INFO - Filtering statistics:
+2025-05-15 06:33:19,438 - INFO -   total_papers: 522
+2025-05-15 06:33:19,438 - INFO -   no_gold_summary: 0
+2025-05-15 06:33:19,438 - INFO -   not_in_valid_ids: 34
+2025-05-15 06:33:19,438 - INFO -   paper_too_long: 3
+2025-05-15 06:33:19,438 - INFO -   summary_too_long: 0
+2025-05-15 06:33:19,438 - INFO -   accepted: 485
+2025-05-15 06:33:19,438 - INFO - Created dataset with 485 paper-summary pairs after filtering
+2025-05-15 06:33:19,527 - INFO - Splitting dataset: 80.0% train, 19.999999999999996% validation
+2025-05-15 06:33:19,531 - INFO - Training set: 388 examples
+2025-05-15 06:33:19,531 - INFO - Validation set: 97 examples
+2025-05-15 06:33:19,531 - INFO - Loading model and tokenizer: Qwen/Qwen3-14B
+tokenizer_config.json: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9.68k/9.68k [00:00<00:00, 29.9MB/s]
+vocab.json: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.78M/2.78M [00:00<00:00, 3.09MB/s]
+merges.txt: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1.67M/1.67M [00:00<00:00, 7.45MB/s]
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 06:33:22,697 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+tokenizer.json: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11.4M/11.4M [00:00<00:00, 31.2MB/s]
+config.json: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 728/728 [00:00<00:00, 3.87MB/s]
+model.safetensors.index.json: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 36.5k/36.5k [00:00<00:00, 104MB/s]
+Fetching 8 files:   0%|                                                                                                                                                                                                                                      | 0/8 [00:00<?, ?it/s]Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 06:33:27,122 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 06:33:27,131 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 06:33:27,214 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 06:33:27,223 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 06:33:27,223 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 06:33:27,230 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 06:33:27,257 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-15 06:33:27,257 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Fetching 8 files:   0%|                                                                                                                                                                                                                                      | 0/8 [00:03<?, ?it/s]
+model-00005-of-00008.safetensors:   7%|█████████████▊                                                                                                                                                                                           | 273M/3.96G [00:02<00:33, 110MB/s]Traceback (most recent call last):
+  File "/root/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map                                                                                                                                        | 336M/3.96G [00:03<00:52, 68.9MB/s]
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))                                                                                                                                                              | 619M/3.96G [00:03<00:18, 185MB/s]
+  File "/root/.venv/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__                                                                                                                                                           | 598M/3.96G [00:03<00:20, 162MB/s]
+    for obj in iterable:etensors:  16%|███████████████████████████████▎                                                                                                                                                                         | 619M/3.96G [00:03<00:17, 189MB/s]
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator███████████▍                                                                                                                                              | 556M/1.91G [00:03<00:08, 156MB/s]
+    yield _result_or_cancel(fs.pop())%|█████████████████████▉                                                                                                                                                                                   | 419M/3.84G [00:03<00:23, 143MB/s]
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel                                                                                                                                                        | 598M/3.96G [00:03<00:17, 188MB/s]
+    return fut.result(timeout)rs:  15%|█████████████████████████████▊                                                                                                                                                                           | 587M/3.96G [00:03<00:18, 184MB/s]
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 453, in result
+    self._condition.wait(timeout)
+  File "/usr/lib/python3.10/threading.py", line 320, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 381, in <module>
+    main()
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 343, in main
+    model, tokenizer = setup_model_and_tokenizer()
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 215, in setup_model_and_tokenizer
+    model = AutoModelForCausalLM.from_pretrained(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4260, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1152, in _get_resolved_checkpoint_files
+    checkpoint_files, sharded_metadata = get_checkpoint_shard_files(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 1115, in get_checkpoint_shard_files
+    cached_filenames = cached_files(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 439, in cached_files
+    snapshot_download(
+  File "/root/.venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 297, in snapshot_download
+    thread_map(
+  File "/root/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 49, in _executor_map
+    with PoolExecutor(max_workers=max_workers, initializer=tqdm_class.set_lock,
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 649, in __exit__
+    self.shutdown(wait=True)
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 235, in shutdown
+    t.join()
+  File "/usr/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt
+                                                                                                                                                                                                                                                                                   Exception ignored in: <module 'threading' from '/usr/lib/python3.10/threading.py'>
+Traceback (most recent call last):  9%|██████████████████▌                                                                                                                                                                                     | 367M/3.96G [00:04<01:06, 54.0MB/s]
+  File "/usr/lib/python3.10/threading.py", line 1537, in _shutdown██████████▊                                                                                                                                                                   | 744M/3.96G [00:04<00:17, 188MB/s]
+    atexit_call()008.safetensors:  19%|█████████████████████████████████████▊                                                                                                                                                                   | 744M/3.96G [00:04<00:17, 189MB/s]
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 31, in _python_exit                                                                                                                                                             | 765M/3.96G [00:04<00:16, 194MB/s]
+    t.join()of-00008.safetensors:  36%|███████████████████████████████████████████████████████████████████████▋                                                                                                                                 | 682M/1.91G [00:04<00:06, 185MB/s]
+  File "/usr/lib/python3.10/threading.py", line 1096, in join████▎                                                                                                                                                                              | 503M/3.84G [00:04<00:24, 135MB/s]
+    self._wait_for_tstate_lock():  19%|█████████████████████████████████████▊                                                                                                                                                                   | 744M/3.96G [00:04<00:16, 193MB/s]
+  File "/usr/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock                                                                                                                                                                  | 713M/3.96G [00:04<00:17, 188MB/s]
+    if lock.acquire(block, timeout):
+KeyboardInterrupt:
+
+model-00005-of-00008.safetensors:  10%|███████████████████                                                                                                                                                                                     | 377M/3.96G [00:04<01:09, 51.9MB/s]
+model-00007-of-00008.safetensors:  20%|███████████████████████████████████████▉                                                                                                                                                                 | 786M/3.96G [00:04<00:16, 188MB/s]
+model-00006-of-00008.safetensors:  19%|██████████████████████████████████████▊                                                                                                                                                                  | 765M/3.96G [00:04<00:16, 189MB/s]
+model-00003-of-00008.safetensors:  20%|███████████████████████████████████████▉                                                                                                                                                                 | 786M/3.96G [00:04<00:16, 193MB/s]
+model-00008-of-00008.safetensors:  38%|████████████████████████████████████████████████████████████████████████████                                                                                                                             | 724M/1.91G [00:04<00:06, 186MB/s]
+model-00001-of-00008.safetensors:  14%|███████████████████████████▍                                                                                                                                                                             | 524M/3.84G [00:04<00:23, 138MB/s]
+model-00004-of-00008.safetensors:  19%|██████████████████████████████████████▊                                                                                                                                                                  | 765M/3.96G [00:04<00:16, 192MB/s]
+model-00002-of-00008.safetensors:  19%|██████████████████████████████████████▎                                                                                                                                                                  | 755M/3.96G [00:04<00:17, 186MB/s]

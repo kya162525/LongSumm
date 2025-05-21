@@ -1,0 +1,202 @@
+2025-05-17 10:49:15,376 - INFO - LoRA is enabled with the following configuration:
+2025-05-17 10:49:15,376 - INFO -   LoRA rank (r): 8
+2025-05-17 10:49:15,376 - INFO -   LoRA alpha: 32
+2025-05-17 10:49:15,376 - INFO -   LoRA dropout: 0.05
+2025-05-17 10:49:15,377 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-17 10:49:15,377 - INFO - Loading data...
+2025-05-17 10:49:15,377 - INFO - Found 522 paper files
+Loading paper texts: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 12235.33it/s]
+2025-05-17 10:49:15,421 - INFO - Loading gold summaries
+2025-05-17 10:49:15,429 - INFO - Found 530 gold summaries
+2025-05-17 10:49:15,429 - INFO - Preparing dataset...
+2025-05-17 10:49:15,429 - INFO - Loaded 488 valid paper IDs for filtering
+Filtering papers:   0%|                                                                                                                                                                                                | 0/522 [00:00<?, ?it/s]2025-05-17 10:49:15,430 - INFO - Skipping 24431610 - not in valid IDs
+2025-05-17 10:49:15,430 - INFO - Skipping 44148071 - paper too long (142806 characters)
+2025-05-17 10:49:15,430 - INFO - Skipping 53851426 - not in valid IDs
+2025-05-17 10:49:15,430 - INFO - Skipping 28171009 - not in valid IDs
+2025-05-17 10:49:15,430 - INFO - Skipping 79091650 - not in valid IDs
+2025-05-17 10:49:15,430 - INFO - Skipping 4741660 - not in valid IDs
+2025-05-17 10:49:15,431 - INFO - Skipping 75952682 - paper too long (210276 characters)
+2025-05-17 10:49:15,431 - INFO - Skipping 74977893 - not in valid IDs
+2025-05-17 10:49:15,431 - INFO - Skipping 43514018 - not in valid IDs
+2025-05-17 10:49:15,431 - INFO - Skipping 70719243 - not in valid IDs
+2025-05-17 10:49:15,431 - INFO - Skipping 74971632 - not in valid IDs
+2025-05-17 10:49:15,431 - INFO - Skipping 6469050 - not in valid IDs
+2025-05-17 10:49:15,432 - INFO - Skipping 27264933 - not in valid IDs
+2025-05-17 10:49:15,432 - INFO - Skipping 81623492 - not in valid IDs
+2025-05-17 10:49:15,432 - INFO - Skipping 93106503 - not in valid IDs
+2025-05-17 10:49:15,432 - INFO - Skipping 13237217 - not in valid IDs
+2025-05-17 10:49:15,432 - INFO - Skipping 96599676 - not in valid IDs
+2025-05-17 10:49:15,432 - INFO - Skipping 81034618 - not in valid IDs
+2025-05-17 10:49:15,433 - INFO - Skipping 70176908 - not in valid IDs
+2025-05-17 10:49:15,433 - INFO - Skipping 73424952 - paper too long (395979 characters)
+2025-05-17 10:49:15,433 - INFO - Skipping 43813190 - not in valid IDs
+2025-05-17 10:49:15,433 - INFO - Skipping 76854692 - not in valid IDs
+2025-05-17 10:49:15,433 - INFO - Skipping 8240954 - not in valid IDs
+2025-05-17 10:49:15,433 - INFO - Skipping 72992946 - not in valid IDs
+2025-05-17 10:49:15,433 - INFO - Skipping 73705154 - not in valid IDs
+2025-05-17 10:49:15,433 - INFO - Skipping 74374635 - not in valid IDs
+2025-05-17 10:49:15,434 - INFO - Skipping 59963771 - not in valid IDs
+2025-05-17 10:49:15,434 - INFO - Skipping 60641106 - not in valid IDs
+2025-05-17 10:49:15,434 - INFO - Skipping 95858167 - not in valid IDs
+2025-05-17 10:49:15,434 - INFO - Skipping 1050101 - not in valid IDs
+2025-05-17 10:49:15,434 - INFO - Skipping 58600020 - not in valid IDs
+2025-05-17 10:49:15,435 - INFO - Skipping 63993374 - not in valid IDs
+2025-05-17 10:49:15,435 - INFO - Skipping 1077676 - not in valid IDs
+2025-05-17 10:49:15,435 - INFO - Skipping 65847395 - not in valid IDs
+2025-05-17 10:49:15,435 - INFO - Skipping 963444 - not in valid IDs
+2025-05-17 10:49:15,435 - INFO - Skipping 18000122 - not in valid IDs
+2025-05-17 10:49:15,435 - INFO - Skipping 70140653 - not in valid IDs
+Filtering papers: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 90196.37it/s]
+2025-05-17 10:49:15,436 - INFO - Filtering statistics:
+2025-05-17 10:49:15,436 - INFO -   total_papers: 522
+2025-05-17 10:49:15,436 - INFO -   no_gold_summary: 0
+2025-05-17 10:49:15,436 - INFO -   not_in_valid_ids: 34
+2025-05-17 10:49:15,436 - INFO -   paper_too_long: 3
+2025-05-17 10:49:15,436 - INFO -   summary_too_long: 0
+2025-05-17 10:49:15,436 - INFO -   accepted: 485
+2025-05-17 10:49:15,436 - INFO - Created dataset with 485 paper-summary pairs after filtering
+2025-05-17 10:49:15,553 - INFO - Splitting dataset: 80.0% train, 19.999999999999996% validation
+2025-05-17 10:49:15,557 - INFO - Training set: 388 examples
+2025-05-17 10:49:15,557 - INFO - Validation set: 97 examples
+2025-05-17 10:49:15,557 - INFO - Loading model and tokenizer: Qwen/Qwen3-8B
+2025-05-17 10:49:16,746 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:03<00:00,  1.64it/s]
+2025-05-17 10:49:20,050 - INFO - Applying LoRA adapters to the model
+trainable params: 7,667,712 || all params: 8,198,403,072 || trainable%: 0.0935
+2025-05-17 10:49:20,361 - INFO - LoRA adapters applied successfully
+2025-05-17 10:49:20,362 - INFO - Tokenizing datasets
+Tokenizing training set: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 388/388 [00:03<00:00, 109.82 examples/s]
+Tokenizing validation set: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 97/97 [00:00<00:00, 117.93 examples/s]
+2025-05-17 10:49:24,935 - INFO - Setting up training configuration
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-05-17 10:49:24,974 - INFO - Starting training
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                                                                                                                                                                                   | 0/24 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 390, in <module>
+    main()
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 378, in main
+    trainer.train()
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2560, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3736, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3801, in compute_loss
+    outputs = model(**inputs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/accelerate/utils/operations.py", line 818, in forward
+    return model_forward(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/accelerate/utils/operations.py", line 806, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/root/.venv/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/peft/peft_model.py", line 1757, in forward
+    return self.base_model(
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 850, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 576, in forward
+    layer_outputs = decoder_layer(
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 289, in forward
+    hidden_states, self_attn_weights = self.self_attn(
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 239, in forward
+    attn_output, attn_weights = attention_interface(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/integrations/sdpa_attention.py", line 54, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 78.00 MiB. GPU 0 has a total capacity of 79.15 GiB of which 59.62 MiB is free. Process 3080375 has 79.08 GiB memory in use. Of the allocated memory 77.98 GiB is allocated by PyTorch, and 626.63 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 390, in <module>
+    main()
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 378, in main
+    trainer.train()
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2560, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3736, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3801, in compute_loss
+    outputs = model(**inputs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/accelerate/utils/operations.py", line 818, in forward
+    return model_forward(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/accelerate/utils/operations.py", line 806, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/root/.venv/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/peft/peft_model.py", line 1757, in forward
+    return self.base_model(
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 850, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 576, in forward
+    layer_outputs = decoder_layer(
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 289, in forward
+    hidden_states, self_attn_weights = self.self_attn(
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 239, in forward
+    attn_output, attn_weights = attention_interface(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/integrations/sdpa_attention.py", line 54, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 78.00 MiB. GPU 0 has a total capacity of 79.15 GiB of which 59.62 MiB is free. Process 3080375 has 79.08 GiB memory in use. Of the allocated memory 77.98 GiB is allocated by PyTorch, and 626.63 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
