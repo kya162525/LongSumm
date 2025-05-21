@@ -1,0 +1,112 @@
+2025-05-20 12:43:13,837 - INFO - Using device: cuda:0 (rank 0)
+2025-05-20 12:43:13,974 - INFO - Using device: cuda:1 (rank 1)
+2025-05-20 12:43:14,427 - INFO - Using device: cuda:3 (rank 3)
+2025-05-20 12:43:14,433 - INFO - Using device: cuda:2 (rank 2)
+2025-05-20 12:43:18,377 - INFO - Loading data...
+2025-05-20 12:43:18,377 - INFO - Found 522 paper files
+2025-05-20 12:43:18,378 - INFO - Loading gold summaries
+2025-05-20 12:43:18,387 - INFO - Found 530 gold summaries
+2025-05-20 12:43:18,387 - INFO - Preparing dataset...
+2025-05-20 12:43:18,388 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-20 12:43:18,390 - INFO - Skipping 44148071 - paper too long (142806 characters)
+2025-05-20 12:43:18,397 - INFO - Skipping 75952682 - paper too long (210276 characters)
+2025-05-20 12:43:18,410 - INFO - Skipping 73424952 - paper too long (395979 characters)
+2025-05-20 12:43:18,428 - INFO - Filtering statistics:
+2025-05-20 12:43:18,428 - INFO -   total_papers: 522
+2025-05-20 12:43:18,428 - INFO -   no_gold_summary: 0
+2025-05-20 12:43:18,428 - INFO -   not_in_valid_ids: 34
+2025-05-20 12:43:18,428 - INFO -   paper_too_long: 3
+2025-05-20 12:43:18,428 - INFO -   summary_too_long: 0
+2025-05-20 12:43:18,428 - INFO -   accepted: 485
+2025-05-20 12:43:18,428 - INFO - Created dataset with 485 paper-summary pairs after filtering
+2025-05-20 12:43:18,587 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-20 12:43:19,526 - INFO - Loading data...
+2025-05-20 12:43:19,527 - INFO - Found 522 paper files
+2025-05-20 12:43:19,527 - INFO - Loading gold summaries
+2025-05-20 12:43:19,537 - INFO - Found 530 gold summaries
+2025-05-20 12:43:19,537 - INFO - Preparing dataset...
+2025-05-20 12:43:19,537 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-20 12:43:19,540 - INFO - Skipping 44148071 - paper too long (142806 characters)
+2025-05-20 12:43:19,546 - INFO - Skipping 75952682 - paper too long (210276 characters)
+2025-05-20 12:43:19,549 - INFO - Loading data...
+2025-05-20 12:43:19,549 - INFO - Found 522 paper files
+2025-05-20 12:43:19,550 - INFO - Loading gold summaries
+2025-05-20 12:43:19,558 - INFO - Skipping 73424952 - paper too long (395979 characters)
+2025-05-20 12:43:19,559 - INFO - Found 530 gold summaries
+2025-05-20 12:43:19,560 - INFO - Preparing dataset...
+2025-05-20 12:43:19,560 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-20 12:43:19,563 - INFO - Skipping 44148071 - paper too long (142806 characters)
+2025-05-20 12:43:19,569 - INFO - Skipping 75952682 - paper too long (210276 characters)
+2025-05-20 12:43:19,574 - INFO - Loading data...
+2025-05-20 12:43:19,575 - INFO - Found 522 paper files
+2025-05-20 12:43:19,575 - INFO - Loading gold summaries
+2025-05-20 12:43:19,577 - INFO - Filtering statistics:
+2025-05-20 12:43:19,577 - INFO -   total_papers: 522
+2025-05-20 12:43:19,577 - INFO -   no_gold_summary: 0
+2025-05-20 12:43:19,577 - INFO -   not_in_valid_ids: 34
+2025-05-20 12:43:19,577 - INFO -   paper_too_long: 3
+2025-05-20 12:43:19,577 - INFO -   summary_too_long: 0
+2025-05-20 12:43:19,577 - INFO -   accepted: 485
+2025-05-20 12:43:19,577 - INFO - Created dataset with 485 paper-summary pairs after filtering
+2025-05-20 12:43:19,581 - INFO - Skipping 73424952 - paper too long (395979 characters)
+2025-05-20 12:43:19,588 - INFO - Found 530 gold summaries
+2025-05-20 12:43:19,589 - INFO - Preparing dataset...
+2025-05-20 12:43:19,589 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-20 12:43:19,593 - INFO - Skipping 44148071 - paper too long (142806 characters)
+2025-05-20 12:43:19,600 - INFO - Filtering statistics:
+2025-05-20 12:43:19,600 - INFO -   total_papers: 522
+2025-05-20 12:43:19,600 - INFO -   no_gold_summary: 0
+2025-05-20 12:43:19,600 - INFO -   not_in_valid_ids: 34
+2025-05-20 12:43:19,600 - INFO -   paper_too_long: 3
+2025-05-20 12:43:19,600 - INFO -   summary_too_long: 0
+2025-05-20 12:43:19,600 - INFO -   accepted: 485
+2025-05-20 12:43:19,600 - INFO - Created dataset with 485 paper-summary pairs after filtering
+2025-05-20 12:43:19,600 - INFO - Skipping 75952682 - paper too long (210276 characters)
+2025-05-20 12:43:19,616 - INFO - Skipping 73424952 - paper too long (395979 characters)
+2025-05-20 12:43:19,635 - INFO - Filtering statistics:
+2025-05-20 12:43:19,635 - INFO -   total_papers: 522
+2025-05-20 12:43:19,635 - INFO -   no_gold_summary: 0
+2025-05-20 12:43:19,635 - INFO -   not_in_valid_ids: 34
+2025-05-20 12:43:19,635 - INFO -   paper_too_long: 3
+2025-05-20 12:43:19,635 - INFO -   summary_too_long: 0
+2025-05-20 12:43:19,635 - INFO -   accepted: 485
+2025-05-20 12:43:19,635 - INFO - Created dataset with 485 paper-summary pairs after filtering
+2025-05-20 12:43:19,734 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-20 12:43:19,740 - INFO - Checking 3 random samples from dataset:
+2025-05-20 12:43:19,757 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-20 12:43:19,796 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-20 12:43:19,823 - INFO - Sample 1 (paper_id: 414696):
+2025-05-20 12:43:19,824 - INFO -   Input tokens: torch.Size([30000])
+2025-05-20 12:43:19,824 - INFO -   Label tokens: torch.Size([4096])
+2025-05-20 12:43:19,824 - INFO -   Input text preview: Summarize the following scientific paper:
+
+DBSherlock: A Performance Diagnostic Tool for Transactional Databases
+Running an online transaction processing (OLTP) system is one of the most daunting tasks required of database administrators (DBAs). As businesses rely...
+2025-05-20 12:43:19,824 - INFO -   Label text preview: DBSherlock: A performance diagnostic tool for transactional databases Yoon et al. SIGMOD ’16  …tens of thousands of concurrent transactions competing for the same resources (e.g.
+CPU, disk I/O, memory) can create...
+2025-05-20 12:43:19,824 - INFO - --------------------------------------------------
+2025-05-20 12:43:19,862 - INFO - Sample 2 (paper_id: 29703573):
+2025-05-20 12:43:19,862 - INFO -   Input tokens: torch.Size([30000])
+2025-05-20 12:43:19,862 - INFO -   Label tokens: torch.Size([4096])
+2025-05-20 12:43:19,862 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Incorporating Copying Mechanism in Sequence-to-Sequence Learning
+We address an important problem in sequence-to-sequence (Seq2Seq) learning referred to as copying, in which certain segments in the...
+2025-05-20 12:43:19,862 - INFO -   Label text preview: Incorporating copying mechanism in sequence to sequence learning Gu et al. 2016, with a side-helping of Neural machine translation by jointly learning to align and translate Bahdanau et al.
+ICLR 2015...
+2025-05-20 12:43:19,863 - INFO - --------------------------------------------------
+2025-05-20 12:43:19,904 - INFO - Sample 3 (paper_id: 93025332):
+2025-05-20 12:43:19,905 - INFO -   Input tokens: torch.Size([30000])
+2025-05-20 12:43:19,905 - INFO -   Label tokens: torch.Size([4096])
+2025-05-20 12:43:19,905 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Use of Formal Methods at Amazon Web Services
+At AWS we strive to build services that are simple for customers to use. That external simplicity is built on a hidden substrate of complex distributed systems. Such complex internals are...
+2025-05-20 12:43:19,905 - INFO -   Label text preview: Use of Formal Methods at Amazon Web Services – Newcombe et al 2014  Leslie Lamport recently gave a talk at the React conference on the specification language TLA.
+I wasn’t there to hear the talk, but I was intrigued...
+2025-05-20 12:43:19,905 - INFO - --------------------------------------------------
+2025-05-21 02:21:54,313 - INFO - Using default tokenizer.
+2025-05-21 02:40:12,948 - INFO - Using default tokenizer.
+2025-05-21 04:55:20,672 - INFO - Using default tokenizer.
+2025-05-21 04:55:34,474 - INFO - Using default tokenizer.
+2025-05-21 04:55:47,479 - INFO - Saved metrics and predictions to ./jaehyeok/results

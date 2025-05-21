@@ -1,0 +1,183 @@
+2025-05-17 13:28:05,396 - INFO - LoRA is enabled with the following configuration:
+2025-05-17 13:28:05,396 - INFO -   LoRA rank (r): 8
+2025-05-17 13:28:05,396 - INFO -   LoRA alpha: 32
+2025-05-17 13:28:05,396 - INFO -   LoRA dropout: 0.05
+2025-05-17 13:28:05,396 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-17 13:28:05,396 - INFO - Loading data...
+2025-05-17 13:28:05,396 - INFO - Found 522 paper files
+2025-05-17 13:28:05,397 - INFO - Loading gold summaries
+2025-05-17 13:28:05,404 - INFO - Found 530 gold summaries
+2025-05-17 13:28:05,404 - INFO - Preparing dataset...
+2025-05-17 13:28:05,404 - INFO - Loaded 488 valid paper IDs for filtering
+Filtering papers: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 145563.90it/s]
+2025-05-17 13:28:05,409 - INFO - Filtering statistics:
+2025-05-17 13:28:05,409 - INFO -   total_papers: 522
+2025-05-17 13:28:05,409 - INFO -   no_gold_summary: 0
+2025-05-17 13:28:05,410 - INFO -   not_in_valid_ids: 34
+2025-05-17 13:28:05,410 - INFO -   paper_too_long: 0
+2025-05-17 13:28:05,410 - INFO -   summary_too_long: 0
+2025-05-17 13:28:05,410 - INFO -   accepted: 488
+2025-05-17 13:28:05,410 - INFO - Created dataset with 488 paper-summary pairs after filtering
+2025-05-17 13:28:05,427 - INFO - Splitting dataset: 80.0% train, 19.999999999999996% validation
+2025-05-17 13:28:05,431 - INFO - Training set: 390 examples
+2025-05-17 13:28:05,431 - INFO - Validation set: 98 examples
+2025-05-17 13:28:05,431 - INFO - Loading model/tokenizer on rank 0
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:18<00:00,  3.74s/it]
+2025-05-17 13:28:25,436 - INFO - Applying LoRA adapters to the model
+trainable params: 7,667,712 || all params: 8,198,403,072 || trainable%: 0.0935
+2025-05-17 13:28:25,670 - INFO - Tokenizing datasets
+Tokenizing training set: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 390/390 [00:07<00:00, 51.29 examples/s]
+Tokenizing validation set: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 98/98 [00:01<00:00, 54.40 examples/s]
+2025-05-17 13:28:35,286 - INFO - Setting up training configuration
+[2025-05-17 13:28:35,289] [INFO] [comm.py:669:init_distributed] cdb=None
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-05-17 13:28:35,375 - INFO - Starting training
+[2025-05-17 13:28:40,374] [WARNING] [lr_schedules.py:683:get_lr] Attempting to get learning rate from scheduler before it has started
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                                                                                                        | 0/6 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/root/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+ 17%|█████████████████████▏                                                                                                         | 1/6 [11:42<58:31, 702.30s/it]Traceback (most recent call last):
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 478, in <module>
+    # Finish wandb session
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 466, in main
+    push_callback = PushToHubCallback(trainer, f"jaehyeoklee/qwen3-8b-longsumm")
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2560, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3736, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3801, in compute_loss
+    outputs = model(**inputs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 2054, in forward
+    loss = self.module(*inputs, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1805, in inner
+    result = forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/peft/peft_model.py", line 1757, in forward
+    return self.base_model(
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 850, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 564, in forward
+    layer_outputs = self._gradient_checkpointing_func(
+  File "/root/.venv/lib/python3.10/site-packages/torch/_compile.py", line 51, in inner
+    return disable_fn(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 838, in _fn
+    return fn(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 488, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/root/.venv/lib/python3.10/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/root/.venv/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 263, in forward
+    outputs = run_function(*args)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 286, in forward
+    hidden_states = self.input_layernorm(hidden_states)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 73, in forward
+    hidden_states = hidden_states.to(torch.float32)
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 478, in <module>
+[rank0]:     # Finish wandb session
+[rank0]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 466, in main
+[rank0]:     push_callback = PushToHubCallback(trainer, f"jaehyeoklee/qwen3-8b-longsumm")
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2560, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3736, in training_step
+[rank0]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3801, in compute_loss
+[rank0]:     outputs = model(**inputs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+[rank0]:     ret_val = func(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 2054, in forward
+[rank0]:     loss = self.module(*inputs, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+[rank0]:     return inner()
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1805, in inner
+[rank0]:     result = forward_call(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/peft/peft_model.py", line 1757, in forward
+[rank0]:     return self.base_model(
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+[rank0]:     return self.model.forward(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+[rank0]:     output = func(self, *args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 850, in forward
+[rank0]:     outputs: BaseModelOutputWithPast = self.model(
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+[rank0]:     output = func(self, *args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 564, in forward
+[rank0]:     layer_outputs = self._gradient_checkpointing_func(
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/_compile.py", line 51, in inner
+[rank0]:     return disable_fn(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 838, in _fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 488, in checkpoint
+[rank0]:     return CheckpointFunction.apply(function, preserve, *args)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/autograd/function.py", line 575, in apply
+[rank0]:     return super().apply(*args, **kwargs)  # type: ignore[misc]
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 263, in forward
+[rank0]:     outputs = run_function(*args)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 286, in forward
+[rank0]:     hidden_states = self.input_layernorm(hidden_states)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 73, in forward
+[rank0]:     hidden_states = hidden_states.to(torch.float32)
+[rank0]: KeyboardInterrupt

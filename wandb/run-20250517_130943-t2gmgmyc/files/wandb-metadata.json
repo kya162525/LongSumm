@@ -1,0 +1,60 @@
+{
+  "os": "Linux-5.15.0-60-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.10.12",
+  "startedAt": "2025-05-17T13:09:43.486675Z",
+  "program": "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py",
+  "codePath": "jaehyeok/5_fine_tuning/fine_tuning.py",
+  "git": {
+    "remote": "https://github.com/kya162525/LongSumm.git",
+    "commit": "6dc0837ae3e7b732f570fa995ff07718c03bac61"
+  },
+  "email": "leejhmissa@gmail.com",
+  "root": "/root/workspace/LongSumm",
+  "host": "workspace-a044ipf8kwok-0",
+  "executable": "/root/.venv/bin/python3",
+  "codePathLocal": "jaehyeok/5_fine_tuning/fine_tuning.py",
+  "cpu_count": 128,
+  "cpu_count_logical": 128,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_count": 4,
+  "disk": {
+    "/": {
+      "total": "313235406848",
+      "used": "119855595520"
+    }
+  },
+  "memory": {
+    "total": "2029227565056"
+  },
+  "cpu": {
+    "count": 128,
+    "countLogical": 128
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.2"
+}

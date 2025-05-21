@@ -1,0 +1,15 @@
+{"time":"2025-05-17T13:12:00.644196432Z","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/root/workspace/LongSumm/wandb/run-20250517_131200-w2ex4xml/logs/debug-core.log"}
+{"time":"2025-05-17T13:12:01.078183807Z","level":"INFO","msg":"created new stream","id":"w2ex4xml"}
+{"time":"2025-05-17T13:12:01.078253276Z","level":"INFO","msg":"stream: started","id":"w2ex4xml"}
+{"time":"2025-05-17T13:12:01.078333215Z","level":"INFO","msg":"writer: Do: started","stream_id":"w2ex4xml"}
+{"time":"2025-05-17T13:12:01.078347863Z","level":"INFO","msg":"sender: started","stream_id":"w2ex4xml"}
+{"time":"2025-05-17T13:12:01.078386144Z","level":"INFO","msg":"handler: started","stream_id":"w2ex4xml"}
+{"time":"2025-05-17T13:12:01.495118709Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-17T13:12:03.262867848Z","level":"INFO","msg":"stream: closing","id":"w2ex4xml"}
+{"time":"2025-05-17T13:12:03.262914746Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-17T13:12:03.262975589Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-17T13:12:04.085215055Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-17T13:12:04.531339863Z","level":"INFO","msg":"handler: closed","stream_id":"w2ex4xml"}
+{"time":"2025-05-17T13:12:04.531427967Z","level":"INFO","msg":"sender: closed","stream_id":"w2ex4xml"}
+{"time":"2025-05-17T13:12:04.531438066Z","level":"INFO","msg":"writer: Close: closed","stream_id":"w2ex4xml"}
+{"time":"2025-05-17T13:12:04.531584519Z","level":"INFO","msg":"stream: closed","id":"w2ex4xml"}

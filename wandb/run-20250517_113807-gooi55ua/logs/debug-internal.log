@@ -1,0 +1,15 @@
+{"time":"2025-05-17T11:38:07.168808418Z","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/root/workspace/LongSumm/wandb/run-20250517_113807-gooi55ua/logs/debug-core.log"}
+{"time":"2025-05-17T11:38:07.612977281Z","level":"INFO","msg":"created new stream","id":"gooi55ua"}
+{"time":"2025-05-17T11:38:07.613024769Z","level":"INFO","msg":"stream: started","id":"gooi55ua"}
+{"time":"2025-05-17T11:38:07.613046229Z","level":"INFO","msg":"writer: Do: started","stream_id":"gooi55ua"}
+{"time":"2025-05-17T11:38:07.613096864Z","level":"INFO","msg":"sender: started","stream_id":"gooi55ua"}
+{"time":"2025-05-17T11:38:07.613065926Z","level":"INFO","msg":"handler: started","stream_id":"gooi55ua"}
+{"time":"2025-05-17T11:38:08.056980044Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-17T11:38:25.494595478Z","level":"INFO","msg":"stream: closing","id":"gooi55ua"}
+{"time":"2025-05-17T11:38:25.494702798Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-17T11:38:25.494813515Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-17T11:38:26.380400402Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-17T11:38:26.746460173Z","level":"INFO","msg":"handler: closed","stream_id":"gooi55ua"}
+{"time":"2025-05-17T11:38:26.746516227Z","level":"INFO","msg":"writer: Close: closed","stream_id":"gooi55ua"}
+{"time":"2025-05-17T11:38:26.746538669Z","level":"INFO","msg":"sender: closed","stream_id":"gooi55ua"}
+{"time":"2025-05-17T11:38:26.746590235Z","level":"INFO","msg":"stream: closed","id":"gooi55ua"}

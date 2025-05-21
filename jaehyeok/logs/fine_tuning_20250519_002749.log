@@ -1,0 +1,34 @@
+2025-05-19 00:27:49,452 - INFO - Using device: cuda:2 (rank 2)
+2025-05-19 00:27:49,675 - INFO - Using device: cuda:1 (rank 1)
+2025-05-19 00:27:53,933 - INFO - Loading data...
+2025-05-19 00:27:53,934 - INFO - Found 522 paper files
+2025-05-19 00:27:53,935 - INFO - Loading gold summaries
+2025-05-19 00:27:53,943 - INFO - Found 530 gold summaries
+2025-05-19 00:27:53,943 - INFO - Preparing dataset...
+2025-05-19 00:27:53,943 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-19 00:27:53,947 - INFO - Filtering statistics:
+2025-05-19 00:27:53,947 - INFO -   total_papers: 522
+2025-05-19 00:27:53,947 - INFO -   no_gold_summary: 0
+2025-05-19 00:27:53,947 - INFO -   not_in_valid_ids: 34
+2025-05-19 00:27:53,947 - INFO -   paper_too_long: 0
+2025-05-19 00:27:53,947 - INFO -   summary_too_long: 0
+2025-05-19 00:27:53,947 - INFO -   accepted: 488
+2025-05-19 00:27:53,947 - INFO - Created dataset with 488 paper-summary pairs after filtering
+2025-05-19 00:27:53,964 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-19 00:27:54,871 - INFO - Loading data...
+2025-05-19 00:27:54,872 - INFO - Found 522 paper files
+2025-05-19 00:27:54,872 - INFO - Loading gold summaries
+2025-05-19 00:27:54,881 - INFO - Found 530 gold summaries
+2025-05-19 00:27:54,881 - INFO - Preparing dataset...
+2025-05-19 00:27:54,881 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-19 00:27:54,885 - INFO - Filtering statistics:
+2025-05-19 00:27:54,885 - INFO -   total_papers: 522
+2025-05-19 00:27:54,885 - INFO -   no_gold_summary: 0
+2025-05-19 00:27:54,885 - INFO -   not_in_valid_ids: 34
+2025-05-19 00:27:54,885 - INFO -   paper_too_long: 0
+2025-05-19 00:27:54,885 - INFO -   summary_too_long: 0
+2025-05-19 00:27:54,885 - INFO -   accepted: 488
+2025-05-19 00:27:54,885 - INFO - Created dataset with 488 paper-summary pairs after filtering
+2025-05-19 00:27:54,903 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-20 05:11:12,585 - INFO - Using default tokenizer.
+2025-05-20 05:21:07,371 - INFO - Using default tokenizer.

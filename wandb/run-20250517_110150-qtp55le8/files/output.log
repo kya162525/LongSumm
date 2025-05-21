@@ -1,0 +1,64 @@
+2025-05-17 11:01:51,243 - INFO - LoRA is enabled with the following configuration:
+2025-05-17 11:01:51,243 - INFO -   LoRA rank (r): 8
+2025-05-17 11:01:51,243 - INFO -   LoRA alpha: 32
+2025-05-17 11:01:51,243 - INFO -   LoRA dropout: 0.05
+2025-05-17 11:01:51,243 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-17 11:01:51,243 - INFO - Loading data...
+2025-05-17 11:01:51,244 - INFO - Found 522 paper files
+Loading paper texts: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 12831.58it/s]
+2025-05-17 11:01:51,286 - INFO - Loading gold summaries
+2025-05-17 11:01:51,293 - INFO - Found 530 gold summaries
+2025-05-17 11:01:51,294 - INFO - Preparing dataset...
+2025-05-17 11:01:51,294 - INFO - Loaded 488 valid paper IDs for filtering
+Filtering papers:   0%|                                                                                                                                                                                                | 0/522 [00:00<?, ?it/s]2025-05-17 11:01:51,294 - INFO - Skipping 24431610 - not in valid IDs
+2025-05-17 11:01:51,295 - INFO - Skipping 44148071 - paper too long (142806 characters)
+2025-05-17 11:01:51,295 - INFO - Skipping 53851426 - not in valid IDs
+2025-05-17 11:01:51,295 - INFO - Skipping 28171009 - not in valid IDs
+2025-05-17 11:01:51,295 - INFO - Skipping 79091650 - not in valid IDs
+2025-05-17 11:01:51,295 - INFO - Skipping 4741660 - not in valid IDs
+2025-05-17 11:01:51,295 - INFO - Skipping 75952682 - paper too long (210276 characters)
+2025-05-17 11:01:51,296 - INFO - Skipping 74977893 - not in valid IDs
+2025-05-17 11:01:51,296 - INFO - Skipping 43514018 - not in valid IDs
+2025-05-17 11:01:51,296 - INFO - Skipping 70719243 - not in valid IDs
+2025-05-17 11:01:51,296 - INFO - Skipping 74971632 - not in valid IDs
+2025-05-17 11:01:51,296 - INFO - Skipping 6469050 - not in valid IDs
+2025-05-17 11:01:51,296 - INFO - Skipping 27264933 - not in valid IDs
+2025-05-17 11:01:51,297 - INFO - Skipping 81623492 - not in valid IDs
+2025-05-17 11:01:51,297 - INFO - Skipping 93106503 - not in valid IDs
+2025-05-17 11:01:51,297 - INFO - Skipping 13237217 - not in valid IDs
+2025-05-17 11:01:51,297 - INFO - Skipping 96599676 - not in valid IDs
+2025-05-17 11:01:51,297 - INFO - Skipping 81034618 - not in valid IDs
+2025-05-17 11:01:51,297 - INFO - Skipping 70176908 - not in valid IDs
+2025-05-17 11:01:51,298 - INFO - Skipping 73424952 - paper too long (395979 characters)
+2025-05-17 11:01:51,298 - INFO - Skipping 43813190 - not in valid IDs
+2025-05-17 11:01:51,298 - INFO - Skipping 76854692 - not in valid IDs
+2025-05-17 11:01:51,298 - INFO - Skipping 8240954 - not in valid IDs
+2025-05-17 11:01:51,298 - INFO - Skipping 72992946 - not in valid IDs
+2025-05-17 11:01:51,298 - INFO - Skipping 73705154 - not in valid IDs
+2025-05-17 11:01:51,298 - INFO - Skipping 74374635 - not in valid IDs
+2025-05-17 11:01:51,298 - INFO - Skipping 59963771 - not in valid IDs
+2025-05-17 11:01:51,299 - INFO - Skipping 60641106 - not in valid IDs
+2025-05-17 11:01:51,299 - INFO - Skipping 95858167 - not in valid IDs
+2025-05-17 11:01:51,299 - INFO - Skipping 1050101 - not in valid IDs
+2025-05-17 11:01:51,299 - INFO - Skipping 58600020 - not in valid IDs
+2025-05-17 11:01:51,299 - INFO - Skipping 63993374 - not in valid IDs
+2025-05-17 11:01:51,300 - INFO - Skipping 1077676 - not in valid IDs
+2025-05-17 11:01:51,300 - INFO - Skipping 65847395 - not in valid IDs
+2025-05-17 11:01:51,300 - INFO - Skipping 963444 - not in valid IDs
+2025-05-17 11:01:51,300 - INFO - Skipping 18000122 - not in valid IDs
+2025-05-17 11:01:51,300 - INFO - Skipping 70140653 - not in valid IDs
+Filtering papers: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 88594.13it/s]
+2025-05-17 11:01:51,301 - INFO - Filtering statistics:
+2025-05-17 11:01:51,301 - INFO -   total_papers: 522
+2025-05-17 11:01:51,301 - INFO -   no_gold_summary: 0
+2025-05-17 11:01:51,301 - INFO -   not_in_valid_ids: 34
+2025-05-17 11:01:51,301 - INFO -   paper_too_long: 3
+2025-05-17 11:01:51,301 - INFO -   summary_too_long: 0
+2025-05-17 11:01:51,301 - INFO -   accepted: 485
+2025-05-17 11:01:51,301 - INFO - Created dataset with 485 paper-summary pairs after filtering
+2025-05-17 11:01:51,412 - INFO - Splitting dataset: 80.0% train, 19.999999999999996% validation
+2025-05-17 11:01:51,416 - INFO - Training set: 388 examples
+2025-05-17 11:01:51,416 - INFO - Validation set: 97 examples
+2025-05-17 11:01:51,416 - INFO - Loading model and tokenizer: Qwen/Qwen3-8B
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:11<00:00,  2.23s/it]
+2025-05-17 11:02:03,713 - INFO - Applying LoRA adapters to the model

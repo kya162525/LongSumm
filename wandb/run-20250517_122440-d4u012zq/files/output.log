@@ -1,0 +1,93 @@
+2025-05-17 12:24:41,599 - INFO - LoRA is enabled with the following configuration:
+2025-05-17 12:24:41,599 - INFO -   LoRA rank (r): 8
+2025-05-17 12:24:41,599 - INFO -   LoRA alpha: 32
+2025-05-17 12:24:41,599 - INFO -   LoRA dropout: 0.05
+2025-05-17 12:24:41,599 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-17 12:24:41,599 - INFO - Loading data...
+2025-05-17 12:24:41,600 - INFO - Found 522 paper files
+2025-05-17 12:24:41,600 - INFO - Loading gold summaries
+2025-05-17 12:24:41,607 - INFO - Found 530 gold summaries
+2025-05-17 12:24:41,608 - INFO - Preparing dataset...
+2025-05-17 12:24:41,608 - INFO - Loaded 488 valid paper IDs for filtering
+Filtering papers:   0%|                                                                                    | 0/522 [00:00<?, ?it/s]2025-05-17 12:24:41,609 - INFO - Skipping 24431610 - not in valid IDs
+2025-05-17 12:24:41,609 - INFO - Skipping 53851426 - not in valid IDs
+2025-05-17 12:24:41,609 - INFO - Skipping 28171009 - not in valid IDs
+2025-05-17 12:24:41,610 - INFO - Skipping 79091650 - not in valid IDs
+2025-05-17 12:24:41,610 - INFO - Skipping 4741660 - not in valid IDs
+2025-05-17 12:24:41,610 - INFO - Skipping 74977893 - not in valid IDs
+2025-05-17 12:24:41,610 - INFO - Skipping 43514018 - not in valid IDs
+2025-05-17 12:24:41,610 - INFO - Skipping 70719243 - not in valid IDs
+2025-05-17 12:24:41,610 - INFO - Skipping 74971632 - not in valid IDs
+2025-05-17 12:24:41,610 - INFO - Skipping 6469050 - not in valid IDs
+2025-05-17 12:24:41,611 - INFO - Skipping 27264933 - not in valid IDs
+2025-05-17 12:24:41,611 - INFO - Skipping 81623492 - not in valid IDs
+2025-05-17 12:24:41,611 - INFO - Skipping 93106503 - not in valid IDs
+2025-05-17 12:24:41,611 - INFO - Skipping 13237217 - not in valid IDs
+2025-05-17 12:24:41,611 - INFO - Skipping 96599676 - not in valid IDs
+2025-05-17 12:24:41,611 - INFO - Skipping 81034618 - not in valid IDs
+2025-05-17 12:24:41,612 - INFO - Skipping 70176908 - not in valid IDs
+2025-05-17 12:24:41,612 - INFO - Skipping 43813190 - not in valid IDs
+2025-05-17 12:24:41,612 - INFO - Skipping 76854692 - not in valid IDs
+2025-05-17 12:24:41,612 - INFO - Skipping 8240954 - not in valid IDs
+2025-05-17 12:24:41,612 - INFO - Skipping 72992946 - not in valid IDs
+2025-05-17 12:24:41,612 - INFO - Skipping 73705154 - not in valid IDs
+2025-05-17 12:24:41,612 - INFO - Skipping 74374635 - not in valid IDs
+2025-05-17 12:24:41,613 - INFO - Skipping 59963771 - not in valid IDs
+2025-05-17 12:24:41,613 - INFO - Skipping 60641106 - not in valid IDs
+2025-05-17 12:24:41,613 - INFO - Skipping 95858167 - not in valid IDs
+2025-05-17 12:24:41,613 - INFO - Skipping 1050101 - not in valid IDs
+2025-05-17 12:24:41,613 - INFO - Skipping 58600020 - not in valid IDs
+2025-05-17 12:24:41,613 - INFO - Skipping 63993374 - not in valid IDs
+2025-05-17 12:24:41,614 - INFO - Skipping 1077676 - not in valid IDs
+2025-05-17 12:24:41,614 - INFO - Skipping 65847395 - not in valid IDs
+2025-05-17 12:24:41,614 - INFO - Skipping 963444 - not in valid IDs
+2025-05-17 12:24:41,614 - INFO - Skipping 18000122 - not in valid IDs
+2025-05-17 12:24:41,614 - INFO - Skipping 70140653 - not in valid IDs
+Filtering papers: 100%|███████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 98211.40it/s]
+2025-05-17 12:24:41,614 - INFO - Filtering statistics:
+2025-05-17 12:24:41,615 - INFO -   total_papers: 522
+2025-05-17 12:24:41,615 - INFO -   no_gold_summary: 0
+2025-05-17 12:24:41,615 - INFO -   not_in_valid_ids: 34
+2025-05-17 12:24:41,615 - INFO -   paper_too_long: 0
+2025-05-17 12:24:41,615 - INFO -   summary_too_long: 0
+2025-05-17 12:24:41,615 - INFO -   accepted: 488
+2025-05-17 12:24:41,615 - INFO - Created dataset with 488 paper-summary pairs after filtering
+2025-05-17 12:24:41,635 - INFO - Splitting dataset: 80.0% train, 19.999999999999996% validation
+2025-05-17 12:24:41,640 - INFO - Training set: 390 examples
+2025-05-17 12:24:41,640 - INFO - Validation set: 98 examples
+2025-05-17 12:24:41,640 - INFO - Loading model and tokenizer: Qwen/Qwen3-8B
+The `load_in_4bit` and `load_in_8bit` arguments are deprecated and will be removed in the future versions. Please, pass a `BitsAndBytesConfig` object in `quantization_config` argument instead.
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████| 5/5 [00:22<00:00,  4.50s/it]
+2025-05-17 12:25:05,622 - INFO - Applying LoRA adapters to the model
+trainable params: 7,667,712 || all params: 8,198,403,072 || trainable%: 0.0935
+2025-05-17 12:25:06,227 - INFO - LoRA adapters applied successfully
+2025-05-17 12:25:06,227 - INFO - Tokenizing datasets
+Tokenizing training set: 100%|████████████████████████████████████████████████████████████| 390/390 [00:08<00:00, 47.38 examples/s]
+Tokenizing validation set: 100%|████████████████████████████████████████████████████████████| 98/98 [00:01<00:00, 50.79 examples/s]
+2025-05-17 12:25:16,609 - INFO - Setting up training configuration
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-05-17 12:25:16,670 - INFO - Starting training
+Traceback (most recent call last):
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 459, in <module>
+    main()
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 447, in main
+    trainer.train()
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2377, in _inner_training_loop
+    model, self.optimizer, self.lr_scheduler = self.accelerator.prepare(
+  File "/root/.venv/lib/python3.10/site-packages/accelerate/accelerator.py", line 1355, in prepare
+    raise ValueError(
+ValueError: You can't train a model that has been loaded with `device_map='auto'` in any distributed mode. Please rerun your script specifying `--num_processes=1` or by launching with `python {{myscript.py}}`.
+Traceback (most recent call last):
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 459, in <module>
+    main()
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 447, in main
+    trainer.train()
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2377, in _inner_training_loop
+    model, self.optimizer, self.lr_scheduler = self.accelerator.prepare(
+  File "/root/.venv/lib/python3.10/site-packages/accelerate/accelerator.py", line 1355, in prepare
+    raise ValueError(
+ValueError: You can't train a model that has been loaded with `device_map='auto'` in any distributed mode. Please rerun your script specifying `--num_processes=1` or by launching with `python {{myscript.py}}`.

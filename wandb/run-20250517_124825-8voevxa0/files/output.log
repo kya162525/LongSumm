@@ -1,0 +1,79 @@
+2025-05-17 12:48:26,050 - INFO - LoRA is enabled with the following configuration:
+2025-05-17 12:48:26,051 - INFO -   LoRA rank (r): 8
+2025-05-17 12:48:26,051 - INFO -   LoRA alpha: 32
+2025-05-17 12:48:26,051 - INFO -   LoRA dropout: 0.05
+2025-05-17 12:48:26,051 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-17 12:48:26,051 - INFO - Loading data...
+2025-05-17 12:48:26,051 - INFO - Found 522 paper files
+2025-05-17 12:48:26,052 - INFO - Loading gold summaries
+2025-05-17 12:48:26,059 - INFO - Found 530 gold summaries
+2025-05-17 12:48:26,059 - INFO - Preparing dataset...
+2025-05-17 12:48:26,059 - INFO - Loaded 488 valid paper IDs for filtering
+Filtering papers: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 262962.61it/s]
+2025-05-17 12:48:26,063 - INFO - Filtering statistics:
+2025-05-17 12:48:26,063 - INFO -   total_papers: 522
+2025-05-17 12:48:26,063 - INFO -   no_gold_summary: 0
+2025-05-17 12:48:26,063 - INFO -   not_in_valid_ids: 34
+2025-05-17 12:48:26,063 - INFO -   paper_too_long: 0
+2025-05-17 12:48:26,063 - INFO -   summary_too_long: 0
+2025-05-17 12:48:26,063 - INFO -   accepted: 488
+2025-05-17 12:48:26,063 - INFO - Created dataset with 488 paper-summary pairs after filtering
+2025-05-17 12:48:26,081 - INFO - Splitting dataset: 80.0% train, 19.999999999999996% validation
+2025-05-17 12:48:26,085 - INFO - Training set: 390 examples
+2025-05-17 12:48:26,085 - INFO - Validation set: 98 examples
+2025-05-17 12:48:26,086 - INFO - Loading model and tokenizer: Qwen/Qwen3-8B
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:12<00:00,  2.51s/it]
+2025-05-17 12:48:39,998 - INFO - Applying LoRA adapters to the model
+trainable params: 7,667,712 || all params: 8,198,403,072 || trainable%: 0.0935
+2025-05-17 12:48:40,233 - INFO - LoRA adapters applied successfully
+2025-05-17 12:48:40,234 - INFO - Tokenizing datasets
+Tokenizing training set: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 390/390 [00:07<00:00, 52.40 examples/s]
+Tokenizing validation set: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 98/98 [00:01<00:00, 53.87 examples/s]
+2025-05-17 12:48:49,725 - INFO - Setting up training configuration
+[2025-05-17 12:48:49,728] [INFO] [comm.py:669:init_distributed] cdb=None
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-05-17 12:48:50,293 - INFO - Starting training
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 479, in <module>
+[rank3]:     main()
+[rank3]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 467, in main
+[rank3]:     trainer.train()
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+[rank3]:     return inner_training_loop(
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2377, in _inner_training_loop
+[rank3]:     model, self.optimizer, self.lr_scheduler = self.accelerator.prepare(
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/accelerate/accelerator.py", line 1432, in prepare
+[rank3]:     result = self._prepare_deepspeed(*args)
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/accelerate/accelerator.py", line 2028, in _prepare_deepspeed
+[rank3]:     engine, optimizer, _, lr_scheduler = ds_initialize(**kwargs)
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/deepspeed/__init__.py", line 193, in initialize
+[rank3]:     engine = DeepSpeedEngine(args=args,
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 327, in __init__
+[rank3]:     self._configure_lr_scheduler()
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1066, in _configure_lr_scheduler
+[rank3]:     lr_scheduler = self._scheduler_from_config(self.optimizer)
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1113, in _scheduler_from_config
+[rank3]:     instantiated_scheduler = scheduler(optimizer, **scheduler_params)
+[rank3]: TypeError: WarmupLR.__init__() got an unexpected keyword argument 'total_num_steps'
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 479, in <module>
+[rank3]:     main()
+[rank3]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 467, in main
+[rank3]:     trainer.train()
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+[rank3]:     return inner_training_loop(
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2377, in _inner_training_loop
+[rank3]:     model, self.optimizer, self.lr_scheduler = self.accelerator.prepare(
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/accelerate/accelerator.py", line 1432, in prepare
+[rank3]:     result = self._prepare_deepspeed(*args)
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/accelerate/accelerator.py", line 2028, in _prepare_deepspeed
+[rank3]:     engine, optimizer, _, lr_scheduler = ds_initialize(**kwargs)
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/deepspeed/__init__.py", line 193, in initialize
+[rank3]:     engine = DeepSpeedEngine(args=args,
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 327, in __init__
+[rank3]:     self._configure_lr_scheduler()
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1066, in _configure_lr_scheduler
+[rank3]:     lr_scheduler = self._scheduler_from_config(self.optimizer)
+[rank3]:   File "/root/.venv/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1113, in _scheduler_from_config
+[rank3]:     instantiated_scheduler = scheduler(optimizer, **scheduler_params)
+[rank3]: TypeError: WarmupLR.__init__() got an unexpected keyword argument 'total_num_steps'

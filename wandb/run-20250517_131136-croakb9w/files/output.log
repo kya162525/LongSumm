@@ -1,0 +1,64 @@
+2025-05-17 13:11:37,320 - INFO - LoRA is enabled with the following configuration:
+2025-05-17 13:11:37,321 - INFO -   LoRA rank (r): 8
+2025-05-17 13:11:37,321 - INFO -   LoRA alpha: 32
+2025-05-17 13:11:37,321 - INFO -   LoRA dropout: 0.05
+2025-05-17 13:11:37,321 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-17 13:11:37,321 - INFO - Loading data...
+2025-05-17 13:11:37,321 - INFO - Found 522 paper files
+2025-05-17 13:11:37,322 - INFO - Loading gold summaries
+2025-05-17 13:11:37,329 - INFO - Found 530 gold summaries
+2025-05-17 13:11:37,329 - INFO - Preparing dataset...
+2025-05-17 13:11:37,330 - INFO - Loaded 488 valid paper IDs for filtering
+Filtering papers: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 256944.81it/s]
+2025-05-17 13:11:37,333 - INFO - Filtering statistics:
+2025-05-17 13:11:37,333 - INFO -   total_papers: 522
+2025-05-17 13:11:37,333 - INFO -   no_gold_summary: 0
+2025-05-17 13:11:37,333 - INFO -   not_in_valid_ids: 34
+2025-05-17 13:11:37,333 - INFO -   paper_too_long: 0
+2025-05-17 13:11:37,334 - INFO -   summary_too_long: 0
+2025-05-17 13:11:37,334 - INFO -   accepted: 488
+2025-05-17 13:11:37,334 - INFO - Created dataset with 488 paper-summary pairs after filtering
+2025-05-17 13:11:37,353 - INFO - Splitting dataset: 80.0% train, 19.999999999999996% validation
+2025-05-17 13:11:37,357 - INFO - Training set: 390 examples
+2025-05-17 13:11:37,357 - INFO - Validation set: 98 examples
+2025-05-17 13:11:37,361 - INFO - Loading model/tokenizer on rank -1
+Loading checkpoint shards:   0%|                                                                                                             | 0/5 [00:00<?, ?it/s][rank1]: Traceback (most recent call last):
+[rank1]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 495, in <module>
+[rank1]:     main()
+[rank1]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 457, in main
+[rank1]:     model, tokenizer = setup_model_and_tokenizer(local_rank=args.local_rank)
+[rank1]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 258, in setup_model_and_tokenizer
+[rank1]:     model = AutoModelForCausalLM.from_pretrained(
+[rank1]:   File "/root/.venv/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+[rank1]:     return model_class.from_pretrained(
+[rank1]:   File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+[rank1]:     return func(*args, **kwargs)
+[rank1]:   File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4399, in from_pretrained
+[rank1]:     ) = cls._load_pretrained_model(
+[rank1]:   File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4793, in _load_pretrained_model
+[rank1]:     caching_allocator_warmup(model_to_load, expanded_device_map, factor=2 if hf_quantizer is None else 4)
+[rank1]:   File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 5772, in caching_allocator_warmup
+[rank1]:     accelerator_device_map = {
+[rank1]:   File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 5773, in <dictcomp>
+[rank1]:     param: torch.device(device) for param, device in expanded_device_map.items() if device not in ["cpu", "disk"]
+[rank1]: RuntimeError: Device index must not be negative
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 495, in <module>
+[rank1]:     main()
+[rank1]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 457, in main
+[rank1]:     model, tokenizer = setup_model_and_tokenizer(local_rank=args.local_rank)
+[rank1]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 258, in setup_model_and_tokenizer
+[rank1]:     model = AutoModelForCausalLM.from_pretrained(
+[rank1]:   File "/root/.venv/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+[rank1]:     return model_class.from_pretrained(
+[rank1]:   File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+[rank1]:     return func(*args, **kwargs)
+[rank1]:   File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4399, in from_pretrained
+[rank1]:     ) = cls._load_pretrained_model(
+[rank1]:   File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4793, in _load_pretrained_model
+[rank1]:     caching_allocator_warmup(model_to_load, expanded_device_map, factor=2 if hf_quantizer is None else 4)
+[rank1]:   File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 5772, in caching_allocator_warmup
+[rank1]:     accelerator_device_map = {
+[rank1]:   File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 5773, in <dictcomp>
+[rank1]:     param: torch.device(device) for param, device in expanded_device_map.items() if device not in ["cpu", "disk"]
+[rank1]: RuntimeError: Device index must not be negative

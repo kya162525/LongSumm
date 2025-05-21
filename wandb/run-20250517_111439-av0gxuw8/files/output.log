@@ -1,0 +1,173 @@
+2025-05-17 11:14:40,708 - INFO - LoRA is enabled with the following configuration:
+2025-05-17 11:14:40,708 - INFO -   LoRA rank (r): 8
+2025-05-17 11:14:40,708 - INFO -   LoRA alpha: 32
+2025-05-17 11:14:40,708 - INFO -   LoRA dropout: 0.05
+2025-05-17 11:14:40,708 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-17 11:14:40,709 - INFO - Loading data...
+2025-05-17 11:14:40,709 - INFO - Found 522 paper files
+Loading paper texts: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 11333.84it/s]
+2025-05-17 11:14:40,757 - INFO - Loading gold summaries
+2025-05-17 11:14:40,765 - INFO - Found 530 gold summaries
+2025-05-17 11:14:40,765 - INFO - Preparing dataset...
+2025-05-17 11:14:40,765 - INFO - Loaded 488 valid paper IDs for filtering
+Filtering papers:   0%|                                                                                                                                                                                                | 0/522 [00:00<?, ?it/s]2025-05-17 11:14:40,766 - INFO - Skipping 24431610 - not in valid IDs
+2025-05-17 11:14:40,766 - INFO - Skipping 44148071 - paper too long (142806 characters)
+2025-05-17 11:14:40,766 - INFO - Skipping 53851426 - not in valid IDs
+2025-05-17 11:14:40,766 - INFO - Skipping 28171009 - not in valid IDs
+2025-05-17 11:14:40,766 - INFO - Skipping 79091650 - not in valid IDs
+2025-05-17 11:14:40,766 - INFO - Skipping 4741660 - not in valid IDs
+2025-05-17 11:14:40,767 - INFO - Skipping 75952682 - paper too long (210276 characters)
+2025-05-17 11:14:40,767 - INFO - Skipping 74977893 - not in valid IDs
+2025-05-17 11:14:40,767 - INFO - Skipping 43514018 - not in valid IDs
+2025-05-17 11:14:40,767 - INFO - Skipping 70719243 - not in valid IDs
+2025-05-17 11:14:40,767 - INFO - Skipping 74971632 - not in valid IDs
+2025-05-17 11:14:40,767 - INFO - Skipping 6469050 - not in valid IDs
+2025-05-17 11:14:40,767 - INFO - Skipping 27264933 - not in valid IDs
+2025-05-17 11:14:40,768 - INFO - Skipping 81623492 - not in valid IDs
+2025-05-17 11:14:40,768 - INFO - Skipping 93106503 - not in valid IDs
+2025-05-17 11:14:40,768 - INFO - Skipping 13237217 - not in valid IDs
+2025-05-17 11:14:40,768 - INFO - Skipping 96599676 - not in valid IDs
+2025-05-17 11:14:40,768 - INFO - Skipping 81034618 - not in valid IDs
+2025-05-17 11:14:40,769 - INFO - Skipping 70176908 - not in valid IDs
+2025-05-17 11:14:40,769 - INFO - Skipping 73424952 - paper too long (395979 characters)
+2025-05-17 11:14:40,769 - INFO - Skipping 43813190 - not in valid IDs
+2025-05-17 11:14:40,769 - INFO - Skipping 76854692 - not in valid IDs
+2025-05-17 11:14:40,769 - INFO - Skipping 8240954 - not in valid IDs
+2025-05-17 11:14:40,769 - INFO - Skipping 72992946 - not in valid IDs
+2025-05-17 11:14:40,769 - INFO - Skipping 73705154 - not in valid IDs
+2025-05-17 11:14:40,769 - INFO - Skipping 74374635 - not in valid IDs
+2025-05-17 11:14:40,770 - INFO - Skipping 59963771 - not in valid IDs
+2025-05-17 11:14:40,770 - INFO - Skipping 60641106 - not in valid IDs
+2025-05-17 11:14:40,770 - INFO - Skipping 95858167 - not in valid IDs
+2025-05-17 11:14:40,770 - INFO - Skipping 1050101 - not in valid IDs
+2025-05-17 11:14:40,770 - INFO - Skipping 58600020 - not in valid IDs
+2025-05-17 11:14:40,771 - INFO - Skipping 63993374 - not in valid IDs
+2025-05-17 11:14:40,771 - INFO - Skipping 1077676 - not in valid IDs
+2025-05-17 11:14:40,771 - INFO - Skipping 65847395 - not in valid IDs
+2025-05-17 11:14:40,771 - INFO - Skipping 963444 - not in valid IDs
+2025-05-17 11:14:40,771 - INFO - Skipping 18000122 - not in valid IDs
+2025-05-17 11:14:40,771 - INFO - Skipping 70140653 - not in valid IDs
+Filtering papers: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 87636.66it/s]
+2025-05-17 11:14:40,772 - INFO - Filtering statistics:
+2025-05-17 11:14:40,772 - INFO -   total_papers: 522
+2025-05-17 11:14:40,772 - INFO -   no_gold_summary: 0
+2025-05-17 11:14:40,772 - INFO -   not_in_valid_ids: 34
+2025-05-17 11:14:40,772 - INFO -   paper_too_long: 3
+2025-05-17 11:14:40,772 - INFO -   summary_too_long: 0
+2025-05-17 11:14:40,772 - INFO -   accepted: 485
+2025-05-17 11:14:40,772 - INFO - Created dataset with 485 paper-summary pairs after filtering
+2025-05-17 11:14:40,926 - INFO - Splitting dataset: 80.0% train, 19.999999999999996% validation
+2025-05-17 11:14:40,930 - INFO - Training set: 388 examples
+2025-05-17 11:14:40,930 - INFO - Validation set: 97 examples
+2025-05-17 11:14:40,930 - INFO - Loading model and tokenizer: Qwen/Qwen3-8B
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:23<00:00,  4.73s/it]
+2025-05-17 11:15:07,797 - INFO - Applying LoRA adapters to the model
+trainable params: 7,667,712 || all params: 8,198,403,072 || trainable%: 0.0935
+2025-05-17 11:15:08,105 - INFO - LoRA adapters applied successfully
+2025-05-17 11:15:08,105 - INFO - Tokenizing datasets
+Tokenizing training set: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 388/388 [00:02<00:00, 162.30 examples/s]
+Tokenizing validation set: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 97/97 [00:00<00:00, 165.95 examples/s]
+2025-05-17 11:15:11,339 - INFO - Setting up training configuration
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-05-17 11:15:11,400 - INFO - Starting training
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                                                                                                                                                                                   | 0/24 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 388, in <module>
+    main()
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 376, in main
+    trainer.train()
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2560, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3736, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3801, in compute_loss
+    outputs = model(**inputs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/accelerate/utils/operations.py", line 818, in forward
+    return model_forward(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/accelerate/utils/operations.py", line 806, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/root/.venv/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/peft/peft_model.py", line 1757, in forward
+    return self.base_model(
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 870, in forward
+    loss = self.loss_function(logits=logits, labels=labels, vocab_size=self.config.vocab_size, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/loss/loss_utils.py", line 63, in ForCausalLMLoss
+    loss = fixed_cross_entropy(logits, shift_labels, num_items_in_batch, ignore_index, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/loss/loss_utils.py", line 35, in fixed_cross_entropy
+    loss = nn.functional.cross_entropy(source, target, ignore_index=ignore_index, reduction=reduction)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/functional.py", line 3494, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+ValueError: Expected input batch_size (9864) to match target batch_size (304).
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 388, in <module>
+    main()
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 376, in main
+    trainer.train()
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2560, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3736, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3801, in compute_loss
+    outputs = model(**inputs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/accelerate/utils/operations.py", line 818, in forward
+    return model_forward(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/accelerate/utils/operations.py", line 806, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/root/.venv/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/peft/peft_model.py", line 1757, in forward
+    return self.base_model(
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 870, in forward
+    loss = self.loss_function(logits=logits, labels=labels, vocab_size=self.config.vocab_size, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/loss/loss_utils.py", line 63, in ForCausalLMLoss
+    loss = fixed_cross_entropy(logits, shift_labels, num_items_in_batch, ignore_index, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/loss/loss_utils.py", line 35, in fixed_cross_entropy
+    loss = nn.functional.cross_entropy(source, target, ignore_index=ignore_index, reduction=reduction)
+  File "/root/.venv/lib/python3.10/site-packages/torch/nn/functional.py", line 3494, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+ValueError: Expected input batch_size (9864) to match target batch_size (304).

@@ -1,0 +1,7 @@
+{"time":"2025-05-17T11:01:50.474561014Z","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/root/workspace/LongSumm/wandb/run-20250517_110150-carhaqpx/logs/debug-core.log"}
+{"time":"2025-05-17T11:01:50.915361352Z","level":"INFO","msg":"created new stream","id":"carhaqpx"}
+{"time":"2025-05-17T11:01:50.915398522Z","level":"INFO","msg":"stream: started","id":"carhaqpx"}
+{"time":"2025-05-17T11:01:50.915447293Z","level":"INFO","msg":"handler: started","stream_id":"carhaqpx"}
+{"time":"2025-05-17T11:01:50.915459756Z","level":"INFO","msg":"sender: started","stream_id":"carhaqpx"}
+{"time":"2025-05-17T11:01:50.915447343Z","level":"INFO","msg":"writer: Do: started","stream_id":"carhaqpx"}
+{"time":"2025-05-17T11:01:51.255159209Z","level":"INFO","msg":"Starting system monitor"}

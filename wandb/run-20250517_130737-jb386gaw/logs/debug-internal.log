@@ -1,0 +1,15 @@
+{"time":"2025-05-17T13:07:37.645084773Z","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/root/workspace/LongSumm/wandb/run-20250517_130737-jb386gaw/logs/debug-core.log"}
+{"time":"2025-05-17T13:07:38.094319957Z","level":"INFO","msg":"created new stream","id":"jb386gaw"}
+{"time":"2025-05-17T13:07:38.094374579Z","level":"INFO","msg":"stream: started","id":"jb386gaw"}
+{"time":"2025-05-17T13:07:38.094412199Z","level":"INFO","msg":"writer: Do: started","stream_id":"jb386gaw"}
+{"time":"2025-05-17T13:07:38.094418631Z","level":"INFO","msg":"sender: started","stream_id":"jb386gaw"}
+{"time":"2025-05-17T13:07:38.09445008Z","level":"INFO","msg":"handler: started","stream_id":"jb386gaw"}
+{"time":"2025-05-17T13:07:38.383654943Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-17T13:07:40.161593373Z","level":"INFO","msg":"stream: closing","id":"jb386gaw"}
+{"time":"2025-05-17T13:07:40.16163965Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-17T13:07:40.161759794Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-17T13:07:41.042975493Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-17T13:07:41.488696638Z","level":"INFO","msg":"handler: closed","stream_id":"jb386gaw"}
+{"time":"2025-05-17T13:07:41.488730601Z","level":"INFO","msg":"writer: Close: closed","stream_id":"jb386gaw"}
+{"time":"2025-05-17T13:07:41.488742834Z","level":"INFO","msg":"sender: closed","stream_id":"jb386gaw"}
+{"time":"2025-05-17T13:07:41.48880513Z","level":"INFO","msg":"stream: closed","id":"jb386gaw"}

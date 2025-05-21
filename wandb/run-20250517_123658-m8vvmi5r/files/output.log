@@ -1,0 +1,148 @@
+2025-05-17 12:36:59,287 - INFO - LoRA is enabled with the following configuration:
+2025-05-17 12:36:59,287 - INFO -   LoRA rank (r): 8
+2025-05-17 12:36:59,287 - INFO -   LoRA alpha: 32
+2025-05-17 12:36:59,287 - INFO -   LoRA dropout: 0.05
+2025-05-17 12:36:59,287 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-17 12:36:59,287 - INFO - Loading data...
+2025-05-17 12:36:59,288 - INFO - Found 522 paper files
+2025-05-17 12:36:59,288 - INFO - Loading gold summaries
+2025-05-17 12:36:59,296 - INFO - Found 530 gold summaries
+2025-05-17 12:36:59,296 - INFO - Preparing dataset...
+2025-05-17 12:36:59,296 - INFO - Loaded 488 valid paper IDs for filtering
+Filtering papers: 100%|██████████████████████████████████████████████████████████████████████| 522/522 [00:00<00:00, 263120.62it/s]
+2025-05-17 12:36:59,300 - INFO - Filtering statistics:
+2025-05-17 12:36:59,300 - INFO -   total_papers: 522
+2025-05-17 12:36:59,300 - INFO -   no_gold_summary: 0
+2025-05-17 12:36:59,300 - INFO -   not_in_valid_ids: 34
+2025-05-17 12:36:59,300 - INFO -   paper_too_long: 0
+2025-05-17 12:36:59,300 - INFO -   summary_too_long: 0
+2025-05-17 12:36:59,300 - INFO -   accepted: 488
+2025-05-17 12:36:59,300 - INFO - Created dataset with 488 paper-summary pairs after filtering
+2025-05-17 12:36:59,321 - INFO - Splitting dataset: 80.0% train, 19.999999999999996% validation
+2025-05-17 12:36:59,325 - INFO - Training set: 390 examples
+2025-05-17 12:36:59,325 - INFO - Validation set: 98 examples
+2025-05-17 12:36:59,325 - INFO - Loading model and tokenizer: Qwen/Qwen3-8B
+The `load_in_4bit` and `load_in_8bit` arguments are deprecated and will be removed in the future versions. Please, pass a `BitsAndBytesConfig` object in `quantization_config` argument instead.
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████| 5/5 [00:27<00:00,  5.53s/it]
+2025-05-17 12:37:28,400 - INFO - Applying LoRA adapters to the model
+trainable params: 7,667,712 || all params: 8,198,403,072 || trainable%: 0.0935
+2025-05-17 12:37:28,660 - INFO - LoRA adapters applied successfully
+2025-05-17 12:37:28,660 - INFO - Tokenizing datasets
+Tokenizing training set: 100%|████████████████████████████████████████████████████████████| 390/390 [00:08<00:00, 48.55 examples/s]
+Tokenizing validation set: 100%|████████████████████████████████████████████████████████████| 98/98 [00:01<00:00, 50.36 examples/s]
+2025-05-17 12:37:38,886 - INFO - Setting up training configuration
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-05-17 12:37:38,959 - INFO - Starting training
+Using /root/.cache/torch_extensions/py310_cu126 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu126/fused_adam/build.ninja...
+/root/.venv/lib/python3.10/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation.
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.031465768814086914 seconds
+[2025-05-17 12:37:41,314] [WARNING] [lr_schedules.py:683:get_lr] Attempting to get learning rate from scheduler before it has started
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                                                                        | 0/6 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/root/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/root/.venv/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:315: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 459, in <module>
+[rank0]:     main()
+[rank0]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 447, in main
+[rank0]:     trainer.train()
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2560, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3736, in training_step
+[rank0]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3801, in compute_loss
+[rank0]:     outputs = model(**inputs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+[rank0]:     ret_val = func(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 2054, in forward
+[rank0]:     loss = self.module(*inputs, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+[rank0]:     return inner()
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1805, in inner
+[rank0]:     result = forward_call(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/peft/peft_model.py", line 1757, in forward
+[rank0]:     return self.base_model(
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+[rank0]:     return self.model.forward(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+[rank0]:     output = func(self, *args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 866, in forward
+[rank0]:     logits = self.lm_head(hidden_states[:, slice_indices, :])
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 125, in forward
+[rank0]:     return F.linear(input, self.weight, self.bias)
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 37.09 GiB. GPU 0 has a total capacity of 79.15 GiB of which 21.05 GiB is free. Process 3193264 has 58.09 GiB memory in use. Of the allocated memory 56.91 GiB is allocated by PyTorch, and 236.14 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 459, in <module>
+[rank0]:     main()
+[rank0]:   File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning.py", line 447, in main
+[rank0]:     trainer.train()
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 2560, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3736, in training_step
+[rank0]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/trainer.py", line 3801, in compute_loss
+[rank0]:     outputs = model(**inputs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+[rank0]:     ret_val = func(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 2054, in forward
+[rank0]:     loss = self.module(*inputs, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+[rank0]:     return inner()
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1805, in inner
+[rank0]:     result = forward_call(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/peft/peft_model.py", line 1757, in forward
+[rank0]:     return self.base_model(
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+[rank0]:     return self.model.forward(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+[rank0]:     output = func(self, *args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 866, in forward
+[rank0]:     logits = self.lm_head(hidden_states[:, slice_indices, :])
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.venv/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 125, in forward
+[rank0]:     return F.linear(input, self.weight, self.bias)
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 37.09 GiB. GPU 0 has a total capacity of 79.15 GiB of which 21.05 GiB is free. Process 3193264 has 58.09 GiB memory in use. Of the allocated memory 56.91 GiB is allocated by PyTorch, and 236.14 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

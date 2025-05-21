@@ -1,0 +1,22 @@
+2025-05-17 11:01:19,862 - INFO - LoRA is enabled with the following configuration:
+2025-05-17 11:01:19,862 - INFO -   LoRA rank (r): 8
+2025-05-17 11:01:19,862 - INFO -   LoRA alpha: 32
+2025-05-17 11:01:19,862 - INFO -   LoRA dropout: 0.05
+2025-05-17 11:01:19,862 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-17 11:01:19,862 - INFO - Loading data...
+Traceback (most recent call last):
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning_multi_gpu.py", line 402, in <module>
+    main()
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning_multi_gpu.py", line 353, in main
+    paper_texts, gold_summaries = load_data()
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning_multi_gpu.py", line 83, in load_data
+    files = os.listdir(path)
+FileNotFoundError: [Errno 2] No such file or directory: './papers/postprocessed/full_texts/'
+Traceback (most recent call last):
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning_multi_gpu.py", line 402, in <module>
+    main()
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning_multi_gpu.py", line 353, in main
+    paper_texts, gold_summaries = load_data()
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning_multi_gpu.py", line 83, in load_data
+    files = os.listdir(path)
+FileNotFoundError: [Errno 2] No such file or directory: './papers/postprocessed/full_texts/'

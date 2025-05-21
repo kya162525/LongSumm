@@ -1,0 +1,29 @@
+2025-05-17 14:24:03,068 - INFO - Starting fine-tuning process
+2025-05-17 14:24:03,068 - INFO - LoRA is enabled with the following configuration:
+2025-05-17 14:24:03,068 - INFO -   LoRA rank (r): 8
+2025-05-17 14:24:03,068 - INFO -   LoRA alpha: 32
+2025-05-17 14:24:03,068 - INFO -   LoRA dropout: 0.05
+2025-05-17 14:24:03,069 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-17 14:24:04,689 - INFO - Loading data...
+2025-05-17 14:24:04,690 - INFO - Found 522 paper files
+2025-05-17 14:24:04,690 - INFO - Loading gold summaries
+2025-05-17 14:24:04,698 - INFO - Found 530 gold summaries
+2025-05-17 14:24:04,698 - INFO - Preparing dataset...
+2025-05-17 14:24:04,698 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-17 14:24:04,704 - INFO - Filtering statistics:
+2025-05-17 14:24:04,704 - INFO -   total_papers: 522
+2025-05-17 14:24:04,704 - INFO -   no_gold_summary: 0
+2025-05-17 14:24:04,704 - INFO -   not_in_valid_ids: 34
+2025-05-17 14:24:04,704 - INFO -   paper_too_long: 0
+2025-05-17 14:24:04,704 - INFO -   summary_too_long: 0
+2025-05-17 14:24:04,704 - INFO -   accepted: 488
+2025-05-17 14:24:04,704 - INFO - Created dataset with 488 paper-summary pairs after filtering
+2025-05-17 14:24:04,723 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-17 14:24:04,728 - INFO - Training set: 463 examples
+2025-05-17 14:24:04,728 - INFO - Validation set: 25 examples
+2025-05-17 14:24:04,728 - INFO - Loading model/tokenizer on rank 0
+2025-05-17 14:24:27,344 - INFO - Applying LoRA adapters to the model
+2025-05-17 14:24:27,591 - INFO - Tokenizing datasets
+2025-05-17 14:24:37,017 - INFO - Setting up training configuration
+2025-05-17 14:24:37,089 - INFO - Starting training
+2025-05-17 14:27:37,447 - INFO - [Step 1] Training loss: 2.7359
