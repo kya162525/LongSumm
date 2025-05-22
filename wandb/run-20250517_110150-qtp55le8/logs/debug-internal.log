@@ -1,7 +1,0 @@
-{"time":"2025-05-17T11:01:50.444450704Z","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/root/workspace/LongSumm/wandb/run-20250517_110150-qtp55le8/logs/debug-core.log"}
-{"time":"2025-05-17T11:01:50.883609072Z","level":"INFO","msg":"created new stream","id":"qtp55le8"}
-{"time":"2025-05-17T11:01:50.883674965Z","level":"INFO","msg":"stream: started","id":"qtp55le8"}
-{"time":"2025-05-17T11:01:50.883702256Z","level":"INFO","msg":"handler: started","stream_id":"qtp55le8"}
-{"time":"2025-05-17T11:01:50.883716622Z","level":"INFO","msg":"sender: started","stream_id":"qtp55le8"}
-{"time":"2025-05-17T11:01:50.883721692Z","level":"INFO","msg":"writer: Do: started","stream_id":"qtp55le8"}
-{"time":"2025-05-17T11:01:51.168599156Z","level":"INFO","msg":"Starting system monitor"}
