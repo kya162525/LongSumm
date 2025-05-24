@@ -1,0 +1,38 @@
+2025-05-17 14:30:23,083 - INFO - Starting fine-tuning process
+2025-05-17 14:30:23,083 - INFO - LoRA is enabled with the following configuration:
+2025-05-17 14:30:23,083 - INFO -   LoRA rank (r): 8
+2025-05-17 14:30:23,083 - INFO -   LoRA alpha: 32
+2025-05-17 14:30:23,083 - INFO -   LoRA dropout: 0.05
+2025-05-17 14:30:23,083 - INFO -   LoRA target modules: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2025-05-17 14:30:23,083 - INFO - Loading data...
+2025-05-17 14:30:23,084 - INFO - Found 522 paper files
+2025-05-17 14:30:23,084 - INFO - Loading gold summaries
+2025-05-17 14:30:23,092 - INFO - Found 530 gold summaries
+2025-05-17 14:30:23,092 - INFO - Preparing dataset...
+2025-05-17 14:30:23,092 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-17 14:30:23,095 - INFO - Filtering statistics:
+2025-05-17 14:30:23,096 - INFO -   total_papers: 522
+2025-05-17 14:30:23,096 - INFO -   no_gold_summary: 0
+2025-05-17 14:30:23,096 - INFO -   not_in_valid_ids: 34
+2025-05-17 14:30:23,096 - INFO -   paper_too_long: 0
+2025-05-17 14:30:23,096 - INFO -   summary_too_long: 0
+2025-05-17 14:30:23,096 - INFO -   accepted: 488
+2025-05-17 14:30:23,096 - INFO - Created dataset with 488 paper-summary pairs after filtering
+2025-05-17 14:30:23,114 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-17 14:30:23,118 - INFO - Training set: 463 examples
+2025-05-17 14:30:23,118 - INFO - Validation set: 25 examples
+2025-05-17 14:30:23,118 - INFO - Loading model/tokenizer on rank 2
+2025-05-17 14:30:35,956 - INFO - Applying LoRA adapters to the model
+2025-05-17 14:30:36,173 - INFO - Tokenizing datasets
+2025-05-17 14:30:45,820 - INFO - Setting up training configuration
+2025-05-17 14:30:45,885 - INFO - Starting training
+2025-05-17 14:33:54,403 - INFO - [Step 1] Training loss: 2.7359
+2025-05-17 14:36:49,364 - INFO - [Step 2] Training loss: 2.6911
+2025-05-17 14:39:44,282 - INFO - [Step 3] Training loss: 2.8474
+2025-05-17 14:42:39,237 - INFO - [Step 4] Training loss: 2.7224
+2025-05-17 14:45:34,165 - INFO - [Step 5] Training loss: 2.5944
+2025-05-17 14:48:29,091 - INFO - [Step 6] Training loss: 2.8263
+2025-05-17 14:51:23,983 - INFO - [Step 7] Training loss: 2.6863
+2025-05-17 14:54:18,910 - INFO - [Step 8] Training loss: 2.7192
+2025-05-17 14:57:13,790 - INFO - [Step 9] Training loss: 2.6370
+2025-05-17 15:00:08,686 - INFO - [Step 10] Training loss: 2.7065
