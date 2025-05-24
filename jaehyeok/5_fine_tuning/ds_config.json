@@ -1,0 +1,16 @@
+{
+  "train_batch_size": "auto",
+  "train_micro_batch_size_per_gpu": "auto",
+  "gradient_accumulation_steps": "auto",
+  "fp16": { "enabled": false },
+  "bf16": { "enabled": true },
+  "zero_optimization": {
+    "stage": 2,
+    "allgather_partitions": true,
+    "overlap_comm": true
+  },
+  "scheduler": {
+    "type": "WarmupLR",
+    "params": {"warmup_min_lr": 0, "warmup_max_lr": "auto", "warmup_num_steps": "auto" }
+  }
+}
