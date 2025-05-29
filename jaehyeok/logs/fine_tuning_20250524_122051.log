@@ -1,0 +1,83 @@
+2025-05-24 12:20:51,667 - INFO - Using device: cuda:0 (rank 0)
+2025-05-24 12:20:52,032 - INFO - Using device: cuda:2 (rank 2)
+2025-05-24 12:20:52,048 - INFO - Using device: cuda:1 (rank 1)
+2025-05-24 12:20:56,522 - INFO - Loading data...
+2025-05-24 12:20:56,522 - INFO - Loading paper texts from JSON
+2025-05-24 12:20:56,633 - INFO - Found 518 paper texts
+2025-05-24 12:20:56,633 - INFO - Loading gold summaries
+2025-05-24 12:20:56,636 - INFO - Loading data...
+2025-05-24 12:20:56,637 - INFO - Loading paper texts from JSON
+2025-05-24 12:20:56,641 - INFO - Found 530 gold summaries
+2025-05-24 12:20:56,641 - INFO - Preparing dataset...
+2025-05-24 12:20:56,641 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 12:20:56,644 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 12:20:56,645 - INFO - Filtering statistics:
+2025-05-24 12:20:56,645 - INFO -   total_papers: 518
+2025-05-24 12:20:56,645 - INFO -   no_gold_summary: 0
+2025-05-24 12:20:56,645 - INFO -   not_in_valid_ids: 34
+2025-05-24 12:20:56,645 - INFO -   paper_too_long: 1
+2025-05-24 12:20:56,645 - INFO -   summary_too_long: 0
+2025-05-24 12:20:56,645 - INFO -   accepted: 483
+2025-05-24 12:20:56,645 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 12:20:56,715 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-24 12:20:56,720 - INFO - Checking 3 random samples from dataset:
+2025-05-24 12:20:56,742 - INFO - Found 518 paper texts
+2025-05-24 12:20:56,742 - INFO - Loading gold summaries
+2025-05-24 12:20:56,750 - INFO - Found 530 gold summaries
+2025-05-24 12:20:56,750 - INFO - Preparing dataset...
+2025-05-24 12:20:56,750 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 12:20:56,752 - INFO - Sample 1 (paper_id: 16973018):
+2025-05-24 12:20:56,753 - INFO -   Input tokens: torch.Size([30000])
+2025-05-24 12:20:56,753 - INFO -   Label tokens: torch.Size([1024])
+2025-05-24 12:20:56,753 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Sequential inductive transfer learning (Pan and Yang, 2010) consists of two stages: pretraining, in which the model learns a general-purpose representation of inputs, and adaptation, in which the...
+2025-05-24 12:20:56,753 - INFO -   Label text preview:    The paper provides useful empirical advice for adapting pretrained language models for a given target task.
+Pre-trained models considered  ELMo  BERT  Tasks considered  Named Entity Recognition (NER) - CoNLL 2003 dataset ...
+2025-05-24 12:20:56,753 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 12:20:56,753 - INFO - --------------------------------------------------
+2025-05-24 12:20:56,754 - INFO - Filtering statistics:
+2025-05-24 12:20:56,754 - INFO -   total_papers: 518
+2025-05-24 12:20:56,754 - INFO -   no_gold_summary: 0
+2025-05-24 12:20:56,754 - INFO -   not_in_valid_ids: 34
+2025-05-24 12:20:56,754 - INFO -   paper_too_long: 1
+2025-05-24 12:20:56,754 - INFO -   summary_too_long: 0
+2025-05-24 12:20:56,754 - INFO -   accepted: 483
+2025-05-24 12:20:56,754 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 12:20:56,774 - INFO - Sample 2 (paper_id: 66302705):
+2025-05-24 12:20:56,774 - INFO -   Input tokens: torch.Size([30000])
+2025-05-24 12:20:56,775 - INFO -   Label tokens: torch.Size([1024])
+2025-05-24 12:20:56,775 - INFO -   Input text preview: Summarize the following scientific paper:
+
+
+
+Summary:<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>...
+2025-05-24 12:20:56,775 - INFO -   Label text preview: STTR: A system for tracking all vehicles all the time at the edge of the network Xu et al., DEBS’18  With apologies for only bringing you two paper write-ups this week: we moved house, which turns out to be...
+2025-05-24 12:20:56,775 - INFO - --------------------------------------------------
+2025-05-24 12:20:56,818 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-24 12:20:56,826 - INFO - Sample 3 (paper_id: 66357293):
+2025-05-24 12:20:56,826 - INFO -   Input tokens: torch.Size([30000])
+2025-05-24 12:20:56,826 - INFO -   Label tokens: torch.Size([1024])
+2025-05-24 12:20:56,826 - INFO -   Input text preview: Summarize the following scientific paper:
+
+SMOKE: Fine-grained Lineage at Interactive Speed. Data lineage describes the relationship between individual input and output data items of a computation. For instance, given an erroneous result record of a workflow, it...
+2025-05-24 12:20:56,827 - INFO -   Label text preview: Smoke: fine-grained lineage at interactive speed Psallidas et al., VLDB’18  Data lineage connects the input and output data items of a computation.
+Given a set of output records, a backward lineage query selects a subset of the...
+2025-05-24 12:20:56,827 - INFO - --------------------------------------------------
+2025-05-24 12:20:56,965 - INFO - Loading data...
+2025-05-24 12:20:56,966 - INFO - Loading paper texts from JSON
+2025-05-24 12:20:57,070 - INFO - Found 518 paper texts
+2025-05-24 12:20:57,070 - INFO - Loading gold summaries
+2025-05-24 12:20:57,079 - INFO - Found 530 gold summaries
+2025-05-24 12:20:57,079 - INFO - Preparing dataset...
+2025-05-24 12:20:57,079 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 12:20:57,082 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 12:20:57,083 - INFO - Filtering statistics:
+2025-05-24 12:20:57,083 - INFO -   total_papers: 518
+2025-05-24 12:20:57,083 - INFO -   no_gold_summary: 0
+2025-05-24 12:20:57,083 - INFO -   not_in_valid_ids: 34
+2025-05-24 12:20:57,083 - INFO -   paper_too_long: 1
+2025-05-24 12:20:57,083 - INFO -   summary_too_long: 0
+2025-05-24 12:20:57,083 - INFO -   accepted: 483
+2025-05-24 12:20:57,083 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 12:20:57,150 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation

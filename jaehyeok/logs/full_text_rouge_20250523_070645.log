@@ -1,0 +1,6 @@
+2025-05-23 07:06:45,845 - INFO - Loading data...
+2025-05-23 07:06:45,845 - INFO - Found 522 paper files
+2025-05-23 07:06:45,846 - INFO - Loading gold summaries
+2025-05-23 07:06:45,855 - INFO - Found 530 gold summaries
+2025-05-23 07:06:45,855 - INFO - Preparing dataset...
+2025-05-23 07:06:45,855 - INFO - Loaded 488 valid paper IDs for filtering

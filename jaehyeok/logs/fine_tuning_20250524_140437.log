@@ -1,0 +1,115 @@
+2025-05-24 14:04:37,417 - INFO - Using device: cuda:3 (rank 3)
+2025-05-24 14:04:37,612 - INFO - Using device: cuda:0 (rank 0)
+2025-05-24 14:04:38,086 - INFO - Using device: cuda:2 (rank 2)
+2025-05-24 14:04:38,110 - INFO - Using device: cuda:1 (rank 1)
+2025-05-24 14:04:42,552 - INFO - Loading data...
+2025-05-24 14:04:42,553 - INFO - Loading paper texts from JSON
+2025-05-24 14:04:42,658 - INFO - Found 518 paper texts
+2025-05-24 14:04:42,659 - INFO - Loading gold summaries
+2025-05-24 14:04:42,665 - INFO - Loading data...
+2025-05-24 14:04:42,665 - INFO - Loading paper texts from JSON
+2025-05-24 14:04:42,666 - INFO - Found 530 gold summaries
+2025-05-24 14:04:42,666 - INFO - Preparing dataset...
+2025-05-24 14:04:42,666 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 14:04:42,669 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 14:04:42,670 - INFO - Filtering statistics:
+2025-05-24 14:04:42,670 - INFO -   total_papers: 518
+2025-05-24 14:04:42,670 - INFO -   no_gold_summary: 0
+2025-05-24 14:04:42,670 - INFO -   not_in_valid_ids: 34
+2025-05-24 14:04:42,670 - INFO -   paper_too_long: 1
+2025-05-24 14:04:42,670 - INFO -   summary_too_long: 0
+2025-05-24 14:04:42,670 - INFO -   accepted: 483
+2025-05-24 14:04:42,670 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 14:04:42,734 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-24 14:04:42,776 - INFO - Found 518 paper texts
+2025-05-24 14:04:42,776 - INFO - Loading gold summaries
+2025-05-24 14:04:42,785 - INFO - Found 530 gold summaries
+2025-05-24 14:04:42,785 - INFO - Preparing dataset...
+2025-05-24 14:04:42,785 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 14:04:42,788 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 14:04:42,789 - INFO - Filtering statistics:
+2025-05-24 14:04:42,789 - INFO -   total_papers: 518
+2025-05-24 14:04:42,790 - INFO -   no_gold_summary: 0
+2025-05-24 14:04:42,790 - INFO -   not_in_valid_ids: 34
+2025-05-24 14:04:42,790 - INFO -   paper_too_long: 1
+2025-05-24 14:04:42,790 - INFO -   summary_too_long: 0
+2025-05-24 14:04:42,790 - INFO -   accepted: 483
+2025-05-24 14:04:42,790 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 14:04:42,848 - INFO - Loading data...
+2025-05-24 14:04:42,849 - INFO - Loading paper texts from JSON
+2025-05-24 14:04:42,854 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-24 14:04:42,859 - INFO - Checking 3 random samples from dataset:
+2025-05-24 14:04:42,896 - INFO - Sample 1 (paper_id: 33714440):
+2025-05-24 14:04:42,897 - INFO -   Input tokens: torch.Size([30000])
+2025-05-24 14:04:42,897 - INFO -   Label tokens: torch.Size([1024])
+2025-05-24 14:04:42,897 - INFO -   Input text preview: Summarize the following scientific paper:
+
+While this model’s success is beyond question, it has its limits: for users with poor last-mile latency even to a nearby CDN node, the many RTTs needed to fetch a Web page add up to large...
+2025-05-24 14:04:42,897 - INFO -   Label text preview: A cloud-based content gathering network Bhattacherjee et al., HotCloud’17  We all know what a content distribution network is, but what’s a content gathering network?!
+CDNs are great, but their benefits are reduced for clients...
+2025-05-24 14:04:42,897 - INFO - --------------------------------------------------
+2025-05-24 14:04:42,927 - INFO - Sample 2 (paper_id: 435175):
+2025-05-24 14:04:42,927 - INFO -   Input tokens: torch.Size([30000])
+2025-05-24 14:04:42,927 - INFO -   Label tokens: torch.Size([1024])
+2025-05-24 14:04:42,927 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Generative image modeling is a central problem in unsupervised learning. Probabilistic density models can be used for a wide variety of tasks that range from image compression and forms of reconstruction such as image inpainting...
+2025-05-24 14:04:42,927 - INFO -   Label text preview: This paper explores the use of convolutional (PixelCNN) and recurrent units (PixelRNN) for modeling the distribution of images, in the framework of autoregression distribution estimation.
+In this framework, the input distribution $p(x)$ is factor...
+2025-05-24 14:04:42,928 - INFO - --------------------------------------------------
+2025-05-24 14:04:42,952 - INFO - Found 518 paper texts
+2025-05-24 14:04:42,952 - INFO - Loading gold summaries
+2025-05-24 14:04:42,954 - INFO - Sample 3 (paper_id: 91325283):
+2025-05-24 14:04:42,954 - INFO -   Input tokens: torch.Size([30000])
+2025-05-24 14:04:42,954 - INFO -   Label tokens: torch.Size([1024])
+2025-05-24 14:04:42,955 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Developing learning algorithms for distributed compositional semantics of words has been a longstanding open problem at the intersection of language understanding and machine learning. In recent years, several approaches have been developed for learning composition operators that map...
+2025-05-24 14:04:42,955 - INFO -   Label text preview: The paper describes an unsupervised approach to train a generic, distributed sentence encoder.
+It also describes a vocabulary expansion method to encode words not seen at training time.
+Skip-Thoughts  Train an encoder-decoder model where the encoder maps the input...
+2025-05-24 14:04:42,955 - INFO - --------------------------------------------------
+2025-05-24 14:04:42,958 - INFO - Found 530 gold summaries
+2025-05-24 14:04:42,959 - INFO - Preparing dataset...
+2025-05-24 14:04:42,959 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 14:04:42,961 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 14:04:42,962 - INFO - Filtering statistics:
+2025-05-24 14:04:42,962 - INFO -   total_papers: 518
+2025-05-24 14:04:42,962 - INFO -   no_gold_summary: 0
+2025-05-24 14:04:42,962 - INFO -   not_in_valid_ids: 34
+2025-05-24 14:04:42,962 - INFO -   paper_too_long: 1
+2025-05-24 14:04:42,962 - INFO -   summary_too_long: 0
+2025-05-24 14:04:42,962 - INFO -   accepted: 483
+2025-05-24 14:04:42,962 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 14:04:43,027 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-24 14:04:43,660 - INFO - Loading data...
+2025-05-24 14:04:43,661 - INFO - Loading paper texts from JSON
+2025-05-24 14:04:43,776 - INFO - Found 518 paper texts
+2025-05-24 14:04:43,776 - INFO - Loading gold summaries
+2025-05-24 14:04:43,785 - INFO - Found 530 gold summaries
+2025-05-24 14:04:43,785 - INFO - Preparing dataset...
+2025-05-24 14:04:43,785 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 14:04:43,788 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 14:04:43,789 - INFO - Filtering statistics:
+2025-05-24 14:04:43,789 - INFO -   total_papers: 518
+2025-05-24 14:04:43,789 - INFO -   no_gold_summary: 0
+2025-05-24 14:04:43,789 - INFO -   not_in_valid_ids: 34
+2025-05-24 14:04:43,789 - INFO -   paper_too_long: 1
+2025-05-24 14:04:43,789 - INFO -   summary_too_long: 0
+2025-05-24 14:04:43,789 - INFO -   accepted: 483
+2025-05-24 14:04:43,789 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 14:04:43,865 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-24 14:59:41,025 - INFO - Generated 1 summaries for batch 1
+2025-05-24 15:53:15,685 - INFO - Generated 1 summaries for batch 2
+2025-05-24 16:46:01,178 - INFO - Generated 1 summaries for batch 3
+2025-05-24 17:39:41,210 - INFO - Generated 1 summaries for batch 4
+2025-05-24 18:36:42,605 - INFO - Generated 1 summaries for batch 5
+2025-05-24 19:18:08,619 - INFO - Generated summaries for 7 samples in rank 2.
+2025-05-24 19:18:08,621 - INFO - Using default tokenizer.
+2025-05-24 19:18:08,821 - INFO - Using default tokenizer.
+2025-05-24 19:18:09,731 - INFO - Using default tokenizer.
+2025-05-24 19:18:10,010 - INFO - Using default tokenizer.
+2025-05-24 19:18:10,396 - INFO - Using default tokenizer.
+2025-05-24 19:18:10,440 - INFO - Using default tokenizer.
+2025-05-24 19:18:11,395 - INFO - Using default tokenizer.
+2025-05-24 19:18:11,454 - INFO - Average Rouge scores: rouge1: 0.20114228693019326, rouge2: 0.020615379566960378, rougeL: 0.08203429841110461

@@ -1,0 +1,14 @@
+2025-05-23 07:07:18,211 - INFO - Loading data...
+2025-05-23 07:07:18,212 - INFO - Found 522 paper files
+2025-05-23 07:07:18,212 - INFO - Loading gold summaries
+2025-05-23 07:07:18,221 - INFO - Found 530 gold summaries
+2025-05-23 07:07:18,221 - INFO - Preparing dataset...
+2025-05-23 07:07:18,222 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-23 07:07:18,268 - INFO - Filtering statistics:
+2025-05-23 07:07:18,268 - INFO -   total_papers: 522
+2025-05-23 07:07:18,268 - INFO -   no_gold_summary: 0
+2025-05-23 07:07:18,268 - INFO -   not_in_valid_ids: 34
+2025-05-23 07:07:18,268 - INFO -   accepted: 488
+2025-05-23 07:07:18,268 - INFO - Created dataset with 488 paper-summary pairs after filtering
+2025-05-23 07:07:18,268 - INFO - 전체 데이터에 대해 Rouge 점수 계산을 시작합니다.
+2025-05-23 07:07:18,268 - INFO - Using default tokenizer.

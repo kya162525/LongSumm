@@ -1,0 +1,38 @@
+2025-05-29 04:02:35,085 - INFO - Starting fine-tuning process
+2025-05-29 04:02:35,085 - INFO - LoRA is enabled with the following configuration:
+2025-05-29 04:02:35,085 - INFO - Loading data...
+2025-05-29 04:02:35,085 - INFO - Loading paper texts from JSON
+2025-05-29 04:02:35,195 - INFO - Found 518 paper texts
+2025-05-29 04:02:35,196 - INFO - Loading gold summaries
+2025-05-29 04:02:35,203 - INFO - Found 530 gold summaries
+2025-05-29 04:02:35,203 - INFO - Preparing dataset...
+2025-05-29 04:02:35,203 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-29 04:02:35,206 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-29 04:02:35,207 - INFO - Filtering statistics:
+2025-05-29 04:02:35,207 - INFO -   total_papers: 518
+2025-05-29 04:02:35,207 - INFO -   no_gold_summary: 0
+2025-05-29 04:02:35,207 - INFO -   not_in_valid_ids: 34
+2025-05-29 04:02:35,207 - INFO -   paper_too_long: 1
+2025-05-29 04:02:35,207 - INFO -   summary_too_long: 0
+2025-05-29 04:02:35,207 - INFO -   accepted: 483
+2025-05-29 04:02:35,207 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-29 04:02:35,280 - INFO - Verifying dataset content - random samples:
+2025-05-29 04:02:35,281 - INFO - Sample 1:
+2025-05-29 04:02:35,281 - INFO - Paper ID: 23426061
+2025-05-29 04:02:35,281 - INFO - Paper text (first 30 chars): Deep Neural Networks (DNNs) ar...
+2025-05-29 04:02:35,281 - INFO - Summary (first 30 chars): Open-domain Question Answering...
+2025-05-29 04:02:35,281 - INFO - ----------------------------------------
+2025-05-29 04:02:35,281 - INFO - Sample 2:
+2025-05-29 04:02:35,281 - INFO - Paper ID: 23313716
+2025-05-29 04:02:35,281 - INFO - Paper text (first 30 chars): ...
+2025-05-29 04:02:35,281 - INFO - Summary (first 30 chars): Keeping master green at scale ...
+2025-05-29 04:02:35,281 - INFO - ----------------------------------------
+2025-05-29 04:02:35,282 - INFO - Sample 3:
+2025-05-29 04:02:35,282 - INFO - Paper ID: 41161677
+2025-05-29 04:02:35,282 - INFO - Paper text (first 30 chars): ...
+2025-05-29 04:02:35,282 - INFO - Summary (first 30 chars): Brownout: building more robust...
+2025-05-29 04:02:35,282 - INFO - ----------------------------------------
+2025-05-29 04:02:37,102 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-29 04:02:37,106 - INFO - Training set: 458 examples
+2025-05-29 04:02:37,106 - INFO - Validation set: 25 examples
+2025-05-29 04:02:37,106 - INFO - Loading model/tokenizer on rank -1

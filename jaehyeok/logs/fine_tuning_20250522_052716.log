@@ -1,0 +1,90 @@
+2025-05-22 05:27:16,807 - INFO - Starting fine-tuning process
+2025-05-22 05:27:16,807 - INFO - LoRA is enabled with the following configuration:
+2025-05-22 05:27:16,807 - INFO - Loading data...
+2025-05-22 05:27:16,807 - INFO - Loading paper texts from JSON
+2025-05-22 05:27:16,899 - INFO - Found 518 paper texts
+2025-05-22 05:27:16,899 - INFO - Loading gold summaries
+2025-05-22 05:27:16,906 - INFO - Found 530 gold summaries
+2025-05-22 05:27:16,906 - INFO - Preparing dataset...
+2025-05-22 05:27:16,906 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-22 05:27:16,909 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-22 05:27:16,910 - INFO - Filtering statistics:
+2025-05-22 05:27:16,910 - INFO -   total_papers: 518
+2025-05-22 05:27:16,910 - INFO -   no_gold_summary: 0
+2025-05-22 05:27:16,910 - INFO -   not_in_valid_ids: 34
+2025-05-22 05:27:16,910 - INFO -   paper_too_long: 1
+2025-05-22 05:27:16,910 - INFO -   summary_too_long: 0
+2025-05-22 05:27:16,910 - INFO -   accepted: 483
+2025-05-22 05:27:16,910 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-22 05:27:16,970 - INFO - Verifying dataset content - random samples:
+2025-05-22 05:27:16,971 - INFO - Sample 1:
+2025-05-22 05:27:16,971 - INFO - Paper ID: 11481096
+2025-05-22 05:27:16,971 - INFO - Paper text (first 30 chars): ...
+2025-05-22 05:27:16,971 - INFO - Summary (first 30 chars): The key insight here is that n...
+2025-05-22 05:27:16,971 - INFO - ----------------------------------------
+2025-05-22 05:27:16,971 - INFO - Sample 2:
+2025-05-22 05:27:16,971 - INFO - Paper ID: 17980043
+2025-05-22 05:27:16,971 - INFO - Paper text (first 30 chars): We propose a new kind of opera...
+2025-05-22 05:27:16,971 - INFO - Summary (first 30 chars): This paper presents an approac...
+2025-05-22 05:27:16,971 - INFO - ----------------------------------------
+2025-05-22 05:27:16,971 - INFO - Sample 3:
+2025-05-22 05:27:16,972 - INFO - Paper ID: 62769214
+2025-05-22 05:27:16,972 - INFO - Paper text (first 30 chars): The recent success achieved by...
+2025-05-22 05:27:16,972 - INFO - Summary (first 30 chars): What  When using pretrained ne...
+2025-05-22 05:27:16,972 - INFO - ----------------------------------------
+2025-05-22 05:27:17,038 - INFO - Starting fine-tuning process
+2025-05-22 05:27:17,039 - INFO - LoRA is enabled with the following configuration:
+2025-05-22 05:27:17,039 - INFO - Loading data...
+2025-05-22 05:27:17,039 - INFO - Loading paper texts from JSON
+2025-05-22 05:27:17,057 - INFO - Starting fine-tuning process
+2025-05-22 05:27:17,058 - INFO - LoRA is enabled with the following configuration:
+2025-05-22 05:27:17,058 - INFO - Loading data...
+2025-05-22 05:27:17,058 - INFO - Loading paper texts from JSON
+2025-05-22 05:27:17,134 - INFO - Found 518 paper texts
+2025-05-22 05:27:17,134 - INFO - Loading gold summaries
+2025-05-22 05:27:17,141 - INFO - Found 530 gold summaries
+2025-05-22 05:27:17,142 - INFO - Preparing dataset...
+2025-05-22 05:27:17,142 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-22 05:27:17,156 - INFO - Found 518 paper texts
+2025-05-22 05:27:17,157 - INFO - Loading gold summaries
+2025-05-22 05:27:17,164 - INFO - Found 530 gold summaries
+2025-05-22 05:27:17,166 - INFO - Preparing dataset...
+2025-05-22 05:27:17,166 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-22 05:27:17,166 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-22 05:27:17,167 - INFO - Filtering statistics:
+2025-05-22 05:27:17,167 - INFO -   total_papers: 518
+2025-05-22 05:27:17,167 - INFO -   no_gold_summary: 0
+2025-05-22 05:27:17,167 - INFO -   not_in_valid_ids: 34
+2025-05-22 05:27:17,167 - INFO -   paper_too_long: 1
+2025-05-22 05:27:17,167 - INFO -   summary_too_long: 0
+2025-05-22 05:27:17,167 - INFO -   accepted: 483
+2025-05-22 05:27:17,167 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-22 05:27:17,169 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-22 05:27:17,170 - INFO - Filtering statistics:
+2025-05-22 05:27:17,170 - INFO -   total_papers: 518
+2025-05-22 05:27:17,170 - INFO -   no_gold_summary: 0
+2025-05-22 05:27:17,170 - INFO -   not_in_valid_ids: 34
+2025-05-22 05:27:17,170 - INFO -   paper_too_long: 1
+2025-05-22 05:27:17,170 - INFO -   summary_too_long: 0
+2025-05-22 05:27:17,170 - INFO -   accepted: 483
+2025-05-22 05:27:17,170 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-22 05:27:17,229 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-22 05:27:17,233 - INFO - Training set: 458 examples
+2025-05-22 05:27:17,233 - INFO - Validation set: 25 examples
+2025-05-22 05:27:17,233 - INFO - Loading model/tokenizer on rank 2
+2025-05-22 05:27:17,233 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-22 05:27:17,237 - INFO - Training set: 458 examples
+2025-05-22 05:27:17,237 - INFO - Validation set: 25 examples
+2025-05-22 05:27:17,237 - INFO - Loading model/tokenizer on rank 1
+2025-05-22 05:27:18,684 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-22 05:27:18,688 - INFO - Training set: 458 examples
+2025-05-22 05:27:18,688 - INFO - Validation set: 25 examples
+2025-05-22 05:27:18,689 - INFO - Loading model/tokenizer on rank 0
+2025-05-22 05:27:31,411 - INFO - Applying LoRA adapters to the model
+2025-05-22 05:27:31,694 - INFO - Tokenizing datasets
+2025-05-22 05:27:32,158 - INFO - Applying LoRA adapters to the model
+2025-05-22 05:27:32,438 - INFO - Tokenizing datasets
+2025-05-22 05:27:40,183 - INFO - Applying LoRA adapters to the model
+2025-05-22 05:27:40,466 - INFO - Tokenizing datasets
+2025-05-22 05:27:46,085 - INFO - Setting up training configuration
+2025-05-22 05:27:46,290 - INFO - Setting up training configuration

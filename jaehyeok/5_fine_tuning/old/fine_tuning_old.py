@@ -6,7 +6,6 @@ import torch
 from tqdm import tqdm
 from nltk.tokenize import word_tokenize
 from transformers import BitsAndBytesConfig
-from push_to_hub import HFUploadCallback, push_folder
 import torch.distributed as dist
 
 # Hugging Face imports
@@ -319,6 +318,98 @@ def setup_training(model, tokenizer, train_dataset, val_dataset, run_name, local
     
     return trainer
 
+def push_to_hub(trainer, model_name, step):
+    """Push the model to Hugging Face Hub at specific steps."""
+    # Only push to hub from the main process (rank 0)
+    if trainer.args.local_rank != 0:
+        logging.info(f"Skipping push to hub on non-zero rank (rank={trainer.args.local_rank})")
+        return
+        
+    logging.info(f"Pushing model to HuggingFace Hub at step {step}")
+    save_dir = f"./jaehyeok/models/{model_name}-step-{step}"
+    trainer.save_model(save_dir)
+    try:
+        if USE_LORA:
+            # For LoRA models, we need to use PeftModel.from_pretrained
+            model = PeftModel.from_pretrained(save_dir,
+                    model_id=MODEL_NAME,
+                    load_in_4bit=True,
+                    torch_dtype="auto",
+                    device_map="auto")
+            tokenizer = AutoTokenizer.from_pretrained(save_dir)
+        else:
+            model = AutoModelForCausalLM.from_pretrained(save_dir)
+            tokenizer = AutoTokenizer.from_pretrained(save_dir)
+            
+        repo_id = f"{HUB_USERNAME}/{model_name}"
+        
+        model.push_to_hub(repo_id,
+            commit_message=f"Step {step} - LoRA model",
+            token=HUB_TOKEN,
+            exist_ok=True)
+        tokenizer.push_to_hub(repo_id,
+            commit_message=f"Step {step} - LoRA tokenizer",
+            token=HUB_TOKEN,
+            exist_ok=True)
+        logging.info(f"Successfully pushed model to Hub as {model_name}-step-{step}")
+    except Exception as e:
+        logging.error(f"Failed to push model to Hub: {e}")
+
+class PushToHubCallback(TrainerCallback):
+    def __init__(self, trainer, model_name, push_every_n_steps=100):
+        self.trainer = trainer
+        self.model_name = model_name
+        self.push_every_n_steps = push_every_n_steps
+        self.best_metric = float('inf')
+
+    def on_step_end(self, args, state, control, **kwargs):
+        if state.global_step > 0 and state.global_step % self.push_every_n_steps == 0:
+            logging.info(f"Pushing model at step {state.global_step} to Hub: {self.model_name}")
+            
+            # 임시 저장 디렉토리 (반드시 필요한 경우에만 생성)
+            temp_save_dir = f"./jaehyeok/temp_model"
+            os.makedirs(temp_save_dir, exist_ok=True)
+            
+            try:
+                # 모델과 토크나이저 저장
+                kwargs['model'].save_pretrained(temp_save_dir)
+                kwargs['tokenizer'].save_pretrained(temp_save_dir)
+                
+                # 허브에 직접 업로드
+                if USE_LORA:
+                    # LoRA 모델의 경우 어댑터만 업로드하여 공간 절약
+                    model_repo_name = f"{self.model_name}-step-{state.global_step}-lora-{kwargs['model'].lora_rank}"
+                else:
+                    # 전체 모델 업로드
+                    model_repo_name = f"{self.model_name}-step-{state.global_step}"
+                kwargs['model'].push_to_hub(model_repo_name)
+                kwargs['tokenizer'].push_to_hub(model_repo_name+"-tokenizer")
+                logging.info(f"Model pushed to Hub as {model_repo_name}")
+                
+                # 임시 저장 디렉토리 정리
+                self._clean_temp_dir(temp_save_dir)
+                
+            except Exception as e:
+                logging.error(f"Failed to push model to Hub: {e}")
+                self._clean_temp_dir(temp_save_dir)
+    
+    def _clean_temp_dir(self, directory):
+        """임시 디렉토리 정리"""
+        try:
+            import shutil
+            if os.path.exists(directory):
+                shutil.rmtree(directory)
+                logging.info(f"Cleaned temporary directory: {directory}")
+        except Exception as e:
+            logging.warning(f"Failed to clean temporary directory: {e}")
+
+    def on_evaluate(self, args, state, control, metrics=None, **kwargs):
+        if metrics and "eval_loss" in metrics:
+            if metrics["eval_loss"] < self.best_metric:
+                self.best_metric = metrics["eval_loss"]
+                logging.info(f"New best eval_loss {self.best_metric:.4f} at step {state.global_step}. Pushing best model.")
+                push_to_hub(self.trainer, f"{self.model_name}-best", state.global_step)
+
 class LogTrainLossCallback(TrainerCallback):
     def on_log(self, args, state, control, logs=None, **kwargs):
         if logs and "loss" in logs:
@@ -400,18 +491,8 @@ def main():
     )
     
     # Setup training
-    repo_id = f"{HUB_USERNAME}/qwen3-8b-longsumm"
     trainer = setup_training(model, tokenizer, tokenized_train, tokenized_val, run_name, args.local_rank)
-
-    # **NEW**: HFUploadCallback 사용 (주기적 업로드)
-    trainer.add_callback(
-        HFUploadCallback(
-            repo_id=repo_id,
-            push_every_n_steps=PUSH_TO_HUB_STEPS,  # 기존 상수 재활용
-            hf_token=HUB_TOKEN,
-            adapter_only=USE_LORA,
-        )
-    )
+    trainer.add_callback(PushToHubCallback(trainer, f"jaehyeoklee/qwen3-8b-longsumm"))
     trainer.add_callback(LogTrainLossCallback())
     
     # Start training
@@ -419,16 +500,10 @@ def main():
     trainer.train()
     
     # Save and push final model
-    if args.local_rank in (0, -1):  # 단일 프로세스 또는 rank 0
-        final_dir = f"./jaehyeok/models/{run_name}-final"
-        trainer.save_model(final_dir)
-
-        # **NEW**: push_folder()로 최종 모델 업로드
-        push_folder(
-            folder_path=final_dir,
-            repo_id=repo_id + "-final",
-            hf_token=HUB_TOKEN,
-        )
+    if args.local_rank == 0:
+        logging.info("Training completed, saving final model")
+        trainer.save_model(f"./jaehyeok/models/{run_name}-final")
+        push_to_hub(trainer, f"jaehyeoklee/qwen3-8b-longsumm-final", "final")
     
     # Finish wandb session
     if args.local_rank == 0:

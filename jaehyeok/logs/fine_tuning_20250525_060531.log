@@ -1,0 +1,4 @@
+2025-05-25 06:05:32,140 - INFO - Using device: cuda:3 (rank 3)
+2025-05-25 06:05:38,588 - INFO - Loaded 22 documents from ./extractive_summaries/test4_output.json
+2025-05-25 06:53:20,893 - INFO - Generated 1 summaries in rank 3 (no gold summaries).
+2025-05-25 06:53:20,894 - INFO - Saved generated summaries to ./jaehyeok/results/generated_summaries_tes_rank3_20250525_065320.json

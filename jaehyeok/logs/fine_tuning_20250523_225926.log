@@ -1,0 +1,47 @@
+2025-05-23 22:59:26,048 - INFO - Using device: cuda:0 (rank 0)
+2025-05-23 22:59:30,743 - INFO - Loading data...
+2025-05-23 22:59:30,743 - INFO - Loading paper texts from JSON
+2025-05-23 22:59:30,835 - INFO - Found 518 paper texts
+2025-05-23 22:59:30,835 - INFO - Loading gold summaries
+2025-05-23 22:59:30,842 - INFO - Found 530 gold summaries
+2025-05-23 22:59:30,842 - INFO - Preparing dataset...
+2025-05-23 22:59:30,842 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-23 22:59:30,845 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-23 22:59:30,846 - INFO - Filtering statistics:
+2025-05-23 22:59:30,846 - INFO -   total_papers: 518
+2025-05-23 22:59:30,846 - INFO -   no_gold_summary: 0
+2025-05-23 22:59:30,846 - INFO -   not_in_valid_ids: 34
+2025-05-23 22:59:30,846 - INFO -   paper_too_long: 1
+2025-05-23 22:59:30,846 - INFO -   summary_too_long: 0
+2025-05-23 22:59:30,846 - INFO -   accepted: 483
+2025-05-23 22:59:30,846 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-23 22:59:30,901 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-23 22:59:30,906 - INFO - Checking 3 random samples from dataset:
+2025-05-23 22:59:30,957 - INFO - Sample 1 (paper_id: 91451160):
+2025-05-23 22:59:30,957 - INFO -   Input tokens: torch.Size([30000])
+2025-05-23 22:59:30,957 - INFO -   Label tokens: torch.Size([1024])
+2025-05-23 22:59:30,958 - INFO -   Input text preview: Summarize the following scientific paper:
+
+The MADlib Analytics Library or MAD Skills, the SQL Joseph M. Hellerstein Christopher Ré Florian Schoppmann Zhe Daisy Wang Eugene Fratkin Aleksander Gorajek Kee Siong Ng Caleb Wel...
+2025-05-23 22:59:30,958 - INFO -   Label text preview: The MADlib Analytics Library – MAD Skills, the SQL – Hellerstein et al. 2012  The way that we use large databases has evolved from being primarily in support of accounting and financial record-keeping, to primarily in support of...
+2025-05-23 22:59:30,958 - INFO - --------------------------------------------------
+2025-05-23 22:59:30,980 - INFO - Sample 2 (paper_id: 78339451):
+2025-05-23 22:59:30,980 - INFO -   Input tokens: torch.Size([30000])
+2025-05-23 22:59:30,980 - INFO -   Label tokens: torch.Size([1024])
+2025-05-23 22:59:30,980 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Learning reusable feature representations from large unlabeled datasets has been an area of active research. In the context of computer vision, one can leverage the practically unlimited amount of unlabeled images and videos to learn good intermediate representations...
+2025-05-23 22:59:30,980 - INFO -   Label text preview: The paper presents Deep Convolutional Generative Adversarial Nets (DCGAN) - a topologically constrained variant of conditional GAN.
+Benefits  Stable to train  Very useful to learn unsupervised image representations.
+Model  GANs difficult...
+2025-05-23 22:59:30,981 - INFO - --------------------------------------------------
+2025-05-23 22:59:31,002 - INFO - Sample 3 (paper_id: 91325283):
+2025-05-23 22:59:31,002 - INFO -   Input tokens: torch.Size([30000])
+2025-05-23 22:59:31,002 - INFO -   Label tokens: torch.Size([1024])
+2025-05-23 22:59:31,003 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Developing learning algorithms for distributed compositional semantics of words has been a longstanding open problem at the intersection of language understanding and machine learning. In recent years, several approaches have been developed for learning composition operators that map...
+2025-05-23 22:59:31,003 - INFO -   Label text preview: The paper describes an unsupervised approach to train a generic, distributed sentence encoder.
+It also describes a vocabulary expansion method to encode words not seen at training time.
+Skip-Thoughts  Train an encoder-decoder model where the encoder maps the input...
+2025-05-23 22:59:31,003 - INFO - --------------------------------------------------

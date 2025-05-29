@@ -1,0 +1,1090 @@
+2025-05-22 05:38:30,988 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-22 05:38:30,993 - INFO - Training set: 458 examples
+2025-05-22 05:38:30,993 - INFO - Validation set: 25 examples
+2025-05-22 05:38:30,993 - INFO - Loading model/tokenizer on rank 0
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:18<00:00,  3.61s/it]
+2025-05-22 05:38:50,555 - INFO - Applying LoRA adapters to the model
+trainable params: 15,335,424 || all params: 8,206,070,784 || trainable%: 0.1869
+2025-05-22 05:38:50,838 - INFO - Tokenizing datasets
+Tokenizing training set: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 458/458 [00:13<00:00, 33.51 examples/s]
+Tokenizing validation set: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:00<00:00, 35.66 examples/s]
+2025-05-22 05:39:05,432 - INFO - Setting up training configuration
+[2025-05-22 05:39:05,435] [INFO] [comm.py:669:init_distributed] cdb=None
+Using auto half precision backend
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-05-22 05:39:05,914 - INFO - Starting training
+[2025-05-22 05:39:06,235] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed info: version=0.16.7, git-hash=unknown, git-branch=unknown
+[2025-05-22 05:39:06,235] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 4
+[2025-05-22 05:39:07,163] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2025-05-22 05:39:07,167] [INFO] [logging.py:107:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2025-05-22 05:39:07,167] [INFO] [logging.py:107:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2025-05-22 05:39:07,193] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2025-05-22 05:39:07,193] [INFO] [utils.py:59:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'torch.optim.adamw.AdamW'>
+[2025-05-22 05:39:07,193] [INFO] [logging.py:107:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 2 optimizer
+[2025-05-22 05:39:07,194] [INFO] [stage_1_and_2.py:150:__init__] Reduce bucket size 500000000
+[2025-05-22 05:39:07,194] [INFO] [stage_1_and_2.py:151:__init__] Allgather bucket size 500000000
+[2025-05-22 05:39:07,194] [INFO] [stage_1_and_2.py:152:__init__] CPU Offload: False
+[2025-05-22 05:39:07,194] [INFO] [stage_1_and_2.py:153:__init__] Round robin gradient partitioning: False
+[2025-05-22 05:39:07,506] [INFO] [utils.py:781:see_memory_usage] Before initializing optimizer states
+[2025-05-22 05:39:07,507] [INFO] [utils.py:782:see_memory_usage] MA 5.7 GB         Max_MA 5.71 GB         CA 7.03 GB         Max_CA 7 GB
+[2025-05-22 05:39:07,508] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 48.78 GB, percent = 2.6%
+[2025-05-22 05:39:07,741] [INFO] [utils.py:781:see_memory_usage] After initializing optimizer states
+[2025-05-22 05:39:07,742] [INFO] [utils.py:782:see_memory_usage] MA 5.7 GB         Max_MA 5.72 GB         CA 7.03 GB         Max_CA 7 GB
+[2025-05-22 05:39:07,743] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 48.8 GB, percent = 2.6%
+[2025-05-22 05:39:07,743] [INFO] [stage_1_and_2.py:557:__init__] optimizer state initialized
+[2025-05-22 05:39:07,976] [INFO] [utils.py:781:see_memory_usage] After initializing ZeRO optimizer
+[2025-05-22 05:39:07,977] [INFO] [utils.py:782:see_memory_usage] MA 5.7 GB         Max_MA 5.7 GB         CA 7.03 GB         Max_CA 7 GB
+[2025-05-22 05:39:07,978] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 48.81 GB, percent = 2.6%
+[2025-05-22 05:39:07,980] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Final Optimizer = DeepSpeedZeroOptimizer
+[2025-05-22 05:39:07,980] [WARNING] [lr_schedules.py:683:get_lr] Attempting to get learning rate from scheduler before it has started
+[2025-05-22 05:39:07,981] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = WarmupLR
+[2025-05-22 05:39:07,981] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed LR Scheduler = <deepspeed.runtime.lr_schedules.WarmupLR object at 0x7fed981068f0>
+[2025-05-22 05:39:07,981] [INFO] [logging.py:107:log_dist] [Rank 0] step=0, skipped=0, lr=[0], mom=[(0.9, 0.999)]
+[2025-05-22 05:39:07,986] [INFO] [config.py:1003:print] DeepSpeedEngine configuration:
+[2025-05-22 05:39:07,986] [INFO] [config.py:1007:print]   activation_checkpointing_config  {
+    "partition_activations": false,
+    "contiguous_memory_optimization": false,
+    "cpu_checkpointing": false,
+    "number_checkpoints": null,
+    "synchronize_checkpoint_boundary": false,
+    "profile": false
+}
+[2025-05-22 05:39:07,986] [INFO] [config.py:1007:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'intra_op_parallelism': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
+[2025-05-22 05:39:07,986] [INFO] [config.py:1007:print]   amp_enabled .................. False
+[2025-05-22 05:39:07,987] [INFO] [config.py:1007:print]   amp_params ................... False
+[2025-05-22 05:39:07,987] [INFO] [config.py:1007:print]   autotuning_config ............ {
+    "enabled": false,
+    "start_step": null,
+    "end_step": null,
+    "metric_path": null,
+    "arg_mappings": null,
+    "metric": "throughput",
+    "model_info": null,
+    "results_dir": "autotuning_results",
+    "exps_dir": "autotuning_exps",
+    "overwrite": true,
+    "fast": true,
+    "start_profile_step": 3,
+    "end_profile_step": 5,
+    "tuner_type": "gridsearch",
+    "tuner_early_stopping": 5,
+    "tuner_num_trials": 50,
+    "model_info_path": null,
+    "mp_size": 1,
+    "max_train_batch_size": null,
+    "min_train_batch_size": 1,
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03,
+    "min_train_micro_batch_size_per_gpu": 1,
+    "num_tuning_micro_batch_sizes": 3
+}
+[2025-05-22 05:39:07,987] [INFO] [config.py:1007:print]   bfloat16_enabled ............. True
+[2025-05-22 05:39:07,987] [INFO] [config.py:1007:print]   bfloat16_immediate_grad_update  True
+[2025-05-22 05:39:07,987] [INFO] [config.py:1007:print]   checkpoint_parallel_write_pipeline  False
+[2025-05-22 05:39:07,987] [INFO] [config.py:1007:print]   checkpoint_tag_validation_enabled  True
+[2025-05-22 05:39:07,987] [INFO] [config.py:1007:print]   checkpoint_tag_validation_fail  False
+[2025-05-22 05:39:07,987] [INFO] [config.py:1007:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7fed915155a0>
+[2025-05-22 05:39:07,987] [INFO] [config.py:1007:print]   communication_data_type ...... None
+[2025-05-22 05:39:07,988] [INFO] [config.py:1007:print]   compile_config ............... deepcompile=False free_activation=False offload_activation=False offload_opt_states=False double_buffer=True symmetric_memory=False debug_log=False offload_parameters=False sync_before_reduce=False sync_after_reduce=False sync_before_allgather=False sync_after_allgather=False
+[2025-05-22 05:39:07,988] [INFO] [config.py:1007:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2025-05-22 05:39:07,988] [INFO] [config.py:1007:print]   curriculum_enabled_legacy .... False
+[2025-05-22 05:39:07,988] [INFO] [config.py:1007:print]   curriculum_params_legacy ..... False
+[2025-05-22 05:39:07,988] [INFO] [config.py:1007:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'pin_memory': False, 'curriculum_learning': {'enabled': False}, 'dynamic_batching': {'enabled': False, 'lr_scaling_method': 'linear', 'min_batch_size': 1, 'max_batch_size': None, 'sequence_picking_order': 'dataloader', 'verbose': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2025-05-22 05:39:07,988] [INFO] [config.py:1007:print]   data_efficiency_enabled ...... False
+[2025-05-22 05:39:07,988] [INFO] [config.py:1007:print]   dataloader_drop_last ......... False
+[2025-05-22 05:39:07,988] [INFO] [config.py:1007:print]   disable_allgather ............ False
+[2025-05-22 05:39:07,988] [INFO] [config.py:1007:print]   dump_state ................... False
+[2025-05-22 05:39:07,988] [INFO] [config.py:1007:print]   dynamic_loss_scale_args ...... None
+[2025-05-22 05:39:07,988] [INFO] [config.py:1007:print]   eigenvalue_enabled ........... False
+[2025-05-22 05:39:07,989] [INFO] [config.py:1007:print]   eigenvalue_gas_boundary_resolution  1
+[2025-05-22 05:39:07,989] [INFO] [config.py:1007:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2025-05-22 05:39:07,989] [INFO] [config.py:1007:print]   eigenvalue_layer_num ......... 0
+[2025-05-22 05:39:07,989] [INFO] [config.py:1007:print]   eigenvalue_max_iter .......... 100
+[2025-05-22 05:39:07,989] [INFO] [config.py:1007:print]   eigenvalue_stability ......... 1e-06
+[2025-05-22 05:39:07,989] [INFO] [config.py:1007:print]   eigenvalue_tol ............... 0.01
+[2025-05-22 05:39:07,989] [INFO] [config.py:1007:print]   eigenvalue_verbose ........... False
+[2025-05-22 05:39:07,989] [INFO] [config.py:1007:print]   elasticity_enabled ........... False
+[2025-05-22 05:39:07,989] [INFO] [config.py:1007:print]   flops_profiler_config ........ {
+    "enabled": false,
+    "recompute_fwd_factor": 0.0,
+    "profile_step": 1,
+    "module_depth": -1,
+    "top_modules": 1,
+    "detailed": true,
+    "output_file": null
+}
+[2025-05-22 05:39:07,989] [INFO] [config.py:1007:print]   fp16_auto_cast ............... None
+[2025-05-22 05:39:07,989] [INFO] [config.py:1007:print]   fp16_enabled ................. False
+[2025-05-22 05:39:07,989] [INFO] [config.py:1007:print]   fp16_master_weights_and_gradients  False
+[2025-05-22 05:39:07,990] [INFO] [config.py:1007:print]   global_rank .................. 0
+[2025-05-22 05:39:07,990] [INFO] [config.py:1007:print]   grad_accum_dtype ............. None
+[2025-05-22 05:39:07,990] [INFO] [config.py:1007:print]   gradient_accumulation_steps .. 4
+[2025-05-22 05:39:07,990] [INFO] [config.py:1007:print]   gradient_clipping ............ 0.0
+[2025-05-22 05:39:07,990] [INFO] [config.py:1007:print]   gradient_predivide_factor .... 1.0
+[2025-05-22 05:39:07,990] [INFO] [config.py:1007:print]   graph_harvesting ............. False
+[2025-05-22 05:39:07,990] [INFO] [config.py:1007:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2025-05-22 05:39:07,990] [INFO] [config.py:1007:print]   initial_dynamic_scale ........ 1
+[2025-05-22 05:39:07,990] [INFO] [config.py:1007:print]   load_universal_checkpoint .... False
+[2025-05-22 05:39:07,990] [INFO] [config.py:1007:print]   loss_scale ................... 1.0
+[2025-05-22 05:39:07,990] [INFO] [config.py:1007:print]   memory_breakdown ............. False
+[2025-05-22 05:39:07,990] [INFO] [config.py:1007:print]   mics_hierarchial_params_gather  False
+[2025-05-22 05:39:07,991] [INFO] [config.py:1007:print]   mics_shard_size .............. -1
+[2025-05-22 05:39:07,991] [INFO] [config.py:1007:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
+[2025-05-22 05:39:07,991] [INFO] [config.py:1007:print]   nebula_config ................ {
+    "enabled": false,
+    "persistent_storage_path": null,
+    "persistent_time_interval": 100,
+    "num_of_version_in_retention": 2,
+    "enable_nebula_load": true,
+    "load_path": null
+}
+[2025-05-22 05:39:07,991] [INFO] [config.py:1007:print]   optimizer_legacy_fusion ...... False
+[2025-05-22 05:39:07,991] [INFO] [config.py:1007:print]   optimizer_name ............... None
+[2025-05-22 05:39:07,991] [INFO] [config.py:1007:print]   optimizer_params ............. None
+[2025-05-22 05:39:07,991] [INFO] [config.py:1007:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2025-05-22 05:39:07,991] [INFO] [config.py:1007:print]   pld_enabled .................. False
+[2025-05-22 05:39:07,991] [INFO] [config.py:1007:print]   pld_params ................... False
+[2025-05-22 05:39:07,991] [INFO] [config.py:1007:print]   prescale_gradients ........... False
+[2025-05-22 05:39:07,991] [INFO] [config.py:1007:print]   scheduler_name ............... WarmupLR
+[2025-05-22 05:39:07,992] [INFO] [config.py:1007:print]   scheduler_params ............. {'warmup_min_lr': 0, 'warmup_max_lr': 2e-05, 'warmup_num_steps': 3}
+[2025-05-22 05:39:07,992] [INFO] [config.py:1007:print]   seq_parallel_communication_data_type  torch.float32
+[2025-05-22 05:39:07,992] [INFO] [config.py:1007:print]   sparse_attention ............. None
+[2025-05-22 05:39:07,992] [INFO] [config.py:1007:print]   sparse_gradients_enabled ..... False
+[2025-05-22 05:39:07,992] [INFO] [config.py:1007:print]   steps_per_print .............. inf
+[2025-05-22 05:39:07,992] [INFO] [config.py:1007:print]   tensor_parallel_config ....... dtype=torch.float16 autotp_size=0 tp_overlap_comm=False tensor_parallel=TPConfig(tp_size=1, tp_grain_size=1, mpu=None, tp_group=None) injection_policy_tuple=None keep_module_on_host=False replace_with_kernel_inject=False
+[2025-05-22 05:39:07,992] [INFO] [config.py:1007:print]   timers_config ................ enabled=True synchronized=True
+[2025-05-22 05:39:07,992] [INFO] [config.py:1007:print]   train_batch_size ............. 16
+[2025-05-22 05:39:07,992] [INFO] [config.py:1007:print]   train_micro_batch_size_per_gpu  1
+[2025-05-22 05:39:07,992] [INFO] [config.py:1007:print]   use_data_before_expert_parallel_  False
+[2025-05-22 05:39:07,992] [INFO] [config.py:1007:print]   use_node_local_storage ....... False
+[2025-05-22 05:39:07,992] [INFO] [config.py:1007:print]   wall_clock_breakdown ......... False
+[2025-05-22 05:39:07,992] [INFO] [config.py:1007:print]   weight_quantization_config ... None
+[2025-05-22 05:39:07,993] [INFO] [config.py:1007:print]   world_size ................... 4
+[2025-05-22 05:39:07,993] [INFO] [config.py:1007:print]   zero_allow_untested_optimizer  True
+[2025-05-22 05:39:07,993] [INFO] [config.py:1007:print]   zero_config .................. stage=2 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=False module_granularity_threshold=0 use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False zeropp_loco_param=None mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True log_trace_cache_warnings=False
+[2025-05-22 05:39:07,993] [INFO] [config.py:1007:print]   zero_enabled ................. True
+[2025-05-22 05:39:07,993] [INFO] [config.py:1007:print]   zero_force_ds_cpu_optimizer .. True
+[2025-05-22 05:39:07,993] [INFO] [config.py:1007:print]   zero_optimization_stage ...... 2
+[2025-05-22 05:39:07,993] [INFO] [config.py:993:print_user_config]   json = {
+    "train_batch_size": 16,
+    "train_micro_batch_size_per_gpu": 1,
+    "gradient_accumulation_steps": 4,
+    "fp16": {
+        "enabled": false
+    },
+    "bf16": {
+        "enabled": true
+    },
+    "zero_optimization": {
+        "stage": 2,
+        "allgather_partitions": true,
+        "overlap_comm": true
+    },
+    "scheduler": {
+        "type": "WarmupLR",
+        "params": {
+            "warmup_min_lr": 0,
+            "warmup_max_lr": 2e-05,
+            "warmup_num_steps": 3
+        }
+    },
+    "steps_per_print": inf,
+    "zero_allow_untested_optimizer": true
+}
+***** Running training *****
+  Num examples = 458
+  Num Epochs = 3
+  Instantaneous batch size per device = 1
+  Total train batch size (w. parallel, distributed & accumulation) = 16
+  Gradient Accumulation steps = 4
+  Total optimization steps = 84
+  Number of trainable parameters = 15,335,424
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                                                                                                                                                                    | 0/84 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/root/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+  1%|██▏                                                                                                                                                                                      | 1/84 [02:56<4:03:35, 176.09s/it]2025-05-22 05:42:04,692 - INFO - [Step 1] Training loss: 2.4117
+{'loss': 2.4117, 'grad_norm': 0.29187193512916565, 'learning_rate': 0.0, 'epoch': 0.03}
+  2%|████▍                                                                                                                                                                                    | 2/84 [05:51<4:00:15, 175.80s/it]2025-05-22 05:44:59,694 - INFO - [Step 2] Training loss: 2.3009
+{'loss': 2.3009, 'grad_norm': 0.29374274611473083, 'learning_rate': 1.2618595071429148e-05, 'epoch': 0.07}
+  4%|██████▌                                                                                                                                                                                  | 3/84 [08:46<3:56:48, 175.42s/it]2025-05-22 05:47:54,659 - INFO - [Step 3] Training loss: 2.3322
+{'loss': 2.3322, 'grad_norm': 0.2969944179058075, 'learning_rate': 2e-05, 'epoch': 0.1}
+  5%|████████▊                                                                                                                                                                                | 4/84 [11:41<3:53:40, 175.25s/it]2025-05-22 05:50:49,658 - INFO - [Step 4] Training loss: 2.2569
+{'loss': 2.2569, 'grad_norm': 0.29637742042541504, 'learning_rate': 2e-05, 'epoch': 0.14}
+  6%|███████████                                                                                                                                                                              | 5/84 [14:36<3:50:40, 175.20s/it]2025-05-22 05:53:44,766 - INFO - [Step 5] Training loss: 2.3611
+{'loss': 2.3611, 'grad_norm': 0.28738653659820557, 'learning_rate': 2e-05, 'epoch': 0.17}
+  7%|█████████████▏                                                                                                                                                                           | 6/84 [17:31<3:47:43, 175.17s/it]2025-05-22 05:56:39,887 - INFO - [Step 6] Training loss: 2.3702
+{'loss': 2.3702, 'grad_norm': 0.30680203437805176, 'learning_rate': 2e-05, 'epoch': 0.21}
+  8%|███████████████▍                                                                                                                                                                         | 7/84 [20:26<3:44:44, 175.12s/it]2025-05-22 05:59:34,891 - INFO - [Step 7] Training loss: 2.4310
+{'loss': 2.431, 'grad_norm': 0.40029218792915344, 'learning_rate': 2e-05, 'epoch': 0.24}
+ 10%|█████████████████▌                                                                                                                                                                       | 8/84 [23:21<3:41:46, 175.08s/it]2025-05-22 06:02:29,891 - INFO - [Step 8] Training loss: 2.2897
+{'loss': 2.2897, 'grad_norm': 0.3295196294784546, 'learning_rate': 2e-05, 'epoch': 0.28}
+ 11%|███████████████████▊                                                                                                                                                                     | 9/84 [26:16<3:38:48, 175.05s/it]2025-05-22 06:05:24,869 - INFO - [Step 9] Training loss: 2.3195
+{'loss': 2.3195, 'grad_norm': 0.29378968477249146, 'learning_rate': 2e-05, 'epoch': 0.31}
+ 12%|█████████████████████▉                                                                                                                                                                  | 10/84 [29:12<3:35:58, 175.12s/it]2025-05-22 06:08:20,136 - INFO - 📤  Uploading checkpoint @step 10 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+adapter_model.safetensors: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30.7M/30.7M [00:02<00:00, 11.0MB/s]
+ 12%|█████████████████████▉                                                                                                                                                                  | 10/84 [29:18<3:35:58, 175.12s/it]2025-05-22 06:08:26,369 - INFO - [Step 10] Training loss: 2.2240
+{'loss': 2.224, 'grad_norm': 0.2967682480812073, 'learning_rate': 2e-05, 'epoch': 0.35}
+Saving model checkpoint to ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-10
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+Saving Trainer.data_collator.tokenizer by default as Trainer.processing_class is `None`
+tokenizer config file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-10/tokenizer_config.json
+Special tokens file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-10/special_tokens_map.json
+[2025-05-22 06:08:36,156] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step10 is about to be saved!
+[2025-05-22 06:08:36,199] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-10/global_step10/mp_rank_00_model_states.pt
+[2025-05-22 06:08:36,199] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-10/global_step10/mp_rank_00_model_states.pt...
+[2025-05-22 06:08:36,544] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-10/global_step10/mp_rank_00_model_states.pt.
+[2025-05-22 06:08:36,547] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-10/global_step10/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-05-22 06:08:36,654] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-10/global_step10/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-05-22 06:08:36,655] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-10/global_step10/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-05-22 06:08:36,656] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step10 is ready now!
+ 13%|████████████████████████                                                                                                                                                                | 11/84 [32:23<3:39:11, 180.16s/it]2025-05-22 06:11:31,741 - INFO - [Step 11] Training loss: 2.3599
+{'loss': 2.3599, 'grad_norm': 0.303428053855896, 'learning_rate': 2e-05, 'epoch': 0.38}
+ 14%|██████████████████████▌                                                                                                                                       | 12/84 [35:18<3:34:19, 178.60s/it]2025-05-22 06:14:26,759 - INFO - [Step 12] Training loss: 2.3350
+{'loss': 2.335, 'grad_norm': 0.3295179307460785, 'learning_rate': 2e-05, 'epoch': 0.42}
+ 15%|████████████████████████▍                                                                                                                                     | 13/84 [38:13<3:30:06, 177.55s/it]2025-05-22 06:17:21,910 - INFO - [Step 13] Training loss: 2.3263
+{'loss': 2.3263, 'grad_norm': 0.30614104866981506, 'learning_rate': 2e-05, 'epoch': 0.45}
+ 17%|██████████████████████████▎                                                                                                                                   | 14/84 [41:08<3:26:15, 176.80s/it]2025-05-22 06:20:16,956 - INFO - [Step 14] Training loss: 2.2067
+{'loss': 2.2067, 'grad_norm': 0.30325135588645935, 'learning_rate': 2e-05, 'epoch': 0.49}
+ 18%|████████████████████████████▏                                                                                                                                 | 15/84 [44:03<3:22:42, 176.27s/it]2025-05-22 06:23:11,998 - INFO - [Step 15] Training loss: 2.3562
+{'loss': 2.3562, 'grad_norm': 0.31907564401626587, 'learning_rate': 2e-05, 'epoch': 0.52}
+ 19%|██████████████████████████████                                                                                                                                | 16/84 [46:59<3:19:22, 175.92s/it]2025-05-22 06:26:07,114 - INFO - [Step 16] Training loss: 2.2479
+{'loss': 2.2479, 'grad_norm': 0.3085533380508423, 'learning_rate': 2e-05, 'epoch': 0.56}
+ 20%|███████████████████████████████▉                                                                                                                              | 17/84 [49:54<3:16:09, 175.67s/it]2025-05-22 06:29:02,186 - INFO - [Step 17] Training loss: 2.2883
+{'loss': 2.2883, 'grad_norm': 0.31105732917785645, 'learning_rate': 2e-05, 'epoch': 0.59}
+ 21%|█████████████████████████████████▊                                                                                                                            | 18/84 [52:49<3:13:00, 175.47s/it]2025-05-22 06:31:57,195 - INFO - [Step 18] Training loss: 2.4310
+{'loss': 2.431, 'grad_norm': 0.3014228343963623, 'learning_rate': 2e-05, 'epoch': 0.63}
+ 23%|███████████████████████████████████▋                                                                                                                          | 19/84 [55:44<3:09:56, 175.33s/it]2025-05-22 06:34:52,192 - INFO - [Step 19] Training loss: 2.2611
+{'loss': 2.2611, 'grad_norm': 0.2974688708782196, 'learning_rate': 2e-05, 'epoch': 0.66}
+ 24%|█████████████████████████████████████▌                                                                                                                        | 20/84 [58:39<3:06:55, 175.25s/it]2025-05-22 06:37:47,249 - INFO - 📤  Uploading checkpoint @step 20 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+adapter_model.safetensors: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30.7M/30.7M [00:03<00:00, 9.45MB/s]
+ 24%|█████████████████████████████████████▌                                                                                                                        | 20/84 [58:46<3:06:55, 175.25s/it]2025-05-22 06:37:54,294 - INFO - [Step 20] Training loss: 2.3845
+{'loss': 2.3845, 'grad_norm': 0.27791309356689453, 'learning_rate': 2e-05, 'epoch': 0.7}
+Saving model checkpoint to ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-20
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+Saving Trainer.data_collator.tokenizer by default as Trainer.processing_class is `None`
+tokenizer config file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-20/tokenizer_config.json
+Special tokens file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-20/special_tokens_map.json
+[2025-05-22 06:38:03,913] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step20 is about to be saved!
+[2025-05-22 06:38:03,956] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-20/global_step20/mp_rank_00_model_states.pt
+[2025-05-22 06:38:03,956] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-20/global_step20/mp_rank_00_model_states.pt...
+[2025-05-22 06:38:04,298] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-20/global_step20/mp_rank_00_model_states.pt.
+[2025-05-22 06:38:04,301] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-20/global_step20/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-05-22 06:38:04,472] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-20/global_step20/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-05-22 06:38:04,473] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-20/global_step20/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-05-22 06:38:04,474] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step20 is ready now!
+ 25%|███████████████████████████████████████                                                                                                                     | 21/84 [1:01:51<3:09:21, 180.34s/it]2025-05-22 06:40:59,612 - INFO - [Step 21] Training loss: 2.2566
+{'loss': 2.2566, 'grad_norm': 0.273136705160141, 'learning_rate': 2e-05, 'epoch': 0.73}
+ 26%|████████████████████████████████████████▊                                                                                                                   | 22/84 [1:04:46<3:04:43, 178.77s/it]2025-05-22 06:43:54,583 - INFO - [Step 22] Training loss: 2.3760
+{'loss': 2.376, 'grad_norm': 0.27776455879211426, 'learning_rate': 2e-05, 'epoch': 0.77}
+ 27%|██████████████████████████████████████████▋                                                                                                                 | 23/84 [1:07:41<3:00:37, 177.66s/it]2025-05-22 06:46:49,642 - INFO - [Step 23] Training loss: 2.3581
+{'loss': 2.3581, 'grad_norm': 0.28594833612442017, 'learning_rate': 2e-05, 'epoch': 0.8}
+ 29%|████████████████████████████████████████████▌                                                                                                               | 24/84 [1:10:36<2:56:51, 176.86s/it]2025-05-22 06:49:44,648 - INFO - [Step 24] Training loss: 2.3456
+{'loss': 2.3456, 'grad_norm': 0.2725805938243866, 'learning_rate': 2e-05, 'epoch': 0.83}
+ 30%|██████████████████████████████████████████████▍                                                                                                             | 25/84 [1:13:31<2:53:23, 176.33s/it]2025-05-22 06:52:39,720 - INFO - [Step 25] Training loss: 2.1937
+{'loss': 2.1937, 'grad_norm': 0.25911229848861694, 'learning_rate': 2e-05, 'epoch': 0.87}
+ 31%|████████████████████████████████████████████████▎                                                                                                           | 26/84 [1:16:26<2:50:02, 175.91s/it]2025-05-22 06:55:34,662 - INFO - [Step 26] Training loss: 2.2319
+{'loss': 2.2319, 'grad_norm': 0.23775634169578552, 'learning_rate': 2e-05, 'epoch': 0.9}
+ 32%|██████████████████████████████████████████████████▏                                                                                                         | 27/84 [1:19:21<2:46:50, 175.62s/it]2025-05-22 06:58:29,611 - INFO - [Step 27] Training loss: 2.2267
+{'loss': 2.2267, 'grad_norm': 0.2543829679489136, 'learning_rate': 2e-05, 'epoch': 0.94}
+ 33%|████████████████████████████████████████████████████                                                                                                        | 28/84 [1:22:16<2:43:44, 175.43s/it]2025-05-22 07:01:24,597 - INFO - [Step 28] Training loss: 2.2048
+{'loss': 2.2048, 'grad_norm': 0.2322629988193512, 'learning_rate': 2e-05, 'epoch': 0.97}
+ 35%|█████████████████████████████████████████████████████▊                                                                                                      | 29/84 [1:26:39<3:04:46, 201.57s/it]2025-05-22 07:05:47,167 - INFO - [Step 29] Training loss: 4.4853
+{'loss': 4.4853, 'grad_norm': 0.3475302755832672, 'learning_rate': 2e-05, 'epoch': 1.03}
+ 36%|███████████████████████████████████████████████████████▋                                                                                                    | 30/84 [1:29:34<2:54:14, 193.61s/it]2025-05-22 07:08:42,196 - INFO - 📤  Uploading checkpoint @step 30 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+adapter_model.safetensors: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30.7M/30.7M [00:02<00:00, 12.9MB/s]
+ 36%|███████████████████████████████████████████████████████▋                                                                                                    | 30/84 [1:29:40<2:54:14, 193.61s/it]2025-05-22 07:08:48,760 - INFO - [Step 30] Training loss: 2.1865
+{'loss': 2.1865, 'grad_norm': 0.1993466466665268, 'learning_rate': 2e-05, 'epoch': 1.07}
+Saving model checkpoint to ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-30
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+Saving Trainer.data_collator.tokenizer by default as Trainer.processing_class is `None`
+tokenizer config file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-30/tokenizer_config.json
+Special tokens file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-30/special_tokens_map.json
+[2025-05-22 07:08:58,396] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step30 is about to be saved!
+[2025-05-22 07:08:58,440] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-30/global_step30/mp_rank_00_model_states.pt
+[2025-05-22 07:08:58,441] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-30/global_step30/mp_rank_00_model_states.pt...
+[2025-05-22 07:08:58,770] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-30/global_step30/mp_rank_00_model_states.pt.
+[2025-05-22 07:08:58,774] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-30/global_step30/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-05-22 07:08:58,907] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-30/global_step30/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-05-22 07:08:58,908] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-30/global_step30/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-05-22 07:08:58,908] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step30 is ready now!
+ 37%|█████████████████████████████████████████████████████████▌                                                                                                  | 31/84 [1:32:45<2:50:31, 193.04s/it]2025-05-22 07:11:53,910 - INFO - [Step 31] Training loss: 2.3077
+{'loss': 2.3077, 'grad_norm': 0.17125728726387024, 'learning_rate': 2e-05, 'epoch': 1.1}
+ 38%|███████████████████████████████████████████████████████████▍                                                                                                | 32/84 [1:35:40<2:42:37, 187.64s/it]2025-05-22 07:14:48,945 - INFO - [Step 32] Training loss: 2.2701
+{'loss': 2.2701, 'grad_norm': 0.20724554359912872, 'learning_rate': 2e-05, 'epoch': 1.14}
+ 39%|█████████████████████████████████████████████████████████████▎                                                                                              | 33/84 [1:38:35<2:36:17, 183.87s/it]2025-05-22 07:17:44,004 - INFO - [Step 33] Training loss: 2.1373
+{'loss': 2.1373, 'grad_norm': 0.1743074506521225, 'learning_rate': 2e-05, 'epoch': 1.17}
+ 40%|███████████████████████████████████████████████████████████████▏                                                                                            | 34/84 [1:41:30<2:30:59, 181.20s/it]2025-05-22 07:20:38,978 - INFO - [Step 34] Training loss: 2.2558
+{'loss': 2.2558, 'grad_norm': 0.17550566792488098, 'learning_rate': 2e-05, 'epoch': 1.21}
+ 42%|█████████████████████████████████████████████████████████████████                                                                                           | 35/84 [1:44:25<2:26:27, 179.34s/it]2025-05-22 07:23:33,986 - INFO - [Step 35] Training loss: 2.1909
+{'loss': 2.1909, 'grad_norm': 0.15210995078086853, 'learning_rate': 2e-05, 'epoch': 1.24}
+ 43%|██████████████████████████████████████████████████████████████████▊                                                                                         | 36/84 [1:47:20<2:22:26, 178.04s/it]2025-05-22 07:26:29,007 - INFO - [Step 36] Training loss: 2.2183
+{'loss': 2.2183, 'grad_norm': 0.15534639358520508, 'learning_rate': 2e-05, 'epoch': 1.28}
+ 44%|████████████████████████████████████████████████████████████████████▋                                                                                       | 37/84 [1:50:16<2:18:45, 177.14s/it]2025-05-22 07:29:24,027 - INFO - [Step 37] Training loss: 2.2334
+{'loss': 2.2334, 'grad_norm': 0.1670428365468979, 'learning_rate': 2e-05, 'epoch': 1.31}
+ 45%|██████████████████████████████████████████████████████████████████████▌                                                                                     | 38/84 [1:53:11<2:15:19, 176.51s/it]2025-05-22 07:32:19,086 - INFO - [Step 38] Training loss: 2.1715
+{'loss': 2.1715, 'grad_norm': 0.1426965445280075, 'learning_rate': 2e-05, 'epoch': 1.35}
+ 46%|████████████████████████████████████████████████████████████████████████▍                                                                                   | 39/84 [1:56:06<2:12:02, 176.05s/it]2025-05-22 07:35:14,049 - INFO - [Step 39] Training loss: 2.2183
+{'loss': 2.2183, 'grad_norm': 0.12890517711639404, 'learning_rate': 2e-05, 'epoch': 1.38}
+ 48%|██████████████████████████████████████████████████████████████████████████▎                                                                                 | 40/84 [1:59:00<2:08:51, 175.72s/it]2025-05-22 07:38:08,990 - INFO - 📤  Uploading checkpoint @step 40 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+adapter_model.safetensors: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30.7M/30.7M [00:02<00:00, 12.7MB/s]
+ 48%|██████████████████████████████████████████████████████████████████████████▎                                                                                 | 40/84 [1:59:10<2:08:51, 175.72s/it]2025-05-22 07:38:18,818 - INFO - [Step 40] Training loss: 2.2478
+{'loss': 2.2478, 'grad_norm': 0.14533589780330658, 'learning_rate': 2e-05, 'epoch': 1.42}
+Saving model checkpoint to ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-40
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+Saving Trainer.data_collator.tokenizer by default as Trainer.processing_class is `None`
+tokenizer config file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-40/tokenizer_config.json
+Special tokens file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-40/special_tokens_map.json
+[2025-05-22 07:38:28,188] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step40 is about to be saved!
+[2025-05-22 07:38:28,277] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-40/global_step40/mp_rank_00_model_states.pt
+[2025-05-22 07:38:28,277] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-40/global_step40/mp_rank_00_model_states.pt...
+[2025-05-22 07:38:28,596] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-40/global_step40/mp_rank_00_model_states.pt.
+[2025-05-22 07:38:28,599] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-40/global_step40/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-05-22 07:38:28,747] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-40/global_step40/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-05-22 07:38:28,748] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-40/global_step40/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-05-22 07:38:28,749] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step40 is ready now!
+ 49%|████████████████████████████████████████████████████████████████████████████▏                                                                               | 41/84 [2:02:15<2:10:02, 181.46s/it]2025-05-22 07:41:23,857 - INFO - [Step 41] Training loss: 2.0970
+{'loss': 2.097, 'grad_norm': 0.14684423804283142, 'learning_rate': 2e-05, 'epoch': 1.45}
+ 50%|██████████████████████████████████████████████████████████████████████████████                                                                              | 42/84 [2:05:10<2:05:39, 179.51s/it]2025-05-22 07:44:18,817 - INFO - [Step 42] Training loss: 2.2197
+{'loss': 2.2197, 'grad_norm': 0.13074442744255066, 'learning_rate': 2e-05, 'epoch': 1.49}
+ 51%|███████████████████████████████████████████████████████████████████████████████▊                                                                            | 43/84 [2:08:05<2:01:44, 178.16s/it]2025-05-22 07:47:13,822 - INFO - [Step 43] Training loss: 2.2273
+{'loss': 2.2273, 'grad_norm': 0.11831966042518616, 'learning_rate': 2e-05, 'epoch': 1.52}
+ 52%|█████████████████████████████████████████████████████████████████████████████████▋                                                                          | 44/84 [2:11:00<1:58:09, 177.24s/it]2025-05-22 07:50:08,914 - INFO - [Step 44] Training loss: 2.2150
+{'loss': 2.215, 'grad_norm': 0.13142961263656616, 'learning_rate': 2e-05, 'epoch': 1.56}
+ 54%|███████████████████████████████████████████████████████████████████████████████████▌                                                                        | 45/84 [2:13:55<1:54:46, 176.58s/it]2025-05-22 07:53:03,962 - INFO - [Step 45] Training loss: 2.1189
+{'loss': 2.1189, 'grad_norm': 0.09816700220108032, 'learning_rate': 2e-05, 'epoch': 1.59}
+ 55%|█████████████████████████████████████████████████████████████████████████████████████▍                                                                      | 46/84 [2:16:51<1:51:35, 176.19s/it]2025-05-22 07:55:59,234 - INFO - [Step 46] Training loss: 1.9915
+{'loss': 1.9915, 'grad_norm': 0.10629583895206451, 'learning_rate': 2e-05, 'epoch': 1.63}
+ 56%|███████████████████████████████████████████████████████████████████████████████████████▎                                                                    | 47/84 [2:19:46<1:48:25, 175.83s/it]2025-05-22 07:58:54,233 - INFO - [Step 47] Training loss: 2.1446
+{'loss': 2.1446, 'grad_norm': 0.11507966369390488, 'learning_rate': 2e-05, 'epoch': 1.66}
+ 57%|█████████████████████████████████████████████████████████████████████████████████████████▏                                                                  | 48/84 [2:22:41<1:45:20, 175.58s/it]2025-05-22 08:01:49,229 - INFO - [Step 48] Training loss: 2.0720
+{'loss': 2.072, 'grad_norm': 0.10399998724460602, 'learning_rate': 2e-05, 'epoch': 1.7}
+ 58%|███████████████████████████████████████████████████████████████████████████████████████████                                                                 | 49/84 [2:25:36<1:42:19, 175.42s/it]2025-05-22 08:04:44,258 - INFO - [Step 49] Training loss: 2.2442
+{'loss': 2.2442, 'grad_norm': 0.0890670046210289, 'learning_rate': 2e-05, 'epoch': 1.73}
+ 60%|████████████████████████████████████████████████████████████████████████████████████████████▊                                                               | 50/84 [2:28:31<1:39:20, 175.30s/it]2025-05-22 08:07:39,297 - INFO - 📤  Uploading checkpoint @step 50 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+adapter_model.safetensors: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30.7M/30.7M [00:03<00:00, 9.98MB/s]
+ 60%|████████████████████████████████████████████████████████████████████████████████████████████▊                                                               | 50/84 [2:28:37<1:39:20, 175.30s/it]2025-05-22 08:07:45,332 - INFO - [Step 50] Training loss: 2.1590
+{'loss': 2.159, 'grad_norm': 0.0979609340429306, 'learning_rate': 2e-05, 'epoch': 1.77}
+Saving model checkpoint to ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-50
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+Saving Trainer.data_collator.tokenizer by default as Trainer.processing_class is `None`
+tokenizer config file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-50/tokenizer_config.json
+Special tokens file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-50/special_tokens_map.json
+[2025-05-22 08:07:54,856] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step50 is about to be saved!
+[2025-05-22 08:07:54,900] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-50/global_step50/mp_rank_00_model_states.pt
+[2025-05-22 08:07:54,900] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-50/global_step50/mp_rank_00_model_states.pt...
+[2025-05-22 08:07:55,245] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-50/global_step50/mp_rank_00_model_states.pt.
+[2025-05-22 08:07:55,248] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-50/global_step50/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-05-22 08:07:55,416] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-50/global_step50/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-05-22 08:07:55,417] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-50/global_step50/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-05-22 08:07:55,417] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step50 is ready now!
+ 61%|██████████████████████████████████████████████████████████████████████████████████████████████▋                                                             | 51/84 [2:31:42<1:39:01, 180.04s/it]2025-05-22 08:10:50,377 - INFO - [Step 51] Training loss: 2.3203
+{'loss': 2.3203, 'grad_norm': 0.0892978087067604, 'learning_rate': 2e-05, 'epoch': 1.8}
+ 62%|████████████████████████████████████████████████████████████████████████████████████████████████▌                                                           | 52/84 [2:34:37<1:35:12, 178.51s/it]2025-05-22 08:13:45,320 - INFO - [Step 52] Training loss: 2.1590
+{'loss': 2.159, 'grad_norm': 0.10576586425304413, 'learning_rate': 2e-05, 'epoch': 1.83}
+ 63%|██████████████████████████████████████████████████████████████████████████████████████████████████▍                                                         | 53/84 [2:37:32<1:31:42, 177.49s/it]2025-05-22 08:16:40,437 - INFO - [Step 53] Training loss: 2.0632
+{'loss': 2.0632, 'grad_norm': 0.10420816391706467, 'learning_rate': 2e-05, 'epoch': 1.87}
+ 64%|████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                       | 54/84 [2:40:27<1:28:23, 176.77s/it]2025-05-22 08:19:35,521 - INFO - [Step 54] Training loss: 2.1615
+{'loss': 2.1615, 'grad_norm': 0.08009333163499832, 'learning_rate': 2e-05, 'epoch': 1.9}
+ 65%|██████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                     | 55/84 [2:43:22<1:25:10, 176.23s/it]2025-05-22 08:22:30,507 - INFO - [Step 55] Training loss: 2.1973
+{'loss': 2.1973, 'grad_norm': 0.09708685427904129, 'learning_rate': 2e-05, 'epoch': 1.94}
+ 67%|████████████████████████████████████████████████████████████████████████████████████████████████████████                                                    | 56/84 [2:46:17<1:22:03, 175.85s/it]2025-05-22 08:25:25,477 - INFO - [Step 56] Training loss: 2.1418
+{'loss': 2.1418, 'grad_norm': 0.08144474029541016, 'learning_rate': 2e-05, 'epoch': 1.97}
+ 68%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                  | 57/84 [2:50:40<1:30:51, 201.91s/it]2025-05-22 08:29:48,168 - INFO - [Step 57] Training loss: 4.6678
+{'loss': 4.6678, 'grad_norm': 0.07939612865447998, 'learning_rate': 2e-05, 'epoch': 2.03}
+ 69%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                | 58/84 [2:53:35<1:23:59, 193.84s/it]2025-05-22 08:32:43,177 - INFO - [Step 58] Training loss: 2.1666
+{'loss': 2.1666, 'grad_norm': 0.08086134493350983, 'learning_rate': 2e-05, 'epoch': 2.07}
+ 70%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                              | 59/84 [2:56:30<1:18:24, 188.17s/it]2025-05-22 08:35:38,135 - INFO - [Step 59] Training loss: 2.1634
+{'loss': 2.1634, 'grad_norm': 0.08905082941055298, 'learning_rate': 2e-05, 'epoch': 2.1}
+ 71%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                            | 60/84 [2:59:25<1:13:41, 184.25s/it]2025-05-22 08:38:33,213 - INFO - 📤  Uploading checkpoint @step 60 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+adapter_model.safetensors: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30.7M/30.7M [00:03<00:00, 8.35MB/s]
+ 71%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                            | 60/84 [2:59:31<1:13:41, 184.25s/it]2025-05-22 08:38:39,851 - INFO - [Step 60] Training loss: 2.1475
+{'loss': 2.1475, 'grad_norm': 0.07697609066963196, 'learning_rate': 2e-05, 'epoch': 2.14}
+Saving model checkpoint to ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-60
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+Saving Trainer.data_collator.tokenizer by default as Trainer.processing_class is `None`
+tokenizer config file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-60/tokenizer_config.json
+Special tokens file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-60/special_tokens_map.json
+[2025-05-22 08:38:49,400] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step61 is about to be saved!
+[2025-05-22 08:38:49,443] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-60/global_step61/mp_rank_00_model_states.pt
+[2025-05-22 08:38:49,444] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-60/global_step61/mp_rank_00_model_states.pt...
+[2025-05-22 08:38:49,770] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-60/global_step61/mp_rank_00_model_states.pt.
+[2025-05-22 08:38:49,774] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-60/global_step61/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-05-22 08:38:49,926] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-60/global_step61/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-05-22 08:38:49,927] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-60/global_step61/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-05-22 08:38:49,928] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step61 is ready now!
+ 73%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                          | 61/84 [3:02:36<1:11:28, 186.47s/it]2025-05-22 08:41:44,882 - INFO - [Step 61] Training loss: 2.2284
+{'loss': 2.2284, 'grad_norm': 0.08232469111680984, 'learning_rate': 2e-05, 'epoch': 2.17}
+ 74%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                        | 62/84 [3:05:31<1:07:06, 183.02s/it]2025-05-22 08:44:39,864 - INFO - [Step 62] Training loss: 2.1275
+{'loss': 2.1275, 'grad_norm': 0.0835152193903923, 'learning_rate': 2e-05, 'epoch': 2.21}
+ 75%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                       | 63/84 [3:08:26<1:03:13, 180.62s/it]2025-05-22 08:47:34,876 - INFO - [Step 63] Training loss: 2.1813
+{'loss': 2.1813, 'grad_norm': 0.12613195180892944, 'learning_rate': 2e-05, 'epoch': 2.24}
+ 76%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                     | 64/84 [3:11:21<59:38, 178.93s/it]2025-05-22 08:50:29,845 - INFO - [Step 64] Training loss: 2.1803
+{'loss': 2.1803, 'grad_norm': 0.09100731462240219, 'learning_rate': 2e-05, 'epoch': 2.28}
+ 77%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                   | 65/84 [3:14:16<56:17, 177.77s/it]2025-05-22 08:53:24,911 - INFO - [Step 65] Training loss: 2.0593
+{'loss': 2.0593, 'grad_norm': 0.10569092631340027, 'learning_rate': 2e-05, 'epoch': 2.31}
+ 79%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                 | 66/84 [3:17:11<53:04, 176.94s/it]2025-05-22 08:56:19,926 - INFO - [Step 66] Training loss: 2.1499
+{'loss': 2.1499, 'grad_norm': 0.08364099264144897, 'learning_rate': 2e-05, 'epoch': 2.35}
+ 80%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                | 67/84 [3:20:06<49:58, 176.37s/it]2025-05-22 08:59:14,949 - INFO - [Step 67] Training loss: 2.1383
+{'loss': 2.1383, 'grad_norm': 0.08065680414438248, 'learning_rate': 2e-05, 'epoch': 2.38}
+ 81%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                              | 68/84 [3:23:01<46:55, 175.97s/it]2025-05-22 09:02:09,992 - INFO - [Step 68] Training loss: 2.0513
+{'loss': 2.0513, 'grad_norm': 0.07127969712018967, 'learning_rate': 2e-05, 'epoch': 2.42}
+ 82%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                            | 69/84 [3:25:56<43:54, 175.66s/it]2025-05-22 09:05:04,938 - INFO - [Step 69] Training loss: 2.3148
+{'loss': 2.3148, 'grad_norm': 0.08195792138576508, 'learning_rate': 2e-05, 'epoch': 2.45}
+ 83%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                          | 70/84 [3:28:51<40:56, 175.46s/it]2025-05-22 09:07:59,926 - INFO - 📤  Uploading checkpoint @step 70 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+adapter_model.safetensors: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30.7M/30.7M [00:03<00:00, 9.11MB/s]
+ 83%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                          | 70/84 [3:28:57<40:56, 175.46s/it]2025-05-22 09:08:05,856 - INFO - [Step 70] Training loss: 2.1170
+{'loss': 2.117, 'grad_norm': 0.08097496628761292, 'learning_rate': 2e-05, 'epoch': 2.49}
+Saving model checkpoint to ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-70
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+Saving Trainer.data_collator.tokenizer by default as Trainer.processing_class is `None`
+tokenizer config file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-70/tokenizer_config.json
+Special tokens file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-70/special_tokens_map.json
+[2025-05-22 09:08:15,181] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step71 is about to be saved!
+[2025-05-22 09:08:15,227] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-70/global_step71/mp_rank_00_model_states.pt
+[2025-05-22 09:08:15,227] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-70/global_step71/mp_rank_00_model_states.pt...
+[2025-05-22 09:08:15,564] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-70/global_step71/mp_rank_00_model_states.pt.
+[2025-05-22 09:08:15,568] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-70/global_step71/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-05-22 09:08:15,739] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-70/global_step71/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-05-22 09:08:15,740] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-70/global_step71/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-05-22 09:08:15,740] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step71 is ready now!
+ 85%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                        | 71/84 [3:32:02<39:00, 180.07s/it]2025-05-22 09:11:10,978 - INFO - [Step 71] Training loss: 2.0925
+{'loss': 2.0925, 'grad_norm': 0.07287979871034622, 'learning_rate': 2e-05, 'epoch': 2.52}
+ 86%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                      | 72/84 [3:34:57<35:43, 178.61s/it]2025-05-22 09:14:05,973 - INFO - [Step 72] Training loss: 2.1572
+{'loss': 2.1572, 'grad_norm': 0.07226657122373581, 'learning_rate': 2e-05, 'epoch': 2.56}
+ 87%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                    | 73/84 [3:37:52<32:32, 177.52s/it]2025-05-22 09:17:00,946 - INFO - [Step 73] Training loss: 2.1616
+{'loss': 2.1616, 'grad_norm': 0.07402003556489944, 'learning_rate': 2e-05, 'epoch': 2.59}
+ 88%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                  | 74/84 [3:40:47<29:27, 176.77s/it]2025-05-22 09:19:55,964 - INFO - [Step 74] Training loss: 2.1786
+{'loss': 2.1786, 'grad_norm': 0.07750894129276276, 'learning_rate': 2e-05, 'epoch': 2.63}
+ 89%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                 | 75/84 [3:43:43<26:26, 176.27s/it]2025-05-22 09:22:51,072 - INFO - [Step 75] Training loss: 2.0865
+{'loss': 2.0865, 'grad_norm': 0.07458622753620148, 'learning_rate': 2e-05, 'epoch': 2.66}
+ 90%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉               | 76/84 [3:46:38<23:27, 175.91s/it]2025-05-22 09:25:46,129 - INFO - [Step 76] Training loss: 2.2705
+{'loss': 2.2705, 'grad_norm': 0.06907885521650314, 'learning_rate': 2e-05, 'epoch': 2.7}
+ 92%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊             | 77/84 [3:49:33<20:29, 175.62s/it]2025-05-22 09:28:41,071 - INFO - [Step 77] Training loss: 2.1659
+{'loss': 2.1659, 'grad_norm': 0.07639361172914505, 'learning_rate': 2e-05, 'epoch': 2.73}
+ 93%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋           | 78/84 [3:52:28<17:32, 175.43s/it]2025-05-22 09:31:36,075 - INFO - [Step 78] Training loss: 2.1213
+{'loss': 2.1213, 'grad_norm': 0.07202105224132538, 'learning_rate': 2e-05, 'epoch': 2.77}
+ 94%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌         | 79/84 [3:55:23<14:36, 175.30s/it]2025-05-22 09:34:31,072 - INFO - [Step 79] Training loss: 2.1143
+{'loss': 2.1143, 'grad_norm': 0.07787871360778809, 'learning_rate': 2e-05, 'epoch': 2.8}
+ 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍       | 80/84 [3:58:18<11:40, 175.20s/it]2025-05-22 09:37:26,029 - INFO - 📤  Uploading checkpoint @step 80 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+adapter_model.safetensors: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30.7M/30.7M [00:03<00:00, 10.1MB/s]
+ 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍       | 80/84 [3:58:26<11:40, 175.20s/it]2025-05-22 09:37:34,137 - INFO - [Step 80] Training loss: 2.1356
+{'loss': 2.1356, 'grad_norm': 0.0741996169090271, 'learning_rate': 2e-05, 'epoch': 2.83}
+Saving model checkpoint to ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-80
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+Saving Trainer.data_collator.tokenizer by default as Trainer.processing_class is `None`
+tokenizer config file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-80/tokenizer_config.json
+Special tokens file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-80/special_tokens_map.json
+[2025-05-22 09:37:43,826] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step81 is about to be saved!
+[2025-05-22 09:37:43,874] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-80/global_step81/mp_rank_00_model_states.pt
+[2025-05-22 09:37:43,874] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-80/global_step81/mp_rank_00_model_states.pt...
+[2025-05-22 09:37:44,205] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-80/global_step81/mp_rank_00_model_states.pt.
+[2025-05-22 09:37:44,209] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-80/global_step81/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-05-22 09:37:44,377] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-80/global_step81/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-05-22 09:37:44,378] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-80/global_step81/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-05-22 09:37:44,378] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step81 is ready now!
+ 96%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎     | 81/84 [4:01:31<09:02, 180.67s/it]2025-05-22 09:40:39,469 - INFO - [Step 81] Training loss: 2.0480
+{'loss': 2.048, 'grad_norm': 0.06625740230083466, 'learning_rate': 2e-05, 'epoch': 2.87}
+ 98%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏   | 82/84 [4:04:26<05:57, 178.96s/it]2025-05-22 09:43:34,425 - INFO - [Step 82] Training loss: 2.2151
+{'loss': 2.2151, 'grad_norm': 0.1002698764204979, 'learning_rate': 2e-05, 'epoch': 2.9}
+ 99%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████  | 83/84 [4:07:21<02:57, 177.76s/it]2025-05-22 09:46:29,399 - INFO - [Step 83] Training loss: 2.2262
+{'loss': 2.2262, 'grad_norm': 0.07233434170484543, 'learning_rate': 2e-05, 'epoch': 2.94}
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 84/84 [4:10:16<00:00, 176.92s/it]2025-05-22 09:49:24,371 - INFO - [Step 84] Training loss: 2.2322
+{'loss': 2.2322, 'grad_norm': 0.07352622598409653, 'learning_rate': 2e-05, 'epoch': 2.97}
+Saving model checkpoint to ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-84
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+Saving Trainer.data_collator.tokenizer by default as Trainer.processing_class is `None`
+tokenizer config file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-84/tokenizer_config.json
+Special tokens file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-84/special_tokens_map.json
+[2025-05-22 09:49:33,866] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step85 is about to be saved!
+[2025-05-22 09:49:33,912] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-84/global_step85/mp_rank_00_model_states.pt
+[2025-05-22 09:49:33,912] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-84/global_step85/mp_rank_00_model_states.pt...
+[2025-05-22 09:49:34,236] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-84/global_step85/mp_rank_00_model_states.pt.
+[2025-05-22 09:49:34,239] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-84/global_step85/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-05-22 09:49:34,395] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-84/global_step85/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-05-22 09:49:34,396] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora/checkpoint-84/global_step85/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-05-22 09:49:34,397] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step85 is ready now!
+
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 84/84 [4:10:26<00:00, 178.89s/it]
+{'train_runtime': 15026.4049, 'train_samples_per_second': 0.091, 'train_steps_per_second': 0.006, 'train_loss': 2.27430773632867, 'epoch': 2.97}
+Saving model checkpoint to ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora-final
+loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5/config.json
+Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+Saving Trainer.data_collator.tokenizer by default as Trainer.processing_class is `None`
+tokenizer config file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora-final/tokenizer_config.json
+Special tokens file saved in ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora-final/special_tokens_map.json
+training_args.bin: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7.25k/7.25k [00:00<00:00, 8.98kB/s]
+tokenizer.json: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 11.4M/11.4M [00:01<00:00, 6.61MB/s]
+adapter_model.safetensors: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30.7M/30.7M [00:03<00:00, 8.20MB/s]
+Upload 3 LFS files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:04<00:00,  1.35s/it]
+2025-05-22 09:49:44,769 - INFO - ✅  Successfully pushed ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora-final → JaehyeokLee/qwen3-8b-longsumm-extractive-datasets-final
+Upload 3 LFS files:  33%|███████████████████████████████████████████████▋                                                                                               | 1/3 [00:04<00:08,  4.04s/it]

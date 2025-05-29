@@ -1,0 +1,90 @@
+2025-05-24 03:23:19,769 - INFO - Using device: cuda:0 (rank 0)
+2025-05-24 03:23:20,377 - INFO - Using device: cuda:3 (rank 3)
+2025-05-24 03:23:20,411 - INFO - Using device: cuda:1 (rank 1)
+2025-05-24 03:23:24,367 - INFO - Loading data...
+2025-05-24 03:23:24,367 - INFO - Loading paper texts from JSON
+2025-05-24 03:23:24,472 - INFO - Found 518 paper texts
+2025-05-24 03:23:24,473 - INFO - Loading gold summaries
+2025-05-24 03:23:24,481 - INFO - Found 530 gold summaries
+2025-05-24 03:23:24,481 - INFO - Preparing dataset...
+2025-05-24 03:23:24,481 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 03:23:24,484 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 03:23:24,485 - INFO - Filtering statistics:
+2025-05-24 03:23:24,485 - INFO -   total_papers: 518
+2025-05-24 03:23:24,485 - INFO -   no_gold_summary: 0
+2025-05-24 03:23:24,485 - INFO -   not_in_valid_ids: 34
+2025-05-24 03:23:24,485 - INFO -   paper_too_long: 1
+2025-05-24 03:23:24,485 - INFO -   summary_too_long: 0
+2025-05-24 03:23:24,485 - INFO -   accepted: 483
+2025-05-24 03:23:24,485 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 03:23:24,558 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-24 03:23:24,562 - INFO - Checking 3 random samples from dataset:
+2025-05-24 03:23:24,594 - INFO - Sample 1 (paper_id: 18521109):
+2025-05-24 03:23:24,595 - INFO -   Input tokens: torch.Size([30000])
+2025-05-24 03:23:24,595 - INFO -   Label tokens: torch.Size([1024])
+2025-05-24 03:23:24,595 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Many of machine learning’s successes have come from supervised learning, which typically involves employing annotators to label large quantities of data per task. However, humans can learn by acting and learning from the consequences of (i...
+2025-05-24 03:23:24,595 - INFO -   Label text preview: This paper investigates different paradigms for learning how to answer natural language queries through various forms of feedback.
+Most interestingly, it investigates whether a model can learn to answer correctly questions when the feedback is presented purely in the form of a sentence (e...
+2025-05-24 03:23:24,595 - INFO - --------------------------------------------------
+2025-05-24 03:23:24,620 - INFO - Sample 2 (paper_id: 78339451):
+2025-05-24 03:23:24,620 - INFO -   Input tokens: torch.Size([30000])
+2025-05-24 03:23:24,620 - INFO -   Label tokens: torch.Size([1024])
+2025-05-24 03:23:24,620 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Learning reusable feature representations from large unlabeled datasets has been an area of active research. In the context of computer vision, one can leverage the practically unlimited amount of unlabeled images and videos to learn good intermediate representations...
+2025-05-24 03:23:24,620 - INFO -   Label text preview: The paper presents Deep Convolutional Generative Adversarial Nets (DCGAN) - a topologically constrained variant of conditional GAN.
+Benefits  Stable to train  Very useful to learn unsupervised image representations.
+Model  GANs difficult...
+2025-05-24 03:23:24,620 - INFO - --------------------------------------------------
+2025-05-24 03:23:24,643 - INFO - Sample 3 (paper_id: 91325283):
+2025-05-24 03:23:24,643 - INFO -   Input tokens: torch.Size([30000])
+2025-05-24 03:23:24,643 - INFO -   Label tokens: torch.Size([1024])
+2025-05-24 03:23:24,644 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Developing learning algorithms for distributed compositional semantics of words has been a longstanding open problem at the intersection of language understanding and machine learning. In recent years, several approaches have been developed for learning composition operators that map...
+2025-05-24 03:23:24,644 - INFO -   Label text preview: The paper describes an unsupervised approach to train a generic, distributed sentence encoder.
+It also describes a vocabulary expansion method to encode words not seen at training time.
+Skip-Thoughts  Train an encoder-decoder model where the encoder maps the input...
+2025-05-24 03:23:24,644 - INFO - --------------------------------------------------
+2025-05-24 03:23:25,130 - INFO - Loading data...
+2025-05-24 03:23:25,131 - INFO - Loading paper texts from JSON
+2025-05-24 03:23:25,154 - INFO - Loading data...
+2025-05-24 03:23:25,154 - INFO - Loading paper texts from JSON
+2025-05-24 03:23:25,234 - INFO - Found 518 paper texts
+2025-05-24 03:23:25,234 - INFO - Loading gold summaries
+2025-05-24 03:23:25,242 - INFO - Found 530 gold summaries
+2025-05-24 03:23:25,242 - INFO - Preparing dataset...
+2025-05-24 03:23:25,242 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 03:23:25,244 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 03:23:25,245 - INFO - Filtering statistics:
+2025-05-24 03:23:25,245 - INFO -   total_papers: 518
+2025-05-24 03:23:25,245 - INFO -   no_gold_summary: 0
+2025-05-24 03:23:25,245 - INFO -   not_in_valid_ids: 34
+2025-05-24 03:23:25,245 - INFO -   paper_too_long: 1
+2025-05-24 03:23:25,245 - INFO -   summary_too_long: 0
+2025-05-24 03:23:25,245 - INFO -   accepted: 483
+2025-05-24 03:23:25,245 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 03:23:25,269 - INFO - Found 518 paper texts
+2025-05-24 03:23:25,269 - INFO - Loading gold summaries
+2025-05-24 03:23:25,278 - INFO - Found 530 gold summaries
+2025-05-24 03:23:25,278 - INFO - Preparing dataset...
+2025-05-24 03:23:25,278 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 03:23:25,281 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 03:23:25,282 - INFO - Filtering statistics:
+2025-05-24 03:23:25,282 - INFO -   total_papers: 518
+2025-05-24 03:23:25,282 - INFO -   no_gold_summary: 0
+2025-05-24 03:23:25,282 - INFO -   not_in_valid_ids: 34
+2025-05-24 03:23:25,282 - INFO -   paper_too_long: 1
+2025-05-24 03:23:25,282 - INFO -   summary_too_long: 0
+2025-05-24 03:23:25,282 - INFO -   accepted: 483
+2025-05-24 03:23:25,282 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 03:23:25,313 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-24 03:23:25,347 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-24 04:18:25,244 - INFO - Generated 1 summaries for batch 1
+2025-05-24 05:12:10,803 - INFO - Generated 1 summaries for batch 2
+2025-05-24 06:04:42,564 - INFO - Generated 1 summaries for batch 3
+2025-05-24 06:58:10,982 - INFO - Generated 1 summaries for batch 4
+2025-05-24 07:54:32,785 - INFO - Generated 1 summaries for batch 5
+2025-05-24 08:48:06,207 - INFO - Generated 1 summaries for batch 6

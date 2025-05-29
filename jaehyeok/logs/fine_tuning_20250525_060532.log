@@ -1,0 +1,34 @@
+2025-05-25 06:05:32,254 - INFO - Using device: cuda:0 (rank 0)
+2025-05-25 06:05:32,398 - INFO - Using device: cuda:2 (rank 2)
+2025-05-25 06:05:32,670 - INFO - Using device: cuda:1 (rank 1)
+2025-05-25 06:05:37,646 - INFO - Loaded 22 documents from ./extractive_summaries/test4_output.json
+2025-05-25 06:05:37,678 - INFO - Loaded 22 documents from ./extractive_summaries/test4_output.json
+2025-05-25 06:05:37,678 - INFO - Checking 3 random samples from dataset:
+2025-05-25 06:05:37,710 - INFO - Sample 1 (paper_id: 1013):
+2025-05-25 06:05:37,710 - INFO -   Input tokens: torch.Size([30000])
+2025-05-25 06:05:37,710 - INFO -   No gold summary available
+2025-05-25 06:05:37,710 - INFO -   Input text preview: Summarize the following scientific paper:
+
+The use of features from deep convolutional neural networks (DCNNs) pretrained on ImageNet  has led to important advances in computer vision. DCNN features, usually called perceptual features (PFs),...
+2025-05-25 06:05:37,710 - INFO - --------------------------------------------------
+2025-05-25 06:05:37,732 - INFO - Sample 2 (paper_id: 1002):
+2025-05-25 06:05:37,733 - INFO -   Input tokens: torch.Size([30000])
+2025-05-25 06:05:37,733 - INFO -   No gold summary available
+2025-05-25 06:05:37,733 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Au- tomatic text summarization could help mitigate this problem. Automatic summarization is studied exhaustively for the news domain (Cheng and Lapata, 2016; See et al., ...
+2025-05-25 06:05:37,733 - INFO - --------------------------------------------------
+2025-05-25 06:05:37,758 - INFO - Sample 3 (paper_id: 1021):
+2025-05-25 06:05:37,758 - INFO -   Input tokens: torch.Size([30000])
+2025-05-25 06:05:37,758 - INFO -   No gold summary available
+2025-05-25 06:05:37,759 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Feature Selection is an important problem in statistics and machine learning for interpretable predictive modeling and scientific discoveries. Our goal in this paper is to design a dependency measure that is interpretable and can be reliably used to control...
+2025-05-25 06:05:37,759 - INFO - --------------------------------------------------
+2025-05-25 06:05:38,578 - INFO - Loaded 22 documents from ./extractive_summaries/test4_output.json
+2025-05-25 06:53:45,825 - INFO - Generated 1 summaries in rank 2 (no gold summaries).
+2025-05-25 06:53:45,826 - INFO - Saved generated summaries to ./jaehyeok/results/generated_summaries_tes_rank2_20250525_065345.json
+2025-05-25 06:55:58,963 - INFO - Generated 1 summaries in rank 1 (no gold summaries).
+2025-05-25 06:55:58,964 - INFO - Saved generated summaries to ./jaehyeok/results/generated_summaries_tes_rank1_20250525_065558.json
+2025-05-25 06:58:44,660 - INFO - Generated 1 summaries in rank 0 (no gold summaries).
+2025-05-25 06:58:44,661 - INFO - Saved generated summaries to ./jaehyeok/results/generated_summaries_tes_rank0_20250525_065844.json

@@ -1,0 +1,255 @@
+2025-05-22 05:38:29,086 - INFO - Starting fine-tuning process
+2025-05-22 05:38:29,086 - INFO - LoRA is enabled with the following configuration:
+2025-05-22 05:38:29,086 - INFO - Loading data...
+2025-05-22 05:38:29,086 - INFO - Loading paper texts from JSON
+2025-05-22 05:38:29,183 - INFO - Found 518 paper texts
+2025-05-22 05:38:29,183 - INFO - Loading gold summaries
+2025-05-22 05:38:29,191 - INFO - Found 530 gold summaries
+2025-05-22 05:38:29,191 - INFO - Preparing dataset...
+2025-05-22 05:38:29,191 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-22 05:38:29,194 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-22 05:38:29,195 - INFO - Filtering statistics:
+2025-05-22 05:38:29,195 - INFO -   total_papers: 518
+2025-05-22 05:38:29,195 - INFO -   no_gold_summary: 0
+2025-05-22 05:38:29,195 - INFO -   not_in_valid_ids: 34
+2025-05-22 05:38:29,195 - INFO -   paper_too_long: 1
+2025-05-22 05:38:29,195 - INFO -   summary_too_long: 0
+2025-05-22 05:38:29,195 - INFO -   accepted: 483
+2025-05-22 05:38:29,195 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-22 05:38:29,260 - INFO - Verifying dataset content - random samples:
+2025-05-22 05:38:29,261 - INFO - Sample 1:
+2025-05-22 05:38:29,261 - INFO - Paper ID: 31194274
+2025-05-22 05:38:29,261 - INFO - Paper text (first 30 chars): In April 2016, for the first t...
+2025-05-22 05:38:29,261 - INFO - Summary (first 30 chars): European Union regulations on ...
+2025-05-22 05:38:29,261 - INFO - ----------------------------------------
+2025-05-22 05:38:29,261 - INFO - Sample 2:
+2025-05-22 05:38:29,261 - INFO - Paper ID: 11836666
+2025-05-22 05:38:29,261 - INFO - Paper text (first 30 chars): Deep reinforcement learning (D...
+2025-05-22 05:38:29,261 - INFO - Summary (first 30 chars): It is desirable for an agent t...
+2025-05-22 05:38:29,261 - INFO - ----------------------------------------
+2025-05-22 05:38:29,261 - INFO - Sample 3:
+2025-05-22 05:38:29,262 - INFO - Paper ID: 21532550
+2025-05-22 05:38:29,262 - INFO - Paper text (first 30 chars): The generation of both natural...
+2025-05-22 05:38:29,262 - INFO - Summary (first 30 chars): This paper presents a conditio...
+2025-05-22 05:38:29,262 - INFO - ----------------------------------------
+2025-05-22 05:38:29,417 - INFO - Starting fine-tuning process
+2025-05-22 05:38:29,417 - INFO - LoRA is enabled with the following configuration:
+2025-05-22 05:38:29,418 - INFO - Loading data...
+2025-05-22 05:38:29,418 - INFO - Loading paper texts from JSON
+2025-05-22 05:38:29,515 - INFO - Found 518 paper texts
+2025-05-22 05:38:29,515 - INFO - Loading gold summaries
+2025-05-22 05:38:29,522 - INFO - Found 530 gold summaries
+2025-05-22 05:38:29,523 - INFO - Preparing dataset...
+2025-05-22 05:38:29,523 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-22 05:38:29,525 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-22 05:38:29,526 - INFO - Filtering statistics:
+2025-05-22 05:38:29,526 - INFO -   total_papers: 518
+2025-05-22 05:38:29,526 - INFO -   no_gold_summary: 0
+2025-05-22 05:38:29,527 - INFO -   not_in_valid_ids: 34
+2025-05-22 05:38:29,527 - INFO -   paper_too_long: 1
+2025-05-22 05:38:29,527 - INFO -   summary_too_long: 0
+2025-05-22 05:38:29,527 - INFO -   accepted: 483
+2025-05-22 05:38:29,527 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-22 05:38:29,594 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-22 05:38:29,598 - INFO - Training set: 458 examples
+2025-05-22 05:38:29,598 - INFO - Validation set: 25 examples
+2025-05-22 05:38:29,598 - INFO - Loading model/tokenizer on rank 2
+2025-05-22 05:38:30,988 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-22 05:38:30,993 - INFO - Training set: 458 examples
+2025-05-22 05:38:30,993 - INFO - Validation set: 25 examples
+2025-05-22 05:38:30,993 - INFO - Loading model/tokenizer on rank 0
+2025-05-22 05:38:42,966 - INFO - Applying LoRA adapters to the model
+2025-05-22 05:38:43,347 - INFO - Tokenizing datasets
+2025-05-22 05:38:50,555 - INFO - Applying LoRA adapters to the model
+2025-05-22 05:38:50,838 - INFO - Tokenizing datasets
+2025-05-22 05:38:58,929 - INFO - Setting up training configuration
+2025-05-22 05:39:03,104 - WARNING - Repo JaehyeokLee/qwen3-8b-longsumm-extractive-datasets may already exist, skipping creation (caught 'url')
+2025-05-22 05:39:05,432 - INFO - Setting up training configuration
+2025-05-22 05:39:05,914 - INFO - Starting training
+2025-05-22 05:42:04,691 - INFO - [Step 1] Training loss: 2.4117
+2025-05-22 05:42:04,692 - INFO - [Step 1] Training loss: 2.4117
+2025-05-22 05:44:59,693 - INFO - [Step 2] Training loss: 2.3009
+2025-05-22 05:44:59,694 - INFO - [Step 2] Training loss: 2.3009
+2025-05-22 05:47:54,658 - INFO - [Step 3] Training loss: 2.3322
+2025-05-22 05:47:54,659 - INFO - [Step 3] Training loss: 2.3322
+2025-05-22 05:50:49,657 - INFO - [Step 4] Training loss: 2.2569
+2025-05-22 05:50:49,658 - INFO - [Step 4] Training loss: 2.2569
+2025-05-22 05:53:44,765 - INFO - [Step 5] Training loss: 2.3611
+2025-05-22 05:53:44,766 - INFO - [Step 5] Training loss: 2.3611
+2025-05-22 05:56:39,886 - INFO - [Step 6] Training loss: 2.3702
+2025-05-22 05:56:39,887 - INFO - [Step 6] Training loss: 2.3702
+2025-05-22 05:59:34,890 - INFO - [Step 7] Training loss: 2.4310
+2025-05-22 05:59:34,891 - INFO - [Step 7] Training loss: 2.4310
+2025-05-22 06:02:29,890 - INFO - [Step 8] Training loss: 2.2897
+2025-05-22 06:02:29,891 - INFO - [Step 8] Training loss: 2.2897
+2025-05-22 06:05:24,868 - INFO - [Step 9] Training loss: 2.3195
+2025-05-22 06:05:24,869 - INFO - [Step 9] Training loss: 2.3195
+2025-05-22 06:08:20,136 - INFO - 📤  Uploading checkpoint @step 10 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 06:08:20,136 - INFO - 📤  Uploading checkpoint @step 10 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 06:08:26,368 - INFO - [Step 10] Training loss: 2.2240
+2025-05-22 06:08:26,369 - INFO - [Step 10] Training loss: 2.2240
+2025-05-22 06:11:31,741 - INFO - [Step 11] Training loss: 2.3599
+2025-05-22 06:11:31,741 - INFO - [Step 11] Training loss: 2.3599
+2025-05-22 06:14:26,758 - INFO - [Step 12] Training loss: 2.3350
+2025-05-22 06:14:26,759 - INFO - [Step 12] Training loss: 2.3350
+2025-05-22 06:17:21,909 - INFO - [Step 13] Training loss: 2.3263
+2025-05-22 06:17:21,910 - INFO - [Step 13] Training loss: 2.3263
+2025-05-22 06:20:16,955 - INFO - [Step 14] Training loss: 2.2067
+2025-05-22 06:20:16,956 - INFO - [Step 14] Training loss: 2.2067
+2025-05-22 06:23:11,998 - INFO - [Step 15] Training loss: 2.3562
+2025-05-22 06:23:11,998 - INFO - [Step 15] Training loss: 2.3562
+2025-05-22 06:26:07,113 - INFO - [Step 16] Training loss: 2.2479
+2025-05-22 06:26:07,114 - INFO - [Step 16] Training loss: 2.2479
+2025-05-22 06:29:02,185 - INFO - [Step 17] Training loss: 2.2883
+2025-05-22 06:29:02,186 - INFO - [Step 17] Training loss: 2.2883
+2025-05-22 06:31:57,194 - INFO - [Step 18] Training loss: 2.4310
+2025-05-22 06:31:57,195 - INFO - [Step 18] Training loss: 2.4310
+2025-05-22 06:34:52,191 - INFO - [Step 19] Training loss: 2.2611
+2025-05-22 06:34:52,192 - INFO - [Step 19] Training loss: 2.2611
+2025-05-22 06:37:47,248 - INFO - 📤  Uploading checkpoint @step 20 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 06:37:47,249 - INFO - 📤  Uploading checkpoint @step 20 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 06:37:54,293 - INFO - [Step 20] Training loss: 2.3845
+2025-05-22 06:37:54,294 - INFO - [Step 20] Training loss: 2.3845
+2025-05-22 06:40:59,453 - INFO - [Step 21] Training loss: 2.2566
+2025-05-22 06:40:59,612 - INFO - [Step 21] Training loss: 2.2566
+2025-05-22 06:43:54,583 - INFO - [Step 22] Training loss: 2.3760
+2025-05-22 06:43:54,583 - INFO - [Step 22] Training loss: 2.3760
+2025-05-22 06:46:49,641 - INFO - [Step 23] Training loss: 2.3581
+2025-05-22 06:46:49,642 - INFO - [Step 23] Training loss: 2.3581
+2025-05-22 06:49:44,647 - INFO - [Step 24] Training loss: 2.3456
+2025-05-22 06:49:44,648 - INFO - [Step 24] Training loss: 2.3456
+2025-05-22 06:52:39,719 - INFO - [Step 25] Training loss: 2.1937
+2025-05-22 06:52:39,720 - INFO - [Step 25] Training loss: 2.1937
+2025-05-22 06:55:34,661 - INFO - [Step 26] Training loss: 2.2319
+2025-05-22 06:55:34,662 - INFO - [Step 26] Training loss: 2.2319
+2025-05-22 06:58:29,610 - INFO - [Step 27] Training loss: 2.2267
+2025-05-22 06:58:29,611 - INFO - [Step 27] Training loss: 2.2267
+2025-05-22 07:01:24,596 - INFO - [Step 28] Training loss: 2.2048
+2025-05-22 07:01:24,597 - INFO - [Step 28] Training loss: 2.2048
+2025-05-22 07:05:47,166 - INFO - [Step 29] Training loss: 4.4853
+2025-05-22 07:05:47,167 - INFO - [Step 29] Training loss: 4.4853
+2025-05-22 07:08:42,196 - INFO - 📤  Uploading checkpoint @step 30 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 07:08:42,196 - INFO - 📤  Uploading checkpoint @step 30 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 07:08:48,758 - INFO - [Step 30] Training loss: 2.1865
+2025-05-22 07:08:48,760 - INFO - [Step 30] Training loss: 2.1865
+2025-05-22 07:11:53,910 - INFO - [Step 31] Training loss: 2.3077
+2025-05-22 07:11:53,910 - INFO - [Step 31] Training loss: 2.3077
+2025-05-22 07:14:48,944 - INFO - [Step 32] Training loss: 2.2701
+2025-05-22 07:14:48,945 - INFO - [Step 32] Training loss: 2.2701
+2025-05-22 07:17:44,003 - INFO - [Step 33] Training loss: 2.1373
+2025-05-22 07:17:44,004 - INFO - [Step 33] Training loss: 2.1373
+2025-05-22 07:20:38,977 - INFO - [Step 34] Training loss: 2.2558
+2025-05-22 07:20:38,978 - INFO - [Step 34] Training loss: 2.2558
+2025-05-22 07:23:33,985 - INFO - [Step 35] Training loss: 2.1909
+2025-05-22 07:23:33,986 - INFO - [Step 35] Training loss: 2.1909
+2025-05-22 07:26:29,006 - INFO - [Step 36] Training loss: 2.2183
+2025-05-22 07:26:29,007 - INFO - [Step 36] Training loss: 2.2183
+2025-05-22 07:29:24,026 - INFO - [Step 37] Training loss: 2.2334
+2025-05-22 07:29:24,027 - INFO - [Step 37] Training loss: 2.2334
+2025-05-22 07:32:19,085 - INFO - [Step 38] Training loss: 2.1715
+2025-05-22 07:32:19,086 - INFO - [Step 38] Training loss: 2.1715
+2025-05-22 07:35:14,048 - INFO - [Step 39] Training loss: 2.2183
+2025-05-22 07:35:14,049 - INFO - [Step 39] Training loss: 2.2183
+2025-05-22 07:38:08,987 - INFO - 📤  Uploading checkpoint @step 40 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 07:38:08,990 - INFO - 📤  Uploading checkpoint @step 40 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 07:38:18,817 - INFO - [Step 40] Training loss: 2.2478
+2025-05-22 07:38:18,818 - INFO - [Step 40] Training loss: 2.2478
+2025-05-22 07:41:23,856 - INFO - [Step 41] Training loss: 2.0970
+2025-05-22 07:41:23,857 - INFO - [Step 41] Training loss: 2.0970
+2025-05-22 07:44:18,816 - INFO - [Step 42] Training loss: 2.2197
+2025-05-22 07:44:18,817 - INFO - [Step 42] Training loss: 2.2197
+2025-05-22 07:47:13,821 - INFO - [Step 43] Training loss: 2.2273
+2025-05-22 07:47:13,822 - INFO - [Step 43] Training loss: 2.2273
+2025-05-22 07:50:08,913 - INFO - [Step 44] Training loss: 2.2150
+2025-05-22 07:50:08,914 - INFO - [Step 44] Training loss: 2.2150
+2025-05-22 07:53:03,961 - INFO - [Step 45] Training loss: 2.1189
+2025-05-22 07:53:03,962 - INFO - [Step 45] Training loss: 2.1189
+2025-05-22 07:55:59,234 - INFO - [Step 46] Training loss: 1.9915
+2025-05-22 07:55:59,234 - INFO - [Step 46] Training loss: 1.9915
+2025-05-22 07:58:54,232 - INFO - [Step 47] Training loss: 2.1446
+2025-05-22 07:58:54,233 - INFO - [Step 47] Training loss: 2.1446
+2025-05-22 08:01:49,228 - INFO - [Step 48] Training loss: 2.0720
+2025-05-22 08:01:49,229 - INFO - [Step 48] Training loss: 2.0720
+2025-05-22 08:04:44,257 - INFO - [Step 49] Training loss: 2.2442
+2025-05-22 08:04:44,258 - INFO - [Step 49] Training loss: 2.2442
+2025-05-22 08:07:39,296 - INFO - 📤  Uploading checkpoint @step 50 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 08:07:39,297 - INFO - 📤  Uploading checkpoint @step 50 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 08:07:45,331 - INFO - [Step 50] Training loss: 2.1590
+2025-05-22 08:07:45,332 - INFO - [Step 50] Training loss: 2.1590
+2025-05-22 08:10:50,376 - INFO - [Step 51] Training loss: 2.3203
+2025-05-22 08:10:50,377 - INFO - [Step 51] Training loss: 2.3203
+2025-05-22 08:13:45,319 - INFO - [Step 52] Training loss: 2.1590
+2025-05-22 08:13:45,320 - INFO - [Step 52] Training loss: 2.1590
+2025-05-22 08:16:40,436 - INFO - [Step 53] Training loss: 2.0632
+2025-05-22 08:16:40,437 - INFO - [Step 53] Training loss: 2.0632
+2025-05-22 08:19:35,520 - INFO - [Step 54] Training loss: 2.1615
+2025-05-22 08:19:35,521 - INFO - [Step 54] Training loss: 2.1615
+2025-05-22 08:22:30,506 - INFO - [Step 55] Training loss: 2.1973
+2025-05-22 08:22:30,507 - INFO - [Step 55] Training loss: 2.1973
+2025-05-22 08:25:25,476 - INFO - [Step 56] Training loss: 2.1418
+2025-05-22 08:25:25,477 - INFO - [Step 56] Training loss: 2.1418
+2025-05-22 08:29:48,167 - INFO - [Step 57] Training loss: 4.6678
+2025-05-22 08:29:48,168 - INFO - [Step 57] Training loss: 4.6678
+2025-05-22 08:32:43,176 - INFO - [Step 58] Training loss: 2.1666
+2025-05-22 08:32:43,177 - INFO - [Step 58] Training loss: 2.1666
+2025-05-22 08:35:38,134 - INFO - [Step 59] Training loss: 2.1634
+2025-05-22 08:35:38,135 - INFO - [Step 59] Training loss: 2.1634
+2025-05-22 08:38:33,211 - INFO - 📤  Uploading checkpoint @step 60 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 08:38:33,213 - INFO - 📤  Uploading checkpoint @step 60 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 08:38:39,850 - INFO - [Step 60] Training loss: 2.1475
+2025-05-22 08:38:39,851 - INFO - [Step 60] Training loss: 2.1475
+2025-05-22 08:41:44,881 - INFO - [Step 61] Training loss: 2.2284
+2025-05-22 08:41:44,882 - INFO - [Step 61] Training loss: 2.2284
+2025-05-22 08:44:39,863 - INFO - [Step 62] Training loss: 2.1275
+2025-05-22 08:44:39,864 - INFO - [Step 62] Training loss: 2.1275
+2025-05-22 08:47:34,875 - INFO - [Step 63] Training loss: 2.1813
+2025-05-22 08:47:34,876 - INFO - [Step 63] Training loss: 2.1813
+2025-05-22 08:50:29,844 - INFO - [Step 64] Training loss: 2.1803
+2025-05-22 08:50:29,845 - INFO - [Step 64] Training loss: 2.1803
+2025-05-22 08:53:24,910 - INFO - [Step 65] Training loss: 2.0593
+2025-05-22 08:53:24,911 - INFO - [Step 65] Training loss: 2.0593
+2025-05-22 08:56:19,925 - INFO - [Step 66] Training loss: 2.1499
+2025-05-22 08:56:19,926 - INFO - [Step 66] Training loss: 2.1499
+2025-05-22 08:59:14,948 - INFO - [Step 67] Training loss: 2.1383
+2025-05-22 08:59:14,949 - INFO - [Step 67] Training loss: 2.1383
+2025-05-22 09:02:09,991 - INFO - [Step 68] Training loss: 2.0513
+2025-05-22 09:02:09,992 - INFO - [Step 68] Training loss: 2.0513
+2025-05-22 09:05:04,937 - INFO - [Step 69] Training loss: 2.3148
+2025-05-22 09:05:04,938 - INFO - [Step 69] Training loss: 2.3148
+2025-05-22 09:07:59,925 - INFO - 📤  Uploading checkpoint @step 70 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 09:07:59,926 - INFO - 📤  Uploading checkpoint @step 70 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 09:08:05,855 - INFO - [Step 70] Training loss: 2.1170
+2025-05-22 09:08:05,856 - INFO - [Step 70] Training loss: 2.1170
+2025-05-22 09:11:10,976 - INFO - [Step 71] Training loss: 2.0925
+2025-05-22 09:11:10,978 - INFO - [Step 71] Training loss: 2.0925
+2025-05-22 09:14:05,972 - INFO - [Step 72] Training loss: 2.1572
+2025-05-22 09:14:05,973 - INFO - [Step 72] Training loss: 2.1572
+2025-05-22 09:17:00,945 - INFO - [Step 73] Training loss: 2.1616
+2025-05-22 09:17:00,946 - INFO - [Step 73] Training loss: 2.1616
+2025-05-22 09:19:55,963 - INFO - [Step 74] Training loss: 2.1786
+2025-05-22 09:19:55,964 - INFO - [Step 74] Training loss: 2.1786
+2025-05-22 09:22:51,071 - INFO - [Step 75] Training loss: 2.0865
+2025-05-22 09:22:51,072 - INFO - [Step 75] Training loss: 2.0865
+2025-05-22 09:25:46,128 - INFO - [Step 76] Training loss: 2.2705
+2025-05-22 09:25:46,129 - INFO - [Step 76] Training loss: 2.2705
+2025-05-22 09:28:41,070 - INFO - [Step 77] Training loss: 2.1659
+2025-05-22 09:28:41,071 - INFO - [Step 77] Training loss: 2.1659
+2025-05-22 09:31:36,074 - INFO - [Step 78] Training loss: 2.1213
+2025-05-22 09:31:36,075 - INFO - [Step 78] Training loss: 2.1213
+2025-05-22 09:34:31,071 - INFO - [Step 79] Training loss: 2.1143
+2025-05-22 09:34:31,072 - INFO - [Step 79] Training loss: 2.1143
+2025-05-22 09:37:26,029 - INFO - 📤  Uploading checkpoint @step 80 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 09:37:26,029 - INFO - 📤  Uploading checkpoint @step 80 to JaehyeokLee/qwen3-8b-longsumm-extractive-datasets
+2025-05-22 09:37:34,135 - INFO - [Step 80] Training loss: 2.1356
+2025-05-22 09:37:34,137 - INFO - [Step 80] Training loss: 2.1356
+2025-05-22 09:40:39,468 - INFO - [Step 81] Training loss: 2.0480
+2025-05-22 09:40:39,469 - INFO - [Step 81] Training loss: 2.0480
+2025-05-22 09:43:34,424 - INFO - [Step 82] Training loss: 2.2151
+2025-05-22 09:43:34,425 - INFO - [Step 82] Training loss: 2.2151
+2025-05-22 09:46:29,398 - INFO - [Step 83] Training loss: 2.2262
+2025-05-22 09:46:29,399 - INFO - [Step 83] Training loss: 2.2262
+2025-05-22 09:49:24,370 - INFO - [Step 84] Training loss: 2.2322
+2025-05-22 09:49:24,371 - INFO - [Step 84] Training loss: 2.2322
+2025-05-22 09:49:34,405 - INFO - Fine-tuning process completed
+2025-05-22 09:49:44,769 - INFO - ✅  Successfully pushed ./jaehyeok/models/qwen3-8b-fine-tune-extractive-dataset-20250522_053829-lora-final → JaehyeokLee/qwen3-8b-longsumm-extractive-datasets-final
+2025-05-22 09:49:46,889 - INFO - Fine-tuning process completed

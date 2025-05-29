@@ -1,0 +1,106 @@
+2025-05-24 23:59:35,386 - INFO - Using device: cuda:3 (rank 3)
+2025-05-24 23:59:35,427 - INFO - Using device: cuda:0 (rank 0)
+2025-05-24 23:59:35,888 - INFO - Using device: cuda:2 (rank 2)
+2025-05-24 23:59:36,195 - INFO - Using device: cuda:1 (rank 1)
+2025-05-24 23:59:40,150 - INFO - Loading data...
+2025-05-24 23:59:40,151 - INFO - Loading paper texts from JSON
+2025-05-24 23:59:40,256 - INFO - Found 518 paper texts
+2025-05-24 23:59:40,256 - INFO - Loading gold summaries
+2025-05-24 23:59:40,263 - INFO - Found 530 gold summaries
+2025-05-24 23:59:40,264 - INFO - Preparing dataset...
+2025-05-24 23:59:40,264 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 23:59:40,266 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 23:59:40,267 - INFO - Filtering statistics:
+2025-05-24 23:59:40,267 - INFO -   total_papers: 518
+2025-05-24 23:59:40,267 - INFO -   no_gold_summary: 0
+2025-05-24 23:59:40,267 - INFO -   not_in_valid_ids: 34
+2025-05-24 23:59:40,267 - INFO -   paper_too_long: 1
+2025-05-24 23:59:40,267 - INFO -   summary_too_long: 0
+2025-05-24 23:59:40,267 - INFO -   accepted: 483
+2025-05-24 23:59:40,267 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 23:59:40,330 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-24 23:59:40,457 - INFO - Loading data...
+2025-05-24 23:59:40,457 - INFO - Loading paper texts from JSON
+2025-05-24 23:59:40,477 - INFO - Loading data...
+2025-05-24 23:59:40,477 - INFO - Loading paper texts from JSON
+2025-05-24 23:59:40,565 - INFO - Found 518 paper texts
+2025-05-24 23:59:40,566 - INFO - Loading gold summaries
+2025-05-24 23:59:40,573 - INFO - Found 530 gold summaries
+2025-05-24 23:59:40,573 - INFO - Preparing dataset...
+2025-05-24 23:59:40,573 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 23:59:40,576 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 23:59:40,577 - INFO - Filtering statistics:
+2025-05-24 23:59:40,577 - INFO -   total_papers: 518
+2025-05-24 23:59:40,577 - INFO -   no_gold_summary: 0
+2025-05-24 23:59:40,577 - INFO -   not_in_valid_ids: 34
+2025-05-24 23:59:40,577 - INFO -   paper_too_long: 1
+2025-05-24 23:59:40,577 - INFO -   summary_too_long: 0
+2025-05-24 23:59:40,577 - INFO -   accepted: 483
+2025-05-24 23:59:40,577 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 23:59:40,581 - INFO - Found 518 paper texts
+2025-05-24 23:59:40,582 - INFO - Loading gold summaries
+2025-05-24 23:59:40,589 - INFO - Found 530 gold summaries
+2025-05-24 23:59:40,589 - INFO - Preparing dataset...
+2025-05-24 23:59:40,589 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 23:59:40,591 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 23:59:40,593 - INFO - Filtering statistics:
+2025-05-24 23:59:40,593 - INFO -   total_papers: 518
+2025-05-24 23:59:40,593 - INFO -   no_gold_summary: 0
+2025-05-24 23:59:40,593 - INFO -   not_in_valid_ids: 34
+2025-05-24 23:59:40,593 - INFO -   paper_too_long: 1
+2025-05-24 23:59:40,593 - INFO -   summary_too_long: 0
+2025-05-24 23:59:40,593 - INFO -   accepted: 483
+2025-05-24 23:59:40,593 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 23:59:40,646 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-24 23:59:40,651 - INFO - Checking 3 random samples from dataset:
+2025-05-24 23:59:40,660 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-24 23:59:40,678 - INFO - Sample 1 (paper_id: 17601393):
+2025-05-24 23:59:40,679 - INFO -   Input tokens: torch.Size([30000])
+2025-05-24 23:59:40,679 - INFO -   Label tokens: torch.Size([1024])
+2025-05-24 23:59:40,679 - INFO -   Input text preview: Summarize the following scientific paper:
+
+
+
+Summary:<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>...
+2025-05-24 23:59:40,679 - INFO -   Label text preview: A case for managed and model-less inference serving Yadwadkar et al., HotOS’19  HotOS’19 is presenting me with something of a problem as there are so many interesting looking papers in the proceedings this year it’s...
+2025-05-24 23:59:40,679 - INFO - --------------------------------------------------
+2025-05-24 23:59:40,723 - INFO - Sample 2 (paper_id: 61298922):
+2025-05-24 23:59:40,723 - INFO -   Input tokens: torch.Size([30000])
+2025-05-24 23:59:40,723 - INFO -   Label tokens: torch.Size([1024])
+2025-05-24 23:59:40,723 - INFO -   Input text preview: Summarize the following scientific paper:
+
+INTRODUCTION Microarchitectural attacks are increasingly popular for leaking secrets such as cryptographic keys ,  or compromising the system by triggering bit flips in memory , , , . Recent work shows that these attacks are even possible...
+2025-05-24 23:59:40,723 - INFO -   Label text preview: Grand Pwning Unit: Accelerating microarchitectural attacks with the GPU Frigo et al., IEEE Security & Privacy  The general awareness of microarchitectural attacks is greatly increased since meltdown and spectre earlier this year.
+A lot of...
+2025-05-24 23:59:40,723 - INFO - --------------------------------------------------
+2025-05-24 23:59:40,741 - INFO - Sample 3 (paper_id: 37775721):
+2025-05-24 23:59:40,741 - INFO -   Input tokens: torch.Size([30000])
+2025-05-24 23:59:40,741 - INFO -   Label tokens: torch.Size([1024])
+2025-05-24 23:59:40,741 - INFO -   Input text preview: Summarize the following scientific paper:
+
+This paper explores the task of translating natural language text queries into regular expressions which embody their meaning. Thus a system for automatically generating regular expressions from natural language would be useful in many contexts. Kushman and Barz...
+2025-05-24 23:59:40,741 - INFO -   Label text preview: Task of translating natural language queries into regular expressions without using domain specific knowledge.
+Proposes a methodology for collecting a large corpus of regular expressions to natural language pairs.
+Reports performance gain of 19.6% over state-of-the-art models.
+Architecture...
+2025-05-24 23:59:40,741 - INFO - --------------------------------------------------
+2025-05-24 23:59:41,510 - INFO - Loading data...
+2025-05-24 23:59:41,510 - INFO - Loading paper texts from JSON
+2025-05-24 23:59:41,612 - INFO - Found 518 paper texts
+2025-05-24 23:59:41,612 - INFO - Loading gold summaries
+2025-05-24 23:59:41,620 - INFO - Found 530 gold summaries
+2025-05-24 23:59:41,621 - INFO - Preparing dataset...
+2025-05-24 23:59:41,621 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 23:59:41,623 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 23:59:41,624 - INFO - Filtering statistics:
+2025-05-24 23:59:41,624 - INFO -   total_papers: 518
+2025-05-24 23:59:41,624 - INFO -   no_gold_summary: 0
+2025-05-24 23:59:41,624 - INFO -   not_in_valid_ids: 34
+2025-05-24 23:59:41,624 - INFO -   paper_too_long: 1
+2025-05-24 23:59:41,625 - INFO -   summary_too_long: 0
+2025-05-24 23:59:41,625 - INFO -   accepted: 483
+2025-05-24 23:59:41,625 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 23:59:41,689 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-25 00:47:28,785 - INFO - Generated summaries for 1 samples in rank 2.
+2025-05-25 00:47:28,786 - INFO - Using default tokenizer.
+2025-05-25 00:47:29,007 - INFO - Average Rouge scores: rouge1: 0.3517587939698492, rouge2: 0.027672955974842768, rougeL: 0.12185929648241205

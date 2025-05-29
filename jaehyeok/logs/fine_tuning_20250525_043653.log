@@ -1,0 +1,87 @@
+2025-05-25 04:36:53,038 - INFO - Using device: cuda:0 (rank 0)
+2025-05-25 04:36:53,487 - INFO - Using device: cuda:1 (rank 1)
+2025-05-25 04:36:53,535 - INFO - Using device: cuda:2 (rank 2)
+2025-05-25 04:36:57,863 - INFO - Loading data...
+2025-05-25 04:36:57,863 - INFO - Loading paper texts from JSON
+2025-05-25 04:36:57,971 - INFO - Found 518 paper texts
+2025-05-25 04:36:57,971 - INFO - Loading gold summaries
+2025-05-25 04:36:57,979 - INFO - Found 530 gold summaries
+2025-05-25 04:36:57,979 - INFO - Preparing dataset...
+2025-05-25 04:36:57,979 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-25 04:36:57,981 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-25 04:36:57,982 - INFO - Filtering statistics:
+2025-05-25 04:36:57,982 - INFO -   total_papers: 518
+2025-05-25 04:36:57,982 - INFO -   no_gold_summary: 0
+2025-05-25 04:36:57,982 - INFO -   not_in_valid_ids: 34
+2025-05-25 04:36:57,982 - INFO -   paper_too_long: 1
+2025-05-25 04:36:57,982 - INFO -   summary_too_long: 0
+2025-05-25 04:36:57,982 - INFO -   accepted: 483
+2025-05-25 04:36:57,982 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-25 04:36:58,054 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-25 04:36:58,059 - INFO - Checking 3 random samples from dataset:
+2025-05-25 04:36:58,091 - INFO - Sample 1 (paper_id: 78339451):
+2025-05-25 04:36:58,091 - INFO -   Input tokens: torch.Size([30000])
+2025-05-25 04:36:58,091 - INFO -   Label tokens: torch.Size([1024])
+2025-05-25 04:36:58,091 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Learning reusable feature representations from large unlabeled datasets has been an area of active research. In the context of computer vision, one can leverage the practically unlimited amount of unlabeled images and videos to learn good intermediate representations...
+2025-05-25 04:36:58,091 - INFO -   Label text preview: The paper presents Deep Convolutional Generative Adversarial Nets (DCGAN) - a topologically constrained variant of conditional GAN.
+Benefits  Stable to train  Very useful to learn unsupervised image representations.
+Model  GANs difficult...
+2025-05-25 04:36:58,091 - INFO - --------------------------------------------------
+2025-05-25 04:36:58,117 - INFO - Sample 2 (paper_id: 70691684):
+2025-05-25 04:36:58,117 - INFO -   Input tokens: torch.Size([30000])
+2025-05-25 04:36:58,117 - INFO -   Label tokens: torch.Size([1024])
+2025-05-25 04:36:58,117 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Deep neural networks (Krizhevsky et al., 2012; Hinton et al., 2012; Sutskever et al., 2014) are...
+2025-05-25 04:36:58,117 - INFO -   Label text preview: This paper presents a method for training feed-forward neural networks with stochastic hidden units (e.g. sigmoid belief networks), to optimize the expectation (over the stochastic units) of some arbitrary loss function.
+While the proposed method is applicable to any type of stochastic...
+2025-05-25 04:36:58,117 - INFO - --------------------------------------------------
+2025-05-25 04:36:58,147 - INFO - Sample 3 (paper_id: 97980035):
+2025-05-25 04:36:58,148 - INFO -   Input tokens: torch.Size([30000])
+2025-05-25 04:36:58,148 - INFO -   Label tokens: torch.Size([1024])
+2025-05-25 04:36:58,148 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Categories and Subject Descriptors I.4 [IMAGE PROCESSING AND COMPUTER VISION]: Applications General Terms Application Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted...
+2025-05-25 04:36:58,148 - INFO -   Label text preview: What  They propose a CNN-based approach to detect faces in a wide range of orientations using a single model.
+However, since the training set is skewed, the network is more confident about up-right faces.
+The model does not require additional components such as...
+2025-05-25 04:36:58,148 - INFO - --------------------------------------------------
+2025-05-25 04:36:59,000 - INFO - Loading data...
+2025-05-25 04:36:59,000 - INFO - Loading paper texts from JSON
+2025-05-25 04:36:59,001 - INFO - Loading data...
+2025-05-25 04:36:59,001 - INFO - Loading paper texts from JSON
+2025-05-25 04:36:59,103 - INFO - Found 518 paper texts
+2025-05-25 04:36:59,103 - INFO - Loading gold summaries
+2025-05-25 04:36:59,104 - INFO - Found 518 paper texts
+2025-05-25 04:36:59,104 - INFO - Loading gold summaries
+2025-05-25 04:36:59,110 - INFO - Found 530 gold summaries
+2025-05-25 04:36:59,110 - INFO - Preparing dataset...
+2025-05-25 04:36:59,110 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-25 04:36:59,112 - INFO - Found 530 gold summaries
+2025-05-25 04:36:59,112 - INFO - Preparing dataset...
+2025-05-25 04:36:59,113 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-25 04:36:59,113 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-25 04:36:59,114 - INFO - Filtering statistics:
+2025-05-25 04:36:59,114 - INFO -   total_papers: 518
+2025-05-25 04:36:59,114 - INFO -   no_gold_summary: 0
+2025-05-25 04:36:59,114 - INFO -   not_in_valid_ids: 34
+2025-05-25 04:36:59,114 - INFO -   paper_too_long: 1
+2025-05-25 04:36:59,114 - INFO -   summary_too_long: 0
+2025-05-25 04:36:59,114 - INFO -   accepted: 483
+2025-05-25 04:36:59,114 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-25 04:36:59,115 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-25 04:36:59,116 - INFO - Filtering statistics:
+2025-05-25 04:36:59,116 - INFO -   total_papers: 518
+2025-05-25 04:36:59,116 - INFO -   no_gold_summary: 0
+2025-05-25 04:36:59,116 - INFO -   not_in_valid_ids: 34
+2025-05-25 04:36:59,116 - INFO -   paper_too_long: 1
+2025-05-25 04:36:59,116 - INFO -   summary_too_long: 0
+2025-05-25 04:36:59,116 - INFO -   accepted: 483
+2025-05-25 04:36:59,116 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-25 04:36:59,185 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-25 04:36:59,190 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-25 05:24:54,509 - INFO - Generated summaries for 1 samples in rank 2.
+2025-05-25 05:24:54,509 - INFO - Using default tokenizer.
+2025-05-25 05:24:54,738 - INFO - Average Rouge scores: rouge1: 0.44099378881987583, rouge2: 0.041044776119402986, rougeL: 0.14285714285714285

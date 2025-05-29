@@ -1,0 +1,113 @@
+2025-05-23 13:28:01,335 - INFO - Using device: cuda:0 (rank 0)
+2025-05-23 13:28:02,100 - INFO - Using device: cuda:3 (rank 3)
+2025-05-23 13:28:02,359 - INFO - Using device: cuda:2 (rank 2)
+2025-05-23 13:28:02,449 - INFO - Using device: cuda:1 (rank 1)
+2025-05-23 13:28:05,924 - INFO - Loading data...
+2025-05-23 13:28:05,924 - INFO - Loading paper texts from JSON
+2025-05-23 13:28:06,030 - INFO - Found 518 paper texts
+2025-05-23 13:28:06,030 - INFO - Loading gold summaries
+2025-05-23 13:28:06,038 - INFO - Found 530 gold summaries
+2025-05-23 13:28:06,038 - INFO - Preparing dataset...
+2025-05-23 13:28:06,038 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-23 13:28:06,041 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-23 13:28:06,042 - INFO - Filtering statistics:
+2025-05-23 13:28:06,042 - INFO -   total_papers: 518
+2025-05-23 13:28:06,042 - INFO -   no_gold_summary: 0
+2025-05-23 13:28:06,042 - INFO -   not_in_valid_ids: 34
+2025-05-23 13:28:06,042 - INFO -   paper_too_long: 1
+2025-05-23 13:28:06,042 - INFO -   summary_too_long: 0
+2025-05-23 13:28:06,042 - INFO -   accepted: 483
+2025-05-23 13:28:06,042 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-23 13:28:06,108 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-23 13:28:06,113 - INFO - Checking 3 random samples from dataset:
+2025-05-23 13:28:06,142 - INFO - Sample 1 (paper_id: 78339451):
+2025-05-23 13:28:06,143 - INFO -   Input tokens: torch.Size([30000])
+2025-05-23 13:28:06,143 - INFO -   Label tokens: torch.Size([512])
+2025-05-23 13:28:06,143 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Learning reusable feature representations from large unlabeled datasets has been an area of active research. In the context of computer vision, one can leverage the practically unlimited amount of unlabeled images and videos to learn good intermediate representations...
+2025-05-23 13:28:06,143 - INFO -   Label text preview: The paper presents Deep Convolutional Generative Adversarial Nets (DCGAN) - a topologically constrained variant of conditional GAN.
+Benefits  Stable to train  Very useful to learn unsupervised image representations.
+Model  GANs difficult...
+2025-05-23 13:28:06,143 - INFO - --------------------------------------------------
+2025-05-23 13:28:06,175 - INFO - Sample 2 (paper_id: 97980035):
+2025-05-23 13:28:06,175 - INFO -   Input tokens: torch.Size([30000])
+2025-05-23 13:28:06,175 - INFO -   Label tokens: torch.Size([512])
+2025-05-23 13:28:06,175 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Categories and Subject Descriptors I.4 [IMAGE PROCESSING AND COMPUTER VISION]: Applications General Terms Application Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted...
+2025-05-23 13:28:06,175 - INFO -   Label text preview: What  They propose a CNN-based approach to detect faces in a wide range of orientations using a single model.
+However, since the training set is skewed, the network is more confident about up-right faces.
+The model does not require additional components such as...
+2025-05-23 13:28:06,176 - INFO - --------------------------------------------------
+2025-05-23 13:28:06,200 - INFO - Sample 3 (paper_id: 37775721):
+2025-05-23 13:28:06,200 - INFO -   Input tokens: torch.Size([30000])
+2025-05-23 13:28:06,200 - INFO -   Label tokens: torch.Size([512])
+2025-05-23 13:28:06,200 - INFO -   Input text preview: Summarize the following scientific paper:
+
+This paper explores the task of translating natural language text queries into regular expressions which embody their meaning. Thus a system for automatically generating regular expressions from natural language would be useful in many contexts. Kushman and Barz...
+2025-05-23 13:28:06,201 - INFO -   Label text preview: Task of translating natural language queries into regular expressions without using domain specific knowledge.
+Proposes a methodology for collecting a large corpus of regular expressions to natural language pairs.
+Reports performance gain of 19.6% over state-of-the-art models.
+Architecture...
+2025-05-23 13:28:06,201 - INFO - --------------------------------------------------
+2025-05-23 13:28:07,262 - INFO - Loading data...
+2025-05-23 13:28:07,263 - INFO - Loading paper texts from JSON
+2025-05-23 13:28:07,370 - INFO - Found 518 paper texts
+2025-05-23 13:28:07,370 - INFO - Loading gold summaries
+2025-05-23 13:28:07,379 - INFO - Found 530 gold summaries
+2025-05-23 13:28:07,379 - INFO - Preparing dataset...
+2025-05-23 13:28:07,379 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-23 13:28:07,382 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-23 13:28:07,383 - INFO - Filtering statistics:
+2025-05-23 13:28:07,383 - INFO -   total_papers: 518
+2025-05-23 13:28:07,383 - INFO -   no_gold_summary: 0
+2025-05-23 13:28:07,383 - INFO -   not_in_valid_ids: 34
+2025-05-23 13:28:07,383 - INFO -   paper_too_long: 1
+2025-05-23 13:28:07,383 - INFO -   summary_too_long: 0
+2025-05-23 13:28:07,383 - INFO -   accepted: 483
+2025-05-23 13:28:07,383 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-23 13:28:07,450 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-23 13:28:07,829 - INFO - Loading data...
+2025-05-23 13:28:07,830 - INFO - Loading paper texts from JSON
+2025-05-23 13:28:07,845 - INFO - Loading data...
+2025-05-23 13:28:07,845 - INFO - Loading paper texts from JSON
+2025-05-23 13:28:07,938 - INFO - Found 518 paper texts
+2025-05-23 13:28:07,938 - INFO - Loading gold summaries
+2025-05-23 13:28:07,947 - INFO - Found 530 gold summaries
+2025-05-23 13:28:07,947 - INFO - Preparing dataset...
+2025-05-23 13:28:07,947 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-23 13:28:07,950 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-23 13:28:07,950 - INFO - Found 518 paper texts
+2025-05-23 13:28:07,950 - INFO - Loading gold summaries
+2025-05-23 13:28:07,951 - INFO - Filtering statistics:
+2025-05-23 13:28:07,951 - INFO -   total_papers: 518
+2025-05-23 13:28:07,951 - INFO -   no_gold_summary: 0
+2025-05-23 13:28:07,951 - INFO -   not_in_valid_ids: 34
+2025-05-23 13:28:07,951 - INFO -   paper_too_long: 1
+2025-05-23 13:28:07,951 - INFO -   summary_too_long: 0
+2025-05-23 13:28:07,951 - INFO -   accepted: 483
+2025-05-23 13:28:07,951 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-23 13:28:07,957 - INFO - Found 530 gold summaries
+2025-05-23 13:28:07,958 - INFO - Preparing dataset...
+2025-05-23 13:28:07,958 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-23 13:28:07,961 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-23 13:28:07,961 - INFO - Filtering statistics:
+2025-05-23 13:28:07,961 - INFO -   total_papers: 518
+2025-05-23 13:28:07,962 - INFO -   no_gold_summary: 0
+2025-05-23 13:28:07,962 - INFO -   not_in_valid_ids: 34
+2025-05-23 13:28:07,962 - INFO -   paper_too_long: 1
+2025-05-23 13:28:07,962 - INFO -   summary_too_long: 0
+2025-05-23 13:28:07,962 - INFO -   accepted: 483
+2025-05-23 13:28:07,962 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-23 13:28:08,027 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-23 13:28:08,028 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-23 16:06:59,660 - INFO - Using default tokenizer.
+2025-05-23 16:06:59,712 - INFO - Evaluation completed at 2025-05-23 16:06:59
+2025-05-23 16:24:51,027 - INFO - Using default tokenizer.
+2025-05-23 16:24:51,095 - INFO - Evaluation completed at 2025-05-23 16:24:51
+2025-05-23 16:30:59,894 - INFO - Using default tokenizer.
+2025-05-23 16:30:59,939 - INFO - Evaluation completed at 2025-05-23 16:30:59
+2025-05-23 16:30:59,940 - INFO - Saved metrics and predictions to ./jaehyeok/results
+2025-05-23 16:36:30,560 - INFO - Using default tokenizer.
+2025-05-23 16:36:30,592 - INFO - Evaluation completed at 2025-05-23 16:36:30

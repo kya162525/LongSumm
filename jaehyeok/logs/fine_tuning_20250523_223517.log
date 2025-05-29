@@ -1,0 +1,101 @@
+2025-05-23 22:35:17,507 - INFO - Using device: cuda:0 (rank 0)
+2025-05-23 22:35:17,571 - INFO - Using device: cuda:2 (rank 2)
+2025-05-23 22:35:17,810 - INFO - Using device: cuda:1 (rank 1)
+2025-05-23 22:35:17,827 - INFO - Using device: cuda:3 (rank 3)
+2025-05-23 22:35:22,697 - INFO - Loading data...
+2025-05-23 22:35:22,698 - INFO - Loading paper texts from JSON
+2025-05-23 22:35:22,711 - INFO - Loading data...
+2025-05-23 22:35:22,712 - INFO - Loading paper texts from JSON
+2025-05-23 22:35:22,790 - INFO - Found 518 paper texts
+2025-05-23 22:35:22,790 - INFO - Loading gold summaries
+2025-05-23 22:35:22,797 - INFO - Found 530 gold summaries
+2025-05-23 22:35:22,797 - INFO - Preparing dataset...
+2025-05-23 22:35:22,798 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-23 22:35:22,800 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-23 22:35:22,801 - INFO - Filtering statistics:
+2025-05-23 22:35:22,801 - INFO -   total_papers: 518
+2025-05-23 22:35:22,801 - INFO -   no_gold_summary: 0
+2025-05-23 22:35:22,801 - INFO -   not_in_valid_ids: 34
+2025-05-23 22:35:22,801 - INFO -   paper_too_long: 1
+2025-05-23 22:35:22,801 - INFO -   summary_too_long: 0
+2025-05-23 22:35:22,801 - INFO -   accepted: 483
+2025-05-23 22:35:22,801 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-23 22:35:22,803 - INFO - Found 518 paper texts
+2025-05-23 22:35:22,803 - INFO - Loading gold summaries
+2025-05-23 22:35:22,809 - INFO - Found 530 gold summaries
+2025-05-23 22:35:22,809 - INFO - Preparing dataset...
+2025-05-23 22:35:22,809 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-23 22:35:22,812 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-23 22:35:22,813 - INFO - Filtering statistics:
+2025-05-23 22:35:22,813 - INFO -   total_papers: 518
+2025-05-23 22:35:22,813 - INFO -   no_gold_summary: 0
+2025-05-23 22:35:22,813 - INFO -   not_in_valid_ids: 34
+2025-05-23 22:35:22,813 - INFO -   paper_too_long: 1
+2025-05-23 22:35:22,813 - INFO -   summary_too_long: 0
+2025-05-23 22:35:22,813 - INFO -   accepted: 483
+2025-05-23 22:35:22,813 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-23 22:35:22,858 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-23 22:35:22,863 - INFO - Checking 3 random samples from dataset:
+2025-05-23 22:35:22,869 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-23 22:35:22,894 - INFO - Sample 1 (paper_id: 4216862):
+2025-05-23 22:35:22,895 - INFO -   Input tokens: torch.Size([30000])
+2025-05-23 22:35:22,895 - INFO -   Label tokens: torch.Size([1024])
+2025-05-23 22:35:22,895 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Deep residual networks (ResNets)  consist of many stacked “Residual Units”. ResNets that are over 100-layer deep have shown state-of-the-art accuracy for several challenging recognition tasks...
+2025-05-23 22:35:22,895 - INFO -   Label text preview: What  The authors reevaluate the original residual design of neural networks.
+They compare various architectures of residual units and actually find one that works quite a bit better.
+How  The new variation starts the transformation branch of each residual unit with BN and a Re...
+2025-05-23 22:35:22,895 - INFO - --------------------------------------------------
+2025-05-23 22:35:22,932 - INFO - Sample 2 (paper_id: 36051826):
+2025-05-23 22:35:22,932 - INFO -   Input tokens: torch.Size([30000])
+2025-05-23 22:35:22,932 - INFO -   Label tokens: torch.Size([1024])
+2025-05-23 22:35:22,932 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Existing cache and main memory compression techniques compress data in small fixed-size blocks, typically cache lines. Moreover, they use simple compression algorithms that focus on exploiting redundancy within a block. We present the first compressed memory hierarchy...
+2025-05-23 22:35:22,932 - INFO -   Label text preview: Compress objects, not cache lines: an object-based compressed memory hierarchy Tsai & Sanchez, ASPLOS’19  Last time out we saw how Google have been able to save millions of dollars though memory compression enabled via zswap.
+One of...
+2025-05-23 22:35:22,933 - INFO - --------------------------------------------------
+2025-05-23 22:35:22,971 - INFO - Sample 3 (paper_id: 61298922):
+2025-05-23 22:35:22,972 - INFO -   Input tokens: torch.Size([30000])
+2025-05-23 22:35:22,972 - INFO -   Label tokens: torch.Size([1024])
+2025-05-23 22:35:22,972 - INFO -   Input text preview: Summarize the following scientific paper:
+
+INTRODUCTION Microarchitectural attacks are increasingly popular for leaking secrets such as cryptographic keys ,  or compromising the system by triggering bit flips in memory , , , . Recent work shows that these attacks are even possible...
+2025-05-23 22:35:22,972 - INFO -   Label text preview: Grand Pwning Unit: Accelerating microarchitectural attacks with the GPU Frigo et al., IEEE Security & Privacy  The general awareness of microarchitectural attacks is greatly increased since meltdown and spectre earlier this year.
+A lot of...
+2025-05-23 22:35:22,972 - INFO - --------------------------------------------------
+2025-05-23 22:35:23,004 - INFO - Loading data...
+2025-05-23 22:35:23,004 - INFO - Loading paper texts from JSON
+2025-05-23 22:35:23,092 - INFO - Found 518 paper texts
+2025-05-23 22:35:23,092 - INFO - Loading gold summaries
+2025-05-23 22:35:23,099 - INFO - Found 530 gold summaries
+2025-05-23 22:35:23,099 - INFO - Preparing dataset...
+2025-05-23 22:35:23,099 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-23 22:35:23,101 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-23 22:35:23,102 - INFO - Filtering statistics:
+2025-05-23 22:35:23,102 - INFO -   total_papers: 518
+2025-05-23 22:35:23,102 - INFO -   no_gold_summary: 0
+2025-05-23 22:35:23,102 - INFO -   not_in_valid_ids: 34
+2025-05-23 22:35:23,103 - INFO -   paper_too_long: 1
+2025-05-23 22:35:23,103 - INFO -   summary_too_long: 0
+2025-05-23 22:35:23,103 - INFO -   accepted: 483
+2025-05-23 22:35:23,103 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-23 22:35:23,157 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-23 22:35:23,172 - INFO - Loading data...
+2025-05-23 22:35:23,173 - INFO - Loading paper texts from JSON
+2025-05-23 22:35:23,272 - INFO - Found 518 paper texts
+2025-05-23 22:35:23,272 - INFO - Loading gold summaries
+2025-05-23 22:35:23,280 - INFO - Found 530 gold summaries
+2025-05-23 22:35:23,281 - INFO - Preparing dataset...
+2025-05-23 22:35:23,281 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-23 22:35:23,283 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-23 22:35:23,284 - INFO - Filtering statistics:
+2025-05-23 22:35:23,284 - INFO -   total_papers: 518
+2025-05-23 22:35:23,284 - INFO -   no_gold_summary: 0
+2025-05-23 22:35:23,284 - INFO -   not_in_valid_ids: 34
+2025-05-23 22:35:23,284 - INFO -   paper_too_long: 1
+2025-05-23 22:35:23,284 - INFO -   summary_too_long: 0
+2025-05-23 22:35:23,284 - INFO -   accepted: 483
+2025-05-23 22:35:23,284 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-23 22:35:23,347 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation

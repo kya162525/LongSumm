@@ -62,7 +62,7 @@ PUSH_TO_HUB_STEPS = 10
 
 # LoRA configuration
 USE_LORA = True  # Flag to enable/disable LoRA
-LORA_R = 8  # LoRA attention dimension
+LORA_R = 16  # LoRA attention dimension
 LORA_ALPHA = 32  # Alpha parameter for LoRA
 LORA_DROPOUT = 0.05  # Dropout probability for LoRA layers
 LORA_TARGET_MODULES = ["q_proj", "k_proj", "v_proj", "o_proj"]  # Modules to apply LoRA to
@@ -73,30 +73,33 @@ MAX_SUMMARY_LENGTH = 4*MAX_OUTPUT_LENGTH  # Maximum number of words in summary
 
 # Hugging Face Hub credentials
 HUB_USERNAME = "JaehyeokLee"
-HUB_TOKEN = "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"
+HUB_TOKEN = "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"
 
 def load_data() -> Tuple[Dict[str, str], Dict[str, str]]:
-    """Load paper full texts and gold summaries with memory efficiency."""
+    """Load paper full texts and gold summaries from JSON files."""
     logging.info("Loading data...")
     
-    # Load paper file paths rather than full contents
-    path = "./papers/postprocessed/full_texts/"
-    paper_file_paths = {}
-    files = os.listdir(path)
-    logging.info(f"Found {len(files)} paper files")
-    
-    for file in files:
-        file_id = file.split(".")[0]
-        paper_file_paths[file_id] = os.path.join(path, file)
+    # Load paper texts from JSON
+    logging.info("Loading paper texts from JSON")
+    try:
+        paper_texts = json.load(open("./extractive_summaries/train4_output.json", "r"))
+        logging.info(f"Found {len(paper_texts)} paper texts")
+    except Exception as e:
+        logging.error(f"Error loading paper texts: {e}")
+        paper_texts = {}
             
     # Load gold summaries
     logging.info("Loading gold summaries")
-    gold_summaries = json.load(open("./abstractive_summaries/id_summary_map.json", "r"))
-    logging.info(f"Found {len(gold_summaries)} gold summaries")
+    try:
+        gold_summaries = json.load(open("./abstractive_summaries/id_summary_map.json", "r"))
+        logging.info(f"Found {len(gold_summaries)} gold summaries")
+    except Exception as e:
+        logging.error(f"Error loading gold summaries: {e}")
+        gold_summaries = {}
     
-    return paper_file_paths, gold_summaries
+    return paper_texts, gold_summaries
 
-def prepare_dataset(paper_file_paths: Dict[str, str], gold_summaries: Dict[str, str]) -> Dataset:
+def prepare_dataset(paper_texts: Dict[str, str], gold_summaries: Dict[str, str]) -> Dataset:
     """Prepare dataset for fine-tuning with filtering conditions."""
     logging.info("Preparing dataset...")
     
@@ -109,7 +112,7 @@ def prepare_dataset(paper_file_paths: Dict[str, str], gold_summaries: Dict[str, 
     
     # Track filtering statistics
     filtering_stats = {
-        "total_papers": len(paper_file_paths),
+        "total_papers": len(paper_texts),
         "no_gold_summary": 0,
         "not_in_valid_ids": 0,
         "paper_too_long": 0,
@@ -119,17 +122,9 @@ def prepare_dataset(paper_file_paths: Dict[str, str], gold_summaries: Dict[str, 
     
     # Match papers with their summaries with filtering
     data = []
-    for paper_id, paper_path in tqdm(paper_file_paths.items(), desc="Filtering papers"):
-        # Read the paper text from file
-        try:
-            with open(paper_path, 'r', encoding='utf-8') as f:
-                paper_text = f.read()
-        except Exception as e:
-            logging.warning(f"Error reading paper {paper_id}: {e}")
-            continue
+    for paper_id, paper_text in tqdm(paper_texts.items(), desc="Filtering papers"):
         # Skip if not in valid IDs list (if available and not empty)
         if valid_ids and paper_id not in valid_ids:
-            # logging.info(f"Skipping {paper_id} - not in valid IDs")
             filtering_stats["not_in_valid_ids"] += 1
             continue
         
@@ -217,9 +212,7 @@ def preprocess_function(examples, tokenizer):
         "attention_mask": torch.tensor([x["attention_mask"] for x in inputs]),
         "labels": torch.tensor([x["labels"] for x in inputs])
     }
-    
     return batch
-
 
 def apply_lora(model):
     """Apply LoRA adapters to the model."""
@@ -235,13 +228,9 @@ def apply_lora(model):
         task_type=TaskType.CAUSAL_LM,
     )
     
-    # Prepare model for LoRA fine-tuning
+    # Prepare model for LoRA fine-tuning -> Apply LoRA adapters -> Log trainable parameters
     model = prepare_model_for_kbit_training(model)
-    
-    # Apply LoRA adapters
     model = get_peft_model(model, lora_config)
-    
-    # Log trainable parameters
     model.print_trainable_parameters()
     
     return model
@@ -348,7 +337,7 @@ def main():
     logging.info("Starting fine-tuning process")
     
     # Initialize wandb
-    run_name = f"qwen3-8b-fine-tune-{timestamp}"
+    run_name = f"qwen3-8b-fine-tune-extractive-dataset-{timestamp}"
     if USE_LORA:
         run_name += "-lora"
         logging.info("LoRA is enabled with the following configuration:")
@@ -368,7 +357,8 @@ def main():
             logging.info(f"Paper text (first 30 chars): {sample['text'][:30]}...")
             logging.info(f"Summary (first 30 chars): {sample['summary'][:30]}...")
             logging.info("-" * 40)
-    wandb.init(project="qwen-summarization", name=run_name)
+    if args.local_rank <= 0:
+        wandb.init(project="qwen-summarization", name=run_name)
     
     # Split dataset
     train_dataset, val_dataset = split_dataset(dataset)
@@ -400,10 +390,8 @@ def main():
     )
     
     # Setup training
-    repo_id = f"{HUB_USERNAME}/qwen3-8b-longsumm"
+    repo_id = f"{HUB_USERNAME}/qwen3-8b-longsumm-extractive-datasets"
     trainer = setup_training(model, tokenizer, tokenized_train, tokenized_val, run_name, args.local_rank)
-
-    # **NEW**: HFUploadCallback 사용 (주기적 업로드)
     trainer.add_callback(
         HFUploadCallback(
             repo_id=repo_id,
@@ -415,15 +403,15 @@ def main():
     trainer.add_callback(LogTrainLossCallback())
     
     # Start training
-    logging.info("Starting training")
+    if args.local_rank <= 0:
+        logging.info("Starting training")
     trainer.train()
     
     # Save and push final model
-    if args.local_rank in (0, -1):  # 단일 프로세스 또는 rank 0
+    if args.local_rank <= 0:
         final_dir = f"./jaehyeok/models/{run_name}-final"
         trainer.save_model(final_dir)
 
-        # **NEW**: push_folder()로 최종 모델 업로드
         push_folder(
             folder_path=final_dir,
             repo_id=repo_id + "-final",
@@ -431,7 +419,7 @@ def main():
         )
     
     # Finish wandb session
-    if args.local_rank == 0:
+    if args.local_rank <= 0:
         wandb.log({"final_model": f"jaehyeoklee/qwen3-8b-longsumm-final"})
         wandb.finish()
     logging.info("Fine-tuning process completed")

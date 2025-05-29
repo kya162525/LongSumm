@@ -1,0 +1,18 @@
+2025-05-24 03:23:20,650 - INFO - Using device: cuda:2 (rank 2)
+2025-05-24 03:23:26,058 - INFO - Loading data...
+2025-05-24 03:23:26,059 - INFO - Loading paper texts from JSON
+2025-05-24 03:23:26,162 - INFO - Found 518 paper texts
+2025-05-24 03:23:26,162 - INFO - Loading gold summaries
+2025-05-24 03:23:26,171 - INFO - Found 530 gold summaries
+2025-05-24 03:23:26,171 - INFO - Preparing dataset...
+2025-05-24 03:23:26,171 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-24 03:23:26,174 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-24 03:23:26,175 - INFO - Filtering statistics:
+2025-05-24 03:23:26,175 - INFO -   total_papers: 518
+2025-05-24 03:23:26,175 - INFO -   no_gold_summary: 0
+2025-05-24 03:23:26,175 - INFO -   not_in_valid_ids: 34
+2025-05-24 03:23:26,175 - INFO -   paper_too_long: 1
+2025-05-24 03:23:26,175 - INFO -   summary_too_long: 0
+2025-05-24 03:23:26,175 - INFO -   accepted: 483
+2025-05-24 03:23:26,175 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-24 03:23:26,253 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation

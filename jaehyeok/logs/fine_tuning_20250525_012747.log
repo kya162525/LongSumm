@@ -1,0 +1,104 @@
+2025-05-25 01:27:47,638 - INFO - Using device: cuda:3 (rank 3)
+2025-05-25 01:27:47,659 - INFO - Using device: cuda:0 (rank 0)
+2025-05-25 01:27:48,288 - INFO - Using device: cuda:2 (rank 2)
+2025-05-25 01:27:48,424 - INFO - Using device: cuda:1 (rank 1)
+2025-05-25 01:27:52,540 - INFO - Loading data...
+2025-05-25 01:27:52,541 - INFO - Loading paper texts from JSON
+2025-05-25 01:27:52,562 - INFO - Loading data...
+2025-05-25 01:27:52,563 - INFO - Loading paper texts from JSON
+2025-05-25 01:27:52,647 - INFO - Found 518 paper texts
+2025-05-25 01:27:52,647 - INFO - Loading gold summaries
+2025-05-25 01:27:52,656 - INFO - Found 530 gold summaries
+2025-05-25 01:27:52,656 - INFO - Preparing dataset...
+2025-05-25 01:27:52,657 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-25 01:27:52,659 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-25 01:27:52,660 - INFO - Filtering statistics:
+2025-05-25 01:27:52,660 - INFO -   total_papers: 518
+2025-05-25 01:27:52,660 - INFO -   no_gold_summary: 0
+2025-05-25 01:27:52,660 - INFO -   not_in_valid_ids: 34
+2025-05-25 01:27:52,660 - INFO -   paper_too_long: 1
+2025-05-25 01:27:52,660 - INFO -   summary_too_long: 0
+2025-05-25 01:27:52,660 - INFO -   accepted: 483
+2025-05-25 01:27:52,660 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-25 01:27:52,668 - INFO - Found 518 paper texts
+2025-05-25 01:27:52,668 - INFO - Loading gold summaries
+2025-05-25 01:27:52,675 - INFO - Found 530 gold summaries
+2025-05-25 01:27:52,675 - INFO - Preparing dataset...
+2025-05-25 01:27:52,676 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-25 01:27:52,678 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-25 01:27:52,679 - INFO - Filtering statistics:
+2025-05-25 01:27:52,679 - INFO -   total_papers: 518
+2025-05-25 01:27:52,679 - INFO -   no_gold_summary: 0
+2025-05-25 01:27:52,679 - INFO -   not_in_valid_ids: 34
+2025-05-25 01:27:52,679 - INFO -   paper_too_long: 1
+2025-05-25 01:27:52,679 - INFO -   summary_too_long: 0
+2025-05-25 01:27:52,679 - INFO -   accepted: 483
+2025-05-25 01:27:52,679 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-25 01:27:52,732 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-25 01:27:52,737 - INFO - Checking 3 random samples from dataset:
+2025-05-25 01:27:52,755 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-25 01:27:52,791 - INFO - Sample 1 (paper_id: 71546396):
+2025-05-25 01:27:52,791 - INFO -   Input tokens: torch.Size([30000])
+2025-05-25 01:27:52,791 - INFO -   Label tokens: torch.Size([1024])
+2025-05-25 01:27:52,791 - INFO -   Input text preview: Summarize the following scientific paper:
+
+In this paper, we demonstrate the powerful capabilities that modern browser APIs provide to attackers by presenting MarioNet: a framework that allows a remote malicious entity to control a visitor’s browser and abuse its resources for unwanted computation...
+2025-05-25 01:27:52,791 - INFO -   Label text preview: Master of web puppets: abusing web browsers for persistent and stealthy computation Papadopoulus et al., NDSS’19  UPDATE 2019-04-14: An author update has been published for this...
+2025-05-25 01:27:52,792 - INFO - --------------------------------------------------
+2025-05-25 01:27:52,819 - INFO - Sample 2 (paper_id: 50897768):
+2025-05-25 01:27:52,820 - INFO -   Input tokens: torch.Size([30000])
+2025-05-25 01:27:52,820 - INFO -   Label tokens: torch.Size([1024])
+2025-05-25 01:27:52,820 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Several recent works demonstrated the power of deep neural networks in the challenging problem of generating images. Most of these proposed generative networks that produce images as output, using feed-forward calculations from a random seed; however,...
+2025-05-25 01:27:52,820 - INFO -   Label text preview: Texture Networks: Feed-forward synthesis of textures and stylized images Ulyanov et al., arXiv, March 2016  During the summer break I mostly stayed away from news feeds and twitter, which induces terrible FOMO...
+2025-05-25 01:27:52,820 - INFO - --------------------------------------------------
+2025-05-25 01:27:52,844 - INFO - Sample 3 (paper_id: 7590139):
+2025-05-25 01:27:52,844 - INFO -   Input tokens: torch.Size([30000])
+2025-05-25 01:27:52,844 - INFO -   Label tokens: torch.Size([1024])
+2025-05-25 01:27:52,844 - INFO -   Input text preview: Summarize the following scientific paper:
+
+The many recent successes in scaling reinforcement learning (RL) to complex sequential decision-making problems were kick-started by the Deep Q-Networks algorithm (DQN; Mnih et al. 201...
+2025-05-25 01:27:52,845 - INFO -   Label text preview: What  They combine several previous improvements for reinforcement learning to one algorithm.
+The combination beats previous methods by a good margin.
+They analyze which of the used improvements has most influence on the result.
+How  They use the following improvements:  Double Q-learning...
+2025-05-25 01:27:52,845 - INFO - --------------------------------------------------
+2025-05-25 01:27:53,021 - INFO - Loading data...
+2025-05-25 01:27:53,022 - INFO - Loading paper texts from JSON
+2025-05-25 01:27:53,125 - INFO - Found 518 paper texts
+2025-05-25 01:27:53,125 - INFO - Loading gold summaries
+2025-05-25 01:27:53,133 - INFO - Found 530 gold summaries
+2025-05-25 01:27:53,133 - INFO - Preparing dataset...
+2025-05-25 01:27:53,133 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-25 01:27:53,136 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-25 01:27:53,137 - INFO - Filtering statistics:
+2025-05-25 01:27:53,137 - INFO -   total_papers: 518
+2025-05-25 01:27:53,137 - INFO -   no_gold_summary: 0
+2025-05-25 01:27:53,137 - INFO -   not_in_valid_ids: 34
+2025-05-25 01:27:53,137 - INFO -   paper_too_long: 1
+2025-05-25 01:27:53,137 - INFO -   summary_too_long: 0
+2025-05-25 01:27:53,137 - INFO -   accepted: 483
+2025-05-25 01:27:53,137 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-25 01:27:53,212 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-25 01:27:53,588 - INFO - Loading data...
+2025-05-25 01:27:53,589 - INFO - Loading paper texts from JSON
+2025-05-25 01:27:53,690 - INFO - Found 518 paper texts
+2025-05-25 01:27:53,691 - INFO - Loading gold summaries
+2025-05-25 01:27:53,698 - INFO - Found 530 gold summaries
+2025-05-25 01:27:53,698 - INFO - Preparing dataset...
+2025-05-25 01:27:53,698 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-25 01:27:53,701 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-25 01:27:53,702 - INFO - Filtering statistics:
+2025-05-25 01:27:53,702 - INFO -   total_papers: 518
+2025-05-25 01:27:53,702 - INFO -   no_gold_summary: 0
+2025-05-25 01:27:53,702 - INFO -   not_in_valid_ids: 34
+2025-05-25 01:27:53,702 - INFO -   paper_too_long: 1
+2025-05-25 01:27:53,702 - INFO -   summary_too_long: 0
+2025-05-25 01:27:53,702 - INFO -   accepted: 483
+2025-05-25 01:27:53,702 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-25 01:27:53,768 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-25 02:15:46,598 - INFO - Generated summaries for 1 samples in rank 2.
+2025-05-25 02:15:46,599 - INFO - Using default tokenizer.
+2025-05-25 02:15:46,765 - INFO - Average Rouge scores: rouge1: 0.32703488372093026, rouge2: 0.027656477438136824, rougeL: 0.11337209302325581
+2025-05-25 02:15:46,765 - INFO - Evaluation completed at 20250525_021546

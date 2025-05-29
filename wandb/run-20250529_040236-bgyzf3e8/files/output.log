@@ -1,0 +1,44 @@
+2025-05-29 04:02:37,102 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-29 04:02:37,106 - INFO - Training set: 458 examples
+2025-05-29 04:02:37,106 - INFO - Validation set: 25 examples
+2025-05-29 04:02:37,106 - INFO - Loading model/tokenizer on rank -1
+Loading checkpoint shards:   0%|                                                                                                                   | 0/5 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning_new.py", line 428, in <module>
+    main()
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning_new.py", line 375, in main
+    model, tokenizer = setup_model_and_tokenizer(local_rank=args.local_rank)
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning_new.py", line 249, in setup_model_and_tokenizer
+    model = AutoModelForCausalLM.from_pretrained(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4399, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4793, in _load_pretrained_model
+    caching_allocator_warmup(model_to_load, expanded_device_map, factor=2 if hf_quantizer is None else 4)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 5772, in caching_allocator_warmup
+    accelerator_device_map = {
+  File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 5773, in <dictcomp>
+    param: torch.device(device) for param, device in expanded_device_map.items() if device not in ["cpu", "disk"]
+RuntimeError: Device index must not be negative
+Traceback (most recent call last):
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning_new.py", line 428, in <module>
+    main()
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning_new.py", line 375, in main
+    model, tokenizer = setup_model_and_tokenizer(local_rank=args.local_rank)
+  File "/root/workspace/LongSumm/jaehyeok/5_fine_tuning/fine_tuning_new.py", line 249, in setup_model_and_tokenizer
+    model = AutoModelForCausalLM.from_pretrained(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4399, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4793, in _load_pretrained_model
+    caching_allocator_warmup(model_to_load, expanded_device_map, factor=2 if hf_quantizer is None else 4)
+  File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 5772, in caching_allocator_warmup
+    accelerator_device_map = {
+  File "/root/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 5773, in <dictcomp>
+    param: torch.device(device) for param, device in expanded_device_map.items() if device not in ["cpu", "disk"]
+RuntimeError: Device index must not be negative

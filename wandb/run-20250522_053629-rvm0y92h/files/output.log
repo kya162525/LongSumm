@@ -1,0 +1,9 @@
+2025-05-22 05:36:30,592 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-22 05:36:30,597 - INFO - Training set: 458 examples
+2025-05-22 05:36:30,597 - INFO - Validation set: 25 examples
+2025-05-22 05:36:30,597 - INFO - Loading model/tokenizer on rank 0
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:18<00:00,  3.68s/it]
+2025-05-22 05:36:50,297 - INFO - Applying LoRA adapters to the model
+trainable params: 15,335,424 || all params: 8,206,070,784 || trainable%: 0.1869
+2025-05-22 05:36:50,578 - INFO - Tokenizing datasets
+Tokenizing training set:   0%|                                                                                                                                                                   | 0/458 [00:00<?, ? examples/s]

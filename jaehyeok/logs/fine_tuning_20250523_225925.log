@@ -1,0 +1,54 @@
+2025-05-23 22:59:25,648 - INFO - Using device: cuda:1 (rank 1)
+2025-05-23 22:59:26,127 - INFO - Using device: cuda:3 (rank 3)
+2025-05-23 22:59:26,151 - INFO - Using device: cuda:2 (rank 2)
+2025-05-23 22:59:30,395 - INFO - Loading data...
+2025-05-23 22:59:30,395 - INFO - Loading paper texts from JSON
+2025-05-23 22:59:30,483 - INFO - Found 518 paper texts
+2025-05-23 22:59:30,484 - INFO - Loading gold summaries
+2025-05-23 22:59:30,491 - INFO - Found 530 gold summaries
+2025-05-23 22:59:30,491 - INFO - Preparing dataset...
+2025-05-23 22:59:30,491 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-23 22:59:30,494 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-23 22:59:30,494 - INFO - Filtering statistics:
+2025-05-23 22:59:30,494 - INFO -   total_papers: 518
+2025-05-23 22:59:30,495 - INFO -   no_gold_summary: 0
+2025-05-23 22:59:30,495 - INFO -   not_in_valid_ids: 34
+2025-05-23 22:59:30,495 - INFO -   paper_too_long: 1
+2025-05-23 22:59:30,495 - INFO -   summary_too_long: 0
+2025-05-23 22:59:30,495 - INFO -   accepted: 483
+2025-05-23 22:59:30,495 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-23 22:59:30,553 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-23 22:59:31,916 - INFO - Loading data...
+2025-05-23 22:59:31,916 - INFO - Loading paper texts from JSON
+2025-05-23 22:59:31,944 - INFO - Loading data...
+2025-05-23 22:59:31,945 - INFO - Loading paper texts from JSON
+2025-05-23 22:59:32,007 - INFO - Found 518 paper texts
+2025-05-23 22:59:32,007 - INFO - Loading gold summaries
+2025-05-23 22:59:32,018 - INFO - Found 530 gold summaries
+2025-05-23 22:59:32,018 - INFO - Preparing dataset...
+2025-05-23 22:59:32,018 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-23 22:59:32,021 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-23 22:59:32,022 - INFO - Filtering statistics:
+2025-05-23 22:59:32,022 - INFO -   total_papers: 518
+2025-05-23 22:59:32,022 - INFO -   no_gold_summary: 0
+2025-05-23 22:59:32,022 - INFO -   not_in_valid_ids: 34
+2025-05-23 22:59:32,022 - INFO -   paper_too_long: 1
+2025-05-23 22:59:32,022 - INFO -   summary_too_long: 0
+2025-05-23 22:59:32,022 - INFO -   accepted: 483
+2025-05-23 22:59:32,022 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-23 22:59:32,042 - INFO - Found 518 paper texts
+2025-05-23 22:59:32,042 - INFO - Loading gold summaries
+2025-05-23 22:59:32,050 - INFO - Found 530 gold summaries
+2025-05-23 22:59:32,050 - INFO - Preparing dataset...
+2025-05-23 22:59:32,051 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-23 22:59:32,053 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-23 22:59:32,054 - INFO - Filtering statistics:
+2025-05-23 22:59:32,054 - INFO -   total_papers: 518
+2025-05-23 22:59:32,054 - INFO -   no_gold_summary: 0
+2025-05-23 22:59:32,054 - INFO -   not_in_valid_ids: 34
+2025-05-23 22:59:32,054 - INFO -   paper_too_long: 1
+2025-05-23 22:59:32,054 - INFO -   summary_too_long: 0
+2025-05-23 22:59:32,054 - INFO -   accepted: 483
+2025-05-23 22:59:32,054 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-23 22:59:32,084 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-23 22:59:32,114 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation

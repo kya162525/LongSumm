@@ -1,0 +1,47 @@
+2025-05-23 07:37:47,012 - INFO - Using device: cuda:0 (rank 0)
+2025-05-23 07:37:56,062 - INFO - Loading data...
+2025-05-23 07:37:56,062 - INFO - Loading paper texts from JSON
+2025-05-23 07:37:56,155 - INFO - Found 518 paper texts
+2025-05-23 07:37:56,156 - INFO - Loading gold summaries
+2025-05-23 07:37:56,163 - INFO - Found 530 gold summaries
+2025-05-23 07:37:56,164 - INFO - Preparing dataset...
+2025-05-23 07:37:56,164 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-23 07:37:56,166 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-23 07:37:56,167 - INFO - Filtering statistics:
+2025-05-23 07:37:56,167 - INFO -   total_papers: 518
+2025-05-23 07:37:56,167 - INFO -   no_gold_summary: 0
+2025-05-23 07:37:56,167 - INFO -   not_in_valid_ids: 34
+2025-05-23 07:37:56,167 - INFO -   paper_too_long: 1
+2025-05-23 07:37:56,167 - INFO -   summary_too_long: 0
+2025-05-23 07:37:56,168 - INFO -   accepted: 483
+2025-05-23 07:37:56,168 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-23 07:37:56,225 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-23 07:37:56,230 - INFO - Checking 3 random samples from dataset:
+2025-05-23 07:37:56,262 - INFO - Sample 1 (paper_id: 8087311):
+2025-05-23 07:37:56,262 - INFO -   Input tokens: torch.Size([30000])
+2025-05-23 07:37:56,262 - INFO -   Label tokens: torch.Size([4096])
+2025-05-23 07:37:56,263 - INFO -   Input text preview: Summarize the following scientific paper:
+
+We present NewsQA, a challenging machine comprehension dataset of over 100,000 human-generated question-answer pairs. Crowdworkers supply questions and answers based on a set of over 10,...
+2025-05-23 07:37:56,263 - INFO -   Label text preview: The paper presents NewsQA, a machine comprehension dataset of 119,633 natural language questions obtained from 12,744 CNN articles.
+Issues With Existing Datasets  Too small - eg MCTest  USe synth...
+2025-05-23 07:37:56,263 - INFO - --------------------------------------------------
+2025-05-23 07:37:56,293 - INFO - Sample 2 (paper_id: 97980035):
+2025-05-23 07:37:56,294 - INFO -   Input tokens: torch.Size([30000])
+2025-05-23 07:37:56,294 - INFO -   Label tokens: torch.Size([4096])
+2025-05-23 07:37:56,294 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Categories and Subject Descriptors I.4 [IMAGE PROCESSING AND COMPUTER VISION]: Applications General Terms Application Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted...
+2025-05-23 07:37:56,294 - INFO -   Label text preview: What  They propose a CNN-based approach to detect faces in a wide range of orientations using a single model.
+However, since the training set is skewed, the network is more confident about up-right faces.
+The model does not require additional components such as...
+2025-05-23 07:37:56,294 - INFO - --------------------------------------------------
+2025-05-23 07:37:56,317 - INFO - Sample 3 (paper_id: 435175):
+2025-05-23 07:37:56,317 - INFO -   Input tokens: torch.Size([30000])
+2025-05-23 07:37:56,317 - INFO -   Label tokens: torch.Size([4096])
+2025-05-23 07:37:56,317 - INFO -   Input text preview: Summarize the following scientific paper:
+
+Generative image modeling is a central problem in unsupervised learning. Probabilistic density models can be used for a wide variety of tasks that range from image compression and forms of reconstruction such as image inpainting...
+2025-05-23 07:37:56,317 - INFO -   Label text preview: This paper explores the use of convolutional (PixelCNN) and recurrent units (PixelRNN) for modeling the distribution of images, in the framework of autoregression distribution estimation.
+In this framework, the input distribution $p(x)$ is factor...
+2025-05-23 07:37:56,317 - INFO - --------------------------------------------------
