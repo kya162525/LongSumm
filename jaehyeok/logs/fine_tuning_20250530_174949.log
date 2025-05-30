@@ -1,0 +1,35 @@
+2025-05-30 17:49:49,038 - INFO - Loading data...
+2025-05-30 17:49:49,038 - INFO - Loading paper texts from JSON
+2025-05-30 17:49:49,076 - INFO - Found 518 paper texts
+2025-05-30 17:49:49,076 - INFO - Loading gold summaries
+2025-05-30 17:49:49,080 - INFO - Found 530 gold summaries
+2025-05-30 17:49:49,080 - INFO - Preparing dataset...
+2025-05-30 17:49:49,081 - INFO - Loaded 488 valid paper IDs for filtering
+2025-05-30 17:49:49,090 - INFO - Skipping 73424952 - paper too long (208151 characters)
+2025-05-30 17:49:49,091 - INFO - Filtering statistics:
+2025-05-30 17:49:49,091 - INFO -   total_papers: 518
+2025-05-30 17:49:49,091 - INFO -   no_gold_summary: 0
+2025-05-30 17:49:49,091 - INFO -   not_in_valid_ids: 34
+2025-05-30 17:49:49,091 - INFO -   paper_too_long: 1
+2025-05-30 17:49:49,091 - INFO -   summary_too_long: 0
+2025-05-30 17:49:49,091 - INFO -   accepted: 483
+2025-05-30 17:49:49,091 - INFO - Created dataset with 483 paper-summary pairs after filtering
+2025-05-30 17:49:49,129 - INFO - Verifying dataset content - random samples:
+2025-05-30 17:49:49,129 - INFO - Sample 1:
+2025-05-30 17:49:49,129 - INFO - Paper ID: 68642594
+2025-05-30 17:49:49,129 - INFO - Paper text (first 30 chars): A machine capable of performin...
+2025-05-30 17:49:49,129 - INFO - Summary (first 30 chars): Proposes a novel, end-to-end a...
+2025-05-30 17:49:49,129 - INFO - ----------------------------------------
+2025-05-30 17:49:49,129 - INFO - Sample 2:
+2025-05-30 17:49:49,129 - INFO - Paper ID: 11636296
+2025-05-30 17:49:49,129 - INFO - Paper text (first 30 chars): Recent advances in deep reinfo...
+2025-05-30 17:49:49,129 - INFO - Summary (first 30 chars): Relational Reinforcement Learn...
+2025-05-30 17:49:49,129 - INFO - ----------------------------------------
+2025-05-30 17:49:49,129 - INFO - Sample 3:
+2025-05-30 17:49:49,129 - INFO - Paper ID: 51116334
+2025-05-30 17:49:49,129 - INFO - Paper text (first 30 chars): There have recently been a lot...
+2025-05-30 17:49:49,129 - INFO - Summary (first 30 chars): What  The paper describes a me...
+2025-05-30 17:49:49,129 - INFO - ----------------------------------------
+2025-05-30 17:49:49,129 - INFO - Splitting dataset: 95.0% train, 5.000000000000004% validation
+2025-05-30 17:49:49,131 - INFO - Training set: 458 examples
+2025-05-30 17:49:49,131 - INFO - Validation set: 25 examples
