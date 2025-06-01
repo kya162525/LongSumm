@@ -12,12 +12,12 @@ def _load_model(model_dir: str) -> None:
     if _model is not None:
         return
 
-    _tok = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True, token=HF_TOKEN)
+    _tok = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True)
     if _tok.eos_token_id is None:
         _tok.eos_token_id = _tok.convert_tokens_to_ids("</s>")
 
     base = AutoModelForCausalLM.from_pretrained(
-        model_dir, torch_dtype=torch.bfloat16, trust_remote_code=True, token=HF_TOKEN
+        model_dir, torch_dtype=torch.bfloat16, trust_remote_code=True
     )
     try:
         base = PeftModel.from_pretrained(base, model_dir)
@@ -30,7 +30,7 @@ def get_answer(
     input_str: str,
     model_dir: str = "JaehyeokLee/qwen3-8b-longsumm-extractive-datasets-final",
     max_input_length: int = 30_000,
-    max_output_length: int = 1_024,
+    max_output_length: int = 4_096,
     num_beams: int = 4,
 ) -> str:
     _load_model(model_dir)
@@ -114,5 +114,5 @@ Remember to make the summary longer than the previous summary.
         print(longest_summary[:100])
         output[file_name] = longest_summary
 
-    with open("./experiments/testing_ext_then_abs_ft.json", "w") as f:
+    with open("./experiments/testing_ext_then_abs_ft_2.json", "w") as f:
         json.dump(output, f, indent=4)
